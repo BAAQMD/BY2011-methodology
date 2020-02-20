@@ -13,8 +13,8 @@ rmd_files: [
 before_chapter_script: [
   "helper_datasets.R", 
   "helper_functions.R"]
-view: https://github.com/rstudio/bookdown-demo/blob/master/%s
-edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+view: https://github.com/holstius/BY2011-methodology/blob/master/%s
+edit: https://github.com/holstius/BY2011-methodology/edit/master/%s
 output_dir: "docs"
 delete_merged_file: true
 language:
