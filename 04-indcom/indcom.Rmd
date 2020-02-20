@@ -1,4 +1,4 @@
-# Other Industrial and Commercial Processes
+# Other Industrial and Commercial Processes {#indcom}
 
 ```{r indcom-bakeries, child="04-indcom/indcom-bakeries.Rmd"}
 ```

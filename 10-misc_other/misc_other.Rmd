@@ -1,4 +1,4 @@
-# Miscellaneous Other Sources
+# Miscellaneous Other Sources {#misc_other}
 
 ```{r misc_other-construction, child="10-misc_other/misc_other-construction.Rmd"}
 ```

@@ -1,4 +1,4 @@
-# Chemical Manufacturing Facilities
+# Chemical Manufacturing Facilities {#chem_fac}
 
 ```{r chem_fac-coatings, child="03-chem_fac/chem_fac-coatings.Rmd"}
 ```

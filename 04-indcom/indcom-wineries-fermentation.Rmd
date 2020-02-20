@@ -12,7 +12,7 @@ THESE_CATEGORIES <- c(
 
 This category accounts for the ethanol emissions resulting from the fermentation of grapes at wineries located in the Bay Area. During the fermentation process, sugar in the grape juice reacts with yeast to form ethanol (alcohol) and carbon dioxide (CO2) gas. Ethanol is emitted into the atmosphere through evaporation. The amount of ethanol formation is dependent on tank design, length of fermentation period, fermentation temperature, and volume and sugar content of fermenting juice. Sugar content is measured as degrees Brix (grams sugar/100 ml. juice).
 
-#### Methodology {-}
+#### Methodology {#wineries-fermentation-methodology -}
 
 Wine production in the Bay Area was estimated based on ARB’s methodology and Wine Institute‘s Grape Crush report. Ethanol emission factors from the two types of wine (White and Red) were derived by the ARB from a computer model developed by Williams and Boulton. The ethanol emission factors per thousand gallons of wine produced for white wine, rose wine, and red wine are listed below:
 

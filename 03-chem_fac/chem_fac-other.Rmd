@@ -66,7 +66,7 @@ BY2011_annual_growth_factor_data %>%
 
 The projected growths in these categories are taken from expected growth in manufacturing employment over the region to the year 2030. The employment data was obtained from the Association of Bay Area Government's (ABAG) 2009 "Projections" reports.
 
-#### Control {-}
+#### Control {#chem_fac-other-control -}
 
 ```{r chem_fac-other-annual_control-chart}
 BY2011_annual_control_factor_data %>%

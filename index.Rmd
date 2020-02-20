@@ -14,7 +14,17 @@ link-citations: yes
 
 # Introduction
 
-This is a reproduction of the BY2011 Methodology Report. With a few modifications, it can serve as a working version of the BY2015 Methodology Report.
+This is a reproduction of the BY2011 Methodology Report, with several enhancements:
+
+- Charts and tables woven throughout the text.
+- Equations (ex: [Wineries/Breweries](#wineries-fermentation-methodology)).
+- Linked references to rules & regulations (ex: [Chemical Manufacturing](#chem_fac-other-control)).
+
+It's a work in progress, but very useful. There are stubs for many sections in [Chapter 4](#indcom), [Chapter 6](#petprod), and [Chapter 9](#mobile_combust). However, the other seven chapters have lots of good content!
+
+A forked and modified copy can serve as the initial BY2015 Methodology Report.
+
+More features can of course be added (ex: tables of county fractions) to existing sections (and stubs).
 
 ```{r libraries, include = FALSE, message = FALSE, cache = TRUE}
 library(inventory)

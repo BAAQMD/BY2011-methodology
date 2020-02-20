@@ -1,4 +1,4 @@
-# Waste Management
+# Waste Management {#waste_mgmt}
 
 ```{r waste_mgmt-POTWs, child="05-waste_mgmt/waste_mgmt-POTW.Rmd"}
 ```

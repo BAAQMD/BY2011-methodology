@@ -1,4 +1,4 @@
-# Burning of Waste Material
+# Burning of Waste Material {#waste_burn}
 
 ```{r waste_burn-resource_recovery, child="08-waste_burn/waste_burn-resource_recovery.Rmd"}
 ```

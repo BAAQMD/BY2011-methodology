@@ -1,4 +1,4 @@
-# Stationary Combustion of Fuels
+# Stationary Combustion of Fuels {#SS_combust}
 
 ```{r SS_combust-domestic-NG, child="07-SS_combust/SS_combust-domestic-NG.Rmd"}
 ```
