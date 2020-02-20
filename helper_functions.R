@@ -28,23 +28,25 @@ add_BY2011_chart_theme <- function (
       #legend.position = "top",
       legend.text = element_text(size = rel(0.9)))
   
-  BY2011_legend_ncol <- 1
+  return(chart_object + BY2011_chart_theme)
+  
+}
+
+#'----------------------------------------------------------------------
+
+add_BY2011_chart_guides <- function (
+  chart_object,
+  ...
+) {
   
   BY2011_chart_guides <-
     guides(
-      shape = guide_legend(
-        title = "", 
-        ncol = BY2011_legend_ncol),
       fill = guide_legend(
-        title = "", 
-        ncol = BY2011_legend_ncol),
+        title = ""),
       color = guide_legend(
-        title = "", 
-        override.aes = list(
-          size = 6),  # make lines fatter in legend
-        ncol = BY2011_legend_ncol))
+        title = ""))
   
-  return(chart_object + BY2011_chart_theme + BY2011_chart_guides)
+  return(chart_object + BY2011_chart_guides)
   
 }
 
@@ -66,7 +68,8 @@ BY2011_chart_annual_control_factors_by <- function (
       flag_labels = flag_labels,
       facet_rows = facet_rows,
       flag_years = CY(2011)) %>%
-    add_BY2011_chart_theme()
+    add_BY2011_chart_theme()%>%
+    add_BY2011_chart_guides()
   
   return(chart_object)
   
@@ -87,7 +90,25 @@ BY2011_chart_annual_emissions_by <- function (
     ggtools::chart_annual_emissions_by(
       ...,
       facet_rows = facet_rows) %>%
-    add_BY2011_chart_theme()
+    add_BY2011_chart_theme() %>%
+    add_BY2011_chart_guides()
+  
+  #
+  # In the case where we're plotting emissions, let's put the
+  # legend on top, and restrict the number of rows (in the legend)
+  # to two. We were haveing some trouble with the legend
+  # "overflowing" to the left and right --- this is a hack to 
+  # fix that problem.
+  #
+  chart_object <- 
+    chart_object + 
+    theme(
+      legend.position = "top",
+      legend.direction = "horizontal") +
+    guides(
+      fill = guide_legend(
+        title = "",
+        ncol = 2))
   
   return(chart_object)
   
@@ -119,7 +140,8 @@ BY2011_chart_annual_growth_by <- function (
       facet_scales = facet_scales,
       flag_years = flag_years,
       base_year = base_year) %>%
-    add_BY2011_chart_theme()
+    add_BY2011_chart_theme() %>%
+    add_BY2011_chart_guides()
   
   return(chart_object)
   
