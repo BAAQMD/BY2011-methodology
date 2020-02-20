@@ -90,7 +90,7 @@ BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
   BY2011_chart_annual_control_factors_by(
-    color = category)
+    color = pollutant)
 ```
 
 Refinery emissions are regulated by the District. Regulation 6, 7, 8, and 9 regulate Particulate Matter, Odorous Substances, Organic Compounds, and Inorganic Gaseous Pollutants respectably.
