@@ -1,0 +1,71 @@
+## Oil Refineries - External Combustion
+
+```{r SS_combust-petref-setup}
+THESE_CATEGORIES <- c(
+  "#298 Refinery Make Gas" = 298,
+  "#299 Natural Gas & Other Gases" = 299,
+  "#300 Liquid Fuel" = 300,
+  "#301 Solid Fuel" = 301)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+These categories contain emissions from oil refinery external combustion sources.
+
+#### Methodologies {-}
+
+Emissions for these categories were obtained from point source data as found in the District's Data Bank System. Each year, the District collects and records the data from individual refinery plants via a permitting process. The data is recorded using the following as inputs:
+
+1. Process material throughputs (as reported by the plants, this data is routinely updated)
+
+2. Emissions factors (these may be source specific as reported by the plants or general factors, i.e. from the EPA)
+
+3. Emissions control factors (device-specific or general - these may be supplied by the plants also)
+
+Emission information from numerous sources is grouped into the above mentioned categories. EPA's AP-42, Chapter 5 contains description of petroleum refining processes and emission factors. Criteria pollutants and greenhouse gas emissions, including carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O), are produced during refining processes. Since refinery emissions are part of point sources, criteria pollutants as well as greenhouse gas data are obtained from the refinery plant as part of the Bay Area Air District permit renewal process.
+
+The county, month, and day factors were derived based on information gather from a plant’s location, seasonal usage, and daily operation as found in the District’ Databank System.
+
+### Trends
+
+#### Historical {-}
+
+```{r SS_combust-petref-annual_emissions-chart, fig.height=12, out.height=1200}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category) 
+```
+
+Emissions prior to 1987 were derived from Base Year 1983 trend values. Past base year historical emissions include interchangeable emission reduction credits (IERC) which were part of category 10. IERC banking emissions are now inventoried under categories 298-300. Also, flare source emissions from categories 298 and 299 are now accounted for in category 15.
+
+#### Growth {-}
+
+```{r SS_combust-petref-annual_growth-chart, fig.height=8, out.height=800}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr) 
+```
+
+Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected from these units.
+
+#### Control {-}
+
+```{r SS_combust-petref-annual_control-chart, fig.height=8, out.height=800}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_control_factors_by(
+    color = pollutant) 
+```
+
+Regulation 9-10 controls emissions of NOx due to external combustion. Significant reduction in NOx emissions was observed between the period from year 2000 to 2004 for refinery external combustion operations as a result of this rule.
+
+By: Tan Dinh
+Date: January 2014
+Base Year: 2011

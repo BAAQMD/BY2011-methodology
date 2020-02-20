@@ -1,0 +1,19 @@
+# Chemical Manufacturing Facilities
+
+```{r chem_fac-coatings, child="03-chem_fac/chem_fac-coatings.Rmd"}
+```
+
+***
+
+```{r chem_fac-resins, child="03-chem_fac/chem_fac-resins.Rmd"}
+```
+
+***
+
+```{r chem_fac-pharms, child="03-chem_fac/chem_fac-pharms.Rmd"}
+```
+
+***
+
+```{r chem_fac-other, child="03-chem_fac/chem_fac-other.Rmd"}
+```

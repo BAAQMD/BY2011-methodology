@@ -1,0 +1,65 @@
+## Domestic Fuel, LPG & Liquid Fuel
+
+```{r SS_combust-domestic-liquid-setup}
+THESE_CATEGORIES <- c(
+  "#286 LPG" = 286,
+  "#287 Distillate Oil" = 287)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+This category contains emissions from domestic fuel combustion of LPG and distillate oil.
+
+#### Methodology {-}
+
+Emissions estimates from domestic LPG and distillate oil combustion are based on the “BTU equivalent - natural gas approach”. This approach follows an ARB methodology as given in a document titled, “Methods for Assessing Area Source Emissions in California”, Section 5-3. The approach is based upon, namely:
+
+1. Number of housing units heated by LPG and distillate oil as provided by the 2010 Department of Finance’s Census of Population and Housing.
+
+2. Bay Area natural gas fuel usage as provided by Pacific Gas and Electric Company.
+
+3. Natural gas usage conversion to average BTUs per household.
+
+4. Estimation of LPG and distillate oil usage based on average BTUs per household.
+
+5. Calculation of LPG and distillate oil emissions.
+
+6. Greenhouse gas emission factors are obtained from the U.S. Department of Energy’s (DOE’s), Energy Information Administration (EIA).
+
+#### Monthly Variation {-}
+
+The monthly variation for LPG and distillate oil was based on data provided by PG&E Customer Accounting Department. This data details domestic natural gas usage by number of customers (dwelling units) in each county. For all counties except Solano and Sonoma, data sets reflecting the entire counties were used in the calculation. For Solano and Sonoma Counties that are both partially in the District, only data for cities within the District were used. For Solano County, data sets used were for Benicia, Fairfield, Suisun and Vallejo. For Sonoma County, data sets used were for Cotati, Petaluma, Rohnert Park, Santa Rosa, Sebastopol and Sonoma.
+
+#### County Distribution {-}
+
+County distribution of emissions was based on the Department of Commerce’s 2010 Census of Population and Housing for California. In that report, the number of homes using LPG and fuel oil as a heating medium were used in the estimate of county distribution.
+
+### Trends
+
+#### Historical {-}
+
+```{r SS_combust-domestic-liquid-annual_emissions-chart, fig.height=12, out.height=1200}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category) 
+```
+
+#### Growth {-}
+
+```{r SS_combust-domestic-liquid-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr) 
+```
+
+For Category 286 (Fuel Combustion, Stationary Sources, Domestic LPG), an assumption was made that annual emissions, over the years, would tend to follow household population data. Population data used in the projection was based on the Association of Bay Area Government's (ABAG's) 2009 “Projections” report. For Category 287 (Fuel Combustion, Stationary Sources, Domestic Distillate Oil), the growth was assumed to be diminished as the fuel would eventually be phased out in favor of natural gas. A 2% reduction per year was chosen, starting in 1992.
+
+By: Tan Dinh
+Date: January 2014 
+Base Year: 2011

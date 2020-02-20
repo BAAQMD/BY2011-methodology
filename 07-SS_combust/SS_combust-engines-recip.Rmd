@@ -1,0 +1,85 @@
+## Reciprocating Engines
+
+```{r SS_combust-engines-recip-setup}
+THESE_CATEGORIES <- c(
+  "#302 Gasoline" = 302,
+  "#303 Gas Fuel" = 303,
+  "#304 Liquid Fuel (Point)" = 304)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Categories 302, 303, and 304 estimate criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (CO2, CH4, and N2O) from reciprocating engines in the San Francisco Bay Area. Category #302 contains reciprocating engines for firewater pumps and standby generators at the oil refineries. Category 303 contains mostly internal combustion engines/electric generators at various companies and utility districts. Category 304 accounts for emissions mostly from diesel fuel engines. Most of the sources in this category are emergency or standby electric generators.
+
+#### Methodology {-}
+
+##### Point Sources {-}
+
+Emissions for categories 302, 303, and 304 were obtained from point sources only. The District’s permit requirement for engines was lowered to 50 horse powers or more. As a result, number of engines in the District’s inventory is expected to increase in the future.
+
+The District updates the emissions data each year using as input:
+
+1. Process material throughputs as reported by the facility
+
+2. Emissions factors (these may be source specific as reported by the facility or general factors, i.e. from the Environmental Protection Agency (EPA)
+
+3. Emissions control factors (device-specific or general - these may be supplied by the facility also)
+
+##### Area Sources {-}
+
+Throughput/activity information for the agriculture irrigation engines (Category 1578) for the Bay Area is in accordance with the California Air Resources Board.
+
+Information on the specific reciprocating engine sources allowed them to be identified as using gasoline, gas fuel or liquid fuel. The EPA's document AP-42 contains this information on various fuel combusting reciprocating engines.
+The fuel specific greenhouse gas emission coefficients for these categories were obtained from the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA), the U.S. Environmental Protection Agency’s (EPA’s) document AP-42, and the California Energy Commission (CEC).
+
+#### County Distribution {-}
+
+The District’s point source database contains county distribution information for each facility/source based on its location.
+
+#### Monthly Variation {-}
+
+Monthly variation of emissions is based on company reported quarterly throughput or activity data.
+
+### Trends
+
+#### History {-}
+
+```{r SS_combust-engines-recip-annual_emissions-chart, fig.height=12, out.height=1200}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category) 
+```
+
+For Category 302, emissions have been extremely low and constant over the past years. Emissions for Categories 303 and 304 have generally varied with fuel usage activity in the San Francisco Bay Area.
+
+#### Growth {-}
+
+```{r SS_combust-engines-recip-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr) 
+```
+
+Emissions for Category 302 are assumed to stay fairly constant in future years. For Category 303, it was assumed that annual emissions would tend to follow and be influenced by two components: manufacturing industry employment and population. As such, a growth profile was developed, based on 33.3% of the manufacturing industry employment value and 66.7% of the population value within the District. It is assumed that annual emissions from Category 304 would tend to follow and be influenced in roughly equal amounts by two components: manufacturing industry employment and population. As such, a growth profile was developed, based on 50% of the manufacturing industry employment value and 50% of the population value within the District. Category 1578 projections are based agriculture industry growth in the Bay Area. Projected emissions include expected benefits from ARB’s Air Toxic Control Measure (ATCM). Growth profile data was obtained from two sources, the Association of Bay Area Government's (ABAG’s) 2009 "Projections" reports and the California Statistical Abstracts.
+
+#### Control {-}
+
+```{r SS_combust-engines-recip-annual_control-chart, fig.height=8, out.height=800}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_control_factors_by(
+    color = pollutant) 
+```
+
+The Air District’s Regulation 9, Rule 8 controls NOx and SOx emissions of fuel combustion in reciprocating engines.
+
+By: Sukarn Claire 
+Date: January 2014 
+Base Year: 2011

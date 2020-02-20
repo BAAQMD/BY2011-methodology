@@ -1,0 +1,68 @@
+## Gasoline Bulk Plant Storage Tanks
+
+```{r petprod-bulk_term-tanks-setup}
+THESE_CATEGORIES <- c(
+  "#62 Bulk Plants & Terminals (Tanks, Breathing)" = 62,
+  "#63 Bulk Plants & Terminals (Tanks, Working)" = 63)
+```
+
+### Emissions
+
+#### Introduction
+
+These categories account for the organic emissions from the storage of organic liquids in tanks at bulk plant and terminals. The emissions are due to breathing and working losses. Breathing loss is the expulsion of vapor from tank due to vapor expansion and contraction of the liquid in the tanks. Working loss occurs when vapor is displaced during tank loading operations and when air drawn into the tank during unloading operations.
+
+#### Methodologies
+
+These categories contain point source emissions. Emissions were determined by the District's data bank system. These data originated with tank information (i.e. vapor pressure, tank color, size, throughput, etc.) supplied by the plants and stored in the District's data bank system. Throughput is updated upon permit renewal. The organic liquid storage emission factors were obtained from AP-42.
+
+#### Monthly Variation
+
+The data bank contains percentage of throughput data for each seasonal quarter: (December - February, March - May, June - August, September - October) provided by companies holding District permits.
+
+#### County Distribution
+
+Emissions distributed into counties were based on actual locations of the plants in the Bay Area.
+
+### Trends
+
+#### History
+
+```{r petprod-bulk_term-tanks-annual_emissions-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category) 
+```
+Historical data was based on past years gasoline consumption in the Bay Area. The estimated gasoline consumption was obtained from California Taxable Gasoline Sales.
+
+#### Growth
+
+```{r petprod-bulk_term-tanks-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr)
+```
+
+The reported year-to-year variation in emissions is due to changes in either the volume of materials put through the storage tank, or in the composition of the organic liquids stored. Projections are based on future gasoline consumption in the Bay Area.
+
+#### Control
+
+```{r petprod-bulk_term-tanks-annual_control-chart}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_control_factors_by(
+    color = pollutant)
+```
+
+Emissions were reduced due to the effect of Regulation 8 Rule 5, amended on October 18, 2006. This rule requires reducing emissions of organic liquid loaded from loading operations at terminals and bulk plants.
+
+On April 15, 2009, the District amended the Regulation 8, Rule 39 (Gasoline Bulk Plants). The amendments include a requirement to minimize the release of organic compounds during maintenance and repair operations, and a reduction in the allowable backpressure in new vapor recovery system piping.
+
+By: Michael Nguyen 
+Date: January, 2014 
+Base Year 2011

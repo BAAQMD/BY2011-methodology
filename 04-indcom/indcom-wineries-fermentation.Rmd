@@ -1,0 +1,72 @@
+## Wineries/Breweries - Fermentation
+
+```{r indcom-wineries-fermentation-setup}
+THESE_CATEGORIES <- c(
+  "#31 Wineries/Breweries, Fermentation" = 31,
+  "#1904 Wineries/Breweries, Fermentation" = 1904)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+This category accounts for the ethanol emissions resulting from the fermentation of grapes at wineries located in the Bay Area. During the fermentation process, sugar in the grape juice reacts with yeast to form ethanol (alcohol) and carbon dioxide (CO2) gas. Ethanol is emitted into the atmosphere through evaporation. The amount of ethanol formation is dependent on tank design, length of fermentation period, fermentation temperature, and volume and sugar content of fermenting juice. Sugar content is measured as degrees Brix (grams sugar/100 ml. juice).
+
+#### Methodology {-}
+
+Wine production in the Bay Area was estimated based on ARB’s methodology and Wine Institute‘s Grape Crush report. Ethanol emission factors from the two types of wine (White and Red) were derived by the ARB from a computer model developed by Williams and Boulton. The ethanol emission factors per thousand gallons of wine produced for white wine, rose wine, and red wine are listed below:
+
+- White wine: 2.5 lbs.
+- Rose and Red wine: 6.2 lbs.
+
+Using an estimated production of wine as: 41.5% white and 58.5% red wine, a composite emission factor of 4.7 lbs. per thousand gallon of wine produced was derived.
+
+The carbon dioxide (CO2) emission factor was derived from the chemical equation.
+
+$$
+C_{6}H_{12}O_{6} + \text{yeast} \rightarrow 2\ C_{2}H_{5}OH + 2\ CO_{2}
+$$
+
+Assume that fifty percent of CO2 emissions escaped to atmosphere during fermentation process, the CO2 emission factor of 157.41 lbs. per thousands of gallons of wine was estimated. District’s Regulations 3, adopted on May 21, 2008, defined the carbon dioxide (CO2) emissions from wine fermentation processes was biogenic carbon dioxide emissions.
+
+The total emissions for this category are determined by multiplying the emission factor and the wine production. This methodology is presently based on ARB's methodology (Section 5.1).
+
+Emissions from point sources are calculated from operating data (throughput, emission factors, control factors, if any, etc.) submitted for each equipment as part of the permit process. This operating data is updated upon renewal of the permit.
+
+#### Monthly Variation {-}
+
+The ethanol emissions associated with wine fermentation occurs during the grape crushing season, which generally runs from mid-August through October.
+
+#### County Distribution {-}
+
+County distribution was based on the amount of wine production in each county. Alameda, Contra Costa, Napa, Santa Clara, Solano, and Sonoma Counties were assumed to produce wine.
+
+### Trends
+
+#### History {-}
+
+```{r indcom-wineries-fermentation-annual_emissions-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category)
+```
+
+Prior to Base Year 2005, the throughput had been obtained from the "Final Grape Crush Report" published by the California Department of Food and Agriculture. Although phylloxera bugs attack vine rootstock, the wine production in vineyards increased at moderate rate in 1996. ARB revised Winery methodology in September 2004 to reflect current wine production in California. The historical throughput data between 2004 and 2010 were obtained from the Wine Institute located in San Francisco
+
+#### Growth {-}
+
+```{r indcom-wineries-fermentation-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr)
+```
+
+Past and future projection of emissions was based on the food manufacturing industries taken from ABAG’s 2009 Projections report.
+
+By: Michael Nguyen 
+Date: January, 2014 
+Base Year 2011

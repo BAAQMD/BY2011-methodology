@@ -1,0 +1,24 @@
+# Waste Management
+
+```{r waste_mgmt-POTWs, child="05-waste_mgmt/waste_mgmt-POTW.Rmd"}
+```
+
+***
+
+```{r waste_mgmt-landfill, child="05-waste_mgmt/waste_mgmt-landfill.Rmd"}
+```
+
+***
+
+```{r waste_mgmt-land_farm, child="05-waste_mgmt/waste_mgmt-land_farm.Rmd"}
+```
+
+***
+
+```{r waste_mgmt-other, child="05-waste_mgmt/waste_mgmt-other.Rmd"}
+```
+
+***
+
+```{r waste_mgmt-compost, child="05-waste_mgmt/waste_mgmt-compost.Rmd"}
+```

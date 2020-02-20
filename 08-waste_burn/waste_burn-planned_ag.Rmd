@@ -1,0 +1,98 @@
+## Planned Agricultural Burning
+
+```{r waste_burn-planned_ag-setup}
+THESE_CATEGORIES <- c(
+  "#315 Prunings" = 315,
+  "#316 Field Crops" = 316,
+  "#317 Weed Burning" = 317,
+  "#318 Range Improvement" = 318,
+  "#319 Forest Management" = 319)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+These area source categories estimate criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (Biogenic-CO2, CH4, and N2O) resulting from managed burning of agricultural and forest debris in the San Francisco Bay Area. Categories 315, 316, 317, 318, and 319 account for emissions from open burning of orchard prunings (such as grape vines, apples, and olives), field crops (such as wheat and oats), weeds (such as ditch and canal bank, and marsh burning), range improvement (such as chaparral and grass land burning) and forest debris, respectively.
+
+Carbon Dioxide emissions from these categories are considered to be biogenic emissions. Biogenic Carbon Dioxide (Bio-CO2) emissions are a subset of total CO2 emissions which are emitted from materials that are derived from living cells, excluding fossil fuels, limestone and other materials that have been transformed by geological processes. Bio- CO2 originates from carbon that is present in materials such as wood, paper, vegetable oils and food, animal, and yard waste.
+
+#### Methodologies {-}
+
+Annual activity or waste material burn information for these categories was obtained from the burn permits issued by the District’s Enforcement Division for each county. Information on amounts of waste materials burned was provided to the District in various units such as acres, tons, pounds, and cubic yards. By applying the crop specific fuel loading factors and other conversion units, all burn activity was converted to tons of material burned per year.
+
+Emissions were calculated by multiplying the activity (Tons/Year) for a given category by its composite emission factor (Lb/Tons). Composite emission factors were developed using crop specific emission factor data from the California Air Resources Board (CARB) and the Environmental Protection Agency (EPA). Background information for emission factors and fuel loading is explained in the CARB memo, the Agricultural Burning Emission Factors dated August 17, 2000. Emission factors for these categories in pounds per ton (Lb/Ton) are shown below.
+
+```{r waste_burn-planned_ag-emission_factors-table}
+BY2011_annual_area_source_emission_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  select(
+    category = cat_id,
+    pol_abbr,
+    ef_qty) %>%
+  distinct() %>%
+  spread(
+    pol_abbr,
+    ef_qty)
+```
+
+##### Sample Equations {-}
+
+$$
+\text{Activity (ton/yr)} = \text{Crop Area (acre/yr)} \times \text{Fuel Loading (ton/acre)} 
+$$
+$$
+\text{Emissions} = \text{Activity} \times \text{Emission Factor}
+$$
+
+##### Example for PM Emissions, Field Crops, Category 316 {-}
+
+$$
+\text{Activity} = 1600 \text{ (ton/yr)}
+$$
+$$
+\text{PM Emission Factor} = 17.8 \text{ (lb/ton)}
+$$
+
+$$
+\text{PM Emissions} = 1600 \text{ (ton/yr)} \times 17.8 \text{ (lb/ton)} \times \frac{1 \text{ ton}}{2000 \text{ lb}} = 14.24 \text{ (ton/yr)}
+$$
+
+#### County Distribution {-}
+
+Distribution of emissions into counties is based on amounts of material burnt in each county.
+
+#### Monthly Variation {-}
+
+Monthly distribution for all categories was made proportional to an average burn data reported on monthly basis.
+
+### Trends
+
+#### History {-}
+
+```{r SS_combust-waste_burn-planned_ag-annual_emissions-chart, fig.height=12, out.height=1200}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category) 
+```
+
+The 1981 emissions and tonnage burned data was used to develop emission factors for base years 1987 and 1990. Prior to base year 2002, historical emission trends were based on Agriculture Dollar Output.
+
+#### Growth {-}
+
+```{r SS_combust-waste_burn-planned_ag-annual_growth-chart, fig.height=8, out.height=800}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr) 
+```
+
+Emission projections are based on previous five year average activity for each category.
+
+By: Sukarn Claire 
+Date: January 2014 
+Base Year: 2011

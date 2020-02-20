@@ -1,0 +1,44 @@
+--- 
+title: "BY2011 Methodology"
+author: "David Holstius"
+date: "`r Sys.Date()`"
+output: 
+  bookdown::gitbook:
+    df_print: paged
+documentclass: book
+description: "This is a reproduction of the BY2011 Methodology Report."
+site: "bookdown::bookdown_site"
+biblio-style: apalike
+link-citations: yes
+---
+
+# Introduction
+
+This is a reproduction of the BY2011 Methodology Report. With a few modifications, it can serve as a working version of the BY2015 Methodology Report.
+
+```{r libraries, include = FALSE, message = FALSE, cache = TRUE}
+library(inventory)
+library(BY2011)
+```
+
+```{r options, include = FALSE, message = FALSE, cache = FALSE}
+#   html_vignette:
+#   df_print: kable
+#   toc: true
+#   toc_depth: 3
+
+library(knitr)
+library(printr)
+
+knitr::opts_chunk$set(
+  #dev = "svg",
+  cache = TRUE,
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width = 7,
+  out.width = 700,
+  fig.height = 4,
+  out.height = 800 / (8 / 4),
+  dpi = 300)
+```

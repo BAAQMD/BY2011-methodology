@@ -1,0 +1,23 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+h4 {
+  font-weight: normal;
+  font-style: italic;
+}
+h5 {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: underline;
+}

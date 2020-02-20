@@ -1,0 +1,102 @@
+## General Refinery Emissions
+
+- Basic Refining Processes (10) 
+- Wastewater Collection & Separation Systems (11) 
+- Wastewater Treatment Facilities (12) 
+- Cooling Towers (13)
+- Vacuum Producing Systems (14)
+- Flares and Blowdown Systems (15)
+- Other Refining Processes (16)
+
+```{r petref_fac-general-setup}
+THESE_CATEGORIES <- c(
+  "#10 Basic Processes" = 10,
+  "#11 Wastewater Collection & Separation" = 11,
+  "#12 Wastewater Treament Facilities" = 12,
+  "#13 Cooling Towers" = 13,
+  "#14 Vacuum Producing Systems" = 14,
+  "#15 Flares and Blowdown Systems" = 15,
+  "#16 Other Refining Processes" = 16)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Petroleum refining involves processing crude oil into consumable products such as fuel gas, lube oil, and grease. To achieve this process, an array of equipment is used to refine crude oil; the emissions that are generated as a byproduct from these processes make up the petroleum refining emissions categories. Emissions reported are those generated via basic refining processes/devices and do not include emissions from refinery fugitives, storage units, and combustion processes (other than flares and blow down systems). These non-included sources are accounted for in other categories of the emission inventory report.
+
+**Category 10** accounts for emissions from refining processes that involve chemical reactions, such as, but not limited to cracking, polymerization, and reforming. Significant amounts of nitrogen oxide (NOx), sulfur oxide (SOx), carbon monoxide (CO), and particulate (PM) emissions are produced during catalytic cracking and coking operations.
+
+**Category 11** includes all permitted refinery oil/water separation equipment and fugitive emissions from process drains. This category also contains units such as clarifiers and dissolved air flotation systems.
+
+**Category 12** accounts for emissions from treatment of wastewater at oil refineries.
+
+**Category 13** contains emissions from cooling systems. Emissions from cooling towers consist of fugitive VOC's and dissolved gases (such as hydrogen sulfide and ammonia) which are leaked through heat exchangers into cooling water. The contaminants are then vaporized into the atmosphere at the cooling tower.
+
+**Category 14** includes emissions from vacuum producing systems. Vacuum systems are used primarily to distill heavy crude residues which cannot be distilled at atmospheric pressure.
+
+**Category 15** accounts for all refinery process gas (combustion) emissions from flares and blow down systems. Refinery flares can emit large quantities of organics, sulfur dioxide and carbon monoxide as well as greenhouse gases.
+
+**Category 16** includes emissions from all other refinery processes not covered in category 15. Emissions of organic compounds and greenhouse gases from storage tanks, sulfur recovery units, and combustion processes are shown in sections **REF**, **REF**, and **REF** respectively. The processes in this category include distillation, hydrogen manufacturing plants, fuel blending. Coke loading and storage facilities account for most of the particulate emissions in this category.
+
+#### Methodologies {-}
+
+Emissions for these categories are obtained from point source data in the District’s record keeping system (Data Bank). Emissions are updated annually, on a source-by-source basis, using the following inputs:
+
+1. Process material throughputs as reported by the refineries (this data is routinely updated)
+
+2. Emissions factors (these may be source specific as reported by refineries or general factors, i.e. from the EPA)
+
+3. Emissions control factors (device-specific or general - these may be supplied by refineries also)
+
+Emission information from numerous sources is grouped into the above mentioned categories. EPA's AP-42, Chapter 5 contains description of petroleum refining processes and emission factors. Criteria pollutants and greenhouse gas emissions, including carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O), are produced during refining processes. Since refinery emissions are part of point sources, criteria pollutants as well as greenhouse gas data are obtained from the refinery plant as part of the Bay Area Air District permit renewal process.
+
+The county fraction and monthly/daily factors are calculated based on data obtained from the Data Bank.
+
+### Trends
+
+#### History {-}
+
+```{r petref_fac-general-annual_emissions-chart, fig.height=12, out.height=1200}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category) 
+```
+
+Historic emissions have generally varied with refinery throughputs. Past base year historical emissions include interchangeable emission reduction credit (IERC). IERC banking emissions are now inventoried separately under categories 298-301. Also, flare source emissions from categories 298 and 299 are now accounted for in category 15. Beginning in December 2003, flare emission monitoring control was implemented for all refineries in the Bay Area. Flare emissions are based upon these monitoring data.
+
+In 2010, SOx decreased significantly as a result of an abatement device installation at Valero refinery. Over 90% of SOx emissions were reduced at Valero refinery from prior years.
+
+#### Growth {-}
+
+```{r petref_fac-general-annual_growth-chart, fig.height=12, out.height=1200}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr)
+```
+
+Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected.
+
+Future flare emissions are difficult to predict, since they are predicated on emergencies and the nature of emergencies which are unknown and unpredictable. However, with the recent passage of refinery flare monitoring and flare minimization plan requirements, flare emissions are expected to remain constant as long as there are no large upset in refinery processes that would warrant increase in flaring activities.
+
+#### Control {-}
+
+```{r petref_fac-general-annual_control-chart, fig.height=8, out.height=800}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_control_factors_by(
+    color = category)
+```
+
+Refinery emissions are regulated by the District. Regulation 6, 7, 8, and 9 regulate Particulate Matter, Odorous Substances, Organic Compounds, and Inorganic Gaseous Pollutants respectably.
+
+Regulation 12, Rule 11 and 12 pertain to flare monitoring and flare minimization plan at Petroleum Refineries. The rule does not mandate reductions. District staff has found that because refiners have looked more closely both at monitoring and the feasibility of flaring reductions, flaring activities at the five Bay Area refineries have dropped dramatically over the past years. The result has been a significant emission reduction that cannot be directly attributed to this rule, but has and will ultimately be reflected in the emissions.
+
+By: Tan Dinh
+Date: December 2013
+Base Year: 2011

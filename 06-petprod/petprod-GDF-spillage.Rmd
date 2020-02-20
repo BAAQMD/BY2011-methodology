@@ -1,0 +1,68 @@
+## Gasoline Filling Stations: Spillage
+
+```{r petprod-GDF-spillage-setup}
+THESE_CATEGORIES <- c(
+  "#66 GDFs: Spillage" = 66)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Gasoline spillage occurs during filling such as prefill and postfill nozzle drip and overflow from the vehicle's fuel tank at service stations. The amount of spillage loss can depend on the service station business characteristics and nozzle types (conventional nozzle or vapor recovery nozzle).
+
+#### Methodology {-}
+
+This category accounts for evaporative emissions resulting from spillage gasoline dispensing facilities (GDFs). The estimates of gasoline consumption in the Bay Area were provided by California State Board of Equalization, Fuel Taxes Statistics & Reports and Caltrans Transportation Planning Support Information System (TPSIS). These estimates were made by adjustments of Gasoline Dispensing Facility sales, population, number of registered vehicles, and the number of drivers' license. TOG emission factor was taken from AP-42. The TOG emissions are determined by multiplying the emission factor and the throughput.
+
+#### Monthly Variation {-}
+
+The monthly variation of emissions was based on monthly California taxable sales data from the Board of Equalization.
+
+#### County Distribution {-}
+
+Emissions distributed into the nine counties were based on Caltrans Transportation Planning Support Information System's breakdown.
+
+### Trends
+
+#### History {-}
+
+```{r petprod-GDF-spillage-annual_emission-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category)
+```
+
+Historical emissions were based on past years Bay Area gasoline consumption. Prior to 1990 Base Year, taxable gasoline sales for California obtained from the Board of Equalization were assumed to distribute to all gasoline filling stations in California. ARB estimated that Bay Area consumed 20.01% of this state total. The emissions for this category were determined according to this estimated throughput.
+
+#### Growth {-}
+
+```{r petprod-GDF-spillage-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr)
+```
+
+Gasoline consumption in 2007 reached record levels. However, the gasoline consumption decreased slightly during the economic recession in 2008 - 2010. Projections are based on future gasoline consumption in the Bay Area.
+
+The Air Resources Board (ARB) is in the process of updating the emission factors for GDFs’ categories: gasoline storage and transfer operations from cargo tank trucks to GDFs and from GDFs to vehicles, fuel containers, and gasoline-powered equipment. With the current requirements of the CARB’s Phase II Vapor recovery systems regulations, the GDF categories’ emissions will be greatly reduced for forecasted emission years.
+
+#### Control {-}
+
+```{r petprod-GDF-spillage-annual_control_factor_data}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_control_factors_by(
+    color = pollutant)
+```
+
+Emissions were reduced due to the improvement of vapor recovery nozzle in Phase II Gasoline Dispensing Facilities. Regulation 8 rule 7 does not specify emission reduction for this category. However, the improvement of the vapor recovery nozzles reduces spillage at vehicle filling services stations.
+
+By: Michael Nguyen 
+Date: January, 2014 
+Base Year 2011

@@ -1,0 +1,57 @@
+## Wood Products Manufacturing
+
+```{r indcom-wood-setup}
+THESE_CATEGORIES <- c(
+  "#35 Wood Products Mfg" = 35,
+  "#1907 Wood Products Mfg (Area)" = 1907)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Emissions from this category include generation of small wood waste particles (sawdust) from woodworking operations such as sawing, planing, lathing, and sanding. Industries engaged on these operations include manufacturers of plywood, particleboard, hard board, and furniture.
+
+#### Methodology {-}
+
+This category contains emissions from both point (Category 35) and area sources (Category 1907). Wood waste generated as particulate matter is removed from the wood working operations mainly for housekeeping purposes, by either a cyclone or a baghouse. The Data Bank contains throughput information submitted by individual plant by sources. Emissions are then calculated by using specific emission factors for a particular source operation supplied by the company. The point sources account for the majority of emissions from this category.
+
+It was estimated that area sources account for 20% of the total throughput from this category. The area source total particulate emission factor was assumed to be 20 pounds/ton wood processed. Area source particulate emissions were calculated by multiplying the throughput by its emission factor.
+
+#### Monthly Variation
+
+The emissions over the 12 months were estimated based on the throughput data from each plant.
+
+#### County Distribution
+
+Emissions are distributed to the counties based on the location of the processing plant. The District’s data bank contains the information on plant location.
+
+### Trends
+
+#### History {-}
+
+```{r indcom-wood_products-annual_emission-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category) 
+```
+
+The historical growth profile was based on a combination of prior permit data (back to 1990) and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing Employment growth profile.
+
+#### Growth {-}
+
+```{r indcom-wood_products-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr) 
+```
+
+Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing and Wholesale Employment growth profile.
+
+By: Stuart Schultz 
+Date: November 2013 
+Base Year 2011

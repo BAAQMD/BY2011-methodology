@@ -1,0 +1,117 @@
+## Composting
+
+```{r waste_mgmt-compost-setup}
+THESE_CATEGORIES <- c(
+  "#1709 Composting" = 1709,
+  "#1936 Composting (Point)" = 1936)
+```
+### Emissions
+
+#### Introduction {-}
+
+Composting is a biological process where organic materials, such as leaves, grasses, etc., are decomposed by microorganisms to create a nutrient-rich, soil-like material. Composting most often takes place in aerobic conditions, however, under certain conditions, composting can occur under anaerobic conditions. These conditions include compost pile structure and density, particle size, low oxygen supply, moisture content, low oxygen supply, etc. Methane emissions increase under anaerobic conditions. Therefore, proper monitoring and management are very important to maintain aerobic conditions for efficient composting operation.
+
+The composting process includes the following steps:
+
+- Feedstock Preparation,
+- Composting,
+- Curing,
+- Screening, and
+- Storage.
+
+In the feedstock preparation step, the composted organic materials are screened and, if required, processed in a grinder to achieve the best composting conditions. This mixture is then placed in rows or piles where the decomposition process begins. The initial phase of composting, lasting for about one month is very active and generates temperatures high enough to kill weed seeds and pathogens. After this “active” phase, the material is cured at a slower rate and temperature. During this phase, the moisture content is reduced and a more stable product is produced. Once the compost is cured, the material is screened to produce the desired product and then stored prior to final distribution and use.
+
+#### Methodology {-}
+
+In 2011, there were approximately 32 composting facilities1 in the Bay Area. Ten (12) of these facilities are permitted by the District and considered point sources (Category 1709). The point sources contain annual activity (throughput) information for each applicable source that is stored in the District’s Data Bank. Reactive organic (ROG) emissions are then calculated by using emission factors (generalized or specific) and control factors, if any, for a particular source operation supplied by the company. Some related compositing activity (i.e. windrow and storage activities, etc.) are also permitted and particulate emissions are calculated.
+
+> Note: The composting operations that involve mushroom farming were not included in this count. The 2006 IPCC Guidelines for National greenhouse Gas Inventories does not assign mushroom farm media preparation to the waste sector for emission inventory development. It falls under the Industrial Processes and Product Use, Food and Beverage Industry, or Agriculture, Forestry, and Other Land Use, manure Management, Poultry (3A2i).
+
+The other approximate 20 facilities are considered area sources (Category 1936) where annual throughput, criteria pollutant emission factors (TOG and ROG), and control activity (if any) are estimated. The TOG and ROG emissions are calculated by multiplying the throughput by the emission factor and, if applicable, the control factor.
+
+Greenhouse Gas (GHG) emission, namely methane (CH4) and nitrous oxide (N2O), are also associated with composting activity. The CH4 and N2O emissions are calculated similarly to the criteria pollutant emissions mentioned above.
+The throughput and emissions factors (TOG, ROG, and GHG) estimates were developed based on the following:
+
+##### Throughput Data {-}
+
+For those composting facilities not permitted by the District (area sources), throughput data was provided by industry and CalRecycle officials or using CalRecycle’s Solid Waste Information System’s (SWIS’s) database. The throughput information provided in the SWIS database represents maximum allowable throughputs. The actual throughput was estimated to be 60% of the SWIS database value.
+
+The units for throughput information should be in tons per year, however, they may appear in other units, such as cubic yards per year (yd3/yr), cubic yards per day (yd3/day), tons per day, etc. For those throughputs that required a conversion factor to tons, the following bulk density values were used:
+
+- Greenwaste – 3.54 yd3/ton
+- Mixed (greenwaste mixed with food, manure, etc.) – 2.24 yd3/ton
+
+The above conversion factors were taken from the California Integrated Management Board (CIWMB) Report, “Third Assessment of California’s Compost and Mulch Producing Infrastructure”, May 2009.
+
+For throughputs that were in a volume per day format, it was assumed most facilities operated 260 days per year. However, for some facilities, this value may vary slightly.
+
+##### Emission Factors {-}
+
+The Reactive Organic Gas (ROG) emission factors used for emission calculation purposes are listed below:
+
+- Greenwaste – 0.85 lb/ton
+- Greenwaste/Food Scrap (assume as mixed) – 1.95 lbs/ton
+
+The emission factors above were cited in the October 2007 CIWMB study, “Emission Testing of VOC from Greenwaste Composting at the Modesto Compost Facility in the San Joaquin Valley.” The mid-point value for each of the emission factors was used.
+
+Total Organic Gas (TOG) emission factors were calculated by dividing the ROG emission factors by a ROG factor. A ROG factor, obtained from data compiled by the San Joaquin Valley Air Pollution Control District (SJVAPCD), of 0.8689 was used. The TOG emission factors used for emission calculation purposes are listed below:
+
+- Greenwaste – 0.98 lb/ton
+- Greenwaste/Food Scrap (assume as mixed) – 2.24 lbs/ton
+
+Methane (CH4) emission factors were assumed to be the difference between the TOG and ROG emission factors. The CH4 emission factors used for emission calculation purposes are listed below:
+
+- Greenwaste – 0.13 lb/ton
+- Greenwaste/Food Scrap (assume as mixed) – 0.29 lbs/ton
+
+The Nitrous Oxide (N2O) emission factors varied from 0.12 to 1.1997 lbs/ton and were obtained from the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Chapter 4, Biological Treatment of Solid Waste. The N2O emission factors used for emission calculation purposes are listed below:
+
+- Greenwaste – 0.12 lb/ton
+- Greenwaste, including food – 0.6599 lb/ton 
+- Mixed (greenwaste, manure, etc.) – 1.1997 lbs/ton
+
+##### Emission Calculation {-}
+
+The TOG, ROG, CH4, and N2O annual emissions for an area source (Category 1936) facility were calculated by multiplying the estimated throughput by the respective pollutant emission factor.
+
+#### Monthly Variation {-}
+
+The emissions are assumed to be distributed evenly throughout the year.
+
+#### County Distribution {-}
+
+The county distribution was based on the location as found in the District databank or SWIS data mentioned above.
+
+### Trends
+
+#### History {-}
+
+```{r waste_mgmt-compost-annual_emissions-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category) 
+```
+
+It was assumed composting in the Bay Area began in the mid-1980’s (1985 was used as the starting point). There was limited information in prior years, so it was assumed throughput activity exhibited a linear decrease from 2005 back to 1985. From 2005 – 2008, the growth was based on the Association of Bay Area Government’s (ABAG’s) 2009 Total Population growth profile.
+
+#### Growth {-}
+
+```{r waste_mgmt-compost-annual_growth-chart, fig.height=6, out.height=600}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr) 
+```
+
+Projections to year 2030 were based on the ABAG’s 2009 Total Population growth profile.
+
+#### Control {-}
+
+Currently, there is no District rule regulating emissions from compost facilities. However, there are several facilities in the Bay Area with in-vessel composting where it is assumed there is an overall VOC control efficiency of 90%.
+
+By: Stuart Schultz 
+Date: January 2014 
+Base Year 2011

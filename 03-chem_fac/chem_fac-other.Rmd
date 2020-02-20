@@ -1,0 +1,85 @@
+## All Other Chemical Plants 
+
+- Sulfur and Sulfuric Acid Manufacturing Facilities (#21, #22) 
+- All Other Chemical Plants Point Source Emissions (#26) 
+- Fugitive Emissions at Chemical Plants (#27)
+
+```{r chem_fac-other-setup}
+THESE_CATEGORIES <- c(
+  "#21 Sulfur Mfg (Point)" = 21,
+  "#22 Sulfuric Acid Mfg (Point)" = 22,
+  "#26 All Other Chem Mfg (Point)" = 26,
+  "#27 Fugitive Chem Mfg" = 27)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Category 21 contains emissions from sulfur recovery units and sulfur storage at refineries and chemical plants. Category 22 contains emissions from sulfuric acid storage tanks at refineries and chemical plants. The emissions of concern from these categories are sulfur dioxide. Abatement devices to treat sulfur recovery units' tail gas and sulfur dioxide scrubbers at sulfuric acid manufacturing plants have significantly reduced the amount of sulfur dioxide emitted. The emissions data shows that without the District’s controls, 150 tons per day of sulfur dioxide would have been emitted in to the atmosphere instead of approximately 3 tons per day.
+
+Category 26 contains all other chemical plant point source emissions. Some of these sources include acid manufacturing plants, kiln burners, and specialty chemicals manufacturing plants. Emissions caused by the combustion of fuels at chemical plants are not accounted for in this category.
+
+Category 27 contains fugitive emissions at chemical plants. Components such as valves, flanges, pumps, compressors, and pressure relief valves (PRVs) are potential sources that can leak due to seal failure. These emissions generally occur randomly and are difficult to predict. In addition, these emissions may be intermittent and vary in intensity over time. According to EPA report (EPA-625/10-84-004, Dec. 1984) 35% of the total emissions at the chemical manufacturing facilities are emitted as fugitive emissions.
+
+#### Methodologies {-}
+
+These categories contain both point and area source emissions from chemical plants in the District. Most of the emissions (point sources) from chemical plants are accounted for through our permitting processes, however, Category 27 fugitive emissions (area sources) are not. Fugitive emissions for Category 27 were taken as 35% of the total organic emissions at the chemical manufacturing facilities (Categories 21 through 26) within the District. The number of equipment components was used as throughput.
+
+Emissions for Categories 21, 22, and 26 were obtained from point source data only, as contained in the District's data bank. The District updates the data each year on a source- by-source basis using as input:
+
+1. Process material throughputs as reported annually by the chemical manufacturing companies.
+
+2. Emissions factors (these may be source specific factors reported by the companies through source test results or applicable general factors, i.e. from the EPA).
+
+3. Emissions control factors (device-specific or general - these may be supplied by the companies also).
+
+Criteria pollutants and greenhouse gas emissions, including carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O), are produced in the chemical plant processes. Since these emissions are part of point sources, criteria pollutants as well as greenhouse gas data are obtained from the plant as part of the Bay Area Air District permit renewal process.
+
+#### Monthly Variation and County Distribution {-}
+
+The county, month, and day factors are obtained from the data bank's information on each plant's location, seasonal usage, and days per week of operation.
+
+### Trends
+
+#### History {-}
+
+```{r chem_fac-other-annual_emissions-chart, fig.height=16, out.height=1600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category)
+```
+
+In general, emissions increase as throughputs increase. In addition to usage changes, new installations also increase the emissions. Overall emissions for these categories did not significantly increase in last eight years.
+
+#### Growth {-}
+
+```{r chem_fac-other-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr)
+```
+
+The projected growths in these categories are taken from expected growth in manufacturing employment over the region to the year 2030. The employment data was obtained from the Association of Bay Area Government's (ABAG) 2009 "Projections" reports.
+
+#### Control {-}
+
+```{r chem_fac-other-annual_control-chart}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_control_factors_by(
+    color = pollutant)
+```
+
+The District adopted [Regulation 8, Rule 22](https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-22-valves-and-flanges-at-chemical-plants) on March 5, 1980. The control afforded by this rule is estimated to be 60%, with rule effectiveness at 98% for an overall control rate of 59%. This rule only affects fugitive emissions at chemical manufacturing facilities.
+
+[Regulation 9](https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-inorganic-gaseous-pollutants) also controls non-organic emissions from many of the manufacturing plants in these categories. For example, the District amended [Regulation 9, Rule 1](https://www.baaqmd.gov/~/media/dotgov/files/rules/reg-9-rule-1-sulfur-dioxide/documents/rg0901.pdf?la=en) in 1983, 1992, and 1995 for sulfur dioxide limits at sulfur recovery systems and sulfuric acid plants. Regulation 9 also sets limits on hydrogen sulfide, nitrogen oxides, and carbon monoxide emissions.
+
+By: Tan Dinh
+Date: January 2014
+Base Year: 2011

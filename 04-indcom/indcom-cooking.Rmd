@@ -1,0 +1,76 @@
+## Cooking, Charbroiling, Deep Fat Frying, and Unspecified (Griddles)
+
+```{r indcom-cooking-setup}
+THESE_CATEGORIES <- c(
+  "#28 Charbroilers" = 28,
+  "#1710 Deep Fat Fryers" = 1710,
+  "#1711 Griddles" = 1711)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+This category includes particulate and volatile organic compound (VOC) emissions from the preparation of food for human consumption at eating establishments. Carbon dioxide (CO2), a greenhouse gas, is also emitted from cooking process in these three categories. Restaurant equipment that contributes to these emissions includes charbroilers (Category 29), deep fat fryers (Category 1710) and griddles (Category 1711). Charbroilers can either be conveyorized or under-fire; both types generally use natural gas, however, under-fire charbroilers may use solid fuels, such as charcoal or wood. Deep-fat fryers may be either gas-fired or electric to heat the cooking oil used to cook the food. Griddles use an exposed metal plate, heated by either gas or electricity, to cook the food.
+
+These categories do not include the products of combustion emissions from fuel usage (i.e. natural gas or solid fuels) at these establishments. Those emissions can be found in Categories 307, 1590, or 312.
+
+#### Methodology {-}
+
+The District estimated the number of restaurants in operation in the Bay Area with assistance from each county’s health department. Each county health department provided the number of restaurants permitted within their jurisdiction. The District refined the number of restaurants by eliminating the ones not open to the public, gone out of business, or those that are less likely to cook, such as delicatessens and ice cream parlors.
+
+The District used a 1997 South Coast Air Quality Management District (SCAQMD) report, “Staff Recommendations Regarding Controlling Emissions from Restaurant Operations”, to estimate the number of charbroilers, deep fat fryers, and griddles used in the Bay Area. The SCAQMD report surveyed the type of equipment that was used in restaurant cooking operations in their district boundaries. This report found approximately 33% of the restaurants operates under-fired charbroilers, 4% operate chain-driven charbroilers, 62% operate deep fat fryers, and 52% operate griddles.
+
+The average amount of food cooked on each type of appliance was developed for the California Air Resources Board by the Public Research Institute. Emission factors, developed by the University of California at Riverside and the University of Minnesota, were used to quantify the emissions each type of food cooked on charbroilers, deep fat fryers, and griddles. Total District throughputs for each type of food for each device were calculated by multiplying the amount of food cooked by the number of restaurants with that particular cooking device. Emissions were calculated by multiplying the emission factor by the throughput.
+
+The total organic gas (TOG) emitted from these three categories is considered all reactive (i.e. TOG equals ROG). The PM emissions emitted from these three categories are particulate matter less than 10 microns in size (PM10) since it is assumed all particles larger than 10 microns are captured before the outside exhaust. A portion of these PM10 emissions are in the form of condensable vapors. Condensable are vapors in the gaseous form at entry into the ventilation hood, but may condense into particulate form (i.e. liquid or solid state) in the duct works, as it exits the exhaust fan, or in the atmosphere. At the time of this writing, condensable PM is not included in the particulate calculations for these categories.
+
+#### Monthly Variation {-}
+
+Monthly distribution was estimated based on seasonal variation of each establishment, which is a higher sale during summer months due to longer daylight hours and warmer weather.
+
+#### County Distribution {-}
+
+The number of eating establishments in each county was based on data provided by each of the Bay Area’s county health department. The District refined these numbers of restaurants by eliminating the ones not open to the public, gone out of business, or those that were less likely to cook.
+
+### Trends
+
+#### History {-}
+
+```{r indcom-cooking-annual_emissions-chart, fig.height=12, out.height=1200}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_emissions_by(
+    fill = category)
+```
+
+Emissions back to 1996 were estimated based on historical number of eating establishments in the Bay Area as reported in the “Taxable Sales in California (Sales & Use Tax) publications. Prior to 1996 the emissions were based on ABAG’s 2009 Total Population growth profile.
+
+#### Growth {-}
+
+```{r indcom-cooking-annual_growth-chart, fig.height=6, out.height=600}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_growth_by(
+    color = cnty_abbr)
+```
+
+Projections to year 2030 were based on ABAG’s 2009 Total Population growth profile.
+
+#### Control {-}
+
+```{r indcom-cooking-annual_control-chart}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  BY2011_chart_annual_control_factors_by(
+    color = pollutant)
+```
+
+On December 5, 2007, the District adopted Regulation 6, Rule 2, Commercial Cooking Equipment, to reduce particulate and VOC emissions from commercial cooking equipment. Effective January 1, 2009, chain-driven charbroilers that cook at least 400 pounds of beef per week are required to operate with a certified catalytic oxidizer to control emissions of both PM and VOC. Effective January 1, 2010, any newly installed under-fired charbroiler that has a grill surface area of at least 10 square feet and cooks at least 800 pounds of beef per week will be required to install a control device to reduce PM10 emissions to no more than 1 pound of PM10 per 1000 pounds of beef cooked. . Effective January 1, 2013, any existing restaurant having an under-fired charbroiler that has a grill surface area of at least 10 square feet and cooks at least 800 pounds of beef per week will be required to install a control device to reduce PM10 emissions by the same amount. These charbroilers (chain-driven and under-fired) must also be registered through the District
+
+By: Stuart Schultz 
+Date: January 2014 
+Base Year 2011
