@@ -29,7 +29,7 @@ The county, month, and day factors are obtained from the data bank's information
 
 #### History {-}
 
-```{r petref_fac-vessel_depress-annual_emissions-chart, fig.height=12, out.height=1200}
+```{r petref_fac-vessel_depress-annual_emissions-chart, fig.height=3, out.height=300}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -41,7 +41,7 @@ Emissions for category 20 have been relatively insignificant for last few years,
 
 #### Growth {-}
 
-```{r petref_fac-vessel_depress-annual_growth-chart, fig.height=8, out.height=800}
+```{r petref_fac-vessel_depress-annual_growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -53,12 +53,12 @@ Projected growth for this category is based on the throughput of marine operatio
 
 #### Control {-}
 
-```{r petref_fac-vessel_depress-annual_control-chart, fig.height=8, out.height=800}
+```{r petref_fac-vessel_depress-annual_control-chart, fig.height=3, out.height=300}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
   BY2011_chart_annual_control_factors_by(
-    color = category)
+    color = pollutant)
 ```
 
 The District adopted Regulation 8, Rule 10 on July 20, 1983. Overall control afforded by this rule is estimated to be 95%.
