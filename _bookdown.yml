@@ -7,7 +7,7 @@ rmd_files: [
   "05-waste_mgmt/waste_mgmt.Rmd",
   "06-petprod/petprod.Rmd",
   "07-SS_combust/SS_combust.Rmd",
-  #"08-waste_burn/waste_burn.Rmd",
+  "08-waste_burn/waste_burn.Rmd",
   #"09-mobile_combust/mobile_combust.Rmd",
   "10-misc_other/misc_other.Rmd"]
 before_chapter_script: [
