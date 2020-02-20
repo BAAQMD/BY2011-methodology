@@ -3,7 +3,7 @@ rmd_files: [
   "index.Rmd", 
   "02-petref_fac/petref_fac.Rmd",
   "03-chem_fac/chem_fac.Rmd",
-  #"04-indcom/indcom.Rmd",
+  "04-indcom/indcom.Rmd",
   #"05-waste_mgmt/waste_mgmt.Rmd",
   #"06-petprod/petprod.Rmd",
   #"07-SS_combust/SS_combust.Rmd",
