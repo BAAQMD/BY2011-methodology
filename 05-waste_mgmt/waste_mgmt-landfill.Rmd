@@ -102,7 +102,7 @@ The county fractions were based in the number of closed landfills (not accounted
 
 #### History & Growth {-}
 
-```{r waste_mgmt-landfill-annual_emissions-chart, fig.height=8, out.height=800}
+```{r waste_mgmt-landfill-annual_emissions-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
