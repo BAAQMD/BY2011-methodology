@@ -24,7 +24,7 @@
 <meta name="author" content="David Holstius" />
 
 
-<meta name="date" content="2020-02-20" />
+<meta name="date" content="2020-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,7 @@
 
 <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -71,7 +72,10 @@
 <li><a href="./">BY2011 Methodology</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#purposes"><i class="fa fa-check"></i><b>1.1</b> Purposes</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#potential-enhancements"><i class="fa fa-check"></i><b>1.2</b> Potential Enhancements</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="petref-fac.html"><a href="petref-fac.html"><i class="fa fa-check"></i><b>2</b> Petroleum Refining Facilities</a><ul>
 <li class="chapter" data-level="2.1" data-path="petref-fac.html"><a href="petref-fac.html#general-refinery-emissions"><i class="fa fa-check"></i><b>2.1</b> General Refinery Emissions</a></li>
 <li class="chapter" data-level="2.2" data-path="petref-fac.html"><a href="petref-fac.html#refinery-fugitive-emissions"><i class="fa fa-check"></i><b>2.2</b> Refinery Fugitive Emissions</a></li>
@@ -181,6 +185,7 @@
 <li class="chapter" data-level="10.15" data-path="misc-other.html"><a href="misc-other.html#biogenic"><i class="fa fa-check"></i><b>10.15</b> Biogenic</a></li>
 <li class="chapter" data-level="10.16" data-path="misc-other.html"><a href="misc-other.html#ozone-depleting-substance-ods-substitutes"><i class="fa fa-check"></i><b>10.16</b> Ozone Depleting Substance (ODS) Substitutes</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -263,29 +268,65 @@ Base Year: 2011</p>
 <p>The emission factors for category 1579, in pounds per ton (Lb/Ton) of waste materials combusted are shown below.</p>
 <table>
 <thead>
-<tr class="header">
-<th align="right">category</th>
-<th align="right">CH4</th>
-<th align="right">CO</th>
-<th align="right">CO2_bio</th>
-<th align="right">N2O</th>
-<th align="right">NOx</th>
-<th align="right">PM</th>
-<th align="right">SO2</th>
-<th align="right">TOG</th>
+<tr>
+<th style="text-align:right;">
+category
+</th>
+<th style="text-align:right;">
+CH4
+</th>
+<th style="text-align:right;">
+CO
+</th>
+<th style="text-align:right;">
+CO2_bio
+</th>
+<th style="text-align:right;">
+N2O
+</th>
+<th style="text-align:right;">
+NOx
+</th>
+<th style="text-align:right;">
+PM
+</th>
+<th style="text-align:right;">
+SO2
+</th>
+<th style="text-align:right;">
+TOG
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="right">1579</td>
-<td align="right">1.476</td>
-<td align="right">6.4</td>
-<td align="right">1999</td>
-<td align="right">0.0022</td>
-<td align="right">2.61</td>
-<td align="right">2.69</td>
-<td align="right">0.882</td>
-<td align="right">2.18</td>
+<tr>
+<td style="text-align:right;">
+1579
+</td>
+<td style="text-align:right;">
+1.476
+</td>
+<td style="text-align:right;">
+6.4
+</td>
+<td style="text-align:right;">
+1999
+</td>
+<td style="text-align:right;">
+0.0022
+</td>
+<td style="text-align:right;">
+2.61
+</td>
+<td style="text-align:right;">
+2.69
+</td>
+<td style="text-align:right;">
+0.882
+</td>
+<td style="text-align:right;">
+2.18
+</td>
 </tr>
 </tbody>
 </table>
@@ -297,17 +338,17 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">8.2.2</span> Trends</h3>
 <div id="history-37" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-waste_burn-incineration-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_burn-incineration-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>Historical emission trends followed area population growth.</p>
 </div>
 <div id="growth-42" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-waste_burn-incineration-annual_growth-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_burn-incineration-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>It was assumed that annual emission trends for waste burning would follow population growth in the Bay Area. The population growth data was obtained from the Association of Bay Area Government’s (ABAG’s) 2009 “Projections” reports.</p>
 </div>
 <div id="control-33" class="section level4 unnumbered">
 <h4>Control</h4>
-<p>The District Regulation 9 controls emissions of NOx and SOx from combustion of solids.</p>
+<p>The District <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-inorganic-gaseous-pollutants" title="Regulation 9">Regulation 9</a> controls emissions of NOx and SOx from combustion of solids.</p>
 <p>By: Sukarn Claire
 Date: January 2014
 Base Year: 2011</p>
@@ -324,81 +365,147 @@ Base Year: 2011</p>
 <p>These area source categories estimate criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (Biogenic-CO2, CH4, and N2O) resulting from managed burning of agricultural and forest debris in the San Francisco Bay Area. Categories 315, 316, 317, 318, and 319 account for emissions from open burning of orchard prunings (such as grape vines, apples, and olives), field crops (such as wheat and oats), weeds (such as ditch and canal bank, and marsh burning), range improvement (such as chaparral and grass land burning) and forest debris, respectively.</p>
 <p>Carbon Dioxide emissions from these categories are considered to be biogenic emissions. Biogenic Carbon Dioxide (Bio-CO2) emissions are a subset of total CO2 emissions which are emitted from materials that are derived from living cells, excluding fossil fuels, limestone and other materials that have been transformed by geological processes. Bio- CO2 originates from carbon that is present in materials such as wood, paper, vegetable oils and food, animal, and yard waste.</p>
 </div>
-<div id="methodologies-14" class="section level4 unnumbered">
+<div id="waste_burn-planned_ag-methodology" class="section level4 unnumbered">
 <h4>Methodologies</h4>
 <p>Annual activity or waste material burn information for these categories was obtained from the burn permits issued by the District’s Enforcement Division for each county. Information on amounts of waste materials burned was provided to the District in various units such as acres, tons, pounds, and cubic yards. By applying the crop specific fuel loading factors and other conversion units, all burn activity was converted to tons of material burned per year.</p>
 <p>Emissions were calculated by multiplying the activity (Tons/Year) for a given category by its composite emission factor (Lb/Tons). Composite emission factors were developed using crop specific emission factor data from the California Air Resources Board (CARB) and the Environmental Protection Agency (EPA). Background information for emission factors and fuel loading is explained in the CARB memo, the Agricultural Burning Emission Factors dated August 17, 2000. Emission factors for these categories in pounds per ton (Lb/Ton) are shown below.</p>
-<table>
+<table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="right">category</th>
-<th align="right">CH4</th>
-<th align="right">CO</th>
-<th align="right">CO2_bio</th>
-<th align="right">N2O</th>
-<th align="right">NOx</th>
-<th align="right">PM</th>
-<th align="right">SO2</th>
-<th align="right">TOG</th>
+<tr>
+<th style="text-align:left;">
+category
+</th>
+<th style="text-align:right;">
+PM
+</th>
+<th style="text-align:right;">
+TOG
+</th>
+<th style="text-align:right;">
+NO<sub>x</sub>
+</th>
+<th style="text-align:right;">
+SO<sub>2</sub>
+</th>
+<th style="text-align:right;">
+CO
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="right">315</td>
-<td align="right">0.14</td>
-<td align="right">70.95</td>
-<td align="right">173.84</td>
-<td align="right">0.35</td>
-<td align="right">5.21</td>
-<td align="right">8.740000</td>
-<td align="right">0.17</td>
-<td align="right">11.69</td>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+#315 Prunings
+</td>
+<td style="text-align:right;">
+8.740000
+</td>
+<td style="text-align:right;">
+11.69
+</td>
+<td style="text-align:right;">
+5.21
+</td>
+<td style="text-align:right;">
+0.17
+</td>
+<td style="text-align:right;">
+70.95
+</td>
 </tr>
-<tr class="even">
-<td align="right">316</td>
-<td align="right">5.40</td>
-<td align="right">123.90</td>
-<td align="right">120.80</td>
-<td align="right">0.24</td>
-<td align="right">4.80</td>
-<td align="right">17.790001</td>
-<td align="right">0.60</td>
-<td align="right">24.57</td>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+#316 Field Crops
+</td>
+<td style="text-align:right;">
+17.790001
+</td>
+<td style="text-align:right;">
+24.57
+</td>
+<td style="text-align:right;">
+4.80
+</td>
+<td style="text-align:right;">
+0.60
+</td>
+<td style="text-align:right;">
+123.90
+</td>
 </tr>
-<tr class="odd">
-<td align="right">317</td>
-<td align="right">3.00</td>
-<td align="right">114.00</td>
-<td align="right">120.00</td>
-<td align="right">0.24</td>
-<td align="right">4.82</td>
-<td align="right">16.167000</td>
-<td align="right">0.64</td>
-<td align="right">18.83</td>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+#317 Weed Burning
+</td>
+<td style="text-align:right;">
+16.167000
+</td>
+<td style="text-align:right;">
+18.83
+</td>
+<td style="text-align:right;">
+4.82
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+114.00
+</td>
 </tr>
-<tr class="even">
-<td align="right">318</td>
-<td align="right">4.40</td>
-<td align="right">114.00</td>
-<td align="right">147.30</td>
-<td align="right">0.30</td>
-<td align="right">4.50</td>
-<td align="right">16.180000</td>
-<td align="right">0.60</td>
-<td align="right">18.80</td>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+#318 Range Improvement
+</td>
+<td style="text-align:right;">
+16.180000
+</td>
+<td style="text-align:right;">
+18.80
+</td>
+<td style="text-align:right;">
+4.50
+</td>
+<td style="text-align:right;">
+0.60
+</td>
+<td style="text-align:right;">
+114.00
+</td>
 </tr>
-<tr class="odd">
-<td align="right">319</td>
-<td align="right">5.70</td>
-<td align="right">66.00</td>
-<td align="right">173.84</td>
-<td align="right">0.35</td>
-<td align="right">5.20</td>
-<td align="right">8.120001</td>
-<td align="right">0.10</td>
-<td align="right">11.06</td>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+#319 Forest Management
+</td>
+<td style="text-align:right;">
+8.120001
+</td>
+<td style="text-align:right;">
+11.06
+</td>
+<td style="text-align:right;">
+5.20
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+66.00
+</td>
 </tr>
 </tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;"><br></span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<sup></sup> Emission factors (pounds per unit throughput).
+</td>
+</tr>
+</tfoot>
 </table>
 <div id="sample-equations" class="section level5 unnumbered">
 <h5>Sample Equations</h5>
@@ -435,12 +542,12 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">8.3.2</span> Trends</h3>
 <div id="history-38" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-waste_burn-planned_ag-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_burn-planned_ag-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>The 1981 emissions and tonnage burned data was used to develop emission factors for base years 1987 and 1990. Prior to base year 2002, historical emission trends were based on Agriculture Dollar Output.</p>
 </div>
 <div id="growth-43" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-waste_burn-planned_ag-annual_growth-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_burn-planned_ag-annual_growth-chart-1.svg" width="800" height="800" /></p>
 <p>Emission projections are based on previous five year average activity for each category.</p>
 <p>By: Sukarn Claire
 Date: January 2014

@@ -24,7 +24,7 @@
 <meta name="author" content="David Holstius" />
 
 
-<meta name="date" content="2020-02-20" />
+<meta name="date" content="2020-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,7 @@
 
 <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -71,7 +72,10 @@
 <li><a href="./">BY2011 Methodology</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#purposes"><i class="fa fa-check"></i><b>1.1</b> Purposes</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#potential-enhancements"><i class="fa fa-check"></i><b>1.2</b> Potential Enhancements</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="petref-fac.html"><a href="petref-fac.html"><i class="fa fa-check"></i><b>2</b> Petroleum Refining Facilities</a><ul>
 <li class="chapter" data-level="2.1" data-path="petref-fac.html"><a href="petref-fac.html#general-refinery-emissions"><i class="fa fa-check"></i><b>2.1</b> General Refinery Emissions</a></li>
 <li class="chapter" data-level="2.2" data-path="petref-fac.html"><a href="petref-fac.html#refinery-fugitive-emissions"><i class="fa fa-check"></i><b>2.2</b> Refinery Fugitive Emissions</a></li>
@@ -181,6 +185,7 @@
 <li class="chapter" data-level="10.15" data-path="misc-other.html"><a href="misc-other.html#biogenic"><i class="fa fa-check"></i><b>10.15</b> Biogenic</a></li>
 <li class="chapter" data-level="10.16" data-path="misc-other.html"><a href="misc-other.html#ozone-depleting-substance-ods-substitutes"><i class="fa fa-check"></i><b>10.16</b> Ozone Depleting Substance (ODS) Substitutes</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -203,20 +208,38 @@
 <div id="header">
 <h1 class="title">BY2011 Methodology</h1>
 <p class="author"><em>David Holstius</em></p>
-<p class="date"><em>2020-02-20</em></p>
+<p class="date"><em>2020-02-21</em></p>
 </div>
 <div id="introduction" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>This is a reproduction of the BY2011 Methodology Report, with several enhancements:</p>
+<p>This is an enhanced reproduction of the BY2011 Methodology Report, featuring:</p>
 <ul>
-<li>Charts and tables woven throughout the text.</li>
-<li>Equations (ex: <a href="indcom.html#wineries-fermentation-methodology">Wineries/Breweries</a>).</li>
-<li>Linked references to rules &amp; regulations (ex: <a href="chem-fac.html#chem_fac-other-control">Chemical Manufacturing</a>).</li>
+<li><p><strong>Charts</strong> to illustrate historical emissions, control profiles, and growth profiles;</p></li>
+<li><p><strong>Tables</strong> with footnotes, dynamic calculations, and values pulled directly from BY2011 data (examples: <a href="misc-other.html#misc_other-fires-struct-methodology">Structural Fires</a>, <a href="waste-burn.html#waste_burn-planned_ag-methodology">Waste Burning</a>, and <a href="misc-other.html#misc_other-animal_waste-livestock-methodology">Animal Waste</a>);</p></li>
+<li><p><strong>Equations</strong> with rich formatting (examples: <a href="misc-other.html#misc_other-roads-paved-methodology">Paved Roads</a> and <a href="misc-other.html#cat_749-methodology">Farming Operations</a>); and</p></li>
+<li><p>Linked <strong>references</strong> to rules &amp; regulations (example: <a href="chem-fac.html#chem_fac-other-control">Chemical Manufacturing</a>).</p></li>
 </ul>
-<p>It’s a work in progress, but very useful. There are stubs for many sections in <a href="indcom.html#indcom">Chapter 4</a>, <a href="petprod.html#petprod">Chapter 6</a>, and <a href="mobile-combust.html#mobile_combust">Chapter 9</a>. However, the other seven chapters have lots of good content!</p>
-<p>A forked and modified copy can serve as the initial BY2015 Methodology Report.</p>
-<p>More features can of course be added (ex: tables of county fractions) to existing sections (and stubs).</p>
+<div id="purposes" class="section level2">
+<h2><span class="header-section-number">1.1</span> Purposes</h2>
+<p>It has two main purposes:</p>
+<ul>
+<li><p><strong>Understanding.</strong> It’s a work in progress, but very useful for understanding the BY2011 inventory. There are stubs for many sections in <a href="indcom.html#indcom">Chapter 4</a>, <a href="petprod.html#petprod">Chapter 6</a>, and <a href="mobile-combust.html#mobile_combust">Chapter 9</a>. However, the other seven chapters have lots of good content.</p></li>
+<li><p><strong>BY2015.</strong> A forked and modified copy can serve as the initial BY2015 Methodology Report.</p></li>
+</ul>
+</div>
+<div id="potential-enhancements" class="section level2">
+<h2><span class="header-section-number">1.2</span> Potential Enhancements</h2>
+<ul>
+<li>Add tables or visualizations of county fractions.</li>
+<li>Add more internal cross-references.</li>
+<li>Finish hyperlinking to BAAQMD rules &amp; regulations.</li>
+<li>Add hyperlinking to external documents (reports, etc.).</li>
+<li>Create a Bibliography (bookdown has good support for this).</li>
+<li>Add an Appendix with supplementary datasets (e.g. CEC natural gas consumption).</li>
+<li>Add an Appendix showcasing major changes from the previous inventory.</li>
+</ul>
 
+</div>
 </div>
             </section>
 

@@ -24,7 +24,7 @@
 <meta name="author" content="David Holstius" />
 
 
-<meta name="date" content="2020-02-20" />
+<meta name="date" content="2020-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,7 @@
 
 <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -71,7 +72,10 @@
 <li><a href="./">BY2011 Methodology</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#purposes"><i class="fa fa-check"></i><b>1.1</b> Purposes</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#potential-enhancements"><i class="fa fa-check"></i><b>1.2</b> Potential Enhancements</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="petref-fac.html"><a href="petref-fac.html"><i class="fa fa-check"></i><b>2</b> Petroleum Refining Facilities</a><ul>
 <li class="chapter" data-level="2.1" data-path="petref-fac.html"><a href="petref-fac.html#general-refinery-emissions"><i class="fa fa-check"></i><b>2.1</b> General Refinery Emissions</a></li>
 <li class="chapter" data-level="2.2" data-path="petref-fac.html"><a href="petref-fac.html#refinery-fugitive-emissions"><i class="fa fa-check"></i><b>2.2</b> Refinery Fugitive Emissions</a></li>
@@ -181,6 +185,7 @@
 <li class="chapter" data-level="10.15" data-path="misc-other.html"><a href="misc-other.html#biogenic"><i class="fa fa-check"></i><b>10.15</b> Biogenic</a></li>
 <li class="chapter" data-level="10.16" data-path="misc-other.html"><a href="misc-other.html#ozone-depleting-substance-ods-substitutes"><i class="fa fa-check"></i><b>10.16</b> Ozone Depleting Substance (ODS) Substitutes</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -229,12 +234,12 @@
 <h3><span class="header-section-number">5.1.2</span> Trends</h3>
 <div id="history-17" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-POTWs-annual_emissions-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-POTWs-annual_emissions-chart-1.svg" width="800" height="800" /></p>
 <p>The historical growth profile for Category 50 was based on a combination of prior emissions data (back to 1990) and the Association of Bay Area Government’s (ABAG’s) 2009 Total Population data. The historical growth profile for Category 1911 was based on ABAG’s 2009 Total Population data.</p>
 </div>
 <div id="growth-17" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-POTWs-annual_growth-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-POTWs-annual_growth-chart-1.svg" width="800" height="600" /></p>
 <p>Projections to year 2030 for both categories were based on ABAG’s 2009 Total Population growth profile.</p>
 <p>By: Stuart Schultz
 Date: January 2014
@@ -323,7 +328,7 @@ Base Year 2011</p>
 <h3><span class="header-section-number">5.2.2</span> Trends</h3>
 <div id="history-growth" class="section level4 unnumbered">
 <h4>History &amp; Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-landfill-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-landfill-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>Category Nos. 1157 and 1158’s historical and projected growth factors were based on the following:</p>
 <ul>
 <li>Association of Bay Area Government’s (ABAG’s) Population growth profile,</li>
@@ -331,7 +336,7 @@ Base Year 2011</p>
 <li>Per capita waste generation, and</li>
 <li>Overall collection efficiency of the landfill gas.</li>
 </ul>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-landfill-annual_growth_factor_data-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-landfill-annual_growth_factor_data-1.svg" width="800" height="800" /></p>
 <p>As mentioned previously, prior to the mid-1960’s, it was assumed 60% of the waste was buried in landfills (point source) and 40% of the waste was burned on-site, as in backyard incinerators. By 1999, it was assumed that 90% of the cumulative waste generation was attributed to point sources, and the remaining 10% was attributed to area sources. By 2030, it is assumed the point source percentage will increase linearly to 97.75% and the area source percentage will decrease linearly to 2.25%</p>
 <p>Since the State of California passed a mandate (Assembly Bill 939) that required a reduction in waste generation, per capita waste generation in the District has decreased. Until 1990, this factor was approximately 1.32 tons/person/year; in 2008, it had decreased to 0.79 tons/person/yr. By 2030, it is assumed the per capita waste generation in the District will decrease linearly to 0.70 tons/person/year.</p>
 <p>In addition to what was previously mentioned, Categories Nos. 1686 and 1687 historical and projected growth factors were based on the following:</p>
@@ -339,7 +344,7 @@ Base Year 2011</p>
 </div>
 <div id="control-13" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-landfill-annual_control_factor_data-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-landfill-annual_control_factor_data-1.svg" width="800" height="600" /></p>
 <p>Currently, Regulation 8, Rule 34 (Solid Waste Disposal Sites) requires that certain landfills process landfill gases through a gas collection and emission control system such that:</p>
 <ol style="list-style-type: decimal">
 <li><p>There are no leaks that exceed 1000 PPM by volume measured as methane at any component or connector of the landfill gas collection system; and</p></li>
@@ -382,12 +387,12 @@ Base Year 2011</p>
 <h3><span class="header-section-number">5.3.2</span> Trends</h3>
 <div id="history-18" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-land_farm-annual_emissions-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-land_farm-annual_emissions-chart-1.svg" width="800" height="600" /></p>
 <p>Until the early 1990’s, land farming consisted of wastes more from the industrial sector. Most of these industrial wastes are now transported outside the District to be spread on the land. Prior to 1990, the growth was based on the ABAG’s 2009 Manufacturing Employment growth profile. Between 1990 and 1993 growth was interpolated.</p>
 </div>
 <div id="growth-18" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-land_farm-annual_growth-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-land_farm-annual_growth-chart-1.svg" width="800" height="600" /></p>
 <p>Emissions after 1993 are assumed to grow at a rate similar to the population as provided by ABAG’s 2009 Population growth profile.</p>
 <p>By: Stuart Schultz
 Date: January 2014
@@ -421,12 +426,12 @@ Base Year 2011</p>
 <h3><span class="header-section-number">5.4.2</span> Trends</h3>
 <div id="history-19" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-other-annual_emissions-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-other-annual_emissions-chart-1.svg" width="800" height="600" /></p>
 <p>The historical growth profile was based on a combination of prior emissions data (back to 2005) and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing Employment growth profile.</p>
 </div>
 <div id="growth-19" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-other-annual_growth-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-other-annual_growth-chart-1.svg" width="800" height="600" /></p>
 <p>Projections to year 2030 were also based on ABAG’s 2009 Manufacturing Employment growth profile.</p>
 <p>By: Stuart Schultz
 Date: February 2011
@@ -515,12 +520,12 @@ The throughput and emissions factors (TOG, ROG, and GHG) estimates were develope
 <h3><span class="header-section-number">5.5.2</span> Trends</h3>
 <div id="history-20" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-compost-annual_emissions-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-compost-annual_emissions-chart-1.svg" width="800" height="600" /></p>
 <p>It was assumed composting in the Bay Area began in the mid-1980’s (1985 was used as the starting point). There was limited information in prior years, so it was assumed throughput activity exhibited a linear decrease from 2005 back to 1985. From 2005 – 2008, the growth was based on the Association of Bay Area Government’s (ABAG’s) 2009 Total Population growth profile.</p>
 </div>
 <div id="growth-20" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-compost-annual_growth-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/waste_mgmt-compost-annual_growth-chart-1.svg" width="800" height="600" /></p>
 <p>Projections to year 2030 were based on the ABAG’s 2009 Total Population growth profile.</p>
 </div>
 <div id="control-14" class="section level4 unnumbered">

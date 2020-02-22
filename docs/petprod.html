@@ -24,7 +24,7 @@
 <meta name="author" content="David Holstius" />
 
 
-<meta name="date" content="2020-02-20" />
+<meta name="date" content="2020-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,7 @@
 
 <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -71,7 +72,10 @@
 <li><a href="./">BY2011 Methodology</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#purposes"><i class="fa fa-check"></i><b>1.1</b> Purposes</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#potential-enhancements"><i class="fa fa-check"></i><b>1.2</b> Potential Enhancements</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="petref-fac.html"><a href="petref-fac.html"><i class="fa fa-check"></i><b>2</b> Petroleum Refining Facilities</a><ul>
 <li class="chapter" data-level="2.1" data-path="petref-fac.html"><a href="petref-fac.html#general-refinery-emissions"><i class="fa fa-check"></i><b>2.1</b> General Refinery Emissions</a></li>
 <li class="chapter" data-level="2.2" data-path="petref-fac.html"><a href="petref-fac.html#refinery-fugitive-emissions"><i class="fa fa-check"></i><b>2.2</b> Refinery Fugitive Emissions</a></li>
@@ -181,6 +185,7 @@
 <li class="chapter" data-level="10.15" data-path="misc-other.html"><a href="misc-other.html#biogenic"><i class="fa fa-check"></i><b>10.15</b> Biogenic</a></li>
 <li class="chapter" data-level="10.16" data-path="misc-other.html"><a href="misc-other.html#ozone-depleting-substance-ods-substitutes"><i class="fa fa-check"></i><b>10.16</b> Ozone Depleting Substance (ODS) Substitutes</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -246,7 +251,7 @@ contains information submitted by the individual refinery by tank sources. Area 
 <h3><span class="header-section-number">6.1.2</span> Trends</h3>
 <div id="history-21" class="section level4">
 <h4><span class="header-section-number">6.1.2.1</span> History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-petref-storage-annual_emissions-chart-1.png" width="700" height="600" />
+<p><img src="BY2011-methodology_files/figure-html/petprod-petref-storage-annual_emissions-chart-1.svg" width="800" height="600" />
 Historical emissions have varied with refinery throughputs.</p>
 </div>
 <div id="growth-21" class="section level4">
@@ -255,7 +260,7 @@ Historical emissions have varied with refinery throughputs.</p>
 </div>
 <div id="control-15" class="section level4">
 <h4><span class="header-section-number">6.1.2.3</span> Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-petref-storage-annual_control-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-petref-storage-annual_control-chart-1.svg" width="800" height="1200" /></p>
 <p>Regulation 8 Rule 5 controls emissions from the storage of organic liquids. Control efficiencies are estimated to range from 17% to 96%, depending on the type of tank, percentage of sources with true vapor pressures above 0.5 psi, and average true vapor pressure of the corresponding category. The following table show the control and rule efficiencies. (Sources with true vapor pressure greater than 0.5 psi are affected by this rule.)</p>
 <p><strong>FIXME: TABLE OMITTED</strong></p>
 <p>By: Tan Dinh
@@ -312,14 +317,14 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">6.3.2</span> Trends</h3>
 <div id="history-22" class="section level4">
 <h4><span class="header-section-number">6.3.2.1</span> History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-NG_distrib-annual_emissions-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-NG_distrib-annual_emissions-chart-1.svg" width="800" height="600" /></p>
 <p>In general, emissions increase as activity increases and emissions decrease as activity decreases. In recent years, emissions for category #868 have been increasing, while emissions for category #61 have been on the decrease due to PG&amp;E’s divestments in power plants.</p>
 <p>For Base Year 1983, all natural gas distribution losses were handled as a single category which had been designated as Category #43. The category has been subsequently split into two categories (#61 and #868) since Base Year 1987.</p>
 <p>For Category #61 up to base year 2008, it was assumed that annual emissions would tend to follow two components: services industry employment and population by county in the District. As such, a hybrid growth profile was developed based on 50% of the appropriate county services industry employment value and 50% of the appropriate county population value in combination with CEC’s natural gas data. For Category #868 up to base year 2008, it was assumed that annual emissions would tend to follow: manufacturing industry employment and population by county in the District in combination with CEC’s natural gas consumption forecasts. As such, a hybrid growth profile was developed based on 50% of the appropriate county manufacturing industry employment value and 50% of the appropriate county population value in combination with CEC’s natural gas data. For previous forecasts, the employment and population data was obtained from the Association of Bay Area Government’s (ABAG’s) 2009 “Projections” reports.</p>
 </div>
 <div id="growth-22" class="section level4">
 <h4><span class="header-section-number">6.3.2.2</span> Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-NG_distrib-annual_growth-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-NG_distrib-annual_growth-chart-1.svg" width="800" height="600" /></p>
 <p>Annual demand for natural gas varies in response to business conditions and annual temperatures but has been generally declining or flat over recent years. This is due in part to historically low number of heating degree days and building and appliance efficiency standards, utility and public agency programs, and price and other effects. This trend is projected to continue with a population growth at a faster rate than total demand for natural gas.</p>
 <p>By: S. Claire
 Date: January 2014
@@ -353,17 +358,17 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">6.4.2</span> Trends</h3>
 <div id="history-23" class="section level4">
 <h4><span class="header-section-number">6.4.2.1</span> History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-tanks-annual_emissions-chart-1.png" width="700" height="400" />
+<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-tanks-annual_emissions-chart-1.svg" width="800" height="400" />
 Historical data was based on past years gasoline consumption in the Bay Area. The estimated gasoline consumption was obtained from California Taxable Gasoline Sales.</p>
 </div>
 <div id="growth-23" class="section level4">
 <h4><span class="header-section-number">6.4.2.2</span> Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-tanks-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-tanks-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>The reported year-to-year variation in emissions is due to changes in either the volume of materials put through the storage tank, or in the composition of the organic liquids stored. Projections are based on future gasoline consumption in the Bay Area.</p>
 </div>
 <div id="control-16" class="section level4">
 <h4><span class="header-section-number">6.4.2.3</span> Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-tanks-annual_control-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-tanks-annual_control-chart-1.svg" width="800" height="400" /></p>
 <p>Emissions were reduced due to the effect of Regulation 8 Rule 5, amended on October 18, 2006. This rule requires reducing emissions of organic liquid loaded from loading operations at terminals and bulk plants.</p>
 <p>On April 15, 2009, the District amended the Regulation 8, Rule 39 (Gasoline Bulk Plants). The amendments include a requirement to minimize the release of organic compounds during maintenance and repair operations, and a reduction in the allowable backpressure in new vapor recovery system piping.</p>
 <p>By: Michael Nguyen
@@ -398,17 +403,17 @@ Base Year 2011</p>
 <h3><span class="header-section-number">6.5.2</span> Trends</h3>
 <div id="history-24" class="section level4">
 <h4><span class="header-section-number">6.5.2.1</span> History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-other-annual_emissions-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-other-annual_emissions-chart-1.svg" width="800" height="400" /></p>
 <p>Historical data was based on past years gasoline consumption obtained from California Taxable Gasoline Sales in the Bay Area. Prior to 1999 Base Year source inventory, this category had been included from storage tank at bulk plants and terminals categories.</p>
 </div>
 <div id="growth-24" class="section level4">
 <h4><span class="header-section-number">6.5.2.2</span> Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-other-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-other-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>The reported year-to-year variation in emissions is due to changes in either the volume of materials put through the storage tank, or in the composition of the organic liquids stored. There is no data available to project emissions for this category. Therefore, projected emissions are assumed to grow at the rate of 0.5% per year.</p>
 </div>
 <div id="control-17" class="section level4">
 <h4><span class="header-section-number">6.5.2.3</span> Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-other-annual_control-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-bulk_term-other-annual_control-chart-1.svg" width="800" height="400" /></p>
 <p>Emissions were reduced due to the effect of Regulation 8 Rule 6, amended in March 1982 The amended rules require reducing emissions of organic liquid loaded from loading operations at terminals and bulk plants.</p>
 <p>By: Michael Nguyen
 Date: January, 2014
@@ -442,17 +447,17 @@ Base Year 2011</p>
 <h3><span class="header-section-number">6.6.2</span> Trends</h3>
 <div id="history-25" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-gasoline-truck_load-annual_emissions-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-gasoline-truck_load-annual_emissions-chart-1.svg" width="800" height="400" /></p>
 <p>Historical emission data was based on past years Bay Area gasoline consumption. The estimated gasoline consumption was obtained from California Taxable Gasoline Sales, Board of Equalization.</p>
 </div>
 <div id="growth-25" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-gasoline-truck_load-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-gasoline-truck_load-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Projections are based on future gasoline consumption in the Bay Area.</p>
 </div>
 <div id="control-18" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-gasoline-truck_load-annual_control-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-gasoline-truck_load-annual_control-chart-1.svg" width="800" height="400" /></p>
 <p>Truck loading emissions were reduced due to the effect of Regulation 8 Rule 39, adopted on October 7, 1987 and Regulation 8 Rule 33, adopted on November 30, 1983. Regulation 8 Rule 33 requires to reduce emissions of precursor organic compounds from gasoline transfer operations at gasoline bulk terminals and delivery vehicles (Cat # 898). Regulation 8 Rule 39 requires to reduce emissions of precursor organic compounds from gasoline transfer operations at gasoline bulk plants and delivery vehicles (Cat # 64).</p>
 <p>On April 15, 2009, the District amended the Regulation 8, Rule 33 (Gasoline Bulk Terminals) and Regulation 8, Rule 39 (Gasoline Bulk Plants). The amendments include a requirement to minimize the release of organic compounds during maintenance and repair operations, and a reduction in the allowable backpressure in new vapor recovery system piping.</p>
 <p>By: Michael Nguyen
@@ -499,12 +504,12 @@ Base Year 2011</p>
 <h3><span class="header-section-number">6.7.2</span> Trends</h3>
 <div id="history-26" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-gasoline-truck_transport-annual_emission-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-gasoline-truck_transport-annual_emission-chart-1.svg" width="800" height="400" /></p>
 <p>Prior to 1999 Base Year, taxable gasoline sales for California obtained from the Board of Equalization were assumed to distribute to all gasoline filling stations.</p>
 </div>
 <div id="growth-26" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-gasoline-truck_transport-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-gasoline-truck_transport-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Gasoline consumption in 2007 reached record levels. However, the gasoline consumption decreased slightly during the economic recession in 2008 - 2010. Projections are based on future gasoline consumption in the Bay Area. Projections are based on future gasoline consumption in the Bay Area.</p>
 <p>By: Michael Nguyen
 Date: January, 2014
@@ -538,18 +543,18 @@ Base Year 2011</p>
 <h3><span class="header-section-number">6.8.2</span> Trends</h3>
 <div id="history-27" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-spillage-annual_emission-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-spillage-annual_emission-chart-1.svg" width="800" height="400" /></p>
 <p>Historical emissions were based on past years Bay Area gasoline consumption. Prior to 1990 Base Year, taxable gasoline sales for California obtained from the Board of Equalization were assumed to distribute to all gasoline filling stations in California. ARB estimated that Bay Area consumed 20.01% of this state total. The emissions for this category were determined according to this estimated throughput.</p>
 </div>
 <div id="growth-27" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-spillage-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-spillage-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Gasoline consumption in 2007 reached record levels. However, the gasoline consumption decreased slightly during the economic recession in 2008 - 2010. Projections are based on future gasoline consumption in the Bay Area.</p>
 <p>The Air Resources Board (ARB) is in the process of updating the emission factors for GDFs’ categories: gasoline storage and transfer operations from cargo tank trucks to GDFs and from GDFs to vehicles, fuel containers, and gasoline-powered equipment. With the current requirements of the CARB’s Phase II Vapor recovery systems regulations, the GDF categories’ emissions will be greatly reduced for forecasted emission years.</p>
 </div>
 <div id="control-19" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-spillage-annual_control_factor_data-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-spillage-annual_control_factor_data-1.svg" width="800" height="400" /></p>
 <p>Emissions were reduced due to the improvement of vapor recovery nozzle in Phase II Gasoline Dispensing Facilities. Regulation 8 rule 7 does not specify emission reduction for this category. However, the improvement of the vapor recovery nozzles reduces spillage at vehicle filling services stations.</p>
 <p>By: Michael Nguyen
 Date: January, 2014
@@ -584,17 +589,17 @@ Base Year 2011</p>
 <h3><span class="header-section-number">6.9.2</span> Trends</h3>
 <div id="history-28" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-storage-annual_emissions-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-storage-annual_emissions-chart-1.svg" width="800" height="600" /></p>
 <p>Emissions for these categories had been reduced due to Phase I and II vapor balance system requirements since 1975. Prior to 1990 Base Year, taxable gasoline sales for California obtained from the Board of Equalization were assumed to distribute to all gasoline filling stations in the California. ARB estimated that Bay Area consumed 20.01% of this state total. The emissions for this category were determined according to this estimated throughput.</p>
 </div>
 <div id="growth-28" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-storage-annual_growth-chart-1.png" width="700" height="1200" />
+<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-storage-annual_growth-chart-1.svg" width="800" height="1200" />
 Gasoline consumption in 2007 reached record levels. However, the gasoline consumption decreased slightly during the economic recession in 2008 - 2010. Projections are based on future gasoline consumption in the Bay Area.</p>
 </div>
 <div id="control-20" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-storage-annual_control-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petprod-GDF-storage-annual_control-chart-1.svg" width="800" height="1200" /></p>
 <p>Emissions were reduced due to the effect of Regulation 8, Rule 7, Phase II requirements and the following actions:</p>
 <ul>
 <li>In July 1976, California Health &amp; Safety Code required CARB certified 90% Phase II gasoline dispensing facilities.</li>

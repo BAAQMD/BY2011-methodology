@@ -24,7 +24,7 @@
 <meta name="author" content="David Holstius" />
 
 
-<meta name="date" content="2020-02-20" />
+<meta name="date" content="2020-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,7 @@
 
 <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -71,7 +72,10 @@
 <li><a href="./">BY2011 Methodology</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#purposes"><i class="fa fa-check"></i><b>1.1</b> Purposes</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#potential-enhancements"><i class="fa fa-check"></i><b>1.2</b> Potential Enhancements</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="petref-fac.html"><a href="petref-fac.html"><i class="fa fa-check"></i><b>2</b> Petroleum Refining Facilities</a><ul>
 <li class="chapter" data-level="2.1" data-path="petref-fac.html"><a href="petref-fac.html#general-refinery-emissions"><i class="fa fa-check"></i><b>2.1</b> General Refinery Emissions</a></li>
 <li class="chapter" data-level="2.2" data-path="petref-fac.html"><a href="petref-fac.html#refinery-fugitive-emissions"><i class="fa fa-check"></i><b>2.2</b> Refinery Fugitive Emissions</a></li>
@@ -181,6 +185,7 @@
 <li class="chapter" data-level="10.15" data-path="misc-other.html"><a href="misc-other.html#biogenic"><i class="fa fa-check"></i><b>10.15</b> Biogenic</a></li>
 <li class="chapter" data-level="10.16" data-path="misc-other.html"><a href="misc-other.html#ozone-depleting-substance-ods-substitutes"><i class="fa fa-check"></i><b>10.16</b> Ozone Depleting Substance (ODS) Substitutes</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -224,18 +229,18 @@ Throughput data for small bakeries was based on a survey regarding the large bak
 <h3><span class="header-section-number">4.1.2</span> Trends</h3>
 <div id="history-7" class="section level4">
 <h4><span class="header-section-number">4.1.2.1</span> History</h4>
-<p><img src="BY2011-methodology_files/figure-html/other_ind_and_com-bakeries-annual_emission_data-1.png" width="700" height="800" /></p>
-<p>Historical emissions were estimated using actual throughputs and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing and Wholesale Employment growth profile. District Regulation 8, Rule 42 set standards for new and modified bakery ovens on large commercial bakeries effective January of 1989.</p>
+<p><img src="BY2011-methodology_files/figure-html/other_ind_and_com-bakeries-annual_emission_data-1.svg" width="800" height="800" /></p>
+<p>Historical emissions were estimated using actual throughputs and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing and Wholesale Employment growth profile. District <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-42-large-commercial-bread-bakeries">Regulation 8, Rule 42</a> set standards for new and modified bakery ovens on large commercial bakeries effective January of 1989.</p>
 </div>
 <div id="growth-7" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/other_ind_and_com-bakeries-annual_growth_factor_data-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/other_ind_and_com-bakeries-annual_growth_factor_data-1.svg" width="800" height="400" /></p>
 <p>Emissions projections to 2030 were also based on ABAG’s 2009 Manufacturing and Wholesale Employment growth profile.</p>
 </div>
 <div id="control-6" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/other_ind_and_com-bakeries-annual_control_factor_data-1.png" width="700" height="400" /></p>
-<p>District Regulation 8, Rule 42 was amended requiring control equipment for existing ovens, which commenced operation prior to January 1989. This became effective beginning January 1992. Currently, there is an estimated 82% overall control (for large bakeries) on TOG emissions because of this rule.</p>
+<p><img src="BY2011-methodology_files/figure-html/other_ind_and_com-bakeries-annual_control_factor_data-1.svg" width="800" height="400" /></p>
+<p>District <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-42-large-commercial-bread-bakeries" title="Regulation 8, Rule 42">Regulation 8-42</a> was amended requiring control equipment for existing ovens, which commenced operation prior to January 1989. This became effective beginning January 1992. Currently, there is an estimated 82% overall control (for large bakeries) on TOG emissions because of this rule.</p>
 <p>By: Stuart Schultz
 Date: October 2013
 Base Year 2011</p>
@@ -272,17 +277,17 @@ Base Year 2011</p>
 <h3><span class="header-section-number">4.2.2</span> Trends</h3>
 <div id="history-8" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-cooking-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-cooking-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>Emissions back to 1996 were estimated based on historical number of eating establishments in the Bay Area as reported in the “Taxable Sales in California (Sales &amp; Use Tax) publications. Prior to 1996 the emissions were based on ABAG’s 2009 Total Population growth profile.</p>
 </div>
 <div id="growth-8" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-cooking-annual_growth-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-cooking-annual_growth-chart-1.svg" width="800" height="600" /></p>
 <p>Projections to year 2030 were based on ABAG’s 2009 Total Population growth profile.</p>
 </div>
 <div id="control-7" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-cooking-annual_control-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-cooking-annual_control-chart-1.svg" width="800" height="400" /></p>
 <p>On December 5, 2007, the District adopted Regulation 6, Rule 2, Commercial Cooking Equipment, to reduce particulate and VOC emissions from commercial cooking equipment. Effective January 1, 2009, chain-driven charbroilers that cook at least 400 pounds of beef per week are required to operate with a certified catalytic oxidizer to control emissions of both PM and VOC. Effective January 1, 2010, any newly installed under-fired charbroiler that has a grill surface area of at least 10 square feet and cooks at least 800 pounds of beef per week will be required to install a control device to reduce PM10 emissions to no more than 1 pound of PM10 per 1000 pounds of beef cooked. . Effective January 1, 2013, any existing restaurant having an under-fired charbroiler that has a grill surface area of at least 10 square feet and cooks at least 800 pounds of beef per week will be required to install a control device to reduce PM10 emissions by the same amount. These charbroilers (chain-driven and under-fired) must also be registered through the District</p>
 <p>By: Stuart Schultz
 Date: January 2014
@@ -328,12 +333,12 @@ C_{6}H_{12}O_{6} + \text{yeast} \rightarrow 2\ C_{2}H_{5}OH + 2\ CO_{2}
 <h3><span class="header-section-number">4.3.2</span> Trends</h3>
 <div id="history-9" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-wineries-fermentation-annual_emissions-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-wineries-fermentation-annual_emissions-chart-1.svg" width="800" height="400" /></p>
 <p>Prior to Base Year 2005, the throughput had been obtained from the “Final Grape Crush Report” published by the California Department of Food and Agriculture. Although phylloxera bugs attack vine rootstock, the wine production in vineyards increased at moderate rate in 1996. ARB revised Winery methodology in September 2004 to reflect current wine production in California. The historical throughput data between 2004 and 2010 were obtained from the Wine Institute located in San Francisco</p>
 </div>
 <div id="growth-9" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-wineries-fermentation-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-wineries-fermentation-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Past and future projection of emissions was based on the food manufacturing industries taken from ABAG’s 2009 Projections report.</p>
 <p>By: Michael Nguyen
 Date: January, 2014
@@ -369,12 +374,12 @@ Base Year 2011</p>
 <h3><span class="header-section-number">4.4.2</span> Trends</h3>
 <div id="history-10" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-wineries-aging-annual_emissions-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-wineries-aging-annual_emissions-chart-1.svg" width="800" height="400" /></p>
 <p>From 1980 to 1987, estimated emissions were based on the summary report of the number of alcoholic production facilities in California published by U.S. Department of Census. The number of alcoholic production facilities had been reduced in Santa Clara County due to increasing new electronic manufacturers and housing development. However, grape production has increased since 1988; therefore, emissions were estimated to be at constant level during 1988-1990. In 1993, grape crush was down approximately 7 % from the 1992 crush, and 7 % less than the record-large 1982 crush of 3,115,531 tons. Emissions from 1993 to 1998 are assumed to be constant at the 1993 production level.</p>
 </div>
 <div id="growth-10" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-wineries-aging-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-wineries-aging-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Future projection of emissions was based on the food manufacturing industries taken from ABAG’s 2009 Projections report.</p>
 <p>By: Michael Nguyen
 Date: January, 2014
@@ -409,18 +414,18 @@ Base Year 2011</p>
 <h3><span class="header-section-number">4.5.2</span> Trends</h3>
 <div id="history-11" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-food_ag-other-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-food_ag-other-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>The historical growth profile was based on a combination of prior emissions data (back to 1987) and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing &amp; Wholesale Employment data.</p>
 </div>
 <div id="growth-11" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-food_ag-other-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-food_ag-other-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing &amp; Wholesale Employment data.</p>
 </div>
 <div id="control-8" class="section level4 unnumbered">
 <h4>Control</h4>
 <p>Emissions through the years were estimated by using agricultural production data in the District. In 1963-1964 there was at least 50% reduction of particulate emissions from equipment such as coffee roaster and food dryers brought about by the District’s Regulation 6 on visible emissions from the Ringlemann 2 standard. In 1970 there was at least an additional 25% reduction in particulates from the Ringlemann 1 standard. Currently, there is an estimated 98% overall control of particulates from this category.</p>
-<p><img src="BY2011-methodology_files/figure-html/indcom-food_ag-other-annual_control-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-food_ag-other-annual_control-chart-1.svg" width="800" height="400" /></p>
 <p>Emissions through the years were estimated by using agricultural production data in the District. In 1963-1964 there was at least 50% reduction of particulate emissions from equipment such as coffee roaster and food dryers brought about by the District’s Regulation 6 on visible emissions from the Ringlemann 2 standard. In 1970 there was at least an additional 25% reduction in particulates from the Ringlemann 1 standard. Currently, there is an estimated 98% overall control of particulates from this category.</p>
 <p>By: Stuart Schultz
 Date: October 2013
@@ -431,12 +436,6 @@ Base Year 2011</p>
 </div>
 <div id="metallurgical-foundry-forging-operations-fugitive-metal-recycling-shredding-operations-metal-recycling-shredding-operations-fugitive" class="section level2">
 <h2><span class="header-section-number">4.6</span> Metallurgical, Foundry &amp; Forging Operations, Fugitive, Metal Recycling &amp; Shredding Operations, Metal Recycling &amp; Shredding Operations, Fugitive</h2>
-<ul>
-<li>Metallurgical (Incl. Foundry &amp; Forging Operations) (34)</li>
-<li>Foundry &amp; Forging Operations, Fugitive (2221)</li>
-<li>Metal Recycling &amp; Shredding Operations (2222)</li>
-<li>Metal Recycling &amp; Shredding Operations, Fugitive (2223)</li>
-</ul>
 <div id="emissions-11" class="section level3">
 <h3><span class="header-section-number">4.6.1</span> Emissions</h3>
 <div id="introduction-12" class="section level4 unnumbered">
@@ -464,17 +463,17 @@ Base Year 2011</p>
 <h3><span class="header-section-number">4.6.2</span> Trends</h3>
 <div id="history-12" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-metal-annual_emissions-chart-1.png" width="700" height="1600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-metal-annual_emissions-chart-1.svg" width="800" height="1600" /></p>
 <p>The historical growth profiles were based on a combination of prior emissions data and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing Employment growth profile.</p>
 </div>
 <div id="growth-12" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-metal-annual_growth-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-metal-annual_growth-chart-1.svg" width="800" height="800" /></p>
 <p>Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing &amp; Wholesale Employment growth profile.</p>
 </div>
 <div id="control-9" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-metal-annual_control-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-metal-annual_control-chart-1.svg" width="800" height="800" /></p>
 <p>In 1963-1970, the particulate emissions were reduced due to the control imposed by Ringlemann requirements from Regulation 6. Currently, there is an estimated 98.5% overall control of particulates from Category 34 and over 99% for Category 2222.</p>
 <p>On May 1, 2013, Regulation 12, Rule 13 (Miscellaneous Standards of Performance, Foundry and Forging Operations) was passed. For Category 34, organics will be reduced by approximately 42%, beginning May 1, 2015. For Category 2221, this rule will reduce fugitive particulate emissions by approximately 10% through an Emission Minimization Plan, beginning May 1, 2015.</p>
 <p>On May 1, 2013, Regulation 6, Rule 4 (Metal recycling and Shredding Operations) was passed. For Category 2223, this rule will reduce fugitive particulate emissions by approximately 24% through an Emission Minimization Plan, beginning May 1, 2015.</p>
@@ -511,12 +510,12 @@ Base Year 2011</p>
 <h3><span class="header-section-number">4.7.2</span> Trends</h3>
 <div id="history-13" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-wood_products-annual_emission-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-wood_products-annual_emission-chart-1.svg" width="800" height="400" /></p>
 <p>The historical growth profile was based on a combination of prior permit data (back to 1990) and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing Employment growth profile.</p>
 </div>
 <div id="growth-13" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-wood_products-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-wood_products-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing and Wholesale Employment growth profile.</p>
 <p>By: Stuart Schultz
 Date: November 2013
@@ -553,22 +552,21 @@ Base Year 2011</p>
 <h3><span class="header-section-number">4.8.2</span> Trends</h3>
 <div id="history-14" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-cement-annual_emission-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-cement-annual_emission-chart-1.svg" width="800" height="1200" /></p>
 <p>The historical growth profile for Category 36 was based on a combination of prior cement kiln throughput data (back to 1987) and the Association of Bay Area Government’s (ABAG’s) 2009 Construction Employment growth profile. The historical growth profile for Categories 1747 - 1750 was based on a combination of prior fuel throughput data (back to 1999) and the Association of Bay Area Government’s (ABAG’s) 2009 Construction Employment growth profile.</p>
 </div>
 <div id="growth-14" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-cement-annual_growth-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-cement-annual_growth-chart-1.svg" width="800" height="1200" /></p>
 <p>Projections of emissions to 2030 in all categories were based on ABAG’s 2009 Construction Employment growth profile.</p>
 </div>
 <div id="control-10" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-cement-annual_control-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-cement-annual_control-chart-1.svg" width="800" height="800" /></p>
 <p>Two federal rules address air emissions from Portland cement manufacturing, namely New Source Performance Standards (NSPS) and National Emission Standard for Hazardous Air Pollutants (NESHAPS). For specific industrial operations (such as cement manufacturing), EPA addresses criteria pollutants from new, modified and reconstructed sources through NSPS. NESHAP address emissions of hazardous air pollutants from both new and existing sources.</p>
-<p>The cement manufacturing operations are subject to District regulations regarding permitting (Regulations 2-1 and 2-2), emissions of toxic or hazardous compounds (Regulation 2-5) and some regulations for individual pollutants. For example, Regulation 6-1 reduces particulate emissions from the control imposed by Ringleman requirements.</p>
-<p>The District adopted Regulation 9, Rule 13, Nitrogen Oxide, Particulate Matter, and Toxic Air Contaminants from Portland Cement Manufacturing, on September 17, 2012.</p>
-<p>This rule becomes effective on September 9, 2013 and limits the emissions of NOx, PM, and toxic air contaminants.
-The categories criteria pollutant’s overall control efficiencies (CE) as a result of this rule are listed below:</p>
+<p>The cement manufacturing operations are subject to District regulations regarding permitting (<a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-1-general-requirements" title="Regulation 2, Rule 1">Regulation 2-1</a> and <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-2-new-source-review" title="Regulation 2, Rule 2">Regulation 2-2</a>), emissions of toxic or hazardous compounds (<a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-5-new-source-review-of-toxic-air-contaminants" title="Regulation 2, Rule 5">Regulation 2-5</a>) and some regulations for individual pollutants. For example, [Regulation 6-1] reduces particulate emissions from the control imposed by Ringleman requirements.</p>
+<p>The District adopted <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-13--nitrogen-oxides-particulate-matter-and-toxic-air-contaminants-from-portland-cement-ma" title="Regulation 9, Rule 13">Regulation 9-13</a>, Nitrogen Oxide, Particulate Matter, and Toxic Air Contaminants from Portland Cement Manufacturing, on September 17, 2012. This rule becomes effective on September 9, 2013 and limits the emissions of NOx, PM, and toxic air contaminants.</p>
+<p>The categories criteria pollutant’s overall control efficiencies (CE) as a result of this rule are listed below:</p>
 <ul>
 <li><p>For Category 36, the overall CE of PM increases slightly, to over 99%.; the overall CE of organics is approximately 14%.</p></li>
 <li><p>For Category 1747, the overall CE of NOx is 42%; the overall CE of organics is approximately 45%.</p></li>
@@ -607,19 +605,19 @@ Base Year 2011</p>
 <h3><span class="header-section-number">4.9.2</span> Trends</h3>
 <div id="history-15" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-soil-aeration-annual_emissions-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-soil-aeration-annual_emissions-chart-1.svg" width="800" height="400" /></p>
 <p>State regulations governing the construction standards of gasoline holding tanks required many stations to replace their existing tanks. In our Source Inventory of 1987, the District had 152 excavation events reported. In 1990, this number had grown to 1254. The number of excavations remained above 1100 per year through the mid 1990s.</p>
 </div>
 <div id="growth-15" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-soil-aeration-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-soil-aeration-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Much of the increase since 1987 had been due to the Porter and Cologne Act regulated by the State Water Resources Control Board and California Regional Water Quality Control Boards. Parts of these underground tank regulations govern the replacement of underground storage tanks.</p>
 <p>The California Code of Regulations, Title 23, Division 3, Chapter 16 stated that by December 22, 1998, all underground storage tanks containing hazardous substances, other than those containing motor vehicle fuels, need to be retrofitted with secondary containment. By the same date, motor vehicle fuel tanks made of steel needed to be retrofitted with secondary containment or be provided with both interior lining and exterior cathodic protection.</p>
 <p>The number of excavation events remained at close to the 1990 rate through 1998 and declined afterwards.</p>
 </div>
 <div id="control-11" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-soil-aeration-annual_control-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-soil-aeration-annual_control-chart-1.svg" width="800" height="400" /></p>
 <p>The District adopted Regulation 8, Rule 40 on February 15, 1989. The overall control afforded by this rule is 81%. This rule applies for soil aeration events only. Air stripping and soil excavation events are inventoried in category 937, under Regulation 8, Rule 47.</p>
 <p>Rule 40 sets the rate of uncontrolled aeration in addition to describing an acceptable soil aeration procedure. For an uncontrolled aeration, an operator may not aerate the soil at above certain rate per day; however, the soil aeration may be extended over many days. This does not reduce the total emissions from an aeration event.</p>
 <p>By: Sukarn Claire
@@ -654,17 +652,17 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">4.10.2</span> Trends</h3>
 <div id="history-16" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-soil-vapor_ext-annual_emissions-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-soil-vapor_ext-annual_emissions-chart-1.svg" width="800" height="400" /></p>
 <p>The historical growth profile was based on a combination of prior emissions data (back to 1996) and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing Employment growth profile.</p>
 </div>
 <div id="growth-16" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-soil-vapor_ext-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-soil-vapor_ext-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Future projections of emissions to 2030 are based on ABAG’s 2009 Manufacturing Employment growth profile.</p>
 </div>
 <div id="control-12" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-soil-vapor_ext-annual_control-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-soil-vapor_ext-annual_control-chart-1.svg" width="800" height="400" /></p>
 <p>The District adopted Regulation 8, Rule 47 on December 20, 1989. This rule requires all facilities to control emissions by at least 90%; however, based on emissions data, the overall control efficiency is estimated at 96%.</p>
 <p>By: Stuart Schultz
 Date: November 2013

@@ -24,7 +24,7 @@
 <meta name="author" content="David Holstius" />
 
 
-<meta name="date" content="2020-02-20" />
+<meta name="date" content="2020-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,7 @@
 
 <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -71,7 +72,10 @@
 <li><a href="./">BY2011 Methodology</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#purposes"><i class="fa fa-check"></i><b>1.1</b> Purposes</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#potential-enhancements"><i class="fa fa-check"></i><b>1.2</b> Potential Enhancements</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="petref-fac.html"><a href="petref-fac.html"><i class="fa fa-check"></i><b>2</b> Petroleum Refining Facilities</a><ul>
 <li class="chapter" data-level="2.1" data-path="petref-fac.html"><a href="petref-fac.html#general-refinery-emissions"><i class="fa fa-check"></i><b>2.1</b> General Refinery Emissions</a></li>
 <li class="chapter" data-level="2.2" data-path="petref-fac.html"><a href="petref-fac.html#refinery-fugitive-emissions"><i class="fa fa-check"></i><b>2.2</b> Refinery Fugitive Emissions</a></li>
@@ -181,6 +185,7 @@
 <li class="chapter" data-level="10.15" data-path="misc-other.html"><a href="misc-other.html#biogenic"><i class="fa fa-check"></i><b>10.15</b> Biogenic</a></li>
 <li class="chapter" data-level="10.16" data-path="misc-other.html"><a href="misc-other.html#ozone-depleting-substance-ods-substitutes"><i class="fa fa-check"></i><b>10.16</b> Ozone Depleting Substance (ODS) Substitutes</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -242,34 +247,139 @@ Design of residential boilers and furnaces generally resemble fire tube type boi
 </table>
 <p>Emission factor information for natural gas combustion was obtained from the U.S. Environmental Protection Agency’s (EPA’s) document AP-42, the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA) and the California Energy Commission (CEC).</p>
 <p>The natural gas combustion emission factors for these categories, in pounds per million cubic feet (Lb/MMCF) are shown below.</p>
-<table>
-<caption>Residential Natural Gas Usage by Category</caption>
+<table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="center">Category</th>
-<th align="center">PART</th>
-<th align="center">ORG</th>
-<th align="center">NOX</th>
-<th align="center">SO2</th>
-<th align="center">CO</th>
-<th align="center">CO2</th>
-<th align="center">CH4</th>
-<th align="center">N2O</th>
+<tr>
+<th style="text-align:left;">
+category
+</th>
+<th style="text-align:right;">
+PM
+</th>
+<th style="text-align:right;">
+TOG
+</th>
+<th style="text-align:right;">
+NO<sub>x</sub>
+</th>
+<th style="text-align:right;">
+SO<sub>2</sub>
+</th>
+<th style="text-align:right;">
+CO
+</th>
+<th style="text-align:right;">
+CO<sub>2</sub>
+</th>
+<th style="text-align:right;">
+CH<sub>4</sub>
+</th>
+<th style="text-align:right;">
+N2O
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="center">All</td>
-<td align="center">7.6</td>
-<td align="center">11</td>
-<td align="center">94</td>
-<td align="center">0.6</td>
-<td align="center">40</td>
-<td align="center">120000</td>
-<td align="center">2.3</td>
-<td align="center">2.2</td>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+#283 Space Heating
+</td>
+<td style="text-align:right;">
+7.6
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+120000
+</td>
+<td style="text-align:right;">
+2.3
+</td>
+<td style="text-align:right;">
+2.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+#284 Water Heating
+</td>
+<td style="text-align:right;">
+7.6
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+120000
+</td>
+<td style="text-align:right;">
+2.3
+</td>
+<td style="text-align:right;">
+2.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+#285 Cooking
+</td>
+<td style="text-align:right;">
+7.6
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+120000
+</td>
+<td style="text-align:right;">
+2.3
+</td>
+<td style="text-align:right;">
+2.2
+</td>
 </tr>
 </tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;"><br></span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<sup></sup> Emission factors (pounds per unit throughput).
+</td>
+</tr>
+</tfoot>
 </table>
 </div>
 <div id="county-distribution-24" class="section level4 unnumbered">
@@ -302,17 +412,17 @@ Design of residential boilers and furnaces generally resemble fire tube type boi
 <h3><span class="header-section-number">7.1.2</span> Emission Trends</h3>
 <div id="history-29" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic_NG-annual_emission-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic_NG-annual_emission-chart-1.svg" width="800" height="1200" /></p>
 <p>Historical emission trends are based on natural gas usage in the San Francisco Bay Area.</p>
 </div>
 <div id="growth-29" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic_NG-annual_growth-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic_NG-annual_growth-chart-1.svg" width="800" height="600" /></p>
 <p>Emission growth projections are based on household population growth in combination with CEC’s forecasts for residential sector natural gas demand. Household population data was obtained from two sources, the Association of Bay Area Government’s (ABAG’s) 2009 “Projections” reports and the California Statistical Abstracts.</p>
 </div>
 <div id="control-21" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic_NG-annual_control-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic_NG-annual_control-chart-1.svg" width="800" height="400" /></p>
 <p>The District adopted Regulation 9; Rule 6 on April 1, 1992 to control the amount of NOx emissions from natural gas fired water heaters. This rule has a control of 46% with a rule effectiveness of 94% reached by the year 2002.</p>
 <p>By: Sukarn Claire
 Date: January 2014
@@ -354,11 +464,11 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">7.2.2</span> Trends</h3>
 <div id="historical" class="section level4 unnumbered">
 <h4>Historical</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic-liquid-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic-liquid-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 </div>
 <div id="growth-30" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic-liquid-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic-liquid-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>For Category 286 (Fuel Combustion, Stationary Sources, Domestic LPG), an assumption was made that annual emissions, over the years, would tend to follow household population data. Population data used in the projection was based on the Association of Bay Area Government’s (ABAG’s) 2009 “Projections” report. For Category 287 (Fuel Combustion, Stationary Sources, Domestic Distillate Oil), the growth was assumed to be diminished as the fuel would eventually be phased out in favor of natural gas. A 2% reduction per year was chosen, starting in 1992.</p>
 <p>By: Tan Dinh
 Date: January 2014
@@ -395,16 +505,16 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">7.3.2</span> Trends</h3>
 <div id="historical-1" class="section level4 unnumbered">
 <h4>Historical</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic-wood-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic-wood-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 </div>
 <div id="growth-31" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic-wood-annual_growth-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic-wood-annual_growth-chart-1.svg" width="800" height="800" /></p>
 <p>Future projections of emissions are based on household growth in the Bay Area from 2009 “Projections” report published by ABAG.</p>
 </div>
 <div id="control-22" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic-wood-annual_control-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-domestic-wood-annual_control-chart-1.svg" width="800" height="600" /></p>
 <p>Control of residential wood combustion currently falls under EPA’s Standards of Performance for New Stationary Sources (NSPS) for residential wood heater (stoves). (This is adopted by reference in the District Regulation 10.) The NSPS required that new residential heaters manufactured on or after July 1, 1988, or sold on or after July 1, 1990 be certified to meet particulate emission standards of 5.5 grams per hour for catalytic wood heaters and 8.8 grams per hour for non-catalytic wood heaters. These are known as Phase I stoves. More restrictive particulate emission standards were set for stoves manufactured on or after July 1, 1990 or sold after July 1, 1992. For catalytic wood heaters this was 4.1 grams per hour and for non-catalytic wood heater this was 7.5 grams per hour. These are known as Phase II stoves. Although EPA has only set emission limits for particulate matter, emission of reactive organic compounds and carbon monoxide are expected to be limited as well.</p>
 <p>Natural gas fireplaces, pellet fueled wood stoves, and EPA-certified woodstoves and fireplaces are increasing in popularity every year. Particulate emissions from these heating devices are insignificant. Some cities and counties in the Bay Area have (or are looking at) enacting new ordinances restricting new wood stove and fireplaces to these low particulate emitting heating devices.</p>
 <p>In July 2008, the District enacted a rule (Regulation 6, Rule 3) to control emissions from wood-burning devices. This rule limits emissions of particulate matter (PM) and visible emissions (VE) from wood-burning devices, including any wood-burning device, pellet- fueled wood heater or any indoor permanently-installed device burning any solid fuel for aesthetic or space-heating purposes which includes fireplaces. The rule will help to reduce PM emissions from the burning of wood in woodstoves and fireplaces.</p>
@@ -449,12 +559,12 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">7.4.2</span> Trends</h3>
 <div id="historical-2" class="section level4 unnumbered">
 <h4>Historical</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-cogen-annual_emission-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-cogen-annual_emission-chart-1.svg" width="800" height="1200" /></p>
 <p>Historical emissions have varied with fuel usage activity. Prior to Base Year 1987, these three categories were grouped as one category.</p>
 </div>
 <div id="growth-32" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-cogen-annual_growth-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-cogen-annual_growth-chart-1.svg" width="800" height="800" /></p>
 <p>Projections for categories 290, 291, and 292 were developed based on the following methods in combination with the CEC’s forecasts for the combined heat and power generation demand.</p>
 <p>For Category #290 (boilers), it was assumed that annual emissions, over the years, would tend to follow two components: retail trade industry employment and services industry employment. As such, the annual variation ratio value was developed as a hybrid, based on 50% of the retail trade industry employment value and 50% of the services industry employment value.</p>
 <p>For Category #291 (turbines), it was assumed that annual emissions, over the years, would tend to follow two components: manufacturing industry employment and population within the District jurisdiction. As such, the annual variation ratio value was developed as a hybrid, based on 50% of the manufacturing industry employment value and 50% of the population value.</p>
@@ -463,7 +573,7 @@ Base Year: 2011</p>
 </div>
 <div id="control-23" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-cogen-annual_control-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-cogen-annual_control-chart-1.svg" width="800" height="600" /></p>
 <p>District Regulation 9, Rules 8 and 9 control NOx and SOx emissions from the internal combustion of fuels in engines and turbines, respectively.</p>
 <p>By: Sukarn Claire
 Date: January 2014
@@ -508,7 +618,7 @@ The fuel specific greenhouse gas emission coefficients for these categories were
 <h3><span class="header-section-number">7.5.2</span> Trends</h3>
 <div id="historical-3" class="section level4 unnumbered">
 <h4>Historical</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-boilers-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-boilers-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>NOx emissions from 1980 through 2002 were based on actual fuel usage data provided by power plants operating in the Bay Area. Emissions over the years have fluctuated by a factor of about 2.5 based on external factors, such as amount of rainfall and the availability of low cost hydroelectric power during that year. The NOx emissions have varied from over 30 tons/day to as low as 10 tons/day.</p>
 <p>The fuel oil usage at the power plants has been decreasing over the years. Since 1996, electric utility power plants have been prohibited from burning fuel oil by District Regulation 9, Rule 11, except for emergency situations.
 The Bay Area boiler/steam turbine type power plant NOx emissions have decreased from historical (e.g., 1994) levels of over 30 ton/day to about 1 ton/day in 2007. This was due to shutting down of the older inefficient boilers and the stringent Best Available Retrofit Control (BARCT) requirements of Regulation 9-11 for existing utility power plants (0.057 Lb/MMBTU or 48 ppm in 2003, 0.018 lb/MMBTU or 15 ppm in 2005) and the Best Available Control (BACT) requirements of Regulation 2-2 for new power plants (0.0089 lb/MMBTU or 7.5 ppm). NOx emission concentrations are given in ppm by volume, dry basis at 15% O2.</p>
@@ -516,11 +626,11 @@ The Bay Area boiler/steam turbine type power plant NOx emissions have decreased 
 </div>
 <div id="growth-33" class="section level3 unnumbered">
 <h3>Growth</h3>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-boilers-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-boilers-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Emission projections were developed based on the electric power generation fuel usage forecasts by the California Energy Commission (CEC).</p>
 <div id="control-24" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-boilers-annual_control-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-boilers-annual_control-chart-1.svg" width="800" height="800" /></p>
 <p>As noted above, District Regulation 9-11 and 2-2 control NOx and CO emissions from fuel combustion in boilers at electric power plants in the Bay Area.</p>
 <p>By: Sukarn Claire
 Date: January 2014
@@ -568,12 +678,12 @@ Indirect GHG emissions from electricity imported to the Bay Area (Category 1597)
 <h3><span class="header-section-number">7.6.2</span> Trends</h3>
 <div id="history-30" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-turbines_and_distrib-annual_emissions-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-turbines_and_distrib-annual_emissions-chart-1.svg" width="800" height="800" /></p>
 <p>Category 297 emissions prior to 1987 were derived from Base Year 1983 trend values. Historical emissions have varied with fuel usage activity. Emission projections for base years prior to 1996 were developed from natural gas and fuel oil usage estimates provided to the District by PG&amp;E.</p>
 </div>
 <div id="growth-34" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-turbines_and_distrib-annual_growth-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-turbines_and_distrib-annual_growth-chart-1.svg" width="800" height="800" /></p>
 <p>Category 297 emissions projections for this base year were developed based on the electric power generation forecast by the California Energy Commission (CEC). In the long term, fuel oil usage is projected to be small.</p>
 <p>Category 1595 emission projections were developed based on the electric power generation fuel usage forecast by the California Energy Commission (CEC).</p>
 <p>Category 1596 emissions are not expected to grow so much as utilities have enrolled in voluntary SF6 emission reduction programs.</p>
@@ -581,7 +691,7 @@ Indirect GHG emissions from electricity imported to the Bay Area (Category 1597)
 </div>
 <div id="control-25" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-turbines_and_distrib-annual_control-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-power_plant-turbines_and_distrib-annual_control-chart-1.svg" width="800" height="400" /></p>
 <p>The Bay Area Air District Regulation 9, Rule 9 controls NOx and CO emissions from fuel combustion in gas turbines.</p>
 <p>By: Sukarn Claire
 Date: January 2014
@@ -614,17 +724,17 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">7.7.2</span> Trends</h3>
 <div id="historical-4" class="section level4 unnumbered">
 <h4>Historical</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-petref-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-petref-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>Emissions prior to 1987 were derived from Base Year 1983 trend values. Past base year historical emissions include interchangeable emission reduction credits (IERC) which were part of category 10. IERC banking emissions are now inventoried under categories 298-300. Also, flare source emissions from categories 298 and 299 are now accounted for in category 15.</p>
 </div>
 <div id="growth-35" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-petref-annual_growth-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-petref-annual_growth-chart-1.svg" width="800" height="800" /></p>
 <p>Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected from these units.</p>
 </div>
 <div id="control-26" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-petref-annual_control-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-petref-annual_control-chart-1.svg" width="800" height="800" /></p>
 <p>Regulation 9-10 controls emissions of NOx due to external combustion. Significant reduction in NOx emissions was observed between the period from year 2000 to 2004 for refinery external combustion operations as a result of this rule.</p>
 <p>By: Tan Dinh
 Date: January 2014
@@ -673,17 +783,17 @@ The fuel specific greenhouse gas emission coefficients for these categories were
 <h3><span class="header-section-number">7.8.2</span> Trends</h3>
 <div id="history-31" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-engines-recip-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-engines-recip-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>For Category 302, emissions have been extremely low and constant over the past years. Emissions for Categories 303 and 304 have generally varied with fuel usage activity in the San Francisco Bay Area.</p>
 </div>
 <div id="growth-36" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-engines-recip-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-engines-recip-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>Emissions for Category 302 are assumed to stay fairly constant in future years. For Category 303, it was assumed that annual emissions would tend to follow and be influenced by two components: manufacturing industry employment and population. As such, a growth profile was developed, based on 33.3% of the manufacturing industry employment value and 66.7% of the population value within the District. It is assumed that annual emissions from Category 304 would tend to follow and be influenced in roughly equal amounts by two components: manufacturing industry employment and population. As such, a growth profile was developed, based on 50% of the manufacturing industry employment value and 50% of the population value within the District. Category 1578 projections are based agriculture industry growth in the Bay Area. Projected emissions include expected benefits from ARB’s Air Toxic Control Measure (ATCM). Growth profile data was obtained from two sources, the Association of Bay Area Government’s (ABAG’s) 2009 “Projections” reports and the California Statistical Abstracts.</p>
 </div>
 <div id="control-27" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-engines-recip-annual_control-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-engines-recip-annual_control-chart-1.svg" width="800" height="800" /></p>
 <p>The Air District’s Regulation 9, Rule 8 controls NOx and SOx emissions of fuel combustion in reciprocating engines.</p>
 <p>By: Sukarn Claire
 Date: January 2014
@@ -710,11 +820,11 @@ The District collects fuel usage data each year on a source-by-source basis from
 <h3><span class="header-section-number">7.9.2</span> Trends</h3>
 <div id="history-32" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-engines-crisis-annual_emission-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-engines-crisis-annual_emission-chart-1.svg" width="800" height="800" /></p>
 </div>
 <div id="growth-37" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-engines-crisis-annual_growth-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-engines-crisis-annual_growth-chart-1.svg" width="800" height="400" /></p>
 <p>An electric energy crisis in California appears to be over. Emissions from increased usage of standby generators did not appear to materialize as estimated previously.</p>
 </div>
 <div id="control-28" class="section level4 unnumbered">
@@ -760,18 +870,18 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">7.10.2</span> Trends</h3>
 <div id="history-33" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-turbines-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-turbines-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>For category #306, it was felt that historical emission trends tend to follow population data. As such, the annual variation ratio value for each year was based on the appropriate population value.</p>
 </div>
 <div id="growth-38" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-turbines-annual_growth-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-turbines-annual_growth-chart-1.svg" width="800" height="800" /></p>
 <p>For Category #305, it appeared that sources at oil refineries made the greatest contribution to emissions. Therefore, the emission growth profile for this category is developed in the same manner as the oil refinery external combustion categories. This category is projected to grow at about 1 percent per year.</p>
 <p>Growth profile for Category #306 is assumed to follow population growth. The population data was obtained from the Association of Bay Area Government’s (ABAG’s) 2009 projection reports.</p>
 </div>
 <div id="control-29" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-turbines-annual_control-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-turbines-annual_control-chart-1.svg" width="800" height="400" /></p>
 <p>The Air District’s Regulation 9, Rule 9 controls NOx and SOx emissions from fuel combustion in stationary turbines.</p>
 <p>By: Sukarn Claire
 Date: January 2014
@@ -811,34 +921,110 @@ Base Year: 2011</p>
 </blockquote>
 <p>Emission factor information for natural gas combustion was obtained from the U.S. Environmental Protection Agency’s (EPA’s) document AP-42, the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA) and the California Energy Commission (CEC).</p>
 <p>The area source natural gas combustion emission factors in pounds per million cubic feet (Lb/MMCF) are shown below.</p>
-<table>
-<caption>Area Source Natural Gas Combustion Emission Factors (lb/MMCF)</caption>
+<table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="center">CATEGORY</th>
-<th align="center">PART</th>
-<th align="center">ORG</th>
-<th align="center">NOx</th>
-<th align="center">SO2</th>
-<th align="center">CO</th>
-<th align="center">CO2</th>
-<th align="center">CH4</th>
-<th align="center">N2O</th>
+<tr>
+<th style="text-align:left;">
+category
+</th>
+<th style="text-align:right;">
+PM
+</th>
+<th style="text-align:right;">
+TOG
+</th>
+<th style="text-align:right;">
+NO<sub>x</sub>
+</th>
+<th style="text-align:right;">
+SO<sub>2</sub>
+</th>
+<th style="text-align:right;">
+CO
+</th>
+<th style="text-align:right;">
+CO<sub>2</sub>
+</th>
+<th style="text-align:right;">
+CH<sub>4</sub>
+</th>
+<th style="text-align:right;">
+N2O
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="center"><code>1590</code>, <code>1591</code></td>
-<td align="center">7.6</td>
-<td align="center">11</td>
-<td align="center">98</td>
-<td align="center">0.6</td>
-<td align="center">42</td>
-<td align="center">120,000</td>
-<td align="center">2.3</td>
-<td align="center">2.2</td>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+#1590 NG Combustion (Industrial)
+</td>
+<td style="text-align:right;">
+7.6
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+98
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:right;">
+120000
+</td>
+<td style="text-align:right;">
+2.3
+</td>
+<td style="text-align:right;">
+2.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;">
+#1591 NG Combustion (Commercial)
+</td>
+<td style="text-align:right;">
+7.6
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+98
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:right;">
+120000
+</td>
+<td style="text-align:right;">
+2.3
+</td>
+<td style="text-align:right;">
+2.2
+</td>
 </tr>
 </tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;"><br></span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<sup></sup> Emission factors (pounds per unit throughput).
+</td>
+</tr>
+</tfoot>
 </table>
 </div>
 </div>
@@ -856,20 +1042,20 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">7.11.2</span> Trends</h3>
 <div id="history-34" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-NG-other-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-NG-other-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>Glass Melting Furnaces, Category 968 was added to the emissions inventory system for base year 1990 after adoption of Regulation 9, Rule 12. Prior to base year 1990, emissions from Glass Melting Furnaces were accounted for in Category 307. For base year 2002, Category 307 was further split into point sources (C307) and area sources (C1590). For base year 2008, Category 1590 was split into Industrial (C1590) and Commercial (C1591) sources.</p>
 <p>Prior to base year 1987, category 307 was grouped as four categories: #86, 97, 99 and 111. This change to a single category for all area sources was made due to unavailability of separate natural gas usage data for each category.</p>
 </div>
 <div id="growth-39" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-NG-other-annual_growth-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-NG-other-annual_growth-chart-1.svg" width="800" height="600" /></p>
 <p>Growth projections for Category 307, 1590 and 1591 are based on the California Energy Commission’s natural gas demand forecasts.</p>
 <p>For category 968, it was assumed that annual emissions would tend to follow and be influenced by manufacturing industry employment.</p>
 <p>The data used in developing growth profile was obtained from the Association of Bay Area Government’s (ABAG’s) 2009 “Projections” reports.</p>
 </div>
 <div id="control-30" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-NG-other-annual_control-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-NG-other-annual_control-chart-1.svg" width="800" height="600" /></p>
 <p>District’s Regulation 9 controls emissions of NOx and CO from combustion.</p>
 <p>By: Sukarn Claire
 Date: January 2014
@@ -903,12 +1089,12 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">7.12.2</span> Trends</h3>
 <div id="history-35" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-other-other-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-other-other-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>Emissions prior to 1987 were derived from Base Year 1983 trend values. Category 309 had been grouped as four categories before Base Year 1987 and Category 311 had been grouped as two categories. The historical trend values for categories 309 and 311 were summed, respectively, to build the historical emissions data.</p>
 </div>
 <div id="growth-40" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-other-other-annual_growth-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-other-other-annual_growth-chart-1.svg" width="800" height="800" /></p>
 <p>For Categories 308 and 309, it was felt that annual emissions, over the years, would tend to follow and be influenced in roughly equal amounts by two components as follow: manufacturing industry employment and services industry employment by county, all within the District jurisdiction. As such, the annual variation ratio value for each year, for each county involved, was developed as a hybrid, based on 50% of the appropriate county manufacturing industry employment value and 50% of the appropriate services industry employment value.</p>
 <p>For Category #310, it was felt that annual emissions, over the years, would tend to follow and be influenced mainly by manufacturing industry employment by county, all within the District jurisdiction. As such, the annual variation ratio value for each year, for each county involved, was developed to follow the manufacturing industry employment value.</p>
 <p>For Category #311, it was felt that annual emissions, over the years, would tend to follow and be influenced in roughly equal amounts by two components as follow: manufacturing industry employment and construction industry employment by county, all within the District jurisdiction. As such, the annual variation ratio value for each year, for each county involved, was developed as a hybrid, based on 50% of the appropriate county manufacturing industry employment value and 50% of the appropriate construction industry employment value.</p>
@@ -917,7 +1103,7 @@ Base Year: 2011</p>
 </div>
 <div id="control-31" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/SS_combust-other-other-annual_control-chart-1.png" width="700" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/SS_combust-other-other-annual_control-chart-1.svg" width="800" height="800" /></p>
 <p>Regulation 9 controls emissions of NOx and SOx of combustion.</p>
 <p>By: Sukarn Claire
 Date: January 2014

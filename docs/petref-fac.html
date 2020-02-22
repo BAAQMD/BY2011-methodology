@@ -24,7 +24,7 @@
 <meta name="author" content="David Holstius" />
 
 
-<meta name="date" content="2020-02-20" />
+<meta name="date" content="2020-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,7 @@
 
 <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -71,7 +72,10 @@
 <li><a href="./">BY2011 Methodology</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#purposes"><i class="fa fa-check"></i><b>1.1</b> Purposes</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#potential-enhancements"><i class="fa fa-check"></i><b>1.2</b> Potential Enhancements</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="petref-fac.html"><a href="petref-fac.html"><i class="fa fa-check"></i><b>2</b> Petroleum Refining Facilities</a><ul>
 <li class="chapter" data-level="2.1" data-path="petref-fac.html"><a href="petref-fac.html#general-refinery-emissions"><i class="fa fa-check"></i><b>2.1</b> General Refinery Emissions</a></li>
 <li class="chapter" data-level="2.2" data-path="petref-fac.html"><a href="petref-fac.html#refinery-fugitive-emissions"><i class="fa fa-check"></i><b>2.2</b> Refinery Fugitive Emissions</a></li>
@@ -181,6 +185,7 @@
 <li class="chapter" data-level="10.15" data-path="misc-other.html"><a href="misc-other.html#biogenic"><i class="fa fa-check"></i><b>10.15</b> Biogenic</a></li>
 <li class="chapter" data-level="10.16" data-path="misc-other.html"><a href="misc-other.html#ozone-depleting-substance-ods-substitutes"><i class="fa fa-check"></i><b>10.16</b> Ozone Depleting Substance (ODS) Substitutes</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -204,15 +209,6 @@
 <h1><span class="header-section-number">Chapter 2</span> Petroleum Refining Facilities</h1>
 <div id="general-refinery-emissions" class="section level2">
 <h2><span class="header-section-number">2.1</span> General Refinery Emissions</h2>
-<ul>
-<li>Basic Refining Processes (10)</li>
-<li>Wastewater Collection &amp; Separation Systems (11)</li>
-<li>Wastewater Treatment Facilities (12)</li>
-<li>Cooling Towers (13)</li>
-<li>Vacuum Producing Systems (14)</li>
-<li>Flares and Blowdown Systems (15)</li>
-<li>Other Refining Processes (16)</li>
-</ul>
 <div id="emissions" class="section level3">
 <h3><span class="header-section-number">2.1.1</span> Emissions</h3>
 <div id="introduction-1" class="section level4 unnumbered">
@@ -242,21 +238,21 @@
 <h3><span class="header-section-number">2.1.2</span> Trends</h3>
 <div id="history" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petref_fac-general-annual_emissions-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petref_fac-general-annual_emissions-chart-1.svg" width="800" height="1200" /></p>
 <p>Historic emissions have generally varied with refinery throughputs. Past base year historical emissions include interchangeable emission reduction credit (IERC). IERC banking emissions are now inventoried separately under categories 298-301. Also, flare source emissions from categories 298 and 299 are now accounted for in category 15. Beginning in December 2003, flare emission monitoring control was implemented for all refineries in the Bay Area. Flare emissions are based upon these monitoring data.</p>
 <p>In 2010, SOx decreased significantly as a result of an abatement device installation at Valero refinery. Over 90% of SOx emissions were reduced at Valero refinery from prior years.</p>
 </div>
 <div id="growth" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/petref_fac-general-annual_growth-chart-1.png" width="700" height="1200" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petref_fac-general-annual_growth-chart-1.svg" width="800" height="1200" /></p>
 <p>Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected.</p>
 <p>Future flare emissions are difficult to predict, since they are predicated on emergencies and the nature of emergencies which are unknown and unpredictable. However, with the recent passage of refinery flare monitoring and flare minimization plan requirements, flare emissions are expected to remain constant as long as there are no large upset in refinery processes that would warrant increase in flaring activities.</p>
 </div>
 <div id="control" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/petref_fac-general-annual_control-chart-1.png" width="700" height="800" /></p>
-<p>Refinery emissions are regulated by the District. Regulation 6, 7, 8, and 9 regulate Particulate Matter, Odorous Substances, Organic Compounds, and Inorganic Gaseous Pollutants respectably.</p>
-<p>Regulation 12, Rule 11 and 12 pertain to flare monitoring and flare minimization plan at Petroleum Refineries. The rule does not mandate reductions. District staff has found that because refiners have looked more closely both at monitoring and the feasibility of flaring reductions, flaring activities at the five Bay Area refineries have dropped dramatically over the past years. The result has been a significant emission reduction that cannot be directly attributed to this rule, but has and will ultimately be reflected in the emissions.</p>
+<p><img src="BY2011-methodology_files/figure-html/petref_fac-general-annual_control-chart-1.svg" width="800" height="800" /></p>
+<p>Refinery emissions are regulated by the District. Regulations <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-particulate-matter---common-definitions-and-test-methods" title="Regulation 6">6</a>, <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-7-odorous-substances" title="Regulation 7">7</a>, <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-organic-compounds" title="Regulation 8">8</a>, and <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-inorganic-gaseous-pollutants" title="Regulation 9">9</a> regulate Particulate Matter, Odorous Substances, Organic Compounds, and Inorganic Gaseous Pollutants respectably.</p>
+<p><a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-miscellaneous-standards-of-performance" title="Regulation 12">Regulation 12</a>, Rules <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-11-flare-monitoring-at-petroleum-refineries" title="Regulation 12, Rule 11">11</a> and <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-12-flares-at-petroleum-refineries" title="Regulation 12, Rule 12">12</a> pertain to flare monitoring and flare minimization plan at Petroleum Refineries. The rule does not mandate reductions. District staff has found that because refiners have looked more closely both at monitoring and the feasibility of flaring reductions, flaring activities at the five Bay Area refineries have dropped dramatically over the past years. The result has been a significant emission reduction that cannot be directly attributed to this rule, but has and will ultimately be reflected in the emissions.</p>
 <p>By: Tan Dinh
 Date: December 2013
 Base Year: 2011</p>
@@ -284,20 +280,20 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">2.2.2</span> Trends</h3>
 <div id="history-1" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petref_fac-fugitive-annual_emissions-chart-1.png" width="700" height="400" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petref_fac-fugitive-annual_emissions-chart-1.svg" width="800" height="400" /></p>
 <p>Historical changes in fugitive emissions in the Bay Area have been due to installation of newer process units that supplement rather than replace old process units.</p>
 </div>
 <div id="growth-1" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/petref_fac-fugitive-annual_growth-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petref_fac-fugitive-annual_growth-chart-1.svg" width="800" height="600" /></p>
 <p>It is expected that fugitive emissions will not increase significantly in future after new units are built to produce reformulated gasoline.</p>
 </div>
 <div id="control-1" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/petref_fac-fugitive-annual_control-chart-1.png" width="700" height="600" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petref_fac-fugitive-annual_control-chart-1.svg" width="800" height="600" /></p>
 <p>The District adopted control regulations in 1980 for valves and flanges, pump and compressor seals and PRVs. This marked the first step in the control of fugitive emissions. Control for valves vary widely, gas PRVs are 95% controlled, while heavy liquid valves have negligible control. Most common and significant emission sources are the light liquid service valves, and they are controlled by 65 to 72%.</p>
 <p>In 1997 and 1998, the District combined the three previous regulations 8-18, 8-25, and 8- 28, into a single regulation, Equipment Leaks, # 8-18. Regulation 8-25 was deleted. Regulation 8-28 was changed to focus on episodic emissions from the normal operation of pressure relief valves.</p>
-<p>During this change the leak standard for only the pressure relief valves was reduced from 10,000 parts per million (ppm) to 500 ppm of total organic compounds. In addition, applicability of the new Regulation 8-18 was broadened to include all leaking equipment, not just valves, flanges, and other equipment specifically listed in the earlier regulation. The following table summarizes the limits.</p>
+<p>During this change the leak standard for only the pressure relief valves was reduced from 10,000 parts per million (ppm) to 500 ppm of total organic compounds. In addition, applicability of the new <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-18-equipment-leaks" title="Regulation 8, Rule 18">Regulation 8-18</a> was broadened to include all leaking equipment, not just valves, flanges, and other equipment specifically listed in the earlier regulation. The following table summarizes the limits.</p>
 <p><strong>FIXME: TABLE OMITTED</strong></p>
 <p>By: Tan Dinh
 Date: January 2014
@@ -330,18 +326,18 @@ Base Year: 2011</p>
 <h3><span class="header-section-number">2.3.2</span> Trends</h3>
 <div id="history-2" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/petref_fac-vessel_depress-annual_emissions-chart-1.png" width="700" height="300" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petref_fac-vessel_depress-annual_emissions-chart-1.svg" width="800" height="300" /></p>
 <p>Emissions for category 20 have been relatively insignificant for last few years, at less than 5 pounds per day for the entire region.</p>
 </div>
 <div id="growth-2" class="section level4 unnumbered">
 <h4>Growth</h4>
-<p><img src="BY2011-methodology_files/figure-html/petref_fac-vessel_depress-annual_growth-chart-1.png" width="700" height="300" /></p>
+<p><img src="BY2011-methodology_files/figure-html/petref_fac-vessel_depress-annual_growth-chart-1.svg" width="800" height="300" /></p>
 <p>Projected growth for this category is based on the throughput of marine operations.</p>
 </div>
 <div id="control-2" class="section level4 unnumbered">
 <h4>Control</h4>
-<p><img src="BY2011-methodology_files/figure-html/petref_fac-vessel_depress-annual_control-chart-1.png" width="700" height="300" /></p>
-<p>The District adopted Regulation 8, Rule 10 on July 20, 1983. Overall control afforded by this rule is estimated to be 95%.</p>
+<p><img src="BY2011-methodology_files/figure-html/petref_fac-vessel_depress-annual_control-chart-1.svg" width="800" height="300" /></p>
+<p>The District adopted <a href="https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-10-process-vessel-depressurization" title="Regulation 8, Rule 10">Regulation 8-10</a> on July 20, 1983. Overall control afforded by this rule is estimated to be 95%.</p>
 <p>By: Tan Dinh
 Date: January 2014
 Base Year: 2011</p>
