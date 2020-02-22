@@ -1,0 +1,32 @@
+[Regulation 2-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-1-general-requirements "Regulation 2, Rule 1"
+
+[Regulation 2-2]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-2-new-source-review "Regulation 2, Rule 2"
+
+[Regulation 2-5]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-5-new-source-review-of-toxic-air-contaminants "Regulation 2, Rule 5"
+
+[Regulation 6]: https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-particulate-matter---common-definitions-and-test-methods "Regulation 6"
+
+[Regulation 7]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-7-odorous-substances "Regulation 7"
+
+[Regulation 8]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-organic-compounds "Regulation 8"
+
+[Regulation 8-10]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-10-process-vessel-depressurization "Regulation 8, Rule 10"
+
+[Regulation 8-18]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-18-equipment-leaks "Regulation 8, Rule 18"
+
+[Regulation 8-22]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-22-valves-and-flanges-at-chemical-plants "Regulation 8, Rule 22"
+
+[Regulation 8-42]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-42-large-commercial-bread-bakeries "Regulation 8, Rule 42"
+
+[Regulation 9]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-inorganic-gaseous-pollutants "Regulation 9"
+
+[Regulation 9-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-1-sulfur-dioxide "Regulation 9, Rule 1"
+
+[Regulation 9-13]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-13--nitrogen-oxides-particulate-matter-and-toxic-air-contaminants-from-portland-cement-ma "Regulation 9, Rule 13"
+
+[Regulation 12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-miscellaneous-standards-of-performance "Regulation 12"
+
+[Regulation 12-11]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-11-flare-monitoring-at-petroleum-refineries "Regulation 12, Rule 11"
+
+[Regulation 12-12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-12-flares-at-petroleum-refineries "Regulation 12, Rule 12"
+

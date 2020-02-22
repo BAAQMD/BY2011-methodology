@@ -1,0 +1,6 @@
+# Appendix {-}
+
+**TODO**
+
+```{r appendix-rules_and_regs, child="appendix/appendix-rules_and_regs.Rmd"}
+```

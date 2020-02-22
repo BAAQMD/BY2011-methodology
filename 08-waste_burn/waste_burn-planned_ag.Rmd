@@ -17,7 +17,7 @@ These area source categories estimate criteria pollutant (particulate, organic, 
 
 Carbon Dioxide emissions from these categories are considered to be biogenic emissions. Biogenic Carbon Dioxide (Bio-CO2) emissions are a subset of total CO2 emissions which are emitted from materials that are derived from living cells, excluding fossil fuels, limestone and other materials that have been transformed by geological processes. Bio- CO2 originates from carbon that is present in materials such as wood, paper, vegetable oils and food, animal, and yard waste.
 
-#### Methodologies {-}
+#### Methodologies {#waste_burn-planned_ag-methodology -}
 
 Annual activity or waste material burn information for these categories was obtained from the burn permits issued by the District’s Enforcement Division for each county. Information on amounts of waste materials burned was provided to the District in various units such as acres, tons, pounds, and cubic yards. By applying the crop specific fuel loading factors and other conversion units, all burn activity was converted to tons of material burned per year.
 
@@ -27,14 +27,8 @@ Emissions were calculated by multiplying the activity (Tons/Year) for a given ca
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  select(
-    category = cat_id,
-    pol_abbr,
-    ef_qty) %>%
-  distinct() %>%
-  spread(
-    pol_abbr,
-    ef_qty)
+  tabulate_BY2011_emission_factors(
+    pollutants = BY2011_POLLUTANTS)
 ```
 
 ##### Sample Equations {-}
@@ -71,11 +65,11 @@ Monthly distribution for all categories was made proportional to an average burn
 
 #### History {-}
 
-```{r SS_combust-waste_burn-planned_ag-annual_emissions-chart, fig.height=12, out.height=1200}
+```{r waste_burn-planned_ag-annual_emissions-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 
@@ -83,11 +77,11 @@ The 1981 emissions and tonnage burned data was used to develop emission factors 
 
 #### Growth {-}
 
-```{r SS_combust-waste_burn-planned_ag-annual_growth-chart, fig.height=8, out.height=800}
+```{r waste_burn-planned_ag-annual_growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr) 
 ```
 

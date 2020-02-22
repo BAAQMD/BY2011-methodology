@@ -55,7 +55,7 @@
 
 ***
 
-```{r misc_other-cigarette, child="10-misc_other/misc_other-cigarette.Rmd"}
+```{r misc_other-smoking, child="10-misc_other/misc_other-smoking.Rmd"}
 ```
 
 ***

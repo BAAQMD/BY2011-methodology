@@ -1,3 +1,54 @@
 ## Animal Waste, Other
 
-**TODO**
+```{r misc_other-animal_waste-other-setup}
+THESE_CATEGORIES <- c(
+  "#760 Animal Waste, Other" = 760)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Emissions from this category are from waste products of domestic animals (pets) and other native animals including dogs, cats, deer, and wild pigs.
+
+#### Methodology {-}
+
+The animal population was estimated based on pet to human ratios taken from the report, "Evaluation of Emissions from Selected Uninventoried Sources in the State of California" by Dickson, R. and Tate, S. Population of dogs and cats was estimated based on this ratio with the population of each county. Of the wildlife animals, only deer and wild pigs were considered significant. Numbers of heads for these animals were made based on county land area ratios estimates by the Department of Fish and Game. The emissions are calculated by multiplying emission factor and population of each animal type.
+
+#### Monthly Variation {-}
+
+Monthly distribution was estimated evenly over the twelve months.
+
+#### County Distribution {-}
+
+The county distribution was based on dog population for the nine counties, and correspondingly, showed: Alameda-18.5%, Contra Costa-16.4%, Marin-4.6%, Napa- 2.9%, San Francisco-10.6%, San Mateo-12.9%, Santa Clara-21.9%, Solano-5.3%, and Sonoma-6.9%.
+
+### Trends
+
+#### History {-}
+
+```{r misc_other-animal_waste-other-annual_emission-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+Emissions through the years were estimated based on ARB's relative values of dollar output for growth in Agriculture-stock of each county.
+
+#### Growth {-}
+
+```{r misc_other-animal_waste-other-annual_growth-chart, fig.height=4, out.height=400}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Projections to 2030 were based on the same growth profile of ABAG’s 2009 Projections.
+
+By: Michael Nguyen 
+Date: January, 2014 
+Base Year 2011

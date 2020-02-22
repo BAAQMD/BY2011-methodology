@@ -1,13 +1,5 @@
 ## General Refinery Emissions
 
-- Basic Refining Processes (10) 
-- Wastewater Collection & Separation Systems (11) 
-- Wastewater Treatment Facilities (12) 
-- Cooling Towers (13)
-- Vacuum Producing Systems (14)
-- Flares and Blowdown Systems (15)
-- Other Refining Processes (16)
-
 ```{r petref_fac-general-setup}
 THESE_CATEGORIES <- c(
   "#10 Basic Processes" = 10,
@@ -61,7 +53,7 @@ The county fraction and monthly/daily factors are calculated based on data obtai
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 
@@ -75,7 +67,7 @@ In 2010, SOx decreased significantly as a result of an abatement device installa
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr)
 ```
 
@@ -89,13 +81,13 @@ Future flare emissions are difficult to predict, since they are predicated on em
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_control_factors_by(
+  chart_BY2011_annual_control_factors_by(
     color = pollutant)
 ```
 
-Refinery emissions are regulated by the District. Regulation 6, 7, 8, and 9 regulate Particulate Matter, Odorous Substances, Organic Compounds, and Inorganic Gaseous Pollutants respectably.
+Refinery emissions are regulated by the District. Regulations [6][Regulation 6], [7][Regulation 7], [8][Regulation 8], and [9][Regulation 9] regulate Particulate Matter, Odorous Substances, Organic Compounds, and Inorganic Gaseous Pollutants respectably.
 
-Regulation 12, Rule 11 and 12 pertain to flare monitoring and flare minimization plan at Petroleum Refineries. The rule does not mandate reductions. District staff has found that because refiners have looked more closely both at monitoring and the feasibility of flaring reductions, flaring activities at the five Bay Area refineries have dropped dramatically over the past years. The result has been a significant emission reduction that cannot be directly attributed to this rule, but has and will ultimately be reflected in the emissions.
+[Regulation 12], Rules [11][Regulation 12-11] and [12][Regulation 12-12] pertain to flare monitoring and flare minimization plan at Petroleum Refineries. The rule does not mandate reductions. District staff has found that because refiners have looked more closely both at monitoring and the feasibility of flaring reductions, flaring activities at the five Bay Area refineries have dropped dramatically over the past years. The result has been a significant emission reduction that cannot be directly attributed to this rule, but has and will ultimately be reflected in the emissions.
 
 By: Tan Dinh
 Date: December 2013

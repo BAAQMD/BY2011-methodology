@@ -3,4 +3,6 @@
 .Rhistory
 .RData
 .Ruserdata
-_bookdown_files/*
+_bookdown_files
+cache
+scratch

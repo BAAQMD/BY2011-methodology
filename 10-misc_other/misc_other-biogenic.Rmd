@@ -1,3 +1,71 @@
 ## Biogenic
 
-**TODO**
+```{r misc_other-biogenic-setup}
+THESE_CATEGORIES <- c(
+  "#784 Isoprene" = 784,
+  "#785 Alpha Pinene" = 785,
+  "#786 Monoterpene" = 786,
+  "#787 Other Biogenic Organics" = 787)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Living vegetation throughout the Bay Area produce the biogenic organic emissions covered by these four emission categories. (Such vegetation is considered to be part of the general group known as "area" sources). Chemical analysis of biogenic emissions by investigators has led to their being classified into four separate chemical groupings. This detail has been maintained in the four categories developed for this Base Year emission inventory, and covered by this methodology.
+
+#### Methodologies {-}
+
+Emissions were obtained from a presentation at CARB’s EITEAC Meeting on May 19, 2004. Biogenic emissions were estimated using the ARB’s BEIGIS model. Model inputs include the California GAP Analysis Project, California Department of Water Resources crop reports, SCAG and SANDAG (councils of government) urban land use, and satellite-derived leaf area index (LAI) data. The BEIGIS model is driven by temperature and solar radiation, BVOC emission factors and specific leaf weight factors.
+
+Estimated average annual organic emissions, in tons per day, are:
+
+```{r misc_other-biogenic-daily_emissions-table}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  filter_years(
+    CY(2011)) %>%
+  filter_pollutants(
+    "TOG") %>%
+  convert_emission_units(
+    to = "ton/day") %>%
+  tabulate_emissions_by(
+    category,
+    pollutant,
+    digits = 2) %>%
+  select(
+    Category = category,
+    TOG,
+    Unit = ems_unit)
+```
+
+#### Monthly variation {-}
+
+The monthly profile was estimated using monthly average ambient temperatures for the Bay Area. This information was obtained from the Climatological Summary Report from the National Climatic Document Center in North Carolina.
+
+#### County Distribution {-}
+
+Data for each county consisted of four estimated emissions for the four organic compound classes represented by the categories covered by this methodology.
+
+### Trends
+
+#### History {-}
+
+```{r misc_other-biogenic-annual_emissions-chart, fig.height=5, out.height=500}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+Prior to 2005, biogenic emissions were provided by Keith Baugues, EPA Source Receptor Analysis Branch of the Technical Support Division, Research Triangle Park, North Carolina.
+
+#### Growth {-}
+
+For the years 2005 - 2030, for each category covered by this methodology, emissions were also maintained at the 2005 values.
+
+By: Michael Nguyen 
+Date: February, 2014 
+Base Year 2011

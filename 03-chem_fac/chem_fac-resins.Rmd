@@ -1,5 +1,10 @@
 ## Resins
 
+```{r chem_fac-resins-setup}
+THESE_CATEGORIES <- c(
+  "#24 Resins Manufacturing" = 24)
+```
+
 ### Emissions
 
 #### Introduction {-}
@@ -27,8 +32,8 @@ The monthly distribution is estimated based on data from the company's reported 
 ```{r chem_fac-resins-annual_emissions-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
-    "#24 Resins Manufacturing" = 24) %>%
-  BY2011_chart_annual_emissions_by(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
     fill = category)
 ```
 
@@ -39,8 +44,8 @@ Emissions have increased due to increasing demand from related industries, such 
 ```{r chem_fac-resins-annual_growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
-    "#24 Resins Manufacturing" = 24) %>%
-  BY2011_chart_annual_growth_by(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr)
 ```
 
@@ -51,8 +56,8 @@ Projections to year 2030 were based on growth profile of ARB's Chemical Manufact
 ```{r chem_fac-resins-annual_control_factor_data}
 BY2011_annual_control_factor_data %>%
   filter_categories(
-    "#24 Resins Manufacturing" = 24) %>%
-  BY2011_chart_annual_control_factors_by(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
     color = pollutant)
 ```
 

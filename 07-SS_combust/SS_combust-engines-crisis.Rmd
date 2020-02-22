@@ -24,7 +24,7 @@ The District collects fuel usage data each year on a source-by-source basis from
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 
@@ -34,7 +34,7 @@ BY2011_annual_emission_data %>%
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr) 
 ```
 

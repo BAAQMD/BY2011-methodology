@@ -32,7 +32,7 @@ Emissions distributed into counties were based on actual locations of the plants
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 Historical data was based on past years gasoline consumption in the Bay Area. The estimated gasoline consumption was obtained from California Taxable Gasoline Sales.
@@ -43,7 +43,7 @@ Historical data was based on past years gasoline consumption in the Bay Area. Th
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr)
 ```
 
@@ -55,7 +55,7 @@ The reported year-to-year variation in emissions is due to changes in either the
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_control_factors_by(
+  chart_BY2011_annual_control_factors_by(
     color = pollutant)
 ```
 

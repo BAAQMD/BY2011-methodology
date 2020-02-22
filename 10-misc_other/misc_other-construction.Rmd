@@ -1,3 +1,76 @@
 ## Construction Operations
 
-**TODO**
+```{r misc_other-construction-setup}
+THESE_CATEGORIES <- c(
+  "#744 Residential" = 744,
+  "#745 Commericial" = 745,
+  "#746 Institutional" = 746,
+  "#747 Industrial" = 747,
+  "#748 Roads" = 748)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+These categories account for fugitive dust emissions generated from construction activities while building residential, commercial, industrial, institutional structures, and roads (Categories # 744 - 748, respectively). The PM emissions result from construction operations such as digging, loading, scraping, grading, compacting, light duty vehicle traffic, etc.
+
+Emission factors were based on a study done by Midwest Research Institute. This study produced an average emission factor of 0.11 ton PM10/acre-month for these construction operations. (This value is assumed to include the effects of typical control measures, such as watering. Watering is assumed to control dust by 50%.) However, in the Bay Area, it was assumed 20% of construction activity consisted of large-scale operations that involved substantial earthmoving operations. Under this “worst-case” scenario, the emission factor was 0.42 ton PM10/acre-month. Therefore, the overall composite emission factor used for these construction activities in the Bay Area was 0.172 ton PM10/acre-month. It is assumed that all the above-mentioned construction operations have the same emission factor.
+
+The California Air Resources Board provided the PM speciation profile (PM10 fraction of 0.4893). Activity data (throughputs) are expressed in terms of acre-months for the above categories.
+
+#### Methodologies {-}
+
+##### Residential Construction (Category 744) {-}
+
+The number of new housing units (single and multi-family), provided by the California Department of Finance, is used to calculate the acreage disturbed. The affected construction area for a single family living unit is estimated at 1/7th of an acre for Alameda, Contra Costa, Marin, San Francisco, San Mateo, and Santa Clara counties; and 1/5th of an acre for Napa, Solano, and Sonoma counties. The affected construction area for multi-family living units is estimated to be 1/20th of an acre. The construction time for residential units is assumed to be 6 months. . The throughput, expressed in acre- months, is estimated by multiplying the appropriate area factors, construction time and number of new units for each county.
+
+##### Commercial, Industrial, and Institutional Construction (Categories 745 -747) {-}
+
+The estimated construction acreage for these categories is based on project valuations supplied from the California Department of Finance. The valuations for commercial, industrial, and institutional construction are 3.7, 4.0, and 4.4 acres per million dollars of valuation, respectively. Since these factors are 1977 values, multiplying the above valuations by the ratio of 1977 to a particular year’s Association of Bay Area Government’s (ABAG’s) Consumer Price Index value makes inflationary corrections for that particular year. The construction time for commercial, industrial, institutional buildings is assumed to be 11 months. The throughput for a particular year, expressed in acre-months, is found by multiplying that year’s inflationary adjusted project valuation by the county’s construction valuation, and construction time.
+
+##### Road Construction (Category 748) {-}
+
+The latest road construction for freeways, highways, county and city roads was estimated by the difference in their respective total mileage between that year’s and prior year’s data, as reported in the California Statistical Abstract. The affected area per mile of road for freeways, highways, and county and city roads are 12.1, 9.2, and 7.8 acres/mile, respectively. The construction time for roads is assumed to be 18 months for the average project. The throughput, expressed in acre-months, is estimated by multiplying the road construction miles, affected area per mile of road factor, and project duration time.
+
+The emission factor (which includes any controls) used for all categories mentioned above was estimated at 0.3515 ton PM/acre-month (703.0 lbs. PM/acre-month), with the PM10 fraction at 0.4893. The total emissions for these categories are determined by multiplying the throughput and emission factor.
+
+#### Monthly Variation {-}
+
+The monthly variations of emissions for the Bay Area counties in Category 744 – 748 were based on the ARB’s seasonal profiles for Building and Road Construction Dust. Roughly, emissions were distributed as 55% during the months of April to September and 45% during the remaining months.
+
+#### County Distribution {-}
+
+Distribution of emissions into counties was based on construction activity provided by the California Department of Finance.
+
+### Trends
+
+#### History {-}
+
+```{r misc_other-construction-annual_emissions-chart, fig.height=8, out.height=800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+The historical growth profile was based on a combination prior emissions data (back to 1987) and the ABAG’s 2009 Construction Employment Growth Profile.
+
+#### Growth {-}
+
+```{r misc_other-construction-annual_growth-chart, fig.height=12, out.height=1200}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+The projected emissions to 2030 for Categories 744 – 747 were based on ABAG’s 2009 Construction Employment Growth Profile.
+
+For Category 748, the growth profile for the years 2008-2010 was based on information found in the California Energy Commission’s Report “Transportation Energy Forecasts and Analyses for the 2009 Integrated Energy Policy Report”, May 2010, Table 2.10. For these years, the activity decreased an average 4.3% per year to account for the downturn in the economy. After 2010, projected emissions to 2030 were based on ABAG’s 2009 Construction Employment Growth Profile.
+
+By: Stuart Schultz 
+Date: January 2014 
+Base Year 2011

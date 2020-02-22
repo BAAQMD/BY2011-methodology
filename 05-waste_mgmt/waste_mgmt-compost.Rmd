@@ -90,7 +90,7 @@ The county distribution was based on the location as found in the District datab
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 
@@ -102,7 +102,7 @@ It was assumed composting in the Bay Area began in the mid-1980’s (1985 was us
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr) 
 ```
 

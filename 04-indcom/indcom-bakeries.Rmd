@@ -33,11 +33,11 @@ The county locations and associated emissions of each of the large bakeries were
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category)
 ```
 
-Historical emissions were estimated using actual throughputs and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing and Wholesale Employment growth profile. District Regulation 8, Rule 42 set standards for new and modified bakery ovens on large commercial bakeries effective January of 1989.
+Historical emissions were estimated using actual throughputs and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing and Wholesale Employment growth profile. District [Regulation 8, Rule 42](https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-42-large-commercial-bread-bakeries) set standards for new and modified bakery ovens on large commercial bakeries effective January of 1989.
 
 #### Growth {-}
 
@@ -45,7 +45,7 @@ Historical emissions were estimated using actual throughputs and the Association
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr)
 ```
 
@@ -57,11 +57,11 @@ Emissions projections to 2030 were also based on ABAG’s 2009 Manufacturing and
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_control_factors_by(
+  chart_BY2011_annual_control_factors_by(
     color = pollutant)
 ```
 
-District Regulation 8, Rule 42 was amended requiring control equipment for existing ovens, which commenced operation prior to January 1989. This became effective beginning January 1992. Currently, there is an estimated 82% overall control (for large bakeries) on TOG emissions because of this rule.
+District [Regulation 8-42] was amended requiring control equipment for existing ovens, which commenced operation prior to January 1989. This became effective beginning January 1992. Currently, there is an estimated 82% overall control (for large bakeries) on TOG emissions because of this rule.
 
 By: Stuart Schultz 
 Date: October 2013 

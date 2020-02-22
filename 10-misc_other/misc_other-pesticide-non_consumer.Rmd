@@ -1,3 +1,93 @@
 ## Non-Consumer Pesticides
 
-**TODO**
+```{r misc_other-pesticide-non_consumer-setup}
+THESE_CATEGORIES <- c(
+  "#1190 Agricultural, Methyl Bromide" = 1190,
+  "#1191 Agricultural, Other" = 1191,
+  "#1192 Non-Ag/Consumer, Methyl Bromide" = 1192,
+  "#1193 Non-Ag/Consumer, Other" = 1193)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Categories 1190 – 1193 account for emissions from all pesticide usage for agricultural, commercial, and institutional purposes. Agricultural use includes pesticide applications to crops, rangelands, pastures, cemeteries, parks, golf courses, and along roadsides and railroad right-of-ways. Additionally, all post-harvest pesticide treatment of agricultural goods, along with pesticide use in poultry, fish production, and some livestock applications all fall under the agricultural definition. Non-agricultural use includes structural operators, professional gardeners, and (non-agricultural) pest control operators. These categories do not include pesticides sold from retail stores in small quantities for home consumers. Consumer pesticides are covered in consumer product categories 1494-1509.
+
+Prior to 1996, the agricultural and non-agricultural pesticide divisions each consisted of application and residual categories for both synthetic and non-synthetic pesticides. The District had eleven categories associated with non-consumer product pesticides. Creosote application was considered a separate category. In 1996, the two divisions (agriculture and non-agriculture) were broken down into methyl bromide and other categories. The creosote application category is now incorporated in both the agricultural and non-agricultural pesticide’s “Other” categories.
+
+#### Methodologies {-}
+
+The following table lists the Pesticides Categories and their 2011 total organic emissions (TOG) in tons/day.
+
+```{r misc_other-pesticide-non_consumer-daily_emissions-table}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  filter_years(
+    CY(2008:2011)) %>%
+  filter_pollutants(
+    "TOG") %>%
+  convert_emission_units(
+    to = "ton/day") %>%
+  tabulate_emissions_by(
+    category,
+    pollutant,
+    year,
+    digits = 3) %>%
+  select(
+    Category = category,
+    starts_with("CY"),
+    Pollutant = pollutant,
+    Unit = ems_unit)
+```
+
+The California Department of Pesticide Regulation (DPR) provided the pesticide use data to the California Air Resources Board (ARB). The TOG emissions data for the years 2005 to 2009 are actual data estimated from the DPR Pesticide Reports.
+
+For Categories 1190 and 1191, the 2010 and 2011 the TOG emissions were grown from the year 2007. The year 2007 is the mid-point of the 5 year average. (Both ARB and DPR agreed the use of a 5-year average of historical data as an adjusted value would account for weather and pest infestation variability in agricultural pesticide emissions.)
+
+For Categories 1192 and 1193, the 2010 and 2011 TOG emissions were grown from the year 2009.
+
+### Monthly Variation {-}
+
+Monthly activity variation data is based on pesticide usage data in the Bay Area.
+
+#### County Distribution {-}
+
+The county distribution is also based on pesticide usage for each county in the District.
+
+### Trends
+
+#### Historical {-}
+
+```{r misc_other-pesticide-non_consumer-annual_emissions-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+The historical growth profile for the agricultural pesticides categories (Cats. 1190 and 1191) was based on a combination of prior adjusted emissions data (1990 - 2011) and a growth profile (from DRI94/DPR) provided by ARB.
+
+Structural pesticide, Methyl Bromide (Cat. 1192) was phased out in 2001.
+
+#### Growth {-}
+
+```{r misc_other-pesticide-non_consumer-annual_growth-chart, fig.height=8, out.height=800}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+The annual growth profile for categories 1190 and 1191 is based on 2012 – 2030 data provided by CARB. Emission projections for category 1193 are based on household population growth in the Bay Area.
+
+#### Control {-}
+
+The District does not currently have any regulations governing these categories; however the State of California Department of Pesticide Regulation has adopted regulations controlling various agricultural and structural pesticides. Additionally, the Federal EPA has phased out methyl bromide because of its ozone depleting potential.
+
+By: Stuart Schultz/Sukarn Claire 
+Date: January 2014
+Base Year: 2011

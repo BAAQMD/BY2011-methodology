@@ -1,3 +1,93 @@
 ## Wind Blown Dust
 
-**TODO**
+```{r misc_other-windblown_dust-setup}
+THESE_CATEGORIES <- c(
+  "#764 Windblown Dust, Agricultural Land" = 764,
+  "#765 Windblown Dust, Other" = 765)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Included in these categories are fugitive dust emissions resulting from wind erosion across agricultural fields (Category #764), and from wind erosion of soil on unpaved roads (Category #765).
+
+#### Methodologies {-}
+
+Total acreage for field crops, vegetable crops, fruit and nut crops, nursery crops, plants, flowers and miscellaneous crops were obtained for each county as reported in the "Agricultural Crops". The estimated crop acres were used as throughput for the calculation of wind erosion from agricultural fields (Category #764).
+
+The number of miles of unpaved road for each county were estimated from the “California Abstracts”, and converted into acreage. It was assumed a typical width of a road was 25 feet. The acreage of unpaved road was used as throughput for the calculation of windblown dust from unpaved roads (Category# 765). Particulate emission factor from dust emissions were developed based on the U.S. Department of Agriculture's equation:
+
+$$
+\text{Emission Factor} = E \times I \times C \times K \times L \times V
+$$
+where
+
+<div class="nobullet">
+
+- $E$ = portion of total wind erosion loses as suspended particulates
+
+- $I$ = soil erodibility, t/acre/yr
+
+- $C$ = climatic factor
+
+- $K$ = surface roughness factor
+
+- $L$ = unsheltered field width factor 
+
+- $V$ = vegetative cover factor
+
+($K$, $L$, $V$ depends on the crop type)
+
+|   |    Agricultural Land   | Unpaved Roads |
+|:-:|:----------------------:|:-------------:|
+| E |          0.025         |      .038     |
+| I |        38 - 220        |   86, 47, 56  |
+| C |          0.15          |      0.15     |
+| K |   0.8, 0.6, 0.1, 0.6   |      1.0      |
+| L | 0.74, 0.83, 0.77, 0.56 |   .29 - .34   |
+| V | 0.05, 0.91, 0.26, 0.26 |      1.0      |
+
+Table: Typical Values of above constants
+
+Particulate emissions from agricultural windblown dust were calculated by multiplying the crop acres by the emission factors developed by the U.S. Department of Agriculture, as above.
+
+Particulates emissions from windblown dust from unpaved roads were calculated by multiplying the unpaved acreage by the emission factors as developed above.
+
+#### Monthly Variation {-}
+
+Emission distribution through the months was estimated to be equal throughout the year.
+
+#### County Distribution {-}
+
+The report on Agricultural Crops for each county showed total acreage for each and are used in distributing emissions throughout the counties.
+
+### Trends
+
+#### History {-}
+
+```{r misc_other-windblown_dust-annual_emission-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+Emissions throughout the years were estimated based on the report of acreage of each county.
+
+#### Growth {-}
+
+```{r misc_other-windblown_dust-annual_growth-chart, fig.height=5, out.height=500}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Projections to year 2030 were estimated to be the same, with the assumption there would be no major changes in the acreage on agricultural lands and unpaved roads.
+
+By: Michael Nguyen 
+Date: February, 2014 
+Base Year 2011

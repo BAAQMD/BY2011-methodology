@@ -41,7 +41,7 @@ Emissions are distributed to the county based on the location of the processing 
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 
@@ -53,7 +53,7 @@ The historical growth profile for Category 36 was based on a combination of prio
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr) 
 ```
 
@@ -65,17 +65,16 @@ Projections of emissions to 2030 in all categories were based on ABAG’s 2009 C
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_control_factors_by(
+  chart_BY2011_annual_control_factors_by(
     color = pollutant)
 ```
 
 Two federal rules address air emissions from Portland cement manufacturing, namely New Source Performance Standards (NSPS) and National Emission Standard for Hazardous Air Pollutants (NESHAPS). For specific industrial operations (such as cement manufacturing), EPA addresses criteria pollutants from new, modified and reconstructed sources through NSPS. NESHAP address emissions of hazardous air pollutants from both new and existing sources.
 
-The cement manufacturing operations are subject to District regulations regarding permitting (Regulations 2-1 and 2-2), emissions of toxic or hazardous compounds (Regulation 2-5) and some regulations for individual pollutants. For example, Regulation 6-1 reduces particulate emissions from the control imposed by Ringleman requirements.
+The cement manufacturing operations are subject to District regulations regarding permitting ([Regulation 2-1] and [Regulation 2-2]), emissions of toxic or hazardous compounds ([Regulation 2-5]) and some regulations for individual pollutants. For example, [Regulation 6-1] reduces particulate emissions from the control imposed by Ringleman requirements.
 
-The District adopted Regulation 9, Rule 13, Nitrogen Oxide, Particulate Matter, and Toxic Air Contaminants from Portland Cement Manufacturing, on September 17, 2012.
+The District adopted [Regulation 9-13], Nitrogen Oxide, Particulate Matter, and Toxic Air Contaminants from Portland Cement Manufacturing, on September 17, 2012. This rule becomes effective on September 9, 2013 and limits the emissions of NOx, PM, and toxic air contaminants.
 
-This rule becomes effective on September 9, 2013 and limits the emissions of NOx, PM, and toxic air contaminants.
 The categories criteria pollutant’s overall control efficiencies (CE) as a result of this rule are listed below:
 
 - For Category 36, the overall CE of PM increases slightly, to over 99%.; the overall CE of organics is approximately 14%.

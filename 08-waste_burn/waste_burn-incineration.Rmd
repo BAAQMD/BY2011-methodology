@@ -2,6 +2,7 @@
 
 ```{r waste_burn-incineration-setup}
 THESE_CATEGORIES <- c(
+  "#314 Incineration (Point)" = 314,
   "#1579 Incineration (Area)" = 1579)
 ```
 
@@ -29,7 +30,7 @@ The District updates the point source (Category 314) data each year on a source-
 
 ##### Area Sources {-}
 
-Area source emissions for category 1579 were calculated based on an estimated household waste generated in the Bay Area. Most of the household waste in the Bay Area is collected and disposed of at the waste landfills. About a third of a percent of the total waste generated the Bay Area is assumed to be burnt through illegal fires. The throughput (tons/year) was estimated by multiplying the Bay Area population by an average amount of waste production per resident. An average residential daily waste production of 1.6 pounds/person/day was used for the Bay Area. The residential daily waste production data was obtained from the California Integrated Waste Management Board for the year 1998.
+Area source emissions for category 1579 were calculated based on an estimated household waste generated in the Bay Area. Most of the household waste in the Bay Area is collected and disposed of at the waste landfills. About a third of a percent of the total waste generated the Bay Area is assumed to be burnt through illegal fires. The throughput (tons/year) was estimated by multiplying the Bay Area population by an average amount of waste production per resident. An average residential daily waste production of 1.6 pounds/person/day was used for the Bay Area. The residential daily waste production data was obtained from the California Integrated Waste Management Board for the year 1998. 
 
 The emission factors for category 1579, in pounds per ton (Lb/Ton) of waste materials combusted are shown below.
 
@@ -53,11 +54,11 @@ Emission factors were developed based on type of materials commonly disposed of 
 
 #### History {-}
 
-```{r SS_combust-waste_burn-incineration-annual_emissions-chart, fig.height=12, out.height=1200}
+```{r waste_burn-incineration-annual_emissions-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 
@@ -65,11 +66,11 @@ Historical emission trends followed area population growth.
 
 #### Growth {-}
 
-```{r SS_combust-waste_burn-incineration-annual_growth-chart, fig.height=8, out.height=800}
+```{r waste_burn-incineration-annual_growth-chart, fig.height=4, out.height=400}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr) 
 ```
 
@@ -77,7 +78,7 @@ It was assumed that annual emission trends for waste burning would follow popula
 
 #### Control {-}
 
-The District Regulation 9 controls emissions of NOx and SOx from combustion of solids.
+The District [Regulation 9] controls emissions of NOx and SOx from combustion of solids.
 
 By: Sukarn Claire 
 Date: January 2014 

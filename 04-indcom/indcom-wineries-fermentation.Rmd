@@ -49,7 +49,7 @@ County distribution was based on the amount of wine production in each county. A
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category)
 ```
 
@@ -61,7 +61,7 @@ Prior to Base Year 2005, the throughput had been obtained from the "Final Grape 
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr)
 ```
 

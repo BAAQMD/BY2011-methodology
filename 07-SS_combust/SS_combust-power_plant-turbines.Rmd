@@ -56,7 +56,7 @@ Monthly variation of emissions is based on company reported quarterly throughput
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 
@@ -68,7 +68,7 @@ Category 297 emissions prior to 1987 were derived from Base Year 1983 trend valu
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr) 
 ```
 
@@ -86,7 +86,7 @@ Category 1597 emissions are expected to grow in accordance with CEC’s power co
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_control_factors_by(
+  chart_BY2011_annual_control_factors_by(
     color = pollutant) 
 ```
 

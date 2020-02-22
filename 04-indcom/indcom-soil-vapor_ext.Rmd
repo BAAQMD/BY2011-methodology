@@ -31,7 +31,7 @@ The data bank system contains information on the county location of each process
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category)
 ```
 
@@ -43,7 +43,7 @@ The historical growth profile was based on a combination of prior emissions data
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr)
 ```
 
@@ -55,7 +55,7 @@ Future projections of emissions to 2030 are based on ABAG’s 2009 Manufacturing
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_control_factors_by(
+  chart_BY2011_annual_control_factors_by(
     color = pollutant)
 ```
 

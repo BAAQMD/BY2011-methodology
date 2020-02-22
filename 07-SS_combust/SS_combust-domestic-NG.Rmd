@@ -28,25 +28,14 @@ Emission factor information for natural gas combustion was obtained from the U.S
 
 The natural gas combustion emission factors for these categories, in pounds per million cubic feet (Lb/MMCF) are shown below.
 
-| Category | PART | ORG | NOX | SO2 | CO |   CO2  | CH4 | N2O |
-|:--------:|:----:|:---:|:---:|:---:|:--:|:------:|:---:|:---:|
-|    All   |  7.6 |  11 |  94 | 0.6 | 40 | 120000 | 2.3 | 2.2 |
-
-Table: Residential Natural Gas Usage by Category
-
-```{r SS_combust-domestic_NG-emission_factors-table, include=FALSE, eval=FALSE}
+```{r SS_combust-domestic_NG-emission_factors-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  drop_vars(
-    year,
-    pol_id,
-    cat_id,
-    ef_unit) %>%
-  distinct() %>%
-  spread(
-    pol_abbr,
-    ef_qty)
+  tabulate_BY2011_emission_factors(
+    pollutants = c(
+      BY2011_POLLUTANTS,
+      "CO2", "CH4", "N2O"))
 ```
 
 #### County Distribution {-}
@@ -87,7 +76,7 @@ Natural gas information provided by CEC and PG&E includes residential, commercia
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 
@@ -99,7 +88,7 @@ Historical emission trends are based on natural gas usage in the San Francisco B
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr) 
 ```
 
@@ -111,7 +100,7 @@ Emission growth projections are based on household population growth in combinat
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_control_factors_by(
+  chart_BY2011_annual_control_factors_by(
     color = category) 
 ```
 

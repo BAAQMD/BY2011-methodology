@@ -31,7 +31,7 @@ Emissions distributed into the nine counties were based on Caltrans Transportati
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category)
 ```
 
@@ -43,7 +43,7 @@ Historical emissions were based on past years Bay Area gasoline consumption. Pri
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr)
 ```
 
@@ -57,7 +57,7 @@ The Air Resources Board (ARB) is in the process of updating the emission factors
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_control_factors_by(
+  chart_BY2011_annual_control_factors_by(
     color = pollutant)
 ```
 

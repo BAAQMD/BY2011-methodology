@@ -48,7 +48,7 @@ Monthly variation of emissions is based on company reported quarterly throughput
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 
@@ -63,7 +63,7 @@ The Bay Area boiler/steam turbine type power plant NOx emissions have decreased 
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr,
     facet_scales = "free_y") # category 294 has very large decline (~10,000%)
 ```
@@ -76,7 +76,7 @@ Emission projections were developed based on the electric power generation fuel 
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_control_factors_by(
+  chart_BY2011_annual_control_factors_by(
     color = pollutant) 
 ```
 

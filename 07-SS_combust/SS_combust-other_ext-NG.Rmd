@@ -44,11 +44,15 @@ Emission factor information for natural gas combustion was obtained from the U.S
 
 The area source natural gas combustion emission factors in pounds per million cubic feet (Lb/MMCF) are shown below.
 
-|    CATEGORY    | PART | ORG | NOx | SO2 | CO |   CO2   | CH4 | N2O |
-|:--------------:|:----:|:---:|:---:|:---:|:--:|:-------:|:---:|:---:|
-| `1590`, `1591` |  7.6 |  11 |  98 | 0.6 | 42 | 120,000 | 2.3 | 2.2 |
-
-Table: Area Source Natural Gas Combustion Emission Factors (lb/MMCF)
+```{r SS_combust-NG-emission_factors-table}
+BY2011_annual_area_source_emission_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  tabulate_BY2011_emission_factors(
+    pollutants = c(
+      BY2011_POLLUTANTS, 
+      "CO2", "CH4", "N2O"))
+```
 
 #### County Distribution {-}
 
@@ -68,7 +72,7 @@ For point sources monthly variation of emissions is based on company reported qu
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 
@@ -82,7 +86,7 @@ Prior to base year 1987, category 307 was grouped as four categories: #86, 97, 9
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_growth_by(
+  chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr) 
 ```
 
@@ -98,7 +102,7 @@ The data used in developing growth profile was obtained from the Association of 
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  BY2011_chart_annual_control_factors_by(
+  chart_BY2011_annual_control_factors_by(
     color = pollutant) 
 ```
 

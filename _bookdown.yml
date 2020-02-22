@@ -9,10 +9,10 @@ rmd_files: [
   "07-SS_combust/SS_combust.Rmd",
   "08-waste_burn/waste_burn.Rmd",
   "09-mobile_combust/mobile_combust.Rmd",
-  "10-misc_other/misc_other.Rmd"]
-before_chapter_script: [
-  "helper_datasets.R", 
-  "helper_functions.R"]
+  "10-misc_other/misc_other.Rmd",
+  "appendix/appendix.Rmd"]
+before_chapter_script: "chapter_setup.R"
+after_chapter_script: "chapter_teardown.R"
 view: https://github.com/holstius/BY2011-methodology/blob/master/%s
 edit: https://github.com/holstius/BY2011-methodology/edit/master/%s
 output_dir: "docs"

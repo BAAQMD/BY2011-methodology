@@ -14,17 +14,33 @@ link-citations: yes
 
 # Introduction
 
-This is a reproduction of the BY2011 Methodology Report, with several enhancements:
+This is an enhanced reproduction of the BY2011 Methodology Report, featuring:
 
-- Charts and tables woven throughout the text.
-- Equations (ex: [Wineries/Breweries](#wineries-fermentation-methodology)).
-- Linked references to rules & regulations (ex: [Chemical Manufacturing](#chem_fac-other-control)).
+- **Charts** to illustrate historical emissions, control profiles, and growth profiles;
 
-It's a work in progress, but very useful. There are stubs for many sections in [Chapter 4](#indcom), [Chapter 6](#petprod), and [Chapter 9](#mobile_combust). However, the other seven chapters have lots of good content!
+- **Tables** with footnotes, dynamic calculations, and values pulled directly from BY2011 data (examples: [Structural Fires](#misc_other-fires-struct-methodology), [Waste Burning](#waste_burn-planned_ag-methodology), and [Animal Waste](#misc_other-animal_waste-livestock-methodology));
 
-A forked and modified copy can serve as the initial BY2015 Methodology Report.
+- **Equations** with rich formatting (examples: [Paved Roads](#misc_other-roads-paved-methodology) and [Farming Operations](#cat_749-methodology)); and
 
-More features can of course be added (ex: tables of county fractions) to existing sections (and stubs).
+- Linked **references** to rules & regulations (example: [Chemical Manufacturing](#chem_fac-other-control)).
+
+## Purposes
+
+It has two main purposes:
+
+- **Understanding.** It's a work in progress, but very useful for understanding the BY2011 inventory. There are stubs for many sections in [Chapter 4](#indcom), [Chapter 6](#petprod), and [Chapter 9](#mobile_combust). However, the other seven chapters have lots of good content.
+
+- **BY2015.** A forked and modified copy can serve as the initial BY2015 Methodology Report.
+
+## Potential Enhancements
+
+- Add tables or visualizations of county fractions.
+- Add more internal cross-references.
+- Finish hyperlinking to BAAQMD rules & regulations.
+- Add hyperlinking to external documents (reports, etc.).
+- Create a Bibliography (bookdown has good support for this).
+- Add an Appendix with supplementary datasets (e.g. CEC natural gas consumption).
+- Add an Appendix showcasing major changes from the previous inventory.
 
 ```{r libraries, include = FALSE, message = FALSE, cache = TRUE}
 library(inventory)
@@ -41,13 +57,13 @@ library(knitr)
 library(printr)
 
 knitr::opts_chunk$set(
-  #dev = "svg",
+  dev = "svg",
   cache = TRUE,
   echo = FALSE,
   message = FALSE,
   warning = FALSE,
-  fig.width = 7,
-  out.width = 700,
+  fig.width = 8,
+  out.width = 800,
   fig.height = 4,
   out.height = 800 / (8 / 4),
   dpi = 300)
