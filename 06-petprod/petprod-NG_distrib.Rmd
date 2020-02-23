@@ -8,13 +8,13 @@ THESE_CATEGORIES <- c(
 
 ### Emissions
 
-#### Introduction
+#### Introduction {-}
 
 Emissions associated with the transmission of natural gas are mostly fugitive organic emissions that occur due to the leaks in pipeline. Components such as valves, flanges, pumps, compressors, and pressure relief valves (PRVs) are the potential leak sources.
 
 Categories 61 and 868, account for fugitive organic emissions including methane (CH4) from natural gas distribution system in the San Francisco Bay Area. Emissions from Pacific Gas and Electric's (PG&E's) pipeline system that distributes natural gas for its own use are covered in Category #61. Emissions from PG&E's pipeline system that distributes natural gas to residential, commercial and industrial customers are covered in Category #868.
 
-#### Methodology
+#### Methodology {-}
 
 Fugitive emissions occur from leaks in the pipeline distribution system. Prior to 1990, an emission factor of 0.7% by volume of gas distributed was used. This factor was based on the South Coast Air Quality Management District report "Estimated Fugitive Emissions from Natural Gas Transmission for Calendar Year 1979", July, 1980. Since 1990, an emission factor of 0.2% has been used for both distribution systems: PG&E's own usage (Category #61) and PG&E's customers (Category #868). This emission factor is based on the 1990 PG&E report titled “Unaccounted-For Gas Project”. Emission Factors in pounds per thousand cubic feet of gas (lb/MCF) are shown below.
 
@@ -22,17 +22,17 @@ Fugitive emissions occur from leaks in the pipeline distribution system. Prior t
 |:------------:|:--------------------:|:-------------:|
 |  `61`, `868` |         88.0         |      85.4     |
 
-#### County Distribution
+#### County Distribution {-}
 
 County distributions for Category #61 and #868 are based on natural gas usage data obtained from the California Energy Commission (CEC), PG&E, and City of Palo Alto.
 
-#### Temporal Variation
+#### Temporal Variation {-}
 
 The daily, weekly and monthly emission rates are considered to be uniform.
 
 ### Trends
 
-#### History
+#### History {-}
 
 ```{r petprod-NG_distrib-annual_emissions-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
@@ -48,7 +48,7 @@ For Base Year 1983, all natural gas distribution losses were handled as a single
 
 For Category #61 up to base year 2008, it was assumed that annual emissions would tend to follow two components: services industry employment and population by county in the District. As such, a hybrid growth profile was developed based on 50% of the appropriate county services industry employment value and 50% of the appropriate county population value in combination with CEC’s natural gas data. For Category #868 up to base year 2008, it was assumed that annual emissions would tend to follow: manufacturing industry employment and population by county in the District in combination with CEC’s natural gas consumption forecasts. As such, a hybrid growth profile was developed based on 50% of the appropriate county manufacturing industry employment value and 50% of the appropriate county population value in combination with CEC’s natural gas data. For previous forecasts, the employment and population data was obtained from the Association of Bay Area Government's (ABAG’s) 2009 "Projections" reports.
 
-#### Growth
+#### Growth {-}
 
 ```{r petprod-NG_distrib-annual_growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%

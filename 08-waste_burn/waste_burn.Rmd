@@ -3,12 +3,8 @@
 ```{r waste_burn-resource_recovery, child="08-waste_burn/waste_burn-resource_recovery.Rmd"}
 ```
 
-***
-
 ```{r waste_burn-incineration, child="08-waste_burn/waste_burn-incineration.Rmd"}
 ```
-
-***
 
 ```{r waste_burn-planned_ag, child="08-waste_burn/waste_burn-planned_ag.Rmd"}
 ```

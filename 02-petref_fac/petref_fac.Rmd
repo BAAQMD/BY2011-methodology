@@ -3,12 +3,8 @@
 ```{r 02-petref_fac-general, child="02-petref_fac/petref_fac-general.Rmd"}
 ```
 
-***
-
 ```{r 02-petref_fac-fugitive, child="02-petref_fac/petref_fac-fugitive.Rmd"}
 ```
-
-***
 
 ```{r 02-petref_fac-vessel_depress, child="02-petref_fac/petref_fac-vessel_depress.Rmd"}
 ```

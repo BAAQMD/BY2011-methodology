@@ -10,7 +10,7 @@ THESE_CATEGORIES <- c(
 
 ### Emissions
 
-#### Introduction
+#### Introduction {-}
 
 Fugitive dust particles raised from the movements of motor vehicles on paved road surfaces are included in this category.
 

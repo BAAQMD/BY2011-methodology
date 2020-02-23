@@ -24,23 +24,21 @@ This is an enhanced reproduction of the BY2011 Methodology Report, featuring:
 
 - Linked **references** to rules & regulations (example: [Chemical Manufacturing](#chem_fac-other-control)).
 
-## Purposes
-
 It has two main purposes:
 
 - **Understanding.** It's a work in progress, but very useful for understanding the BY2011 inventory. There are stubs for many sections in [Chapter 4](#indcom), [Chapter 6](#petprod), and [Chapter 9](#mobile_combust). However, the other seven chapters have lots of good content.
 
 - **BY2015.** A forked and modified copy can serve as the initial BY2015 Methodology Report.
 
-## Potential Enhancements
+Potential enhancements include:
 
-- Add tables or visualizations of county fractions.
-- Add more internal cross-references.
-- Finish hyperlinking to BAAQMD rules & regulations.
+- Adding tables or visualizations of county fractions.
+- Adding more internal cross-references.
+- Finishing hyperlinks to BAAQMD rules & regulations.
 - Add hyperlinking to external documents (reports, etc.).
-- Create a Bibliography (bookdown has good support for this).
-- Add an Appendix with supplementary datasets (e.g. CEC natural gas consumption).
-- Add an Appendix showcasing major changes from the previous inventory.
+- Creating a Bibliography (bookdown has good support for this).
+- Adding an Appendix with supplementary datasets (e.g. CEC natural gas consumption).
+- Adding an Appendix showcasing major changes from the previous inventory.
 
 ```{r libraries, include = FALSE, message = FALSE, cache = TRUE}
 library(inventory)
