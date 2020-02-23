@@ -3,7 +3,7 @@
 ```{r misc_other-construction-setup}
 THESE_CATEGORIES <- c(
   "#744 Residential" = 744,
-  "#745 Commericial" = 745,
+  "#745 Commercial" = 745,
   "#746 Institutional" = 746,
   "#747 Industrial" = 747,
   "#748 Roads" = 748)
