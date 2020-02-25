@@ -1,3 +1,62 @@
 ## Asphalt Roofing
 
-**TODO**
+```{r petprod-asphalt-roof-setup}
+THESE_CATEGORIES <- c(
+  "#1618 Asphalt Roofing" = 1618)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Asphalt is used to adhere, repair, and/or create a smooth finish over manufactured roofing materials (i.e. cap sheets, felt sheets and flashing squares) on commercial and industrial buildings and multiple unit dwellings. This category estimates organic emissions from roofing operations; however, it does not include the manufacture of roofing materials, nor does it cover emissions from fuel combustion.
+
+The organic emission from asphalt roofing operations in the Bay Area was based on ARB’s methodology for emission calculations (Attachment C: Asphalt Paving and Roofing, from STI’s Area Source Emissions Updates, March 2003).
+
+#### Methodology {-}
+
+In 2011, the Energy Information Administration (EIA) Office of Oil and Gas reported 13,703,000 barrels of asphalt were used in California for paving and roofing purposes. Of that amount, it was assumed 80% (8,471,200 barrels) of the asphalt was used for road paving and 20% (2,117,800 barrels) was used for roofing. Individual county throughputs can be apportioned from construction activity that was provided to ARB. (For the Bay Area, the fractional total to the state was approximately 0.2573.) The 2011 throughput for the BAAQMD was 544,836 bbls/yr (or 95,423 tons/yr, assuming density of asphalt at 8.34 lb/gal). Applying the AP-42 organic emission factor of 6.2 lb/ton of roofing material, the 2008 BAAQMD asphalt roofing emissions, in tons per day, is as follows:
+
+$$
+544,836\ \tfrac{bbl}{yr} \times 42\ \tfrac{gal}{bbl} \times 8.34\ \tfrac{lb}{gal} \text{ (density factor)} \times \tfrac{1\ ton}{2000\ lb} \times \tfrac{1\ yr}{365\ days} \times 6.2 \tfrac{lb}{ton} \text{ (emission factor)} \times \tfrac{1\ ton}{2000\ lb} = 0.81 \tfrac{ton}{day}
+$$
+
+#### Monthly Variation {-}
+
+According to ARB, asphalt roofing activity occurs uniformly throughout the year.
+
+#### County Distribution {-}
+
+As mentioned previously, county throughputs can be apportioned from construction activity that was provided to ARB
+
+### Trends
+
+#### History {-}
+
+```{r petprod-asphalt-roof-annual_emission-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category)
+```
+
+The historical growth profile was based on a combination prior emissions data (2000) provided by ARB and ABAG’s 2009 Construction Employment Growth Profile.
+
+#### Growth {-}
+
+```{r petprod-asphalt-roof-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
+Projected emissions to 2030 were based on ABAG’s 2009 Construction Employment Growth Profile.
+
+***
+
+By: Stuart Schultz 
+Date: January 2014 
+Base Year 2011

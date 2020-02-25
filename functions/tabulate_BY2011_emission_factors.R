@@ -14,6 +14,9 @@ tabulate_BY2011_emission_factors <- function (
   stopifnot(
     is.character(pollutants)) 
   
+  #
+  # Prevent accidental problems with "duplicated factor levels".
+  #
   pollutants <- 
     unique(pollutants)
   

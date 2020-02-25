@@ -4,8 +4,9 @@
 chart_BY2011_annual_control_factors_by <- function (
   chart_data,
   ...,
+  facet_rows = "category",
   flag_labels = "{format_percentage(1 - cf_qty, digits = 1)} controlled",
-  facet_rows = "category"
+  flag_years = CY(2011)
 ) {
   
   chart_object <-
@@ -14,10 +15,10 @@ chart_BY2011_annual_control_factors_by <- function (
       BY2011_POLLUTANTS) %>%
     ggtools::chart_annual_control_factors_by(
       ...,
-      flag_labels = flag_labels,
       facet_rows = facet_rows,
       year_limits = BY2011_YEAR_LIMITS,
-      flag_years = CY(2011)) %>%
+      flag_labels = flag_labels,
+      flag_years = flag_years) %>%
     add_BY2011_chart_theme()%>%
     add_BY2011_chart_guides()
   

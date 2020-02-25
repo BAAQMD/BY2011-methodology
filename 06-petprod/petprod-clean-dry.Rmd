@@ -1,3 +1,110 @@
 ## Dry Cleaning
 
-**TODO**
+```{r petprod-clean-dry-setup}
+THESE_CATEGORIES <- c(
+  "#105 Perchloroethylene" = 105,
+  "#106 Other Synthetic Solvents" = 106,
+  "#107 Non-Halogenated Pet. Solv." = 107,
+  "#1912 Perchloroethylene (Area)" = 1912,
+  "#1913 Non-Halogenated Pet.Solv. (Area/Registered)" = 1913)
+```
+
+### Emissions 
+
+#### Introduction {-}
+
+In the dry cleaning process, washing is conducted by agitating the fabric in a solvent bath. The next step is extraction where excess solvent is removed by centrifugal force. In the final step, drying is conducted by tumbling the fabric in a stream of warm air to vaporize and remove the solvent from the fabric. When the washing and extraction steps are performed in one machine and drying in a second machine, it is referred to as a transfer operation. When one machine performs all three steps, it is referred to as a dry- to-dry operation. Coin-operated dry cleaning machines, which are directly available for use by the consumer, typically involve dry-to-dry operations. These dry cleaning facilities emit organic emissions resulting from the use of solvent in cleaning process. The organic emissions may either be reactive (i.e. Stoddard solvent) or nob-reactive (i.e. perchloroethylene). The amount of emission depends on the equipment type, amount of cleaning performed and operating practices. Dry cleaning equipment includes washers, dryers, solvent stills, muck cookers, still residues, and filter muck storage areas. Emissions may also come from leaks from pipes, flanges and pumps.
+
+The most common dry cleaning synthetic solvent in use today is perchloroethylene, or PERC, a non-reactive organic material, but considered toxic (Category Nos. 105 and 1912). However, PERC usage in dry cleaning operations will be phased out by the year 2023. Category Nos. 105 and 1912 represent PERC usage in point and area sources, respectively. Other than PERC, there are currently no other halogenated solvents (Category #106) used in the District.
+
+The other cleaning solvents used are the non-halogenated petroleum solvents (Category Nos. 107 and 1913). These include both reactive solvents (i.e. Stoddard Solvent, DF- 2000, etc.) and non-reactive solvents (i.e. siloxane). Category Nos. 107 and 1913 represent non-halogenated petroleum solvents usage in point and area sources, respectively.
+
+#### Methodologies {-}
+
+Most of the dry cleaning facilities in the Bay Area are covered under the District's Permit system. Emissions are calculated by using solvent throughput information of each source reported by individual companies in the District's Data Bank system, called point sources. Emission factors used were based on tests and other data publication. Those dry cleaning facilities not covered under the District's Permit system are considered area sources. For Category 1912, the area source emissions are assumed to be 10% of the point source emissions.
+
+In 2012, most dry cleaning facilities using non-halogenated petroleum solvents were re- classified as registered sources in the District’s Data Bank. As a registered source, a facility must use 100 gallons, per year, or less, of non-halogenated petroleum solvent material. These registered sources are now classified as area sources (Category 1913). (An additional 5% of the number of registered dry cleaners will be added to include those dry cleaning facilities that did not report to the District.) Those dry cleaning facilities using greater than 100 gallons per year of non-halogenated petroleum solvents are considered point sources.
+
+#### Monthly Variation {-}
+
+Monthly distribution was estimated based on each facility's reported quarterly seasonal percent throughput data.
+
+#### County Distribution {-}
+
+The county location of each facility reported in the Data Bank is used to distribute emissions into each county for Categories 105 and 107. The county fractions for these two categories were also used to their respective area source portions, namely Categories 1912 and 1913.
+
+### Trends
+
+#### History {-}
+
+```{r petprod-clean-dry-annual_emission-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category)
+```
+
+Prior years’ emissions were estimated using the Association of Bay Area Governments’ (ABAG’s) Population growth profile. This growth profile was modified to reflect the emissions data between the years 1987 – 2011.
+
+#### Growth {-}
+
+```{r petprod-clean-dry-annual_growth-chart, fig.height=6, out.height=600}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
+Over the past years, PERC usage has decreased significantly. This decrease is the result of several factors, one being its toxicity. Dry cleaners have been switching to other cleaners, such as non-halogenated hydrocarbon solvents. In March 2008, amendments to District Regulation 11, Rule 16 (Rule 11-16) phases out all PERC usage in dry cleaning operations by 2023. The cumulative PERC reduction (listed below) was used in developing the growth profile for Categories 105 and 1912 that represents this phase out:
+
+```{r perc-reductions-table}
+perc_data <-
+  tibble(
+    year = CY(2008:2023),
+    reduced = 0.01 * c(18.57, 18.57, 18.57, 1.43, 4.90, 3.88, 8.16, 6.73, 8.98, 4.90, 1.43, 1.63, 0.82, 0.41, 0.20, 0.82),
+    cum_reduced = cumsum(reduced))
+
+kable_data <-
+  perc_data %>%
+  mutate_at(
+    vars(reduced, cum_reduced),
+    ~ formattable::percent(., digits = 2)) %>%
+  rename(
+    Year = year,
+    `Reduction` = reduced,
+    `Cumulative` = cum_reduced)
+
+kable_data %>%
+  kable() %>%
+  kable_styling(
+    full_width = FALSE,
+    bootstrap_options = c(
+      #"striped", 
+      "condensed"))
+```
+
+The phase out of PERC will increase usage of the non-halogenated petroleum solvents (Category Nos. 107 and 1913). As mentioned previously, most dry cleaning facilities using non-halogenated petroleum solvents were re-classified as registered sources (i.e. area sources) and thus reflected in the growth profiles for Categories 107 and 1913. After 2012, the growth profiles for these two categories were based on data from a 2009 BAAQMD staff report on dry cleaner emissions projections (Figure IV-A1 of the January 2009 Staff Report for Reg. 2, Rule 1, Reg. 8, Rules 17 and 27, and Reg. 11, Rule 16) and ABAG’s Population growth profile.
+
+#### Control {-}
+
+```{r petprod-clean-dry-annual_control_factor_data, fig.height=6, out.height=600}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant)
+```
+
+The District originally adopted District [Regulation 8-27], for Synthetic Solvent Dry Cleaning Operations as an ozone control measure in May 1980. This rule was amended in March 1982, November 1984, and September 1990 with additional operating requirements. In 1994, the District adopted [Regulation 11-16] to incorporate new regulatory standards adopted at the state and federal levels. Regulation 11-16, with its new solvent standards and control requirements, replaced Regulation 8-27. Regulation 8-27 was retained as part of the District’s regulations for State Implementation Plan (SIP) considerations, however, in March 2009 was deleted.
+
+District [Regulation 11-16] (Perchloroethylene and Synthetic Solvent Dry Cleaning Operations), passed in December 1994 required more stringent requirements on controls, monitoring, ventilation, secondary controls, and certain prohibition of usage of certain machines. In March 2009, Regulation 11-16 was amended to incorporate into the District rule a state law phase out schedule that would eliminate the use of Perchloroethylene in dry cleaning by January 1, 2023.
+
+District [Regulation 8-17], adopted in May 1980, set operating and emission control requirements to dry cleaning operations using petroleum solvents. In March 1985 and September 1990, this rule was amended to reflect additional control and operating requirements. Some of the newer alternative technologies currently available include some non-halogenated photochemical organic compounds (POC) and non- photochemical organic compounds (NPOC). To reflect the expanded applicability of this rule and update the equipment standards and control requirements, Regulation 8-17 was amended again in March 2009. The title of this rule was also changed from “Petroleum Solvent Dry Cleaning Operations” to “Non-halogenated Dry Cleaning Operations”.
+
+***
+
+By: Stuart Schultz 
+Date: January 2014 
+Base Year 2011

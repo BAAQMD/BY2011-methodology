@@ -1,3 +1,9 @@
+```{r appendix-rules_and_regs}
+#
+# Full listing: https://www.baaqmd.gov/rules-and-compliance/current-rules
+#
+```
+
 [Regulation 2-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-1-general-requirements "Regulation 2, Rule 1"
 
 [Regulation 2-2]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-2-new-source-review "Regulation 2, Rule 2"
@@ -10,19 +16,31 @@
 
 [Regulation 8]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-organic-compounds "Regulation 8"
 
+[Regulation 8-4]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-4-general-solvent-and-surface-coating-operations "Regulation 8, Rule 4"
+
 [Regulation 8-10]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-10-process-vessel-depressurization "Regulation 8, Rule 10"
+
+[Regulation 8-15]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-15-emulsified-and-liquid-asphalts "Regulation 8, Rule 15"
+
+[Regulation 8-17]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-17-petroleum-dry-cleaning-operations "Regulation 8, Rule 17"
 
 [Regulation 8-18]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-18-equipment-leaks "Regulation 8, Rule 18"
 
 [Regulation 8-22]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-22-valves-and-flanges-at-chemical-plants "Regulation 8, Rule 22"
 
+[Regulation 8-27]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-27-deleted-march-4-2009 "Regulation 8, Rule 27"
+
 [Regulation 8-42]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-42-large-commercial-bread-bakeries "Regulation 8, Rule 42"
+
+[Regulation 8-51]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-51-adhesive-and-sealant-products "Regulation 8, Rule 51"
 
 [Regulation 9]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-inorganic-gaseous-pollutants "Regulation 9"
 
 [Regulation 9-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-1-sulfur-dioxide "Regulation 9, Rule 1"
 
 [Regulation 9-13]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-13--nitrogen-oxides-particulate-matter-and-toxic-air-contaminants-from-portland-cement-ma "Regulation 9, Rule 13"
+
+[Regulation 11-16]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-11-rule-16-perchloroethylene-and-synthetic-solvent-dry-cleaning-operations "Regulation 11, Rule 16" 
 
 [Regulation 12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-miscellaneous-standards-of-performance "Regulation 12"
 
