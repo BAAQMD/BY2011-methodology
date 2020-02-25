@@ -29,7 +29,7 @@ Petroleum refining involves processing crude oil into consumable products such a
 
 **Category 15** accounts for all refinery process gas (combustion) emissions from flares and blow down systems. Refinery flares can emit large quantities of organics, sulfur dioxide and carbon monoxide as well as greenhouse gases.
 
-**Category 16** includes emissions from all other refinery processes not covered in category 15. Emissions of organic compounds and greenhouse gases from storage tanks, sulfur recovery units, and combustion processes are shown in sections **REF**, **REF**, and **REF** respectively. The processes in this category include distillation, hydrogen manufacturing plants, fuel blending. Coke loading and storage facilities account for most of the particulate emissions in this category.
+**Category 16** includes emissions from all other refinery processes not covered in category 15. Emissions of organic compounds and greenhouse gases from storage tanks, sulfur recovery units, and combustion processes are included in chapters/sections on [Petroleum Products](#petprod-petref-storage), [Chemical Plants](#chem_fac-other), and [Turbines](#SS_combust-turbines), respectively. The processes in this category include distillation, hydrogen manufacturing plants, fuel blending. Coke loading and storage facilities account for most of the particulate emissions in this category.
 
 #### Methodologies {-}
 
@@ -88,6 +88,8 @@ BY2011_annual_control_factor_data %>%
 Refinery emissions are regulated by the District. Regulations [6][Regulation 6], [7][Regulation 7], [8][Regulation 8], and [9][Regulation 9] regulate Particulate Matter, Odorous Substances, Organic Compounds, and Inorganic Gaseous Pollutants respectably.
 
 [Regulation 12], Rules [11][Regulation 12-11] and [12][Regulation 12-12] pertain to flare monitoring and flare minimization plan at Petroleum Refineries. The rule does not mandate reductions. District staff has found that because refiners have looked more closely both at monitoring and the feasibility of flaring reductions, flaring activities at the five Bay Area refineries have dropped dramatically over the past years. The result has been a significant emission reduction that cannot be directly attributed to this rule, but has and will ultimately be reflected in the emissions.
+
+***
 
 By: Tan Dinh
 Date: December 2013

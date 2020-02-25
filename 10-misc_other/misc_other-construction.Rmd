@@ -71,6 +71,8 @@ The projected emissions to 2030 for Categories 744 – 747 were based on ABAG’
 
 For Category 748, the growth profile for the years 2008-2010 was based on information found in the California Energy Commission’s Report “Transportation Energy Forecasts and Analyses for the 2009 Integrated Energy Policy Report”, May 2010, Table 2.10. For these years, the activity decreased an average 4.3% per year to account for the downturn in the economy. After 2010, projected emissions to 2030 were based on ABAG’s 2009 Construction Employment Growth Profile.
 
+***
+
 By: Stuart Schultz 
 Date: January 2014 
 Base Year 2011

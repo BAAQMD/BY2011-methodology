@@ -53,6 +53,8 @@ BY2011_annual_growth_factor_data %>%
 
 Future projection of emissions was based on the food manufacturing industries taken from ABAG’s 2009 Projections report.
 
+***
+
 By: Michael Nguyen 
 Date: January, 2014 
 Base Year 2011

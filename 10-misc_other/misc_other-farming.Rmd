@@ -127,6 +127,8 @@ Projected emissions to 2030 for both categories were based on ARB’s growth pro
 
 For Categories 749 and 1435, the projected growth profile was based on emissions data from 2000 – 2010. The annual activity factors during this time period decreased by 0.004692 and 0.004777 per year, respectively.
 
+***
+
 By: Stuart Schultz 
 Date: January 2014 
 Base Year 2011

@@ -65,6 +65,8 @@ BY2011_annual_control_factor_data %>%
 
 Emissions through the years were estimated by using agricultural production data in the District. In 1963-1964 there was at least 50% reduction of particulate emissions from equipment such as coffee roaster and food dryers brought about by the District's Regulation 6 on visible emissions from the Ringlemann 2 standard. In 1970 there was at least an additional 25% reduction in particulates from the Ringlemann 1 standard. Currently, there is an estimated 98% overall control of particulates from this category.
 
+***
+
 By: Stuart Schultz 
 Date: October 2013 
 Base Year 2011

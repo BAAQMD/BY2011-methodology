@@ -66,6 +66,8 @@ BY2011_annual_control_factor_data %>%
 
 Regulation 9-10 controls emissions of NOx due to external combustion. Significant reduction in NOx emissions was observed between the period from year 2000 to 2004 for refinery external combustion operations as a result of this rule.
 
+***
+
 By: Tan Dinh
 Date: January 2014
 Base Year: 2011

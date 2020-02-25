@@ -1,3 +1,57 @@
 ## Aircraft Fueling
 
-**TODO**
+```{r pteprod-fueling-aircraft-setup}
+THESE_CATEGORIES <- c(
+  "#79 Aviation Fuel" = 79,
+  "#80 Jet Fuel" = 80)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Emissions from these categories occur during refueling (including spillage) of general aviation, commercial, and military aircraft with aviation gasoline or jet fuel. Over-the- wing and single point pressure fueling are two systems used by airports for refueling aircraft. The over-the-wing is similar to a service station without a vapor recovery system. Single point pressure systems use pressure and a closed connection to refuel aircraft. The gasoline vapors in the aircraft tank are vented into the atmosphere through vents on the wings. Other sources of emissions for these categories are also from working and breathing of the underground storage tank during refueling.
+
+#### Methodologies {-}
+
+The amount of aviation and jet fuel usage from San Jose International Airport and Oakland International Airport were obtained from the airport’s Monthly Activity Report. The fuel usage at the other airports was determined by apportioning the Oakland Airport usage with the number of operations. The uncontrolled emission factors of gasoline service station are used for refueling with gasoline over-the-wing. The emission factors are chosen based on EPA, AP-42 publication and engineering judgment. Total organic emissions for aircraft refueling categories are determined by multiplying the emission factor and estimated throughput.
+
+#### Monthly Variation {-}
+
+Monthly variations of emissions are based on the monthly traffic counts at the San Jose International Airport.
+
+#### County Distribution {-}
+
+Emissions were distributed into the nine counties based on aircraft operations activity at each airport in each county.
+
+### Trends
+
+#### History {-}
+
+```{r petprod-fueling-aircraft-annual_emissions-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+Historical emission data was based on the aircraft operations at San Jose International Airport. These categories were created to account for the organic emissions at filling stations during aircraft refueling of aviation and jet fuel since 1987 Base Year emission inventory.
+
+#### Growth {-}
+
+```{r petprod-fueling-aircraft-annual_growth-chart, fig.height=8, out.height=800}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Projections to 2030 are based on the estimates of the number of operations and revenue passenger miles as predicted by the airlines industries.
+
+***
+
+By: Michael Nguyen 
+Date: January, 2014 
+Base Year 2011

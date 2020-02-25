@@ -16,6 +16,7 @@ chart_BY2011_annual_control_factors_by <- function (
       ...,
       flag_labels = flag_labels,
       facet_rows = facet_rows,
+      year_limits = BY2011_YEAR_LIMITS,
       flag_years = CY(2011)) %>%
     add_BY2011_chart_theme()%>%
     add_BY2011_chart_guides()

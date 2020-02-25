@@ -64,6 +64,8 @@ Truck loading emissions were reduced due to the effect of Regulation 8 Rule 39, 
 
 On April 15, 2009, the District amended the Regulation 8, Rule 33 (Gasoline Bulk Terminals) and Regulation 8, Rule 39 (Gasoline Bulk Plants). The amendments include a requirement to minimize the release of organic compounds during maintenance and repair operations, and a reduction in the allowable backpressure in new vapor recovery system piping.
 
+***
+
 By: Michael Nguyen 
 Date: January, 2014 
 Base Year 2011

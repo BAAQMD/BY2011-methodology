@@ -28,6 +28,7 @@ chart_BY2011_annual_growth_factors_by <- function (
       facet_rows = "facet_label",
       facet_scales = facet_scales,
       flag_years = flag_years,
+      year_limits = BY2011_YEAR_LIMITS,
       base_year = base_year) %>%
     add_BY2011_chart_theme() %>%
     add_BY2011_chart_guides()

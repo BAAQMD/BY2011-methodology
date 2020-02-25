@@ -74,6 +74,8 @@ BY2011_annual_control_factor_data %>%
 
 Efforts are being made to streamline and standardize rules and regulations. Any subsequent refinement in [Regulation 8, Rule 24](https://www.baaqmd.gov/~/media/dotgov/files/rules/reg-8-rule-24-pharmaceutical-and-cosmetic-manufacturing-operations/documents/rg0824.pdf?la=en) due to this streamlining should not have any effect on the controls, and therefore the controls for this rule will remain at 42%.
 
+***
+
 By: Tan Dinh
 Date: January 2014
 Base Year: 2011

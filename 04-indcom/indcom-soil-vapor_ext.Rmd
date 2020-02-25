@@ -61,6 +61,8 @@ BY2011_annual_control_factor_data %>%
 
 The District adopted Regulation 8, Rule 47 on December 20, 1989. This rule requires all facilities to control emissions by at least 90%; however, based on emissions data, the overall control efficiency is estimated at 96%.
 
+***
+
 By: Stuart Schultz 
 Date: November 2013 
 Base Year 2011

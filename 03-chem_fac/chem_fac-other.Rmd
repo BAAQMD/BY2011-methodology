@@ -1,4 +1,4 @@
-## All Other Chemical Plants 
+## All Other Chemical Plants {#chem_fac-other}
 
 - Sulfur and Sulfuric Acid Manufacturing Facilities (#21, #22) 
 - All Other Chemical Plants Point Source Emissions (#26) 
@@ -79,6 +79,8 @@ BY2011_annual_control_factor_data %>%
 The District adopted [Regulation 8-22] on March 5, 1980. The control afforded by this rule is estimated to be 60%, with rule effectiveness at 98% for an overall control rate of 59%. This rule only affects fugitive emissions at chemical manufacturing facilities.
 
 [Regulation 9] also controls non-organic emissions from many of the manufacturing plants in these categories. For example, the District amended [Regulation 9-1] in 1983, 1992, and 1995 for sulfur dioxide limits at sulfur recovery systems and sulfuric acid plants. [Regulation 9] also sets limits on hydrogen sulfide, nitrogen oxides, and carbon monoxide emissions.
+
+***
 
 By: Tan Dinh
 Date: January 2014

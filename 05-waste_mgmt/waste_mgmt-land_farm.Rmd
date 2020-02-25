@@ -57,6 +57,8 @@ BY2011_annual_growth_factor_data %>%
 
 Emissions after 1993 are assumed to grow at a rate similar to the population as provided by ABAG’s 2009 Population growth profile.
 
+***
+
 By: Stuart Schultz 
 Date: January 2014 
 Base Year 2011

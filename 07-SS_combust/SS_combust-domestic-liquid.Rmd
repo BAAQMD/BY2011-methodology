@@ -60,6 +60,8 @@ BY2011_annual_growth_factor_data %>%
 
 For Category 286 (Fuel Combustion, Stationary Sources, Domestic LPG), an assumption was made that annual emissions, over the years, would tend to follow household population data. Population data used in the projection was based on the Association of Bay Area Government's (ABAG's) 2009 “Projections” report. For Category 287 (Fuel Combustion, Stationary Sources, Domestic Distillate Oil), the growth was assumed to be diminished as the fuel would eventually be phased out in favor of natural gas. A 2% reduction per year was chosen, starting in 1992.
 
+***
+
 By: Tan Dinh
 Date: January 2014 
 Base Year: 2011

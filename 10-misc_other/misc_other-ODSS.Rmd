@@ -69,6 +69,8 @@ BY2011_annual_growth_factor_data %>%
 
 Emission data from 2012 – 2030 was based on trend data from CARB’s California GHG Emissions – Forecast (2008 – 2020), (last updated October 28, 2010).
 
+***
+
 By: Stuart Schultz 
 Date: February 2014 
 Base Year 2011

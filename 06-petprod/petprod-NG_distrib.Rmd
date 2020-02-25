@@ -60,6 +60,8 @@ BY2011_annual_growth_factor_data %>%
 
 Annual demand for natural gas varies in response to business conditions and annual temperatures but has been generally declining or flat over recent years. This is due in part to historically low number of heating degree days and building and appliance efficiency standards, utility and public agency programs, and price and other effects. This trend is projected to continue with a population growth at a faster rate than total demand for natural gas.
 
+***
+
 By: S. Claire
 Date: January 2014 
 Base Year: 2011

@@ -47,9 +47,14 @@ BY2011_POLLUTANTS <- c(
   "PM2.5",
   "TOG",
   "ROG",
+  "CH4",
   "NOx",
   "SO2",
-  "CO")
+  "CO",
+  "CO2")
+
+BY2011_YEAR_LIMITS <- 
+  CY(1990, 2030)
 
 source_all <- function (...) {
   purrr::walk(

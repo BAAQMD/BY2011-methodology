@@ -63,6 +63,8 @@ BY2011_annual_control_factor_data %>%
 
 The District adopted [Regulation 8-10] on July 20, 1983. Overall control afforded by this rule is estimated to be 95%.
 
+***
+
 By: Tan Dinh
 Date: January 2014 
 Base Year: 2011

@@ -82,6 +82,8 @@ BY2011_annual_control_factor_data %>%
 
 As noted above, District Regulation 9-11 and 2-2 control NOx and CO emissions from fuel combustion in boilers at electric power plants in the Bay Area.
 
+***
+
 By: Sukarn Claire 
 Date: January 2014 
 Base Year: 2011

@@ -15,7 +15,7 @@ Category 753 is an area source category that estimates criteria pollutant (parti
 
 The total number of automobile accidental fires in California was acquired from the state fire marshal’s office. Automobile fires were apportioned to the Bay Area based on Bay Area population as compared to California’s total population.
 
-The emission factors for automobile fires were derived from the Environmental Protection Agency’s (EPA’s) document AP-42, Section 2.2.2 and 2.4.2. Table 2.2-1 of AP-42 lists the emission factors for uncontrolled auto body incineration, which are based on automobiles that have been partially stripped (tires, seats, etc. removed). Table **FIXME: REF** lists the emission factors for open burning of automobile upholstery, belts, hoses, and tires in common.
+The emission factors for automobile fires were derived from the Environmental Protection Agency’s (EPA’s) document AP-42, Section 2.2.2 and 2.4.2. Table 2.2-1 of AP-42 lists the emission factors for uncontrolled auto body incineration, which are based on automobiles that have been partially stripped (tires, seats, etc. removed). Table 2.4-1 lists the emission factors for open burning of automobile upholstery, belts, hoses, and tires in common.
 
 It is assumed that tires are burned in 60% of the automobile fires. Composite emission factors were calculated as a weighted average of the emission factors listed in Table 2.2-1 and 2.4-1 of AP-42, with the assumption that the average car body weighs 3,700 pounds and the components weigh 500 pounds. The criteria pollutant composite emission factors (Lb/Fire) are listed below:
 
@@ -79,6 +79,8 @@ BY2011_annual_growth_factor_data %>%
 ```
 
 Emission projections for this category are based on population growth in the San Francisco Bay Area. Population data used for emission growth profile was obtained from the Association of Bay Area Government's (ABAG's) 2009 "Projections" reports.
+
+***
 
 By: Sukarn Claire 
 Date: January 2014 

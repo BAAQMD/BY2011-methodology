@@ -51,6 +51,8 @@ BY2011_annual_growth_factor_data %>%
 
 ABAG’s 2009 Projections Household Population profile was utilized to project future emissions to year 2030.
 
+***
+
 By: Michael Nguyen 
 Date: January, 2014 
 Base Year 2011

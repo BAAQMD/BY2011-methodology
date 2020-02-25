@@ -80,6 +80,8 @@ BY2011_annual_control_factor_data %>%
 
 The Air District’s Regulation 9, Rule 8 controls NOx and SOx emissions of fuel combustion in reciprocating engines.
 
+***
+
 By: Sukarn Claire 
 Date: January 2014 
 Base Year: 2011

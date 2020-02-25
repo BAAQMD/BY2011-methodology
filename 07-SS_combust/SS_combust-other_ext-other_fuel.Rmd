@@ -77,6 +77,8 @@ BY2011_annual_control_factor_data %>%
 
 Regulation 9 controls emissions of NOx and SOx of combustion.
 
+***
+
 By: Sukarn Claire 
 Date: January 2014 
 Base Year: 2011

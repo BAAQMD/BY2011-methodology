@@ -49,6 +49,8 @@ BY2011_annual_growth_factor_data %>%
 
 Projections to year 2030 were also based on ABAG’s 2009 Manufacturing Employment growth profile.
 
+***
+
 By: Stuart Schultz 
 Date: February 2011 
 Base Year 2008

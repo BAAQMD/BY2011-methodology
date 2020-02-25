@@ -2,8 +2,20 @@ tabulate_BY2011_emission_factors <- function (
   ef_data,
   pollutants = BY2011_POLLUTANTS,
   ...,
+  digits = Inf,
   verbose = getOption("verbose")
 ) {
+  
+  msg <- function (...) if(isTRUE(verbose)) message("[tabulate_BY2011_emission_factors] ", ...)
+  
+  #
+  # TODO: (possibly) handle named integers, list, etc.
+  #
+  stopifnot(
+    is.character(pollutants)) 
+  
+  pollutants <- 
+    unique(pollutants)
   
   kable_data <-
     ef_data %>%
@@ -12,30 +24,17 @@ tabulate_BY2011_emission_factors <- function (
     distinct(
       category,
       pollutant,
-      ef_qty)
-  
-  format_pollutant <- function (x, as_html = TRUE) {
-    
-    dplyr::recode(
-      x,
-      "CO2" = "CO<sub>2</sub>",
-      "CH4" = "CH<sub>4</sub>",
-      "PM10" = "PM<sub>10</sub>",
-      "PM25" = "PM<sub>2.5</sub>",
-      "PM2.5" = "PM<sub>2.5</sub>",
-      "NOX" = "NO<sub>x</sub>",
-      "NOx" = "NO<sub>x</sub>",
-      "SOX" = "SO<sub>x</sub>",
-      "SOx" = "SO<sub>x</sub>",
-      "SO2" = "SO<sub>2</sub>",
-      "CO2_bio" = "CO<sub>2</sub>bio")
-    
-  }
+      ef_qty) %>% 
+    mutate_at(
+      vars(ef_qty),
+      ~ round(., digits = digits))
   
   pollutant_levels <-
     intersect(
       pollutants,
       pull_distinct(kable_data, pollutant))
+  
+  msg("pollutant_levels is: ", pollutant_levels)
   
   kable_object <- 
     kable_data %>%
@@ -54,13 +53,13 @@ tabulate_BY2011_emission_factors <- function (
       bootstrap_options = c(
         #"striped", 
         "condensed")) %>%
+    # kableExtra::footnote(
+    #   general = "Emission factors (pounds per unit throughput).",
+    #   general_title = "\n") %>%
     kableExtra::column_spec(
       1,
-      bold = TRUE) %>%
-    kableExtra::footnote(
-      general = "Emission factors (pounds per unit throughput).",
-      general_title = "\n")
-    
+      bold = TRUE)
+  
   return(kable_object)
   
 }

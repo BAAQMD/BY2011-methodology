@@ -114,6 +114,8 @@ BY2011_annual_growth_factor_data %>%
 
 The growth rate varies by county and by livestock and there is currently not a general surrogate to indicate the livestock growth or decline. In most cases, zero growth is assumed for livestock emissions, which is probably reasonable for most areas in the state. Projections to year 2030 are based on the ARB's growth profile.
 
+***
+
 By: Michael Nguyen 
 Date: February, 2014 
 Base Year 2011

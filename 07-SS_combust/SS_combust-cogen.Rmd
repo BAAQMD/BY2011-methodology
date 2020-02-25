@@ -85,6 +85,8 @@ BY2011_annual_control_factor_data %>%
 
 District Regulation 9, Rules 8 and 9 control NOx and SOx emissions from the internal combustion of fuels in engines and turbines, respectively.
 
+***
+
 By: Sukarn Claire 
 Date: January 2014 
 Base Year: 2011

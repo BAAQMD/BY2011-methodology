@@ -1,3 +1,57 @@
 ## Other Fueling
 
-**TODO**
+```{r petprod-fueling-other-setup}
+THESE_CATEGORIES <- c(
+  "#939 Other Fueling" = 939)
+```
+
+### Emissions 
+
+#### Introduction {-}
+
+Emissions from these categories occur during the refueling of alternative fuels used in recreational vehicles, small tanks for barbecues, stoves for mobile homes, camping, balloon flights, and space heaters in rural areas, other internal combustion engines, and other industrial machines sources.
+
+#### Methodologies {-}
+
+The ARB estimated alternative fuel usage as 8% by on-road vehicles, 10% by other internal combustion engines, 8% by farm equipment, and 74% by residential/commercial sources. About 18% of the total state usage, or approximately 94,814 thousand gallons (propane), came from the Bay Area.
+The emission factor used was based on fuel tests by the Western Propane Gas Association which showed an average of about 0.263 grams of total hydrocarbon per liter of fuel. This converts to about 2.193 lbs. of total organics per thousand gallons of fuel.
+
+#### Monthly Variation {-}
+
+Since activities on this category are heavily during recreational use, monthly variation was estimated similar to the recreational boats category, with the highest usage during the summer months.
+
+#### County Distribution {-}
+
+Emissions were distributed into the nine counties based on population of each county.
+
+### Trends
+
+#### History {-}
+
+```{r petprod-fueling-other-annual_emission-chart, fig.height=5, out.height=500}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+These categories were created to account for the organic emissions at other fueling stations other than motor vehicles, recreational boats, ferry boats, and fishing boats since 1987 Base Year emission inventory.
+
+#### Growth {-}
+
+```{r petprod-fueling-other-annual_growth-chart, fig.height=5, out.height=500}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Projections are based on population growth for the Bay Area was taken from ABAG's 2009 Projections report.
+
+***
+
+By: Michael Nguyen 
+Date: January, 2014 
+Base Year 2011

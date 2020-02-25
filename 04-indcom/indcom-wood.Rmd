@@ -52,6 +52,8 @@ BY2011_annual_growth_factor_data %>%
 
 Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing and Wholesale Employment growth profile.
 
+***
+
 By: Stuart Schultz 
 Date: November 2013 
 Base Year 2011

@@ -64,6 +64,8 @@ BY2011_annual_growth_factor_data %>%
 
 The current trends show cigarette/tobacco consumption for regular smokers decreasing slightly over the next several years.
 
+***
+
 By: Michael Nguyen 
 Date: February, 2014 
 Base Year 2011

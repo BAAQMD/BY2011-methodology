@@ -83,6 +83,8 @@ The categories criteria pollutant’s overall control efficiencies (CE) as a res
 
 - For Category 1749, the overall CE of NOx is 42%; the overall CE of organics is approximately 62%.
 
+***
+
 By: Stuart Schultz
 Date: September 2013 
 Base Year 2011

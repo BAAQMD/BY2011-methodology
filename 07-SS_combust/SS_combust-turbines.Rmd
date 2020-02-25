@@ -1,4 +1,4 @@
-## Turbines
+## Turbines {#SS_combust-turbines}
 
 ```{r SS_combust-turbines-setup}
 THESE_CATEGORIES <- c(
@@ -75,6 +75,8 @@ BY2011_annual_control_factor_data %>%
 ```
 
 The Air District’s Regulation 9, Rule 9 controls NOx and SOx emissions from fuel combustion in stationary turbines.
+
+***
 
 By: Sukarn Claire 
 Date: January 2014 

@@ -72,6 +72,8 @@ Two growth rates were used for these categories to estimate 1980-2030 emissions:
 
 - For the remaining categories, in the absence of better data, annual variation activity was assumed to follow population by county.
 
+***
+
 By: A. K. Fanai 
 Base Year 2011
 December 2013

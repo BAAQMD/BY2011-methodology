@@ -88,6 +88,8 @@ BY2011_annual_growth_factor_data %>%
 
 Projections to year 2030 were estimated to be the same, with the assumption there would be no major changes in the acreage on agricultural lands and unpaved roads.
 
+***
+
 By: Michael Nguyen 
 Date: February, 2014 
 Base Year 2011

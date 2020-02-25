@@ -92,6 +92,8 @@ BY2011_annual_control_factor_data %>%
 
 The Bay Area Air District Regulation 9, Rule 9 controls NOx and CO emissions from fuel combustion in gas turbines.
 
+***
+
 By: Sukarn Claire 
 Date: January 2014 
 Base Year: 2011

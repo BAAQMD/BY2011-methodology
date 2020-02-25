@@ -13,6 +13,7 @@ chart_BY2011_annual_emissions_by <- function (
       BY2011_POLLUTANTS) %>%
     ggtools::chart_annual_emissions_by(
       ...,
+      year_limits = BY2011_YEAR_LIMITS,
       facet_rows = facet_rows) %>%
     add_BY2011_chart_theme() %>%
     add_BY2011_chart_guides()

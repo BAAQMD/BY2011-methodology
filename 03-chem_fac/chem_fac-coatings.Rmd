@@ -69,6 +69,8 @@ BY2011_annual_control_factor_data %>%
 
 [Regulation 8, Rule 35](https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-35-coating-ink-and-adhesive-manufacturing) was amended effective January 1993, eliminating the exemptions from small users, requiring lids on all portable and stationary mixing vats, and other cleaning provisions. Control effectiveness of the amended regulation has resulted in an 84% emission reduction since 1993.
 
+***
+
 By: Tan Dinh
 Date: January 2014
 Base Year: 2011

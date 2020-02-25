@@ -91,6 +91,8 @@ BY2011_annual_growth_factor_data %>%
 
 It is believed that re-suspension of road dust quickly reaches an equilibrium condition. Thus, CARB proposed that instead of using VMT as a surrogate for growth, roadways center line miles (CLM) are used. MTC’s CLM data show an increase of less than 2% for the same period (less than 0.1% per year), and this was used to create trends around the 2011 base year emissions.
 
+***
+
 By: A. K. Fanai 
 December 2013
 Base Year 2011

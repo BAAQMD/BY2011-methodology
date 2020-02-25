@@ -65,6 +65,8 @@ BY2011_annual_growth_factor_data %>%
 
 Gasoline consumption in 2007 reached record levels. However, the gasoline consumption decreased slightly during the economic recession in 2008 - 2010. Projections are based on future gasoline consumption in the Bay Area. Projections are based on future gasoline consumption in the Bay Area.
 
+***
+
 By: Michael Nguyen 
 Date: January, 2014 
 Base Year 2011

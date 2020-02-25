@@ -54,6 +54,8 @@ BY2011_annual_growth_factor_data %>%
 
 Projections to year 2030 for both categories were based on ABAG’s 2009 Total Population growth profile.
 
+***
+
 By: Stuart Schultz 
 Date: January 2014 
 Base Year 2011

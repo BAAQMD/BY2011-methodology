@@ -112,6 +112,8 @@ Projections to year 2030 were based on the ABAG’s 2009 Total Population growth
 
 Currently, there is no District rule regulating emissions from compost facilities. However, there are several facilities in the Bay Area with in-vessel composting where it is assumed there is an overall VOC control efficiency of 90%.
 
+***
+
 By: Stuart Schultz 
 Date: January 2014 
 Base Year 2011

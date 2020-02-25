@@ -100,6 +100,8 @@ The adopted amendments also include mandatory In-Station-Diagnostics (ISD), whic
 
 Table: Summary of EVR Implementation Schedule
 
+***
+
 By: Michael Nguyen 
 Date: January, 2014 
 Base Year 2011
