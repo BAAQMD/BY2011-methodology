@@ -7,25 +7,25 @@ THESE_CATEGORIES <- c(
 
 ### Emissions
 
-#### Introduction
+#### Introduction {-}
 
 This category accounts for the organic emissions from the storage of organic liquids (non-gasoline) in tanks at bulk plant and terminals. The emissions are due to breathing and working losses. Breathing loss is the expulsion of vapor from tank due to vapor expansion and contraction of the liquid in the tanks. Working loss occurs when vapor is displaced during tank loading operations and when air drawn into the tank during unloading operations.
 
-#### Methodology
+#### Methodology {-}
 
 This category contains point source emissions. The data originated with tank information (i.e. vapor pressure, tank color, size, throughput, etc.) supplied by the plants. Throughput is updated upon permit renewal. Throughput is updated upon permit renewal. The organic liquids (non-gasoline) emission factors were obtained from AP-42.
 
-#### Monthly Variation
+#### Monthly Variation {-}
 
 The data bank contains percentage of throughput data for each seasonal quarter: (December - February, March - May, June - August, September - October).
 
-#### County Distribution
+#### County Distribution {-}
 
 Emissions distributed into counties were based on locations of the plants in the Bay Area.
 
 ### Trends
 
-#### History
+#### History {-}
 
 ```{r petprod-bulk_term-other-annual_emissions-chart}
 BY2011_annual_emission_data %>%
@@ -37,7 +37,7 @@ BY2011_annual_emission_data %>%
 
 Historical data was based on past years gasoline consumption obtained from California Taxable Gasoline Sales in the Bay Area. Prior to 1999 Base Year source inventory, this category had been included from storage tank at bulk plants and terminals categories.
 
-#### Growth
+#### Growth {-}
 
 ```{r petprod-bulk_term-other-annual_growth-chart}
 BY2011_annual_growth_factor_data %>%
@@ -49,7 +49,7 @@ BY2011_annual_growth_factor_data %>%
 
 The reported year-to-year variation in emissions is due to changes in either the volume of materials put through the storage tank, or in the composition of the organic liquids stored. There is no data available to project emissions for this category. Therefore, projected emissions are assumed to grow at the rate of 0.5% per year.
 
-#### Control
+#### Control {-}
 
 ```{r petprod-bulk_term-other-annual_control-chart}
 BY2011_annual_control_factor_data %>%
