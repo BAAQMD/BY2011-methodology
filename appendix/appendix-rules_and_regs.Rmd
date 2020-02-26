@@ -16,6 +16,8 @@
 
 [Regulation 8]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-organic-compounds "Regulation 8"
 
+[Regulation 8-5]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-5-storage-of-organic-liquids "Regulation 8, Rule 5"
+
 [Regulation 8-4]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-4-general-solvent-and-surface-coating-operations "Regulation 8, Rule 4"
 
 [Regulation 8-10]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-10-process-vessel-depressurization "Regulation 8, Rule 10"

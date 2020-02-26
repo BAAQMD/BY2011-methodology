@@ -15,7 +15,7 @@ THESE_CATEGORIES <- c(
 
 ### Emissions
 
-#### Introduction
+#### Introduction {-}
 
 Tanks are used at petroleum refineries to store raw materials, intermediate products, finished products, and wastes. There are numerous intermediate products in a refinery including liquefied petroleum gas, gasoline, kerosene, diesels, and fuel oils. The waste products include wastewater, spent acids, and oily sludge.
 
@@ -23,7 +23,7 @@ Categories 55-58 contain point source emissions from refineries tanks, and categ
 
 Storage tanks at bulk plants and gasoline stations are inventoried in sections 6.4 and 6.9, respectively.
 
-#### Methodologies
+#### Methodologies {-}
 
 The categories for storage tanks contain emissions from both point and area sources. Tank emissions are calculated using equations and emission factors from U.S. EPA’s Compilation of Air Pollutant Emisssion Factors, AP-42, Volume I: Station Point and Area Sources. The primary criteria pollutant emitted from storage tanks include hydrocarbon vapors or volatile organic compounds (VOCs).
 
@@ -49,28 +49,28 @@ The types of tank along with the following parameters (given below) are used to 
 Point source emissions are obtained from the District’s data bank system. The data bank
 contains information submitted by the individual refinery by tank sources. Area Source emissions are derived based on an estimated ratio between area and point source throughputs via tank type.
 
-#### Monthly Variation and County Distribution
+#### Monthly Variation and County Distribution {-}
 
 The county, month, and day factors are obtained from the data bank's information for each category.
 
 ### Trends
 
-#### History
+#### History {-}
 
 ```{r petprod-petref-storage-annual_emissions-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
 Historical emissions have varied with refinery throughputs.
 
-#### Growth
+#### Growth {-}
 
 Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected.
 
-#### Control
+#### Control {-}
 
 ```{r petprod-petref-storage-annual_control-chart, fig.height=12, out.height=1200}
 BY2011_annual_control_factor_data %>%
@@ -80,9 +80,9 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-Regulation 8 Rule 5 controls emissions from the storage of organic liquids. Control efficiencies are estimated to range from 17% to 96%, depending on the type of tank, percentage of sources with true vapor pressures above 0.5 psi, and average true vapor pressure of the corresponding category. The following table show the control and rule efficiencies. (Sources with true vapor pressure greater than 0.5 psi are affected by this rule.)
+[Regulation 8-5] controls emissions from the storage of organic liquids. Control efficiencies are estimated to range from 17% to 96%, depending on the type of tank, percentage of sources with true vapor pressures above 0.5 psi, and average true vapor pressure of the corresponding category. The following table show the control and rule efficiencies. (Sources with true vapor pressure greater than 0.5 psi are affected by this rule.)
 
-**FIXME: TABLE OMITTED**
+**FIXME: INSERT TABLE**
 
 ***
 

@@ -21,7 +21,7 @@ This is a recreation of the BY2011 Methodology Report, with several key enhancem
 - **Equations** with rich formatting (examples: [Paved Roads](#misc_other-roads-paved-methodology) and [Farming Operations](#cat_749-methodology)); and
 - Linked **references** to rules & regulations (example: [Chemical Manufacturing](#chem_fac-other-control)).
 
-It's a work in progress, but very useful for understanding the BY2011 inventory. There are stubs for many sections in [Chapter 4](#indcom), [Chapter 6](#petprod), and [Chapter 9](#mobile_combust). However, the other seven chapters have lots of good content. A forked and modified copy can serve as the initial **BY2015** Methodology Report.
+It's a work in progress, but very useful for understanding the BY2011 inventory. There are stubs for some sections in [Chapter 4](#indcom) and [Chapter 6](#petprod), and [Chapter 9](#mobile_combust) is still incomplete. However, the other seven chapters have lots of good content. A forked and modified copy can serve as the initial **BY2015** Methodology Report.
 
 ```{r libraries, include = FALSE, message = FALSE, cache = TRUE}
 library(inventory)
