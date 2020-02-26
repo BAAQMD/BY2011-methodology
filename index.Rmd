@@ -20,7 +20,7 @@ This is a recreation of the BY2011 Methodology Report, with several key enhancem
 - **Tables** with footnotes, dynamic calculations, and values pulled directly from BY2011 data (examples: [Structural Fires](#misc_other-fires-struct-methodology), [Waste Burning](#waste_burn-planned_ag-methodology), and [Animal Waste](#misc_other-animal_waste-livestock-methodology));
 - **Equations** with rich formatting (examples: [Paved Roads](#misc_other-roads-paved-methodology) and [Farming Operations](#cat_749-methodology));
 - Linked **references** to rules & regulations (example: [Chemical Manufacturing](#chem_fac-other-control)); and
-- A list of [errata](Errata), to serve as:
+- A list of [errata](#errata), to serve as:
     - a concrete list of things to be fixed in BY2015; and 
     - a resource for learning QA techniques that lead to the uncovering of errata in the first place.
 
