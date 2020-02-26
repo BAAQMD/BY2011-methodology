@@ -1,4 +1,4 @@
-## Power Plants - Gas/Oil Boilers
+## Power Plants - Gas/Oil Boilers {#SS_combust-power_plant-boilers}
 
 ```{r SS_combust-power_plant-boilers-setup}
 THESE_CATEGORIES <- c(

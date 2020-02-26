@@ -18,8 +18,11 @@ This is a recreation of the BY2011 Methodology Report, with several key enhancem
 
 - **Charts** to illustrate historical emissions, control profiles, and growth profiles;
 - **Tables** with footnotes, dynamic calculations, and values pulled directly from BY2011 data (examples: [Structural Fires](#misc_other-fires-struct-methodology), [Waste Burning](#waste_burn-planned_ag-methodology), and [Animal Waste](#misc_other-animal_waste-livestock-methodology));
-- **Equations** with rich formatting (examples: [Paved Roads](#misc_other-roads-paved-methodology) and [Farming Operations](#cat_749-methodology)); and
-- Linked **references** to rules & regulations (example: [Chemical Manufacturing](#chem_fac-other-control)).
+- **Equations** with rich formatting (examples: [Paved Roads](#misc_other-roads-paved-methodology) and [Farming Operations](#cat_749-methodology));
+- Linked **references** to rules & regulations (example: [Chemical Manufacturing](#chem_fac-other-control)); and
+- A list of [errata](Errata), to serve as:
+    - a concrete list of things to be fixed in BY2015; and 
+    - a resource for learning QA techniques that lead to the uncovering of errata in the first place.
 
 It's a work in progress, but very useful for understanding the BY2011 inventory. There are stubs for some sections in [Chapter 4](#indcom) and [Chapter 6](#petprod), and [Chapter 9](#mobile_combust) is still incomplete. However, the other seven chapters have lots of good content. A forked and modified copy can serve as the initial **BY2015** Methodology Report.
 

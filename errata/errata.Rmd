@@ -1,0 +1,25 @@
+# Errata {-}
+
+This is a very draft list of "errata". 
+
+- Some are confirmed; others are suspected but not confirmed one way or the other. 
+- Right now, the list is static and mostly unsorted. (TODO: add tags and show these in a sortable, filterable table with "status", "category", "pollutant", etc!)
+- This list is hand-picked and shortened for teaching purposes. It's intended to cover a subspace of the full gamut of issues. It is not intended to be a representative sample of the full gamut.
+
+### High Priority
+
+- The CO~2~/CO ratio for category [#293 Gas Fired Boilers](#SS_combust-power_plant-boilers) for CY1990-2000 appears to be far too low, given what is observed for subsequent decades. (CH~4~/CO is also of interest) This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO~2~ of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is "on track" to reach its CY2030 target.
+
+- (Possibly related.) Emissions for [#294 Oil Fired Boilers](#SS_combust-power_plant-boilers) seem to be almost entirely absent from the BY2011 inventory. There are some very small emissions (~ 0.1 ton/yr of TOG and NO~x~) estimated for CY2008-2010, but that is it.
+
+**TO BE CONTINUED...**
+
+### Medium/Low Priority
+
+- Category [#305 Gas Fired Turbines](#SS_combust-turbines) shows a sharp up/down tick at CY2010. If you look at an RY pivot table, you can see that this is entirely due to one source. If you look at a PY pivot table, the effect disappears --- that same source is very steady, year-over-year. It's possible that an error existed at the time that the RY snapshot was made, but was fixed before the PY data were frozen.
+
+- Categories #1930 and #1931 are missing data for CY2005-2008. These aren't zeros; there were just no corresponding rows in the `BY2011-annual-A.csv` file.
+
+- Animal waste: Table 1 in the [Methodology](#misc_other-animal_waste-livestock-methodology) section is inconsistent with Table 1 in the [BY2011 Methodology PDF]. One example: there are 28,753 sheep in Solano, with a total of 53,884 sheep District-wide. In the [BY2011 Methodology PDF], those numbers are 3,804 and 28,937 respectively. The former table is created automatically from `BY2011_area_source_throughput_data`, itself derived from `t0325`. The code that produces the table is in [misc_other-animal_waste-livestock.Rmd](https://github.com/holstius/BY2011-methodology/blob/master/10-misc_other/misc_other-animal_waste-livestock.Rmd). 
+
+**TO BE CONTINUED...**

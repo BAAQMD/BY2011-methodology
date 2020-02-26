@@ -10,6 +10,7 @@ rmd_files: [
   "08-waste_burn/waste_burn.Rmd",
   "09-mobile_combust/mobile_combust.Rmd",
   "10-misc_other/misc_other.Rmd",
+  "errata/errata.Rmd",
   "appendix/appendix.Rmd"]
 before_chapter_script: "chapter_setup.R"
 after_chapter_script: "chapter_teardown.R"

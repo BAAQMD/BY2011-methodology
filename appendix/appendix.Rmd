@@ -2,5 +2,8 @@
 
 **TODO**
 
-```{r appendix-rules_and_regs, child="appendix/appendix-rules_and_regs.Rmd"}
+```{r appendix-references-BAAQMD-regulations, child="appendix/appendix-references-BAAQMD-regulations.Rmd"}
+```
+
+```{r appendix-references-www, child="appendix/appendix-references-www.Rmd"}
 ```
