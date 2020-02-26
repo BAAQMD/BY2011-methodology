@@ -3,7 +3,7 @@
 ```{r petprod-sterilizer-vent-setup}
 THESE_CATEGORIES <- c(
   "#92 Sterilizers (Point)" = 92,
-  "#1597 Sterilizers (Area)" = 1597)
+  "#1577 Sterilizers (Area)" = 1577)
 ```
 
 ### Emissions
