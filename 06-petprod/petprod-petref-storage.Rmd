@@ -68,11 +68,19 @@ Historical emissions have varied with refinery throughputs.
 
 #### Growth {-}
 
+```{r petprod-petref-storage-annual_growth-chart, fig.height=14, out.height=1400}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
 Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected.
 
 #### Control {-}
 
-```{r petprod-petref-storage-annual_control-chart, fig.height=12, out.height=1200}
+```{r petprod-petref-storage-annual_control-chart, fig.height=14, out.height=1400}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
