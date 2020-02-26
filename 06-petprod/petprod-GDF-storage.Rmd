@@ -1,4 +1,4 @@
-## Gasoline Filling Station Storage
+## Gasoline Filling Station Storage {#petprod-GDF-storage}
 
 ```{r petprod-GDF-storage-setup}
 THESE_CATEGORIES <- c(

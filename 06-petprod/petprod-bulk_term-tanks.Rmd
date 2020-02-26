@@ -1,4 +1,4 @@
-## Gasoline Bulk Plant Storage Tanks
+## Gasoline Bulk Plant Storage Tanks {#petprod-bulk_term-tanks}
 
 ```{r petprod-bulk_term-tanks-setup}
 THESE_CATEGORIES <- c(

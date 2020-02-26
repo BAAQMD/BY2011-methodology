@@ -21,7 +21,7 @@ Tanks are used at petroleum refineries to store raw materials, intermediate prod
 
 Categories 55-58 contain point source emissions from refineries tanks, and categories 84- 85 account for point souce emissions from tanks at other sites. Category 940 accounts for point source emissions from cleaning of all storage tanks. Category 1902 and 1903 accounts for area source emissions from storage tanks.
 
-Storage tanks at bulk plants and gasoline stations are inventoried in sections 6.4 and 6.9, respectively.
+Storage tanks at bulk plants and gasoline stations are inventoried in sections [6.4](#petprod-bulk_term-tanks) and [6.9](#petprod-GDF-storage), respectively.
 
 #### Methodologies {-}
 
