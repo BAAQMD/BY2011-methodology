@@ -68,7 +68,7 @@ Growth of ethylene oxide use in sterilizers is estimated to follow population gr
 
 #### Control {-}
 
-```{r petprod-sterilizer-vent-annual_control-chart, fig.height=12, out.height=1200}
+```{r petprod-sterilizer-vent-annual_control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
