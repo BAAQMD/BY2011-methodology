@@ -1,0 +1,138 @@
+## Industrial Commercial Coating
+
+### Emissions
+
+#### Introduction {-}
+
+The following categories contain the inventory of organic gas emissions that result from the use of industrial coatings, special product coatings, and thinning and clean-up solvents:
+
+- [Can and Coil](#coat-indcom-can_coil) (P)
+- [Wood Furniture & Cabinet](#coat-indcom-wood_furniture) (P/A)
+- [Paper Coating](#coat-indcom-paper) (P/A)
+- [Fabric & Film](#coat-indcom-fabric_film) (P/A)
+- [Plastic Parts & Product](#coat-indcom-plastic_part) (P/A)
+- [Magnet Wire](#coat-indcom-magnet_wire) (P/A)
+- [Large Appliance & Metal Furniture](#coat-indcom-metal_part) (P/A)
+- [Misc. Metal Parts & Small Appliance](#coat-indcom-small_appliance) (P/A) 
+- [Flat Wood Paneling](#coat-indcom-wood_panel) (P)
+- [Motor Vehicle Assembly Plants](#coat-indcom-auto_assembly) (P/A) 
+- [Auto Refinishing](#coat-indcom-auto_refinish) (P)
+- [Marine Coating](#coat-indcom-marine) (P/A) 
+- [Aerospace Assembly](#coat-indcom-aero_assembly) (P) 
+- [Other Coatings](#coat-indcom-other) (P/A)
+
+> Note: The categories with a “P” in parenthesis represent point source categories only. The categories with a “P/A” in parenthesis represent both point and area source categories.
+
+These categories are composed of many types of coatings such as enamels, lacquers, varnishes, etc. Organic emissions occur from the evaporation of organic solvents, which result from the application and drying of coatings. In order to calculate emissions, the amount of coatings, the solvent fraction of the coatings, and the amount of thinning and cleanup solvent, should be known. The efficiency of control equipment, such as afterburners, condensers, and the amount of solvent recycled are all useful variables in determining emissions.
+
+Perflouorocarbons (PFC’s) may also be used in association with the “Others Coating” point source group. For the most part, they are used in the technology industry. PFC’s are non- reactive organic compound that are also greenhouse gases GHG).
+
+#### Methodologies {-}
+
+For all permitted plant sites, the yearly renewal of permits provides updated industrial usage of coatings and the effects of changes to control equipment. Organic and GHG (if applicable) emissions are calculated for each piece of equipment. All large equipment and control equipment are registered, unless exempt. For each category a coatings-usage balance is made between the coatings reported in the permit data bank and the coatings-usage estimated for the category. Coatings’ usage not shown in the permit data bank is included in these categories and distributed as emissions from area sources. The area source emission factor and throughput for each relevant category are contained in the Data Bank. For each category, there are many differing formulations used; hence, a single composite emission factor is determined for each industrial category. Sources of industrial coatings-shipments are conducted nationally by the U.S. Department of Commerce. An approximation of latest available coating shipments (throughput) for the Bay Area can be estimated by applying the ratio of population for the Bay Area to the national population. This total District throughput value is subtracted from the corresponding point source throughput value to obtain a particular category’s area source throughput. Organic emissions are calculated by multiplying the solvent throughput by emission factor and control factor (if any). The exceptions to this method of area source calculations are as follows:
+
+- For Wood Furniture and Cabinet Coating Categories (Cat. 1914-1915), estimating the coating usage per facility and determining the number of facilities from the latest County Business Pattern Count was used in determining the area source emissions.
+
+- For Magnetic Wire Coatings Categories (Cat. 1922-1923), the District’s total throughput was based on the ratio of the number of Bay Area employees versus national employees for this particular industry. The area source throughputs and emissions are calculated similarly to the primary method (as listed above).
+
+- For Auto Refinishing Coating Categories (Cat. 1928-1929), area source emissions were based on data contained in the California Air Resources Board’s (CARB) 2002 Suggested Control Measure (SCM).
+
+- For Paper, Fabric and Film Coatings Categories (Cat. 1916-1919) and Misc. Metal Parts and Small Appliance Category (Cat. 1926-1927), it was assumed the area source emissions consisted of 10% of the point source emissions. For Other Coatings Category (Cat. 1932-1933), it was assumed the area source emissions were one-third of the point source emissions.
+
+#### Monthly Variation {-}
+
+Monthly variation in emissions was made proportional to the monthly sales of coatings are reported by the U.S. Department of Commerce in their Current Industrial reports, Paint, Varnish and Lacquer, M28F Series.
+
+#### County Distribution {-}
+
+Solvent emissions for the Bay Area were apportioned into counties by one of the methods listed below for each industrial coatings category:
+
+1. The county location of each company as reported in the District's permit data bank,
+2. Employee (for a given industry) population distribution,
+3. Establishment (for a given industry) population distribution, or
+4. Total population distribution
+
+### Trends
+
+#### History {-}
+
+Prior years’ emissions for these various categories were estimated using modified Association of Bay Area Governments (ABAG) growth profiles. Depending on the category, the growth profiles were based either on ABAG’s Manufacturing Employment or Service Employment. Modification was done to represent actual emissions data, primarily between the years 1993 – 2008 (although in some instances, actual emissions data went back to 1987).
+
+#### Growth {-}
+
+The projected growth in emissions to the year 2030 for these various categories is based on projected forecasts in growth developed by ABAG. As mentioned previously, depending on the category, the growth profiles were based either on ABAG’s Manufacturing Employment, Service Employment or Total Population.
+
+#### Control {-}
+
+The control factor is an estimate of reduction of solvent emissions, which takes into account the various strategies used to comply with regulations that are designed to gain an overall reduction of emissions in a particular category. The control factor reflects the proportion of solvent emissions remaining as a result of Regulation 8 and the various rules. The rule effectiveness accounts for the amount of emissions achieved by compliance with the rule. Additional dates and changes in rule effectiveness are incorporated into the calculation as additional amendments are passed or compliance with the rule progresses.
+
+***
+
+```{r coat-indcom-can_coil, child="coat-indcom-can_coil.Rmd"}
+```
+
+***
+
+```{r coat-indcom-wood_furniture, child="coat-indcom-wood_furniture.Rmd"}
+```
+
+***
+
+```{r coat-indcom-paper, child="coat-indcom-paper.Rmd"}
+```
+
+***
+
+```{r coat-indcom-plastic_part, child="coat-indcom-plastic_part.Rmd"}
+```
+
+***
+
+```{r coat-indcom-fabric_film, child="coat-indcom-fabric_film.Rmd"}
+```
+
+***
+
+```{r coat-indcom-magnet_wire, child="coat-indcom-magnet_wire.Rmd"}
+```
+
+***
+
+```{r coat-indcom-metal_part, child="coat-indcom-metal_part.Rmd"}
+```
+
+***
+
+```{r coat-indcom-wood_panel, child="coat-indcom-wood_panel.Rmd"}
+```
+
+***
+
+```{r coat-indcom-auto_assembly, child="coat-indcom-auto_assembly.Rmd"}
+```
+
+***
+
+```{r coat-indcom-auto_refinish, child="coat-indcom-auto_refinish.Rmd"}
+```
+
+***
+
+```{r coat-indcom-marine, child="coat-indcom-marine.Rmd"}
+```
+
+***
+
+```{r coat-indcom-aero_assembly, child="coat-indcom-aero_assembly.Rmd"}
+```
+
+***
+
+```{r coat-indcom-other, child="coat-indcom-other.Rmd"}
+```
+
+***
+
+By: Stuart Schultz 
+Date: December 2010 
+Base Year 2008

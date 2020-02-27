@@ -56,6 +56,11 @@ BY2011_POLLUTANTS <- c(
 BY2011_YEAR_LIMITS <- 
   CY(1990, 2030)
 
+BY2011_YEAR_EXPAND <-
+  ggplot2::expand_scale(
+    add = c(2, 2),
+    mult = c(0, 0))
+
 source_all <- function (...) {
   purrr::walk(
     unlist(list(...)), 
@@ -82,6 +87,9 @@ source_all(
 #' In contrast to the above, the ordering below matters.
 #' 
 source_all(
+  
+  "data/DB_annual_point_source_emission_data.R",
+  "data/BY2011_annual_point_source_emission_data.R",
   
   "data/BY2011_annual_area_source_emission_factor_data.R",
   "data/BY2011_annual_control_factor_data.R",

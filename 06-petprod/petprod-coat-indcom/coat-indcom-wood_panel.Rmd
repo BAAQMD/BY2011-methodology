@@ -1,0 +1,50 @@
+#### Flat Wood Paneling {#coat-indcom-wood_panel}
+
+```{r petprod-coat-indcom-wood_panel-setup}
+WOOD_PANEL_CATEGORIES <- c(
+  "#270 Flat Wood Paneling Ctg." = 270,
+  "#271 Flat Wood Paneling C/U" = 271) # "C/U" means "cleanup solvent"
+```
+
+##### History {-}
+
+```{r petprod-coat-indcom-wood_panel-annual_emissions-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    WOOD_PANEL_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+##### Emission Factors (Area) {-}
+
+**N/A**
+
+##### Growth {-}
+
+```{r petprod-coat-indcom-wood_panel-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    WOOD_PANEL_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+##### Control {-}
+
+```{r petprod-coat-indcom-wood_panel-annual_control-chart}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    WOOD_PANEL_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant) 
+```
+
+##### BY2011 vs DataBank (Point) {-}
+
+```{r petprod-coat-indcom-wood_panel-BY_vs_DB-emissions_chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    WOOD_PANEL_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```

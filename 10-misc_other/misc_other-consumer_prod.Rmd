@@ -1,41 +1,37 @@
 ## Consumer Products
 
 ```{r misc_other-consumer_prod-setup}
-humanize_ids <- function (ids) {
-  packed <- pack_integers(ids)
-  stripped <- packed %>% str_remove_all("^c\\(") %>% str_remove_all("\\)$")
-  stripped %>% str_replace_all(":", "-") %>% str_c("#", .)
-}
+THESE_CATEGORIES <-
+  BY2011_category_hierarchy %>% 
+  filter_categories(
+    1440:1574) %>% 
+  mutate(
+    category = str_c("#", cat_id, " ", cat_h5)) %>%
+  distinct(
+    category,
+    cat_id) %>%
+  deframe()
 
-category_lookup <-
+#
+# Above, we have too many categories to fit on a single chart. 
+# So that we can show an overview of emissions, here is a
+# "consolidated" version of the above.
+#
+CONSOLIDATED_CATEGORIES <-
   BY2011_category_hierarchy %>% 
   filter_categories(
     1440:1574) %>% 
   select(
     cat_id,
-    cat_h4,
-    cat_h5) %>%
+    cat_h4) %>%
   group_by(
     cat_h4) %>%
   mutate(
-    cat_ids = humanize_ids(cat_id),
-    category = str_c(cat_ids, " ", cat_h4)) %>%
-  ungroup()
-
-category_set <-
-  category_lookup %>%
-  select(
+    category = str_c(humanize_ids(cat_id), " ", cat_h4)) %>%
+  ungroup() %>%
+  distinct(
     category,
-    cat_id) 
-
-#
-# DMH 2020-02-21: `filter_categories()` currently complains about duplicated
-# factor levels when we try to use `THESE_CATEGORIES`, but we'll keep this
-# around, in case one day it works. For now, we'll rely on an `inner_join()`
-# with `category_set`.
-# 
-THESE_CATEGORIES <-
-  category_set %>%
+    cat_id) %>%
   deframe()
 ```
 
@@ -51,9 +47,8 @@ Emissions are estimated from sales of consumer products on regional basis. The f
 
 ```{r misc_other-consumer_prod-daily_emissions-table}
 BY2011_annual_emission_data %>%
-  inner_join(
-    category_set,
-    by = "cat_id") %>%
+  filter_categories(
+    CONSOLIDATED_CATEGORIES) %>%
   filter_years(
     CY(2008:2011)) %>%
   filter_pollutants(
@@ -88,8 +83,8 @@ For most consumer product categories monthly variation is assumed to be constant
 
 ```{r misc_other-consumer_prod-annual_emissions-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
-  inner_join(
-    category_set) %>%
+  filter_categories(
+    CONSOLIDATED_CATEGORIES) %>%
   chart_BY2011_annual_emissions_by(
     fill = category) 
 ```

@@ -16,10 +16,12 @@ This is a very draft list of "errata".
 
 ### Medium/Low Priority
 
-- Category [#305 Gas Fired Turbines](#SS_combust-turbines) shows a sharp up/down tick at CY2010. If you look at an RY pivot table, you can see that this is entirely due to one source. If you look at a PY pivot table, the effect disappears --- that same source is very steady, year-over-year. It's possible that an error existed at the time that the RY snapshot was made, but was fixed before the PY data were frozen.
+- [#305 Gas Fired Turbines](#SS_combust-turbines) shows a sharp up/down tick at CY2010. If you look at an RY pivot table, you can see that this is entirely due to one source. If you look at a PY pivot table, the effect disappears --- that same source is very steady, year-over-year. It's possible that an error existed at the time that the RY snapshot was made, but was fixed before the PY data were frozen.
 
-- Categories #1930 and #1931 are missing data for CY2005-2008. These aren't zeros; there were just no corresponding rows in the `BY2011-annual-A.csv` file.
+- Animal Waste: Table 1 in the [Methodology](#misc_other-animal_waste-livestock-methodology) section is inconsistent with Table 1 in the [BY2011 Methodology PDF]. One example: there are 28,753 sheep in Solano, with a total of 53,884 sheep District-wide. In the [BY2011 Methodology PDF], those numbers are 3,804 and 28,937 respectively. The former table is created automatically from `BY2011_area_source_throughput_data`, itself derived from `t0325`. The code that produces the table is in [misc_other-animal_waste-livestock.Rmd](https://github.com/holstius/BY2011-methodology/blob/master/10-misc_other/misc_other-animal_waste-livestock.Rmd). 
 
-- Animal waste: Table 1 in the [Methodology](#misc_other-animal_waste-livestock-methodology) section is inconsistent with Table 1 in the [BY2011 Methodology PDF]. One example: there are 28,753 sheep in Solano, with a total of 53,884 sheep District-wide. In the [BY2011 Methodology PDF], those numbers are 3,804 and 28,937 respectively. The former table is created automatically from `BY2011_area_source_throughput_data`, itself derived from `t0325`. The code that produces the table is in [misc_other-animal_waste-livestock.Rmd](https://github.com/holstius/BY2011-methodology/blob/master/10-misc_other/misc_other-animal_waste-livestock.Rmd). 
+- [Marine Coating](#coat-indcom-marine): Categories #1930 and #1931 are missing emission data for CY2005-2008. These aren't zeros; there are just no rows in the `BY2011-annual-A.csv` file, for these categories, for CY2005-2008.
+
+- [Marine Loading](#petprod-marine_load): The paragraph under "Controls" refers to "Categories 795 - 802", but #801 and #802 are not elsewhere mentioned, and no emissions for #801 or #802 appear in the published BY2011 inventory. 
 
 **TO BE CONTINUED...**

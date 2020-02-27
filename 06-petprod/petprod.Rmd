@@ -3,7 +3,7 @@
 ```{r petprod-petref-storage, child="06-petprod/petprod-petref-storage.Rmd"}
 ```
 
-```{r petprod-petref_marine_load, child="06-petprod/petprod-petref-marine_load.Rmd"}
+```{r petprod-marine_load, child="06-petprod/petprod-marine_load.Rmd"}
 ```
 
 ```{r petprod-NG_distrib, child="06-petprod/petprod-NG_distrib.Rmd"}
@@ -69,7 +69,7 @@
 ```{r petprod-coat-struct, child="06-petprod/petprod-coat-struct.Rmd"}
 ```
 
-```{r petprod-coat-indcom, child="06-petprod/petprod-coat-indcom.Rmd"}
+```{r petprod-coat-indcom, child="06-petprod/petprod-coat-indcom/coat-indcom.Rmd"}
 ```
 
 ```{r petprod-evap-other, child="06-petprod/petprod-evap-other.Rmd"}

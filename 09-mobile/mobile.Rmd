@@ -1,0 +1,55 @@
+# Mobile Combustion {#mobile}
+
+```{r mobile-lawn_garden, child="09-mobile/mobile-lawn_garden.Rmd"}
+```
+
+```{r mobile-TRU, child="09-mobile/mobile-TRU.Rmd"}
+```
+
+```{r mobile-ag-equip, child="09-mobile/mobile-ag-equip.Rmd"}
+```
+
+```{r mobile-offroad-diesel, child="09-mobile/mobile-offroad-diesel.Rmd"}
+```
+
+```{r mobile-locomotive, child="09-mobile/mobile-locomotive.Rmd"}
+```
+
+```{r mobile-offroad-ATV, child="09-mobile/mobile-offroad-ATV.Rmd"}
+```
+
+```{r mobile-ship, child="09-mobile/mobile-ship.Rmd"}
+```
+
+```{r mobile-CHC, child="09-mobile/mobile-CHC.Rmd"}
+```
+
+```{r mobile-rec_boat, child="09-mobile/mobile-rec_boat.Rmd"}
+```
+
+```{r mobile-air-com-jet, child="09-mobile/mobile-air-com-jet.Rmd"}
+```
+
+```{r mobile-air-com-piston, child="09-mobile/mobile-air-com-piston.Rmd"}
+```
+
+```{r mobile-air-gen-jet, child="09-mobile/mobile-air-gen-jet.Rmd"}
+```
+
+```{r mobile-air-gen-piston, child="09-mobile/mobile-air-gen-piston.Rmd"}
+```
+
+```{r mobile-air-mil-jet, child="09-mobile/mobile-air-mil-jet.Rmd"}
+```
+
+```{r mobile-air-mil-piston, child="09-mobile/mobile-air-mil-piston.Rmd"}
+```
+
+```{r mobile-ag-aircraft, child="09-mobile/mobile-ag-aircraft.Rmd"}
+```
+
+```{r mobile-onroad-motor, child="09-mobile/mobile-onroad-motor.Rmd"}
+```
+
+```{r mobile-air-GSE, child="09-mobile/mobile-air-GSE.Rmd"}
+```

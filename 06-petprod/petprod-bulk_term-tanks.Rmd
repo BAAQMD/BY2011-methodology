@@ -35,6 +35,7 @@ BY2011_annual_emission_data %>%
   chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
+
 Historical data was based on past years gasoline consumption in the Bay Area. The estimated gasoline consumption was obtained from California Taxable Gasoline Sales.
 
 #### Growth {-}
