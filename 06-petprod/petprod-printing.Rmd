@@ -1,3 +1,99 @@
 ## Printing
 
-**TODO**
+```{r petprod-printing-setup}
+THESE_CATEGORIES <- c(
+  "#108 Gravure" = 108,
+  "#109 Flexographic" = 109,
+  "#110 Letterpress" = 110,
+  "#112 Lithographic" = 112,
+  "#1898 Lithographic (Area)" = 1898,
+  "#115 Silkscreen" = 115,
+  "#1899 Silkscreen (Area)" = 1899,
+  "#116 Small Inhouse Print Services" = 116,
+  "#1900 Small Inhouse Print Services (Area)" = 1900)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Emissions from these categories are from graphic arts printing operations. The graphic arts printing operation uses a variety of inks, materials, coatings, fountain solutions, blanket washes, makeup solvent, solubilizers, and clean-up materials. Organic compounds are contained in these products and are emitted into the atmosphere during the printing operations.
+
+Graphic arts printing consists of five primary types of printing operations: Gravure, Flexographic, Letterpress, Lithographic, and Screen. Of the five types of operations, only four major types of printing processes are involved: gravure, letterpress, lithographic, and screen (flexographic printing is simply a modified form of letterpress). These printing processes are briefly described below.
+
+1. Gravure Printing (Cat # 108) – a type of printing operation whereby ink is transferred from a plated minute etched well to a substrate that is supported by an impression roller. Ink excess is removed by a doctor blade;
+2. Flexographic Printing (Cat # 109) – a printing operation that utilizes a “rolling technique” to apply words, designs, and pictures to the substrate. The image carrier is made of either a rubber elastomer or a similarly related elastomeric material;
+3. Letterpress Printing (Cat # 110) - a printing operation whereby ink is transferred to the paper via an image surface. The image area is raised relative to the non- image area;
+4. Lithographic Printing (Cat # 112 - Point Sources, and Cat #1898 - Area Sources) – a printing operation whereby printing of image and non-image areas are carried out on the same plane;
+5. Screen Printing (Cat # 115 - Point Sources, and Cat #1899 - Area Sources) – a printing operation whereby printing ink passes to a web or a fabric from which a refined form of stencil is applied.
+
+In this emission inventory, the District also accounts for small in housing printing emissions (Cat 116 - Point Sources, and Cat #1900 - Area Sources). Small in house emissions is comprised of various small in house operations that may the use intaglio, ink jet, and xerographic prints in their printing processes.
+
+#### Methodologies {-}
+
+**Regulated Sources:** Emissions from large graphic arts printing facilities in the Bay Area are regulated under Regulation 8, Rule 20 and permit data for these facilities are stored in the District's permit system called “point sources”. Under this system, throughput data of regulated graphic arts facilities is tracked and recorded in the District's Data Bank system. The stored data along with emission factors derived from publication sources or through actual field tests provide the information used to calculate emissions of the facilities.
+
+**Unregulated Sources:** Emissions from small, unpermitted printing facilities are estimated based on data gathered through the U. S. Department of Commerce’s publication titled, "Printing Ink Manufacturing: 2002". Throughput data is taken from this publication and used to estimate the emissions from unregulated sources. A growth factor based on U. S. shipment of paper production and population data of the Bay Area population was used to estimate future printing emissions.
+
+In addition to organic emissions from printing operations, adjustments were made to include emissions from cleaning solvents such as fountain solutions, preparation, and cleanup solutions. These solutions are used to clean and prepare equipment and materials for printing jobs. The sum of the calculated emissions from permitted facilities and unpermitted facilities provides an overall estimated value of emissions for Bay Area graphic arts printing sources.
+
+#### Monthly Variation {-}
+
+The quarterly seasonal percent throughput data from reported companies was used to estimate the monthly variation in an area.
+
+#### County Distribution {-}
+
+County location of each company as reported in the Data Bank was used to distribute emissions for each county.
+
+### Trends
+
+#### History {-}
+
+```{r petprod-printing-annual_emission-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category)
+```
+
+Historical emissions were estimated based on ARB's Manufacturing-Printing growth profile.
+
+#### Growth {-}
+
+```{r petprod-printing-annual_growth-chart, fig.height=12, out.height=1200}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
+Projections to year 2030 were based on a modified growth profile of ARB's Manufacturing, Printing industry in the Bay Area.
+
+#### Control {-}
+
+```{r petprod-printing-annual_control_factor_data, fig.height=12, out.height=1200}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant)
+```
+
+The Bay Area’s graphic arts printing industry are regulated under Regulation 8, Rule 20. This rule 20 was adopted in 1980, amended in 1984, 1985, 1989, 1993, 1995, 1997, 1999, and 2008. The Rule requires low solvent usage on inks and coatings, volatile organic compound limits of products and fountain solution and/or requirements on approved emission control system, and compliance schedules. The rule has resulted in reduced emissions for most of these categories.
+
+#### BY2011 vs DataBank (Point) {-}
+
+```{r petprod-printing-BY_vs_DB-emissions_chart, fig.height=8, out.height=800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
+***
+
+By: Tan Dinh
+Date: January 2014
+Base Year: 2011
