@@ -1,3 +1,88 @@
-## Oil Production Fields
+## Oil Production Fields {#indcom-oil_fields}
 
-**TODO**
+```{r indcom-oil_fields-setup}
+THESE_CATEGORIES <- c(
+  "#48 Oil Production Fields (Point)" = 48,
+  "#1575 Oil Production Fields (Area)" = 1575)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Emission sources associated with oil production include waste pits, well blowouts, gas/liquid separation, heater treaters, control valves, pressure relief valves, spills, pipe fittings, pump seals and compressor seals. During oil production, pollutants of concern are volatile organic compounds (VOCs), methane (CH4), hydrogen sulfide (H2S) and hazardous air pollutants (HAPs). Categories 48 and 1575 account for point and area source emissions from oil production fields in the San Francisco Bay Area, respectively.
+
+#### Methodology {-}
+
+##### Point Sources {-}
+
+Emissions for the point source category (#48) were obtained from point source data only, as contained in the District's data bank. The District updates the data each year on a source-by-source basis using as input:
+
+1. Process material throughputs as reported by the plants
+2. Emissions factors (these may be source specific factors reported by the plants through source test results or applicable general factors, i.e. from the U.S. Environmental Protection Agency (EPA))
+3. Emissions control factors (device-specific or general - these may be supplied by the plants also)
+
+##### Area Sources {- #indcom-oil_fields-methodology-area}
+
+Throughput/activity information for the area sources (Category 1575) in each Bay Area county was obtained from the California Department of Conservation’s Division of Oil, Gas and Geothermal Resources (DOGGR). Emissions are calculated using a composite emission factors. The composite emission factors were developed based on information on various processes in oil production from the Environmental Protection Agency’s document AP-42. Emission Factors in pounds per barrel of oil processed (lb/Barrel) are shown below.
+
+```{r indcom-oil_fields-emission_factors-table}
+BY2011_annual_area_source_emission_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  tabulate_BY2011_emission_factors(
+    pollutants = BY2011_POLLUTANTS,
+    digits = 2)
+```
+
+#### County Distribution {-}
+
+The county activity is based on amount of oil produced in each Bay Area county in accordance with data from the California Department of Conservation.
+
+#### Monthly Variation {-}
+
+Monthly and daily factors are assumed to be uniform.
+
+### Trends
+
+#### History {-}
+
+```{r indcom-oil_fields-annual_emissions-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+Since late 1980s, California oil production has been declining. Oil production in the nine Bay Area counties peaked in the mid-1980s and has dropped steadily since. The number of producing oil wells in the nine bay counties has dropped from 87 in 1986 to about 40 in 2000s. Historical emissions for this category have varied with oil production activity.
+
+#### Growth {-}
+
+```{r indcom-oil_fields-annual_growth-chart, fig.height=8, out.height=800}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+According to the California Energy Commission, future California oil production, although uncertain, is expected to decline at a small annual rate during the next 20 years. Statistical extrapolation from historical data produces a very broad range, varying between a 7 percent decline to 1 percent increase. California oil production is responsive to prevailing oil prices. If economically feasible, enhanced oil recovery techniques can be used to extract oil from fields that have been nearly depleted using conventional methods. According to the “Oil & Gas Supervisor”, oil production in the Bay Area could actually increase despite the decrease in number of operating oil wells.
+
+#### Control {-}
+
+```{r indcom-oil_fields-annual_control-chart}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant)
+```
+
+The District adopted Regulation 8, Rule 37 on March 20, 1985 to control the amount of emissions at natural gas and crude oil production facilities. This rule has a control of 80% on reactive organic compounds, with a rule effectiveness of 90% reached by 1989.
+
+***
+
+By: Sukarn Claire 
+Date: January 2014 
+Base Year: 2011

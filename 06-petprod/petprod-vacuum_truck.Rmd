@@ -1,4 +1,4 @@
-## Vacuum Truck at Refinery, Marine, Bulk Terminals
+## Vacuum Truck at Refinery, Marine, Bulk Terminals {#petprod-vacuum_truck}
 
 ```{r petprod-vacuum_truck-setup}
 THESE_CATEGORIES <- c(

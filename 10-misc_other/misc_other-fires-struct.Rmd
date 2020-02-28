@@ -1,4 +1,4 @@
-## Accidental Structural Fires
+## Accidental Structural Fires {#misc_other-fires-struct}
 
 ````{r misc_other-fires-struct-setup}
 THESE_CATEGORIES <- c(
@@ -82,9 +82,9 @@ $$
 \end{eqnarray}
 $$
 
-Structural fire emission factors in pounds per ton of material burned for TOG, CO and PM were obtained from the results of tests on the burning of model wood buildings. The emission factor for NOx was assumed to be similar to that listed in AP-42 for municipal refuse. These emission factors were converted to units of pounds per fire using the factor 1.28 ton/fire. The criteria pollutant composite emission factors (pound/fire) are as follow:
+#### Emission Factors {- #misc_other-fires-struct-emission_factors}
 
-**FIXME: THESE EMISSION FACTORS DON'T MATCH THE BY2011 METHODOLOGY PDF**
+Structural fire emission factors in pounds per ton of material burned for TOG, CO and PM were obtained from the results of tests on the burning of model wood buildings. The emission factor for NOx was assumed to be similar to that listed in AP-42 for municipal refuse. These emission factors were converted to units of pounds per fire using the factor 1.28 ton/fire. The criteria pollutant composite emission factors (pound/fire) are as follow:
 
 ```{r misc_other-fires-struct-emission_factors-table}
 BY2011_annual_area_source_emission_factor_data %>%

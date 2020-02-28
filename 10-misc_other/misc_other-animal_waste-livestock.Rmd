@@ -1,4 +1,4 @@
-## Animal Waste, Livestock
+## Animal Waste, Livestock {#misc_other-animal_waste-livestock}
 
 ```{r misc_other-animal_waste-livestock-setup}
 THESE_CATEGORIES <- c(

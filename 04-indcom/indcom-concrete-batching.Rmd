@@ -1,3 +1,76 @@
-## Concrete Batching
+## Concrete Batching {#indcom-concrete-batching}
 
-**TODO**
+```{r indcom-concrete-batching-setup}
+THESE_CATEGORIES <- c(
+  "#39 Concrete Batching" = 39,
+  "#1908 Concrete Batching (Area)" = 1908)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+This category accounts for particulate emissions from concrete batching plants. Concrete batching is composed of water, cement, sand, gravel and crushed stone. Concrete batching is prepared either at a building construction site or for the manufacture of concrete products such as pipes and prefabricated construction parts. Fugitive sources of emissions include the loading and unloading of cement, handling of sand and the mixing of cement, sand, and aggregate.
+
+#### Methodology {-}
+
+This category contains particulate emissions from point (Category 39) and area sources (Category 1908). For point sources, the data bank contains throughput information submitted by individual concrete batching plants by sources. Emissions are then calculated by using specific emission factors for a particular source operation supplied by the company.
+Cement production for California in 2011 was estimated at 8,833,000 short tons. This was calculated by taking the U.S. production, as provided by the Department of Conservation, Bureau of Mines, and multiplying that figure by the California fraction of the U.S. total. By using the fraction of Bay Area population to that of California, the 2011 cement production in the BAAQMD was estimated at 1,627,190 short tons. The Bay Area’s 2011 concrete production from both point and area sources was estimated at 13,335,670 tons/year (using mixing ratios found in AP-42, page 11.12-7). The 2011 area source throughput of 3,435,624 tons/year was calculated by subtracting the BAAQMD’s total concrete production throughput from the point source throughput.
+
+The particulate emission factor used for area source concrete batching, based on Truck Mix Operations (found in AP-42’s Mineral Products Industry section), include total process emissions, wind erosion estimates from sand and aggregate storage piles, and vehicular travel estimates from unpaved roads. The composite particulate emission factor was estimated at 0.16 lbs/ton of concrete produced. Particulate emissions from area sources were calculated by multiplying this emission factor to the estimated area source concrete production throughput in the Bay Area.
+
+```{r indcom-concrete-batching-emission_factors-table}
+BY2011_annual_area_source_emission_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  tabulate_BY2011_emission_factors(
+    pollutants = BY2011_POLLUTANTS,
+    digits = 2)
+```
+
+#### Monthly Variation {-}
+
+Monthly variation was estimated and used to distribute emissions over the 12 months. Greatest activity occurs during the months of June – September. The slowest activity occurs during the months of December – March.
+
+#### County Distribution {-}
+
+For point sources, the data bank system contains information on the county location of each processing plant; hence, emissions are distributed to the counties accordingly. Emissions from area sources were distributed to the Bay Area counties by the number of employees estimated in the Ready-Mix Concrete Manufacturing sector (NAICS 327320) as determined by the US Department of Commerce’s 2009 County Business Patterns.
+
+### Trends
+
+#### History {- #indcom-concrete-batching-history}
+
+```{r indcom-concrete-batching-annual_emissions-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+```{r indcom-concrete-batching-BY_vs_DB-emissions_chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
+The historical growth profiles for both categories was based on a combination of prior emissions data (back to 1987) and the Association of Bay Area Government’s (ABAG’s) 2009 Construction Employment growth profile.
+
+#### Growth {-}
+
+```{r indcom-concrete-batching-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Projections of emissions to 2030 for both categories were based on ABAG’s 2009 Construction Employment growth profile.
+
+***
+
+By: Stuart Schultz 
+Date: November 2013 
+Base Year 2011

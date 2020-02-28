@@ -64,6 +64,7 @@ BY2011_annual_emission_data %>%
   chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
+
 Historical emissions have varied with refinery throughputs.
 
 #### Growth {-}

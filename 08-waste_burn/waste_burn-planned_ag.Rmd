@@ -1,4 +1,4 @@
-## Planned Agricultural Burning
+## Planned Agricultural Burning {#waste_burn-planned_ag}
 
 ```{r waste_burn-planned_ag-setup}
 THESE_CATEGORIES <- c(

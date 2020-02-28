@@ -1,4 +1,4 @@
-## Coatings & Inks
+## Coatings & Inks {#chem_fac-coatings}
 
 ```{r chem_fac-coatings-setup}
 THESE_CATEGORIES <- c(
@@ -57,7 +57,7 @@ BY2011_annual_growth_factor_data %>%
 
 Projections to year 2030 was based on growth profile of ARB's Manufacturing in the Printing Industry, and is expected to grow at a only 1-2 percent per year.
 
-#### Control {-}
+#### Control {- #chem_fac-coatings-control}
 
 ```{r chem_fac-coatings-annual_control-chart}
 BY2011_annual_control_factor_data %>%

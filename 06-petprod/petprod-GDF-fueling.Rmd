@@ -1,3 +1,93 @@
 ## Gasoline Filling Station Fueling
 
-**TODO**
+```{r petprod-GDF-fueling-setup}
+THESE_CATEGORIES <- c(
+  "#75 Filling Vehicle Tanks (W/O Phase I & II)" = 75,
+  "#76 Filling Vehicle Tanks (With Phase I & II)" = 76,
+  "#77 Filling Vehicle Tanks (With Phase I Only)" = 77,
+  "#78 Filling Vehicle Tanks (With Phase II Only)" = 78)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Motor vehicle refueling emissions come from vapors displaced from the automobile tank at gasoline dispensing facilities. The quantity of evaporative emissions depends on gasoline temperature, automobile tank temperature, gasoline RVP and dispensing rate. The control technique for vehicle refueling emissions is Phase II vapor recovery system. The Phase II is equipped with a rubber boot to collect and the route the vapors through the nozzle into a coaxial vapor-liquid hose and to the dispenser and into storage tank.
+
+#### Methodologies {-}
+
+These categories account for organic emissions at vehicle filling stations during refueling operations. The estimates of gasoline consumption in the Bay Area were provided by California State Board of Equalization, Fuel Taxes Statistics & Reports and Caltrans Transportation Planning Support Information System (TPSIS). These estimates were made by adjustments of Gasoline Dispensing Facility sales, population, number of registered vehicles, and the number of drivers' license. The throughput for each type of GDF was estimated based on the information contained in the District's data bank.
+
+The 2011 gasoline consumption in the Bay Area was 7,041 thousand gallons per day. Emission factors were taken from AP-42, Section 4.4. The total emissions for area source categories are determined by multiplying the emission factor, control factor and throughput.
+
+#### Monthly variation {-}
+
+Monthly variation of emissions was based on gasoline usage data for California by months. The monthly Bay Area gasoline usage was estimated from Board of Equalization Taxable Gasoline Sales monthly report.
+
+#### County Distribution {-}
+
+Emissions distributed into the nine counties were based on Caltrans Transportation Planning Support Information System's breakdown.
+
+### Trends
+
+#### History {-}
+
+```{r petprod-GDF-fueling-annual_emissions-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category)
+```
+
+Emissions for these categories had been reduced due to Phase II vapor balance system requirements since 1976. Prior to 1990 Base Year, taxable gasoline sales for California obtained from the Board of Equalization were assumed to distribute to all gasoline filling stations in the California. ARB estimated that Bay Area consumed 20.01% of this state total. The emissions for this category were determined according to this estimated throughput.
+
+#### Growth {-}
+
+```{r petprod-GDF-fueling-annual_growth-chart, fig.height=12, out.height=1200}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
+Gasoline consumption in 2007 reached record levels. However, the gasoline consumption decreased slightly during the economic recession in 2008 - 2010. Projections are based on future gasoline consumption in the Bay Area. Projected emissions from 2000 to 2030 are expected to increase at the rate of 0.25% per year.
+
+#### Control {-}
+
+```{r petprod-GDF-fueling-annual_control-chart, fig.height=6, out.height=600}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant)
+```
+
+Emissions were reduced due to the effect of Regulation 8, Rule 7, Phase II requirements and the following actions:
+
+- In July 1976, California Health & Safety Code required CARB certified 90% Phase II gasoline dispensing facilities.
+- In August 1978, CARB amended Phase II GDF to 95% efficiency.
+- In July 1986, CARB issued "Rectification Orders".
+- In October 1990, District adopted pressure-vacuum valve requirements for GDF.
+- In January 1992 , Re-formulated Gasoline, Phase I , and
+- In January 1999, Re-formulated Gasoline, Phase II.
+
+In March 2000, California Air Resources Board (CARB) adopted a series of new Enhanced Vapor Recovery (EVR) amendments to its gas station vapor recovery regulations (Phase I and Phase II). In addition, CARB adopted new standards:
+
+- make vapor recovery system compatible with on-board vapor recovery (ORVR) systems on motor vehicles,
+- reduce gasoline spillage, liquid retain in the nozzles, and
+- pressure-related fugitive emissions.
+
+The adopted amendments also include mandatory In-Station-Diagnostics (ISD), which are requiring electronic monitoring of vapor recovery system operation and performance.
+
+The table below summarizes the EVR implementation schedule.
+
+```{r child="petprod-GDF-EVR-table.Rmd"}
+```
+
+***
+
+By: Michael Nguyen 
+Date: January, 2014 
+Base Year 2011

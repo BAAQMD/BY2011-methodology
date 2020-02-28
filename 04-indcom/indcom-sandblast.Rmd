@@ -1,3 +1,124 @@
 ## Sand Blasting
 
-**TODO**
+```{r indcom-sandblast-setup}
+THESE_CATEGORIES <- c(
+  "#42 Sand Blasting" = 42,
+  "#1909 Sand Blasting (Area)" = 1909)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Abrasive blasting (of which sandblasting is a part) is the use of abrasive materials to clean or prepare a surface, such as metal or masonry. Sand is the most commonly used abrasive material. Other abrasives include coal and smelter slags, glass beads, aluminum oxide, steel shot, walnut shells, garnet, etc. Industries that use abrasive blasting include ship building and repair, aircraft manufacturing, fabricated metal manufacturing, oil and gas extraction industries, aluminum and other nonferrous production and processing industries, etc.
+
+There are three types of propelling methods used for abrasive blasting:
+
+1. Dry System where compressed air is used to propel the abrasive using either a suction or pressure type process.
+2. A wet system where air or water pressure are used to propel an abrasive slurry to the target surface.
+3. Centrifugal Wheel System where centrifugal and inertial forces are used to propel abrasive materials.
+
+In many applications, the abrasive materials can be reused. However, once the abrasive’s particle size gets smaller, its stripping efficiency drops and has to be replaced. On the other hand, sand is commonly used for abrasive operations where recycling is not feasible, such as unconfined sand blasting operations.
+
+#### Methodology {-}
+
+The District's Data Bank system contains information on companies with abrasive blasting operations in the Bay Area. These sources are considered point sources. Sand is the most commonly used abrasive material, however there are other abrasive materials used in the Bay Area, such as steel shot, glass beads and aluminum oxide. For emission calculation purposes, it is assumed sand is used in both point (Category 42) and area sources (Category 1909). The other abrasive materials’ usages were in the point sources (Category 42).
+
+##### Throughput Calculations {-}
+
+The 2011 sand throughput was estimated from the U. S. Geological Survey’s (USGS) Mineral Commodity Survey. According to this survey, abrasive sand consumed approximately 3.7% of the industrial sand production in 2010. (At the time, this was the latest data available.) California received approximately 4.4% of the total sand produced. The BAAQMD’s percentage of California’s total abrasive sand throughput was approximately 12.6%. This was estimated by using the ratio of the number of employees associated with abrasive blasting (by NAICS) in the District versus California. The following industries were used for this calculation:
+
+- Ship building and repair (NAICS 3366)
+- Aircraft manufacturing industry (NAICS 336411)
+- Steel product manufacturing industry (NAICS 3312)
+- Aluminum production and processing industry (NAICS 3313)
+- Nonferrous production and processing industry (NAICS 3314)
+- Fabricated metal product manufacturing industry (NAICS 332)
+- Oil and gas extraction industry (NAICS 211)
+
+Using these figures, the 2011 estimated total sand throughput in the Bay Area is as follows:
+
+2010 Sand usage in the United States (from the USGS’s Salient U.S. Silica Statistics: 
+
+    28,749,347 tons/year
+
+2010 Bay Area sand usage for abrasive purposes:
+
+    28,749,347 tons/yr X 0.037 (for abrasive purposes) X 0.044 (to Calif.) X 0.126 (BAAQMD portion) = 5,937 tons/year
+
+Subtracting out the 2010 point source (permitted) sand throughput of 2,570 tons/year to get the 2010 area source throughput yields:
+
+    5,937 tons/yr – 2,570 tons/yr = 3,367 tons/year
+
+The 2011 area source throughout of 3,413 tons/year was estimated by multiplying the 2010 area source throughput by the Association of Bay Area Government’s (ABAG’s) Manufacturing and Wholesale Employment growth factor.
+
+##### Emission Calculation {-}
+
+U.S. EPA (1998) recommended particulate emission factors for sand blasting were used for emission calculations. They are as follows:
+
+- PM: 54 lbs/ton 
+- PM10: 26 lbs/ton
+
+The 2011 Area Source Sand Blasting emissions (Category 1909) for total particulates (PM) and PM10 in the BAAQMD are as follows:
+
+    PM = (3,413 tons/year X 54 lbs/ton) / 2000 lbs/ton = 92.15 tons/year (or 0.25 ton/day)
+
+    PM10 = (3,413 tons/year X 26 lbs/ton) / 2000 lbs/ton = 44.37 tons/year (or 0.12 ton/day)
+
+The 2011 point source (Category 42) total particulate emission was 0.10 ton/day.
+
+**FIXME: CHECK THE MATH ABOVE AGAINST THE DATA BELOW**
+
+#### Monthly Variation {-}
+
+The monthly variation of emission was estimated to be approximately three times the amount during the period of April through October as opposed to the rest of the year.
+
+#### County Distribution {-}
+
+For point sources (Category 42), the data bank system contains information on the county location of each processing plant; hence, emissions are distributed to the counties accordingly. Emissions from area sources (Category 1909) were distributed to counties by the total employment estimates from those industries listed above by NAICS.
+
+### Trends
+
+#### History {-}
+
+```{r indcom-sandblast-annual_emissions-chart, fig.height=8, out.height=800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+```{r indcom-sandblast-BY_vs_DB-emissions_chart, fig.height=10, out.height=1000}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
+The historical growth profile (back to 1987) for point sources (Category 42) was based on prior emissions data from the District. The historical growth profile (back to 1991) for area sources (Category 1909) was based on sand production data from the USGS. Prior to these two dates, the historical growth profile was based on the ABAG’s 2009 Manufacturing Employment growth profile.
+
+#### Growth {-}
+
+```{r indcom-sandblast-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
+Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing Employment growth profile.
+
+#### Control {-}
+
+**FIXME: THERE ARE NO CONTROL FACTORS IN DATABANK FOR EITHER OF THESE CATEGORIES**
+
+Larger abrasive blasting operations are subject to the District’s Regulation 6, Particulate Matter and Visible Emissions, which places limitations on emission rates, concentration, visible emission and opacity. Pollution control devices for abrasive blasting operations include dust filters/collectors or baghouses, etc. Controls can range up to 99% or higher.
+Unconfined and temporary abrasive blasting operations are subject to District Regulation 12, Rule 4, Miscellaneous Standards of Performance, Sandblasting. This rule establishes opacity and abrasives standards.
+
+***
+
+By: Stuart Schultz
+Date: November 2013
+Base Year 2011

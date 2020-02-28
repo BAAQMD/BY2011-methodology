@@ -1,0 +1,14 @@
+| Control Type                          | Effective Date | Certification Requirement Date |
+|---------------------------------------|----------------|--------------------------------|
+| Phase I Vapor Recovery                | 2001-04-01     | 2001-04-01                     |
+| Phase II Vapor Recovery               | 2003-04-01     | 2003-04-01                     |
+| ORVR Compatibility                    | 2001-04-01     | 2003-04-01                     |
+| Liquid Retention                      |                |                                |
+| * Initial limit: 350 mls/1000 gallons | 2001-04-01     | 2001-04-01                     |
+| * Final limit: 100 mls/1000 gallons   | 2001-04-01     | 2003-04-01                     |
+| Spillage and Dripless Nozzles         | 2001-04-01     | 2004-04-01                     |
+| In-Station Diagnostics                |                |                                |
+| * >1,800,000 gal/year                 | 2003-04-01     | 2003-04-01                     |
+| * >160,000 gal/yr                     | 2004-04-01     | 2004-04-01                     |
+
+Table: Summary of EVR Implementation Schedule

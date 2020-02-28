@@ -1,3 +1,75 @@
 ## Stone, Sand, and Gravel
 
-**TODO**
+```{r indcom-stone_sand_gravel-setup}
+THESE_CATEGORIES <- c(
+  "#41 Stone, Sand, and Gravel" = 41)
+```
+
+### Emissions 
+
+#### Introduction {-}
+
+This category accounts for dust emissions generated from stone, sand, and gravel processing (i.e. crushing, quarrying, screening, handling, etc.). Fugitive sources include the transfer of stone, sand, and gravel, truck loading, mixer loading, vehicle traffic, and wind erosion from sand.
+
+#### Methodology {-}
+
+Emissions for this category were obtained from point source data only. These data originated with throughput information supplied by the quarry plants stored in the District's Data Bank. Emissions were calculated using specific emission factors submitted by the plant for a particular source operation.
+
+#### Monthly Variation {-}
+
+The data bank contains percentage of throughput data for each of the four 3-month seasonal periods: (December - February, March - May, June - August, September - November).
+
+#### County Distribution {-}
+
+The data bank system contains information on the county location of each processing plant; hence, emissions are distributed to the counties accordingly.
+
+### Trends
+
+#### History {-}
+
+```{r indcom-stone_sand_gravel-annual_emissions-chart, fig.height=8, out.height=800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+```{r indcom-stone_sand_gravel-BY_vs_DB-emissions_chart, fig.height=12, out.height=1200}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
+The historical growth profile was based on a combination of prior emissions data (back to 1987) and the Association of Bay Area Government’s (ABAG’s) 2009 Construction Employment growth profile.
+
+#### Growth {-}
+
+```{r indcom-stone_sand_gravel-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
+Projections of emissions to 2030 were also based on ABAG’s 2009 Construction Employment growth profile.
+
+#### Control {-}
+
+```{r indcom-stone_sand_gravel-annual_control-chart}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant)
+```
+
+In 1963, there was at least 50% reduction of particulate emissions from equipment brought about by the District's Regulation 6 on visible emissions from the Ringlemann 2 standard. In 1970 there was at least an additional 25% reduction in particulates from the Ringlemann 1 standard. Currently, there is an approximate 82% overall control of particulates from this category.
+
+***
+
+By: Stuart Schultz 
+Date: November 2013 
+Base Year 2011

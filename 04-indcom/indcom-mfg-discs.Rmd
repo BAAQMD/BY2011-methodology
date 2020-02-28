@@ -1,3 +1,68 @@
 ## Flexible & Rigid Discs Manufacturing
 
-**TODO**
+```{r indcom-mfg-discs-setup}
+THESE_CATEGORIES <- c(
+  "#44 Flexible & Rigid Discs Mfg." = 44)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+This category includes volatile organic compound emissions from computer discs manufacturing plants. Manufactured discs are flat, circular plastic film contained in a non- rigid envelope (flexible), or a non-flexible plate (rigid), with a magnetic coating on which digital information can be stored. Manufacturing processes include coating, mixing operations, coating line, and polishing. Organic solvents are used in these operations and emissions from volatile organic compounds are reported in this category. Throughput information of each source is reported by individual companies and is stored in the District's Data Bank System.
+
+#### Methodology {-}
+
+Information on equipment, operating data, and throughput of each source are reported by individual manufacturing plants and are stored in the District's Data Bank. Emissions are calculated by using the throughput data of specific materials reported and emission factors that are based on various test data and publication. These information are updated upon permit renewal.
+
+#### Monthly Variation {-}
+
+Monthly distribution was estimated based on each company's reported quarterly seasonal percentage throughput data.
+
+#### County Distribution {-}
+
+The county location of each company as reported in the Data Bank is used to distribute emissions into each county.
+
+### Trends
+
+#### History {-}
+
+```{r indcom-mfg-discs-annual_emissions-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+The historical growth profile was based on a combination of prior emissions data (back to 1990) and the Association of Bay Area Government’s (ABAG’s) 2009 Information Employment growth profile.
+
+#### Growth {-}
+
+```{r indcom-mfg-discs-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
+Projections to year 2030 were based on the ABAG’s 2009 Information Employment growth profile.
+
+#### Control {-}
+
+```{r indcom-mfg-discs-annual_control-chart}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant)
+```
+
+District Regulation 8, Rule 38 pertaining to disc coating, polishing and coating mixing operations requirements became effective in January 1987. Currently, the estimated overall control from this rule is approximately 81%.
+
+***
+
+By: Stuart Schultz 
+Date: November 2013 
+Base Year 2011

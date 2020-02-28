@@ -1,4 +1,4 @@
-## Paved Roads
+## Paved Roads {#misc_other-roads-paved}
 
 ```{r misc_other-roads-paved-setup}
 THESE_CATEGORIES <- c(
@@ -79,7 +79,7 @@ BY2011_annual_emission_data %>%
 
 In previous base years, emissions from paved road dust travel were assumed to grow proportionally with VMT. According to this assumption, Bay Area road dust emissions should have increased by 30% between 1990 and 2011 based on growth in VMT. Ambient air monitoring data and chemical mass balance analysis do not show this trend.
 
-#### Growth {-}
+#### Growth {- #misc_other-roads-paved-growth}
 
 ```{r misc_other-roads-paved-annual_growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%

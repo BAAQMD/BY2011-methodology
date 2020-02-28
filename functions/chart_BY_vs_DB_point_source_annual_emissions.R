@@ -18,18 +18,38 @@ chart_BY_vs_DB_point_source_annual_emissions <- function (
       cat_id) %>%
     deframe()
   
-  DB_layer_data <-
-    DB_annual_point_source_emission_data %>%
-    filter_categories(
-      categories) %>%
-    filter_pollutants(
-      BY2011_POLLUTANTS) %>%
-    mutate_at(
-      vars(year),
-      ~ elide_year(.)) %>%
-    mutate_at(
-      vars(inventory),
-      ~ factor(., levels = c("RY", "PY")))
+  DB_layer_data <- local({
+    
+    filtered_data <-
+      DB_annual_point_source_emission_data %>%
+      filter_categories(
+        categories)
+    
+    speciated_data <-
+      filtered_data %>%
+      speciate_PM(
+        into = c("TSP", "PM10", "PM2.5"),
+        using = t0324,
+        via = t0325,
+        verbose = TRUE) %>%
+      speciate_TOG(
+        into = c("TOG", "ROG"),
+        using = here::here(
+          "data",
+          "FROG11BY11.csv")) %>%
+      filter_pollutants(
+        BY2011_POLLUTANTS) 
+    
+    DB_layer_data <- 
+      speciated_data %>%
+      mutate_at(
+        vars(year),
+        ~ elide_year(.)) %>%
+      mutate_at(
+        vars(inventory),
+        ~ factor(., levels = c("RY", "PY"))) 
+    
+  })  
   
   BY_layer_data %>%
     chart_BY2011_annual_emissions_by(
