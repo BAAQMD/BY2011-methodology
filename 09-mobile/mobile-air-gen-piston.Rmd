@@ -1,3 +1,115 @@
 ## General Aviation, Piston
 
-**TODO**
+```{r mobile-air-gen-piston-setup}
+THESE_CATEGORIES <- c(
+  "#456 General, Piston (Livermore)" = 456L,
+  "#463 General, Piston (Hayward)" = 463L,
+  "#475 General, Piston (Oakland North)" = 475L,
+  "#489 General, Piston (Buchanan Field)" = 489L,
+  "#496 General, Piston (Gnoss Field)" = 496L,
+  "#503 General, Piston (Marin /Smith Ranch (Pvt))" = 503L,
+  "#505 General, Piston (Parrett/Angwin)" = 505L,
+  "#507 General, Piston (Calistoga Airpark (Pvt))" = 507L,
+  "#510 General, Piston (Inglenook/Napa)" = 510L,
+  "#511 General, Piston (Napa County)" = 511L,
+  "#520 General, Piston (Half Moon Bay)" = 520L,
+  "#527 General, Piston (San Carlos)" = 527L,
+  "#534 General, Piston (San Francisco International)" = 534L,
+  "#541 General, Piston (Palo Alto)" = 541L,
+  "#548 General, Piston (Reid-Hillview)" = 548L,
+  "#555 General, Piston (San Jose International)" = 555L,
+  "#562 General, Piston (South County)" = 562L,
+  "#593 General, Piston (Travis Aero Club)" = 593L,
+  "#597 General, Piston (Sonoma County)" = 597L,
+  "#615 General, Piston (Petaluma Sky Ranch)" = 615L,
+  "#619 General, Piston (Santa Rosa Air Center)" = 619L,
+  "#626 General, Piston (Sonoma Valley/Schelville)" = 626L,
+  "#632 General, Piston (Sonoma SkyPark)" = 632L,
+  "#1689 General, Piston (Byron)" = 1689L)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Considered in these categories are criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (CO2, CH4, and N2O) from general aviation aircraft piston engines during their operations at the various airports in the Bay Area. In the piston engine, the basic element is the combustion chamber in which the mixture of fuel and air are burned and energy is extracted by a piston and crank mechanism driving a propeller.
+
+#### Methodology {-}
+
+Normal flight and ground operation modes of the aircraft constitutes the landing/takeoff (LTO) cycle. For criteria pollutant emission inventory, the LTO cycle is grouped into five modes, which is equivalent to two operations in an airport activity. These include:
+
+1. Startup, idle and taxi out,
+2. Takeoff,
+3. Climb out to about 2,300 feet--this height is considered the average mixing
+depth in the Bay Area and assumed inversion height, wherein aircraft exhaust
+emissions are released below it,
+4. Descent/approach from about 2,300 feet, touch down, and landing run, and
+5. Taxi in, idle and shutdown.
+
+For greenhouse gas (GHG) emission inventory, in addition to LTO cycle explained above, the aircraft landing approach and climb out modes above 2,300 feet elevation and aircraft cruise mode in the District’s air space is also included.
+
+The information on number of operations and fleet mix were obtained from the airports, the Federal Aviation Administration (FAA), and the Metropolitan Traffic Commission (MTC). Estimates of aircraft mix for each of the airports were developed based on historical activity and data on home-based aircraft.
+
+The LTO cycle has its equivalent operating time-in-mode (TIM) which is the time for a particular aircraft to go through each of the five modes. Composite modal emission rates (MER) for each of the various types of aircraft engines now in general aviation use were developed from various information sources on aircraft engines. These information sources include the FAA’s Aircraft Engine Emission Database, the U.S. Environmental Protection Agency (EPA), International Civil Aviation Organization (ICAO), and the Intergovernmental Panel on Climate Change (IPCC).
+
+Emission rates vary according to engine type and operating mode. Emission factors for a specific aircraft were estimated by the equation:
+
+$$
+\text{EMF} = \text{N} \times \sum{\left( v_e / v_t \right)_{m,p}} \times \text{TIM}
+$$
+
+##### Sample calculations {-} 
+
+TOG emissions, given a composite EF of 0.345 lb TOG per LTO:
+
+$$
+61,199\ \text{LTO/yr} \times 0.345\ \text{lb/LTO} \div 365\ \text{day/yr} \div \text{2000 lb/ton} = 0.028\ \text{ton/day}\ \text{TOG}
+$$
+
+#### County Distribution {-}
+
+Emissions were distributed to the county location of each airport, where SFO is in San Mateo County, OAK is in Alameda County, SJC in Santa Clara County, and to about two dozen smaller airports with piston aircraft activities in their corresponding counties.
+
+#### Monthly Variation {-}
+
+Monthly distribution was based on the average number of monthly operations at each airport.
+
+### Trends
+
+#### History {-}
+
+```{r mobile-air-gen-piston-annual_emissions-chart, fig.height=18, out.height=1800}
+#
+# Too many categories to plot with the standard color palette,
+# so here we generate and apply a custom palette.
+#
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) +
+  scale_fill_manual(
+    values = colorRampPalette(
+      RColorBrewer::brewer.pal(
+        8, "Set2"))(length(THESE_CATEGORIES)))
+```
+
+Aircraft emissions were estimated based on actual number of operations at each airport during that period.
+
+#### Growth {-}
+
+```{r mobile-air-gen-piston-annual_growth-chart, fig.height=36, out.height=3600}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Projections for the number of operations are based on combination of information from the Airports, FAA and MTC’s “Regional Airport System Plan”. For SFO, OAK, and SJC, emissions for selected years were calculated with corresponding estimates of the aircraft fleet mix during that period. Emission values for other years were obtained by interpolation.
+
+***
+
+By: Sukarn Claire 
+Date: January 2014 
+Base Year: 2011

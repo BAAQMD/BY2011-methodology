@@ -52,7 +52,7 @@ Total gasoline consumption in the Bay Area was obtained from Caltrans. The 1995 
 
 ##### Assumptions {-}
  
-<span class="strike">This category</span> These categories account for only the excess emissions resulting from the use of bootless nozzles at gasoline dispensing facilities (GDF), idle-nozzle emissions occurring after refueling, and “Whoosh” emissions.
+This category accounts for only the excess emissions resulting from the use of bootless nozzles at gasoline dispensing facilities (GDF), idle-nozzle emissions occurring after refueling, and “Whoosh” emissions.
 
 1. Forty percent of the daily gasoline was pumped through bootless nozzles. Five percent of the vehicles were subjected to the excess spitback spillage. Therefore,
 

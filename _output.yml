@@ -1,4 +1,5 @@
 bookdown::gitbook:
+  table_css: false # see <https://haozhu233.github.io/kableExtra/bookdown/use-bootstrap-tables-in-gitbooks-epub.html>
   toc_depth: 2
   css: style.css
   split_by: section

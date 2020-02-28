@@ -19,16 +19,17 @@ Planned or prescribed fires such as weed burning, field crops, prunings, range i
 Methodology for this category is in accordance with the California Air Resources Board’s (CARB’s) document "Methods for Assessing Area Source Emissions in California" for the Wildfires. Activity data (acreage burnt) estimates were obtained from the California Department of Forestry and Fire Protection (CDF) and CARB.
 Wildfire emissions are calculated using the Geographic Information System (GIS) based Emission Estimating System (EES) model developed for ARB by UC Berkeley’s Center for the Assessment and Monitoring of Forest and Environmental Resources (CAMFER) laboratory. Wildfire footprint is overlaid on vegetation landcover map, calculating the amount of each fuel consumed in the fire. Fuel loading is assigned for each fuel component that makes up the vegetation type.
 
-Emission factors and vegetation acreage consumed vary from fire season to fire season depending on type of vegetation consumed and weather conditions. For example, average composite emission factors and amounts of acreage burnt in the Bay Area by county are shown below for year <span class="strike">2008</span> **2011**.
+Emission factors and vegetation acreage consumed vary from fire season to fire season depending on type of vegetation consumed and weather conditions. For example, average composite emission factors and amounts of acreage burnt in the Bay Area by county are shown below for year 2008.
 
 ```{r misc_other-fires-veg-emission_factors-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  tabulate_BY2011_emission_factors(
+  kable_BY2011_emission_factors(
     pollutants = union(
       BY2011_POLLUTANTS,
-      c("CO2_bio", "CH4", "N2O")))
+      c("CO2_bio", "CH4", "N2O")),
+    caption = "Composite emission factors (lb/acre).")
 ```
 
 ```{r misc_other-fires-veg-throughputs-table}

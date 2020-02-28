@@ -26,7 +26,7 @@ The TOG and GHG emissions were estimated using California Air Resources Board’
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  tabulate_BY2011_emission_factors(
+  kable_BY2011_emission_factors(
     pollutants = c(
       BY2011_POLLUTANTS, 
       "HFC+PFC"))

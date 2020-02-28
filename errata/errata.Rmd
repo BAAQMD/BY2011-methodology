@@ -36,10 +36,17 @@ This is a very draft list of "errata".
 
 - [Accidental Structural Fires](#misc_other-fires-struct): The BY2011 [emission factors](#misc_other-fires-struct-emission_factors), pulled from DataBank, appear not to match the relevant table in the the [BY2011 Methodology PDF] (page 10.3.1 - 2).
 
+- [Accidental Auto Fires](#misc_other-fires-auto): The BY2011 [emission factor](#misc_other-fires-auto-methodology) for TOG, pulled from DataBank, appears not to match the relevant table in the the [BY2011 Methodology PDF].
+
 - [Accidental Vegetation Fires](#misc_other-fires-veg): The BY2011 throughputs (burned acreage), pulled from DataBank, appear not to match the relevant table in the [BY2011 Methodology PDF] (page 10.4.1 - 2).
 
 - [Oil Fields](#indcom-oil_fields): The BY2011 [emission factor](#indcom-oil_fields-methodology-area) for CH~4~, pulled from DataBank for category #1575, appears not to match the [BY2011 Methodology PDF] (page 4.21.1 - 2).
 
 - [Gas Fields](#indcom-gas_fields): The BY2011 [emission factor](#indcom-gas_fields-methodology-area) for CH~4~, pulled from DataBank for category #1576, appears not to match the [BY2011 Methodology PDF] (page 4.22.1 - 2).
+
+- [Sand Blasting](#indcom-sandblast): The paragraph under [Control](#indcom-sandblast-control) refers 
+to [Regulation 6] and Regulation [12-14]. It also states that "Controls can range up to 99% or higher." However, no BY2011 control factors for the relevant categories (#42 and #1909) appear to be stored in DataBank. See `DB_CTLFAC_CONCORDANCE` and/or use `BY(2011) %>% DB_control_factors()` to pull the relevant CFs.
+
+- [Recreational Boats](#mobile-rec_boats): Emissions of many pollutants drop to zero at five-year intervals. 
 
 **TO BE CONTINUED...**

@@ -1,3 +1,114 @@
 ## General Aviation, Jet
 
-**TODO**
+```{r mobile-air-gen-jet-setup}
+THESE_CATEGORIES <- c(
+  "#441 General, Jet (Livermore)" = 441L,
+  "#442 General, Jet (Hayward)" = 442L, 
+  "#443 General, Jet (Oakland North)" = 443L,
+  "#444 General, Jet (Buchanan Field)" = 444L,
+  "#446 General, Jet (Gnoss Field)" = 446L,
+  "#447 General, Jet (Napa County)" = 447L,
+  "#448 General, Jet (Half Moon Bay)" = 448L,
+  "#449 General, Jet (San Carlos)" = 449L,
+  "#450 General, Jet (San Francisco International)" = 450L,
+  "#451 General, Jet (Reid-Hillview)" = 451L,
+  "#452 General, Jet (San Jose International)" = 452L,
+  "#453 General, Jet (South County)" = 453L,
+  "#455 General, Jet (Sonoma County)" = 455L)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Considered in these categories are criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (CO2, CH4, and N2O) from gas turbine (jet) engines from general aviation aircraft during their operations at various airports in the San Francisco Bay Area. These general aviation jet aircraft operate from both, large commercial and smaller county airports. The gas turbine engine consists of a compressor, a combustion chamber and a turbine. Air entering the forward end of the engine is compressed and then heated by burning fuel in the combustion chamber. The engine uses its fan to accelerate additional air around the outside of the engine producing exhaust gases for efficient propulsion.
+
+#### Methodology {-}
+
+Normal flight and ground operation modes of the aircraft constitutes the landing/takeoff (LTO) cycle. For criteria pollutant emission inventory, the aircraft LTO cycle is divided into five segments or operational “modes” and categorized by:
+
+1. Startup, idle and taxi out,
+2. Takeoff,
+3. Climb out to about 2,300 feet--this height is considered the average mixing
+depth in the Bay Area and assumed inversion height, wherein aircraft exhaust
+emissions are released below it,
+4. Descent/approach from 2,300 feet, touch down, and landing run, and
+5. Taxi in, idle and shutdown.
+
+For greenhouse gas (GHG) emission inventory, in addition to LTO cycle explained above, the aircraft landing approach and climb out modes above 2,300 feet elevation and aircraft cruise mode in the District’s air space is also included.
+The information on number of operations and fleet mix were obtained from the airports, the Federal Aviation Administration (FAA), and the Metropolitan Traffic Commission (MTC).
+
+The LTO cycle has its equivalent operating time-in-mode (TIM) which is the time for a particular aircraft to go through each of the five modes. Composite modal emission rates (MER) for each of the various types of aircraft engines now in general aviation use were developed from various information sources on aircraft engines. These information sources include the FAA’s Aircraft Engine Emission Database, the U.S. Environmental Protection Agency (EPA), International Civil Aviation Organization (ICAO), and the Intergovernmental Panel on Climate Change (IPCC).
+
+Emission rates vary according to engine type and operating mode. Emission factors for a specific aircraft were estimated by the equation:
+
+$$
+\text{EMF} = \text{N} \times \sum{\left( v_e / v_t \right)_{m,p}} \times \text{TIM}
+$$
+
+where:
+
+<div class="nobullet">
+
+- $\text{EMF}$ = emission factor (lb/LTO);
+- $\text{N}$ = number of engines;
+- $\left( v_e / v_t \right)_{m,p}$ = engine emission rates (lb/hr) at mode $m$, pollutant $p$; and
+-$\text{TIM}$ = time in mode $m$ (hr).
+
+</div>
+
+##### Sample calculations {-} 
+
+TOG emissions for Cessna Citation Jet:
+
+$$
+7,942\ \text{LTO/yr} \times 1.82\ \text{lb/LTO} \div 365\ \text{day/yr} \div \text{2000 lb/ton} = 0.02\ \text{ton/day}\ \text{TOG}
+$$
+
+#### County Distribution {-}
+
+Emissions were distributed to the county location of each airport, where SFO is in San Mateo County, OAK is in Alameda County, SJC in Santa Clara County, and to about a dozen smaller airports with jet aircraft activities in their corresponding counties.
+
+#### Monthly Variation {-}
+
+Monthly distribution was based on an average number of monthly aircraft operations at each airport.
+
+### Trends
+
+#### History {-}
+
+```{r mobile-air-gen-jet-annual_emissions-chart, fig.height=18, out.height=1800}
+#
+# Too many categories to plot with the standard color palette,
+# so here we generate and apply a custom palette.
+#
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) +
+  scale_fill_manual(
+    values = colorRampPalette(
+      RColorBrewer::brewer.pal(
+        8, "Set2"))(length(THESE_CATEGORIES)))
+```
+
+Emissions through the years were estimated based on the above methodology and from the actual number of operations at each airport.
+
+#### Growth {-}
+
+```{r mobile-air-gen-jet-annual_growth-chart, fig.height=18, out.height=1800}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Projections for the number of operations are based on combination of information from the Airports, the FAA and MTC’s “Regional Airport System Plan”. For SFO, OAK, and SJC, emissions for selected years were calculated with corresponding estimates of the aircraft fleet mix during that period. Emission values for other years were obtained by interpolation.
+
+***
+
+By: Sukarn Claire 
+Date: January 2014 
+Base Year: 2011

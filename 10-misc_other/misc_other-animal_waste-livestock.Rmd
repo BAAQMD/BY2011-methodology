@@ -21,9 +21,9 @@ Livestock emissions including dairy cattle, range cattle, poultry, swine, sheep,
 
 #### Methodology {#misc_other-animal_waste-livestock-methodology -}
 
-This methodology is presently based on ARB's methodology. Livestock population in the Bay Area was divided into subcategories: dairy cattle, range cattle, poultry (layers and broilers), swine, sheep, horses, and goats. <span style="strike">Table 1</span> The table below shows livestock population in the Bay Area.
+This methodology is presently based on ARB's methodology. Livestock population in the Bay Area was divided into subcategories: dairy cattle, range cattle, poultry (layers and broilers), swine, sheep, horses, and goats. \@ref(tab:misc-other-animal-waste-livestock-throughputs-table) shows livestock population in the Bay Area.
 
-```{r misc_other-animal_waste-livestock-throughputs-table}
+```{r misc-other-animal-waste-livestock-throughputs-table}
 #' 
 #' 1. Pull throughputs
 #' 2. Convert county abbrs to names
@@ -69,7 +69,8 @@ kable_content <-
     ~ formattable::accounting(., digits = 0)) 
 
 kable_content %>%
-  kable() %>%
+  kable(
+    caption = "Livestock populations in the Bay Area.") %>%
   kable_styling(
     full_width = FALSE,
     bootstrap_options = c(
@@ -88,7 +89,7 @@ Monthly distribution was estimated evenly over the twelve months.
 
 #### County Distribution {-}
 
-The county distribution was based on the cattle population in <span style="strike">Table 1</span> the table above for the nine counties.
+The county distribution was based on the cattle population in \@ref(tab:misc-other-animal-waste-livestock-throughputs-table) for the nine counties.
 
 #### History {-}
 

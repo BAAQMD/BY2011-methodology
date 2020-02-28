@@ -11,15 +11,23 @@ library(BY2011)
 library(cacher)
 library(formattable)
 library(kableExtra)
-
-#' Handy for inline R calculations.
-multiply_by <-
-  magrittr::multiply_by
+library(captioner)
 
 #'
 #' Start with a clean environment!
-#' 
-rm(list = ls())
+#'
+keep_objs <- c()
+rm_objs <- setdiff(ls(), keep_objs)
+rm(list = rm_objs)
+
+#' Could be handy for inline R calculations.
+multiply_by <-
+  magrittr::multiply_by
+
+#' See <https://haozhu233.github.io/kableExtra/bookdown/use-bootstrap-tables-in-gitbooks-epub.html>
+#' Also see `table_css: false` in `_output.yml`
+options(
+  kableExtra.html.bsTable = TRUE)
 
 #'
 #' Declare the location to be used by `cacher::cached()`.
@@ -47,10 +55,11 @@ BY2011_POLLUTANTS <- c(
   "PM2.5",
   "TOG",
   "ROG",
-  "CH4",
   "NOx",
   "SO2",
   "CO",
+  "CH4",
+  "N2O",
   "CO2")
 
 BY2011_YEAR_LIMITS <- 

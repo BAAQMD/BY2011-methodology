@@ -1,3 +1,49 @@
 ## On Road Motor Vehicles
 
-**TODO**
+### Emissions
+
+#### Introduction {-}
+
+There are nearly 5.0 million on-road motor vehicles in the Bay Area, traveling an estimated daily average of 175 million miles.
+
+On-road motor vehicles emissions account for a large portion of the Bay Area total emissions. Realistic estimation of the emission trends from motor vehicles is an essential element of controlling and improving air quality.
+
+#### Methodologies {-}
+
+To estimate emissions from a large fleet of vehicles many variables are required. The most important is the rate at which a vehicle produces various pollutants. This is usually referred to as emission factor; it varies with vehicle age, type, and operating conditions, such as speed and ambient temperature. Another important variable is called the fleet activity. This term relates to the number of in-use vehicles, number of trips and the vehicle miles traveled (VMT).
+
+The computer model for calculation of emission factors and county-specific emissions in California was developed by the California Air Resources Board (CARB). It has undergone many improvements and refinements, the latest version EMFAC2011 (Version 1.1, January 2013) was used for this inventory. It supersedes EMFAC2007, the previous version of this model, which was used for base year 2008.
+
+For a full description of the model and further supporting documentation, reference should be made to ARB's Website at http://www.arb.ca.gov/msei/modeling.htm. Brief description of the model is given below:
+
+The new EMFAC2011 comprises a suite of three modules: 
+
+1. **EMFAC2011-LDV.** The first module, named EMFAC2011-LDV, is used as the basis for estimating emissions from gasoline powered on-road vehicles, diesel vehicles below 14,000 pounds gross vehicle weight rating, and urban transit buses. The algorithms used in EMFAC2011-LDV for passenger cars are the same as those used in EMFAC2007. The Bay Area activity for this module is from MTC’s activity based model “Travel Model One”, which uses ABAG’s Projection 2009 demographic/socio-economic and land use and forecasts developed and adopted in March 2009.
+
+2. **EMFAC2011-HD.** The second module, called EMFAC2011-HD, is the basis for emissions estimates for diesel trucks and buses with a gross vehicle weight rating greater than 14,000 pounds operating in California. This model is based upon the Statewide Truck and Bus Rule emissions inventory that was developed between 2007 and 2010 and approved by the Air Resources Board in December 2010. The truck and bus population and vehicle miles traveled estimates in EMFAC2011-HD are identical to those presented to the Board. Emission factors in the Statewide Truck and Bus Rule inventory were based on statewide, annual average emission factors and adjusted for improvements to fuel economy, medium-heavy duty truck emission factors, and other new information. EMFAC2011-HD emissions estimates include all of the improvements made as part of the Statewide Truck and Bus Rule inventory and then add the traditional detailed EMFAC methods that provide emission rates for annual, summer, and winter seasons on a regional basis.
+
+3. **EMFAC2-011-SG.** EMFAC2011-SG, takes the output from EMFAC2011-LDV and EMFAC2011-HD provided annual average, county-specific emissions. The module also has the ability to apply scaling factors to estimate emissions for user-defined vehicle miles of travel (VMT) and speeds. The module also provides planning inventories. Temperatures chosen for calculating these inventories are averages of ten worst air quality days (summer temperatures for high Ozone days and winter temperatures for high CO occurrences). In each case, the variation in temperature during the day is also taken into account.
+
+### Trends
+
+Estimates of VMT and trips for 2000-2035 were submitted by the Metropolitan Transportation Commission (MTC) based on ABAG projections 2009 as described above. Prior years were unchanged from the previous estimates which were based projections of travel activity used in the 2030 Regional Transportation Plan (RTP2030).
+
+#### Control {-}
+
+There are three types of controls for motor vehicle emissions:
+
+1. **Emission Standards.** Since 1972, introduction of more stringent emission standards has caused the entire motor vehicle fleet to become cleaner as newer vehicle replace the old ones. The introduction of California's Low Emissions Vehicles Program in 1994 will ensure that this trend has continued into the present century. Most recently, regulations were adopted by ARB to reduce emissions from heavy-duty diesel trucks and buses.
+
+2. **Clean Fuels Program.** This program includes Re-Formulated Gasoline Phase I (started January 1990), the Winter-time Oxygenated Fuels Program (introduced in November 1992) and Reformulated Gasoline Phase II (beginning January 1996). To reduce sulfur oxides (SOx) emissions, CARB has also regulated the sulfur content in both gasoline and diesel fuels. The latest regulations beginning 1997, reduced sulfur content of diesel fuel to 15 part per million.
+
+3. **Inspection and Maintenance program (I/M).** Also known as the Smog Check, this program was introduced in 1984. Enhancement to the original I/M were introduced in 1990, with further improvements phased in beginning 1994. In October 2003, ARB started implementing the Enhanced I/M Program (Smog Check II) in the Bay Area. As a result, further ROG, but more importantly NOx, emission reductions were achieved. More changes were made to the program mandated by State law beginning January 1, 2013.
+
+Benefits from these controls are included in the emissions estimates.
+
+In addition, there are controls to reduce motor vehicle use and congestion. These are generally referred to as Transportation Control Measures. Examples of these are programs that increase transit usage and signal timing projects. The benefits from some of these measures are included as part of the travel data (less VMT, less congested speed, etc.), and hence, already included in the emissions estimates from the relevant version of the emissions model.
+
+***
+
+By: A. K. Fanai 
+Base Year 2011
+December 2013

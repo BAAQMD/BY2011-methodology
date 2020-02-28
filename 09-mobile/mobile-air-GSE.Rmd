@@ -1,3 +1,58 @@
 ## Airport Ground Support Equipment
 
-**TODO**
+```{r mobile-air-GSE-setup}
+THESE_CATEGORIES <- c(
+  "#1110 Ground Support Equipment (SFO)" = 1110,
+  "#1111 Ground Support Equipment (OAK)" = 1111,
+  "#1112 Ground Support Equipment (SJC)" = 1112)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Considered in these categories are criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (CO2, CH4, and N2O) from Ground Support Equipment (GSE) that service the aircraft while loading and unloading passengers and freights at the major airports in the San Francisco Bay Area. The commercial airports are San Francisco International (SFO), Oakland International (OAK), and San Jose International (SJC). The Bay Area is also home to a military airbase in Solano County, the Travis Air Force Base (AFB). Examples of the equipment include baggage/aircraft tractors and tugs, ground power units, air start units, auxiliary power units, cargo belt loaders, cargo moving equipment, fuel trucks, food service trucks, and other assorted service vehicles. The majority of the equipment in use at the Bay Area commercial airport is fueled by gasoline or diesel; however, some equipment is fueled by alternative fuels such as compressed natural gas (CNG), liquefied petroleum gas (LPG), or electricity.
+
+#### Methodology {-}
+
+Emissions, emission factors, equipment population and other factors such as break horsepower (BHP), load factors, typical hours of usage and equivalent ratios used are in accordance with the California Air Resources Board’s Off-Road Model 2007. Categories 1110, 1111 and 1112 account for GSE emissions from San Francisco International (SFO), Oakland International (OAK) and San Jose International (SJC) airports respectively. Travis Air Force Base GSE emissions are relatively small and no category has been assigned yet. Combined ground support equipment population for the Bay Area commercial airports is estimated to be about 1100.
+
+#### County Distribution {-}
+
+Distribution of emissions into each county is based on Ground Support Equipment activity and its population in each Bay Area county.
+
+#### Monthly Variation {-}
+
+Monthly distribution was based on an average monthly number of aircraft operations at each airport.
+
+### Trends
+
+#### History {-}
+
+```{r mobile-air-GSE-annual_emissions-chart, fig.height=16, out.height=1600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category)
+```
+
+Emissions growth through the years was estimated based on the number of aircraft operations at each airport.
+
+#### Growth {-}
+
+```{r mobile-air-GSE-annual_growth-chart, fig.height=6, out.height=600}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Projections are based on combination of aircraft operations information in accordance with FAA, the Metropolitan Traffic Commission (MTC) and the San Francisco Bay Area airports.
+
+***
+
+By: Sukarn Claire 
+Date: January 2014 
+Base Year: 2011

@@ -1,3 +1,150 @@
 ## Structures Coatings {#petprod-coat-struct}
 
-**TODO**
+```{r petprod-coat-struct-setup}
+#
+# Later, a table will be rendered, with row headings for:
+#
+# - Solvent Base
+# - Water Base
+# - Other
+#
+# The ordering of the rows here (in `THESE_CATEGORIES`)
+# determines the order of rows in that table.
+#
+THESE_CATEGORIES <- c(
+  
+  "#1010 Solvent Base, Flats" = 1010L, 
+  "#1011 Solvent Base, Non-Flats, High Gloss" = 1011L, 
+  "#1012 Solvent Base, Non-Flats, Low & Medium Gloss" = 1012L, 
+  "#1014 Solvent Base, Non-Flats, Quick Dry Enamels" = 1014L, 
+  "#1015 Solvent Base, Clear Wood Finishes, Varnish, Clear & Semi-Transparent" = 1015L, 
+  "#1016 Solvent Base, Clear Wood Finishes, Lacquers" = 1016L, 
+  "#1019 Solvent Base, Stains, Clear & Semi-Transparent" = 1019L, 
+  "#1020 Solvent Base, Stains, Opaque" = 1020L, 
+  "#1021 Solvent Base, Wood Preservatives" = 1021L, 
+  "#1022 Solvent Base, Primers, Sealers, & Undercoats" = 1022L, 
+  "#1023 Solvent Base, Quick Dry Primers, Sealers, & Undercoats" = 1023L, 
+  "#1026 Solvent Base, Industrial Maintenance Coatings" = 1026L, 
+  "#1027 Solvent Base, Traffic Marking" = 1027L, 
+  "#1028 Solvent Base, Waterproofing Sealers" = 1028L, 
+  "#1030 Solvent Base, Concrete Curing Compounds" = 1030L, 
+  "#1031 Solvent Base, Roof Coatings" = 1031L, 
+  "#1032 Solvent Base, Dry Fog Coatings" = 1032L, 
+  "#1035 Solvent Base, Metallic Pigmented Coatings" = 1035L, 
+  "#1039 Solvent Base, Form Release Compounds" = 1039L, 
+  "#1275 Solvent Base, Bituminous Roof" = 1275L, 
+  "#1277 Solvent Base, Floor" = 1277L, 
+  "#1629 Solvent Base, Bituminous Roof Primer" = 1629L, 
+  "#1630 Solvent Base, Faux Finishing" = 1630L, 
+  "#1631 Solvent Base, Rust Preventative" = 1631L, 
+  "#1632 Solvent Base, Specialty Primer, Sealer, & Undercoat" = 1632L, 
+  "#1633 Solvent Base, Waterproofing Concrete/Masonry Sealers" = 1633L, 
+  "#1042 Solvent Base, Other Coatings" = 1042L, 
+  
+  "#1043 Water Base, Flats" = 1043L, 
+  "#1044 Water Base, Non-Flats, High Gloss" = 1044L, 
+  "#1045 Water Base, Non-Flats, Low & Medium Gloss" = 1045L, 
+  "#1048 Water Base, Clear Wood Finishes, Varnish, Clear & Semi-Transparent" = 1048L, 
+  "#1049 Water Base, Clear Wood Finishes, Lacquers" = 1049L, 
+  "#1052 Water Base, Stains, Clear & Semi-Transparent" = 1052L, 
+  "#1053 Water Base, Stains, Opaque" = 1053L, 
+  "#1054 Water Base, Wood Preservatives" = 1054L, 
+  "#1055 Water Base, Primers, Sealers, & Undercoats" = 1055L, 
+  "#1056 Water Base, Quick Dry Primers, Sealers, & Undercoats" = 1056L, 
+  "#1059 Water Base, Industrial Maintenance Coatings" = 1059L, 
+  "#1060 Water Base, Traffic Marking" = 1060L, 
+  "#1061 Water Base, Waterproofing Sealers" = 1061L, 
+  "#1063 Water Base, Concrete Curing Compounds" = 1063L, 
+  "#1064 Water Base, Roof Coatings" = 1064L, 
+  "#1065 Water Base, Dry Fog Coatings" = 1065L, 
+  "#1068 Water Base, Metallic Pigmented Coatings" = 1068L, 
+  "#1072 Water Base, Form Release Compounds" = 1072L, 
+  "#1279 Water Base, Bituminous Roof" = 1279L, 
+  "#1281 Water Base, Floor" = 1281L, 
+  "#1635 Water Base, Bituminous Roof Primer" = 1635L, 
+  "#1636 Water Base, Faux Finishing" = 1636L, 
+  "#1637 Water Base, Rust Preventative" = 1637L, 
+  "#1638 Water Base, Specialty Primer, Sealer, & Undercoat" = 1638L, 
+  "#1639 Water Base, Waterproofing Concrete/Masonry Sealers" = 1639L, 
+  "#1075 Water Base, Other Coatings" = 1075L, 
+  
+  "#1888 Other, Thinning (for Solvent Base Coatings)" = 1888L, 
+  "#1889 Other, Additives (for Water Base Coatings)" = 1889L, 
+  "#1890 Other, Cleanup Solvents (for Solvent & Water Base Coatings)" = 1890L)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+The California Air Resources Board (CARB) has conducted surveys of architectural coatings marketed in California every four or five years, with the first one in 1976, and the latest one in 2005. These surveys assist both CARB and local districts track organic emissions from architectural coatings. The “2005 Architectural Coatings Survey” contains 2004 data from which this report is based upon.
+
+The categories include organic gas emissions resulting from the application of architectural coatings and associated use of additives, thinning and cleanup solvents. Architectural coatings include a variety of coatings, for example: (1) paints - flats, and non-flats, (2) clears - lacquers, varnishes, and sealers, (3) stains, (4) industrial maintenance coatings, (5) specialty coatings, etc. These coatings are used on various structures, including bridges, buildings, streets, and roofs. Emissions occur from evaporation of the organic solvents during application and air drying of the coatings. To estimate organic solvent emissions, the quantity of various types of coatings and the associated solvent content in each coating should be known. Additives are used in water- base coatings; thinning solvents are used in solvent-base coatings; cleanup solvents are used in both water-base and solvent-base coatings. There are many types of coatings and each coating formulation has its own specific amount of solvent. Each type of coating is assigned a category number.
+
+CARB apportioned each California counties’ architectural coating usage by population. The 2004 architectural coating sales (including additives and thinning and cleanup solvents) were used as a basis for determining the emissions from these categories. Future year emissions (grown and controlled) were provided by CARB. The 2008 -2012 BAAQMD Architectural Coatings TOG and ROG emissions (tons/day) for Solvent Based Coatings, Water Based Coatings, Thinning Solvents, Additives and Cleanup Solvents are shown in \@ref(tab:petprod-struct-coat-ROG-factors-table).
+
+Organic emissions from the use of clean-up and thinning solvents have been revised and a new category (Additives) has been added. Previously, thinning and cleanup solvent usage ratios were based on the assumption of one pint per gallon of solvent-based coatings. Currently, the ratios are as follows: 0.0597 gallon of thinning solvent per gallon of solvent based coating; 0.0044 gallon additives per gall water based coating; and, 0.0160 gallon cleanup solvent per gallon solvent and water based coatings.
+
+CARB also updated the ROG factors for Architectural Coatings, Thinning Solvents, Additives, and Cleanup Solvents. The following are the ROG factors being used:
+
+```{r petprod-struct-coat-ROG-factors-table}
+table_data <-
+  tribble(
+    ~ "Material", ~ "ROG Factor",
+    "Solvent Based Coatings", 0.87,
+    "Water Based Coatings", 1.00,
+    "Thinning Solvents", 0.90,
+    "Additives", 1.00,
+    "Cleanup Solvents", 0.91)
+
+table_data %>%
+  kable_BY2011(
+    caption = "ROG factors (CARB).")
+```
+
+#### Monthly Variation {-}
+
+Monthly variation in emissions was made in proportion to the average monthly sales of coatings reported in the U.S. Department of Commerce of Paint and Allied Products.
+
+#### County distribution {-}
+
+Estimated Bay Area coatings emissions were distributed proportionally to the population in each county.
+
+### Trends
+
+#### History {- #petprod-coat-struct-history}
+
+```{r petprod-coat-struct-annual-emissions-TOG-table, cache=FALSE}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  filter_pollutants(
+    "TOG") %>%       # just TOG, for now
+  filter_years(
+    CY(seq(1990, 2030, by = 3))) %>%
+  kable_BY2011_quantities_by(
+    category,
+    pol_abbr,
+    year,
+    caption = "BY2011 annual emission estimates for Structural Coatings.")
+```
+
+The historical growth profiles were based on a combination prior emissions data (some back to the mid-1980’s) and the Association of Bay Area Government’s (ABAG’s) Household growth factors.
+
+#### Growth {-}
+
+**FIXME: INSERT TABLE HERE**
+
+The projected emissions to 2020 for all categories were based on the CARB’s data. After 2020, ABAG’s Household growth factors were used.
+
+#### Controls {-}
+
+**FIXME: INSERT TABLE HERE**
+
+Regulation 8, Rule 3 was adopted by BAAQMD on March 1, 1978, and limits the volatile organic content of products sold for “application to stationary structures and their appurtenances, including houses, buildings, bridges, tanks, railings, streets and highways.” A lawsuit was filed which overturned a 1990 amendment; final elements of this lawsuit were settled in 1998. Also in 1998, an amendment incorporated provisions that would allow low solids architectural coatings to be sold and used within the BAAQMD. In November 2001, the District adopted an amendment that provided a further reduction in VOC to 19 of the architectural coatings. In July 2009, the District passed amendments to its Architectural Coating Rule that further limit the amount of VOC allowed in certain architectural coatings. The VOC limits were based on emissions standards recommended by the Final Approved Suggested Control Measure for Architectural Coatings developed by CARB in 2007. These amendments resulted in a VOC reduction of 4.02 tons/day in 2011 and 1.63 tons/day in 2012.
+
+***
+
+By: Stuart Schultz 
+Date: January 2014
+Base Year 2011

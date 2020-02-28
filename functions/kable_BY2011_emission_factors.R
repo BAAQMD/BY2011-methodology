@@ -1,8 +1,9 @@
-tabulate_BY2011_emission_factors <- function (
+kable_BY2011_emission_factors <- function (
   ef_data,
   pollutants = BY2011_POLLUTANTS,
   ...,
   digits = Inf,
+  caption = NULL,
   verbose = getOption("verbose")
 ) {
   
@@ -50,7 +51,8 @@ tabulate_BY2011_emission_factors <- function (
     set_names(
       format_pollutant(names(.))) %>%
     kable(
-      escape = FALSE) %>%
+      escape = FALSE,
+      caption = caption) %>%
     kableExtra::kable_styling(
       full_width = FALSE,
       bootstrap_options = c(
@@ -61,7 +63,7 @@ tabulate_BY2011_emission_factors <- function (
     #   general_title = "\n") %>%
     kableExtra::column_spec(
       1,
-      bold = TRUE)
+      color = "black")
   
   return(kable_object)
   

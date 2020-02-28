@@ -1,3 +1,72 @@
 ## Agricultural Aircraft
 
-**TODO**
+```{r mobile-ag-aircraft-setup}
+THESE_CATEGORIES <- c(
+  "#711 Agricultural Aircraft" = 711)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Considered in this category are criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (CO2, CH4, and N2O) from agricultural aircraft engines during spraying operations on agricultural crops in the San Francisco Bay Area. Only combustion products from the aircraft engine during spraying are estimated in this category. This does not include emissions from materials sprayed, which are inventoried under pesticide category.
+
+The aircraft involved are usually piston engine type aircraft. The most common agricultural aircraft are fixed-wing but helicopters are also used. In the aircraft piston engine, mixture of fuel and air are burned from which energy is extracted by a piston and crank mechanism driving a propeller.
+
+#### Methodology {-}
+
+Fuel consumption by agriculture aircraft in the Bay Area was estimated based on number of acres sprayed and fuel used per acre. The information on estimated number of acres sprayed was obtained from the county agricultural crop reports for 1996. Total acreage for field, vegetable, fruit, nut and nursery crops were used in estimating a District total of 178,705 acres sprayed.
+
+An average fuel consumption of 0.1053 gal per acre sprayed was used based on the California Air Resources Board’s (CARB's) report on the total number of acreage sprayed and total statewide fuel usage. From this information, an estimated total fuel usage was derived:
+
+$$
+\text{Total fuel usage} = 0.1053\ \text{gal/acre} \times 178,705\ \text{acre} = 18,818\ \text{gal}
+$$
+
+Emission factors were derived based on EPA document AP-42 for a Lycoming 0-320 and Continental 0-200 aircraft engines. Only the takeoff mode was considered, assuming the aircraft would be at a similar power mode during spraying operations. The fuel specific greenhouse gas emission coefficients for this category were obtained from the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA), the U.S. Environmental Protection Agency’s (EPA’s) document AP-42, and the California Energy Commission (CEC).
+
+##### Sample calculations {-}
+
+$$
+18,818\ \text{gal/yr} \times 76.979\ \text{lb/1000 gal} \div 365\ \text{day/yr} \div 2000\ \text{lb/ton} = 0.002\ \text{ton/day}\ \text{TOG}
+$$
+
+#### County Distribution {-}
+
+Rather than using specific airports of origin, the areas where agricultural aircraft operate were considered. So, county distribution was based on reported total crop acreage for each county.
+
+#### Temporal Variation {-}
+
+Monthly distribution was estimated based on assumption that spraying operations occur primarily during the late spring and summer months. Weekly activity is assumed to be uniform, with reduced activity on weekends.
+
+### Trends
+
+#### History {-}
+
+```{r mobile-ag-aircraft-annual_emissions-chart, fig.height=8, out.height=800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category)
+```
+
+Emissions throughout the years were estimated based on CARB's growth profile on the dollar output of agricultural products.
+
+#### Growth {-}
+
+```{r mobile-ag-aircraft-annual_growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Growth profile for this category is based on CARB's growth information for agricultural activities in the Bay Area.
+
+***
+
+By: Sukarn Claire 
+Date: January 2014 
+Base Year: 2011

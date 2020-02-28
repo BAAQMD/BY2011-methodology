@@ -18,6 +18,22 @@ Design of residential boilers and furnaces generally resemble fire tube type boi
 
 Total natural gas usage for these categories was obtained from the California Energy Commission (CEC), the Pacific Gas and Electric Company (PG&E), and the city of Palo Alto. This total natural gas usage was broken down into three categories based on information from CEC and PG&E, and is shown below.
 
+```{r SS-combust-domestic-NG-apportionment-table}
+table_data <-
+  tribble(
+    ~ "Category", ~ "Percent",
+    "#283 Space Heating", 57.3,
+    "#284 Water Heating", 38.5,
+    "#285 Cooking", 4.2)
+
+table_data %>%
+  mutate_at(
+    vars(Percent),
+    ~ formattable::percent(. / 100, digits = 1)) %>%
+  kable_BY2011(
+    caption = "Apportionment of natural gas usage in the Bay Area.")
+```
+
 | Category |    Category   | Percent |
 |:--------:|:-------------:|:-------:|
 |    283   | Space Heating |  57.3%  |
@@ -34,7 +50,7 @@ BY2011_annual_area_source_emission_factor_data %>%
     THESE_CATEGORIES) %>%
   filter_years(
     CY(2011)) %>%
-  tabulate_BY2011_emission_factors(
+  kable_BY2011_emission_factors(
     pollutants = union(
       BY2011_POLLUTANTS,
       c("CO2", "CH4", "N2O")),

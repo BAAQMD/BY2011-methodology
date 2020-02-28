@@ -27,9 +27,10 @@ Emissions were calculated by multiplying the activity (Tons/Year) for a given ca
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  tabulate_BY2011_emission_factors(
+  kable_BY2011_emission_factors(
     pollutants = BY2011_POLLUTANTS,
-    digits = 2)
+    digits = 2,
+    caption = "Emission factors (lb/ton).")
 ```
 
 ##### Sample Equations {-}
