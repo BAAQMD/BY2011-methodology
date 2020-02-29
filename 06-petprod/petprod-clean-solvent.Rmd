@@ -1,3 +1,136 @@
 ## Solvent Cleaning Operations
 
-**TODO**
+```{r petprod-clean-solvent-setup}
+THESE_CATEGORIES <- c(
+  "#1241 Cold Cleaning" = 1241L,
+  "#1243 Vapor Degreasing" = 1243L,
+  "#1245 Other Handwiping" = 1245L,
+  "#1934 Cold Cleaning (Area)" = 1934L,
+  "#1935 Other Handwiping  (Area)" = 1935L)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+The categories reported here are organic emissions resulting from the uses of solvent in Cold Cleaning, Vapor Degreasing, and Other Hand Wiping operations. Cold Cleaning operations consist of both point (Category 1241) and area (Category 1934) source emissions; Category 1243 consists only of point source emissions from Vapor Degreasing operations; and Other Hand Wiping activities both point (Category 1245) and area (Category 1934) source emissions. Category 1243 also has greenhouse gas (GHG) emissions from perfluorocarbon usage in the vapor degreasers.
+
+##### Cold Cleaners {-}
+
+The two basic types of cold cleaners are maintenance cleaners and manufacturing cleaners. The maintenance cold cleaners are usually simpler, less expensive and smaller. They are designed principally for automotive and general plant maintenance cleaning. Solvents used in maintenance cleaners are mainly aliphatic petroleum solvents such as mineral spirits and Stoddard solvents.
+
+Manufacturing cold cleaners usually perform a higher quality of cleaning than maintenance cleaners and are therefore more specialized. Manufacturing cold cleaning is generally used in metalworking production. A wide variety of solvents are used in this type of cold cleaner. Manufacturing cold cleaners are fewer in number than maintenance cleaners, but tend to emit more solvent per unit because of the larger size and workload.
+
+Cold cleaning operations include spraying, brushing, flushing and immersion. The designs for material handling in cold cleaning systems are generally divided into manual and batch loaded conveyorized systems. Manual loading is used for the simple, small- scale cleaning operations while batch loaded conveyorized systems are used for the more complex, larger-scale cleaning operations.
+
+##### Vapor Degreasers {-}
+
+Vapor degreasers clean through the condensation of hot solvent vapor on colder parts. Solvent vapors condense on the parts to be cleaned until the temperature of the parts approaches the boiling point of the solvent. The condensing solvent dissolves the oils and provides the washing action. There are two types of vapor degreasers, open top and conveyorized. Open top degreasers are batch loaded (cleaning only one load at a time) and are normally located near the work that is to be cleaned. Conveyorized solvent degreasers generally are located at central cleaning stations, which require transport of parts for cleaning.
+
+A typical vapor degreaser is a tank designed to produce and contain solvent vapor. At least one section of the tank is equipped with a heating element that uses steam, electricity, or fuel combustion to boil the solvent. As the solvent boils, dense solvent vapors displace the air within the equipment. Condenser coils located on the sidewalls of the degreaser control the upper level of this pure vapor. These coils (which are supplied with a coolant such as water) are generally located around the inner surface of the degreaser and must be placed below the top edge of the degreaser. This is to protect the solvent vapor zone from disturbance caused by air movement around the equipment.
+
+The distance from the top of the vapor zone to the top of the degreaser tank is called the freeboard and is generally established by the location of the condenser coils. The freeboard is 50% – 60% of the width of the degreaser for solvents with higher boiling points (perchloroethylene, trichloroethylene, and 1,1,1-trichloroethane). The freeboard is at least 75% of the width of the degreaser for solvents with lower boiling points (trichlorotrifluoroethane and ethylene chloride).
+
+Most degreasers are equipped with a water separator. The condensed solvent and moisture are collected in a trough below the condenser coils and directed to the water separator. The water separator is a simple container, which allows the water to separate and decant from the system while the solvent flows from the bottom of the chamber back into the vapor degreaser.
+
+##### Hand Wiping {-}
+
+Hand wiping, or wipe cleaning, includes solvent cleaning done by hand or by means of equipment other than cold cleaners or vapor degreasers. Emissions from hand wiping activities are widespread and occur from solvent usage in manufacturing and maintenance activities. Manufacturing usage refers to any activity (other than in cold cleaners or vapor degreasers) where solvent is used to clean products during the manufacturing process. This includes final wipe cleaning prior to packaging and shipping. Maintenance usage refers to any activity (other than in cold cleaners or vapor degreasers) where solvent is used to clean machinery, tools or other equipment not incorporated into the product. To illustrate this, hand wiping may involve wipe-cleaning a small electronic component with alcohol or large manufacturing equipment with a solvent.
+
+#### Methodologies {-}
+
+##### Cold Cleaners {-}
+
+Emissions from the Cold Cleaning Category (Categories 1241 and 1934) were estimated using the District’s July 1998 “Staff Report on Solvent Cleaning Operations for Regulation 8, Rule 16.” In this report, the 1996 cold cleaning emissions were estimated with the assumption that this represented approximately 65% of the total emissions from solvent cleaning operations (including conveyorized). The remaining 35% of the total emissions came from vapor degreasers. A particular base year’s emissions from cold cleaners were based on these 1996 figures and adjusted using growth factors and control factors (discussed under Growth Profile and Control sections).
+Cold cleaning consist of both point (Category 1241) and area (Category 1934) source emissions. Point sources are covered under the District’s permit system. Emissions are calculated by using solvent throughput of each source reported by companies in the District’s Data Bank system. Emission factors were based on solvent composition. Cold cleaning area source emissions were calculated by subtracting their respective total emissions from their respective point source emissions. As mentioned previously, the total emissions from cold cleaning and vapor degreasing operations were estimated from the District’s staff report.
+
+##### Vapor Degreasers {-}
+
+According to District Permit personnel, all vapor degreasers operating within the District can be considered to be point sources (Category 1243). Therefore, organic and GHG emissions are calculated by using specific emission factors (based on solvent composition) and control factors, if any, for a particular source operation supplied by the company. If no specific factor is available, a generalized factor developed by district staff engineer will be used to determine emissions. The company also reports solvent throughput of each source.
+
+##### Other Hand Wiping {-}
+
+The total District hand wiping emissions were based on the 1996 California Air Resources Board’s (CARB) report on “Solvent Cleaning/Degreasing Source Category Emission Inventory”. One aspect of this report dealt with hand wiping emissions in each air basin within California for 1993. A particular base year’s emissions from hand wiping were based on this 1993 value and adjusted using a growth and control factor (discussed under the Growth Profile and Control sections).
+
+Additionally, there are hand wiping emissions that can be found in other District categories (both point and area sources). Since these sources are subject to various other rules (i.e. graphic printing operations, polyester resin operations, various industrial/commercial coatings rules, etc.), the emissions will remain in these specific categories. To prevent “double-counting”, the organic emissions from these categories will be subtracted from the growth adjusted CARB total hand wiping value. This new emission value is known as Other (or remaining) Hand Wiping emissions.
+
+Listed below are the categories that contain hand wiping emissions to be subtracted from the total value:
+
+```{r petprod-clean-solvent-subtracted}
+table_data <-
+  tribble(
+    ~ Category, ~ Description,
+    "23", "Coatings and Ink (point source)",
+    "24", "Resins (point source)",
+    "45", "Fiberglass Products Manufacturing (point source)",
+    "108", "Gravure Printing (point source)",
+    "109", "Flexographic Printing (point source)",
+    "110", "Letterpress Printing (point source)",
+    "112, 1898", "Lithographic Printing (point and area)",
+    "115, 1899", "Silkscreen Printing (point and area source)",
+    "116, 1900", "Small In‐house Printing (point and area source)",
+    "253, 257, 259, 261, 263 ,265, 267, 269, 271, 273, 275, 277, 279, 281, 1915, 1917, 1919, 1921, 1923, 1925, 1927, 1929, 1931, 1933", "Various Industrial/Commercial Coatings Clean‐up Solvents (point and area sources)",
+    "282", "Other Organics Evaporation (point source)")
+
+table_data %>%
+  kable_BY2011(
+    caption = "Hand wiping emissions to be subtracted from the total value.")
+```
+
+As mentioned previously, this value is subtracted from growth adjusted CARB total hand wiping estimate to obtain the Other (or remaining) Hand Wiping emissions for Categories 1245 and 1935.
+
+Other Hand Wiping emissions consist of both point (Category 1241) and area (1935) source emissions. Point source emissions are covered under the District’s permit system. Area source emissions were estimated by subtracting the Other (or remaining) Hand Wiping emissions from the point source emissions.
+
+#### Monthly Variation {-}
+
+The monthly distribution was estimated based on the point source’s weighted average of reported quarterly seasonal percent throughput data.
+
+#### County Distribution {-}
+
+For point sources, the data bank system contains information on the county location of each facility; hence, emissions are distributed to the counties accordingly. For area sources, emissions distributed into the nine Bay Area counties are based on the county fractions as determined from CARB’s report on “Solvent Cleaning/Degreasing Source Category Emission Inventory”.
+
+### Trends
+
+#### History {-}
+
+```{r petprod-clean-solvent-annual_emissions-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category)
+```
+
+The growth profiles for the Cold Cleaning, Vapor Degreasing, and Other Hand Wiping categories all followed the Association of Bay Area Government’s (ABAG) 2009 Manufacturing Employment profile for the years prior to 1993. Between the years 1993 – 2011, the growth profiles were modified to reflect the estimated emissions (point and area source) calculated for those years.
+
+#### Growth {-}
+
+```{r petprod-clean-solvent-annual_growth-chart, fig.height=10, out.height=1000}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
+After 2011, the growth profiles for Cold Cleaning (Categories 1241 and 1935) and Other Hand Wiping (Categories 1245 and 1935) Operations was based on ABAG’s 2009 Manufacturing Employment profile. For Vapor Degreasers (Cat. 1243), a decrease in solvent usage from the mid-1990’s has been observed. Using this trend, a conservative estimate of 1.0%/year decrease in throughput activity was assumed.
+
+#### Control {-}
+
+```{r petprod-clean-solvent-annual_control-chart, fig.height=10, out.height=1000}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant)
+```
+
+District Regulation 8, Rule 16 (for Solvent Cleaning Operations) set operating and equipment standards for cold cleaners and vapor degreasers. In Reg. 8, Rule 16, hand wiping activity was only subject to the Monitoring and Records section. (However, hand wiping may be subjected to other Regulation 8 rules.) Originally adopted in 1979, there have been several amendments to this rule, with the latest being October 2002. It is estimated the current overall control efficiency for cold cleaners is approximately 68%. For vapor degreasers, the overall control efficiency is currently estimated at 81%.
+
+An amendment to Regulation 8, Rule 4 (adopted October 16, 2002 and effective June 1, 2003) placed VOC limits on solvent usage in surface preparation (hand wiping) activities to 50 g/l unless controlled to an approved abatement device with an overall control efficiency of at least 85%. (There was a limited exemption which delayed these surface preparation standards in production machinery until June 1, 2004.)
+
+***
+
+By: Stuart Schultz 
+Date: January 2014 
+Base Year 2011
