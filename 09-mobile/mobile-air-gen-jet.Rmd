@@ -53,7 +53,7 @@ where:
 - $\text{EMF}$ = emission factor (lb/LTO);
 - $\text{N}$ = number of engines;
 - $\left( v_e / v_t \right)_{m,p}$ = engine emission rates (lb/hr) at mode $m$, pollutant $p$; and
--$\text{TIM}$ = time in mode $m$ (hr).
+- $\text{TIM}$ = time in mode $m$ (hr).
 
 </div>
 
