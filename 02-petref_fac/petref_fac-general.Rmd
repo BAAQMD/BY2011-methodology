@@ -1,4 +1,4 @@
-## General Refinery Emissions
+## General Refinery Emissions {#petref_fac-general}
 
 ```{r petref_fac-general-setup}
 THESE_CATEGORIES <- c(
@@ -55,6 +55,13 @@ BY2011_annual_emission_data %>%
     THESE_CATEGORIES) %>%
   chart_BY2011_annual_emissions_by(
     fill = category) 
+```
+
+```{r petref_fac-general-BY_vs_DB-emissions-chart, fig.height=18, out.height=1800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
 Historic emissions have generally varied with refinery throughputs. Past base year historical emissions include interchangeable emission reduction credit (IERC). IERC banking emissions are now inventoried separately under categories 298-301. Also, flare source emissions from categories 298 and 299 are now accounted for in category 15. Beginning in December 2003, flare emission monitoring control was implemented for all refineries in the Bay Area. Flare emissions are based upon these monitoring data.

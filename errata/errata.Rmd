@@ -18,6 +18,10 @@ This is a very draft list of "errata".
 
 ### Medium (or maybe Low or High) Priority
 
+- [General Refinery Emissions](#petref_fac-general}): For category #10, BY2011 NOx emissions are much lower than DataBank numbers would indicate. SOx and PM emissions, on the other hand, are consistent. For category #16 "Other", CO2 emissions are large (~3 MMTCO2eq) and linearly increasing, which is mildly inconsistent with profiles for other pollutants in this category.
+
+- [Refinery Process Vessel Depressurization](#petref_fac-vessel_depress): TOG emission rates for  two isolated years (CY1999-2000) are above 3 ton/yr. There are no estimates before CY1999. Estimates after CY2000 are exactly zero. According to the text, "Emissions for category 20 have been relatively insignificant for last few years, at less than 5 pounds per day for the entire region." 5 lb/day is approximately 1 ton/yr, and so should be visible on the chart. The growth profile is also inconsistent with the published emission numbers.
+
 - [Concrete Batching](##indcom-concrete-batching): While the TSP estimates for the point-source component (category #39) align well with DataBank RY/PY data, the speciated PM~10~ and PM~2.5~ estimates are very different --- on the order of hundreds of tons each year, for years CY1990-2011. This is using the BY2011 PM speciation factors, found in `t0324`, to derive PM~10~ and ~PM2.5~ estimates from the "PM" estimates that are stored in DataBank.
 
 - [#305 Gas Fired Turbines](#SS_combust-turbines) shows a sharp up/down tick at CY2010. If you look at an RY pivot table, you can see that this is entirely due to one source. If you look at a PY pivot table, the effect disappears --- that same source is very steady, year-over-year. It's possible that an error existed at the time that the RY snapshot was made, but was fixed before the PY data were frozen.

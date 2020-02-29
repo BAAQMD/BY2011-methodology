@@ -1,4 +1,4 @@
-## Refinery Process Vessel Depressurization
+## Refinery Process Vessel Depressurization {#petref_fac-vessel_depress}
 
 ```{r petref_fac-vessel_depress-setup}
 THESE_CATEGORIES <- c(
