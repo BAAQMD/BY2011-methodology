@@ -9,7 +9,7 @@ THESE_CATEGORIES <- c(
 
 ### Emissions
 
-#### Instroduction {-}
+#### Introduction {-}
 
 Emissions from these categories occur during the fueling of ships, tugboats, ferry boats, fishing boats, and recreational boats, including spillage and from the working and breathing emissions of storage tanks. Emissions result from vapor displacement to the atmosphere.
 
