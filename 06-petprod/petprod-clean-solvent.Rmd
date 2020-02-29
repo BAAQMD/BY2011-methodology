@@ -6,14 +6,14 @@ THESE_CATEGORIES <- c(
   "#1243 Vapor Degreasing" = 1243L,
   "#1245 Other Handwiping" = 1245L,
   "#1934 Cold Cleaning (Area)" = 1934L,
-  "#1935 Other Handwiping  (Area)" = 1935L)
+  "#1935 Other Handwiping (Area)" = 1935L)
 ```
 
 ### Emissions
 
 #### Introduction {-}
 
-The categories reported here are organic emissions resulting from the uses of solvent in Cold Cleaning, Vapor Degreasing, and Other Hand Wiping operations. Cold Cleaning operations consist of both point (Category 1241) and area (Category 1934) source emissions; Category 1243 consists only of point source emissions from Vapor Degreasing operations; and Other Hand Wiping activities both point (Category 1245) and area (Category 1934) source emissions. Category 1243 also has greenhouse gas (GHG) emissions from perfluorocarbon usage in the vapor degreasers.
+The categories reported here are organic emissions resulting from the uses of solvent in Cold Cleaning, Vapor Degreasing, and Other Hand Wiping operations. Cold Cleaning operations consist of both point (Category 1241) and area (Category 1934) source emissions; Category 1243 consists only of point source emissions from Vapor Degreasing operations; and Other Hand Wiping activities both point (Category 1245) and area (Category <span class="strike">1934</span> 1935) source emissions. Category 1243 also has greenhouse gas (GHG) emissions from perfluorocarbon usage in the vapor degreasers.
 
 ##### Cold Cleaners {-}
 
@@ -99,6 +99,13 @@ BY2011_annual_emission_data %>%
     THESE_CATEGORIES) %>%
   chart_BY2011_annual_emissions_by(
     fill = category)
+```
+
+```{r petprod-clean-solvent-BY_vs_DB-emissions-chart, fig.height=10, out.height=1000}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
 The growth profiles for the Cold Cleaning, Vapor Degreasing, and Other Hand Wiping categories all followed the Association of Bay Area Government’s (ABAG) 2009 Manufacturing Employment profile for the years prior to 1993. Between the years 1993 – 2011, the growth profiles were modified to reflect the estimated emissions (point and area source) calculated for those years.
