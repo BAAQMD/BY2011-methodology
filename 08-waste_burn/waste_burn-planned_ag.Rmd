@@ -23,7 +23,7 @@ Annual activity or waste material burn information for these categories was obta
 
 Emissions were calculated by multiplying the activity (Tons/Year) for a given category by its composite emission factor (Lb/Tons). Composite emission factors were developed using crop specific emission factor data from the California Air Resources Board (CARB) and the Environmental Protection Agency (EPA). Background information for emission factors and fuel loading is explained in the CARB memo, the Agricultural Burning Emission Factors dated August 17, 2000. Emission factors for these categories in pounds per ton (Lb/Ton) are shown below.
 
-```{r waste_burn-planned_ag-emission_factors-table}
+```{r waste-burn-planned-ag-emission-factors-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

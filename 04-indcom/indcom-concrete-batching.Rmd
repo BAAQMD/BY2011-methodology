@@ -19,7 +19,7 @@ Cement production for California in 2011 was estimated at 8,833,000 short tons. 
 
 The particulate emission factor used for area source concrete batching, based on Truck Mix Operations (found in AP-42’s Mineral Products Industry section), include total process emissions, wind erosion estimates from sand and aggregate storage piles, and vehicular travel estimates from unpaved roads. The composite particulate emission factor was estimated at 0.16 lbs/ton of concrete produced. Particulate emissions from area sources were calculated by multiplying this emission factor to the estimated area source concrete production throughput in the Bay Area.
 
-```{r indcom-concrete-batching-emission_factors-table}
+```{r indcom-concrete-batching-emission-factors-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

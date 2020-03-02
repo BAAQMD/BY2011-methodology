@@ -44,7 +44,7 @@ Emission factor information for natural gas combustion was obtained from the U.S
 
 The area source natural gas combustion emission factors in pounds per million cubic feet (Lb/MMCF) are shown below.
 
-```{r SS_combust-NG-emission_factors-table}
+```{r SS-combust-NG-emission-factors-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

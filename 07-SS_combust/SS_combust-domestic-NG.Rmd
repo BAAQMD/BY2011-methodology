@@ -44,7 +44,7 @@ Emission factor information for natural gas combustion was obtained from the U.S
 
 The natural gas combustion emission factors for these categories, in pounds per million cubic feet (Lb/MMCF) are shown below.
 
-```{r SS_combust-domestic_NG-emission_factors-table}
+```{r SS-combust-domestic-NG-emission-factors-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -54,7 +54,7 @@ BY2011_annual_area_source_emission_factor_data %>%
     pollutants = union(
       BY2011_POLLUTANTS,
       c("CO2", "CH4", "N2O")),
-    verbose = TRUE)
+    caption = "Emission factors (lb/MMcf).")
 ```
 
 #### County Distribution {-}

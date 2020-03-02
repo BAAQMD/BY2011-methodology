@@ -34,18 +34,16 @@ Area source emissions for category 1579 were calculated based on an estimated ho
 
 The emission factors for category 1579, in pounds per ton (Lb/Ton) of waste materials combusted are shown below.
 
-```{r waste_burn-incineration-emission_factors-table}
+```{r waste-burn-incineration-emission-factors-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  select(
-    category = cat_id,
-    pol_abbr,
-    ef_qty) %>%
-  distinct() %>%
-  spread(
-    pol_abbr,
-    ef_qty)
+  kable_BY2011_emission_factors(
+    pollutants = union(
+      BY2011_POLLUTANTS,
+      c("CO2_bio")),
+    digits = 3,
+    caption = "Emission factors (lb/ton).")
 ```
 
 Emission factors were developed based on type of materials commonly disposed of in this manner. EPA's document AP-42 contains information on combustion of waste materials. The fuel specific emission coefficients for GHGs were obtained from the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA), the U.S. Environmental Protection Agency’s (EPA’s) document AP-42, and the California Energy Commission (CEC).
