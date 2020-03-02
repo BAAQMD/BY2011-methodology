@@ -1,3 +1,174 @@
-## Construction, Mining, Industrial/Light Commercial, & Other Off-Road Diesel Equipment
+## Construction, Mining, Industrial/Light Commercial, & Other Off-Road Diesel Equipment {#mobile-offroad-diesel}
 
-**TODO**
+```{r mobile-offroad-diesel-setup}
+THESE_CATEGORIES <- c(
+  "#1657 Construction & Mining Equipment, Gasoline (4 Stroke)" = 1657,
+  "#1658 Construction & Mining Equipment, Gasoline (2 Stroke)" = 1658,
+  "#1659 Construction & Mining Equipment, Evaporative (4 Stroke)" = 1659,
+  "#1660 Construction & Mining Equipment, Evaporative (2 Stroke)" = 1660,
+  "#1661 Construction & Mining Equipment, Diesel" = 1661,
+  "#1662 Industrial Equipment, Gasoline (4 Stroke)" = 1662,
+  "#1663 Industrial Equipment, Gasoline (2 Stroke)" = 1663,
+  "#1664 Industrial Equipment, Evaporative (4 Stroke)" = 1664,
+  "#1665 Industrial Equipment, Evaporative (2 Stroke)" = 1665,
+  "#1666 Industrial Equipment, Diesel" = 1666,
+  "#1667 Industrial Equipment, Natural Gas" = 1667,
+  "#1668 Light Commercial Equipment, Gasoline (4 Stroke)" = 1668,
+  "#1669 Light Commercial Equipment, Gasoline (2 Stroke)" = 1669,
+  "#1670 Light Commercial Equipment, Evaporative (4 Stroke)" = 1670,
+  "#1671 Light Commercial Equipment, Evaporative (2 Stroke)" = 1671,
+  "#1672 Light Commercial Equipment, Diesel" = 1672,
+  "#1673 Light Commercial Equipment, Natural Gas" = 1673,
+  "#1674 Oil Drilling Equipment, Diesel" = 1674,
+  "#1675 Other Equipment, Diesel" = 1675)
+
+CONSTRUCT_EQUIP_CATEGORIES <- c(
+  "#1657 Construction & Mining Equipment, Gasoline (4 Stroke)" = 1657,
+  "#1658 Construction & Mining Equipment, Gasoline (2 Stroke)" = 1658,
+  "#1659 Construction & Mining Equipment, Evaporative (4 Stroke)" = 1659,
+  "#1660 Construction & Mining Equipment, Evaporative (2 Stroke)" = 1660,
+  "#1661 Construction & Mining Equipment, Diesel" = 1661)
+
+INDUST_EQUIP_CATEGORIES <- c(
+  "#1662 Industrial Equipment, Gasoline (4 Stroke)" = 1662,
+  "#1663 Industrial Equipment, Gasoline (2 Stroke)" = 1663,
+  "#1664 Industrial Equipment, Evaporative (4 Stroke)" = 1664,
+  "#1665 Industrial Equipment, Evaporative (2 Stroke)" = 1665,
+  "#1666 Industrial Equipment, Diesel" = 1666,
+  "#1667 Industrial Equipment, Natural Gas" = 1667)
+
+LIGHT_COM_EQUIP_CATEGORIES <- c(
+  "#1668 Light Commercial Equipment, Gasoline (4 Stroke)" = 1668,
+  "#1669 Light Commercial Equipment, Gasoline (2 Stroke)" = 1669,
+  "#1670 Light Commercial Equipment, Evaporative (4 Stroke)" = 1670,
+  "#1671 Light Commercial Equipment, Evaporative (2 Stroke)" = 1671,
+  "#1672 Light Commercial Equipment, Diesel" = 1672,
+  "#1673 Light Commercial Equipment, Natural Gas" = 1673)
+
+OTHER_CATEGORIES <- c(
+  "#1674 Oil Drilling Equipment, Diesel" = 1674,
+  "#1675 Other Equipment, Diesel" = 1675)
+
+CONSOLIDATED_CATEGORIES <- list(
+  "#1658-1661 Construction & Mining Equipment" = c(1657:1661),
+  "#1662-1667 Industrial Equipment" = c(1662:1667),
+  "#1668-1673 Light Commercial Equipment" = c(1668:1673),
+  "#1674 Oil Drilling Equipment" = 1674,
+  "#1675 Other Equipment" = 1675)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+These categories account for exhaust emissions from heavy duty non-farm gasoline and diesel equipment used in construction, mining and logging operations.
+
+#### Methodologies {-}
+
+California Air Research Board (CARB) developed an off-road vehicle emission inventory model to estimate emissions from off-road motor vehicles for all counties and air basins in California. The OFFROAD model contained a more comprehensive list of equipment from a wider range of categories. The OFFROAD2007 model added an inventory estimate for engines powered by gasoline fuel, compressed natural gas (CNG) and liquid petroleum gas (LPG).
+The criteria and GHG emissions for heavy duty construction and mining equipment categories in the Bay Area were obtained from the CARB’s OFFROAD2007 model.
+
+CARB released the In-Use Off-Road Equipment model in 2011. The estimates included corrections to baseline assumptions, such as equipment population and activity data (hours of operation, load factor, etc.) as well as the impact of the recent recession and major revisions to CARB’s In-use Off-Road Diesel regulation (AB1085). Construction equipment PM10 and NOx emissions were previously overestimated. The diesel fuel consumption in the Bay Area for this updated Off-Road model produces consumption levels that are considerably lower than diesel fuel usage projected by the CARB’s OFFROAD2007 model. As a result, the off-road diesel construction, industrial, and oil drilling equipment emission estimates have been reduced by 50% from the previous base year estimates.
+
+The updated version of CARB’s Off-Road model did not estimate for SO2, CO, and GHG emissions and other fuel types (gasoline, and natural gas). Consequently, the emission factors, emissions for gasoline and natural gas equipment were obtained from CARB’s OFFROAD2007 model.
+
+The highlights of the In-Use Off-Road Equipment model are listed below: 9.4.1 - 1
+
+- Population (Number of Equipment): The total population estimates in 2009 were 26 percent lower than anticipated in 2007, mainly due to fleet downsizing during the recession. The new input population data were provided directly by California fleets.
+
+- Activity Data (Hours of Use): The new activity data by equipment type were generally at least 30 percent lower than ARB staff had expected, and in some cases more than 50 percent lower than 2007 OFFROAD model. In addition, the 2009 activity was lower than 2007 largely due to the recession.
+
+- Load Factor: Previous estimates from Power Systems Research were in the 60 percent range for many equipment types. ARB staff’s analyses suggested that load factors should be reduced by 33 percent.
+
+- Growth Forecasts: The Growth data in the current Off-Road Construction estimates included the economic scenario to reflect the recession. ARB staff indicated that the construction activity in 2009 is lower by 50% compared to 2005 construction activity value.
+
+#### Monthly Variation {-}
+
+Monthly variation of emissions was assumed to be 60% for the months of April to September and 40% for the other remaining months. Weekly activity takes place primarily during weekdays. Most of the daily activity occurs during daylight hours.
+
+#### County Distribution {-}
+
+County emissions were provided by the CARB’s 2007 OFFROAD model.
+
+### Trends
+
+#### History {-}
+
+> For detailed breakdowns of the [Construction](#mobile-offroad-diesel-construct-equip), [Industrial](#mobile-offroad-diesel-indust-equip), and [Light Commercial](#mobile-offroad-diesel-light-com-equip) equipment sub-categories, see charts further below.
+
+```{r mobile-offroad-construction-annual_emissions-chart, fig.height=18, out.height=1800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    CONSOLIDATED_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+The historical data utilized in the OFFROAD model are based on a report for the Air Resources Board entitled “A Study to Develop Projected Activity for “Non-Road Mobile” Categories in California, 1970-2020”. In this report, certain economic indicators are used to project the growth in population and usage of small off-road engines in various applications.
+
+#### Growth {-}
+
+```{r mobile-offroad-diesel-annual_growth-chart}
+#
+# All of these categories are assigned the same growth profile, so let's just plot that.
+#
+  DB_raw_growth_profiles(
+    years = BY2011_YEARS, 
+    nested = FALSE) %>%
+  filter(
+    gpf_id == 262) %>%
+  chart_annual_growth_by(
+    color = cnty_abbr,
+    base_year = CY(2011),
+    year_limits = BY2011_YEAR_LIMITS,
+    year_expand = BY2011_YEAR_EXPAND,
+    title = "#262 Construction Growth",
+    subtitle = "This profile is assigned to all of BY2011 categories #1657 through #1675.") 
+```
+
+Projected emissions for construction, and mining (heavy duty non-farm) equipment categories were obtained from ARB’s SIP inventory (http://www.arb.ca.gov/app/emsinv/2012pm25sip/norcal2012pm25sip/)
+
+#### Control {-}
+
+In December of 1990, the CARB adopted two levels of emission standards for small off- road engines. The first phase of standards (Tier 1) was implemented in 1995 and Tier 2 standards were implemented in 1999. The deterioration rates for 4 stroke Tier 1 engines were derived from data supplied by engine manufacturers. Since engines meeting Tier 2 standards are not yet available, engineering judgment was used to estimate the effect of the more stringent standards.
+Projected emissions include expected benefits from ARB's Clean Diesel Regulations in 1993, Re-Formulated Gasoline Phase II and EPA’s diesel engine standards beginning 1999. These benefits were estimated using control factors developed by ARB.
+
+***
+
+By: Michael Nguyen 
+Date: February, 2014 
+Base Year 2011
+
+***
+
+#### History: Detailed Breakdowns {-}
+
+##### Construction Equipment {- #mobile-offroad-diesel-construct-equip}
+
+```{r mobile-offroad-construct_equip-annual_emissions-chart, fig.height=18, out.height=1800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    CONSTRUCT_EQUIP_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+##### Industrial Equipment {- #mobile-offroad-diesel-indust-equip}
+
+```{r mobile-offroad-indust_equip-annual_emissions-chart, fig.height=18, out.height=1800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    INDUST_EQUIP_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+##### Light Commercial {- #mobile-offroad-diesel-light-com-equip}
+
+```{r mobile-offroad-light_com_equip-annual_emissions-chart, fig.height=18, out.height=1800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    LIGHT_COM_EQUIP_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```

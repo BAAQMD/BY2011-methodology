@@ -1,0 +1,987 @@
+--- 
+title: "BY2011 Methodology"
+author: "David Holstius"
+date: "`r Sys.Date()`"
+output: 
+  bookdown::gitbook:
+    df_print: paged
+documentclass: book
+description: "Recreation of the BAAQMD BY2011 Methodology PDF."
+site: "bookdown::bookdown_site"
+biblio-style: apalike
+link-citations: yes
+---
+```{r include=FALSE, cache=FALSE}
+#'
+#' This entire script is run (by `bookdown`) before each chapter is knitted.
+#' 
+#' See also:
+#' 
+#' - `chapter_teardown.R`
+#' - `_bookdown.yml`
+#' 
+library(inventory)
+library(BY2011)
+library(cacher)
+library(formattable)
+library(kableExtra)
+library(captioner)
+
+#'
+#' Start with a clean environment!
+#'
+keep_objs <- c()
+rm_objs <- setdiff(ls(), keep_objs)
+rm(list = rm_objs)
+
+#' Could be handy for inline R calculations.
+multiply_by <-
+  magrittr::multiply_by
+
+#' See <https://haozhu233.github.io/kableExtra/bookdown/use-bootstrap-tables-in-gitbooks-epub.html>
+#' Also see `table_css: false` in `_output.yml`
+options(
+  kableExtra.html.bsTable = TRUE)
+
+#'
+#' Declare the location to be used by `cacher::cached()`.
+#' 
+options(
+  cacher.root = here::here("cache"))
+
+#'
+#' Only chart (or tabulate, etc.) these years.
+#'
+BY2011_YEARS <- 
+  CY(1990:2030)
+
+#'
+#' Only chart (or tabulate, etc.) these pollutants.
+#'
+#' This implicitly affects the following functions:
+#'
+#' `BY2011_chart_annual_emissions_by()`
+#'
+BY2011_POLLUTANTS <- c(
+  "PM",
+  "TSP",
+  "PM10",
+  "PM2.5",
+  "TOG",
+  "ROG",
+  "NOx",
+  "SO2",
+  "CO",
+  "CH4",
+  "N2O",
+  "CO2")
+
+BY2011_YEAR_LIMITS <- 
+  CY(1990, 2030)
+
+BY2011_YEAR_EXPAND <-
+  ggplot2::expand_scale(
+    add = c(2, 2),
+    mult = c(0, 0))
+
+source_all <- function (...) {
+  purrr::walk(
+    unlist(list(...)), 
+    purrr::safely(
+      purrr::partial(
+        base::source,
+        local = FALSE),
+      quiet = FALSE))
+}
+
+#'
+#' Quietly source all .R files in the `functions/` subfolder.
+#'
+#' These files should all contain function definitions, and only function
+#' definitions. So, the order that we source them in doesn't matter.
+#' 
+source_all(
+  dir(
+    here::here("functions"), 
+    pattern = "\\.R$",
+    full.names = TRUE))
+
+#'
+#' In contrast to the above, the ordering below matters.
+#' 
+source_all(
+  
+  "data/DB_annual_point_source_emission_data.R",
+  "data/BY2011_annual_point_source_emission_data.R",
+  
+  "data/BY2011_annual_area_source_emission_factor_data.R",
+  "data/BY2011_annual_control_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_raw_growth_factor_data.R",
+  "data/BY2011_growth_profile_crosswalk.R",
+  "data/BY2011_annual_growth_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_area_source_projection_data.R",
+  "data/BY2011_area_source_throughput_data.R"
+  
+)
+```
+
+# Introduction
+
+This is a recreation of the [BY2011 Methodology PDF], with several key enhancements:
+
+- **Charts** to illustrate emissions, control profiles, and growth profiles;
+- **Tables** with footnotes, dynamic calculations, and values pulled directly from BY2011 data (examples: [Structural Coatings](#petprod-coat-struct-history), [Waste Burning](#waste_burn-planned_ag-methodology), [Accidental Fires](#misc_other-fires-struct-methodology), and [Animal Waste](#misc_other-animal_waste-livestock-methodology));
+- **Equations** with rich formatting (examples: [Paved Roads](#misc_other-roads-paved-methodology) and [Farming Operations](#cat_749-methodology));
+- Linked **references** to rules & regulations (example: [Chemical Manufacturing](#chem_fac-other-control)); and
+- A list of [errata](#errata), to serve as:
+    - a concrete list of things to be fixed in BY2015; and 
+    - a resource for learning QA techniques that lead to the uncovering of errata in the first place.
+
+It's a work in progress, but very useful for understanding the BY2011 inventory. Apart from [Chapter 9](#mobile_combust), the coverage is essentially complete. 
+
+A forked copy can serve as the foundation of the **BY2015** Methodology Report.
+
+```{r libraries, include=FALSE, message=FALSE, cache=TRUE}
+library(inventory)
+library(BY2011)
+```
+
+```{r options, include=FALSE, message=FALSE, cache=FALSE}
+#   html_vignette:
+#   df_print: kable
+#   toc: true
+#   toc_depth: 3
+
+library(knitr)
+library(printr)
+
+knitr::opts_chunk$set(
+  dev = "svg",
+  cache = TRUE,
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width = 8,
+  out.width = 800,
+  fig.height = 4,
+  out.height = 800 / (8 / 4),
+  dpi = 300)
+```
+```{r include=FALSE, cache=FALSE}
+#'
+#' This is run after each chapter.
+#' 
+#' See also:
+#' 
+#' - `chapter_setup.R`
+#' - `_bookdown.yml`
+#' 
+
+if (exists("THESE_CATEGORIES")) {
+  
+  rm(THESE_CATEGORIES)
+  
+}
+```
+
+<!--chapter:end:index.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+#'
+#' This entire script is run (by `bookdown`) before each chapter is knitted.
+#' 
+#' See also:
+#' 
+#' - `chapter_teardown.R`
+#' - `_bookdown.yml`
+#' 
+library(inventory)
+library(BY2011)
+library(cacher)
+library(formattable)
+library(kableExtra)
+library(captioner)
+
+#'
+#' Start with a clean environment!
+#'
+keep_objs <- c()
+rm_objs <- setdiff(ls(), keep_objs)
+rm(list = rm_objs)
+
+#' Could be handy for inline R calculations.
+multiply_by <-
+  magrittr::multiply_by
+
+#' See <https://haozhu233.github.io/kableExtra/bookdown/use-bootstrap-tables-in-gitbooks-epub.html>
+#' Also see `table_css: false` in `_output.yml`
+options(
+  kableExtra.html.bsTable = TRUE)
+
+#'
+#' Declare the location to be used by `cacher::cached()`.
+#' 
+options(
+  cacher.root = here::here("cache"))
+
+#'
+#' Only chart (or tabulate, etc.) these years.
+#'
+BY2011_YEARS <- 
+  CY(1990:2030)
+
+#'
+#' Only chart (or tabulate, etc.) these pollutants.
+#'
+#' This implicitly affects the following functions:
+#'
+#' `BY2011_chart_annual_emissions_by()`
+#'
+BY2011_POLLUTANTS <- c(
+  "PM",
+  "TSP",
+  "PM10",
+  "PM2.5",
+  "TOG",
+  "ROG",
+  "NOx",
+  "SO2",
+  "CO",
+  "CH4",
+  "N2O",
+  "CO2")
+
+BY2011_YEAR_LIMITS <- 
+  CY(1990, 2030)
+
+BY2011_YEAR_EXPAND <-
+  ggplot2::expand_scale(
+    add = c(2, 2),
+    mult = c(0, 0))
+
+source_all <- function (...) {
+  purrr::walk(
+    unlist(list(...)), 
+    purrr::safely(
+      purrr::partial(
+        base::source,
+        local = FALSE),
+      quiet = FALSE))
+}
+
+#'
+#' Quietly source all .R files in the `functions/` subfolder.
+#'
+#' These files should all contain function definitions, and only function
+#' definitions. So, the order that we source them in doesn't matter.
+#' 
+source_all(
+  dir(
+    here::here("functions"), 
+    pattern = "\\.R$",
+    full.names = TRUE))
+
+#'
+#' In contrast to the above, the ordering below matters.
+#' 
+source_all(
+  
+  "data/DB_annual_point_source_emission_data.R",
+  "data/BY2011_annual_point_source_emission_data.R",
+  
+  "data/BY2011_annual_area_source_emission_factor_data.R",
+  "data/BY2011_annual_control_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_raw_growth_factor_data.R",
+  "data/BY2011_growth_profile_crosswalk.R",
+  "data/BY2011_annual_growth_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_area_source_projection_data.R",
+  "data/BY2011_area_source_throughput_data.R"
+  
+)
+```
+# Petroleum Refining Facilities {#petref_fac}
+
+```{r 02-petref_fac-general, child="02-petref_fac/petref_fac-general.Rmd"}
+```
+
+```{r 02-petref_fac-fugitive, child="02-petref_fac/petref_fac-fugitive.Rmd"}
+```
+
+```{r 02-petref_fac-vessel_depress, child="02-petref_fac/petref_fac-vessel_depress.Rmd"}
+```
+
+```{r include=FALSE, cache=FALSE}
+#'
+#' This is run after each chapter.
+#' 
+#' See also:
+#' 
+#' - `chapter_setup.R`
+#' - `_bookdown.yml`
+#' 
+
+if (exists("THESE_CATEGORIES")) {
+  
+  rm(THESE_CATEGORIES)
+  
+}
+```
+
+<!--chapter:end:02-petref_fac/petref_fac.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+#'
+#' This entire script is run (by `bookdown`) before each chapter is knitted.
+#' 
+#' See also:
+#' 
+#' - `chapter_teardown.R`
+#' - `_bookdown.yml`
+#' 
+library(inventory)
+library(BY2011)
+library(cacher)
+library(formattable)
+library(kableExtra)
+library(captioner)
+
+#'
+#' Start with a clean environment!
+#'
+keep_objs <- c()
+rm_objs <- setdiff(ls(), keep_objs)
+rm(list = rm_objs)
+
+#' Could be handy for inline R calculations.
+multiply_by <-
+  magrittr::multiply_by
+
+#' See <https://haozhu233.github.io/kableExtra/bookdown/use-bootstrap-tables-in-gitbooks-epub.html>
+#' Also see `table_css: false` in `_output.yml`
+options(
+  kableExtra.html.bsTable = TRUE)
+
+#'
+#' Declare the location to be used by `cacher::cached()`.
+#' 
+options(
+  cacher.root = here::here("cache"))
+
+#'
+#' Only chart (or tabulate, etc.) these years.
+#'
+BY2011_YEARS <- 
+  CY(1990:2030)
+
+#'
+#' Only chart (or tabulate, etc.) these pollutants.
+#'
+#' This implicitly affects the following functions:
+#'
+#' `BY2011_chart_annual_emissions_by()`
+#'
+BY2011_POLLUTANTS <- c(
+  "PM",
+  "TSP",
+  "PM10",
+  "PM2.5",
+  "TOG",
+  "ROG",
+  "NOx",
+  "SO2",
+  "CO",
+  "CH4",
+  "N2O",
+  "CO2")
+
+BY2011_YEAR_LIMITS <- 
+  CY(1990, 2030)
+
+BY2011_YEAR_EXPAND <-
+  ggplot2::expand_scale(
+    add = c(2, 2),
+    mult = c(0, 0))
+
+source_all <- function (...) {
+  purrr::walk(
+    unlist(list(...)), 
+    purrr::safely(
+      purrr::partial(
+        base::source,
+        local = FALSE),
+      quiet = FALSE))
+}
+
+#'
+#' Quietly source all .R files in the `functions/` subfolder.
+#'
+#' These files should all contain function definitions, and only function
+#' definitions. So, the order that we source them in doesn't matter.
+#' 
+source_all(
+  dir(
+    here::here("functions"), 
+    pattern = "\\.R$",
+    full.names = TRUE))
+
+#'
+#' In contrast to the above, the ordering below matters.
+#' 
+source_all(
+  
+  "data/DB_annual_point_source_emission_data.R",
+  "data/BY2011_annual_point_source_emission_data.R",
+  
+  "data/BY2011_annual_area_source_emission_factor_data.R",
+  "data/BY2011_annual_control_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_raw_growth_factor_data.R",
+  "data/BY2011_growth_profile_crosswalk.R",
+  "data/BY2011_annual_growth_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_area_source_projection_data.R",
+  "data/BY2011_area_source_throughput_data.R"
+  
+)
+```
+# Chemical Manufacturing Facilities {#chem_fac}
+
+```{r chem_fac-coatings, child="03-chem_fac/chem_fac-coatings.Rmd"}
+```
+
+```{r chem_fac-resins, child="03-chem_fac/chem_fac-resins.Rmd"}
+```
+
+```{r chem_fac-pharms, child="03-chem_fac/chem_fac-pharms.Rmd"}
+```
+
+```{r chem_fac-other, child="03-chem_fac/chem_fac-other.Rmd"}
+```
+```{r include=FALSE, cache=FALSE}
+#'
+#' This is run after each chapter.
+#' 
+#' See also:
+#' 
+#' - `chapter_setup.R`
+#' - `_bookdown.yml`
+#' 
+
+if (exists("THESE_CATEGORIES")) {
+  
+  rm(THESE_CATEGORIES)
+  
+}
+```
+
+<!--chapter:end:03-chem_fac/chem_fac.Rmd-->
+
+
+# Other Industrial and Commercial Processes {#indcom}
+
+Placeholder
+
+
+
+<!--chapter:end:04-indcom/indcom.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+#'
+#' This entire script is run (by `bookdown`) before each chapter is knitted.
+#' 
+#' See also:
+#' 
+#' - `chapter_teardown.R`
+#' - `_bookdown.yml`
+#' 
+library(inventory)
+library(BY2011)
+library(cacher)
+library(formattable)
+library(kableExtra)
+library(captioner)
+
+#'
+#' Start with a clean environment!
+#'
+keep_objs <- c()
+rm_objs <- setdiff(ls(), keep_objs)
+rm(list = rm_objs)
+
+#' Could be handy for inline R calculations.
+multiply_by <-
+  magrittr::multiply_by
+
+#' See <https://haozhu233.github.io/kableExtra/bookdown/use-bootstrap-tables-in-gitbooks-epub.html>
+#' Also see `table_css: false` in `_output.yml`
+options(
+  kableExtra.html.bsTable = TRUE)
+
+#'
+#' Declare the location to be used by `cacher::cached()`.
+#' 
+options(
+  cacher.root = here::here("cache"))
+
+#'
+#' Only chart (or tabulate, etc.) these years.
+#'
+BY2011_YEARS <- 
+  CY(1990:2030)
+
+#'
+#' Only chart (or tabulate, etc.) these pollutants.
+#'
+#' This implicitly affects the following functions:
+#'
+#' `BY2011_chart_annual_emissions_by()`
+#'
+BY2011_POLLUTANTS <- c(
+  "PM",
+  "TSP",
+  "PM10",
+  "PM2.5",
+  "TOG",
+  "ROG",
+  "NOx",
+  "SO2",
+  "CO",
+  "CH4",
+  "N2O",
+  "CO2")
+
+BY2011_YEAR_LIMITS <- 
+  CY(1990, 2030)
+
+BY2011_YEAR_EXPAND <-
+  ggplot2::expand_scale(
+    add = c(2, 2),
+    mult = c(0, 0))
+
+source_all <- function (...) {
+  purrr::walk(
+    unlist(list(...)), 
+    purrr::safely(
+      purrr::partial(
+        base::source,
+        local = FALSE),
+      quiet = FALSE))
+}
+
+#'
+#' Quietly source all .R files in the `functions/` subfolder.
+#'
+#' These files should all contain function definitions, and only function
+#' definitions. So, the order that we source them in doesn't matter.
+#' 
+source_all(
+  dir(
+    here::here("functions"), 
+    pattern = "\\.R$",
+    full.names = TRUE))
+
+#'
+#' In contrast to the above, the ordering below matters.
+#' 
+source_all(
+  
+  "data/DB_annual_point_source_emission_data.R",
+  "data/BY2011_annual_point_source_emission_data.R",
+  
+  "data/BY2011_annual_area_source_emission_factor_data.R",
+  "data/BY2011_annual_control_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_raw_growth_factor_data.R",
+  "data/BY2011_growth_profile_crosswalk.R",
+  "data/BY2011_annual_growth_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_area_source_projection_data.R",
+  "data/BY2011_area_source_throughput_data.R"
+  
+)
+```
+# Waste Management {#waste_mgmt}
+
+```{r waste_mgmt-POTWs, child="05-waste_mgmt/waste_mgmt-POTW.Rmd"}
+```
+
+```{r waste_mgmt-landfill, child="05-waste_mgmt/waste_mgmt-landfill.Rmd"}
+```
+
+```{r waste_mgmt-land_farm, child="05-waste_mgmt/waste_mgmt-land_farm.Rmd"}
+```
+
+```{r waste_mgmt-other, child="05-waste_mgmt/waste_mgmt-other.Rmd"}
+```
+
+```{r waste_mgmt-compost, child="05-waste_mgmt/waste_mgmt-compost.Rmd"}
+```
+```{r include=FALSE, cache=FALSE}
+#'
+#' This is run after each chapter.
+#' 
+#' See also:
+#' 
+#' - `chapter_setup.R`
+#' - `_bookdown.yml`
+#' 
+
+if (exists("THESE_CATEGORIES")) {
+  
+  rm(THESE_CATEGORIES)
+  
+}
+```
+
+<!--chapter:end:05-waste_mgmt/waste_mgmt.Rmd-->
+
+
+# Petroleum Products Evaporation and Leakage {#petprod}
+
+Placeholder
+
+
+
+<!--chapter:end:06-petprod/petprod.Rmd-->
+
+
+# Stationary Combustion of Fuels {#SS_combust}
+
+Placeholder
+
+
+
+<!--chapter:end:07-SS_combust/SS_combust.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+#'
+#' This entire script is run (by `bookdown`) before each chapter is knitted.
+#' 
+#' See also:
+#' 
+#' - `chapter_teardown.R`
+#' - `_bookdown.yml`
+#' 
+library(inventory)
+library(BY2011)
+library(cacher)
+library(formattable)
+library(kableExtra)
+library(captioner)
+
+#'
+#' Start with a clean environment!
+#'
+keep_objs <- c()
+rm_objs <- setdiff(ls(), keep_objs)
+rm(list = rm_objs)
+
+#' Could be handy for inline R calculations.
+multiply_by <-
+  magrittr::multiply_by
+
+#' See <https://haozhu233.github.io/kableExtra/bookdown/use-bootstrap-tables-in-gitbooks-epub.html>
+#' Also see `table_css: false` in `_output.yml`
+options(
+  kableExtra.html.bsTable = TRUE)
+
+#'
+#' Declare the location to be used by `cacher::cached()`.
+#' 
+options(
+  cacher.root = here::here("cache"))
+
+#'
+#' Only chart (or tabulate, etc.) these years.
+#'
+BY2011_YEARS <- 
+  CY(1990:2030)
+
+#'
+#' Only chart (or tabulate, etc.) these pollutants.
+#'
+#' This implicitly affects the following functions:
+#'
+#' `BY2011_chart_annual_emissions_by()`
+#'
+BY2011_POLLUTANTS <- c(
+  "PM",
+  "TSP",
+  "PM10",
+  "PM2.5",
+  "TOG",
+  "ROG",
+  "NOx",
+  "SO2",
+  "CO",
+  "CH4",
+  "N2O",
+  "CO2")
+
+BY2011_YEAR_LIMITS <- 
+  CY(1990, 2030)
+
+BY2011_YEAR_EXPAND <-
+  ggplot2::expand_scale(
+    add = c(2, 2),
+    mult = c(0, 0))
+
+source_all <- function (...) {
+  purrr::walk(
+    unlist(list(...)), 
+    purrr::safely(
+      purrr::partial(
+        base::source,
+        local = FALSE),
+      quiet = FALSE))
+}
+
+#'
+#' Quietly source all .R files in the `functions/` subfolder.
+#'
+#' These files should all contain function definitions, and only function
+#' definitions. So, the order that we source them in doesn't matter.
+#' 
+source_all(
+  dir(
+    here::here("functions"), 
+    pattern = "\\.R$",
+    full.names = TRUE))
+
+#'
+#' In contrast to the above, the ordering below matters.
+#' 
+source_all(
+  
+  "data/DB_annual_point_source_emission_data.R",
+  "data/BY2011_annual_point_source_emission_data.R",
+  
+  "data/BY2011_annual_area_source_emission_factor_data.R",
+  "data/BY2011_annual_control_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_raw_growth_factor_data.R",
+  "data/BY2011_growth_profile_crosswalk.R",
+  "data/BY2011_annual_growth_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_area_source_projection_data.R",
+  "data/BY2011_area_source_throughput_data.R"
+  
+)
+```
+# Burning of Waste Material {#waste_burn}
+
+```{r waste_burn-resource_recovery, child="08-waste_burn/waste_burn-resource_recovery.Rmd"}
+```
+
+```{r waste_burn-incineration, child="08-waste_burn/waste_burn-incineration.Rmd"}
+```
+
+```{r waste_burn-planned_ag, child="08-waste_burn/waste_burn-planned_ag.Rmd"}
+```
+```{r include=FALSE, cache=FALSE}
+#'
+#' This is run after each chapter.
+#' 
+#' See also:
+#' 
+#' - `chapter_setup.R`
+#' - `_bookdown.yml`
+#' 
+
+if (exists("THESE_CATEGORIES")) {
+  
+  rm(THESE_CATEGORIES)
+  
+}
+```
+
+<!--chapter:end:08-waste_burn/waste_burn.Rmd-->
+
+
+# Mobile Combustion {#mobile}
+
+Placeholder
+
+
+
+<!--chapter:end:09-mobile/mobile.Rmd-->
+
+
+# Miscellaneous Other Sources {#misc_other}
+
+Placeholder
+
+
+
+<!--chapter:end:10-misc_other/misc_other.Rmd-->
+
+
+# Errata {#errata -}
+
+Placeholder
+
+
+### High Priority
+### Medium (or maybe Low or High) Priority
+
+<!--chapter:end:errata/errata.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+#'
+#' This entire script is run (by `bookdown`) before each chapter is knitted.
+#' 
+#' See also:
+#' 
+#' - `chapter_teardown.R`
+#' - `_bookdown.yml`
+#' 
+library(inventory)
+library(BY2011)
+library(cacher)
+library(formattable)
+library(kableExtra)
+library(captioner)
+
+#'
+#' Start with a clean environment!
+#'
+keep_objs <- c()
+rm_objs <- setdiff(ls(), keep_objs)
+rm(list = rm_objs)
+
+#' Could be handy for inline R calculations.
+multiply_by <-
+  magrittr::multiply_by
+
+#' See <https://haozhu233.github.io/kableExtra/bookdown/use-bootstrap-tables-in-gitbooks-epub.html>
+#' Also see `table_css: false` in `_output.yml`
+options(
+  kableExtra.html.bsTable = TRUE)
+
+#'
+#' Declare the location to be used by `cacher::cached()`.
+#' 
+options(
+  cacher.root = here::here("cache"))
+
+#'
+#' Only chart (or tabulate, etc.) these years.
+#'
+BY2011_YEARS <- 
+  CY(1990:2030)
+
+#'
+#' Only chart (or tabulate, etc.) these pollutants.
+#'
+#' This implicitly affects the following functions:
+#'
+#' `BY2011_chart_annual_emissions_by()`
+#'
+BY2011_POLLUTANTS <- c(
+  "PM",
+  "TSP",
+  "PM10",
+  "PM2.5",
+  "TOG",
+  "ROG",
+  "NOx",
+  "SO2",
+  "CO",
+  "CH4",
+  "N2O",
+  "CO2")
+
+BY2011_YEAR_LIMITS <- 
+  CY(1990, 2030)
+
+BY2011_YEAR_EXPAND <-
+  ggplot2::expand_scale(
+    add = c(2, 2),
+    mult = c(0, 0))
+
+source_all <- function (...) {
+  purrr::walk(
+    unlist(list(...)), 
+    purrr::safely(
+      purrr::partial(
+        base::source,
+        local = FALSE),
+      quiet = FALSE))
+}
+
+#'
+#' Quietly source all .R files in the `functions/` subfolder.
+#'
+#' These files should all contain function definitions, and only function
+#' definitions. So, the order that we source them in doesn't matter.
+#' 
+source_all(
+  dir(
+    here::here("functions"), 
+    pattern = "\\.R$",
+    full.names = TRUE))
+
+#'
+#' In contrast to the above, the ordering below matters.
+#' 
+source_all(
+  
+  "data/DB_annual_point_source_emission_data.R",
+  "data/BY2011_annual_point_source_emission_data.R",
+  
+  "data/BY2011_annual_area_source_emission_factor_data.R",
+  "data/BY2011_annual_control_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_raw_growth_factor_data.R",
+  "data/BY2011_growth_profile_crosswalk.R",
+  "data/BY2011_annual_growth_factor_data.R",
+  
+  # The order of these matters.
+  "data/BY2011_area_source_projection_data.R",
+  "data/BY2011_area_source_throughput_data.R"
+  
+)
+```
+# Appendix {-}
+
+**TODO**
+
+```{r appendix-references-BAAQMD-regulations, child="appendix/appendix-references-BAAQMD-regulations.Rmd"}
+```
+
+```{r appendix-references-www, child="appendix/appendix-references-www.Rmd"}
+```
+```{r include=FALSE, cache=FALSE}
+#'
+#' This is run after each chapter.
+#' 
+#' See also:
+#' 
+#' - `chapter_setup.R`
+#' - `_bookdown.yml`
+#' 
+
+if (exists("THESE_CATEGORIES")) {
+  
+  rm(THESE_CATEGORIES)
+  
+}
+```
+
+<!--chapter:end:appendix/appendix.Rmd-->
+

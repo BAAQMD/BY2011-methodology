@@ -15,7 +15,7 @@
 ```{r mobile-locomotive, child="09-mobile/mobile-locomotive.Rmd"}
 ```
 
-```{r mobile-offroad-ATV, child="09-mobile/mobile-offroad-ATV.Rmd"}
+```{r mobile-offroad-rec_veh, child="09-mobile/mobile-offroad-rec_veh.Rmd"}
 ```
 
 ```{r mobile-ship, child="09-mobile/mobile-ship.Rmd"}

@@ -51,6 +51,22 @@ This is a very draft list of "errata".
 - [Sand Blasting](#indcom-sandblast): The paragraph under [Control](#indcom-sandblast-control) refers 
 to [Regulation 6] and Regulation [12-14]. It also states that "Controls can range up to 99% or higher." However, no BY2011 control factors for the relevant categories (#42 and #1909) appear to be stored in DataBank. See `DB_CTLFAC_CONCORDANCE` and/or use `BY(2011) %>% DB_control_factors()` to pull the relevant CFs.
 
-- [Recreational Boats](#mobile-rec_boats): Emissions of many pollutants drop to zero at five-year intervals. 
+- [Recreational Boats](#mobile-rec_boats): Emissions of many pollutants drop to exactly zero at five-year intervals (CY2020, 2025, 2030, ..., etc.), and then return to the previous trend. 
+
+- [Lawn & Garden Equipment](#mobile-lawn_garden): For no pollutant is the projected growth, CY2011-2030, close in magnitude to the growth expressed by the assigned growth profiles. (The assigned growth profiles increase to +75% by CY2030.) Try, for example: `BY2011_annual_emission_data %>% filter_categories(1647:1651) %>% filter_pollutants("NOx") %>% chart_annual_growth_by(color = cat_id, base_year = CY(2011), flag_years = CY(2030))`. **TODO: check this for other OFFROAD categories (rec boats, TRUs, etc.).** Also, N~2~O emissions for a five-year interval (CY2026-2030) are exactly zero.
+
+- [Transportation Refrigeration Units (TRUs)](#mobile-TRU): Like [Lawn & Garden Equipment](#mobile-lawn_garden), N~2~O emissions for a five-year interval (CY2026-2030) are exactly zero.
+
+- [Agricultural Equipment](#mobile-ag-equip): Like [TRUs](#mobile-TRU), N~2~O emissions for a five-year interval (CY2026-2030) are exactly zero. Also, #1646 Ag Equip (Diesel) is linked to growth profile #464 Commercial Boats. (?)
+
+- [Construction Equipment](#mobile-offroad-diesel-construct-equip): SO~2~ emissions appear spiky, particularly between CY1998-2010.
+
+- [Industrial Equipment](#mobile-offroad-diesel-indust-equip): TOG emissions for #1667 (Natural Gas) exhibit the same zero-every-5-years artifact that is present in [Recreational Boats](#mobile-rec_boats), only this time it is isolated to one pollutant (TOG). Also, SO~2~ from #1666 (Diesel) grows much more rapidly than any other pollutant.
+
+- [Light Commerical Equipment](#mobile-offroad-diesel-light_com-equip): CO~2~ and ~CH~4~ for #1672 (Diesel) drop to exactly zero at CY2010, then resume the previous trend. Also, N~2~O for #1668 (Gasoline, 4-stroke) is exactly zero for CY2026-2030 (same as rec boats, TRUs, ag equip, etc.).
+
+- [Off Road Motorcycles & All Terrain Vehicles](#mobile-offroad-rec_veh): Emissions for several sub-categories exhibit odd behavior at 5-year intervals, similar to the above.
+
+- [Ships](#mobile-ship): BY2011 categories are actually #2041:2220, not #1787:1887.
 
 **TO BE CONTINUED...**
