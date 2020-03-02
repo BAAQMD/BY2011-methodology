@@ -11,7 +11,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-These categories estimate criteria pollutant (particulate, organic, NOx, SOx, and CO) and GHG emissions (CO2, CH4, and N2O) resulting from the combustion of natural gas in the residential sector. Natural gas consists of a high percentage of methane (generally above 85 percent) and varying amounts of ethane, propane, butane, and inert gases. The combustion of natural gas in the residential sector is broken down into three categories: Space Heating, Water Heating, and Cooking. Categories 283, 284, and 285 account for area source emissions from Space Heating, Water Heating, and Cooking, respectively.
+These categories estimate criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and GHG emissions (CO~2~, CH~4~, and N~2~O) resulting from the combustion of natural gas in the residential sector. Natural gas consists of a high percentage of methane (generally above 85 percent) and varying amounts of ethane, propane, butane, and inert gases. The combustion of natural gas in the residential sector is broken down into three categories: Space Heating, Water Heating, and Cooking. Categories 283, 284, and 285 account for area source emissions from Space Heating, Water Heating, and Cooking, respectively.
 Design of residential boilers and furnaces generally resemble fire tube type boilers with flue gas traveling through several channels or tubes with water or air circulated outside the channels or tubes.
 
 #### Methodologies {-}
@@ -123,7 +123,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant) 
 ```
 
-The District adopted Regulation 9; Rule 6 on April 1, 1992 to control the amount of NOx emissions from natural gas fired water heaters. This rule has a control of 46% with a rule effectiveness of 94% reached by the year 2002.
+The District adopted Regulation 9; Rule 6 on April 1, 1992 to control the amount of NO~x~ emissions from natural gas fired water heaters. This rule has a control of 46% with a rule effectiveness of 94% reached by the year 2002.
 
 ***
 

@@ -32,7 +32,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Considered in these categories are criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (CO2, CH4, and N2O) from general aviation aircraft piston engines during their operations at the various airports in the Bay Area. In the piston engine, the basic element is the combustion chamber in which the mixture of fuel and air are burned and energy is extracted by a piston and crank mechanism driving a propeller.
+Considered in these categories are criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and greenhouse gas emissions (CO~2~, CH~4~, and N~2~O) from general aviation aircraft piston engines during their operations at the various airports in the Bay Area. In the piston engine, the basic element is the combustion chamber in which the mixture of fuel and air are burned and energy is extracted by a piston and crank mechanism driving a propeller.
 
 #### Methodology {-}
 

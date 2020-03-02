@@ -9,7 +9,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Land farming is a process in which waste (biosolids), primarily from dried sewage sludge, is deposited and spread on rural, open lands. Greenhouse gas emissions, namely methane (CH4), and nitrous oxide (N2O) were also calculated for this category.
+Land farming is a process in which waste (biosolids), primarily from dried sewage sludge, is deposited and spread on rural, open lands. Greenhouse gas emissions, namely methane (CH~4~), and nitrous oxide (N~2~O) were also calculated for this category.
 
 #### Methodology {-}
 
@@ -19,9 +19,9 @@ The annual activity (throughput) for this category was obtained from the March 2
 
 The emission factor for reactive organic gases (ROG) was obtained from the California Integrated Waste Management Board Contractor’s Report to the Board, “Emissions Testing of Volatile Organic Compounds from Greenwaste Composting at the Modesto Compost Facility in the Sab Joaquin Valley”, October 2007. The ROG emission factor for greenwaste /food scrap composting ranged from 1.3 – 2.6 lbs./ton composted. A mid- point value of 1.95 lbs./ton was used.
 
-A ROG factor of 0.8689 was used to calculate the total organic gas (TOG) emission factor. This ROG factor was obtained from data compiled by the San Joaquin Valley Air Pollution Control District for greenwaste composting. The TOG emissions factor of 2.24 lbs./ton was calculated by dividing the ROG emission factor by the ROG factor. The CH4 emission factor of 0.29 lbs./ton was calculated by subtracting the TOG emission factor by the ROG emission factor.
+A ROG factor of 0.8689 was used to calculate the total organic gas (TOG) emission factor. This ROG factor was obtained from data compiled by the San Joaquin Valley Air Pollution Control District for greenwaste composting. The TOG emissions factor of 2.24 lbs./ton was calculated by dividing the ROG emission factor by the ROG factor. The CH~4~ emission factor of 0.29 lbs./ton was calculated by subtracting the TOG emission factor by the ROG emission factor.
 
-The N2O emission factor of 1.1997 lbs./ton was obtained from the 2006 Intergovernmental Panel on Climate Change (IPCC) Guidelines for National Greenhouse Gas Inventories, Chapter 4, Biological Treatment of Solid Waste.
+The N~2~O emission factor of 1.1997 lbs./ton was obtained from the 2006 Intergovernmental Panel on Climate Change (IPCC) Guidelines for National Greenhouse Gas Inventories, Chapter 4, Biological Treatment of Solid Waste.
 
 #### Monthly Variation {-}
 

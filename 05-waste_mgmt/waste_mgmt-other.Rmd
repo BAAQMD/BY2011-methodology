@@ -9,7 +9,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-This category accounts for emissions from other industrial and commercial - waste management facilities. Emissions from this category were obtained from point source data only, as contained in the District's Data Bank. Greenhouse gas emissions, namely carbon dioxide (CO2) was also calculated for this category.
+This category accounts for emissions from other industrial and commercial - waste management facilities. Emissions from this category were obtained from point source data only, as contained in the District's Data Bank. Greenhouse gas emissions, namely carbon dioxide (CO~2~) was also calculated for this category.
 
 #### Methodology {-}
 

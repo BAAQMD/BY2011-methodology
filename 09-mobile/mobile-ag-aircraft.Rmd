@@ -9,7 +9,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Considered in this category are criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (CO2, CH4, and N2O) from agricultural aircraft engines during spraying operations on agricultural crops in the San Francisco Bay Area. Only combustion products from the aircraft engine during spraying are estimated in this category. This does not include emissions from materials sprayed, which are inventoried under pesticide category.
+Considered in this category are criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and greenhouse gas emissions (CO~2~, CH~4~, and N~2~O) from agricultural aircraft engines during spraying operations on agricultural crops in the San Francisco Bay Area. Only combustion products from the aircraft engine during spraying are estimated in this category. This does not include emissions from materials sprayed, which are inventoried under pesticide category.
 
 The aircraft involved are usually piston engine type aircraft. The most common agricultural aircraft are fixed-wing but helicopters are also used. In the aircraft piston engine, mixture of fuel and air are burned from which energy is extracted by a piston and crank mechanism driving a propeller.
 

@@ -11,7 +11,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-These stationary combustion categories (290, 291 and 292) account for criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (CO2, CH4, and N2O) from boilers, turbines, and reciprocating engines at cogeneration plants in the San Francisco Bay Area. Cogeneration plants are located at many sites in the Bay Area, including oil, chemical and food processing companies, municipal utility companies, hospitals, and military bases etc.
+These stationary combustion categories (290, 291 and 292) account for criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and greenhouse gas emissions (CO~2~, CH~4~, and N~2~O) from boilers, turbines, and reciprocating engines at cogeneration plants in the San Francisco Bay Area. Cogeneration plants are located at many sites in the Bay Area, including oil, chemical and food processing companies, municipal utility companies, hospitals, and military bases etc.
 
 Cogeneration plant is a power station that simultaneously generates both electricity and useful heat by utilizing one primary fuel.
 
@@ -83,7 +83,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-District Regulation 9, Rules 8 and 9 control NOx and SOx emissions from the internal combustion of fuels in engines and turbines, respectively.
+District Regulation 9, Rules 8 and 9 control NO~x~ and SO~x~ emissions from the internal combustion of fuels in engines and turbines, respectively.
 
 ***
 

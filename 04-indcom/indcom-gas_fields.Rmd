@@ -10,7 +10,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Fugitive emissions at natural gas production fields occur from process equipment whenever components in the liquid or gas stream leak. There are several potential sources of leaks, such as valves, flanges, pumps, compressors, and pressure relief valves (PRVs). These emissions occur randomly and are difficult to predict. During gas production, pollutants of concern are volatile organic compounds (VOCs), methane (CH4), hydrogen sulfide (H2S) and hazardous air pollutants (HAPs). Categories 48 and 1575 account for point and area source emissions from natural gas production fields in the San Francisco Bay Area, respectively.
+Fugitive emissions at natural gas production fields occur from process equipment whenever components in the liquid or gas stream leak. There are several potential sources of leaks, such as valves, flanges, pumps, compressors, and pressure relief valves (PRVs). These emissions occur randomly and are difficult to predict. During gas production, pollutants of concern are volatile organic compounds (VOCs), methane (CH~4~), hydrogen sulfide (H~2~S) and hazardous air pollutants (HAPs). Categories 48 and 1575 account for point and area source emissions from natural gas production fields in the San Francisco Bay Area, respectively.
 
 #### Methodology {-}
 

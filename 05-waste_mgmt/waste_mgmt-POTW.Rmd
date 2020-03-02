@@ -16,9 +16,9 @@ A typical Publicly Owned Treatment Work (POTW) facility collection system will c
 
 Category 50 (POTW) contains organic emissions from point sources only. The emissions in this category are from municipal wastewater treatment plants. All plants operating in the District are in the Data Bank System. The Data Bank contains throughput information submitted by individual plants by sources. Emissions are then calculated by using specific emission factors and control factors, if any, for a particular source operation supplied by the company.
 
-The greenhouse gas (GHG) emissions from these permitted POTW facilities in Category #50 come from combustion sources only. These GHG, namely CO2, Biogenic CO2, CH4, and N2O are calculated in the combustion source categories (i.e. Category Nos. 291, 292, 304, 307, 312, etc.).
+The greenhouse gas (GHG) emissions from these permitted POTW facilities in Category #50 come from combustion sources only. These GHG, namely CO~2~, Biogenic CO~2~, CH~4~, and N~2~O are calculated in the combustion source categories (i.e. Category Nos. 291, 292, 304, 307, 312, etc.).
 
-Other process and fugitive GHG emissions (CH4 and N2O) from POTW facilities are estimated as an area source in Category 1911. The CH4 emissions from POTW’s (centralized anaerobic) and the N2O emissions from wastewater treatment effluent emissions and biological denitrification were estimated using the California Air Resources Board’s Documentation of California’s Greenhouse Gas Inventory (4th Edition, Category: Waste, IPCC: 4D1 – Wastewater Treatment and Discharge). These area source GHG emissions were estimated for the BAAQMD as a whole and not to any specific POTW facility.
+Other process and fugitive GHG emissions (CH~4~ and N~2~O) from POTW facilities are estimated as an area source in Category 1911. The CH~4~ emissions from POTW’s (centralized anaerobic) and the N~2~O emissions from wastewater treatment effluent emissions and biological denitrification were estimated using the California Air Resources Board’s Documentation of California’s Greenhouse Gas Inventory (4th Edition, Category: Waste, IPCC: 4D1 – Wastewater Treatment and Discharge). These area source GHG emissions were estimated for the BAAQMD as a whole and not to any specific POTW facility.
 
 #### Monthly Variation {-}
 

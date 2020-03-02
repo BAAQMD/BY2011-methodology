@@ -15,7 +15,7 @@ The category includes emissions from processing plants of miscellaneous food and
 
 This category consists only of point sources that are contained in the District Data Bank system. Individual companies report information on plant equipment, operating data, and source throughput. This information is updated upon permit renewal in the District’s Data Bank. Criteria pollutant emissions calculated by using throughput data of the specific materials, emission factors based on various test data and publications, operating times, batch cycle variables, and control equipment reduction factors.
 
-Carbon dioxide (CO2) emissions are produced during the fermentation process of beer production and in the combustion of organic emissions from coffee and cocoa beans in abatement devices, such as an afterburner. The CO2 emissions emitted from beer production is considered biogenic.
+Carbon dioxide (CO~2~) emissions are produced during the fermentation process of beer production and in the combustion of organic emissions from coffee and cocoa beans in abatement devices, such as an afterburner. The CO~2~ emissions emitted from beer production is considered biogenic.
 
 #### Monthly Variation {-}
 

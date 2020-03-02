@@ -1,4 +1,4 @@
-## Cement Manufacturing & Combustion
+## Cement Manufacturing & Combustion {#indcom-cement}
 
 ```{r indcom-cement-setup}
 THESE_CATEGORIES <- c(
@@ -15,15 +15,15 @@ THESE_CATEGORIES <- c(
 
 The primary criteria pollutant emission from cement manufacturing is particulate matter. Particulate matter at cement plants are generated during quarrying, crushing, grinding, blending, drying, transfer process, and storage of cement. The largest single source of emissions is the kiln. The cement industry generally uses mechanical collectors, electric precipitators, or baghouses to control emissions. The most desirable method of disposing of the dust collected by an emission control system is injection into kiln burning zone for inclusion in the clinker.
 
-Various fuels are used in the kiln for the cement manufacturing process. These fuels have included coke, coal, and natural gas. (As of 2010, coal was no longer as a fuel in the kiln.) Diesel fuel is used in the emergency generators and portable compressors. The emissions from these fuels are the five criteria pollutants, namely PM, organics, NOx, SOx, and CO.
+Various fuels are used in the kiln for the cement manufacturing process. These fuels have included coke, coal, and natural gas. (As of 2010, coal was no longer as a fuel in the kiln.) Diesel fuel is used in the emergency generators and portable compressors. The emissions from these fuels are the five criteria pollutants, namely PM, organics, NO~x~, SO~x~, and CO.
 
-Carbon Dioxide (CO2), a greenhouse gas (GHG), is also produced during the cement manufacturing process. Carbon Dioxide (CO2), methane (CH4), and nitrous oxide (N2O) are the GHG’s emitted during the combustion of the fuels.
+Carbon Dioxide (CO~2~), a greenhouse gas (GHG), is also produced during the cement manufacturing process. Carbon Dioxide (CO~2~), methane (CH~4~), and nitrous oxide (N~2~O) are the GHG’s emitted during the combustion of the fuels.
 
 #### Methodology {-}
 
 These categories contain criteria pollutant and GHG emissions from point sources only. Emissions were individually calculated for each source operation in the District's Data Bank System. Emissions are calculated by multiplying the specific emission factor for a particular source operation by the throughput. These data are supplied by the permitted facility. The summation of these emissions provides the emissions for these categories.
 
-The CO2 emission factor used in the cement manufacturing process was obtained from the California Climate Action Registry’s Cement reporting Protocol. The combustion sources (coke, natural gas. and diesel) GHG emission factors for CO2, CH4, and N2O were obtained from the Department of Energy (EIA) and the California Energy Commission (CEC).
+The CO~2~ emission factor used in the cement manufacturing process was obtained from the California Climate Action Registry’s Cement reporting Protocol. The combustion sources (coke, natural gas. and diesel) GHG emission factors for CO~2~, CH~4~, and N~2~O were obtained from the Department of Energy (EIA) and the California Energy Commission (CEC).
 
 #### Monthly Variation {-}
 
@@ -35,7 +35,7 @@ Emissions are distributed to the county based on the location of the processing 
 
 ### Trends
 
-#### History {-}
+#### History {- #indcom-cement-history}
 
 ```{r indcom-cement-annual_emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
@@ -73,15 +73,15 @@ Two federal rules address air emissions from Portland cement manufacturing, name
 
 The cement manufacturing operations are subject to District regulations regarding permitting ([Regulation 2-1] and [Regulation 2-2]), emissions of toxic or hazardous compounds ([Regulation 2-5]) and some regulations for individual pollutants. For example, [Regulation 6-1] reduces particulate emissions from the control imposed by Ringleman requirements.
 
-The District adopted [Regulation 9-13], Nitrogen Oxide, Particulate Matter, and Toxic Air Contaminants from Portland Cement Manufacturing, on September 17, 2012. This rule becomes effective on September 9, 2013 and limits the emissions of NOx, PM, and toxic air contaminants.
+The District adopted [Regulation 9-13], Nitrogen Oxide, Particulate Matter, and Toxic Air Contaminants from Portland Cement Manufacturing, on September 17, 2012. This rule becomes effective on September 9, 2013 and limits the emissions of NO~x~, PM, and toxic air contaminants.
 
 The categories criteria pollutant’s overall control efficiencies (CE) as a result of this rule are listed below:
 
 - For Category 36, the overall CE of PM increases slightly, to over 99%.; the overall CE of organics is approximately 14%.
 
-- For Category 1747, the overall CE of NOx is 42%; the overall CE of organics is approximately 45%.
+- For Category 1747, the overall CE of NO~x~ is 42%; the overall CE of organics is approximately 45%.
 
-- For Category 1749, the overall CE of NOx is 42%; the overall CE of organics is approximately 62%.
+- For Category 1749, the overall CE of NO~x~ is 42%; the overall CE of organics is approximately 62%.
 
 ***
 

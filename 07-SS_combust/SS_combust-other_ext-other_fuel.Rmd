@@ -13,7 +13,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-These categories account for criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (CO2, CH4, and N2O) from external combustion of fuels other than natural gas at industrial facilties in the San Francisco Bay Area. Categories 308, 309, 310, 311, and 312 estimate emissions from external combustion of fuels such as liquefied petroleum gas (LPG), distillate oil, residual oil, coke & coal and other fuels, respectively.
+These categories account for criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and greenhouse gas emissions (CO~2~, CH~4~, and N~2~O) from external combustion of fuels other than natural gas at industrial facilties in the San Francisco Bay Area. Categories 308, 309, 310, 311, and 312 estimate emissions from external combustion of fuels such as liquefied petroleum gas (LPG), distillate oil, residual oil, coke & coal and other fuels, respectively.
 
 #### Methodologies {-}
 
@@ -75,7 +75,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant) 
 ```
 
-Regulation 9 controls emissions of NOx and SOx of combustion.
+Regulation 9 controls emissions of NO~x~ and SO~x~ of combustion.
 
 ***
 

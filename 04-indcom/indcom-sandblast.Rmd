@@ -24,7 +24,7 @@ In many applications, the abrasive materials can be reused. However, once the ab
 
 The District's Data Bank system contains information on companies with abrasive blasting operations in the Bay Area. These sources are considered point sources. Sand is the most commonly used abrasive material, however there are other abrasive materials used in the Bay Area, such as steel shot, glass beads and aluminum oxide. For emission calculation purposes, it is assumed sand is used in both point (Category 42) and area sources (Category 1909). The other abrasive materials’ usages were in the point sources (Category 42).
 
-##### Throughput Calculations {-}
+##### Throughput Calculations {- #indcom-sandblast-calcs}
 
 The 2011 sand throughput was estimated from the U. S. Geological Survey’s (USGS) Mineral Commodity Survey. According to this survey, abrasive sand consumed approximately 3.7% of the industrial sand production in 2010. (At the time, this was the latest data available.) California received approximately 4.4% of the total sand produced. The BAAQMD’s percentage of California’s total abrasive sand throughput was approximately 12.6%. This was estimated by using the ratio of the number of employees associated with abrasive blasting (by NAICS) in the District versus California. The following industries were used for this calculation:
 
@@ -40,15 +40,39 @@ Using these figures, the 2011 estimated total sand throughput in the Bay Area is
 
 2010 Sand usage in the United States (from the USGS’s Salient U.S. Silica Statistics: 
 
-    28,749,347 tons/year
+\begin{align}
+
+28,749,347&\ \text{ton/yr} \\
+
+\end{align}
 
 2010 Bay Area sand usage for abrasive purposes:
 
-    28,749,347 tons/yr X 0.037 (for abrasive purposes) X 0.044 (to Calif.) X 0.126 (BAAQMD portion) = 5,937 tons/year
+\begin{align}
+
+28,749,347&\ \text{ton/yr} \\
+  \times\ 0.037&\ \text{(for abrasive purposes)} \\
+  \times\ 0.044&\ \text{(to Calif.)} \\
+  \times\ 0.126&\ \text{(BAAQMD portion)} \\
+
+\hline
+
+  = 5,937&\ \text{ton/yr}
+
+\end{align}
 
 Subtracting out the 2010 point source (permitted) sand throughput of 2,570 tons/year to get the 2010 area source throughput yields:
 
-    5,937 tons/yr – 2,570 tons/yr = 3,367 tons/year
+\begin{align}
+
+  5,937 &                & \text{(total)} \\
+– 2,570 &    & \text{#42 (point)} \\
+
+\hline
+
+= 3,367 &\ \text{ton/yr} & \text{#1909 (area)}
+
+\end{align}
 
 The 2011 area source throughout of 3,413 tons/year was estimated by multiplying the 2010 area source throughput by the Association of Bay Area Government’s (ABAG’s) Manufacturing and Wholesale Employment growth factor.
 
@@ -57,17 +81,25 @@ The 2011 area source throughout of 3,413 tons/year was estimated by multiplying 
 U.S. EPA (1998) recommended particulate emission factors for sand blasting were used for emission calculations. They are as follows:
 
 - PM: 54 lbs/ton 
-- PM10: 26 lbs/ton
+- PM~10~: 26 lbs/ton
 
-The 2011 Area Source Sand Blasting emissions (Category 1909) for total particulates (PM) and PM10 in the BAAQMD are as follows:
+The 2011 Area Source Sand Blasting emissions (Category 1909) for total particulates (PM) and PM~10~ in the BAAQMD are as follows:
 
-    PM = (3,413 tons/year X 54 lbs/ton) / 2000 lbs/ton = 92.15 tons/year (or 0.25 ton/day)
+$$
+\begin{eqnarray}
+\text{PM} &=& 3,413\ \text{ton/yr} \times 54\ \text{lb/ton} \div 2000\ \text{lb/ton} \\
+          &=& 92.15\ \text{ton/yr (or 0.25 ton/day)}
+\end{eqnarray}
+$$
 
-    PM10 = (3,413 tons/year X 26 lbs/ton) / 2000 lbs/ton = 44.37 tons/year (or 0.12 ton/day)
+$$
+\begin{eqnarray}
+\text{PM}_{10} &=& 3,413\ \text{ton/yr} \times 26\ \text{lb/ton} \div 2000\ \text{lb/ton} \\
+               &=& 44.37\ \text{ton/yr (or 0.12 ton/day)}
+\end{eqnarray}
+$$
 
 The 2011 point source (Category 42) total particulate emission was 0.10 ton/day.
-
-**FIXME: CHECK THE MATH ABOVE AGAINST THE DATA BELOW**
 
 #### Monthly Variation {-}
 
@@ -81,7 +113,7 @@ For point sources (Category 42), the data bank system contains information on th
 
 #### History {-}
 
-```{r indcom-sandblast-annual_emissions-chart, fig.height=8, out.height=800}
+```{r indcom-sandblast-annual_emissions-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -112,7 +144,9 @@ Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing Emplo
 
 #### Control {- #indcom-sandblast-control}
 
+<div class="FIXME">
 **FIXME: THERE ARE NO CONTROL FACTORS IN DATABANK FOR EITHER OF THESE CATEGORIES**
+</div>
 
 Larger abrasive blasting operations are subject to the District’s Regulation 6, Particulate Matter and Visible Emissions, which places limitations on emission rates, concentration, visible emission and opacity. Pollution control devices for abrasive blasting operations include dust filters/collectors or baghouses, etc. Controls can range up to 99% or higher.
 

@@ -9,7 +9,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Category 753 is an area source category that estimates criteria pollutant (particulate, organic, NOx, SOx, and CO) and greenhouse gas emissions (CO2, CH4, and N2O) from accidental automobile fires. The method used to calculate emissions for this category conforms to the method used by the California Air Resources Board (CARB).
+Category 753 is an area source category that estimates criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and greenhouse gas emissions (CO~2~, CH~4~, and N~2~O) from accidental automobile fires. The method used to calculate emissions for this category conforms to the method used by the California Air Resources Board (CARB).
 
 #### Methodology {- #misc_other-fires-auto-methodology}
 

@@ -90,12 +90,12 @@
 <li class="chapter" data-level="4.3" data-path="wineriesbreweries-fermentation.html"><a href="wineriesbreweries-fermentation.html"><i class="fa fa-check"></i><b>4.3</b> Wineries/Breweries - Fermentation</a></li>
 <li class="chapter" data-level="4.4" data-path="wineriesbreweries-aging.html"><a href="wineriesbreweries-aging.html"><i class="fa fa-check"></i><b>4.4</b> Wineries/Breweries - Aging</a></li>
 <li class="chapter" data-level="4.5" data-path="other-food-agricultural-processing.html"><a href="other-food-agricultural-processing.html"><i class="fa fa-check"></i><b>4.5</b> Other Food &amp; Agricultural Processing</a></li>
-<li class="chapter" data-level="4.6" data-path="metallurgical-foundry-forging-operations-fugitive-metal-recycling-shredding-operations-metal-recycling-shredding-operations-fugitive.html"><a href="metallurgical-foundry-forging-operations-fugitive-metal-recycling-shredding-operations-metal-recycling-shredding-operations-fugitive.html"><i class="fa fa-check"></i><b>4.6</b> Metallurgical, Foundry &amp; Forging Operations, Fugitive, Metal Recycling &amp; Shredding Operations, Metal Recycling &amp; Shredding Operations, Fugitive</a></li>
+<li class="chapter" data-level="4.6" data-path="indcom-metal.html"><a href="indcom-metal.html"><i class="fa fa-check"></i><b>4.6</b> Metallurgical, Foundry &amp; Forging Operations, Fugitive, Metal Recycling &amp; Shredding Operations, Metal Recycling &amp; Shredding Operations, Fugitive</a></li>
 <li class="chapter" data-level="4.7" data-path="wood-products-manufacturing.html"><a href="wood-products-manufacturing.html"><i class="fa fa-check"></i><b>4.7</b> Wood Products Manufacturing</a></li>
-<li class="chapter" data-level="4.8" data-path="cement-manufacturing-combustion.html"><a href="cement-manufacturing-combustion.html"><i class="fa fa-check"></i><b>4.8</b> Cement Manufacturing &amp; Combustion</a></li>
+<li class="chapter" data-level="4.8" data-path="indcom-cement.html"><a href="indcom-cement.html"><i class="fa fa-check"></i><b>4.8</b> Cement Manufacturing &amp; Combustion</a></li>
 <li class="chapter" data-level="4.9" data-path="contaminated-soil-aeration.html"><a href="contaminated-soil-aeration.html"><i class="fa fa-check"></i><b>4.9</b> Contaminated Soil Aeration</a></li>
 <li class="chapter" data-level="4.10" data-path="air-stripping-and-soil-vapor-extraction.html"><a href="air-stripping-and-soil-vapor-extraction.html"><i class="fa fa-check"></i><b>4.10</b> Air Stripping and Soil Vapor Extraction</a></li>
-<li class="chapter" data-level="4.11" data-path="asphaltic-concrete-plants.html"><a href="asphaltic-concrete-plants.html"><i class="fa fa-check"></i><b>4.11</b> Asphaltic Concrete Plants</a></li>
+<li class="chapter" data-level="4.11" data-path="indcom-concrete-asphaltic.html"><a href="indcom-concrete-asphaltic.html"><i class="fa fa-check"></i><b>4.11</b> Asphaltic Concrete Plants</a></li>
 <li class="chapter" data-level="4.12" data-path="indcom-concrete-batching.html"><a href="indcom-concrete-batching.html"><i class="fa fa-check"></i><b>4.12</b> Concrete Batching</a></li>
 <li class="chapter" data-level="4.13" data-path="glass-and-related-products.html"><a href="glass-and-related-products.html"><i class="fa fa-check"></i><b>4.13</b> Glass and Related Products</a></li>
 <li class="chapter" data-level="4.14" data-path="stone-sand-and-gravel.html"><a href="stone-sand-and-gravel.html"><i class="fa fa-check"></i><b>4.14</b> Stone, Sand, and Gravel</a></li>
@@ -240,7 +240,7 @@
 <div id="methodology-16" class="section level4 unnumbered">
 <h4>Methodology</h4>
 <p>The District’s Data Bank system contains information on companies with abrasive blasting operations in the Bay Area. These sources are considered point sources. Sand is the most commonly used abrasive material, however there are other abrasive materials used in the Bay Area, such as steel shot, glass beads and aluminum oxide. For emission calculation purposes, it is assumed sand is used in both point (Category 42) and area sources (Category 1909). The other abrasive materials’ usages were in the point sources (Category 42).</p>
-<div id="throughput-calculations" class="section level5 unnumbered">
+<div id="indcom-sandblast-calcs" class="section level5 unnumbered">
 <h5>Throughput Calculations</h5>
 <p>The 2011 sand throughput was estimated from the U. S. Geological Survey’s (USGS) Mineral Commodity Survey. According to this survey, abrasive sand consumed approximately 3.7% of the industrial sand production in 2010. (At the time, this was the latest data available.) California received approximately 4.4% of the total sand produced. The BAAQMD’s percentage of California’s total abrasive sand throughput was approximately 12.6%. This was estimated by using the ratio of the number of employees associated with abrasive blasting (by NAICS) in the District versus California. The following industries were used for this calculation:</p>
 <ul>
@@ -254,11 +254,35 @@
 </ul>
 <p>Using these figures, the 2011 estimated total sand throughput in the Bay Area is as follows:</p>
 <p>2010 Sand usage in the United States (from the USGS’s Salient U.S. Silica Statistics:</p>
-<p>28,749,347 tons/year</p>
+<p><span class="math display">\[\begin{align}
+
+28,749,347&amp;\ \text{ton/yr} \\
+
+\end{align}\]</span></p>
 <p>2010 Bay Area sand usage for abrasive purposes:</p>
-<p>28,749,347 tons/yr X 0.037 (for abrasive purposes) X 0.044 (to Calif.) X 0.126 (BAAQMD portion) = 5,937 tons/year</p>
+<p><span class="math display">\[\begin{align}
+
+28,749,347&amp;\ \text{ton/yr} \\
+  \times\ 0.037&amp;\ \text{(for abrasive purposes)} \\
+  \times\ 0.044&amp;\ \text{(to Calif.)} \\
+  \times\ 0.126&amp;\ \text{(BAAQMD portion)} \\
+
+\hline
+
+  = 5,937&amp;\ \text{ton/yr}
+
+\end{align}\]</span></p>
 <p>Subtracting out the 2010 point source (permitted) sand throughput of 2,570 tons/year to get the 2010 area source throughput yields:</p>
-<p>5,937 tons/yr – 2,570 tons/yr = 3,367 tons/year</p>
+<p><span class="math display">\[\begin{align}
+
+  5,937 &amp;                &amp; \text{(total)} \\
+– 2,570 &amp;    &amp; \text{#42 (point)} \\
+
+\hline
+
+= 3,367 &amp;\ \text{ton/yr} &amp; \text{#1909 (area)}
+
+\end{align}\]</span></p>
 <p>The 2011 area source throughout of 3,413 tons/year was estimated by multiplying the 2010 area source throughput by the Association of Bay Area Government’s (ABAG’s) Manufacturing and Wholesale Employment growth factor.</p>
 </div>
 <div id="emission-calculation" class="section level5 unnumbered">
@@ -266,13 +290,22 @@
 <p>U.S. EPA (1998) recommended particulate emission factors for sand blasting were used for emission calculations. They are as follows:</p>
 <ul>
 <li>PM: 54 lbs/ton</li>
-<li>PM10: 26 lbs/ton</li>
+<li>PM<sub>10</sub>: 26 lbs/ton</li>
 </ul>
-<p>The 2011 Area Source Sand Blasting emissions (Category 1909) for total particulates (PM) and PM10 in the BAAQMD are as follows:</p>
-<p>PM = (3,413 tons/year X 54 lbs/ton) / 2000 lbs/ton = 92.15 tons/year (or 0.25 ton/day)</p>
-<p>PM10 = (3,413 tons/year X 26 lbs/ton) / 2000 lbs/ton = 44.37 tons/year (or 0.12 ton/day)</p>
+<p>The 2011 Area Source Sand Blasting emissions (Category 1909) for total particulates (PM) and PM<sub>10</sub> in the BAAQMD are as follows:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\text{PM} &amp;=&amp; 3,413\ \text{ton/yr} \times 54\ \text{lb/ton} \div 2000\ \text{lb/ton} \\
+          &amp;=&amp; 92.15\ \text{ton/yr (or 0.25 ton/day)}
+\end{eqnarray}
+\]</span></p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\text{PM}_{10} &amp;=&amp; 3,413\ \text{ton/yr} \times 26\ \text{lb/ton} \div 2000\ \text{lb/ton} \\
+               &amp;=&amp; 44.37\ \text{ton/yr (or 0.12 ton/day)}
+\end{eqnarray}
+\]</span></p>
 <p>The 2011 point source (Category 42) total particulate emission was 0.10 ton/day.</p>
-<p><strong>FIXME: CHECK THE MATH ABOVE AGAINST THE DATA BELOW</strong></p>
 </div>
 </div>
 <div id="monthly-variation-16" class="section level4 unnumbered">
@@ -286,9 +319,9 @@
 </div>
 <div id="trends-21" class="section level3">
 <h3><span class="header-section-number">4.15.2</span> Trends</h3>
-<div id="history-20" class="section level4 unnumbered">
+<div id="history-17" class="section level4 unnumbered">
 <h4>History</h4>
-<p><img src="BY2011-methodology_files/figure-html/indcom-sandblast-annual_emissions-chart-1.svg" width="800" height="800" /></p>
+<p><img src="BY2011-methodology_files/figure-html/indcom-sandblast-annual_emissions-chart-1.svg" width="800" height="600" /></p>
 <p><img src="BY2011-methodology_files/figure-html/indcom-sandblast-BY_vs_DB-emissions_chart-1.svg" width="800" height="1000" /></p>
 <p>The historical growth profile (back to 1987) for point sources (Category 42) was based on prior emissions data from the District. The historical growth profile (back to 1991) for area sources (Category 1909) was based on sand production data from the USGS. Prior to these two dates, the historical growth profile was based on the ABAG’s 2009 Manufacturing Employment growth profile.</p>
 </div>
@@ -299,7 +332,9 @@
 </div>
 <div id="indcom-sandblast-control" class="section level4 unnumbered">
 <h4>Control</h4>
+<div class="FIXME">
 <p><strong>FIXME: THERE ARE NO CONTROL FACTORS IN DATABANK FOR EITHER OF THESE CATEGORIES</strong></p>
+</div>
 <p>Larger abrasive blasting operations are subject to the District’s Regulation 6, Particulate Matter and Visible Emissions, which places limitations on emission rates, concentration, visible emission and opacity. Pollution control devices for abrasive blasting operations include dust filters/collectors or baghouses, etc. Controls can range up to 99% or higher.</p>
 <p>Unconfined and temporary abrasive blasting operations are subject to District Regulation 12, Rule 4, Miscellaneous Standards of Performance, Sandblasting. This rule establishes opacity and abrasives standards.</p>
 <hr />

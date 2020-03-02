@@ -29,7 +29,7 @@ The monthly distribution is estimated based on data from the company's reported 
 
 #### History {-}
 
-```{r chem_fac-resins-annual_emissions-chart, fig.height=6, out.height=600}
+```{r chem_fac-resins-annual_emissions-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

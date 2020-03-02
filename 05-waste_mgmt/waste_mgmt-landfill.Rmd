@@ -12,7 +12,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-These four categories account for emissions from landfills in the Bay Area. Categories 1157 and 1158 account for organic and greenhouse gas (GHG) emissions (Biogenic CO2, CH4, and N2O) from point and area source landfills, respectively. Category 1157 (Point Source Landfills) also has particulate emissions from activities such as vehicle traffic on unpaved roads, bulldozing, scraping, etc. Categories 1686 and 1687 account for point source criteria pollutant (particulate, organic, NOx, SOx, and CO) and GHG emissions (CO2, Biogenic CO2, CH4, and N2O) from the combustion of landfill gases from flares and internal combustion engines (ICE), respectively, at landfills. Landfill gas may also be combusted in ICE’s outside landfills; however, they are covered in Categories 303 (Reciprocating Engines—Gas Fuels) and 305 (Turbines—Gas Fuels).
+These four categories account for emissions from landfills in the Bay Area. Categories 1157 and 1158 account for organic and greenhouse gas (GHG) emissions (Biogenic CO~2~, CH~4~, and N~2~O) from point and area source landfills, respectively. Category 1157 (Point Source Landfills) also has particulate emissions from activities such as vehicle traffic on unpaved roads, bulldozing, scraping, etc. Categories 1686 and 1687 account for point source criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and GHG emissions (CO~2~, Biogenic CO~2~, CH~4~, and N~2~O) from the combustion of landfill gases from flares and internal combustion engines (ICE), respectively, at landfills. Landfill gas may also be combusted in ICE’s outside landfills; however, they are covered in Categories 303 (Reciprocating Engines—Gas Fuels) and 305 (Turbines—Gas Fuels).
 
 Landfill gas production rates and compositions vary greatly, even within a single landfill. There are no comprehensive data leading to the development of generalized emission factors for the Bay Area. Biodegradation takes place over an extended period of time, therefore, waste generated in prior years must be considered for emissions calculations. It is assumed it takes 15 years for maximum biodegradation to take place. However, biodegradation occurs, to a lesser extent, 35 years and beyond. (For emission calculation purposes in Categories 1157 and 1158, 40 years for biodegradation was used.) Prior to the mid-1960’s, it was assumed that 60% of the waste was buried in landfills and 40% of the waste was burned on-site. After that it was assumed the burned waste was diverted to the landfills.
 
@@ -30,27 +30,27 @@ For those landfills with active collection systems, it is assumed that 25% escap
 
 - The landfill gas collection system captures 75% of the total amount of landfill gas generated at the site (AP-42, Chapter 2.4); the remaining 25% of landfill gas is assumed to be fugitive emissions.
 
-- Landfill gas, on average, contains 55% methane (CH4), 40% carbon dioxide (CO2), with the remaining 5% nitrogen, oxygen, non-methane organic compounds, etc.
+- Landfill gas, on average, contains 55% methane (CH~4~), 40% carbon dioxide (CO~2~), with the remaining 5% nitrogen, oxygen, non-methane organic compounds, etc.
 
-- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH4 fugitive landfill gas is oxidized into CO2. The N2O emission factor was provided by CARB in their Documentation of California’s Greenhouse Gas Inventory (Category: Managed waste Disposal Sites, Sector: Industrial: Landfills, not specified).
+- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH~4~ fugitive landfill gas is oxidized into CO~2~. The N~2~O emission factor was provided by CARB in their Documentation of California’s Greenhouse Gas Inventory (Category: Managed waste Disposal Sites, Sector: Industrial: Landfills, not specified).
 
 - Constants used in the emission factor calculations are as follows: 
 
 - The standard molar volume of gases is 387.006 scf/lb-mole. 
-- The molecular weight of CH4 is 16.043 lbs/lb-mole.
-- The molecular weight of CO2 is 44.010 lbs/lb-mole.
+- The molecular weight of CH~4~ is 16.043 lbs/lb-mole.
+- The molecular weight of CO~2~ is 44.010 lbs/lb-mole.
 
-- The CO2 emissions from this source are considered to be biogenic.
+- The CO~2~ emissions from this source are considered to be biogenic.
 
-**Combustion Sources Using Landfill Gas**. The assumed 75% landfill gases captured are combusted in the “C” sources by flaring or used as fuel in turbines or IC engines. A 99% destruction efficiency of TOG is assumed for flaring operations; a 97% destruction efficiency of TOG is assumed when landfill gas is burned in an internal combustion engine. A slightly higher TOG destruction efficiency, 99% or more, is achieved in turbines. Particulate, NOx, SOx, and CO emissions are also considered as products of combustion.
+**Combustion Sources Using Landfill Gas**. The assumed 75% landfill gases captured are combusted in the “C” sources by flaring or used as fuel in turbines or IC engines. A 99% destruction efficiency of TOG is assumed for flaring operations; a 97% destruction efficiency of TOG is assumed when landfill gas is burned in an internal combustion engine. A slightly higher TOG destruction efficiency, 99% or more, is achieved in turbines. Particulate, NO~x~, SO~x~, and CO emissions are also considered as products of combustion.
 
-Greenhouse gases (CO2, CH4, and N2O) emissions are also calculated from these combustion sources. The CH4 and CO2 emission factors were based from both EPA AP-42 and District sources. The N2O emission factor was based on California Energy Commission data. The CO2 emissions emitted from these combustion sources are considered to be biogenic.
+Greenhouse gases (CO~2~, CH~4~, and N~2~O) emissions are also calculated from these combustion sources. The CH~4~ and CO~2~ emission factors were based from both EPA AP-42 and District sources. The N~2~O emission factor was based on California Energy Commission data. The CO~2~ emissions emitted from these combustion sources are considered to be biogenic.
 
 **G7145580**. This source code represents the fugitive ROG emissions with throughput given as the amount of refuse as tons-in-place. There are no methane or GHG emissions associated with this source.
 
 **G7145540**. This source code represents fugitive ROG emissions from the on-site handling of contaminated soils. This soil is usually contaminated from gasoline or diesel, and the units associated with this material code are in tons/yr. There are no methane or GHG emissions associated with this source.
 
-**G7145466**. This source code represents particulate PM10 emissions from landfill activity that includes vehicle traffic on unpaved roads, bulldozing, scraping and dumping activities, wind erosion from land cover, etc. Throughput is based on tons of incoming waste for a particular year.
+**G7145466**. This source code represents particulate PM~10~ emissions from landfill activity that includes vehicle traffic on unpaved roads, bulldozing, scraping and dumping activities, wind erosion from land cover, etc. Throughput is based on tons of incoming waste for a particular year.
 
 ##### Landfills without Collection Systems {-}
 
@@ -60,29 +60,29 @@ For those few landfills without collection systems, the following is the source 
 
 - The landfill gas generation rate (LGR) of methane is dependent upon the age of landfill, moisture content, type of refuse, etc. and will vary from landfill to landfill.
 
-- The landfill gas composition for these types of landfills is approximately 50% CH4 and 50% CO2. (There is additionally a small amount of ROG, but for calculation purposes assume the equal percentage split.)
+- The landfill gas composition for these types of landfills is approximately 50% CH~4~ and 50% CO~2~. (There is additionally a small amount of ROG, but for calculation purposes assume the equal percentage split.)
 
 - The constants used in emission factor calculations are the same as those used for Source Code G7145511.
 
-- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH4 fugitive landfill gas is oxidized into CO2. The N2O emission factor was provided by CARB in their Documentation of California’s Greenhouse Gas Inventory.
+- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH~4~ fugitive landfill gas is oxidized into CO~2~. The N~2~O emission factor was provided by CARB in their Documentation of California’s Greenhouse Gas Inventory.
 
-- The CO2 emissions from this source are considered to be biogenic. 
+- The CO~2~ emissions from this source are considered to be biogenic. 
 
 ##### Area Sources {-}
 
-Area sources consist of inactive landfills that had less than 1 million ton of refuse in place. These landfills were closed many years ago and data is very limited. In 1999, it was estimated area source throughputs comprised 10% of the total waste in place. In future years, this value will decrease linearly because of less contribution from these area sources. In 2008, it was estimated area source throughputs comprised 7.75% of the total waste in place. The assumptions used estimate criteria pollutant (organics) and GHG (CO2, CH4, and N2O) emissions listed below:
+Area sources consist of inactive landfills that had less than 1 million ton of refuse in place. These landfills were closed many years ago and data is very limited. In 1999, it was estimated area source throughputs comprised 10% of the total waste in place. In future years, this value will decrease linearly because of less contribution from these area sources. In 2008, it was estimated area source throughputs comprised 7.75% of the total waste in place. The assumptions used estimate criteria pollutant (organics) and GHG (CO~2~, CH~4~, and N~2~O) emissions listed below:
 
 - The LGR of methane for these closed landfills was 0.030 mcf/year – ton-in-place.
 
-- The landfill gas composition for area source landfills is similar to point source landfills without collection systems, namely 50% CH4 and 50% CO2. (There is additionally a small amount of ROG, but for calculation purposes assume the equal percentage split.)
+- The landfill gas composition for area source landfills is similar to point source landfills without collection systems, namely 50% CH~4~ and 50% CO~2~. (There is additionally a small amount of ROG, but for calculation purposes assume the equal percentage split.)
 
 - The constants used in emission factor calculations are the same as those used for Source Code G7145511.
 
 - The ROG factor for area source landfills is the same as for point source landfills at 0.0089.
 
-- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH4 fugitive landfill gas is oxidized into CO2. The N2O emission factor was provided by CARB in their Documentation of California’s Greenhouse Gas Inventory.
+- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH~4~ fugitive landfill gas is oxidized into CO~2~. The N~2~O emission factor was provided by CARB in their Documentation of California’s Greenhouse Gas Inventory.
 
-- The CO2 emissions from this source are considered to be biogenic. 
+- The CO~2~ emissions from this source are considered to be biogenic. 
 
 #### Monthly Variation {-}
 

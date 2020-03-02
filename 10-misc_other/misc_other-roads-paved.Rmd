@@ -33,7 +33,7 @@ where:
 
 - $E$ is the particulate emission factor in grams per vehicle miles traveled (VMT);
 
-- $k$ is the particle size multiplier used to compute PM10 and PM2.5 (1.0 and 0.25 grams/mile respectively);
+- $k$ is the particle size multiplier used to compute PM~10~ and PM~2.5~ (1.0 and 0.25 grams/mile respectively);
 
 - $sL$ is the roadway silt loading in grams per square meter;
 

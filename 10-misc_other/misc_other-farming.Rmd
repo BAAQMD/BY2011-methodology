@@ -28,17 +28,17 @@ $$
 \text{Emissions}_{crop} = \text{Emission Factor}_{crop} * \text{Acres}_{crop}
 $$
 
-The crop specific PM10 emission factors are calculated by multiplying a land preparation emission factor (i.e. root cutting, discing, rippling, weeding, land planning, etc.) with the number of passes performed per acre that are needed to prepare a field for planting a particular crop (acre-pass). A crop may have multiple land preparation operations with its corresponding number of acre-passes. In this case, the crop specific emission factor is the sum of acre-pass weighted emission factor for each land preparation operation. For example, the crop PM10 emission factor for garlic is as follows:
+The crop specific PM~10~ emission factors are calculated by multiplying a land preparation emission factor (i.e. root cutting, discing, rippling, weeding, land planning, etc.) with the number of passes performed per acre that are needed to prepare a field for planting a particular crop (acre-pass). A crop may have multiple land preparation operations with its corresponding number of acre-passes. In this case, the crop specific emission factor is the sum of acre-pass weighted emission factor for each land preparation operation. For example, the crop PM~10~ emission factor for garlic is as follows:
 
 **FIXME: RECREATE TABLE**
 
-There are 21 crop specific PM10 emission factors (see Table 2.a of ARB’s Agricultural Land Preparation document) that include such crops as alfalfa, almonds, garlic, grapes (raisin, table and wine), tomatoes, wheat, etc. All other crops are assigned an emission factor from one of the 21 crop specific PM10 emission factors (see Table 3 of ARB’s Agricultural Land Preparation document).
+There are 21 crop specific PM~10~ emission factors (see Table 2.a of ARB’s Agricultural Land Preparation document) that include such crops as alfalfa, almonds, garlic, grapes (raisin, table and wine), tomatoes, wheat, etc. All other crops are assigned an emission factor from one of the 21 crop specific PM~10~ emission factors (see Table 3 of ARB’s Agricultural Land Preparation document).
 
-**Example 1:** Calculate the 2010 PM10 and total particulate emissions from land preparation activities for garlic in Santa Clara County, where
+**Example 1:** Calculate the 2010 PM~10~ and total particulate emissions from land preparation activities for garlic in Santa Clara County, where
 
-a. the crop specific PM10 emission factor = 6.5 lbs PM10/acre/yr, 
+a. the crop specific PM~10~ emission factor = 6.5 lbs PM~10~/acre/yr, 
 b. 366 acres were devoted to garlic in 2010, and
-c. the PM10 factor is .4543.
+c. the PM~10~ factor is .4543.
 
 $$
 \begin{eqnarray}
@@ -54,7 +54,7 @@ $$
   &=& 2.62\ ton/yr\ \text{PM}
 \end{eqnarray}
 $$
-Each of the county’s crops are estimated in this fashion and then summed for the total PM10 emissions. The nine counties within the Bay Area were summed to get the District total. (The District’s portion of Solano and Sonoma Counties were 38% and 32%, respectively.) PM emissions are calculated by dividing PM10 value by 0.4543.
+Each of the county’s crops are estimated in this fashion and then summed for the total PM~10~ emissions. The nine counties within the Bay Area were summed to get the District total. (The District’s portion of Solano and Sonoma Counties were 38% and 32%, respectively.) PM emissions are calculated by dividing PM~10~ value by 0.4543.
 
 ##### Category 1435 {-}
 
@@ -64,13 +64,13 @@ $$
 \text{Emissions}_{crop} = \text{Emission Factor}_{crop} * \text{Acres Harvested}_{crop}
 $$
 
-The individual crop emissions for each county were summed to produce county and District wide total particulate and PM10 agricultural harvest emissions. The PM10 emission factors were taken from Table 2 of ARB’s Agricultural Harvest Operations document. Using the PM10 emissions factors for cotton, almonds, and wheat as a baseline, other crop’s PM10 emission factors were estimated. The number of acres to each applicable crop was obtained from either the county’s annual agricultural crop reports or the California Agricultural Statistics Service (CASS).
+The individual crop emissions for each county were summed to produce county and District wide total particulate and PM~10~ agricultural harvest emissions. The PM~10~ emission factors were taken from Table 2 of ARB’s Agricultural Harvest Operations document. Using the PM~10~ emissions factors for cotton, almonds, and wheat as a baseline, other crop’s PM~10~ emission factors were estimated. The number of acres to each applicable crop was obtained from either the county’s annual agricultural crop reports or the California Agricultural Statistics Service (CASS).
 
-Example 2: Calculate the 2010 PM10 and total particulate emissions from agricultural harvest operations for walnuts in Contra Costa County, where
+Example 2: Calculate the 2010 PM~10~ and total particulate emissions from agricultural harvest operations for walnuts in Contra Costa County, where
 
-a. the Crop specific PM10 emission factor = 40.77 lbs PM10/acre, 
+a. the Crop specific PM~10~ emission factor = 40.77 lbs PM~10~/acre, 
 b. 399 acres were devoted to walnuts in 2010, and
-c. the PM10 factor is .4543.
+c. the PM~10~ factor is .4543.
 
 $$
 \begin{eqnarray}
@@ -87,7 +87,7 @@ $$
 \end{eqnarray}
 $$
 
-Each of the county’s crops are estimated in this fashion and then summed for the total PM10 emissions. The nine counties within the Bay Area were summed to get the District total. (The District’s portion of Solano and Sonoma Counties were 38% and 32%, respectively.) PM emissions are calculated by dividing PM10 value by 0.4543.
+Each of the county’s crops are estimated in this fashion and then summed for the total PM~10~ emissions. The nine counties within the Bay Area were summed to get the District total. (The District’s portion of Solano and Sonoma Counties were 38% and 32%, respectively.) PM emissions are calculated by dividing PM~10~ value by 0.4543.
 
 #### Monthly Variation {-}
 

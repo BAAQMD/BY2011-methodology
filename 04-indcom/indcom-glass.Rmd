@@ -9,7 +9,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-The main pollutant emitted by glass manufacturing plant is particulates in the form of dust. Particulates result from volatilization of materials in the melt that combine with gases and form condensates. Emissions from the forming and finishing phase depend upon the type of glass being manufactured. Emissions for glass and related product manufacturing can be categorized by three production phases: raw materials handling, glass melting and refining, and forming and finishing. The raw materials handling phase is the major fugitive dust emissions. The emissions are generated at each of the material transfer points. The emissions from forming and finishing phase are solid particles of glass and related products. (Nitrogen Oxide, NOx, emissions are the result of electric furnace operation; sulfur dioxide, SO2, emissions are the result of glass melting in furnaces.)
+The main pollutant emitted by glass manufacturing plant is particulates in the form of dust. Particulates result from volatilization of materials in the melt that combine with gases and form condensates. Emissions from the forming and finishing phase depend upon the type of glass being manufactured. Emissions for glass and related product manufacturing can be categorized by three production phases: raw materials handling, glass melting and refining, and forming and finishing. The raw materials handling phase is the major fugitive dust emissions. The emissions are generated at each of the material transfer points. The emissions from forming and finishing phase are solid particles of glass and related products. (Nitrogen Oxide, NO~x~, emissions are the result of electric furnace operation; sulfur dioxide, SO~2~, emissions are the result of glass melting in furnaces.)
 
 #### Methodology {-}
 
@@ -35,7 +35,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-```{r indcom-glass-BY_vs_DB-emissions_chart, fig.height=6, out.height=600}
+```{r indcom-glass-BY_vs_DB-emissions_chart, fig.height=16, out.height=1600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

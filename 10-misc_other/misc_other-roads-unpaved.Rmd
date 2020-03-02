@@ -34,7 +34,7 @@ The total VMT for each type of road was estimated by assuming 10 miles of travel
 
 For farm roads, county specific number of acres for various types of crops were taken from California County Agricultural Commissioners reports of 2008 harvested crop acreage. Crop specific VMT were applied to the harvested crop acreage for each county in the Bay Area to estimate county VMT.
 
-Emission factor for all types of road used is assumed to be 2.0 pounds of PM10 per vehicle mile traveled. This is the average of 22 unpaved road dust emission tests performed in San Joaquin Valley for light-duty truck traffic. The measurements were performed as part of studies by University of California, Davis (UCD) “Evaluation of the Emissions of PM10 Particulates from Unpaved Roads in the San Joaquin Valley, Final Report, April 1994” and the Desert Research Institute (DRI) “Effectiveness Demonstration of Fugitive Dust Control Methods for Public Unpaved Roads and Unpaved Shoulders of Paved Roads, Final Report, December 1996”.
+Emission factor for all types of road used is assumed to be 2.0 pounds of PM~10~ per vehicle mile traveled. This is the average of 22 unpaved road dust emission tests performed in San Joaquin Valley for light-duty truck traffic. The measurements were performed as part of studies by University of California, Davis (UCD) “Evaluation of the Emissions of PM~10~ Particulates from Unpaved Roads in the San Joaquin Valley, Final Report, April 1994” and the Desert Research Institute (DRI) “Effectiveness Demonstration of Fugitive Dust Control Methods for Public Unpaved Roads and Unpaved Shoulders of Paved Roads, Final Report, December 1996”.
 
 Emissions for 2011 were estimated using growth rates described in the following section.
 

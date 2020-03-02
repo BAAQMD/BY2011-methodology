@@ -1,4 +1,4 @@
-## Metallurgical, Foundry & Forging Operations, Fugitive, Metal Recycling & Shredding Operations, Metal Recycling & Shredding Operations, Fugitive
+## Metallurgical, Foundry & Forging Operations, Fugitive, Metal Recycling & Shredding Operations, Metal Recycling & Shredding Operations, Fugitive {#indcom-metal}
 
 ```{r indcom-metal-setup}
 THESE_CATEGORIES <- c(
@@ -36,7 +36,7 @@ For point and area sources, information on the location of each facility was kno
 
 ### Trends
 
-#### History {-}
+#### History {- #indcom-metal-history}
 
 ```{r indcom-metal-annual_emissions-chart, fig.height=16, out.height=1600}
 BY2011_annual_emission_data %>%

@@ -10,7 +10,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-This category accounts for the ethanol emissions resulting from the fermentation of grapes at wineries located in the Bay Area. During the fermentation process, sugar in the grape juice reacts with yeast to form ethanol (alcohol) and carbon dioxide (CO2) gas. Ethanol is emitted into the atmosphere through evaporation. The amount of ethanol formation is dependent on tank design, length of fermentation period, fermentation temperature, and volume and sugar content of fermenting juice. Sugar content is measured as degrees Brix (grams sugar/100 ml. juice).
+This category accounts for the ethanol emissions resulting from the fermentation of grapes at wineries located in the Bay Area. During the fermentation process, sugar in the grape juice reacts with yeast to form ethanol (alcohol) and carbon dioxide (CO~2~) gas. Ethanol is emitted into the atmosphere through evaporation. The amount of ethanol formation is dependent on tank design, length of fermentation period, fermentation temperature, and volume and sugar content of fermenting juice. Sugar content is measured as degrees Brix (grams sugar/100 ml. juice).
 
 #### Methodology {#wineries-fermentation-methodology -}
 
@@ -21,13 +21,13 @@ Wine production in the Bay Area was estimated based on ARB’s methodology and W
 
 Using an estimated production of wine as: 41.5% white and 58.5% red wine, a composite emission factor of 4.7 lbs. per thousand gallon of wine produced was derived.
 
-The carbon dioxide (CO2) emission factor was derived from the chemical equation.
+The carbon dioxide (CO~2~) emission factor was derived from the chemical equation.
 
 $$
 C_{6}H_{12}O_{6} + \text{yeast} \rightarrow 2\ C_{2}H_{5}OH + 2\ CO_{2}
 $$
 
-Assume that fifty percent of CO2 emissions escaped to atmosphere during fermentation process, the CO2 emission factor of 157.41 lbs. per thousands of gallons of wine was estimated. District’s Regulations 3, adopted on May 21, 2008, defined the carbon dioxide (CO2) emissions from wine fermentation processes was biogenic carbon dioxide emissions.
+Assume that fifty percent of CO~2~ emissions escaped to atmosphere during fermentation process, the CO~2~ emission factor of 157.41 lbs. per thousands of gallons of wine was estimated. District’s Regulations 3, adopted on May 21, 2008, defined the carbon dioxide (CO~2~) emissions from wine fermentation processes was biogenic carbon dioxide emissions.
 
 The total emissions for this category are determined by multiplying the emission factor and the wine production. This methodology is presently based on ARB's methodology (Section 5.1).
 

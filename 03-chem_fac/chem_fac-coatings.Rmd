@@ -37,11 +37,11 @@ The county location of each company as reported in the Data Bank is used to dist
 
 Emissions have been generally increasing due to increasing demand on coatings and inks, which has been about 4 to 8 percent per year in the 1980's. District [Regulation 8, Rule 35](https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-35-coating-ink-and-adhesive-manufacturing), pertaining to emissions control from mixing operations at coating and ink facilities was adopted in May 1984. Since the adoption of the regulation, there have been significant changes in the manufacturing process. It was estimated there was a 55% emission reduction due to the implementation of the regulation.
 
-```{r chem_fac-coatings-annual_emissions-chart, fig.height = 8, out.height = 800}
+```{r chem_fac-coatings-annual_emissions-chart, fig.height=8, out.height=800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
-  chart_annual_emissions_by(
+  chart_BY2011_annual_emissions_by(
     fill = category)
 ```
 

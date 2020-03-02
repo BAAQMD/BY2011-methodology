@@ -1,4 +1,4 @@
-## Asphaltic Concrete Plants
+## Asphaltic Concrete Plants {#indcom-concrete-asphaltic}
 
 ```{r indcom-concrete-asphaltic-setup}
 THESE_CATEGORIES <- c(
@@ -25,7 +25,7 @@ The data bank system contains information on the county location of each process
 
 ### Trends
 
-#### History {-}
+#### History {- #indcom-concrete-asphaltic-history}
 
 ```{r indcom-concrete-asphaltic-annual_emissions-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%

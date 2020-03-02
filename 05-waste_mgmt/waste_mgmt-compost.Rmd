@@ -29,7 +29,7 @@ In 2011, there were approximately 32 composting facilities1 in the Bay Area. Ten
 
 The other approximate 20 facilities are considered area sources (Category 1936) where annual throughput, criteria pollutant emission factors (TOG and ROG), and control activity (if any) are estimated. The TOG and ROG emissions are calculated by multiplying the throughput by the emission factor and, if applicable, the control factor.
 
-Greenhouse Gas (GHG) emission, namely methane (CH4) and nitrous oxide (N2O), are also associated with composting activity. The CH4 and N2O emissions are calculated similarly to the criteria pollutant emissions mentioned above.
+Greenhouse Gas (GHG) emission, namely methane (CH~4~) and nitrous oxide (N~2~O), are also associated with composting activity. The CH~4~ and N~2~O emissions are calculated similarly to the criteria pollutant emissions mentioned above.
 The throughput and emissions factors (TOG, ROG, and GHG) estimates were developed based on the following:
 
 ##### Throughput Data {-}
@@ -59,12 +59,12 @@ Total Organic Gas (TOG) emission factors were calculated by dividing the ROG emi
 - Greenwaste – 0.98 lb/ton
 - Greenwaste/Food Scrap (assume as mixed) – 2.24 lbs/ton
 
-Methane (CH4) emission factors were assumed to be the difference between the TOG and ROG emission factors. The CH4 emission factors used for emission calculation purposes are listed below:
+Methane (CH~4~) emission factors were assumed to be the difference between the TOG and ROG emission factors. The CH~4~ emission factors used for emission calculation purposes are listed below:
 
 - Greenwaste – 0.13 lb/ton
 - Greenwaste/Food Scrap (assume as mixed) – 0.29 lbs/ton
 
-The Nitrous Oxide (N2O) emission factors varied from 0.12 to 1.1997 lbs/ton and were obtained from the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Chapter 4, Biological Treatment of Solid Waste. The N2O emission factors used for emission calculation purposes are listed below:
+The Nitrous Oxide (N~2~O) emission factors varied from 0.12 to 1.1997 lbs/ton and were obtained from the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Chapter 4, Biological Treatment of Solid Waste. The N~2~O emission factors used for emission calculation purposes are listed below:
 
 - Greenwaste – 0.12 lb/ton
 - Greenwaste, including food – 0.6599 lb/ton 
@@ -72,7 +72,7 @@ The Nitrous Oxide (N2O) emission factors varied from 0.12 to 1.1997 lbs/ton and 
 
 ##### Emission Calculation {-}
 
-The TOG, ROG, CH4, and N2O annual emissions for an area source (Category 1936) facility were calculated by multiplying the estimated throughput by the respective pollutant emission factor.
+The TOG, ROG, CH~4~, and N~2~O annual emissions for an area source (Category 1936) facility were calculated by multiplying the estimated throughput by the respective pollutant emission factor.
 
 #### Monthly Variation {-}
 

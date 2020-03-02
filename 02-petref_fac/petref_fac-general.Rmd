@@ -17,7 +17,7 @@ THESE_CATEGORIES <- c(
 
 Petroleum refining involves processing crude oil into consumable products such as fuel gas, lube oil, and grease. To achieve this process, an array of equipment is used to refine crude oil; the emissions that are generated as a byproduct from these processes make up the petroleum refining emissions categories. Emissions reported are those generated via basic refining processes/devices and do not include emissions from refinery fugitives, storage units, and combustion processes (other than flares and blow down systems). These non-included sources are accounted for in other categories of the emission inventory report.
 
-**Category 10** accounts for emissions from refining processes that involve chemical reactions, such as, but not limited to cracking, polymerization, and reforming. Significant amounts of nitrogen oxide (NOx), sulfur oxide (SOx), carbon monoxide (CO), and particulate (PM) emissions are produced during catalytic cracking and coking operations.
+**Category 10** accounts for emissions from refining processes that involve chemical reactions, such as, but not limited to cracking, polymerization, and reforming. Significant amounts of nitrogen oxide (NO~x~), sulfur oxide (SO~x~), carbon monoxide (CO), and particulate (PM) emissions are produced during catalytic cracking and coking operations.
 
 **Category 11** includes all permitted refinery oil/water separation equipment and fugitive emissions from process drains. This category also contains units such as clarifiers and dissolved air flotation systems.
 
@@ -41,7 +41,7 @@ Emissions for these categories are obtained from point source data in the Distri
 
 3. Emissions control factors (device-specific or general - these may be supplied by refineries also)
 
-Emission information from numerous sources is grouped into the above mentioned categories. EPA's AP-42, Chapter 5 contains description of petroleum refining processes and emission factors. Criteria pollutants and greenhouse gas emissions, including carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O), are produced during refining processes. Since refinery emissions are part of point sources, criteria pollutants as well as greenhouse gas data are obtained from the refinery plant as part of the Bay Area Air District permit renewal process.
+Emission information from numerous sources is grouped into the above mentioned categories. EPA's AP-42, Chapter 5 contains description of petroleum refining processes and emission factors. Criteria pollutants and greenhouse gas emissions, including carbon dioxide (CO~2~), methane (CH~4~), and nitrous oxide (N~2~O), are produced during refining processes. Since refinery emissions are part of point sources, criteria pollutants as well as greenhouse gas data are obtained from the refinery plant as part of the Bay Area Air District permit renewal process.
 
 The county fraction and monthly/daily factors are calculated based on data obtained from the Data Bank.
 
@@ -66,7 +66,7 @@ BY2011_annual_emission_data %>%
 
 Historic emissions have generally varied with refinery throughputs. Past base year historical emissions include interchangeable emission reduction credit (IERC). IERC banking emissions are now inventoried separately under categories 298-301. Also, flare source emissions from categories 298 and 299 are now accounted for in category 15. Beginning in December 2003, flare emission monitoring control was implemented for all refineries in the Bay Area. Flare emissions are based upon these monitoring data.
 
-In 2010, SOx decreased significantly as a result of an abatement device installation at Valero refinery. Over 90% of SOx emissions were reduced at Valero refinery from prior years.
+In 2010, SO~x~ decreased significantly as a result of an abatement device installation at Valero refinery. Over 90% of SO~x~ emissions were reduced at Valero refinery from prior years.
 
 #### Growth {-}
 

@@ -10,7 +10,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Emission sources associated with oil production include waste pits, well blowouts, gas/liquid separation, heater treaters, control valves, pressure relief valves, spills, pipe fittings, pump seals and compressor seals. During oil production, pollutants of concern are volatile organic compounds (VOCs), methane (CH4), hydrogen sulfide (H2S) and hazardous air pollutants (HAPs). Categories 48 and 1575 account for point and area source emissions from oil production fields in the San Francisco Bay Area, respectively.
+Emission sources associated with oil production include waste pits, well blowouts, gas/liquid separation, heater treaters, control valves, pressure relief valves, spills, pipe fittings, pump seals and compressor seals. During oil production, pollutants of concern are volatile organic compounds (VOCs), methane (CH~4~), hydrogen sulfide (H~2~S) and hazardous air pollutants (HAPs). Categories 48 and 1575 account for point and area source emissions from oil production fields in the San Francisco Bay Area, respectively.
 
 #### Methodology {-}
 

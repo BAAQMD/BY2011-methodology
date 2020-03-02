@@ -15,7 +15,7 @@ This category accounts for process emissions from other miscellaneous industrial
 
 This category consists only of point sources that are contained in the District Data Bank system. Individual companies report information on plant equipment, operating data, and source throughput. This information is updated upon permit renewal in the District’s Data Bank. Criteria pollutant emissions calculated by using throughput data of the specific materials, emission factors, and control equipment reduction factors (if applicable). The emissions factor may specific for a particular source operation supplied by the company. If no specific factor is available, a generalized factor developed by a District staff engineer will be used to determine the emissions.
 
-All seven of the greenhouse gases, namely carbon dioxide (CO2), biogenic CO2, methane (CH4), nitrous oxide (N2O), hydrofluorocarbons (HFC’s), perfluorocarbons (PFC’s), and sulfur hexafluoride (SF6), are also calculated for applicable sources.
+All seven of the greenhouse gases, namely carbon dioxide (CO~2~), biogenic CO~2~, methane (CH~4~), nitrous oxide (N~2~O), hydrofluorocarbons (HFC’s), perfluorocarbons (PFC’s), and sulfur hexafluoride (SF6), are also calculated for applicable sources.
 
 #### Monthly Variation {-}
 

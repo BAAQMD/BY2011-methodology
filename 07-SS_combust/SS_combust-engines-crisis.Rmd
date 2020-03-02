@@ -42,7 +42,7 @@ An electric energy crisis in California appears to be over. Emissions from incre
 
 #### Control {-}
 
-Regulation 9 controls emissions of NOx and SOx of combustion.
+Regulation 9 controls emissions of NO~x~ and SO~x~ of combustion.
 
 ***
 

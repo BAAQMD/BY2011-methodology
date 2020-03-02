@@ -9,7 +9,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Emissions from tobacco smoking, particularly from cigarettes, cigars, and pipes, are presented in this category. Mainstream smoke (MS), which is generated during puffs, is generally inhaled by the smoker and a small fraction is exhaled. Sidestream smoke (SS), or the smoke issued from the product between puffs, is viewed as the most important emissions. Burning cigarettes may include total particulate matter, nicotine, phenol, CO2, CO, NOx, NH3, hydrogen cyanide, and formaldehyde.
+Emissions from tobacco smoking, particularly from cigarettes, cigars, and pipes, are presented in this category. Mainstream smoke (MS), which is generated during puffs, is generally inhaled by the smoker and a small fraction is exhaled. Sidestream smoke (SS), or the smoke issued from the product between puffs, is viewed as the most important emissions. Burning cigarettes may include total particulate matter, nicotine, phenol, CO~2~, CO, NO~x~, NH~3~, hydrogen cyanide, and formaldehyde.
 
 #### Methodology {-}
 

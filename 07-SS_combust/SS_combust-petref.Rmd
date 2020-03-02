@@ -24,7 +24,7 @@ Emissions for these categories were obtained from point source data as found in 
 
 3. Emissions control factors (device-specific or general - these may be supplied by the plants also)
 
-Emission information from numerous sources is grouped into the above mentioned categories. EPA's AP-42, Chapter 5 contains description of petroleum refining processes and emission factors. Criteria pollutants and greenhouse gas emissions, including carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O), are produced during refining processes. Since refinery emissions are part of point sources, criteria pollutants as well as greenhouse gas data are obtained from the refinery plant as part of the Bay Area Air District permit renewal process.
+Emission information from numerous sources is grouped into the above mentioned categories. EPA's AP-42, Chapter 5 contains description of petroleum refining processes and emission factors. Criteria pollutants and greenhouse gas emissions, including carbon dioxide (CO~2~), methane (CH~4~), and nitrous oxide (N~2~O), are produced during refining processes. Since refinery emissions are part of point sources, criteria pollutants as well as greenhouse gas data are obtained from the refinery plant as part of the Bay Area Air District permit renewal process.
 
 The county, month, and day factors were derived based on information gather from a plant’s location, seasonal usage, and daily operation as found in the District’ Databank System.
 
@@ -64,7 +64,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant) 
 ```
 
-Regulation 9-10 controls emissions of NOx due to external combustion. Significant reduction in NOx emissions was observed between the period from year 2000 to 2004 for refinery external combustion operations as a result of this rule.
+Regulation 9-10 controls emissions of NO~x~ due to external combustion. Significant reduction in NO~x~ emissions was observed between the period from year 2000 to 2004 for refinery external combustion operations as a result of this rule.
 
 ***
 
