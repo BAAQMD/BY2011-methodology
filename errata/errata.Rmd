@@ -4,7 +4,7 @@ This is a very draft list of "errata". Some are confirmed; others are suspected 
 
 This list potentially covers only part of the full gamut of issues. It is not claimed to be a representative sample or to have complete coverage.
 
-### High Priority
+### High Priority {-}
 
 - The CO~2~/CO ratio for category [#293 Gas Fired Boilers](#SS_combust-power_plant-boilers-trend) for CY1990-2000 appears to be far too low, given what is observed for subsequent decades. This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO~2~ of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is "on track" to reach its CY2030 target.
 
@@ -14,7 +14,7 @@ This list potentially covers only part of the full gamut of issues. It is not cl
 
 **TO BE CONTINUED...**
 
-### Medium (or maybe Low or High) Priority
+### Medium (or maybe Low or High) Priority {-}
 
 #### Petroleum Refining Facilities {-}
 

@@ -1,7 +1,12 @@
 book_filename: "BY2011-methodology"
 rmd_files: [
   "index.Rmd", 
-  "02-petref_fac/petref_fac.Rmd",
+  
+  "02-petref_fac/02-petref_fac.Rmd",
+  "02-petref_fac/02a-petref_fac-general.Rmd",
+  "02-petref_fac/02b-petref_fac-fugitive.Rmd",
+  "02-petref_fac/02c-petref_fac-vessel_depress.Rmd",
+  
   "03-chem_fac/chem_fac.Rmd",
   "04-indcom/indcom.Rmd",
   "05-waste_mgmt/waste_mgmt.Rmd",
