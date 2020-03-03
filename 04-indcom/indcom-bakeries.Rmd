@@ -1,5 +1,9 @@
 ## Large and Small Bakeries
 
+### Emissions
+
+#### Introduction {-}
+
 ```{r indcom-bakeries-setup}
 THESE_CATEGORIES <- c(
   "#28 Large Bakeries" = 28,

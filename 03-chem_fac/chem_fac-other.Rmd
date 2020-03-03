@@ -1,9 +1,5 @@
 ## All Other Chemical Plants {#chem_fac-other}
 
-- Sulfur and Sulfuric Acid Manufacturing Facilities (#21, #22) 
-- All Other Chemical Plants Point Source Emissions (#26) 
-- Fugitive Emissions at Chemical Plants (#27)
-
 ```{r chem_fac-other-setup}
 THESE_CATEGORIES <- c(
   "#21 Sulfur Mfg (Point)" = 21,
