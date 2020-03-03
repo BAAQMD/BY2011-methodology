@@ -1,6 +1,6 @@
 --- 
 title: "BY2011 Methodology"
-author: "David Holstius"
+author: "Bay Area Air Quality Management District"
 date: "`r Sys.Date()`"
 output: 
   bookdown::gitbook:
