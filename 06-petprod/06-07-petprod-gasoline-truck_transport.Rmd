@@ -55,7 +55,7 @@ Prior to 1999 Base Year, taxable gasoline sales for California obtained from the
 
 #### Growth {-}
 
-```{r petprod-gasoline-truck_transport-annual_growth-chart}
+```{r petprod-gasoline-truck_transport-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

@@ -29,7 +29,7 @@ The monthly factors are assumed to be uniform. More aeration events are assumed 
 
 #### History {-}
 
-```{r indcom-soil-aeration-annual_emissions-chart}
+```{r indcom-soil-aeration-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -41,7 +41,7 @@ State regulations governing the construction standards of gasoline holding tanks
 
 #### Growth {-}
 
-```{r indcom-soil-aeration-annual_growth-chart}
+```{r indcom-soil-aeration-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -57,7 +57,7 @@ The number of excavation events remained at close to the 1990 rate through 1998 
 
 #### Control {-}
 
-```{r indcom-soil-aeration-annual_control-chart}
+```{r indcom-soil-aeration-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

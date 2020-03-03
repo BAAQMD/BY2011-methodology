@@ -96,7 +96,7 @@ County emissions were provided by the CARB’s 2007 OFFROAD model.
 
 > For detailed breakdowns of the [Construction](#mobile-offroad-diesel-construct-equip), [Industrial](#mobile-offroad-diesel-indust-equip), and [Light Commercial](#mobile-offroad-diesel-light-com-equip) equipment sub-categories, see charts further below.
 
-```{r mobile-offroad-construction-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-offroad-construction-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     CONSOLIDATED_CATEGORIES) %>%
@@ -108,7 +108,7 @@ The historical data utilized in the OFFROAD model are based on a report for the 
 
 #### Growth {-}
 
-```{r mobile-offroad-diesel-annual_growth-chart}
+```{r mobile-offroad-diesel-growth-chart}
 #
 # All of these categories are assigned the same growth profile, so let's just plot that.
 #
@@ -145,7 +145,7 @@ Base Year 2011
 
 ##### Construction Equipment {- #mobile-offroad-diesel-construct-equip}
 
-```{r mobile-offroad-construct_equip-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-offroad-construct_equip-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     CONSTRUCT_EQUIP_CATEGORIES) %>%
@@ -155,7 +155,7 @@ BY2011_annual_emission_data %>%
 
 ##### Industrial Equipment {- #mobile-offroad-diesel-indust-equip}
 
-```{r mobile-offroad-indust_equip-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-offroad-indust_equip-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     INDUST_EQUIP_CATEGORIES) %>%
@@ -165,7 +165,7 @@ BY2011_annual_emission_data %>%
 
 ##### Light Commercial {- #mobile-offroad-diesel-light-com-equip}
 
-```{r mobile-offroad-light_com_equip-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-offroad-light_com_equip-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     LIGHT_COM_EQUIP_CATEGORIES) %>%

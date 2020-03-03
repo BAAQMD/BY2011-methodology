@@ -33,7 +33,7 @@ The number of employees within the Rubber Product Manufacturing sector (SIC No. 
 
 #### History {-}
 
-```{r indcom-mfg-rubber-annual_emissions-chart}
+```{r indcom-mfg-rubber-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -45,7 +45,7 @@ The historical growth profile was based on a combination of prior emissions data
 
 #### Growth {-}
 
-```{r indcom-mfg-rubber-annual_growth-chart}
+```{r indcom-mfg-rubber-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

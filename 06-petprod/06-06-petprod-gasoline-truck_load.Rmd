@@ -28,7 +28,7 @@ Emissions distributed into the nine counties were based on the actual locations 
 
 #### History {-}
 
-```{r petprod-gasoline-truck_load-annual_emissions-chart}
+```{r petprod-gasoline-truck_load-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -40,7 +40,7 @@ Historical emission data was based on past years Bay Area gasoline consumption. 
 
 #### Growth {-}
 
-```{r petprod-gasoline-truck_load-annual_growth-chart}
+```{r petprod-gasoline-truck_load-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -52,7 +52,7 @@ Projections are based on future gasoline consumption in the Bay Area.
 
 #### Control {-}
 
-```{r petprod-gasoline-truck_load-annual_control-chart}
+```{r petprod-gasoline-truck_load-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

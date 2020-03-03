@@ -49,7 +49,7 @@ Prior years’ emissions were estimated using the Association of Bay Area Govern
 
 #### Growth {-}
 
-```{r petprod-clean-dry-annual_growth-chart, fig.height=6, out.height=600}
+```{r petprod-clean-dry-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -89,7 +89,7 @@ The phase out of PERC will increase usage of the non-halogenated petroleum solve
 
 #### Control {-}
 
-```{r petprod-clean-dry-annual_control_factor_data, fig.height=6, out.height=600}
+```{r petprod-clean-dry-control-chart, fig.height=6, out.height=600}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

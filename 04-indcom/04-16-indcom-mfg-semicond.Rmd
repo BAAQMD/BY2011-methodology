@@ -71,7 +71,7 @@ Emissions for both categories were assumed to be uniform for each month of the y
 
 #### History {-}
 
-```{r indcom-mfg-semicond-annual_emissions-chart, fig.height=6, out.height=600}
+```{r indcom-mfg-semicond-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -85,7 +85,7 @@ BY2011_annual_emission_data %>%
 
 #### Growth {-}
 
-```{r indcom-mfg-semicond-annual_growth-chart, fig.height=8, out.height=800}
+```{r indcom-mfg-semicond-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -97,7 +97,7 @@ For both categories, projections to year 2030 were based on ABAG’s 2009 Inform
 
 #### Control {-}
 
-```{r indcom-mfg-semicond-annual_control-chart}
+```{r indcom-mfg-semicond-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

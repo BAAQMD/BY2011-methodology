@@ -26,7 +26,7 @@ Historical and future emissions (1970-2010) were estimated based upon the CARB e
 
 #### Growth {-}
 
-```{r mobile-locomotive-annual_emissions-chart, fig.height=12, out.height=1200}
+```{r mobile-locomotive-emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -38,7 +38,7 @@ Growth factors for locomotives are based on U.S. industrial production and vario
 
 #### Control {-}
 
-```{r mobile-locomotive-annual_growth-chart, fig.height=6, out.height=600}
+```{r mobile-locomotive-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

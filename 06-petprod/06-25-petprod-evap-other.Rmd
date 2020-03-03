@@ -39,7 +39,7 @@ The historical growth profile was based on a combination of prior emissions data
 
 #### Growth {-}
 
-```{r petprod-evap-other-annual_growth-chart}
+```{r petprod-evap-other-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -51,7 +51,7 @@ Future projections of emissions to 2030 are based on the Association of Bay Area
 
 #### Control {-}
 
-```{r petprod-evap-other-annual_control_factor_data}
+```{r petprod-evap-other-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

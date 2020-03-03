@@ -1,0 +1,79 @@
+## Unpaved Roads
+
+```{r misc-road-unpaved-setup}
+THESE_CATEGORIES <- c(
+  "#755 Unpaved City/County Roads" = 755,
+  "#756 Unpaved Forest/Park Roads" = 756,
+  "#757 Unpaved BLM/BIA Roads" = 757,
+  "#758 Unpaved Farm Roads" = 758)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Fugitive particulate emissions result from motor vehicles traveling on various types of unpaved road surfaces.
+The methodology was developed by the California Air Resources Board. For a full description of this methodology and references, please see CARB’s methodology document "2012 Update_7 10 Unpaved Roads Dust Meth (2).pdf".
+
+Four types of unpaved roads are considered:
+
+1. City and County;
+2. Parks and Forests;
+3. Bureau of Land Management (BLM) and Bureau of Indian Affairs (BIA); and
+4. Farm.
+
+#### Methodologies {-}
+
+The city and county unpaved road mileage were taken from California Statewide Local Streets and Roads Needs Assessment (CSLSRNA), Final Report for the League of California Cities. This report shows that there are no unpaved roads under city and county jurisdiction in the Bay Area.
+
+For parks and forests, Caltrans’ Maintained Public Record Mileage for 2008 were used.
+
+The most recent available Caltrans Maintained Public Record Mileage containing BLM/BIA unpaved road mileage for 1998 was used. The report shows BLM/BIA unpaved roads in Sonoma county only.
+
+The total VMT for each type of road was estimated by assuming 10 miles of travel per day for each mile of unpaved road.
+
+For farm roads, county specific number of acres for various types of crops were taken from California County Agricultural Commissioners reports of 2008 harvested crop acreage. Crop specific VMT were applied to the harvested crop acreage for each county in the Bay Area to estimate county VMT.
+
+Emission factor for all types of road used is assumed to be 2.0 pounds of PM~10~ per vehicle mile traveled. This is the average of 22 unpaved road dust emission tests performed in San Joaquin Valley for light-duty truck traffic. The measurements were performed as part of studies by University of California, Davis (UCD) “Evaluation of the Emissions of PM~10~ Particulates from Unpaved Roads in the San Joaquin Valley, Final Report, April 1994” and the Desert Research Institute (DRI) “Effectiveness Demonstration of Fugitive Dust Control Methods for Public Unpaved Roads and Unpaved Shoulders of Paved Roads, Final Report, December 1996”.
+
+Emissions for 2011 were estimated using growth rates described in the following section.
+
+#### Temporal Variations {-}
+
+It was assumed that wet days (with precipitation over 0.01") prevent these emissions from occurring. The VMT is also assumed to drop significantly during winter months. ARB combined these factor to develop monthly variations for each county.
+
+Activity is assumed to be the same during the week. Daily activity is assumed to take place primarily during the day.
+
+### Trends
+
+#### History {-}
+
+```{r misc-road-unpaved-annual_emission-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+#### Growth {-}
+
+```{r misc-road-unpaved-growth-chart, fig.height=6, out.height=600}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Two growth rates were used for these categories to estimate 1980-2030 emissions:
+
+- For farm roads, annual activity was assumed to grow by agricultural production. This growth code was developed by ARB.
+
+- For the remaining categories, in the absence of better data, annual variation activity was assumed to follow population by county.
+
+***
+
+By: A. K. Fanai 
+Base Year 2011
+December 2013

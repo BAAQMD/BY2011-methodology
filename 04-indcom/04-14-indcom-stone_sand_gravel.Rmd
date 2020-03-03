@@ -27,7 +27,7 @@ The data bank system contains information on the county location of each process
 
 #### History {-}
 
-```{r indcom-stone_sand_gravel-annual_emissions-chart, fig.height=8, out.height=800}
+```{r indcom-stone_sand_gravel-emission-chart, fig.height=8, out.height=800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -35,7 +35,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-```{r indcom-stone_sand_gravel-BY_vs_DB-emissions_chart, fig.height=12, out.height=1200}
+```{r indcom-stone_sand_gravel-BY-vs-DB-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -46,7 +46,7 @@ The historical growth profile was based on a combination of prior emissions data
 
 #### Growth {-}
 
-```{r indcom-stone_sand_gravel-annual_growth-chart}
+```{r indcom-stone_sand_gravel-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -58,7 +58,7 @@ Projections of emissions to 2030 were also based on ABAG’s 2009 Construction E
 
 #### Control {-}
 
-```{r indcom-stone_sand_gravel-annual_control-chart}
+```{r indcom-stone_sand_gravel-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

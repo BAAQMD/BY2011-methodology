@@ -28,7 +28,7 @@ Emissions distributed into counties were based on actual locations of the plants
 
 #### History {-}
 
-```{r petprod-bulk_term-tanks-annual_emissions-chart}
+```{r petprod-bulk_term-tanks-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -40,7 +40,7 @@ Historical data was based on past years gasoline consumption in the Bay Area. Th
 
 #### Growth {-}
 
-```{r petprod-bulk_term-tanks-annual_growth-chart}
+```{r petprod-bulk_term-tanks-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -52,7 +52,7 @@ The reported year-to-year variation in emissions is due to changes in either the
 
 #### Control {-}
 
-```{r petprod-bulk_term-tanks-annual_control-chart}
+```{r petprod-bulk_term-tanks-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

@@ -27,7 +27,7 @@ Emissions distributed into counties were based on locations of the plants in the
 
 #### History {-}
 
-```{r petprod-bulk_term-other-annual_emissions-chart}
+```{r petprod-bulk_term-other-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -39,7 +39,7 @@ Historical data was based on past years gasoline consumption obtained from Calif
 
 #### Growth {-}
 
-```{r petprod-bulk_term-other-annual_growth-chart}
+```{r petprod-bulk_term-other-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -51,7 +51,7 @@ The reported year-to-year variation in emissions is due to changes in either the
 
 #### Control {-}
 
-```{r petprod-bulk_term-other-annual_control-chart}
+```{r petprod-bulk_term-other-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

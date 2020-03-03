@@ -25,7 +25,7 @@ Most of the annual activity takes place in spring, summer and fall. Weekend acti
 
 #### History {-}
 
-```{r mobile-offroad-rec_veh-annual_emissions-chart, fig.height=12, out.height=1200}
+```{r mobile-offroad-rec_veh-emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -35,7 +35,7 @@ BY2011_annual_emission_data %>%
 
 #### Growth {-}
 
-```{r mobile-offroad-rec_veh-annual_growth-chart, fig.height=10, out.height=1000}
+```{r mobile-offroad-rec_veh-growth-chart, fig.height=10, out.height=1000}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

@@ -1,0 +1,82 @@
+## Pharmaceuticals & Cosmetics
+
+```{r chem-fac-pharms-setup}
+THESE_CATEGORIES <- c(
+  "#25 Pharmaeuticals & Cosmetics (Point)" = 25,
+  "#1897 Pharmaeuticals & Cosmetics (Area)" = 1897)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Emissions reported in this category are from the pharmaceuticals and cosmetics industry. The emissions consisted of both point (Category 25) and area (Category 1897) source emissions.
+
+Pharmaceuticals manufacturing plants are those producing and/or blending chemicals for use in the formulation and production of pharmaceutical products. These consist of the manufacture, packaging, and sales of chemicals used as medication for humans and animals. Sources of emissions at pharmaceutical plants may come from batch process equipment, such as reactors, distillation units, extractors, centrifuges, filters, crystallizers, dryers, and storage and transfer.
+
+Several different products are manufactured at Cosmetics products facilities. Organic chemicals are used as raw materials and solvents; such as ethanol, acetone, isopropanol, etc. are used. Solvent is recovered where convenient, and as a means of cost effectiveness. Emissions from these operations are almost entirely non-methane organic solvents.
+
+There is a wide variety of products manufactured from these two industries, which may also include non-pharmaceuticals for preventive medicine and health-enhancement, medicated and non-medicated cosmetics, and food additives.
+
+#### Methodology {-}
+
+The amount of solvent usage by the pharmaceutical manufacturers was estimated based on the U.S. Dept. of Commerce "Current Industrial Reports", and the "Census of Manufacturers". It was assumed solvent usage from the cosmetics industry was included from this estimate. Using one dollar per gallon of alcohol, the dollar estimate was converted to gallons. This amount was projected for Bay Area use with an annual growth rate of 2.6 % from 1993. It was assumed this is the total solvent usage by the pharmaceutical and cosmetics industries. The average solvent density was assumed to be 6.6 lbs./gal.
+
+The District data bank reported point sources from several pharmaceutical companies. Throughput and other data information of each source are reported by the facilities. Emissions are calculated by using these data through the District "S" and "G" forms.
+
+It is assumed there are also a number of other smaller pharmaceutical and cosmetics manufacturers, known as area sources, not included in the District data bank system. Subtracting the total solvent usage estimate from the point source usage yields an area source solvent usage. An uncontrolled emission factor of 330 lbs./1000 gallons is based on a 5% loss of the usage.
+
+District Regulation 8, Rule 24, limiting organic compounds emissions from various pharmaceutical and cosmetics manufacturing operation took effect in July 1984 with an estimated 42% overall control.
+
+#### Monthly Variation {-}
+
+Monthly distribution was assumed to be uniform.
+
+#### County Distribution {-}
+
+The ratio of each County's population was used to distribute emission into counties.
+
+### Trends
+
+#### History {-}
+
+```{r chem-fac-pharms-emission-chart, fig.height=10, out.height=1000}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category)
+```
+
+Emissions through the years were estimated by using the estimated solvent usage by the industry.
+
+#### Growth {-}
+
+```{r chem-fac-pharms-growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
+Emissions through the year 2030 are projected according to estimated growth prediction of pharmaceutical and cosmetic products industry. Approximately 0.8% per year of growth is expected in the next few years.
+
+#### Control {-}
+
+```{r chem-fac-pharms-control-chart}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant)
+```
+
+Efforts are being made to streamline and standardize rules and regulations. Any subsequent refinement in [Regulation 8, Rule 24](https://www.baaqmd.gov/~/media/dotgov/files/rules/reg-8-rule-24-pharmaceutical-and-cosmetic-manufacturing-operations/documents/rg0824.pdf?la=en) due to this streamlining should not have any effect on the controls, and therefore the controls for this rule will remain at 42%.
+
+***
+
+By: Tan Dinh
+Date: January 2014
+Base Year: 2011
+

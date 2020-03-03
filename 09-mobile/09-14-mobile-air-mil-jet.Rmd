@@ -61,7 +61,7 @@ Monthly distribution for military aircraft was estimated to be uniform for all m
 
 #### History {-}
 
-```{r mobile-air-mil-jet-annual_emissions-chart, fig.height=12, out.height=1200}
+```{r mobile-air-mil-jet-emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -73,7 +73,7 @@ Emissions through the years were based on the reported and/or estimated number o
 
 #### Growth {-}
 
-```{r mobile-air-mil-jet-annual_growth-chart, fig.height=8, out.height=800}
+```{r mobile-air-mil-jet-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

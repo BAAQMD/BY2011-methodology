@@ -57,7 +57,7 @@ County fractions are based on actual port location where the harbor craft is reg
 
 ### Trends
 
-```{r mobile-CHC-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-CHC-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     CONSOLIDATED_CATEGORIES) %>%

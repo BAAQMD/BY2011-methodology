@@ -41,7 +41,7 @@ The historical growth profile was based on a combination of prior emissions data
 
 #### Growth {-}
 
-```{r indcom-other_misc-annual_growth-chart}
+```{r indcom-other_misc-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

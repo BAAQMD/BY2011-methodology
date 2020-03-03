@@ -48,7 +48,7 @@ Monthly and daily factors are assumed to be uniform.
 
 #### History {-}
 
-```{r indcom-oil_field-annual_emissions-chart, fig.height=6, out.height=600}
+```{r indcom-oil_field-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -60,7 +60,7 @@ Since late 1980s, California oil production has been declining. Oil production i
 
 #### Growth {-}
 
-```{r indcom-oil_field-annual_growth-chart, fig.height=8, out.height=800}
+```{r indcom-oil_field-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -72,7 +72,7 @@ According to the California Energy Commission, future California oil production,
 
 #### Control {-}
 
-```{r indcom-oil_field-annual_control-chart}
+```{r indcom-oil_field-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

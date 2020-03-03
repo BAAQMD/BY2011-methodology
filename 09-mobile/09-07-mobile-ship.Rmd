@@ -59,7 +59,7 @@ For maneuvering and in-transit categories, county fractions are not based on act
 
 > For detailed breakdowns of the [Container](#mobile-ship-container) and [Tanker](#mobile-ship-tanker) sub-categories, see charts further below.
 
-```{r mobile-ship-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-ship-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -93,7 +93,7 @@ Base Year: 2011
 
 ##### Container Ships {- #mobile-ship-container}
 
-```{r mobile-ship-container-by_activity-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-ship-container-by_activity-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -110,7 +110,7 @@ BY2011_annual_emission_data %>%
 
 ##### Tankers {- #mobile-ship-tanker}
 
-```{r mobile-ship-tanker-by_activity-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-ship-tanker-by_activity-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -127,7 +127,7 @@ BY2011_annual_emission_data %>%
 
 #### By Type of Engine {-}
 
-```{r mobile-ship-by_engine-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-ship-by_engine-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

@@ -1,0 +1,72 @@
+## Cigarette and Tobacco Smoke
+
+```{r misc-smoking-setup}
+THESE_CATEGORIES <- c(
+  "#766 Cigarette and Tobacco Smoke" = 766)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Emissions from tobacco smoking, particularly from cigarettes, cigars, and pipes, are presented in this category. Mainstream smoke (MS), which is generated during puffs, is generally inhaled by the smoker and a small fraction is exhaled. Sidestream smoke (SS), or the smoke issued from the product between puffs, is viewed as the most important emissions. Burning cigarettes may include total particulate matter, nicotine, phenol, CO~2~, CO, NO~x~, NH~3~, hydrogen cyanide, and formaldehyde.
+
+#### Methodology {-}
+
+Cigarette consumption was based on a report from Atmospheric Environment Journal, Vol. 21, No. 2, "Measuring Environmental Emissions from Tobacco Combustion: Sidestream Cigarette Smoke Literature Review", by M.R. Guerin, Higgens, & Senkins. The reported stated that about 48% of the smokers smoked less than a pack of cigarettes, 32% smoked one pack, 15% smoked two packs, and 5% smoked 2.5 packs or more per day.
+
+A recent finding showed that although there has been a decrease of adult smokers, there was also an increase in younger smokers, and therefore, it is still estimated 10% of the population (or 743,744 cigarette smokers) are still smoking regularly in the Bay Area.
+
+The cigarette consumption is estimated as followed: $743,744 \times (48\% \times 0.5 + 32\% \times 1 + 15\% \times 2 + 5\% \times 2.5) \times 20 = 14,651,759$ cigarettes/day (or 5,477.47 tons cigarettes per year)
+
+Emission factors were derived based on the Table 1 of the report.
+
+```{r misc-smoking-emission-factors-table}
+BY2011_annual_area_source_emission_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_emission_factors(
+    pollutants = BY2011_POLLUTANTS,
+    caption = "Emission factors (lb/ton).")
+```
+
+### Monthly Variation {-}
+
+Monthly distribution was estimated to be the same throughout the year.
+
+#### County Distribution {-}
+
+County population was used to distribute emissions for each county.
+
+### Trends
+
+#### History {-}
+
+```{r misc-smoking-emission-chart, fig.height=8, out.height=800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+
+The historical growth profile was based on the Association of Bay Area Government’s Population data.
+
+#### Growth {-}
+
+```{r misc-smoking-growth-chart, fig.height=4, out.height=400}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+The current trends show cigarette/tobacco consumption for regular smokers decreasing slightly over the next several years.
+
+***
+
+By: Michael Nguyen 
+Date: February, 2014 
+Base Year 2011

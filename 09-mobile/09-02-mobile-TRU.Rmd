@@ -29,7 +29,7 @@ County emissions were provided by the CARB’s OFFROAD2007 model.
 
 #### History {-}
 
-```{r mobile-TRU-annual_emissions-chart, fig.height=12, out.height=1200}
+```{r mobile-TRU-emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -41,7 +41,7 @@ Prior to the 1999 Base year emissions, the methodology for the transportation re
 
 #### Growth {-}
 
-```{r mobile-TRU-annual_growth-chart, fig.height=8, out.height=800}
+```{r mobile-TRU-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

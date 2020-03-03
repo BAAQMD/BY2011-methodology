@@ -48,7 +48,7 @@ Monthly and daily factors are assumed to be uniform.
 
 #### History {-}
 
-```{r indcom-gas_field-annual_emissions-chart, fig.height=6, out.height=600}
+```{r indcom-gas_field-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -60,7 +60,7 @@ Emission trends have followed the gas production activity trend. Natural gas pro
 
 #### Growth {-}
 
-```{r indcom-gas_field-annual_growth-chart, fig.height=8, out.height=800}
+```{r indcom-gas_field-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -72,7 +72,7 @@ Demand for natural in California and the nation has been growing at approximatel
 
 #### Control {-}
 
-```{r indcom-gas_field-annual_control-chart}
+```{r indcom-gas_field-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

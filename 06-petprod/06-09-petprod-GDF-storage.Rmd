@@ -37,7 +37,7 @@ Emissions distributed into the nine counties were based on Caltrans’ Transport
 
 #### History {-}
 
-```{r petprod-GDF-storage-annual_emissions-chart, fig.height=6, out.height=600}
+```{r petprod-GDF-storage-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -49,7 +49,7 @@ Emissions for these categories had been reduced due to Phase I and II vapor bala
 
 #### Growth {-}
 
-```{r petprod-GDF-storage-annual_growth-chart, fig.height=12, out.height=1200}
+```{r petprod-GDF-storage-growth-chart, fig.height=12, out.height=1200}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -61,7 +61,7 @@ Gasoline consumption in 2007 reached record levels. However, the gasoline consum
 
 #### Control {-}
 
-```{r petprod-GDF-storage-annual_control-chart, fig.height=12, out.height=1200}
+```{r petprod-GDF-storage-control-chart, fig.height=12, out.height=1200}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

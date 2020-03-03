@@ -61,7 +61,7 @@ Historical emissions were estimated based on ARB's Manufacturing-Printing growth
 
 #### Growth {-}
 
-```{r petprod-printing-annual_growth-chart, fig.height=12, out.height=1200}
+```{r petprod-printing-growth-chart, fig.height=12, out.height=1200}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -73,7 +73,7 @@ Projections to year 2030 were based on a modified growth profile of ARB's Manufa
 
 #### Control {-}
 
-```{r petprod-printing-annual_control_factor_data, fig.height=12, out.height=1200}
+```{r petprod-printing-control-chart, fig.height=12, out.height=1200}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -85,7 +85,7 @@ The Bay Area’s graphic arts printing industry are regulated under Regulation 8
 
 #### BY2011 vs DataBank (Point) {-}
 
-```{r petprod-printing-BY_vs_DB-emissions_chart, fig.height=8, out.height=800}
+```{r petprod-printing-BY-vs-DB-chart, fig.height=8, out.height=800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

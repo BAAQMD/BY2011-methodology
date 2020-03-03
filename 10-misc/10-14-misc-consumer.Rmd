@@ -1,0 +1,106 @@
+## Consumer Products
+
+```{r misc-consumer-setup}
+THESE_CATEGORIES <-
+  BY2011_category_hierarchy %>% 
+  filter_categories(
+    1440:1574) %>% 
+  mutate(
+    category = str_c("#", cat_id, " ", cat_h5)) %>%
+  distinct(
+    category,
+    cat_id) %>%
+  deframe()
+
+#
+# Above, we have too many categories to fit on a single chart. 
+# So that we can show an overview of emissions, here is a
+# "consolidated" version of the above.
+#
+CONSOLIDATED_CATEGORIES <-
+  BY2011_category_hierarchy %>% 
+  filter_categories(
+    1440:1574) %>% 
+  select(
+    cat_id,
+    cat_h4) %>%
+  group_by(
+    cat_h4) %>%
+  mutate(
+    category = str_c(humanize_ids(cat_id), " ", cat_h4)) %>%
+  ungroup() %>%
+  distinct(
+    category,
+    cat_id) %>%
+  deframe()
+```
+
+### Emissions
+
+#### Introduction {-}
+
+This category group contains emissions from consumer products such as hair spray, shaving cream, deodorant, charcoal lighter fluid, etc.
+
+#### Methodologies {-}
+
+Emissions are estimated from sales of consumer products on regional basis. The figures were developed by the California Air Resources Board based on consumer product surveys and re-tabulated for each region. Table below shows total organic gas (TOG) emissions from consumer products in the San Francisco Bay Area.
+
+```{r misc-consumer-daily_emissions-table}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    CONSOLIDATED_CATEGORIES) %>%
+  filter_years(
+    CY(2008:2011)) %>%
+  filter_pollutants(
+    "TOG") %>%
+  convert_emission_units(
+    to = "ton/day") %>%
+  tabulate_emissions_by(
+    category,
+    pollutant,
+    year,
+    digits = 3) %>%
+  select(
+    Category = category,
+    starts_with("CY"),
+    Pollutant = pollutant,
+    Unit = ems_unit)
+```
+
+**FIXME: Tabulation above doesn't match BY2011 Methodology PDF**
+
+#### County Distribution {-}
+
+County distribution is based on population of each county. Solano and Sonoma Counties are partially in the District, so population data were used for the cities that are within the District boundaries.
+
+#### Monthly Variation {-}
+
+For most consumer product categories monthly variation is assumed to be constant. Charcoal lighter material usage is assumed to be higher during summer months.
+
+### Trends
+
+#### History {-}
+
+```{r misc-consumer-emission-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    CONSOLIDATED_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+Consumer product emission trends have followed population growth.
+
+#### Growth {-}
+
+The consumer product emissions are projected to grow relative to population growth in the Bay Area. Future projections are made using population data in accordance with the Association of Bay Area Government’s (ABAG’s) 2009 report.
+
+#### Control {-}
+
+All controls are in accordance with the California Air Resources Board (CARB).
+
+***
+
+By: Sukarn Claire 
+Date: January 2014 
+Base Year: 2011

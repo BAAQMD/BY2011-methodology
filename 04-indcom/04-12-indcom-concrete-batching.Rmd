@@ -41,7 +41,7 @@ For point sources, the data bank system contains information on the county locat
 
 #### History {-}
 
-```{r indcom-concrete-batching-annual_emissions-chart, fig.height=6, out.height=600}
+```{r indcom-concrete-batching-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -49,7 +49,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-```{r indcom-concrete-batching-BY_vs_DB-emissions_chart, fig.height=10, out.height=1000}
+```{r indcom-concrete-batching-BY-vs-DB-chart, fig.height=10, out.height=1000}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -60,7 +60,7 @@ The historical growth profiles for both categories was based on a combination of
 
 #### Growth {-}
 
-```{r indcom-concrete-batching-annual_growth-chart}
+```{r indcom-concrete-batching-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

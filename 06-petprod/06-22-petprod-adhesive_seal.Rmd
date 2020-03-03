@@ -53,7 +53,7 @@ Emissions through the years were estimated based on ARB's growth data on the con
 
 #### Growth {-}
 
-```{r petprod-adhesive_seal-annual_growth-chart, fig.height=5, out.height=500}
+```{r petprod-adhesive_seal-growth-chart, fig.height=5, out.height=500}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -65,7 +65,7 @@ Projections to year 2030 were based on the same growth profile of ARB's construc
 
 #### Control {-}
 
-```{r petprod-adhesive_seal-annual_control_factor_data}
+```{r petprod-adhesive_seal-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

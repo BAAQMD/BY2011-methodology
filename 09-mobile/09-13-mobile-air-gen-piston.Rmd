@@ -78,7 +78,7 @@ Monthly distribution was based on the average number of monthly operations at ea
 
 #### History {-}
 
-```{r mobile-air-gen-piston-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-air-gen-piston-emission-chart, fig.height=18, out.height=1800}
 #
 # Too many categories to plot with the standard color palette,
 # so here we generate and apply a custom palette.
@@ -98,7 +98,7 @@ Aircraft emissions were estimated based on actual number of operations at each a
 
 #### Growth {-}
 
-```{r mobile-air-gen-piston-annual_growth-chart, fig.height=36, out.height=3600}
+```{r mobile-air-gen-piston-growth-chart, fig.height=36, out.height=3600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

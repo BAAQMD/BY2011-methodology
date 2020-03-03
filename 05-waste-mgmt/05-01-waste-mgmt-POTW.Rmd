@@ -1,0 +1,61 @@
+## Publicly Owned Treatment Work
+
+```{r waste-mgmt-POTWs-setup}
+THESE_CATEGORIES <- c(
+  "#50 POTWs (Point)" = 50,
+  "#1911 POTWs (Area)" = 1911)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+A typical Publicly Owned Treatment Work (POTW) facility collection system will contain a lift station, trenches, junction boxes and manholes. Wastewater streams normally are introduced into the POTW collection system through individual or area drains, which can be open to the atmosphere or sealed to prevent wastewater contact with the atmosphere. Emissions are emitted from wastewater collection, treatment, and storage systems through volatilization of organic compounds at the liquid surface.
+
+#### Methodology {-}
+
+Category 50 (POTW) contains organic emissions from point sources only. The emissions in this category are from municipal wastewater treatment plants. All plants operating in the District are in the Data Bank System. The Data Bank contains throughput information submitted by individual plants by sources. Emissions are then calculated by using specific emission factors and control factors, if any, for a particular source operation supplied by the company.
+
+The greenhouse gas (GHG) emissions from these permitted POTW facilities in Category #50 come from combustion sources only. These GHG, namely CO~2~, Biogenic CO~2~, CH~4~, and N~2~O are calculated in the combustion source categories (i.e. Category Nos. 291, 292, 304, 307, 312, etc.).
+
+Other process and fugitive GHG emissions (CH~4~ and N~2~O) from POTW facilities are estimated as an area source in Category 1911. The CH~4~ emissions from POTW’s (centralized anaerobic) and the N~2~O emissions from wastewater treatment effluent emissions and biological denitrification were estimated using the California Air Resources Board’s Documentation of California’s Greenhouse Gas Inventory (4th Edition, Category: Waste, IPCC: 4D1 – Wastewater Treatment and Discharge). These area source GHG emissions were estimated for the BAAQMD as a whole and not to any specific POTW facility.
+
+#### Monthly Variation {-}
+
+The data bank contains percentage of throughput data for each of the four 3-month seasonal periods: (December - February, March - May, June - August, September - November). This throughput data was uniform throughout the week for both categories.
+
+#### County Distribution {-}
+
+The county location of each processing plant as reported in the databank is used to distribute emissions into each county for Category 50. The emissions in Category 1911 were distributed according to each District’s county population.
+
+### Trends
+
+#### History {-}
+
+```{r waste-mgmt-POTWs-emission-chart, fig.height=8, out.height=800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+The historical growth profile for Category 50 was based on a combination of prior emissions data (back to 1990) and the Association of Bay Area Government’s (ABAG’s) 2009 Total Population data. The historical growth profile for Category 1911 was based on ABAG’s 2009 Total Population data.
+
+#### Growth {-}
+
+```{r waste-mgmt-POTWs-growth-chart, fig.height=6, out.height=600}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Projections to year 2030 for both categories were based on ABAG’s 2009 Total Population growth profile.
+
+***
+
+By: Stuart Schultz 
+Date: January 2014 
+Base Year 2011

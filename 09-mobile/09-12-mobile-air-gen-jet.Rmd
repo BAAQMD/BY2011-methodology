@@ -77,7 +77,7 @@ Monthly distribution was based on an average number of monthly aircraft operatio
 
 #### History {-}
 
-```{r mobile-air-gen-jet-annual_emissions-chart, fig.height=18, out.height=1800}
+```{r mobile-air-gen-jet-emission-chart, fig.height=18, out.height=1800}
 #
 # Too many categories to plot with the standard color palette,
 # so here we generate and apply a custom palette.
@@ -97,7 +97,7 @@ Emissions through the years were estimated based on the above methodology and fr
 
 #### Growth {-}
 
-```{r mobile-air-gen-jet-annual_growth-chart, fig.height=18, out.height=1800}
+```{r mobile-air-gen-jet-growth-chart, fig.height=18, out.height=1800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

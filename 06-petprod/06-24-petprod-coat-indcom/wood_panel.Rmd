@@ -8,7 +8,7 @@ WOOD_PANEL_CATEGORIES <- c(
 
 ##### History {-}
 
-```{r petprod-coat-indcom-wood_panel-annual_emissions-chart}
+```{r petprod-coat-indcom-wood_panel-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     WOOD_PANEL_CATEGORIES) %>%
@@ -22,7 +22,7 @@ BY2011_annual_emission_data %>%
 
 ##### Growth {-}
 
-```{r petprod-coat-indcom-wood_panel-annual_growth-chart}
+```{r petprod-coat-indcom-wood_panel-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     WOOD_PANEL_CATEGORIES) %>%
@@ -32,7 +32,7 @@ BY2011_annual_growth_factor_data %>%
 
 ##### Control {-}
 
-```{r petprod-coat-indcom-wood_panel-annual_control-chart, fig.height=2, out.height=200}
+```{r petprod-coat-indcom-wood_panel-control-chart, fig.height=2, out.height=200}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     WOOD_PANEL_CATEGORIES) %>%
@@ -42,7 +42,7 @@ BY2011_annual_control_factor_data %>%
 
 ##### BY2011 vs DataBank (Point) {-}
 
-```{r petprod-coat-indcom-wood_panel-BY_vs_DB-emissions_chart}
+```{r petprod-coat-indcom-wood_panel-BY-vs-DB-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     WOOD_PANEL_CATEGORIES) %>%

@@ -27,7 +27,7 @@ The data bank system contains information on the county location of each process
 
 #### History {-}
 
-```{r indcom-concrete-asphaltic-annual_emissions-chart, fig.height=12, out.height=1200}
+```{r indcom-concrete-asphaltic-emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -35,7 +35,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-```{r indcom-concrete-asphaltic-BY_vs_DB-emissions_chart, fig.height=12, out.height=1200}
+```{r indcom-concrete-asphaltic-BY-vs-DB-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -46,7 +46,7 @@ The historical growth profile was based on a combination of prior emissions data
 
 #### Growth {-}
 
-```{r indcom-concrete-asphaltic-annual_growth-chart}
+```{r indcom-concrete-asphaltic-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -58,7 +58,7 @@ Projections of emissions to 2030 were based on ABAG’s 2009 Construction Employ
 
 #### Control {-}
 
-```{r indcom-concrete-asphaltic-annual_control-chart}
+```{r indcom-concrete-asphaltic-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
