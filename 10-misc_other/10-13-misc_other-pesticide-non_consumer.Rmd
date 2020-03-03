@@ -93,3 +93,19 @@ The District does not currently have any regulations governing these categories;
 By: Stuart Schultz/Sukarn Claire 
 Date: January 2014
 Base Year: 2011
+
+***
+
+#### Emission Factors {-}
+
+> Emission factors for category #1190 and #1191 vary by time. (This is not common in the BY2011 inventory.)
+
+```{r petprod-marine_load-chart}
+BY2011_annual_area_source_emission_factor_data %>%
+  filter_categories(
+    keep(THESE_CATEGORIES, ~ . %in% c(1190, 1191))) %>%
+  chart_BY2011_annual_emission_factors_by(
+    color = category) 
+```
+
+

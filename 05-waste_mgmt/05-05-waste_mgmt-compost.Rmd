@@ -117,3 +117,18 @@ Currently, there is no District rule regulating emissions from compost facilitie
 By: Stuart Schultz 
 Date: January 2014 
 Base Year 2011
+
+***
+
+#### Emission Factors {-}
+
+> Emission factors for category #1936 vary by time. (This is not common in the BY2011 inventory.) **Note: #1936 is a point-source category. (?)**
+
+```{r waste_mgmt-compost-emission_factors-chart, fig.height=6, out.height=600}
+BY2011_annual_area_source_emission_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emission_factors_by(
+    color = category) 
+```
+
