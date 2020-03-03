@@ -1,5 +1,6 @@
 book_filename: "BY2011-methodology"
 rmd_files: [
+  
   "index.Rmd", 
   
   "02-petref_fac/02-petref_fac.Rmd",
@@ -45,12 +46,59 @@ rmd_files: [
   "05-waste_mgmt/05-04-waste_mgmt-other.Rmd",   # out of order in original PDF
   "05-waste_mgmt/05-05-waste_mgmt-compost.Rmd", # out of order in original PDF
   
-  "06-petprod/petprod.Rmd",
-  "07-SS_combust/SS_combust.Rmd",
-  "08-waste_burn/waste_burn.Rmd",
+  "06-petprod/06-petprod.Rmd",
+  "06-petprod/06-01-petprod-petref-storage.Rmd",
+  "06-petprod/06-02-petprod-marine_load.Rmd",
+  "06-petprod/06-03-petprod-NG_distrib.Rmd",
+  "06-petprod/06-04-petprod-bulk_term-tanks.Rmd",
+  "06-petprod/06-05-petprod-bulk_term-other.Rmd",
+  "06-petprod/06-06-petprod-gasoline-truck_load.Rmd",
+  "06-petprod/06-07-petprod-gasoline-truck_transport.Rmd",
+  "06-petprod/06-08-petprod-GDF-spillage.Rmd",
+  "06-petprod/06-09-petprod-GDF-storage.Rmd",
+  "06-petprod/06-10-petprod-GDF-fueling.Rmd",
+  "06-petprod/06-11-petprod-GDF-excess.Rmd",
+  "06-petprod/06-12-petprod-portable_spillage.Rmd",
+  "06-petprod/06-13-petprod-fueling-aircraft.Rmd",
+  "06-petprod/06-14-petprod-fueling-ship_boat.Rmd",
+  "06-petprod/06-15-petprod-fueling-other.Rmd",
+  "06-petprod/06-16-petprod-sterilizer-vent.Rmd",
+  "06-petprod/06-17-petprod-asphalt-pave.Rmd",
+  "06-petprod/06-18-petprod-asphalt-roof.Rmd",
+  "06-petprod/06-19-petprod-clean-solvent.Rmd",
+  "06-petprod/06-20-petprod-clean-dry.Rmd",
+  "06-petprod/06-21-petprod-printing.Rmd",
+  "06-petprod/06-22-petprod-adhesive_seal.Rmd",
+  "06-petprod/06-23-petprod-coat-struct.Rmd",
+  "06-petprod/06-24-petprod-coat-indcom.Rmd",
+  "06-petprod/06-25-petprod-evap-other.Rmd",
+  "06-petprod/06-26-petprod-vacuum_truck.Rmd",
+
+  "07-SS_combust/07-SS_combust.Rmd",
+  "07-SS_combust/07-01-SS_combust-domestic-NG.Rmd",
+  "07-SS_combust/07-02-SS_combust-domestic-liquid.Rmd",
+  "07-SS_combust/07-03-SS_combust-domestic-wood.Rmd",
+  "07-SS_combust/07-04-SS_combust-cogen.Rmd",
+  "07-SS_combust/07-05-SS_combust-power_plant-boilers.Rmd",
+  "07-SS_combust/07-06-SS_combust-power_plant-turbines.Rmd",
+  "07-SS_combust/07-07-SS_combust-petref.Rmd",
+  "07-SS_combust/07-08-SS_combust-engines-recip.Rmd",
+  "07-SS_combust/07-09-SS_combust-engines-crisis.Rmd",
+  "07-SS_combust/07-10-SS_combust-turbines.Rmd",
+  "07-SS_combust/07-11-SS_combust-other_ext-NG.Rmd",
+  "07-SS_combust/07-12-SS_combust-other_ext-other_fuel.Rmd",
+  
+  "08-waste_burn/08-waste_burn.Rmd",
+  "08-waste_burn/08-01-waste_burn-resource_recovery.Rmd",
+  "08-waste_burn/08-02-waste_burn-incineration.Rmd",
+  "08-waste_burn/08-03-waste_burn-planned_ag.Rmd",
+  
   "09-mobile/mobile.Rmd",
+  
   "10-misc_other/misc_other.Rmd",
+  
   "errata/errata.Rmd",
+  
   "appendix/appendix.Rmd"]
   
 before_chapter_script: "chapter_setup.R"

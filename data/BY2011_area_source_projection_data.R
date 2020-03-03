@@ -13,14 +13,19 @@ require(BY)
 #' differ from the published emission estimates. See the Appendix for an
 #' explanation and a specific example.
 #' 
-BY2011_area_source_projection_data <-
-  cacher::cached(
-    "data", 
-    "BY2011_area_source_projection_data",
-    verbose = TRUE) %or% 
-  {
-    BY(2011) %>%
-      BY::BY_area_source_projections(
-        years = BY2011_YEARS,
-        verbose = TRUE)
-  }
+
+if (!exists("BY2011_area_source_projection_data")) {
+  
+  BY2011_area_source_projection_data <-
+    cacher::cached(
+      "data", 
+      "BY2011_area_source_projection_data",
+      verbose = TRUE) %or% 
+    {
+      BY(2011) %>%
+        BY::BY_area_source_projections(
+          years = BY2011_YEARS,
+          verbose = TRUE)
+    }
+  
+}

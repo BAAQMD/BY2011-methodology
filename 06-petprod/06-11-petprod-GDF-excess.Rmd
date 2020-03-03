@@ -136,7 +136,7 @@ In March 2000, California Air Resources Board (CARB) adopted a series of new Enh
 
 The adopted amendments also include mandatory In-Station-Diagnostics (ISD), which are requiring electronic monitoring of vapor recovery system operation and performance. The table II below summarizes the EVR implementation schedule.
 
-```{r child="petprod-GDF-EVR-table.Rmd"}
+```{r child="06-petprod/06-petprod-GDF-EVR-table.Rmd"}
 ```
 
 Monitoring of vapor recovery system operation and performance per CARB’s mandatory In- Station-Diagnostics, pressure-related fugitive emissions will be further reduced by 2003 and beyond.

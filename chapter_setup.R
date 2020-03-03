@@ -16,8 +16,12 @@ library(captioner)
 #'
 #' Start with a clean environment!
 #'
-keep_objs <- c()
-rm_objs <- setdiff(ls(), keep_objs)
+keep_objs <- 
+  ls(pattern = "^(BY2011_|DB_)")
+
+rm_objs <- 
+  setdiff(ls(), keep_objs)
+
 rm(list = rm_objs)
 
 #' Could be handy for inline R calculations.

@@ -52,7 +52,7 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 
 #### Waste Management {-}
 
-**TODO**
+- [Land Farming](#waste_mgmt-land_farm-trends): The growth profile does not seem to match the published emissions for CY1990-1995. Further, the CY1990 emissions for TOG are sharply increased at CY1990. A probable cause: the emission factor for TOG changed abruptly, from CY1990 (TOG = 20 lb/ton) to CY1991 onwards (TOG = 2.24 lb/ton). Try `BY2011_annual_area_source_emission_factor_data %>% filter_categories(52) %>% filter_years(CY(1990:1991)) %>% spread(year, ef_qty)`. Although this affects TOG, it is not reflected in published CY1990 emissions of CH~4~.
 
 #### Petroleum Products Evaporation and Leakage {-}
 

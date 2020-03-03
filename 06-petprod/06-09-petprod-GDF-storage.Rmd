@@ -88,7 +88,7 @@ The adopted amendments also include mandatory In-Station-Diagnostics (ISD), whic
 
 The table below summarizes the EVR implementation schedule.
 
-```{r child="petprod-GDF-EVR-table.Rmd"}
+```{r child="06-petprod/06-petprod-GDF-EVR-table.Rmd"}
 ```
 
 ***

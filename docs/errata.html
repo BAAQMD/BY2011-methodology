@@ -271,7 +271,9 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 </div>
 <div id="waste-management" class="section level4 unnumbered">
 <h4>Waste Management</h4>
-<p><strong>TODO</strong></p>
+<ul>
+<li><a href="land-farming.html#waste_mgmt-land_farm-trends">Land Farming</a>: The growth profile does not seem to match the published emissions for CY1990-1995. Further, the CY1990 emissions for TOG are sharply increased at CY1990. A probable cause: the emission factor for TOG changed abruptly, from CY1990 (TOG = 20 lb/ton) to CY1991 onwards (TOG = 2.24 lb/ton). Try <code>BY2011_annual_area_source_emission_factor_data %&gt;% filter_categories(52) %&gt;% filter_years(CY(1990:1991)) %&gt;% spread(year, ef_qty)</code>. Although this affects TOG, it is not reflected in published CY1990 emissions of CH<sub>4</sub>.</li>
+</ul>
 </div>
 <div id="petroleum-products-evaporation-and-leakage" class="section level4 unnumbered">
 <h4>Petroleum Products Evaporation and Leakage</h4>

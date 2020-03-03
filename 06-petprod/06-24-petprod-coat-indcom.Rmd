@@ -68,67 +68,67 @@ The control factor is an estimate of reduction of solvent emissions, which takes
 
 ***
 
-```{r coat-indcom-can_coil, child="coat-indcom-can_coil.Rmd"}
+```{r coat-indcom-can_coil, child="06-petprod/06-24-petprod-coat-indcom/can_coil.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-wood_furniture, child="coat-indcom-wood_furniture.Rmd"}
+```{r coat-indcom-wood_furniture, child="06-petprod/06-24-petprod-coat-indcom/wood_furniture.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-paper, child="coat-indcom-paper.Rmd"}
+```{r coat-indcom-paper, child="06-petprod/06-24-petprod-coat-indcom/paper.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-plastic_part, child="coat-indcom-plastic_part.Rmd"}
+```{r coat-indcom-plastic_part, child="06-petprod/06-24-petprod-coat-indcom/plastic_part.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-fabric_film, child="coat-indcom-fabric_film.Rmd"}
+```{r coat-indcom-fabric_film, child="06-petprod/06-24-petprod-coat-indcom/fabric_film.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-magnet_wire, child="coat-indcom-magnet_wire.Rmd"}
+```{r coat-indcom-magnet_wire, child="06-petprod/06-24-petprod-coat-indcom/magnet_wire.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-metal_part, child="coat-indcom-metal_part.Rmd"}
+```{r coat-indcom-metal_part, child="06-petprod/06-24-petprod-coat-indcom/metal_part.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-wood_panel, child="coat-indcom-wood_panel.Rmd"}
+```{r coat-indcom-wood_panel, child="06-petprod/06-24-petprod-coat-indcom/wood_panel.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-auto_assembly, child="coat-indcom-auto_assembly.Rmd"}
+```{r coat-indcom-auto_assembly, child="06-petprod/06-24-petprod-coat-indcom/auto_assembly.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-auto_refinish, child="coat-indcom-auto_refinish.Rmd"}
+```{r coat-indcom-auto_refinish, child="06-petprod/06-24-petprod-coat-indcom/auto_refinish.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-marine, child="coat-indcom-marine.Rmd"}
+```{r coat-indcom-marine, child="06-petprod/06-24-petprod-coat-indcom/marine.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-aero_assembly, child="coat-indcom-aero_assembly.Rmd"}
+```{r coat-indcom-aero_assembly, child="06-petprod/06-24-petprod-coat-indcom/aero_assembly.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-other, child="coat-indcom-other.Rmd"}
+```{r coat-indcom-other, child="06-petprod/06-24-petprod-coat-indcom/other.Rmd"}
 ```
 
 ***
