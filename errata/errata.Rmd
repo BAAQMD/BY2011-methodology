@@ -4,7 +4,7 @@ This is a very draft list of "errata". Some are confirmed; others are suspected 
 
 This list is editable! In the toolbar at the top of the page, click the edit icon. You will be taken to the page source on GitHub. There, you can: make changes without commiting; preview those changes; commit changes; or submit a pull request. You can also file issues and request enhancements.
 
-```{r fig-bookdown-toolbar-edit, fig.cap="Edit button, in the toolbar."}
+```{r fig-bookdown-toolbar-edit, fig.width=518, out.width=518, fig.height=116, out.height=116, fig.cap="Edit button, in the toolbar at the top of every page (including this one)."}
 knitr::include_graphics(
   here::here(
     "assets", "static", "figures",

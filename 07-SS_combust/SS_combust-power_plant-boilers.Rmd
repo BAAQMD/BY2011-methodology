@@ -40,7 +40,7 @@ The District point source database contains county distribution information for 
 
 Monthly variation of emissions is based on company reported quarterly throughput/activity data.
 
-### Trends {SS_combust-power_plant-boilers-trend}
+### Trends {#SS_combust-power_plant-boilers-trend}
 
 #### Historical {-}
 
