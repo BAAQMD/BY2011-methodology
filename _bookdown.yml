@@ -3,12 +3,41 @@ rmd_files: [
   "index.Rmd", 
   
   "02-petref_fac/02-petref_fac.Rmd",
-  "02-petref_fac/02a-petref_fac-general.Rmd",
-  "02-petref_fac/02b-petref_fac-fugitive.Rmd",
-  "02-petref_fac/02c-petref_fac-vessel_depress.Rmd",
+  "02-petref_fac/02-01-petref_fac-general.Rmd",
+  "02-petref_fac/02-02-petref_fac-fugitive.Rmd",
+  "02-petref_fac/02-03-petref_fac-vessel_depress.Rmd",
   
-  "03-chem_fac/chem_fac.Rmd",
-  "04-indcom/indcom.Rmd",
+  "03-chem_fac/03-chem_fac.Rmd",
+  "03-chem_fac/03-01-chem_fac-coating.Rmd",
+  "03-chem_fac/03-02-chem_fac-resin.Rmd",
+  "03-chem_fac/03-03-chem_fac-pharm.Rmd",
+  "03-chem_fac/03-04-chem_fac-other.Rmd",
+
+  "04-indcom/04-indcom.Rmd",
+  "04-indcom/04-01-indcom-bakeries.Rmd",
+  "04-indcom/04-02-indcom-cooking.Rmd",
+  "04-indcom/04-03-indcom-wineries-fermentation.Rmd",
+  "04-indcom/04-04-indcom-wineries-aging.Rmd",
+  "04-indcom/04-05-indcom-food_ag-other.Rmd",
+  "04-indcom/04-06-indcom-metal.Rmd",
+  "04-indcom/04-07-indcom-wood.Rmd",
+  "04-indcom/04-08-indcom-cement.Rmd",
+  "04-indcom/04-09-indcom-soil-aeration.Rmd",
+  "04-indcom/04-10-indcom-soil-vapor_ext.Rmd",
+  "04-indcom/04-11-indcom-concrete-asphaltic.Rmd",
+  "04-indcom/04-12-indcom-concrete-batching.Rmd",
+  "04-indcom/04-13-indcom-glass.Rmd",
+  "04-indcom/04-14-indcom-stone_sand_gravel.Rmd",
+  "04-indcom/04-15-indcom-sandblast.Rmd",
+  "04-indcom/04-16-indcom-mfg-semicond.Rmd",
+  "04-indcom/04-17-indcom-mfg-disc.Rmd",
+  "04-indcom/04-18-indcom-mfg-fiberglass.Rmd",
+  "04-indcom/04-19-indcom-mfg-rubber.Rmd",
+  "04-indcom/04-20-indcom-mfg-plastic.Rmd",
+  "04-indcom/04-21-indcom-oil_field.Rmd",
+  "04-indcom/04-22-indcom-gas_field.Rmd",
+  "04-indcom/04-23-indcom-other_misc.Rmd",
+
   "05-waste_mgmt/waste_mgmt.Rmd",
   "06-petprod/petprod.Rmd",
   "07-SS_combust/SS_combust.Rmd",
@@ -17,6 +46,7 @@ rmd_files: [
   "10-misc_other/misc_other.Rmd",
   "errata/errata.Rmd",
   "appendix/appendix.Rmd"]
+  
 before_chapter_script: "chapter_setup.R"
 after_chapter_script: "chapter_teardown.R"
 view: https://github.com/holstius/BY2011-methodology/blob/master/%s

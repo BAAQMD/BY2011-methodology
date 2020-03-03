@@ -1,6 +1,6 @@
 ## Flexible & Rigid Discs Manufacturing
 
-```{r indcom-mfg-discs-setup}
+```{r indcom-mfg-disc-setup}
 THESE_CATEGORIES <- c(
   "#44 Flexible & Rigid Discs Mfg." = 44)
 ```
@@ -27,7 +27,7 @@ The county location of each company as reported in the Data Bank is used to dist
 
 #### History {-}
 
-```{r indcom-mfg-discs-annual_emissions-chart}
+```{r indcom-mfg-disc-annual_emissions-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -39,7 +39,7 @@ The historical growth profile was based on a combination of prior emissions data
 
 #### Growth {-}
 
-```{r indcom-mfg-discs-annual_growth-chart}
+```{r indcom-mfg-disc-annual_growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -51,7 +51,7 @@ Projections to year 2030 were based on the ABAG’s 2009 Information Employment 
 
 #### Control {-}
 
-```{r indcom-mfg-discs-annual_control-chart}
+```{r indcom-mfg-disc-annual_control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

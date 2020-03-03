@@ -1,8 +1,15 @@
 # Errata {#errata -}
 
-This is a very draft list of "errata". Some are confirmed; others are suspected but not confirmed one way or the other. Right now, the list is static and mostly unsorted. (TODO: add tags and show these in a sortable, filterable table with "status", "category", "pollutant", etc!)
+This is a very draft list of "errata". Some are confirmed; others are suspected but not confirmed one way or the other. Right now, the list is static and mostly unsorted. It probably covers only part of the full gamut of issues. It is not claimed to be a representative sample or to have complete coverage.
 
-This list potentially covers only part of the full gamut of issues. It is not claimed to be a representative sample or to have complete coverage.
+This list is editable! In the toolbar at the top of the page, click the edit icon. You will be taken to the page source on GitHub. There, you can: make changes without commiting; preview those changes; commit changes; or submit a pull request. You can also file issues and request enhancements.
+
+```{r fig-bookdown-toolbar-edit, fig.cap="Edit button, in the toolbar."}
+knitr::include_graphics(
+  here::here(
+    "assets", "static", "figures",
+    "fig-bookdown-toolbar-edit.png"))
+```
 
 ### High Priority {-}
 
@@ -36,9 +43,9 @@ This list potentially covers only part of the full gamut of issues. It is not cl
 
 - [Asphaltic Concrete Plants](#indcom-concrete-asphaltic-trend): There is a peak in SO~2~ emissions at CY2010 that does not seem to match the profile of other pollutants nor the assigned growth profile (#817 Asphaltconcrplts (Modgc646)).
 
-- [Oil Fields](#indcom-oil_fields): For category #1575, the BY2011 emission factor for CH~4~, in Table \@ref(tab:indcom-oil-fields-emission-factors-table), appears not to match the [BY2011 Methodology PDF] (page 4.21.1 - 2).
+- [Oil Fields](#indcom-oil_field): For category #1575, the BY2011 emission factor for CH~4~, in Table \@ref(tab:indcom-oil-field-emission-factors-table), appears not to match the [BY2011 Methodology PDF] (page 4.21.1 - 2).
 
-- [Gas Fields](#indcom-gas_fields): For category #1576, the the BY2011 emission factor for CH~4~, in Table \@ref(tab:indcom-gas-fields-emission-factors-table), appears not to match the [BY2011 Methodology PDF] (page 4.22.1 - 2).
+- [Gas Fields](#indcom-gas_field): For category #1576, the the BY2011 emission factor for CH~4~, in Table \@ref(tab:indcom-gas-field-emission-factors-table), appears not to match the [BY2011 Methodology PDF] (page 4.22.1 - 2).
 
 - [Sand Blasting](#indcom-sandblast): The paragraph under [Control](#indcom-sandblast-control) refers 
 to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up to 99% or higher." However, no BY2011 control factors for the relevant categories (#42 or #1909) appear to be stored in DataBank. See `DB_CTLFAC_CONCORDANCE` and/or use `BY(2011) %>% DB_control_factors()` to pull the relevant CFs.
