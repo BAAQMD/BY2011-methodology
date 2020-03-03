@@ -1,18 +1,16 @@
 # Errata {#errata -}
 
-This is a very draft list of "errata". 
+This is a very draft list of "errata". Some are confirmed; others are suspected but not confirmed one way or the other. Right now, the list is static and mostly unsorted. (TODO: add tags and show these in a sortable, filterable table with "status", "category", "pollutant", etc!)
 
-- Some are confirmed; others are suspected but not confirmed one way or the other. 
-- Right now, the list is static and mostly unsorted. (TODO: add tags and show these in a sortable, filterable table with "status", "category", "pollutant", etc!)
-- This list is hand-picked and shortened for teaching purposes. It's intended to cover a subspace of the full gamut of issues. It is not intended to be a representative sample of the full gamut.
+This list potentially covers only part of the full gamut of issues. It is not claimed to be a representative sample or to have complete coverage.
 
 ### High Priority
 
-- The CO~2~/CO ratio for category [#293 Gas Fired Boilers](#SS_combust-power_plant-boilers-trend) for CY1990-2000 appears to be far too low, given what is observed for subsequent decades. (CH~4~/CO is also of interest) This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO~2~ of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is "on track" to reach its CY2030 target.
+- The CO~2~/CO ratio for category [#293 Gas Fired Boilers](#SS_combust-power_plant-boilers-trend) for CY1990-2000 appears to be far too low, given what is observed for subsequent decades. This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO~2~ of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is "on track" to reach its CY2030 target.
 
 - (Possibly related.) Emissions for [#294 Oil Fired Boilers](#SS_combust-power_plant-boilers-trend) seem to be almost entirely absent from the BY2011 inventory. There are some very small emissions (~ 0.1 ton/yr of TOG and NO~x~) estimated for CY2008-2010, but that is it.
 
-- Road Dust: The emissions for [Paved Roads](#misc_other-roads-paved-trend) are flat. The paragraph under [Growth](#misc_other-roads-paved-growth) states that "MTC’s CLM data show an increase of less than 2% for [1990 to 2011] (less than 0.1% per year), and this was used to create trends around the 2011 base year emissions." However, the growth is not 2% per 20 years; it is _exactly_ flat, because the relevant categories are all linked to profile #38 No Growth.
+- Road Dust: The emissions for [Paved Roads](#misc_other-roads-paved-trend) are exactly flat. The paragraph under [Growth](#misc_other-roads-paved-growth) states that "MTC’s CLM data show an increase of less than 2% for [1990 to 2011] (less than 0.1% per year), and this was used to create trends around the 2011 base year emissions." However, the growth is not 2% per 20 years; it is _exactly_ flat, because the relevant categories are all linked to profile #38 No Growth.
 
 **TO BE CONTINUED...**
 
