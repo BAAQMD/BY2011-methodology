@@ -38,7 +38,13 @@ rmd_files: [
   "04-indcom/04-22-indcom-gas_field.Rmd",
   "04-indcom/04-23-indcom-other_misc.Rmd",
 
-  "05-waste_mgmt/waste_mgmt.Rmd",
+  "05-waste_mgmt/05-waste_mgmt.Rmd",
+  "05-waste_mgmt/05-01-waste_mgmt-POTW.Rmd",
+  "05-waste_mgmt/05-02-waste_mgmt-landfill.Rmd",
+  "05-waste_mgmt/05-03-waste_mgmt-land_farm.Rmd",
+  "05-waste_mgmt/05-04-waste_mgmt-other.Rmd",   # out of order in original PDF
+  "05-waste_mgmt/05-05-waste_mgmt-compost.Rmd", # out of order in original PDF
+  
   "06-petprod/petprod.Rmd",
   "07-SS_combust/SS_combust.Rmd",
   "08-waste_burn/waste_burn.Rmd",
