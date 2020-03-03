@@ -1,4 +1,4 @@
-## Agricultural Equipment
+## Agricultural Equipment {#mobile-ag-equip}
 
 ```{r mobile-ag-equip-setup}
 THESE_CATEGORIES <- c(
@@ -25,7 +25,7 @@ Monthly variation of emissions was assumed to be 75% for the months of June to O
 
 County emissions were provided by the CARB’s OFFROAD2007 model.
 
-### Trends
+### Trends {#mobile-ag-equip-trend}
 
 #### History {-}
 

@@ -1,4 +1,4 @@
-## Recreational Boats
+## Recreational Boats {#mobile-rec_boat}
 
 ```{r mobile-rec_boat-setup}
 THESE_CATEGORIES <- c(
@@ -13,7 +13,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-These categories account for fuel combustion emissions from pleasure boats with inboard or outboard engines, and personal watercraft, etc. in the Bay Area. Nearly all outboard and personal watercraft motors utilized two-stroke engines. These engines burn gasoline inefficiently and discharge as much as 30% unburned fuel into water and subsequently into the air. Spark-ignition outboard engines are available in power ratings from 2 to 300 horsepower. They are used in a wide variety of applications including fishing, water skiing and water-borne transportation. The total population of gasoline powered outboard engines in California was 373,200 in 1990. \@ref(tab:mobile-rec-boat-population-table) shows the estimated population of outboard and personal watercraft in 1997, 2010 and 2020. As shown in \@ref(tab:mobile-rec-boat-population-table), the population of personal watercraft is projected to double by 2020 because of continued growth and popularity of this category of marine engine. This will have a significant impact on the emissions inventory attributed to recreational boats categories.
+These categories account for fuel combustion emissions from pleasure boats with inboard or outboard engines, and personal watercraft, etc. in the Bay Area. Nearly all outboard and personal watercraft motors utilized two-stroke engines. These engines burn gasoline inefficiently and discharge as much as 30% unburned fuel into water and subsequently into the air. Spark-ignition outboard engines are available in power ratings from 2 to 300 horsepower. They are used in a wide variety of applications including fishing, water skiing and water-borne transportation. The total population of gasoline powered outboard engines in California was 373,200 in 1990. Table \@ref(tab:mobile-rec-boat-population-table) shows the estimated population of outboard and personal watercraft in 1997, 2010 and 2020. As shown in Table \@ref(tab:mobile-rec-boat-population-table), the population of personal watercraft is projected to double by 2020 because of continued growth and popularity of this category of marine engine. This will have a significant impact on the emissions inventory attributed to recreational boats categories.
 
 ```{r mobile-rec-boat-population-table}
 table_data <- 
@@ -46,7 +46,7 @@ The monthly activity occurs primarily during late spring, summer and fall. Most 
 
 County emissions were provided by the CARB’s OFFROAD2007 model.
 
-### Trends
+### Trends {#mobile-rec_boat-trend}
 
 #### History {-}
 

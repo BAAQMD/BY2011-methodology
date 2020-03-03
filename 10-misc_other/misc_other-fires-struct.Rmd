@@ -82,7 +82,7 @@ $$
 \end{eqnarray}
 $$
 
-#### Emission Factors {- #misc_other-fires-struct-emission_factors}
+#### Emission Factors {- #misc_other-fires-struct-EF}
 
 Structural fire emission factors in pounds per ton of material burned for TOG, CO and PM were obtained from the results of tests on the burning of model wood buildings. The emission factor for NO~x~ was assumed to be similar to that listed in AP-42 for municipal refuse. These emission factors were converted to units of pounds per fire using the factor 1.28 ton/fire. The criteria pollutant composite emission factors (pound/fire) are as follow:
 

@@ -27,9 +27,9 @@ Monthly variation of emissions was assumed to be mainly in the late spring, summ
 
 County emissions were provided by the CARB’s OFFROAD model.
 
-### Trends {-}
+### Trends {#mobile-lawn_garden-trend}
 
-#### History
+#### History {-}
 
 ```{r mobile-lawn_garden-annual_emissions-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%

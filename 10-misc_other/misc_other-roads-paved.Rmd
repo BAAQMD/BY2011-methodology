@@ -65,7 +65,7 @@ Number of wet days ($N$) for each county was derived from the most appropriate m
 
 The monthly fraction of annual VMT came from monthly Caltrans VMT highway data prepared for the Sacramento Office of the Federal Highway Administration. These were combined with the number of wet days in the relevant month to develop a monthly profile.
 
-### Trends
+### Trends {#misc_other-roads-paved-trend}
 
 #### History {-}
 

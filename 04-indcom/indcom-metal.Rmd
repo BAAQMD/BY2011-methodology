@@ -34,9 +34,9 @@ Monthly variation of emissions for these categories is assumed to be uniform (i.
 
 For point and area sources, information on the location of each facility was known and the emissions were distributed to the counties accordingly.
 
-### Trends
+### Trends {#indcom-metal-trend}
 
-#### History {- #indcom-metal-history}
+#### History {-}
 
 ```{r indcom-metal-annual_emissions-chart, fig.height=16, out.height=1600}
 BY2011_annual_emission_data %>%

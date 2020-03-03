@@ -1,4 +1,4 @@
-## Transportation Refrigeration Units
+## Transportation Refrigeration Units {#mobile-TRU}
 
 ```{r mobile-TRU-setup}
 THESE_CATEGORIES <- c(
@@ -25,7 +25,7 @@ Monthly activity is assumed to be uniform throughout the year. Weekend activity 
 
 County emissions were provided by the CARB’s OFFROAD2007 model.
 
-### Trends
+### Trends {#mobile-TRU-trend}
 
 #### History {-}
 

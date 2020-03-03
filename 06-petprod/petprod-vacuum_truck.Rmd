@@ -39,7 +39,7 @@ BY2011_annual_emission_data %>%
 
 Vacuum truck historical growth rate was based on data from studies and historical records.
 
-#### Growth {-}
+#### Growth {- #petprod-vacuum_truck-growth}
 
 ```{r petprod-vacuum_truck-annual_growth-chart}
 BY2011_annual_growth_factor_data %>%

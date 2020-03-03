@@ -1,4 +1,4 @@
-## Refinery and Marine Loading Operations {#petprod-marine_loading}
+## Refinery and Marine Loading Operations {#petprod-marine_load}
 
 ```{r petprod-marine_load-setup}
 THESE_CATEGORIES <- c(
@@ -79,7 +79,7 @@ For the point source categories (Cats. 60, 795-802), the monthly distribution wa
 
 For the point source categories, the county location of each company, as reported in the Data Bank, is used to distribute emissions into each county. For the area source categories, the county distribution was based on the throughputs of products unloaded at the various Bay Area ports, as reported in the U.S. Army Corps of Engineers’ 2008 Waterborne Commerce of the United States, Part 4--Waterways and Harbors-Pacific Coast, Alaska and Hawaii.
 
-### Trends
+### Trends {#petprod-marine_load-trend}
 
 #### History {-}
 
@@ -119,7 +119,7 @@ BY2011_annual_growth_factor_data %>%
 
 The projected growth for the Ballasting categories (Cat. 86-90), the Marine Vessel Cleaning & Gas Venting category (Cat. 91), and the Non-Refinery Tanker/Barge Loading categories (Cat. 799-802) were based on fuels report from the California Energy Commission. Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market The introduction of reformulated gasoline with lower vapor pressure will help in reducing evaporation emissions.
 
-#### Control {-}
+#### Control {- #petprod-marine_load-control}
 
 ```{r petprod-marine_load-lightering-annual_control-chart}
 BY2011_annual_control_factor_data %>%
@@ -145,7 +145,7 @@ BY2011_annual_control_factor_data %>%
 
 Categories 88, 89, and 91: On December 7, 2005, District Regulation 8, Rule 44 (Marine Tank Vessel Operations) was amended to extend organic compound control requirements to ballasting (Categories 88 and 89), gas freeing, tank washing, and purging activities (Category 91) from venting tank emissions to the atmosphere. This amendment controls organic emissions from loading operations of gasoline, gasoline blended stock, aviation gas, JP4 jet fuel, crude oil and other liquids with a flash point below 100 oF. (Since diesel, residual, and distillate fuel oils have flash points above 100 ºF, these fuels from Category 90 were excluded from control requirements. The adoption of this amendment will control organic emissions by 95%.
 
-```{r petprod-marine_load-barge_tanker-annual_control-chart}
+```{r petprod-marine_load-barge_tanker-annual_control-chart, fig.height=8, out.height=800}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

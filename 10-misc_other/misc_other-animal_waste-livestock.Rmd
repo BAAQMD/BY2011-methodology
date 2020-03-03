@@ -21,7 +21,7 @@ Livestock emissions including dairy cattle, range cattle, poultry, swine, sheep,
 
 #### Methodology {#misc_other-animal_waste-livestock-methodology -}
 
-This methodology is presently based on ARB's methodology. Livestock population in the Bay Area was divided into subcategories: dairy cattle, range cattle, poultry (layers and broilers), swine, sheep, horses, and goats. \@ref(tab:misc-other-animal-waste-livestock-throughputs-table) shows livestock population in the Bay Area.
+This methodology is presently based on ARB's methodology. Livestock population in the Bay Area was divided into subcategories: dairy cattle, range cattle, poultry (layers and broilers), swine, sheep, horses, and goats. Table \@ref(tab:misc-other-animal-waste-livestock-throughputs-table) shows livestock population in the Bay Area.
 
 ```{r misc-other-animal-waste-livestock-throughputs-table}
 #' 
@@ -89,7 +89,7 @@ Monthly distribution was estimated evenly over the twelve months.
 
 #### County Distribution {-}
 
-The county distribution was based on the cattle population in \@ref(tab:misc-other-animal-waste-livestock-throughputs-table) for the nine counties.
+The county distribution was based on the cattle population in Table \@ref(tab:misc-other-animal-waste-livestock-throughputs-table) for the nine counties.
 
 #### History {-}
 

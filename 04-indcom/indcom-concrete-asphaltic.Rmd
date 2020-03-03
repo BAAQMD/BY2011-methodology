@@ -23,9 +23,9 @@ Monthly distribution was estimated to have the highest activity during the month
 
 The data bank system contains information on the county location of each processing plant; hence, emissions are distributed to the counties accordingly.
 
-### Trends
+### Trends {#indcom-concrete-asphaltic-trend}
 
-#### History {- #indcom-concrete-asphaltic-history}
+#### History {-}
 
 ```{r indcom-concrete-asphaltic-annual_emissions-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%

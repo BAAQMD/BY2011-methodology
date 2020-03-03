@@ -19,7 +19,7 @@ Planned or prescribed fires such as weed burning, field crops, prunings, range i
 Methodology for this category is in accordance with the California Air Resources Board’s (CARB’s) document "Methods for Assessing Area Source Emissions in California" for the Wildfires. Activity data (acreage burnt) estimates were obtained from the California Department of Forestry and Fire Protection (CDF) and CARB.
 Wildfire emissions are calculated using the Geographic Information System (GIS) based Emission Estimating System (EES) model developed for ARB by UC Berkeley’s Center for the Assessment and Monitoring of Forest and Environmental Resources (CAMFER) laboratory. Wildfire footprint is overlaid on vegetation landcover map, calculating the amount of each fuel consumed in the fire. Fuel loading is assigned for each fuel component that makes up the vegetation type.
 
-Emission factors and vegetation acreage consumed vary from fire season to fire season depending on type of vegetation consumed and weather conditions. For example, average composite emission factors and amounts of acreage burnt in the Bay Area by county are shown below for year 2008.
+Emission factors and vegetation acreage consumed vary from fire season to fire season depending on type of vegetation consumed and weather conditions. For example, average composite emission factors and amounts of acreage burnt in the Bay Area by county are shown below for year <span class="strike">2008</span> 2011.
 
 ```{r misc-other-fires-veg-emission-factors-table}
 BY2011_annual_area_source_emission_factor_data %>%
@@ -33,11 +33,12 @@ BY2011_annual_area_source_emission_factor_data %>%
 ```
 
 ```{r misc_other-fires-veg-throughputs-table}
-BY2011_area_source_throughput_data %>%
+kable_data <-
+  BY2011_area_source_throughput_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
   filter_years(
-    CY(2008:2011)) %>% # FIXME: update for BY2015
+    CY(2011)) %>% # FIXME: update for BY2015
   mutate(
     cnty_id = codec::encode(cnty_abbr, DST_COUNTY_CODES),
     county = codec::decode(cnty_id, DST_COUNTY_NAMES)) %>%
@@ -45,9 +46,22 @@ BY2011_area_source_throughput_data %>%
     county,
     year,
     digits = 0) %>%
+  drop_vars(
+    tput_unit) 
+
+kable_data %>%
   rename(
-    County = county,
-    Unit = tput_unit)
+    County = county) %>%
+  janitor::adorn_totals(
+    "row") %>%
+  mutate_at(
+    vars(starts_with("CY")),
+    ~ formattable::accounting(., digits = 0)) %>%
+  kable_BY2011(
+    caption = "Acreage burned.") %>%
+  kableExtra::row_spec(
+    nrow(kable_data) + 1,
+    bold = TRUE)
 ```
 
 Other sources for the vegetation combustion emissions related information are the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA); the Environmental Protection Agency’s (EPA’s) document AP-42, and the California Energy Commission (CEC).
