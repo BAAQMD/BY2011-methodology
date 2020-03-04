@@ -49,12 +49,19 @@ County location of each company as reported in the Data Bank was used to distrib
 
 #### History {-}
 
-```{r petprod-printing-annual_emission-chart, fig.height=6, out.height=600}
+```{r petprod-printing-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
   chart_BY2011_annual_emissions_by(
     fill = category)
+```
+
+```{r petprod-printing-BY-vs-DB-chart, fig.height=8, out.height=800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
 Historical emissions were estimated based on ARB's Manufacturing-Printing growth profile.
@@ -82,15 +89,6 @@ BY2011_annual_control_factor_data %>%
 ```
 
 The Bay Area’s graphic arts printing industry are regulated under Regulation 8, Rule 20. This rule 20 was adopted in 1980, amended in 1984, 1985, 1989, 1993, 1995, 1997, 1999, and 2008. The Rule requires low solvent usage on inks and coatings, volatile organic compound limits of products and fountain solution and/or requirements on approved emission control system, and compliance schedules. The rule has resulted in reduced emissions for most of these categories.
-
-#### BY2011 vs DataBank (Point) {-}
-
-```{r petprod-printing-BY-vs-DB-chart, fig.height=8, out.height=800}
-BY2011_annual_emission_data %>%
-  filter_categories(
-    THESE_CATEGORIES) %>%
-  chart_BY_vs_DB_point_source_annual_emissions()
-```
 
 ***
 

@@ -46,7 +46,9 @@ BAAQMD source test data shows that the Emco Wheaton A4001 nozzles emit more than
 
 Table I shows the 1995, 2000, 2005 and 2011 estimated emissions along with 1995 gasoline throughput and emission factors used for each category.
 
-**FIXME: INSSERT TABLE**
+<div class="FIXME">
+**FIXME: INSERT TABLE**
+</div>
 
 Total gasoline consumption in the Bay Area was obtained from Caltrans. The 1995 calendar year gasoline consumption was 2,915,034 thousand gallons, or 7,986 thousand gallons per day.
 
@@ -141,7 +143,9 @@ The adopted amendments also include mandatory In-Station-Diagnostics (ISD), whic
 
 Monitoring of vapor recovery system operation and performance per CARB’s mandatory In- Station-Diagnostics, pressure-related fugitive emissions will be further reduced by 2003 and beyond.
 
+<div class="FIXME">
 **FIXME: INSERT FIGURES & TABLES HERE?**
+</div>
 
 ***
 

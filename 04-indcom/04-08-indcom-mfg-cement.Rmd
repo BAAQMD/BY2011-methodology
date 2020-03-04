@@ -1,6 +1,6 @@
-## Cement Manufacturing & Combustion {#indcom-cement}
+## Cement Manufacturing & Combustion {#indcom-mfg-cement}
 
-```{r indcom-cement-setup}
+```{r indcom-mfg-cement-setup}
 THESE_CATEGORIES <- c(
   "#36 Cement Manufacturing" = 36,
   "#1747 Cement Plant Combustion, Coke" = 1747,
@@ -35,9 +35,9 @@ Emissions are distributed to the county based on the location of the processing 
 
 ### Trends
 
-#### History {- #indcom-cement-history}
+#### History {- #indcom-mfg-cement-history}
 
-```{r indcom-cement-annual_emission-chart, fig.height=12, out.height=1200}
+```{r indcom-mfg-cement-emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -49,7 +49,7 @@ The historical growth profile for Category 36 was based on a combination of prio
 
 #### Growth {-}
 
-```{r indcom-cement-growth-chart, fig.height=12, out.height=1200}
+```{r indcom-mfg-cement-growth-chart, fig.height=12, out.height=1200}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -61,7 +61,7 @@ Projections of emissions to 2030 in all categories were based on ABAG’s 2009 C
 
 #### Control {-}
 
-```{r indcom-cement-control-chart, fig.height=8, out.height=800}
+```{r indcom-mfg-cement-control-chart, fig.height=8, out.height=800}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

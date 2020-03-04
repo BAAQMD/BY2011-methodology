@@ -34,7 +34,7 @@ Emissions from recreational boat fueling category distributed into the nine coun
 
 #### History {-}
 
-```{r petprod-fueling-ship_boat-annual_emission-chart, fig.height=6, out.height=600}
+```{r petprod-fueling-ship_boat-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

@@ -41,7 +41,7 @@ The county location of each company as reported in the Data Bank was used to dis
 
 #### History {-}
 
-```{r petprod-adhesive_seal-annual_emission-chart, fig.height=7, out.height=700}
+```{r petprod-adhesive_seal-emission-chart, fig.height=7, out.height=700}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

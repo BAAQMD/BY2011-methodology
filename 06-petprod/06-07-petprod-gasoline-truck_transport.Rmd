@@ -43,7 +43,7 @@ Emissions distributed into the nine counties were based on Caltrans Transportati
 
 #### History {-}
 
-```{r petprod-gasoline-truck_transport-annual_emission-chart}
+```{r petprod-gasoline-truck_transport-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

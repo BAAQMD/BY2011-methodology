@@ -1,6 +1,6 @@
-## Wood Products Manufacturing
+## Wood Products Manufacturing {#indcom-mfg-wood}
 
-```{r indcom-wood-setup}
+```{r indcom-mfg-wood-setup}
 THESE_CATEGORIES <- c(
   "#35 Wood Products Mfg" = 35,
   "#1907 Wood Products Mfg (Area)" = 1907)
@@ -30,7 +30,7 @@ Emissions are distributed to the counties based on the location of the processin
 
 #### History {-}
 
-```{r indcom-wood_products-annual_emission-chart}
+```{r indcom-mfg-wood_products-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -38,11 +38,18 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
+```{r indcom-mfg-wood-BY-vs-DB-chart, fig.height=8, out.height=800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
 The historical growth profile was based on a combination of prior permit data (back to 1990) and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing Employment growth profile.
 
 #### Growth {-}
 
-```{r indcom-wood_products-growth-chart}
+```{r indcom-mfg-wood_products-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

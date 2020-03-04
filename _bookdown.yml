@@ -21,23 +21,23 @@ rmd_files: [
   "04-indcom/04-04-indcom-winery-aging.Rmd",
   "04-indcom/04-05-indcom-food_ag-other.Rmd",
   "04-indcom/04-06-indcom-metal.Rmd",
-  "04-indcom/04-07-indcom-wood.Rmd",
-  "04-indcom/04-08-indcom-cement.Rmd",
+  "04-indcom/04-07-indcom-mfg-wood.Rmd",
+  "04-indcom/04-08-indcom-mfg-cement.Rmd",
   "04-indcom/04-09-indcom-soil-aeration.Rmd",
   "04-indcom/04-10-indcom-soil-extraction.Rmd",
   "04-indcom/04-11-indcom-concrete-asphaltic.Rmd",
   "04-indcom/04-12-indcom-concrete-batching.Rmd",
-  "04-indcom/04-13-indcom-glass.Rmd",
-  "04-indcom/04-14-indcom-stone_sand_gravel.Rmd",
+  "04-indcom/04-13-indcom-mfg-glass.Rmd",
+  "04-indcom/04-14-indcom-aggregates.Rmd",
   "04-indcom/04-15-indcom-sandblast.Rmd",
   "04-indcom/04-16-indcom-mfg-semicond.Rmd",
   "04-indcom/04-17-indcom-mfg-disc.Rmd",
   "04-indcom/04-18-indcom-mfg-fiberglass.Rmd",
   "04-indcom/04-19-indcom-mfg-rubber.Rmd",
   "04-indcom/04-20-indcom-mfg-plastic.Rmd",
-  "04-indcom/04-21-indcom-oil_field.Rmd",
-  "04-indcom/04-22-indcom-gas_field.Rmd",
-  "04-indcom/04-23-indcom-other_misc.Rmd",
+  "04-indcom/04-21-indcom-extract-oil.Rmd",
+  "04-indcom/04-22-indcom-extract-gas.Rmd",
+  "04-indcom/04-23-indcom-misc.Rmd",
 
   "05-waste-mgmt/05-waste-mgmt.Rmd",
   "05-waste-mgmt/05-01-waste-mgmt-POTW.Rmd",
@@ -115,7 +115,7 @@ rmd_files: [
   
   "10-misc/10-misc.Rmd",
   "10-misc/10-01-misc-construction.Rmd",
-  "10-misc/10-02-misc-farming.Rmd",
+  "10-misc/10-02-misc-farm.Rmd",
   "10-misc/10-03-misc-fire-struct.Rmd",
   "10-misc/10-04-misc-fire-veg.Rmd",
   "10-misc/10-05-misc-fire-auto.Rmd",
@@ -135,8 +135,8 @@ rmd_files: [
   
   "appendix/appendix.Rmd"]
   
-before_chapter_script: "chapter_setup.R"
-after_chapter_script: "chapter_teardown.R"
+before_chapter_script: "chapter-setup.R"
+after_chapter_script: "chapter-teardown.R"
 view: https://github.com/holstius/BY2011-methodology/blob/master/%s
 edit: https://github.com/holstius/BY2011-methodology/edit/master/%s
 output_dir: "docs"

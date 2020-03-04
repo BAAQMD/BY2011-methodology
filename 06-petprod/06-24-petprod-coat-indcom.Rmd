@@ -7,14 +7,14 @@
 The following categories contain the inventory of organic gas emissions that result from the use of industrial coatings, special product coatings, and thinning and clean-up solvents:
 
 - [Can and Coil](#coat-indcom-can_coil) (P)
-- [Wood Furniture & Cabinet](#coat-indcom-wood_furniture) (P/A)
+- [Wood Furniture & Cabinet](#coat-indcom-mfg-wood_furniture) (P/A)
 - [Paper Coating](#coat-indcom-paper) (P/A)
 - [Fabric & Film](#coat-indcom-fabric_film) (P/A)
 - [Plastic Parts & Product](#coat-indcom-plastic_part) (P/A)
 - [Magnet Wire](#coat-indcom-magnet_wire) (P/A)
 - [Large Appliance & Metal Furniture](#coat-indcom-large_appliance) (P/A)
 - [Misc. Metal Parts & Small Appliance](#coat-indcom-metal_part) (P/A) 
-- [Flat Wood Paneling](#coat-indcom-wood_panel) (P)
+- [Flat Wood Paneling](#coat-indcom-mfg-wood_panel) (P)
 - [Motor Vehicle Assembly Plants](#coat-indcom-auto_assembly) (P/A) 
 - [Auto Refinishing](#coat-indcom-auto_refinish) (P)
 - [Marine Coating](#coat-indcom-marine) (P/A) 
@@ -73,7 +73,7 @@ The control factor is an estimate of reduction of solvent emissions, which takes
 
 ***
 
-```{r coat-indcom-wood_furniture, child="06-petprod/06-24-petprod-coat-indcom/wood_furniture.Rmd"}
+```{r coat-indcom-mfg-wood_furniture, child="06-petprod/06-24-petprod-coat-indcom/wood_furniture.Rmd"}
 ```
 
 ***
@@ -103,7 +103,7 @@ The control factor is an estimate of reduction of solvent emissions, which takes
 
 ***
 
-```{r coat-indcom-wood_panel, child="06-petprod/06-24-petprod-coat-indcom/wood_panel.Rmd"}
+```{r coat-indcom-mfg-wood_panel, child="06-petprod/06-24-petprod-coat-indcom/wood_panel.Rmd"}
 ```
 
 ***

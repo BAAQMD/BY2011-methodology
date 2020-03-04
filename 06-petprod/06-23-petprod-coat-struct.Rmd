@@ -133,13 +133,17 @@ The historical growth profiles were based on a combination prior emissions data 
 
 #### Growth {-}
 
+<div class="FIXME">
 **FIXME: INSERT TABLE HERE**
+</div>
 
 The projected emissions to 2020 for all categories were based on the CARB’s data. After 2020, ABAG’s Household growth factors were used.
 
 #### Controls {-}
 
+<div class="FIXME">
 **FIXME: INSERT TABLE HERE**
+</div>
 
 Regulation 8, Rule 3 was adopted by BAAQMD on March 1, 1978, and limits the volatile organic content of products sold for “application to stationary structures and their appurtenances, including houses, buildings, bridges, tanks, railings, streets and highways.” A lawsuit was filed which overturned a 1990 amendment; final elements of this lawsuit were settled in 1998. Also in 1998, an amendment incorporated provisions that would allow low solids architectural coatings to be sold and used within the BAAQMD. In November 2001, the District adopted an amendment that provided a further reduction in VOC to 19 of the architectural coatings. In July 2009, the District passed amendments to its Architectural Coating Rule that further limit the amount of VOC allowed in certain architectural coatings. The VOC limits were based on emissions standards recommended by the Final Approved Suggested Control Measure for Architectural Coatings developed by CARB in 2007. These amendments resulted in a VOC reduction of 4.02 tons/day in 2011 and 1.63 tons/day in 2012.
 

@@ -43,14 +43,14 @@ This category group contains emissions from consumer products such as hair spray
 
 #### Methodologies {-}
 
-Emissions are estimated from sales of consumer products on regional basis. The figures were developed by the California Air Resources Board based on consumer product surveys and re-tabulated for each region. Table below shows total organic gas (TOG) emissions from consumer products in the San Francisco Bay Area.
+Emissions are estimated from sales of consumer products on regional basis. The figures were developed by the California Air Resources Board based on consumer product surveys and re-tabulated for each region. Table \@(tab:misc-consumer-emissions-daily-table) below shows total organic gas (TOG) emissions from consumer products in the San Francisco Bay Area.
 
-```{r misc-consumer-daily_emissions-table}
+```{r misc-consumer-emissions-daily-table}
 BY2011_annual_emission_data %>%
   filter_categories(
     CONSOLIDATED_CATEGORIES) %>%
   filter_years(
-    CY(2008:2011)) %>%
+    CY(2011)) %>%
   filter_pollutants(
     "TOG") %>%
   convert_emission_units(
@@ -58,16 +58,20 @@ BY2011_annual_emission_data %>%
   tabulate_emissions_by(
     category,
     pollutant,
-    year,
     digits = 3) %>%
+  tidyr::extract(
+    category,
+    into = c("cat_ids", "cat_group"),
+    regex = "^([#0-9-, ]+) (.*)") %>%
   select(
-    Category = category,
-    starts_with("CY"),
-    Pollutant = pollutant,
-    Unit = ems_unit)
+    category = cat_group,
+    TOG) %>%
+  arrange(
+    TOG) %>%
+  kable_BY2011(
+    totals = "row",
+    caption = "Consumer products, annual average emissions, year 2011 (ton/day).")
 ```
-
-**FIXME: Tabulation above doesn't match BY2011 Methodology PDF**
 
 #### County Distribution {-}
 
@@ -92,6 +96,24 @@ BY2011_annual_emission_data %>%
 Consumer product emission trends have followed population growth.
 
 #### Growth {-}
+
+```{r misc-consumer-growth-chart}
+growth_data <-
+  DB_raw_growth_profiles(
+    years = BY2011_YEARS, 
+    nested = FALSE) %>%
+  filter(
+    gpf_id == 656)
+
+growth_data %>%
+  chart_annual_growth_by(
+    color = cnty_abbr,
+    base_year = CY(2011),
+    year_limits = BY2011_YEAR_LIMITS,
+    year_expand = BY2011_YEAR_EXPAND,
+    title = "#656 Total Population",
+    subtitle = "This profile is assigned to all BY2011 Consumer Products categories.") 
+```
 
 The consumer product emissions are projected to grow relative to population growth in the Bay Area. Future projections are made using population data in accordance with the Association of Bay Area Government’s (ABAG’s) 2009 report.
 

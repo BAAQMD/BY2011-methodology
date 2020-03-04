@@ -93,7 +93,7 @@ The county distribution was based on the cattle population in Table \@ref(tab:mi
 
 #### History {-}
 
-```{r misc-animal-livestock-annual_emission-chart, fig.height=10, out.height=1000}
+```{r misc-animal-livestock-emission-chart, fig.height=10, out.height=1000}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

@@ -1,6 +1,6 @@
-## Other External Combustion - Natural Gas
+## Other External Combustion - Natural Gas {#SS-combust-other_ext-NG}
 
-```{r SS-combust-NG-other-setup}
+```{r SS-combust-other_ext-NG-setup}
 THESE_CATEGORIES <- c(
   "#307 NG Combustion (Point, Misc)" = 307,
   "#1590 NG Combustion (Industrial)" = 1590,
@@ -38,13 +38,22 @@ The fuel specific greenhouse gas emission coefficients for these categories were
 
 Emissions for categories 1590 and 1591 were obtained from the area sources only. Categories 1590 and 1591 contain emissions from industrial and commercial sources, respectively. The area source natural gas usage estimates were developed by obtaining the total point source usage, and then subtracting it from the corresponding combined values for commercial, institutional and industrial natural gas total usage (point + area) in the District, provided by the California Energy Commission (CEC) or PG&E. The computation to develop area source natural gas usage was as follows:
 
-> **FIXME: INSERT "EQUATION" HERE**
+\begin{align}
+
+    \text{CEC or PG&E's total natural gas usage values} & \\
+– \text{District Data Bank's Point source usage values} & \\
+
+\hline
+
+          = \text{Area source natural gas usage values} &
+
+\end{align}
 
 Emission factor information for natural gas combustion was obtained from the U.S. Environmental Protection Agency’s (EPA's) document AP-42, the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA) and the California Energy Commission (CEC).
 
 The area source natural gas combustion emission factors in pounds per million cubic feet (Lb/MMCF) are shown below.
 
-```{r SS-combust-NG-emission-factors-table}
+```{r SS-combust-other_ext-NG-emfac-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -69,7 +78,7 @@ For point sources monthly variation of emissions is based on company reported qu
 
 #### History {-}
 
-```{r SS-combust-NG-other-emission-chart, fig.height=12, out.height=1200}
+```{r SS-combust-other_ext-NG-emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -83,7 +92,7 @@ Prior to base year 1987, category 307 was grouped as four categories: #86, 97, 9
 
 #### Growth {-}
 
-```{r SS-combust-NG-other-growth-chart, fig.height=6, out.height=600}
+```{r SS-combust-other_ext-NG-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -99,7 +108,7 @@ The data used in developing growth profile was obtained from the Association of 
 
 #### Control {-}
 
-```{r SS-combust-NG-other-control-chart, fig.height=6, out.height=600}
+```{r SS-combust-other_ext-NG-control-chart, fig.height=6, out.height=600}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

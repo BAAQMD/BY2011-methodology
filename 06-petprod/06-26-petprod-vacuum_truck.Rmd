@@ -29,7 +29,7 @@ With major refinery, marine, and bulk terminal presence, Contra Costa and Solano
 
 #### History {-}
 
-```{r petprod-vacuum_truck-annual_emission-chart}
+```{r petprod-vacuum_truck-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

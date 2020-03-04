@@ -66,7 +66,7 @@ The report on Agricultural Crops for each county showed total acreage for each a
 
 #### History {-}
 
-```{r misc-dust-windblown-annual_emission-chart, fig.height=6, out.height=600}
+```{r misc-dust-windblown-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

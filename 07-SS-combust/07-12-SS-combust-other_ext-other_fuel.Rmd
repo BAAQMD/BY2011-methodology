@@ -1,6 +1,6 @@
-## Other External Combustion - All Other Fuels
+## Other External Combustion - All Other Fuels {#SS-combust-other_ext-other_fuel}
 
-```{r SS-combust-other-other-setup}
+```{r SS-combust-other_ext-other_fuel-setup}
 THESE_CATEGORIES <- c(
   "#308 LPG" = 308,
   "#309 Distillate Oil" = 309,
@@ -35,7 +35,7 @@ The county, month, and day factors are obtained from the data bank's information
 
 #### History {-}
 
-```{r SS-combust-other-other-emission-chart, fig.height=12, out.height=1200}
+```{r SS-combust-other_ext-other_fuel-emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -47,7 +47,7 @@ Emissions prior to 1987 were derived from Base Year 1983 trend values. Category 
 
 #### Growth {-}
 
-```{r SS-combust-other-other-growth-chart, fig.height=8, out.height=800}
+```{r SS-combust-other_ext-other_fuel-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -67,7 +67,7 @@ The employment and population data used for the above growth profiles were obtai
 
 #### Control {-}
 
-```{r SS-combust-other-other-control-chart, fig.height=8, out.height=800}
+```{r SS-combust-other_ext-other_fuel-control-chart, fig.height=8, out.height=800}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

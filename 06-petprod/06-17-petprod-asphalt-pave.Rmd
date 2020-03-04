@@ -43,7 +43,7 @@ County activity was based on miles of paved roads in each county as acquired fro
 
 #### History {-}
 
-```{r petprod-asphalt-pave-annual_emission-chart}
+```{r petprod-asphalt-pave-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

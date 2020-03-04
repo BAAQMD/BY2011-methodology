@@ -30,7 +30,28 @@ $$
 
 The crop specific PM~10~ emission factors are calculated by multiplying a land preparation emission factor (i.e. root cutting, discing, rippling, weeding, land planning, etc.) with the number of passes performed per acre that are needed to prepare a field for planting a particular crop (acre-pass). A crop may have multiple land preparation operations with its corresponding number of acre-passes. In this case, the crop specific emission factor is the sum of acre-pass weighted emission factor for each land preparation operation. For example, the crop PM~10~ emission factor for garlic is as follows:
 
-**FIXME: RECREATE TABLE**
+```{r misc-farm-emfac-example-table}
+kable_data <-
+  tibble(
+    Crop = "Garlic",
+    Operation = c("Land Maintenance", "Disc & Roll", "Chisel", "List", "Shape Beds"),
+    `Oper. EF` = c(12.5, 1.2, 1.2, 0.8, 0.8),
+    `Acre-Pass` = c(0.2, 1, 1, 1, 1)) %>%
+  mutate(
+    `Crop EF` = `Oper. EF` * `Acre-Pass`)
+
+kable_data %>%
+  mutate_at(
+    vars(`Oper. EF`, `Acre-Pass`),
+    ~ format(., digits = 1)) %>%
+  kable_BY2011(
+    totals = "row",
+    align = "llrrr",
+    caption = "Crop-specific PM~10~ emission factor for garlic (lb/acre-yr).") %>%
+  collapse_rows(
+    columns = 1, 
+    valign = "top")
+```
 
 There are 21 crop specific PM~10~ emission factors (see Table 2.a of ARB’s Agricultural Land Preparation document) that include such crops as alfalfa, almonds, garlic, grapes (raisin, table and wine), tomatoes, wheat, etc. All other crops are assigned an emission factor from one of the 21 crop specific PM~10~ emission factors (see Table 3 of ARB’s Agricultural Land Preparation document).
 
@@ -135,7 +156,7 @@ Base Year 2011
 
 ***
 
-#### Emission Factors {-}
+#### Emission Factors {- #misc-farm-emfac-chart}
 
 > Emission factors for these categories vary by time. (This is not common in the BY2011 inventory.)
 

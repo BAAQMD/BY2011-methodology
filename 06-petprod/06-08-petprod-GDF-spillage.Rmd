@@ -27,7 +27,7 @@ Emissions distributed into the nine counties were based on Caltrans Transportati
 
 #### History {-}
 
-```{r petprod-GDF-spillage-annual_emission-chart}
+```{r petprod-GDF-spillage-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

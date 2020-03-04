@@ -35,17 +35,17 @@ knitr::include_graphics(
 
 #### Other Industrial and Commercial Processes {-}
 
-- [Recycling and Shredding](#indcom-metal-trend): PM emissions for category #2223 Recycling and Shredding (Fugitive) are missing (not zero; actually missing) for years CY1990-1995. The growth profile assigned to this BY2011 category is zero for those years.
+- [Recycling and Shredding](#indcom-metal-trend): PM emissions for #2223 Recycling and Shredding (Fugitive) are missing (not zero; actually missing) for years CY1990-1995. The growth profile assigned to this BY2011 category is zero for those years.
 
 - [Concrete Batching](#indcom-concrete-batching-trend): While the TSP estimates for the point-source component (category #39) align well with DataBank RY/PY data, the speciated PM~10~ and PM~2.5~ estimates are very different --- on the order of hundreds of tons each year, for years CY1990-2011. This is using the BY2011 PM speciation factors, found in `t0324`, to derive PM~10~ and PM~2.5~ estimates from the "PM" estimates that are stored in DataBank.
 
-- [Cement Manufacturing & Combustion](#indcom-cement-trend): Emissions of all pollutants for #1748 Cement Plant Combustion (Coal) are missing (not zero; actually missing) for CY2008 and CY2010-2030. However, emissions for CY2009 are present. The growth profile assigned to this BY2011 category, #877 "Cement Plt. Comb. - Coal", is also zero for the same years, and also has a spike at CY2009.
+- [Cement Manufacturing & Combustion](#indcom-mfg-cement-trend): Emissions of all pollutants for #1748 Cement Plant Combustion (Coal) are missing (not zero; actually missing) for CY2008 and CY2010-2030. However, emissions for CY2009 are present. The growth profile assigned to this BY2011 category, #877 "Cement Plt. Comb. - Coal", is also zero for the same years, and also has a spike at CY2009.
 
 - [Asphaltic Concrete Plants](#indcom-concrete-asphaltic-trend): There is a peak in SO~2~ emissions at CY2010 that does not seem to match the profile of other pollutants nor the assigned growth profile (#817 Asphaltconcrplts (Modgc646)).
 
-- [Oil Fields](#indcom-oil_field): For category #1575, the BY2011 emission factor for CH~4~, in Table \@ref(tab:indcom-oil-field-emission-factors-table), appears not to match the [BY2011 Methodology PDF] (page 4.21.1 - 2).
+- [Oil Fields](#indcom-extract-oil): For category #1575, the BY2011 emission factor for CH~4~, in Table \@ref(tab:indcom-extract-oil-field-emission-factors-table), appears not to match the [BY2011 Methodology PDF] (page 4.21.1 - 2).
 
-- [Gas Fields](#indcom-gas_field): For category #1576, the the BY2011 emission factor for CH~4~, in Table \@ref(tab:indcom-gas-field-emission-factors-table), appears not to match the [BY2011 Methodology PDF] (page 4.22.1 - 2).
+- [Gas Fields](#indcom-extract-gas): For category #1576, the the BY2011 emission factor for CH~4~, in Table \@ref(tab:indcom-extract-gas-field-emission-factors-table), appears not to match the [BY2011 Methodology PDF] (page 4.22.1 - 2).
 
 - [Sand Blasting](#indcom-sandblast): The paragraph under [Control](#indcom-sandblast-control) refers 
 to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up to 99% or higher." However, no BY2011 control factors for the relevant categories (#42 or #1909) appear to be stored in DataBank. See `DB_CTLFAC_CONCORDANCE` and/or use `BY(2011) %>% DB_control_factors()` to pull the relevant CFs.
@@ -94,10 +94,14 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 
 - [Animal Waste, Livestock](#misc-animal-livestock): Table \@ref(tab:misc-animal-waste-livestock-throughputs-table) in the [Methodology](#misc-animal-livestock-methodology) section is inconsistent with the same table as shown in the [BY2011 Methodology PDF]. One example: there are 28,753 sheep in Solano, with a total of 53,884 sheep District-wide. In the [BY2011 Methodology PDF], those numbers are 3,804 and 28,937 respectively. The former table is created automatically from `BY2011_area_source_throughput_data`, itself derived from `t0325`. The code that produces the table is in [misc-animal-livestock.Rmd](https://github.com/holstius/BY2011-methodology/blob/master/10-misc/misc-animal-livestock.Rmd). 
 
+- [Farming Operations](#misc-farm-emfac-chart): Emission factors for these two categories (#749 and #1435) vary by time. The profiles look very similar to the growth profiles. It is unusual in the BY2011 inventory to have both in this way; this is probably the only example. If this is an accidental duplication of information, it would be causing a "double-counting" of the magnitude of the decrease from CY1990-2010. If it is intentional, it probably warrants some extra documentation.
+
 - [Accidental Structural Fires](#misc-fire-struct): The BY2011 emission factors in Table \@ref(tab:misc-fire-struct-emission-factors-table) appear not to match the relevant table in the the [BY2011 Methodology PDF] (page 10.3.1 - 2).
 
 - [Accidental Auto Fires](#misc-fire-auto): The BY2011 emission factor for TOG, in Table \@ref(tab:misc-fire-auto-emission-factors-PONSCO-table), appears not to match the relevant table in the [BY2011 Methodology PDF].
 
 - [Accidental Vegetation Fires](#misc-fire-veg): The BY2011 throughputs (burned acreage), in Table \@ref(tab:misc-fire-veg-emission-factors-table), appear not to match the relevant table in the [BY2011 Methodology PDF] (page 10.4.1 - 2).
+
+- [Consumer Products](#misc-consumer): The CY2011 TOG emissions listed in Table \@(tab:misc-consumer-emissions-daily-table) appear slightly different than the values on page 10.14.1-1 of the [BY2011 Methodology PDF].
 
 **TO BE CONTINUED...**

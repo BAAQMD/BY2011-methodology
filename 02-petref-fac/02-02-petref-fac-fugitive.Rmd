@@ -66,7 +66,9 @@ In 1997 and 1998, the District combined the three previous regulations 8-18, 8-2
 
 During this change the leak standard for only the pressure relief valves was reduced from 10,000 parts per million (ppm) to 500 ppm of total organic compounds. In addition, applicability of the new [Regulation 8-18] was broadened to include all leaking equipment, not just valves, flanges, and other equipment specifically listed in the earlier regulation. The following table summarizes the limits.
 
+<div class="FIXME">
 **FIXME: TABLE OMITTED**
+</div>
 
 ***
 

@@ -69,7 +69,7 @@ The monthly fraction of annual VMT came from monthly Caltrans VMT highway data p
 
 #### History {-}
 
-```{r misc-road-paved-annual_emission-chart, fig.height=12, out.height=1200}
+```{r misc-road-paved-emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

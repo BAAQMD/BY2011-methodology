@@ -57,7 +57,9 @@ Emission data from 1990 – 1999 was based on trend data from CARB’s 1990 – 
 
 #### Growth {-}
 
+<div class="FIXME">
 **FIXME: Double-check whether these are consistent with the year-over-year changes in emissions (shown in figure above). BY2011 throughputs for these categories were not recorded in DataBank. **
+</div>
 
 ```{r misc-ODSS-growth-chart, fig.height=12, out.height=1200}
 BY2011_annual_growth_factor_data %>%

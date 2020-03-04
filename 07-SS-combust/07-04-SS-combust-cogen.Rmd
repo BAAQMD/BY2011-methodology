@@ -43,7 +43,7 @@ Monthly variation of emissions is based on the company reported quarterly throug
 
 #### Historical {-}
 
-```{r SS-combust-cogen-annual_emission-chart, fig.height=12, out.height=1200}
+```{r SS-combust-cogen-emission-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

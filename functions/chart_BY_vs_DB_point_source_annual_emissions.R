@@ -1,8 +1,11 @@
 chart_BY_vs_DB_point_source_annual_emissions <- function (
   BY_data,
   ...,
+  years = NULL,
   verbose = getOption("verbose")
 ) {
+  
+  msg <- function (...) if(isTRUE(verbose)) message("[chart_BY_vs_DB_point_source_annual_emissions] ", ...)
   
   BY_layer_data <-
     BY_data %>%
@@ -10,6 +13,15 @@ chart_BY_vs_DB_point_source_annual_emissions <- function (
       cat_id %in% BY2011_sets[["Point sources"]]) %>%
     filter_pollutants(
       BY2011_POLLUTANTS)
+  
+  if (is.null(years)) {
+    years <- 
+      BY_layer_data %>%
+      pull_distinct(
+        year)
+  }
+  
+  msg("years is: ", years)
   
   categories <-
     BY_layer_data %>%
@@ -23,7 +35,9 @@ chart_BY_vs_DB_point_source_annual_emissions <- function (
     filtered_data <-
       DB_annual_point_source_emission_data %>%
       filter_categories(
-        categories)
+        categories) %>%
+      filter(
+        elide_year(year) %in% elide_year(years))
     
     speciated_data <-
       filtered_data %>%

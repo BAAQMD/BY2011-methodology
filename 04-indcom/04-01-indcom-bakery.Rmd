@@ -41,6 +41,13 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
+```{r indcom-bakery-BY-vs-DB-chart, fig.height=10, out.height=1000}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
 Historical emissions were estimated using actual throughputs and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing and Wholesale Employment growth profile. District [Regulation 8, Rule 42](https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-42-large-commercial-bread-bakeries) set standards for new and modified bakery ovens on large commercial bakeries effective January of 1989.
 
 #### Growth {-}

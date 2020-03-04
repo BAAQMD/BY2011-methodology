@@ -112,11 +112,14 @@ The historical data utilized in the OFFROAD model are based on a report for the 
 #
 # All of these categories are assigned the same growth profile, so let's just plot that.
 #
+growth_data <-
   DB_raw_growth_profiles(
     years = BY2011_YEARS, 
     nested = FALSE) %>%
   filter(
-    gpf_id == 262) %>%
+    gpf_id == 262)
+
+growth_data %>%
   chart_annual_growth_by(
     color = cnty_abbr,
     base_year = CY(2011),

@@ -28,7 +28,7 @@ Emissions were distributed into the nine counties based on population of each co
 
 #### History {-}
 
-```{r petprod-fueling-other-annual_emission-chart, fig.height=5, out.height=500}
+```{r petprod-fueling-other-emission-chart, fig.height=5, out.height=500}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

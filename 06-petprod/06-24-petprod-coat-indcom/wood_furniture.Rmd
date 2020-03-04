@@ -1,6 +1,6 @@
-#### Wood Furniture & Cabinet Coating {#coat-indcom-wood_furniture}
+#### Wood Furniture & Cabinet Coating {#coat-indcom-mfg-wood_furniture}
 
-```{r petprod-coat-indcom-wood_furniture-setup}
+```{r petprod-coat-indcom-mfg-wood_furniture-setup}
 WOOD_FURNITURE_CATEGORIES <- c(
   "#256 Wood Furniture Ctg." = 256,
   "#257 Wood Furniture C/U" = 257, # "C/U" means "cleanup solvent"
@@ -10,7 +10,7 @@ WOOD_FURNITURE_CATEGORIES <- c(
 
 ##### History {-}
 
-```{r petprod-coat-indcom-wood_furniture-emission-chart}
+```{r petprod-coat-indcom-mfg-wood_furniture-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     WOOD_FURNITURE_CATEGORIES) %>%
@@ -20,7 +20,7 @@ BY2011_annual_emission_data %>%
 
 ##### Emission Factors (Area) {-}
 
-```{r petprod-coat-indcom-wood_furniture-annual_emfac-chart}
+```{r petprod-coat-indcom-mfg-wood_furniture-annual_emfac-chart}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     WOOD_FURNITURE_CATEGORIES) %>%
@@ -30,7 +30,7 @@ BY2011_annual_area_source_emission_factor_data %>%
 
 ##### Growth {-}
 
-```{r petprod-coat-indcom-wood_furniture-growth-chart, fig.height=6, out.height=600}
+```{r petprod-coat-indcom-mfg-wood_furniture-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     WOOD_FURNITURE_CATEGORIES) %>%
@@ -40,7 +40,7 @@ BY2011_annual_growth_factor_data %>%
 
 ##### Control {-}
 
-```{r petprod-coat-indcom-wood_furniture-control-chart}
+```{r petprod-coat-indcom-mfg-wood_furniture-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     WOOD_FURNITURE_CATEGORIES) %>%
@@ -50,7 +50,7 @@ BY2011_annual_control_factor_data %>%
 
 ##### BY2011 vs DataBank (Point) {-}
 
-```{r petprod-coat-indcom-wood_furniture-BY-vs-DB-chart}
+```{r petprod-coat-indcom-mfg-wood_furniture-BY-vs-DB-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
     WOOD_FURNITURE_CATEGORIES) %>%

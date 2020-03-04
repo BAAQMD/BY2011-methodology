@@ -1,6 +1,6 @@
-## Oil Production Fields {#indcom-oil_field}
+## Oil Production Fields {#indcom-extract-oil}
 
-```{r indcom-oil_field-setup}
+```{r indcom-extract-oil-setup}
 THESE_CATEGORIES <- c(
   "#48 Oil Production Fields (Point)" = 48,
   "#1575 Oil Production Fields (Area)" = 1575)
@@ -22,11 +22,11 @@ Emissions for the point source category (#48) were obtained from point source da
 2. Emissions factors (these may be source specific factors reported by the plants through source test results or applicable general factors, i.e. from the U.S. Environmental Protection Agency (EPA))
 3. Emissions control factors (device-specific or general - these may be supplied by the plants also)
 
-##### Area Sources {- #indcom-oil_field-methodology-area}
+##### Area Sources {- #indcom-extract-oil-methodology-area}
 
 Throughput/activity information for the area sources (Category 1575) in each Bay Area county was obtained from the California Department of Conservation’s Division of Oil, Gas and Geothermal Resources (DOGGR). Emissions are calculated using a composite emission factors. The composite emission factors were developed based on information on various processes in oil production from the Environmental Protection Agency’s document AP-42. Emission Factors in pounds per barrel of oil processed (lb/Barrel) are shown below.
 
-```{r indcom-oil-field-emission-factors-table}
+```{r indcom-extract-oil-field-emission-factors-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -48,7 +48,7 @@ Monthly and daily factors are assumed to be uniform.
 
 #### History {-}
 
-```{r indcom-oil_field-emission-chart, fig.height=6, out.height=600}
+```{r indcom-extract-oil-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -60,7 +60,7 @@ Since late 1980s, California oil production has been declining. Oil production i
 
 #### Growth {-}
 
-```{r indcom-oil_field-growth-chart, fig.height=8, out.height=800}
+```{r indcom-extract-oil-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -72,7 +72,7 @@ According to the California Energy Commission, future California oil production,
 
 #### Control {-}
 
-```{r indcom-oil_field-control-chart}
+```{r indcom-extract-oil-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
