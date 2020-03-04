@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Appendix | BY2011 Methodology</title>
+  <title>10.6 Paved Roads | BY2011 Methodology</title>
   <meta name="description" content="Recreation of the BAAQMD BY2011 Methodology PDF." />
   <meta name="generator" content="bookdown 0.17.2 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Appendix | BY2011 Methodology" />
+  <meta property="og:title" content="10.6 Paved Roads | BY2011 Methodology" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Appendix | BY2011 Methodology" />
+  <meta name="twitter:title" content="10.6 Paved Roads | BY2011 Methodology" />
   
   <meta name="twitter:description" content="Recreation of the BAAQMD BY2011 Methodology PDF." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="errata.html"/>
-
+<link rel="prev" href="10-05-misc-fire-auto.html"/>
+<link rel="next" href="10-07-misc-road-unpaved.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -222,18 +222,95 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="appendix" class="section level1 unnumbered">
-<h1>Appendix</h1>
-<p><strong>TODO</strong></p>
+<div id="misc-road-paved" class="section level2">
+<h2><span class="header-section-number">10.6</span> Paved Roads</h2>
+<div id="emissions-99" class="section level3">
+<h3><span class="header-section-number">10.6.1</span> Emissions</h3>
+<div id="introduction-100" class="section level4 unnumbered">
+<h4>Introduction</h4>
+<p>Fugitive dust particles raised from the movements of motor vehicles on paved road surfaces are included in this category.</p>
+</div>
+<div id="misc-road-paved-methodology" class="section level4 unnumbered">
+<h4>Methodology</h4>
+<p>The methodology for estimating particulate emissions from vehicular travel on paved roads was updated in the Final Section of Fifth Edition of U.S. EPA’s Compilation of Air Pollutant Emission Factors AP42 document, Volume I, Chapter 13.2.1.</p>
+<p>The methodology was adapted and refined for California by CARB. For a full description of this methodology and references, please see CARB’s methodology document “2013 Update_7 9 PavedRds Meth.pdf”.</p>
+<p>A brief description is given below:</p>
+<p>Emission rates are a function of vehicle weight and silt loading as shown in the following equation:</p>
+<p><span class="math display">\[
+E = k \left(\frac{sL}{2}\right)^{0.91} \times \left(\frac{W}{3}\right)^{1.02} \times \left(1 - \frac{P}{4N}\right)
+\]</span>
+where:</p>
+<div class="nobullet">
+<ul>
+<li><p><span class="math inline">\(E\)</span> is the particulate emission factor in grams per vehicle miles traveled (VMT);</p></li>
+<li><p><span class="math inline">\(k\)</span> is the particle size multiplier used to compute PM<sub>10</sub> and PM<sub>2.5</sub> (1.0 and 0.25 grams/mile respectively);</p></li>
+<li><p><span class="math inline">\(sL\)</span> is the roadway silt loading in grams per square meter;</p></li>
+<li><p><span class="math inline">\(W\)</span> is the average vehicle weight in tons;</p></li>
+<li><p><span class="math inline">\(P\)</span> is the number of “wet” days with at least 0.254 mm (0.01&quot;) of precipitation; and</p></li>
+<li><p><span class="math inline">\(N\)</span> is the number of days in the averaging period, 365 for yearly or 30 for monthly.</p></li>
+</ul>
+</div>
+<p>California specific silt loading for different road types were measured in a study carried out by Midwest Research Institute (MRI) in 1995. Roads were divided into four classes with the corresponding silt loading factors (<span class="math inline">\(g/m^2\)</span>):</p>
+<div style="width: 50%; padding-left: 25%">
+<table>
+<thead>
+<tr class="header">
+<th align="left">Road Type</th>
+<th align="right">sL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Freeway/Expressway</td>
+<td align="right">0.02</td>
+</tr>
+<tr class="even">
+<td align="left">Major Street/Collector</td>
+<td align="right">0.032</td>
+</tr>
+<tr class="odd">
+<td align="left">Local Street</td>
+<td align="right">0.32</td>
+</tr>
+<tr class="even">
+<td align="left">Rural</td>
+<td align="right">1.6</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Average vehicle weight (<span class="math inline">\(W\)</span>) was assumed to be 2.4 tons, based on vehicle counts performed during the MRI study.
+Estimated fraction of county VMT in each of the four roadway types were taken from 2008 data by Highway Performance Monitoring Systems (HPMS). County specific 2011 VMT data were taken from California Air Resources Board EMFAC2011-SG model.</p>
+<p>Number of wet days (<span class="math inline">\(N\)</span>) for each county was derived from the most appropriate meteorological station for that county.</p>
+<p>The monthly fraction of annual VMT came from monthly Caltrans VMT highway data prepared for the Sacramento Office of the Federal Highway Administration. These were combined with the number of wet days in the relevant month to develop a monthly profile.</p>
+</div>
+</div>
+<div id="misc-road-paved-trend" class="section level3">
+<h3><span class="header-section-number">10.6.2</span> Trends</h3>
+<div id="history-99" class="section level4 unnumbered">
+<h4>History</h4>
+<p><img src="BY2011-methodology_files/figure-html/misc-road-paved-emission-chart-1.svg" width="800" height="1200" /></p>
+<p>In previous base years, emissions from paved road dust travel were assumed to grow proportionally with VMT. According to this assumption, Bay Area road dust emissions should have increased by 30% between 1990 and 2011 based on growth in VMT. Ambient air monitoring data and chemical mass balance analysis do not show this trend.</p>
+</div>
+<div id="misc-road-paved-growth" class="section level4 unnumbered">
+<h4>Growth</h4>
+<p><img src="BY2011-methodology_files/figure-html/misc-road-paved-growth-chart-1.svg" width="800" height="600" /></p>
+<p>It is believed that re-suspension of road dust quickly reaches an equilibrium condition. Thus, CARB proposed that instead of using VMT as a surrogate for growth, roadways center line miles (CLM) are used. MTC’s CLM data show an increase of less than 2% for the same period (less than 0.1% per year), and this was used to create trends around the 2011 base year emissions.</p>
+<hr />
+<p>By: A. K. Fanai
+December 2013
+Base Year 2011</p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="errata.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="10-05-misc-fire-auto.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="10-07-misc-road-unpaved.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -264,7 +341,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/holstius/BY2011-methodology/edit/master/appendix/appendix.Rmd",
+"link": "https://github.com/holstius/BY2011-methodology/edit/master/10-misc/10-06-misc-road-paved.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -272,7 +349,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/holstius/BY2011-methodology/blob/master/appendix/appendix.Rmd",
+"link": "https://github.com/holstius/BY2011-methodology/blob/master/10-misc/10-06-misc-road-paved.Rmd",
 "text": null
 },
 "download": null,
