@@ -17,7 +17,7 @@ Emissions for this category are calculated by multiplying the annual activity (t
 
 The annual activity (throughput) for this category was obtained from the March 2009 report “Bay Area Biosolids Management: Challenges, Opportunities, and Policies.” The amount of biosolids generated in in the Bay Area in 2007 was estimated to be 158,000 dry tons. Approximately 19% of that amount, or 30,020 dry tons, was “land applied” for Land Farming purposes. The Association of Bay Area Governments’ (ABAG’s) Total Population growth profile was used to obtain the 2011 throughput value of 31,028 dry tons/year.
 
-```{r waste-mgmt-land-farm-emission-factors-table}
+```{r waste-mgmt-land-farm-emfac-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

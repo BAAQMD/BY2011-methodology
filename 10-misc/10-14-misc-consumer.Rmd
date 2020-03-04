@@ -43,7 +43,7 @@ This category group contains emissions from consumer products such as hair spray
 
 #### Methodologies {-}
 
-Emissions are estimated from sales of consumer products on regional basis. The figures were developed by the California Air Resources Board based on consumer product surveys and re-tabulated for each region. Table \@(tab:misc-consumer-emissions-daily-table) below shows total organic gas (TOG) emissions from consumer products in the San Francisco Bay Area.
+Emissions are estimated from sales of consumer products on regional basis. The figures were developed by the California Air Resources Board based on consumer product surveys and re-tabulated for each region. Table \@ref(tab:misc-consumer-emissions-daily-table) below shows total organic gas (TOG) emissions from consumer products in the San Francisco Bay Area.
 
 ```{r misc-consumer-emissions-daily-table}
 BY2011_annual_emission_data %>%

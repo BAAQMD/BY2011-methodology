@@ -21,7 +21,7 @@ The cigarette consumption is estimated as followed: $743,744 \times (48\% \times
 
 Emission factors were derived based on the Table 1 of the report.
 
-```{r misc-smoking-emission-factors-table}
+```{r misc-smoking-emfac-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

@@ -34,7 +34,7 @@ Area source emissions for category 1579 were calculated based on an estimated ho
 
 The emission factors for category 1579, in pounds per ton (Lb/Ton) of waste materials combusted are shown below.
 
-```{r waste-burn-incineration-emission-factors-table}
+```{r waste-burn-incineration-emfac-table}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
