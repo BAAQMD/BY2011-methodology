@@ -123,7 +123,7 @@ BY2011_annual_emission_data %>%
 
 > **NOTE:** The following chart drops "1995" (CY, RY, and PY) because the PY value is far too large, and crushes the y-axis scale such that nothing else is visible.
 
-```{r indcom-sandblast-BY-vs-DB-chart, fig.height=6, out.height=6}
+```{r indcom-sandblast-BY-vs-DB-chart, fig.height=8, out.height=800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
