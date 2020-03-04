@@ -388,7 +388,7 @@
   <path d="M 73.457031 612.453125 L 566.035156 612.453125 L 566.035156 676.097656 L 73.457031 676.097656 Z M 73.457031 612.453125 "/>
 </clipPath>
 </defs>
-<g id="surface1034">
+<g id="surface2429">
 <rect x="0" y="0" width="576" height="720" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
 <rect x="0" y="0" width="576" height="720" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
 <path style="fill:none;stroke-width:1.066978;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 720 L 576 720 L 576 0 L 0 0 Z M 0 720 "/>
@@ -1293,7 +1293,7 @@
   <use xlink:href="#glyph4-10" x="128.935059" y="708.210938"/>
   <use xlink:href="#glyph4-9" x="133.523315" y="708.210938"/>
   <use xlink:href="#glyph4-8" x="136.27063" y="708.210938"/>
-  <use xlink:href="#glyph4-7" x="140.858887" y="708.210938"/>
+  <use xlink:href="#glyph4-10" x="140.858887" y="708.210938"/>
 </g>
 </g>
 </svg>
