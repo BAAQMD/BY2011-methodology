@@ -13,7 +13,9 @@ knitr::include_graphics(
 
 ### High Priority {-}
 
-- [Cogeneration](#SS-combust-cogen-trends): Estimated CY1990-2007 TOG emissions for category #292 Reciprocating Engines are too low, compared to CH~4~. (The CH~4~/TOG ratio for those years is well above 1, generally in the range of 3x to 30x.) About 1,000 ton/yr TOG and 100 ton/yr ROG may be missing for those years. See `BY2011_annual_emission_data %>% filter_categories("#292 Cogen: Recip Eng" = 292) %>% filter_pollutants("TOG", "CH4", "ROG") %>% tabulate_emissions_by(category, year, pol_abbr) %>% mutate(``CH4/TOG`` = CH4/TOG) %>% View()`.
+- [General Refinery Emissions](#petref-fac-general-trend): For category #10, BY2011 NO~x~ emissions are much lower than DataBank numbers would indicate. SO~x~ and PM emissions, on the other hand, are consistent. For category #16 "Other", CO~2~ emissions are large (~3 MMTCO2eq) and linearly increasing, which is mildly inconsistent with profiles for other pollutants in this category.
+
+- [Cogeneration](#SS-combust-cogen-trends): Estimated CY1990-2007 TOG emissions for category #292 Reciprocating Engines are too low, compared to CH~4~. (The CH~4~/TOG ratio for those years is well above 1, generally in the range of 3x to 30x.) About 1,000 ton/yr TOG and 100 ton/yr ROG may be missing for those years.
 
 - The CO~2~/CO ratio for category [#293 Gas Fired Boilers](#SS-combust-power-boilers-trend) for CY1990-2000 appears to be far too low, given what is observed for subsequent decades. This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO~2~ of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is "on track" to reach its CY2030 target.
 
@@ -27,9 +29,7 @@ knitr::include_graphics(
 
 #### Petroleum Refining Facilities {-}
 
-- [General Refinery Emissions](#petref-fac-general-trend): For category #10, BY2011 NOx emissions are much lower than DataBank numbers would indicate. SOx and PM emissions, on the other hand, are consistent. For category #16 "Other", CO2 emissions are large (~3 MMTCO2eq) and linearly increasing, which is mildly inconsistent with profiles for other pollutants in this category.
-
-- [Refinery Process Vessel Depressurization](#petref-fac-vessel-depress): TOG emission rates for  two isolated years (CY1999-2000) are above 3 ton/yr. There are no estimates before CY1999. Estimates after CY2000 are exactly zero. According to the text, "Emissions for category 20 have been relatively insignificant for last few years, at less than 5 pounds per day for the entire region." 5 lb/day is approximately 1 ton/yr, and so should be visible on the chart. The growth profile is also inconsistent with the published emission numbers.
+- [Refinery Process Vessel Depressurization](#petref-fac-vessel-depress): TOG emission rates for two isolated years (CY1999-2000) are above 3 ton/yr. There are no estimates before CY1999. Estimates after CY2000 are exactly zero. According to the text, "Emissions for category 20 have been relatively insignificant for last few years, at less than 5 pounds per day for the entire region." 5 lb/day is approximately 1 ton/yr, and so should be visible on the chart. The growth profile is also inconsistent with the published emission numbers.
 
 #### Chemical Manufacturing Facilities {-}
 
@@ -58,7 +58,7 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 
 #### Waste Management {-}
 
-- [Land Farming](#waste-mgmt-farm-trends): The growth profile does not seem to match the published emissions for CY1990-1995. Further, the CY1990 emissions for TOG are sharply increased at CY1990. A probable cause: the emission factor for TOG changed abruptly, from CY1990 (TOG = 20 lb/ton) to CY1991 onwards (TOG = 2.24 lb/ton). Try `BY2011_annual_area_source_emission_factor_data %>% filter_categories(52) %>% filter_years(CY(1990:1991)) %>% spread(year, ef_qty)`. Although this affects TOG, it is not reflected in published CY1990 emissions of CH~4~.
+- [Land Farming](#waste-mgmt-farm-trends): The growth profile does not seem to match the published emissions for CY1990-1995. Further, the CY1990 emissions for TOG are sharply increased at CY1990. A probable cause: the emission factor for TOG changed abruptly, from CY1990 (TOG = 20 lb/ton) to CY1991 onwards (TOG = 2.24 lb/ton). Although this affects TOG, it is not reflected in published CY1990 emissions of CH~4~.
 
 - [Composting](#waste-mgmt-compost-trends): Like [Other Miscellaneous Industrial/Commercial](#indcom-misc-history), when comparing across pollutants, emission values at CY2010 exhibit strange up/down variations for category #1709 Composting (area). The general shapes of the rest of the years seems generally consistent both (a) across pollutants, and (b) with the assigned growth profiles. Also, the point/area growth profiles assignments seem to be mixed up: profile #862 Composting-Area Source is assigned to category #1936 Composting (Point), and profile #863 Composting-Point Source is assigned to #1709 Composting (which is an area-source, not a point-source, category). Finally, there are changes in the emission factors for category #1936 over time. This may be intended, but it is unusual for a point-source category to be assigned time-varying EFs. 
 
@@ -113,6 +113,10 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 # - Area-source categories: #1590, #1591
 #
 ```
+
+- [Other External Combustion - Natural Gas](#SS-combust-external-NG):
+
+    - Category #307 NG Combustion (Point, Misc): Growth profile #631 Gh, Thrpt Based does not match the values found in RY2006 and RY2007, which results in an artificial "peak". This is noticeable for all pollutants, but especially uncontrolled pollutants. PM and TOG emissions for CY1993-2000 are also under-estimated by this growth profile. Time-varying emission factors would be a way to solve this.
 
 - [Back-up Diesel Generator](#SS-combust-engines-crisis): Category #1598 should be (re)assessed.
 

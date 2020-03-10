@@ -86,6 +86,13 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
+```{r SS-combust-external-NG-BY-vs-DB-chart, fig.height=18, out.height=1800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
 Glass Melting Furnaces, Category 968 was added to the emissions inventory system for base year 1990 after adoption of Regulation 9, Rule 12. Prior to base year 1990, emissions from Glass Melting Furnaces were accounted for in Category 307. For base year 2002, Category 307 was further split into point sources (C307) and area sources (C1590). For base year 2008, Category 1590 was split into Industrial (C1590) and Commercial (C1591) sources.
 
 Prior to base year 1987, category 307 was grouped as four categories: #86, 97, 99 and 111. This change to a single category for all area sources was made due to unavailability of separate natural gas usage data for each category.

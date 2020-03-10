@@ -2,6 +2,7 @@ chart_BY_vs_DB_point_source_annual_emissions <- function (
   BY_data,
   ...,
   years = NULL,
+  pollutants = BY2011_POLLUTANTS,
   verbose = getOption("verbose")
 ) {
   
@@ -12,7 +13,7 @@ chart_BY_vs_DB_point_source_annual_emissions <- function (
     filter(
       cat_id %in% BY2011_sets[["Point sources"]]) %>%
     filter_pollutants(
-      BY2011_POLLUTANTS)
+      pollutants)
   
   if (is.null(years)) {
     years <- 
@@ -52,7 +53,7 @@ chart_BY_vs_DB_point_source_annual_emissions <- function (
           "data",
           "FROG11BY11.csv")) %>%
       filter_pollutants(
-        BY2011_POLLUTANTS) 
+        pollutants) 
     
     DB_layer_data <- 
       speciated_data %>%
