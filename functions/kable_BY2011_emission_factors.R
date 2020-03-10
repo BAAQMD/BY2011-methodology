@@ -50,17 +50,9 @@ kable_BY2011_emission_factors <- function (
       ef_qty) %>%
     set_names(
       format_pollutant(names(.))) %>%
-    kable(
+    kable_BY2011(
       escape = FALSE,
       caption = caption) %>%
-    kableExtra::kable_styling(
-      full_width = FALSE,
-      bootstrap_options = c(
-        #"striped", 
-        "condensed")) %>%
-    # kableExtra::footnote(
-    #   general = "Emission factors (pounds per unit throughput).",
-    #   general_title = "\n") %>%
     kableExtra::column_spec(
       1,
       color = "black")

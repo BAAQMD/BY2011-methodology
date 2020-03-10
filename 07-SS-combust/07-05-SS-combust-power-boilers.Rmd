@@ -1,0 +1,103 @@
+## Power Plants - Gas/Oil Boilers {#SS-combust-power-boilers}
+
+```{r SS-combust-power-boilers-setup}
+THESE_CATEGORIES <- c(
+  "#293 Gas Fired Boilers" = 293,
+  "#294 Oil Fired Boilers" = 294)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Categories 293 and 294 estimate criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and greenhouse gas emissions (CO~2~, CH~4~, and N~2~O) from gas and oil fired boilers at the steam turbine power plants in the San Francisco Bay Area. All of the large steam turbine/boiler type electric power plants are located in San Francisco and Contra Costa counties.
+
+A power generation plant which converts heat energy of fuel combustion into electrical energy by utilizing a steam turbine and alternator, is known as a steam turbine power plant. Steam is produced in the boiler by combusting fuel. The steam is then expanded in the turbine to spin the steam turbine. The steam turbine drives the alternator which converts mechanical energy of the turbine into electrical energy.
+
+Emissions from the gas and oil fired turbines at power plants are contained in Categories 1595 and 297.
+
+#### Methodology {-}
+
+Emissions for these categories were obtained from point source data only, as found in the District's data bank. Some of the boilers are of the "dual fuel" type, i.e.; they can either use natural gas (N.G.) or fuel oil. Presently only natural gas is used at the steam turbine/boiler type power plants.
+The Nitrogen Oxide (NO~x~) emission rates for the large steam power plants in the Bay Area have decreased over the years (from emission rate of about 0.15 lb. / MM BTU in 1990 to about 0.057 lb/ MM BTU in 2002).
+
+The District updates the data each year on a source-by-source basis using as input:
+
+1. Process material throughputs as reported by the power plants (this data is routinely updated)
+
+2. Emissions factors (these may be source specific as reported by the facility or general factors, i.e. from the Environmental Protection Agency (EPA))
+
+3. Emission control factors (device-specific or general - these may be supplied by the power plants also)
+
+Information on the specific sources allowed them to be identified as gas fired or oil fired boilers. Many of these sources may be of the "dual fuel" type, i.e., they are able to combust either gaseous or liquid fuel. EPA's document AP-42 contains emissions information on these types of sources.
+The fuel specific greenhouse gas emission coefficients for these categories were obtained from the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA), the U.S. Environmental Protection Agency’s (EPA’s) document AP-42, and the California Energy Commission (CEC).
+
+#### County Distribution {-}
+
+The District point source database contains county distribution information for each facility based on its location.
+
+#### Monthly Variation {-}
+
+Monthly variation of emissions is based on company reported quarterly throughput/activity data.
+
+### Trends {#SS-combust-power-boilers-trend}
+
+#### Historical {-}
+
+```{r SS-combust-power-boilers-emission-chart, fig.height=12, out.height=1200}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+```{r SS-combust-power-boilers-BY-vs-DB-chart, fig.height=18, out.height=1800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
+NO~x~ emissions from 1980 through 2002 were based on actual fuel usage data provided by power plants operating in the Bay Area. Emissions over the years have fluctuated by a factor of about 2.5 based on external factors, such as amount of rainfall and the availability of low cost hydroelectric power during that year. The NO~x~ emissions have varied from over 30 tons/day to as low as 10 tons/day.
+
+The fuel oil usage at the power plants has been decreasing over the years. Since 1996, electric utility power plants have been prohibited from burning fuel oil by District Regulation 9, Rule 11, except for emergency situations.
+The Bay Area boiler/steam turbine type power plant NO~x~ emissions have decreased from historical (e.g., 1994) levels of over 30 ton/day to about 1 ton/day in 2007. This was due to shutting down of the older inefficient boilers and the stringent Best Available Retrofit Control (BARCT) requirements of Regulation 9-11 for existing utility power plants (0.057 Lb/MMBTU or 48 ppm in 2003, 0.018 lb/MMBTU or 15 ppm in 2005) and the Best Available Control (BACT) requirements of Regulation 2-2 for new power plants (0.0089 lb/MMBTU or 7.5 ppm). NO~x~ emission concentrations are given in ppm by volume, dry basis at 15% O2.
+
+### Growth {-}
+
+```{r SS-combust-power-boilers-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
+```{r SS-combust-power-boilers-growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr,
+    facet_scales = "free_y") # category 294 has very large decline (~10,000%)
+```
+
+Emission projections were developed based on the electric power generation fuel usage forecasts by the California Energy Commission (CEC).
+
+#### Control {-}
+
+```{r SS-combust-power-boilers-control-chart, fig.height=8, out.height=800}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant) 
+```
+
+As noted above, District Regulation 9-11 and 2-2 control NO~x~ and CO emissions from fuel combustion in boilers at electric power plants in the Bay Area.
+
+***
+
+By: Sukarn Claire 
+Date: January 2014 
+Base Year: 2011

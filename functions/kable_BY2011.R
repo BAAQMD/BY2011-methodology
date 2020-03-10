@@ -2,8 +2,10 @@ kable_BY2011 <- function (
   kable_data,
   ...,
   caption = NULL,
-  style = c("basic", "hover", "compact"),
+  style = c("basic", "hover", "condensed"),
+  font_size = 14,
   position = "center",
+  full_width = FALSE,
   totals = "none",
   verbose = getOption("verbose")
 ) {
@@ -47,9 +49,10 @@ kable_BY2011 <- function (
   styled_kable_object <-
     kable_object %>%
     kableExtra::kable_styling(
-      style,
-      position = position,
-      full_width = FALSE) 
+      bootstrap_options = style,
+      font_size = font_size,
+      full_width = full_width,
+      position = position) 
   
   if (is_grouped_df(kable_data)) {
     

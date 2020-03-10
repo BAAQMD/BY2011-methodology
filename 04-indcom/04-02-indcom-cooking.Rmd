@@ -13,7 +13,7 @@ THESE_CATEGORIES <- c(
 
 This category includes particulate and volatile organic compound (VOC) emissions from the preparation of food for human consumption at eating establishments. Carbon dioxide (CO~2~), a greenhouse gas, is also emitted from cooking process in these three categories. Restaurant equipment that contributes to these emissions includes charbroilers (Category 29), deep fat fryers (Category 1710) and griddles (Category 1711). Charbroilers can either be conveyorized or under-fire; both types generally use natural gas, however, under-fire charbroilers may use solid fuels, such as charcoal or wood. Deep-fat fryers may be either gas-fired or electric to heat the cooking oil used to cook the food. Griddles use an exposed metal plate, heated by either gas or electricity, to cook the food.
 
-These categories do not include the products of combustion emissions from fuel usage (i.e. natural gas or solid fuels) at these establishments. Those emissions can be found in Categories [#307](#SS-combust-other_ext-NG), [#1590](#SS-combust-other_ext-NG), or [#312](SS-combust-other_ext-other_fuel).
+These categories do not include the products of combustion emissions from fuel usage (i.e. natural gas or solid fuels) at these establishments. Those emissions can be found in Categories [#307](#SS-combust-external-NG), [#1590](#SS-combust-external-NG), or [#312](SS-combust-external-other).
 
 #### Methodology {-}
 

@@ -2,6 +2,10 @@ kable_BY2011_quantities_by <- function (
   input_data,
   ...,
   caption = NULL,
+  style = c("basic", "hover", "condensed"),
+  font_size = 12,
+  position = "center",
+  full_width = FALSE,
   verbose = getOption("verbose")
 ) {
 
@@ -63,9 +67,10 @@ kable_BY2011_quantities_by <- function (
     kableExtra::pack_rows(
       index = table(kable_data[["cat_group"]])) %>%
     kableExtra::kable_styling(
-      c("condensed", "hover"),
-      full_width = FALSE,
-      font_size = 12) %>%
+      bootstrap_options = style,
+      full_width = full_width,
+      font_size = font_size,
+      position = position) %>%
     kableExtra::column_spec(
       1,
       color = "black") %>%

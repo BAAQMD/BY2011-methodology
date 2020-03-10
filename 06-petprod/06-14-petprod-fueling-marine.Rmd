@@ -1,0 +1,71 @@
+## Ship and Boat Fueling
+
+```{r petprod-fueling-marine-setup}
+THESE_CATEGORIES <- c(
+  "#81 Recreational Boat Fueling" = 81,
+  "#82 Ships & Tugboats Fueling" = 82,
+  "#83 Ferry & Fishing Boats Fueling" = 83)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+Emissions from these categories occur during the fueling of ships, tugboats, ferry boats, fishing boats, and recreational boats, including spillage and from the working and breathing emissions of storage tanks. Emissions result from vapor displacement to the atmosphere.
+
+#### Methodology {-}
+
+Fuel usage from Ships and Tugboats were estimated based on the number of ships data provided by the San Francisco Marine Exchange (see also Ships Categories). It was assumed that about 30 % of the fuel used by ships and tugboats were pumped in the Bay Area. Emission factors for gasoline station are used to calculate emissions.
+
+Fuel usage from Ferry boats were obtained from the major ferry and cruise operators in the Bay - i.e. the Golden Gate Bridge District (Ferry Division), Blue and Gold, and Red and White Fleet (see also Ferry Boats Category). Of the total registered boats, it was assumed that 75% were used for fishing activities. It was assumed further that an average of 4 hours was used per trip. Fuel rate was estimated at 5.24 gal per hour for an average engine size of 140 HP engine at 80% power load. Fuel usage was estimated based on this for the Fishing boats category.
+
+For recreational boats, the amount of fuel usage was estimated based on a KVB Study on gasoline use tax, the number of boats per DMV registration.
+
+Total organics emissions are determined by multiplying the estimated fuel usage in each of the category activity and the emission factor.
+
+#### Monthly Variation {-}
+
+Emissions from the Recreational Boats Fueling category were distributed into the nine counties based on KVB's report on "Inventory of Emissions from Boating Sources in California." Monthly emissions variations for the ships, ferry, and fishing boats fueling were estimated partly based on the ferry boats schedule and with the highest usage in the summer months.
+
+#### County Distribution {-}
+
+Emissions from recreational boat fueling category distributed into the nine counties are based on the number of boat registration in each county. County distribution are based on actual port location for Ferry, Ships and Tugboats
+
+### Trends
+
+#### History {-}
+
+```{r petprod-fueling-marine-emission-chart, fig.height=6, out.height=600}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+These categories were created to account for the organic emissions at filling stations during ship and boat refueling since 1987 Base Year emission inventory.
+
+#### Growth {-}
+
+```{r petprod-fueling-marine-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
+```{r petprod-fueling-marine-growth-chart, fig.height=8, out.height=800}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Projections are based on population growth for the Bay Area taken from the ABAG's 2009 Projections report.
+
+***
+
+By: Michael Nguyen 
+Date: January, 2014 
+Base Year 2011

@@ -1,0 +1,65 @@
+## Off Road Motorcycles & All Terrain Vehicles {#mobile-offroad-recreation}
+
+```{r mobile-offroad-recreation-setup}
+THESE_CATEGORIES <- c(
+  "#1763 Off-Road Motorcycles" = 1763, 
+  "#1764 All-Terrain Vehicles" = 1764, 
+  "#1765 Minibikes" = 1765, 
+  "#1766 Golf Carts" = 1766,
+  "#1767 Specialty Vehicles" = 1767, 
+  "#1768 Snowmobiles" = 1768)
+```
+
+### Emissions
+
+#### Introduction {-}
+
+These categories are used to inventory the emissions from off-road motorcycles and all- terrain vehicles (ATV).
+
+#### Methodologies {-}
+
+California Air Research Board (CARB) developed an off-road vehicle emission inventory (OFFROAD2007) model to estimate emissions from off-road motor vehicles for all counties and air basins in California. The OFFROAD model contains a comprehensive list of equipment from a wider range of categories. The criteria and GHG emissions for off-road motorcycles and all-terrain vehicles in the Bay Area were obtained from the CARB’s OFFROAD2007 model.
+Most of the annual activity takes place in spring, summer and fall. Weekend activity is about twice as high as weekdays.
+
+### Trends {#mobile-offroad-recreation-trend}
+
+#### History {-}
+
+```{r mobile-offroad-recreation-emission-chart, fig.height=12, out.height=1200}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+#### Growth {-}
+
+```{r mobile-offroad-recreation-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
+```{r mobile-offroad-recreation-growth-chart, fig.height=10, out.height=1000}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+Estimates for past and future year emissions were also taken from the OFFROAD2007 model. These data are based on Motorcycle Industry Council Reports on motorcycles and ATV sales that are published annually.
+
+#### Control {-}
+
+Emissions include expected benefits from ARB’s Re-Formulated Gasoline Phase I and Phase II (1992 and 1996 respectively) and Off-Road Recreational Vehicles Regulations beginning 1997. Control factors developed by ARB were used for projecting emissions.
+
+<span class="strike">Annual average emissions for these categories are shown in the next page.</span>
+
+***
+
+By: Amir Fanai/Michael Nguyen 
+Date: February, 2014
+Base Year 2011
