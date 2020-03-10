@@ -72,12 +72,13 @@ With a 7.3% loss rate and a factor of 7.91 pounds of combustible contents per sq
 
 $$
 \begin{eqnarray}
-\text{Loss}_{structural} + \text{Loss}_{content} &=& \\
-0.80 + 0.48 &=& 1.28\ ton/fire
+\text{Loss}_{total} &=& \text{Loss}_{structural} + \text{Loss}_{content} \\
+  &=& (0.80 + 0.48)\ \text{ton/fire} \\
+  &=& 1.28\ \text{ton/fire}
 \end{eqnarray}
 $$
 
-#### Emission Factors {- #misc-fire-struct-EF}
+#### Emission Factors {- #misc-fire-struct-emfac}
 
 Structural fire emission factors in pounds per ton of material burned for TOG, CO and PM were obtained from the results of tests on the burning of model wood buildings. The emission factor for NO~x~ was assumed to be similar to that listed in AP-42 for municipal refuse. These emission factors were converted to units of pounds per fire using the factor 1.28 ton/fire. The criteria pollutant composite emission factors (pound/fire) are as follow:
 
