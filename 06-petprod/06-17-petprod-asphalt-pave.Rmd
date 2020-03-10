@@ -63,6 +63,13 @@ Since the early 1980’s, the Asphalt Institute has done the reporting of asphal
 
 #### Growth {-}
 
+```{r petprod-asphalt-pave-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r petprod-asphalt-pave-growth-chart, fig.height=5, out.height=500}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

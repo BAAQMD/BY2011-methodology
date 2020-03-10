@@ -108,6 +108,13 @@ The historical data utilized in the OFFROAD model are based on a report for the 
 
 #### Growth {-}
 
+```{r mobile-offroad-diesel-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r mobile-offroad-diesel-growth-chart}
 #
 # All of these categories are assigned the same growth profile, so let's just plot that.

@@ -65,6 +65,13 @@ kable_data %>%
 
 #### Growth {-}
 
+```{r petprod-portable_spillage-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r petprod-portable_spillage-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

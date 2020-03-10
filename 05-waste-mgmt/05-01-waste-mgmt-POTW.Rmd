@@ -1,6 +1,6 @@
 ## Publicly Owned Treatment Work
 
-```{r waste-mgmt-POTWs-setup}
+```{r waste-mgmt-POTW-setup}
 THESE_CATEGORIES <- c(
   "#50 POTWs (Point)" = 50,
   "#1911 POTWs (Area)" = 1911)
@@ -32,7 +32,7 @@ The county location of each processing plant as reported in the databank is used
 
 #### History {-}
 
-```{r waste-mgmt-POTWs-emission-chart, fig.height=8, out.height=800}
+```{r waste-mgmt-POTW-emission-chart, fig.height=8, out.height=800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -44,7 +44,14 @@ The historical growth profile for Category 50 was based on a combination of prio
 
 #### Growth {-}
 
-```{r waste-mgmt-POTWs-growth-chart, fig.height=6, out.height=600}
+```{r waste-mgmt-POTW-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
+```{r waste-mgmt-POTW-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

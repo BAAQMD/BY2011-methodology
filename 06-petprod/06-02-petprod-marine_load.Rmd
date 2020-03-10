@@ -109,6 +109,13 @@ Prior years’ growth factors for these categories were based on historical data
 
 #### Growth {-}
 
+```{r petprod-marine_load-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r petprod-marine_load-growth-chart, fig.height=20, out.height=2000}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

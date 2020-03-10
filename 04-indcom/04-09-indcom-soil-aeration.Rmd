@@ -41,6 +41,13 @@ State regulations governing the construction standards of gasoline holding tanks
 
 #### Growth {-}
 
+```{r indcom-soi-aeration-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r indcom-soil-aeration-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

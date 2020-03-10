@@ -74,6 +74,13 @@ Structural pesticide, Methyl Bromide (Cat. 1192) was phased out in 2001.
 
 #### Growth {-}
 
+```{r misc-pesticide-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r misc-pesticide-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

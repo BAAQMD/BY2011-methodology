@@ -49,6 +49,13 @@ The historical growth profile was based on a combination of prior permit data (b
 
 #### Growth {-}
 
+```{r indcom-mfg-wood-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r indcom-mfg-wood_products-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

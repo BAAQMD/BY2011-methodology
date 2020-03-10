@@ -1,6 +1,6 @@
 ## Pharmaceuticals & Cosmetics
 
-```{r chem-fac-pharms-setup}
+```{r chem-fac-pharm-setup}
 THESE_CATEGORIES <- c(
   "#25 Pharmaeuticals & Cosmetics (Point)" = 25,
   "#1897 Pharmaeuticals & Cosmetics (Area)" = 1897)
@@ -40,7 +40,7 @@ The ratio of each County's population was used to distribute emission into count
 
 #### History {-}
 
-```{r chem-fac-pharms-emission-chart, fig.height=10, out.height=1000}
+```{r chem-fac-pharm-emission-chart, fig.height=10, out.height=1000}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -48,7 +48,7 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
-```{r chem-fac-pharms-BY-vs-DB-chart, fig.height=12, out.height=1200}
+```{r chem-fac-pharm-BY-vs-DB-chart, fig.height=12, out.height=1200}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -59,7 +59,14 @@ Emissions through the years were estimated by using the estimated solvent usage 
 
 #### Growth {-}
 
-```{r chem-fac-pharms-growth-chart}
+```{r chem-fac-pharm-general-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
+```{r chem-fac-pharm-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -71,7 +78,7 @@ Emissions through the year 2030 are projected according to estimated growth pred
 
 #### Control {-}
 
-```{r chem-fac-pharms-control-chart}
+```{r chem-fac-pharm-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

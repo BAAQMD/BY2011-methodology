@@ -1,6 +1,6 @@
 kable_BY2011_growth_crosswalk <- function (
   input_data,
-  caption = "Growth profile flags (DataBank, {DataBank:::DB_activity_tbl(BY(2011))})."
+  caption = "Growth profile configuration (DataBank, {DataBank:::DB_activity_tbl(BY(2011))})."
 ) {
   
   kable_data <-

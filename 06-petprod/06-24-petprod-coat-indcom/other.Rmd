@@ -30,6 +30,13 @@ BY2011_annual_area_source_emission_factor_data %>%
 
 ##### Growth {-}
 
+```{r petprod-coat-indcom-other-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    OTHER_COATING_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r petprod-coat-indcom-other-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

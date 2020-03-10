@@ -2,6 +2,7 @@ kable_BY2011 <- function (
   kable_data,
   ...,
   caption = NULL,
+  style = c("basic", "hover", "compact"),
   position = "center",
   totals = "none",
   verbose = getOption("verbose")
@@ -46,7 +47,7 @@ kable_BY2011 <- function (
   styled_kable_object <-
     kable_object %>%
     kableExtra::kable_styling(
-      c("basic", "hover"),
+      style,
       position = position,
       full_width = FALSE) 
   

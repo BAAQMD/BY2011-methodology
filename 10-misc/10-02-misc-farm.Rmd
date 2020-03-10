@@ -136,6 +136,13 @@ For Category 1435, the historical growth profile was based on a combination of p
 
 #### Growth {-}
 
+```{r misc-farm-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r misc-farm-growth-chart, fig.height=4, out.height=400}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

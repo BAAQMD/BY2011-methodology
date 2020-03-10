@@ -244,7 +244,7 @@
 <p>The crop specific PM<sub>10</sub> emission factors are calculated by multiplying a land preparation emission factor (i.e. root cutting, discing, rippling, weeding, land planning, etc.) with the number of passes performed per acre that are needed to prepare a field for planting a particular crop (acre-pass). A crop may have multiple land preparation operations with its corresponding number of acre-passes. In this case, the crop specific emission factor is the sum of acre-pass weighted emission factor for each land preparation operation. For example, the crop PM<sub>10</sub> emission factor for garlic is as follows:</p>
 <table class="table table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:misc-farm-emfac-example-table">Table 10.1: </span>Crop-specific PM<sub>10</sub> emission factor for garlic (lb/acre-yr).
+<span id="tab:misc-farm-emfac-example-table">Table 10.2: </span>Crop-specific PM<sub>10</sub> emission factor for garlic (lb/acre-yr).
 </caption>
 <thead>
 <tr>
@@ -425,6 +425,57 @@ Each of the county’s crops are estimated in this fashion and then summed for t
 </div>
 <div id="growth-101" class="section level4 unnumbered">
 <h4>Growth</h4>
+<table class="table table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:misc-farm-growth-crosswalk">Table 10.3: </span>Growth profile configuration (DataBank, t1325).
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+category
+</th>
+<th style="text-align:left;">
+backcast
+</th>
+<th style="text-align:left;">
+forecast
+</th>
+<th style="text-align:left;">
+profile
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+#749 Agricultural Land Preparation
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+#853 Aglandprep(2000-2010trnddata
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+#1435 Agricultural Harvest Operations
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+#854 Agharvop(2000-2009trnddata)
+</td>
+</tr>
+</tbody>
+</table>
 <p><img src="BY2011-methodology_files/figure-html/misc-farm-growth-chart-1.svg" width="800" height="400" /></p>
 <p>Projected emissions to 2030 for both categories were based on ARB’s growth profile for Agricultural Operations. For the Bay Area, this amounts to a 0.1% decrease in activity per year.</p>
 <p>For Categories 749 and 1435, the projected growth profile was based on emissions data from 2000 – 2010. The annual activity factors during this time period decreased by 0.004692 and 0.004777 per year, respectively.</p>

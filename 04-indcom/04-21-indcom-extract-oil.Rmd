@@ -60,6 +60,13 @@ Since late 1980s, California oil production has been declining. Oil production i
 
 #### Growth {-}
 
+```{r indcom-extract-oil-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r indcom-extract-oil-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

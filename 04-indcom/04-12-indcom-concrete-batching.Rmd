@@ -60,6 +60,13 @@ The historical growth profiles for both categories was based on a combination of
 
 #### Growth {-}
 
+```{r indcom-concrete-batching-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r indcom-concrete-batching-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

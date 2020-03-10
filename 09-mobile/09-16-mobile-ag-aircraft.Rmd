@@ -55,6 +55,13 @@ Emissions throughout the years were estimated based on CARB's growth profile on 
 
 #### Growth {-}
 
+```{r mobile-ag-aircraft-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r mobile-ag-aircraft-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

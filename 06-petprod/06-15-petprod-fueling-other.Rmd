@@ -40,6 +40,13 @@ These categories were created to account for the organic emissions at other fuel
 
 #### Growth {-}
 
+```{r petprod-fueling-other-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r petprod-fueling-other-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

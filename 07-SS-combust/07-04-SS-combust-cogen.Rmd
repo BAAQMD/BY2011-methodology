@@ -62,6 +62,13 @@ Historical emissions have varied with fuel usage activity. Prior to Base Year 19
 
 #### Growth {-}
 
+```{r SS-combust-cogen-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r SS-combust-cogen-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

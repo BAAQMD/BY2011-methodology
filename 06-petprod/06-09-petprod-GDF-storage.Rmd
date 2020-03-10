@@ -49,6 +49,13 @@ Emissions for these categories had been reduced due to Phase I and II vapor bala
 
 #### Growth {-}
 
+```{r petprod-GDF-storage-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r petprod-GDF-storage-growth-chart, fig.height=12, out.height=1200}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

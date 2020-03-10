@@ -57,6 +57,13 @@ Emission data from 1990 – 1999 was based on trend data from CARB’s 1990 – 
 
 #### Growth {-}
 
+```{r misc-ODSS-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 <div class="FIXME">
 **FIXME: Double-check whether these are consistent with the year-over-year changes in emissions (shown in figure above). BY2011 throughputs for these categories were not recorded in DataBank. **
 </div>

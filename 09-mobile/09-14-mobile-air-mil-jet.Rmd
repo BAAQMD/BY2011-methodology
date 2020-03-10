@@ -73,6 +73,13 @@ Emissions through the years were based on the reported and/or estimated number o
 
 #### Growth {-}
 
+```{r mobile-air-mil-jet-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r mobile-air-mil-jet-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

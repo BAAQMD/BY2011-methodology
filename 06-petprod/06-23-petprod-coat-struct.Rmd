@@ -133,6 +133,13 @@ The historical growth profiles were based on a combination prior emissions data 
 
 #### Growth {-}
 
+```{r petprod-coat-struct-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 <div class="FIXME">
 **FIXME: INSERT TABLE HERE**
 </div>

@@ -84,6 +84,13 @@ In previous base years, emissions from paved road dust travel were assumed to gr
 
 #### Growth {- #misc-road-paved-growth}
 
+```{r misc-road-paved-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r misc-road-paved-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

@@ -57,6 +57,13 @@ Prior to Base Year 2005, the throughput had been obtained from the "Final Grape 
 
 #### Growth {-}
 
+```{r indcom-winery-fermentation-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r indcom-winery-fermentation-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

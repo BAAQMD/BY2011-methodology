@@ -85,6 +85,13 @@ BY2011_annual_emission_data %>%
 
 #### Growth {-}
 
+```{r indcom-mfg-semicond-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r indcom-mfg-semicond-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

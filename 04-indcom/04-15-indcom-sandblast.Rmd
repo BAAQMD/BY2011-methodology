@@ -136,6 +136,13 @@ The historical growth profile (back to 1987) for point sources (Category 42) was
 
 #### Growth {-}
 
+```{r indcom-sandblast-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r indcom-sandblast-growth-chart}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

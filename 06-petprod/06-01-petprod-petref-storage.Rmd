@@ -69,6 +69,13 @@ Historical emissions have varied with refinery throughputs.
 
 #### Growth {-}
 
+```{r petprod-petref-storage-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r petprod-petref-storage-growth-chart, fig.height=14, out.height=1400}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

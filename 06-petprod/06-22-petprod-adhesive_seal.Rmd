@@ -53,6 +53,13 @@ Emissions through the years were estimated based on ARB's growth data on the con
 
 #### Growth {-}
 
+```{r petprod-adhesive_seal-growth-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r petprod-adhesive_seal-growth-chart, fig.height=5, out.height=500}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

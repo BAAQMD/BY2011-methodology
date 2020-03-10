@@ -245,7 +245,7 @@
 <p>(Note: It is assumed some districts, including the BAAQMD, do not use Rapid-cure Cutback Asphalt.) County throughputs can be apportioned from the state’s total using the miles of paved roads in each of the counties. This data was acquired from the States’ Teale Data Center. The organic emission factors used for hot-mix, emulsified, and road oils were 0.04, 17.9, and 2.19 lb/ton of asphalt applied, respectively. (Note—the initial emission factor used for road oils was 88 lbs./ton. This was an EPA recommended value; however, regulatory controls reduced this value to the level stated above.) The total emissions for area source categories are determined by multiplying the emission factor, throughput, and rule effectiveness factor, if applicable.</p>
 <table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:petprod-asphalt-pave-emfac-table">Table 6.6: </span>Emission factors (lb/ton).
+<span id="tab:petprod-asphalt-pave-emfac-table">Table 6.14: </span>Emission factors (lb/ton).
 </caption>
 <thead>
 <tr>
@@ -303,6 +303,85 @@ TOG
 </div>
 <div id="growth-49" class="section level4 unnumbered">
 <h4>Growth</h4>
+<table class="table table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:petprod-asphalt-pave-growth-crosswalk">Table 6.15: </span>Growth profile configuration (DataBank, t1325).
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+category
+</th>
+<th style="text-align:left;">
+backcast
+</th>
+<th style="text-align:left;">
+forecast
+</th>
+<th style="text-align:left;">
+profile
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+#94 Rapid-cure Cutback
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+#649 Transportation &amp; Utility Emp
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+#95 Road Oils
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+#828 Road Oils (Modgc649)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+#96 Hot Mix Asphalt
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+#829 Asphalt Cement (Modgc649)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+#97 Emulsified Asphalt
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+TRUE
+</td>
+<td style="text-align:left;">
+#830 Emulsifiedasphalt (Modgc649)
+</td>
+</tr>
+</tbody>
+</table>
 <p><img src="BY2011-methodology_files/figure-html/petprod-asphalt-pave-growth-chart-1.svg" width="800" height="500" /></p>
 <p>Future projections of emissions to 2030 are also based on ABAG’s 2009 Transportation, Communication, and Utility Employment growth profile.</p>
 </div>

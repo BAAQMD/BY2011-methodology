@@ -50,10 +50,16 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-
 The historical growth profile was based on the Association of Bay Area Government’s Population data.
 
 #### Growth {-}
+
+```{r misc-smoking-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
 
 ```{r misc-smoking-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
