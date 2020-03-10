@@ -42,7 +42,7 @@ County population was used to distribute emissions for each county.
 
 #### History {-}
 
-```{r misc-smoking-emission-chart, fig.height=8, out.height=800}
+```{r misc-smoking-emission-chart, fig.height=10, out.height=1000}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -55,7 +55,7 @@ The historical growth profile was based on the Association of Bay Area Governmen
 
 #### Growth {-}
 
-```{r misc-smoking-growth-chart, fig.height=4, out.height=400}
+```{r misc-smoking-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

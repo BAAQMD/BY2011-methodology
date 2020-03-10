@@ -32,12 +32,19 @@ The county, month, and day factors were derived based on information gather from
 
 #### Historical {-}
 
-```{r SS-combust-petref-emission-chart, fig.height=12, out.height=1200}
+```{r SS-combust-petref-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
   chart_BY2011_annual_emissions_by(
     fill = category) 
+```
+
+```{r SS-combust-petref-other-BY-vs-DB-chart, fig.height=18, out.height=1800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
 Emissions prior to 1987 were derived from Base Year 1983 trend values. Past base year historical emissions include interchangeable emission reduction credits (IERC) which were part of category 10. IERC banking emissions are now inventoried under categories 298-300. Also, flare source emissions from categories 298 and 299 are now accounted for in category 15.

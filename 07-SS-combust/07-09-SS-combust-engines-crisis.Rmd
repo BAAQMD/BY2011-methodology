@@ -1,4 +1,4 @@
-## Back-up Diesel Generator
+## Back-up Diesel Generator {#SS-combust-engines-crisis}
 
 ```{r SS-combust-engines-crisis-setup}
 THESE_CATEGORIES <- c(

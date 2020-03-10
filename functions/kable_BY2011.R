@@ -9,12 +9,31 @@ kable_BY2011 <- function (
   
   if (totals == "row") {
     
-    # Do the math
     kable_data <-
       kable_data %>%
       janitor::adorn_totals(
         where = "row",
         fill = "")
+    
+  } else if (totals %in% c("col", "column")) {
+    
+    num_data <-
+      select_if(
+        kable_data,
+        ~ is.numeric(.))
+    
+    summed <-
+      preduce(num_data, add)
+    
+    kable_data <-
+      bind_cols(
+        kable_data,
+        tibble(Total = summed))
+    
+    class(kable_data$Total) <- 
+      reduce(
+        map(num_data, class),
+        intersect)
     
   }
   
@@ -29,10 +48,7 @@ kable_BY2011 <- function (
     kableExtra::kable_styling(
       c("basic", "hover"),
       position = position,
-      full_width = FALSE) %>%
-    kableExtra::column_spec(
-      1,
-      color = "black")
+      full_width = FALSE) 
   
   if (is_grouped_df(kable_data)) {
     
@@ -43,7 +59,7 @@ kable_BY2011 <- function (
     if (length(group_var) > 1) {
       stop("[kable_BY2011] 2+ groups not yet supported, sorry.")
     }
-      
+    
     styled_kable_object <- 
       styled_kable_object %>%
       kableExtra::pack_rows(

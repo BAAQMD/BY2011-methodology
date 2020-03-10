@@ -30,7 +30,7 @@ Emissions are distributed to the counties based on the location of the processin
 
 #### History {-}
 
-```{r indcom-mfg-wood_products-emission-chart}
+```{r indcom-mfg-wood_products-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

@@ -1,4 +1,4 @@
-## Composting
+## Composting {#waste-mgmt-compost}
 
 ```{r waste-mgmt-compost-setup}
 THESE_CATEGORIES <- c(
@@ -82,7 +82,7 @@ The emissions are assumed to be distributed evenly throughout the year.
 
 The county distribution was based on the location as found in the District databank or SWIS data mentioned above.
 
-### Trends
+### Trends {#waste-mgmt-compost-trends}
 
 #### History {-}
 
@@ -122,7 +122,9 @@ Base Year 2011
 
 #### Emission Factors {-}
 
-> Emission factors for category #1936 vary by time. (This is not common in the BY2011 inventory.) **Note: #1936 is a point-source category. (?)**
+```{block type="note"}
+Emission factors for category #1936 vary by time. This is not common in the BY2011 inventory. #1936 is a point-source category; this is even rarer.
+```
 
 ```{r waste-mgmt-compost-emfac-chart, fig.height=6, out.height=600}
 BY2011_annual_area_source_emission_factor_data %>%

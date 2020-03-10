@@ -29,7 +29,7 @@ The monthly distribution is estimated based on data from the company's reported 
 
 #### History {-}
 
-```{r chem-fac-resins-emission-chart, fig.height=12, out.height=1200}
+```{r chem-fac-resins-emission-chart, fig.height=10, out.height=1000}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -37,11 +37,18 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
+```{r chem-fac-resins-BY-vs-DB-chart, fig.height=14, out.height=1400}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
 Emissions have increased due to increasing demand from related industries, such as plastics and coating manufacturers. District Regulation 8, Rule 36, limiting emissions from resin manufacturing operations was adopted in June 1984.
 
 #### Growth {-}
 
-```{r chem-fac-resins-growth-chart}
+```{r chem-fac-resins-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -53,7 +60,7 @@ Projections to year 2030 were based on growth profile of ARB's Chemical Manufact
 
 #### Control {-}
 
-```{r chem-fac-resins-control-chart}
+```{r chem-fac-resins-control-chart, fig.height=3, out.height=300}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

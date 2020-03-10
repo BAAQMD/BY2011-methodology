@@ -31,3 +31,22 @@ h5 {
 .FIXME {
   color: red;
 }
+div.note {
+  margin-top: 2em; 
+  margin-bottom: 2em;
+  padding-left: 1em;
+  border-left: 2px solid #D34145;
+  font-style: italic;
+  /* background-color: #FFFF99; */
+}
+.note code {
+  font-style: normal;
+}
+.note::before {
+  content: "NOTE: ";
+  font-weight: bold;
+  float: left;
+  margin: 0em;
+  padding: 0em;
+  padding-right: 0.5em;
+}

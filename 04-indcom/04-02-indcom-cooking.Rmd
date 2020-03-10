@@ -61,7 +61,7 @@ Projections to year 2030 were based on ABAG’s 2009 Total Population growth pro
 
 #### Control {- #indcom-cooking-control}
 
-```{r indcom-cooking-control-chart}
+```{r indcom-cooking-control-chart, fig.height=3, out.height=300}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

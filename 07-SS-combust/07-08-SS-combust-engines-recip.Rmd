@@ -46,7 +46,7 @@ Monthly variation of emissions is based on company reported quarterly throughput
 
 #### History {-}
 
-```{r SS-combust-engines-recip-emission-chart, fig.height=12, out.height=1200}
+```{r SS-combust-engines-recip-emission-chart, fig.height=16, out.height=1600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -58,7 +58,7 @@ For Category 302, emissions have been extremely low and constant over the past y
 
 #### Growth {-}
 
-```{r SS-combust-engines-recip-growth-chart}
+```{r SS-combust-engines-recip-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

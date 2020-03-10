@@ -79,6 +79,13 @@ The 1981 emissions and tonnage burned data was used to develop emission factors 
 
 #### Growth {-}
 
+```{r waste-burn-planned_ag-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r waste-burn-planned_ag-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

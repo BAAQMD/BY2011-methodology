@@ -44,24 +44,17 @@ kable_data <-
     county = codec::decode(cnty_id, DST_COUNTY_NAMES)) %>%
   tabulate_throughputs_by(
     county,
-    year,
     digits = 0) %>%
   drop_vars(
-    tput_unit) 
+    tput_unit) %>%
+  mutate_at(
+    vars(everything()),
+    ~ formattable::accounting(., digits = 0))
 
 kable_data %>%
-  rename(
-    County = county) %>%
-  janitor::adorn_totals(
-    "row") %>%
-  mutate_at(
-    vars(starts_with("CY")),
-    ~ formattable::accounting(., digits = 0)) %>%
   kable_BY2011(
-    caption = "Acreage burned.") %>%
-  kableExtra::row_spec(
-    nrow(kable_data) + 1,
-    bold = TRUE)
+    totals = "column",
+    caption = "Acreage burned.")
 ```
 
 Other sources for the vegetation combustion emissions related information are the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA); the Environmental Protection Agency’s (EPA’s) document AP-42, and the California Energy Commission (CEC).
@@ -90,7 +83,7 @@ Prior to Base Year 2002 wildfire category 1580 was split into two categories, ca
 
 #### Growth {-}
 
-```{r misc-fire-veg-growth-chart, fig.height=6, out.height=600}
+```{r misc-fire-veg-growth-chart, fig.height=4, out.height=400}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

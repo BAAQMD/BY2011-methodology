@@ -41,7 +41,7 @@ State regulations governing the construction standards of gasoline holding tanks
 
 #### Growth {-}
 
-```{r indcom-soil-aeration-growth-chart}
+```{r indcom-soil-aeration-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -57,7 +57,7 @@ The number of excavation events remained at close to the 1990 rate through 1998 
 
 #### Control {-}
 
-```{r indcom-soil-aeration-control-chart}
+```{r indcom-soil-aeration-control-chart, fig.height=3, out.height=300}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

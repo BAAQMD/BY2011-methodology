@@ -1,4 +1,4 @@
-## Non-Gasoline Terminals and Bulk Plants Storage
+## Non-Gasoline Terminals and Bulk Plants Storage {#petprod-bulk_term-other}
 
 ```{r petprod-bulk_term-other-setup}
 THESE_CATEGORIES <- c(
@@ -23,7 +23,7 @@ The data bank contains percentage of throughput data for each seasonal quarter: 
 
 Emissions distributed into counties were based on locations of the plants in the Bay Area.
 
-### Trends
+### Trends {#petprod-bulk_term-trend}
 
 #### History {-}
 
@@ -35,11 +35,18 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
+```{r petprod-bulk_term-other-BY-vs-DB-chart, fig.height=8, out.height=800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
 Historical data was based on past years gasoline consumption obtained from California Taxable Gasoline Sales in the Bay Area. Prior to 1999 Base Year source inventory, this category had been included from storage tank at bulk plants and terminals categories.
 
 #### Growth {-}
 
-```{r petprod-bulk_term-other-growth-chart}
+```{r petprod-bulk_term-other-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -51,7 +58,7 @@ The reported year-to-year variation in emissions is due to changes in either the
 
 #### Control {-}
 
-```{r petprod-bulk_term-other-control-chart}
+```{r petprod-bulk_term-other-control-chart, fig.height=3, out.height=300}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

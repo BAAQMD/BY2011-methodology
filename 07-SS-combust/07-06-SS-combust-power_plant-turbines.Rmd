@@ -1,4 +1,4 @@
-## Power Plants: Gas/Oil Turbines
+## Power Plants: Gas/Oil Turbines {#SS-combust-power_plant-turbines_and_distrib}
 
 ```{r SS-combust-power_plant-turbines_and_distrib-setup}
 THESE_CATEGORIES <- c(
@@ -19,6 +19,7 @@ Modern, highly efficient power plants use the gas turbine Combined Cycle (CC). A
 Category 1596 contains estimates of fugitive emissions of Sulfur Hexafluoride (SF6) from power transmission and distribution system in the Bay Area. SF6 is an inorganic very potent greenhouse gas. SF6 is used in the electrical industry as a gaseous dielectric medium for high-voltage circuit breakers, switchgear, and other electrical equipment. SF6 gas has a much higher dielectric strength than air or dry nitrogen that makes it possible to significantly reduce the size of electrical gear.
 
 Indirect greenhouse gas emission estimates from electricity imports to the Bay Area are accounted for in Category 1597.
+
 Emissions from gas and oil fired steam turbine/boiler type electric power plants are covered in Categories 293 and 294.
 
 #### Methodology {-}
@@ -48,11 +49,18 @@ The District point source database contains county distribution information for 
 
 Monthly variation of emissions is based on company reported quarterly throughput data for C297 and C1595. Uniform activity is assumed for C1596 and C1597.
 
-### Trends
+### Trends {#SS-combust-power_plant-turbines_and_distrib-trend}
 
 #### History {-}
 
-```{r SS-combust-power_plant-turbines_and_distrib-emission-chart, fig.height=8, out.height=800}
+```{r SS-combust-power_plant-turbines_and_distrib-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
+```{r SS-combust-power_plant-turbines_and_distrib-emission-chart, fig.height=14, out.height=1400}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

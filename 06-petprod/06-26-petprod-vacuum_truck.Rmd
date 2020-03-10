@@ -41,7 +41,7 @@ Vacuum truck historical growth rate was based on data from studies and historica
 
 #### Growth {- #petprod-vacuum_truck-growth}
 
-```{r petprod-vacuum_truck-growth-chart}
+```{r petprod-vacuum_truck-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -53,7 +53,7 @@ Projected growth for vacuum truck at refineries, bulk, and marine terminals is r
 
 #### Control {-}
 
-```{r petprod-vacuum_truck-control-chart}
+```{r petprod-vacuum_truck-control-chart, fig.height=3, out.height=300}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

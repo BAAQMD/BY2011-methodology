@@ -29,7 +29,7 @@ The county location of each company as reported in the Data Bank is used to dist
 
 #### History {-}
 
-```{r indcom-food_ag-other-emission-chart, fig.height=12, out.height=1200}
+```{r indcom-food_ag-other-emission-chart, fig.height=14, out.height=1400}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -41,7 +41,7 @@ The historical growth profile was based on a combination of prior emissions data
 
 #### Growth {-}
 
-```{r indcom-food_ag-other-growth-chart}
+```{r indcom-food_ag-other-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -55,7 +55,7 @@ Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing & Who
 
 Emissions through the years were estimated by using agricultural production data in the District. In 1963-1964 there was at least 50% reduction of particulate emissions from equipment such as coffee roaster and food dryers brought about by the District's Regulation 6 on visible emissions from the Ringlemann 2 standard. In 1970 there was at least an additional 25% reduction in particulates from the Ringlemann 1 standard. Currently, there is an estimated 98% overall control of particulates from this category.
 
-```{r indcom-food_ag-other-control-chart}
+```{r indcom-food_ag-other-control-chart, fig.height=3, out.height=300}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

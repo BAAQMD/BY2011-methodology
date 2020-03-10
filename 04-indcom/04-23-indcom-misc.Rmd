@@ -1,4 +1,4 @@
-## Other Miscellaneous Industrial/Commercial
+## Other Miscellaneous Industrial/Commercial {#indcom-misc}
 
 ```{r indcom-misc-setup}
 THESE_CATEGORIES <- c(
@@ -27,9 +27,9 @@ The data bank system contains information on the county location of each process
 
 ### Trends
 
-#### History {-}
+#### History {- #indcom-misc-history}
 
-```{r indcom-misc-emission-chart, fig.height=12, out.height=1200}
+```{r indcom-misc-emission-chart, fig.height=16, out.height=1600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -41,7 +41,7 @@ The historical growth profile was based on a combination of prior emissions data
 
 #### Growth {-}
 
-```{r indcom-misc-growth-chart}
+```{r indcom-misc-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

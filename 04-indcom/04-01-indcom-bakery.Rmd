@@ -33,7 +33,7 @@ The county locations and associated emissions of each of the large bakeries were
 
 #### History
 
-```{r indcom-bakery-emission-chart, fig.height=8, out.height=800}
+```{r indcom-bakery-emission-chart, fig.height=10, out.height=1000}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -64,7 +64,7 @@ Emissions projections to 2030 were also based on ABAG’s 2009 Manufacturing and
 
 #### Control {-}
 
-```{r indcom-bakery-control-chart}
+```{r indcom-bakery-control-chart, fig.height=3, out.height=300}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

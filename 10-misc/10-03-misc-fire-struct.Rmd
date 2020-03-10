@@ -30,20 +30,26 @@ struct_fire_data <-
     "Bathroom", 6.32, 7.0,
     "Laundry", 8.08, 7.2,
     "Office", 0.17, 7.9,
-    "Other", 0.13, 9.6) 
+    "Other", 0.13, 9.6) %>%
+  mutate_at(
+    vars(freq),
+    ~ . / 100.0) # convert to fraction (0 to 1)
 
 # Prepare for `kable()`.
 # Convert to fractions; compute products; add a "total" row.
 struct_fire_kable_content <-
   struct_fire_data %>%
   mutate(
-    freq = formattable::percent(
-      freq / 100.0,
-      digits = 1)) %>%
-  mutate(
-    wt_avg = freq * load) %>%
-  bind_rows(
-    summarise(., wt_avg = sum(wt_avg)))
+    wt_avg = freq * load / sum(freq)) %>%
+  mutate_at(
+    vars(wt_avg),
+    ~ formattable::accounting(., digits = 1)) %>%
+  mutate_at(
+    vars(freq),
+    ~ format_percentage(., digits = 1)) %>%
+  mutate_at(
+    vars(load),
+    ~ as.character(.))
 
 # Humanize column names; add footnote symbols.
 names(struct_fire_kable_content) <- c(
@@ -53,27 +59,21 @@ names(struct_fire_kable_content) <- c(
   str_c("Weighted<br/>Average", footnote_marker_symbol(1)))
 
 struct_fire_kable_content %>%
-  mutate_at(
-    vars(2),
-    ~ formattable::percent(., digits = 1)) %>%
   kable_BY2011(
+    escape = FALSE,
+    align = "lrrr",
+    totals = "row",
     caption = "Combustible contents (Source: National Bureau of Standards).") %>%
   kableExtra::footnote(
-    symbol = "lb / sq. ft") %>%
-  kableExtra::column_spec(
-    4, 
-      italic = TRUE) %>%
-    kableExtra::row_spec(
-      nrow(struct_fire_kable_content),
-      bold = TRUE)
+    symbol = "lb / sq. ft")
 ```
 
 With a 7.3% loss rate and a factor of 7.91 pounds of combustible contents per square foot, and assuming an average floor space of 1300 square feet, the content loss for the average residential fire would be: $1649 \times 0.073 \times 7.91 \div 2000$ = `r { set_units(1649, "ft^2") * (0.073) * set_units(7.91, "lb/ft^2") } %>% set_units("ton") %>% round(digits = 2) %>% drop_units()` (ton/fire).
 
 $$
 \begin{eqnarray}
-  \text{Loss}_{structural} + \text{Loss}_{content} &=& \\
-  0.80 + 0.48 &=& 1.28\ ton/fire
+\text{Loss}_{structural} + \text{Loss}_{content} &=& \\
+0.80 + 0.48 &=& 1.28\ ton/fire
 \end{eqnarray}
 $$
 
@@ -120,7 +120,7 @@ Historical trends are based on data from the State Fire Marshal’s Office and h
 
 #### Growth {-}
 
-```{r misc-fire-struct-growth-chart, fig.height=5, out.height=500}
+```{r misc-fire-struct-growth-chart, fig.height=4, out.height=400}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

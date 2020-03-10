@@ -69,12 +69,18 @@ table_data <-
     "112, 1898", "Lithographic Printing (point and area)",
     "115, 1899", "Silkscreen Printing (point and area source)",
     "116, 1900", "Small In‐house Printing (point and area source)",
-    "253, 257, 259, 261, 263 ,265, 267, 269, 271, 273, 275, 277, 279, 281, 1915, 1917, 1919, 1921, 1923, 1925, 1927, 1929, 1931, 1933", "Various Industrial/Commercial Coatings Clean‐up Solvents (point and area sources)",
+    "253, 257, 259, 261, 263, 265, 267, 269, 271, 273, 275, 277, 279, 281, 1915, 1917, 1919, 1921, 1923, 1925, 1927, 1929, 1931, 1933", "Various Industrial/Commercial Coatings Clean‐up Solvents (point and area sources)",
     "282", "Other Organics Evaporation (point source)")
 
 table_data %>%
   kable_BY2011(
-    caption = "Hand wiping emissions to be subtracted from the total value.")
+    caption = "Hand wiping emissions to be subtracted from the total value.") %>%
+  kableExtra::column_spec(
+    column = 1,
+    width = "12em") %>%
+  kableExtra::column_spec(
+    column = 2,
+    width = "26em")
 ```
 
 As mentioned previously, this value is subtracted from growth adjusted CARB total hand wiping estimate to obtain the Other (or remaining) Hand Wiping emissions for Categories 1245 and 1935.

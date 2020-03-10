@@ -1,4 +1,4 @@
-## Domestic Fuel, LPG & Liquid Fuel
+## Domestic Fuel, LPG & Liquid Fuel {#SS-combust-domestic-liquid}
 
 ```{r SS-combust-domestic-liquid-setup}
 THESE_CATEGORIES <- c(
@@ -31,11 +31,11 @@ The monthly variation for LPG and distillate oil was based on data provided by P
 
 County distribution of emissions was based on the Department of Commerce’s 2010 Census of Population and Housing for California. In that report, the number of homes using LPG and fuel oil as a heating medium were used in the estimate of county distribution.
 
-### Trends
+### Trends {#SS-combust-domestic-liquid-trend}
 
 #### Historical {-}
 
-```{r SS-combust-domestic-liquid-emission-chart, fig.height=12, out.height=1200}
+```{r SS-combust-domestic-liquid-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

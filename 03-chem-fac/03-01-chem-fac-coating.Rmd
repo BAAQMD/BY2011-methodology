@@ -45,6 +45,13 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
+```{r chem-fac-coatings-BY-vs-DB-chart, fig.height=10, out.height=1000}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
 #### Growth {-}
 
 ```{r chem-fac-coatings-growth-chart}

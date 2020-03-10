@@ -32,7 +32,7 @@ BY2011_annual_growth_factor_data %>%
 
 ##### Control {-}
 
-```{r petprod-coat-indcom-can_coil-control-chart}
+```{r petprod-coat-indcom-can_coil-control-chart, fig.height=3, out.height=300}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     CAN_COIL_CATEGORIES) %>%

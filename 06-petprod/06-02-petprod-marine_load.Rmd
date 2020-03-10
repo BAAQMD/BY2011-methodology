@@ -109,7 +109,7 @@ Prior years’ growth factors for these categories were based on historical data
 
 #### Growth {-}
 
-```{r petprod-marine_load-growth-chart, fig.height=16, out.height=1600}
+```{r petprod-marine_load-growth-chart, fig.height=20, out.height=2000}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -124,33 +124,27 @@ The projected growth for the Ballasting categories (Cat. 86-90), the Marine Vess
 ```{r petprod-marine_load-lightering-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
-    THESE_CATEGORIES) %>%
-  filter_categories(
-    86:87) %>%
+    keep(THESE_CATEGORIES, ~ . %in% 86:87)) %>%
   chart_BY2011_annual_control_factors_by(
     color = pollutant)
 ```
 
 Categories 86 - 87: Regulation 8-46 (Marine Vessel to Marine Vessel Loading) became effective on July 1, 1991. The overall control efficiency is estimated to be 95%.
 
-```{r petprod-marine_load-ballast_vent-control-chart}
+```{r petprod-marine_load-ballast_vent-control-chart, fig.height=6, out.height=600}
 BY2011_annual_control_factor_data %>%
   filter_categories(
-    THESE_CATEGORIES) %>%
-  filter_categories(
-    88:91) %>%
+    keep(THESE_CATEGORIES, ~ . %in% 88:91)) %>%
   chart_BY2011_annual_control_factors_by(
     color = pollutant)
 ```
 
 Categories 88, 89, and 91: On December 7, 2005, District Regulation 8, Rule 44 (Marine Tank Vessel Operations) was amended to extend organic compound control requirements to ballasting (Categories 88 and 89), gas freeing, tank washing, and purging activities (Category 91) from venting tank emissions to the atmosphere. This amendment controls organic emissions from loading operations of gasoline, gasoline blended stock, aviation gas, JP4 jet fuel, crude oil and other liquids with a flash point below 100 oF. (Since diesel, residual, and distillate fuel oils have flash points above 100 ºF, these fuels from Category 90 were excluded from control requirements. The adoption of this amendment will control organic emissions by 95%.
 
-```{r petprod-marine_load-barge_tanker-control-chart, fig.height=8, out.height=800}
+```{r petprod-marine_load-barge_tanker-control-chart, fig.height=10, out.height=1000}
 BY2011_annual_control_factor_data %>%
   filter_categories(
-    THESE_CATEGORIES) %>%
-  filter_categories(
-    795:802) %>%
+    keep(THESE_CATEGORIES, ~ . %in% 795:802)) %>%
   chart_BY2011_annual_control_factors_by(
     color = pollutant)
 ```
@@ -165,9 +159,11 @@ Base Year: 2011
 
 ***
 
-#### Emission Factors {-}
+#### Emission Factors {- #petprod-marine_load-emfac-chart}
 
-> Emission factors for category #90 vary by time. (This is not common in the BY2011 inventory.)
+```{block type="note"}
+Emission factors for category #90 vary by time. (This is not common in the BY2011 inventory.)
+```
 
 ```{r petprod-marine_load-emfac-chart}
 BY2011_annual_area_source_emission_factor_data %>%

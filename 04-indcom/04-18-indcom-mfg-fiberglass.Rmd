@@ -39,7 +39,7 @@ The historical growth profile was based on a combination of prior emissions data
 
 #### Growth {-}
 
-```{r indcom-mfg-fiberglass-growth-chart}
+```{r indcom-mfg-fiberglass-growth-chart, fig.height=3, out.height=300}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -51,7 +51,7 @@ Projections to year 2030 were also based on the ABAG’s 2009 Manufacturing Empl
 
 #### Control {-}
 
-```{r indcom-mfg-fiberglass-control-chart}
+```{r indcom-mfg-fiberglass-control-chart, fig.height=3, out.height=300}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

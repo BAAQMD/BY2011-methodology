@@ -48,6 +48,13 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
+```{r SS-combust-turbines-BY-vs-DB-chart, fig.height=18, out.height=1800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```
+
 For category #306, it was felt that historical emission trends tend to follow population data. As such, the annual variation ratio value for each year was based on the appropriate population value.
 
 #### Growth {-}

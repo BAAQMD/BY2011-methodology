@@ -49,7 +49,7 @@ The county fraction and monthly/daily factors are calculated based on data obtai
 
 #### History {-}
 
-```{r petref-fac-general-emission-chart, fig.height=12, out.height=1200}
+```{r petref-fac-general-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -69,6 +69,13 @@ Historic emissions have generally varied with refinery throughputs. Past base ye
 In 2010, SO~x~ decreased significantly as a result of an abatement device installation at Valero refinery. Over 90% of SO~x~ emissions were reduced at Valero refinery from prior years.
 
 #### Growth {-}
+
+```{r petref-fac-general-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
 
 ```{r petref-fac-general-growth-chart, fig.height=12, out.height=1200}
 BY2011_annual_growth_factor_data %>%

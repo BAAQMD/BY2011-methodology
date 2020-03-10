@@ -1,4 +1,4 @@
-## Asphalt Paving
+## Asphalt Paving {#petprod-asphalt-pave}
 
 ```{r petprod-asphalt-pave-setup}
 THESE_CATEGORIES <- c(
@@ -20,7 +20,7 @@ Medium-cure Liquid Asphalt (Medium-cure Cutback Asphalt) may be used in the Bay 
 
 Slow-cure Liquid Asphalt (Slow-cure Cutback Asphalt) may also be used in the Bay Area with restrictions (per BAAQMD [Regulation 8-15], Section 304). Slow-cure Liquid Asphalt is synonymous with “Road Oils” (Category 95).
 
-#### Methodology {-}
+#### Methodology {- #petprod-asphalt-pave-methodology}
 
 The organic emission from asphalt paving operations in the Bay Area was based on ARB’s methodology for emission calculations (Attachment C: Asphalt Paving and Roofing, from STI’s Area Source Emissions Updates, March 2003). In 2011, the Energy Information Administration (EIA) Office of Oil and Gas reported 10,589,000 barrels of asphalt were used in California for paving and roofing purposes. Of that amount, it was assumed 80% (8,471,200 barrels) of the asphalt was used for road paving and 20% (2,117,800 barrels) was used for roofing. (To calculate asphalt usage in tons per year it was assumed an asphalt density of 8 lbs/gal and a barrel equivalent to 42 gals.) Additionally, the statewide asphalt use for paving applications was estimated as follows:
 
@@ -30,6 +30,14 @@ The organic emission from asphalt paving operations in the Bay Area was based on
 - Cutback: <1%
 
 (Note: It is assumed some districts, including the BAAQMD, do not use Rapid-cure Cutback Asphalt.) County throughputs can be apportioned from the state’s total using the miles of paved roads in each of the counties. This data was acquired from the States’ Teale Data Center. The organic emission factors used for hot-mix, emulsified, and road oils were 0.04, 17.9, and 2.19 lb/ton of asphalt applied, respectively. (Note—the initial emission factor used for road oils was 88 lbs./ton. This was an EPA recommended value; however, regulatory controls reduced this value to the level stated above.) The total emissions for area source categories are determined by multiplying the emission factor, throughput, and rule effectiveness factor, if applicable.
+
+```{r petprod-asphalt-pave-emfac-table}
+BY2011_annual_area_source_emission_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_emission_factors(
+    caption = "Emission factors (lb/ton).")
+```
 
 #### Monthly Variation {-}
 
@@ -43,7 +51,7 @@ County activity was based on miles of paved roads in each county as acquired fro
 
 #### History {-}
 
-```{r petprod-asphalt-pave-emission-chart}
+```{r petprod-asphalt-pave-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

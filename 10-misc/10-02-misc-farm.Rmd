@@ -158,7 +158,9 @@ Base Year 2011
 
 #### Emission Factors {- #misc-farm-emfac-chart}
 
-> Emission factors for these categories vary by time. (This is not common in the BY2011 inventory.)
+```{block type="note"}
+Emission factors for these categories vary by time. (This is not common in the BY2011 inventory.)
+```
 
 ```{r misc-farm-emfac-chart, fig.height=4, out.height=400}
 BY2011_annual_area_source_emission_factor_data %>%

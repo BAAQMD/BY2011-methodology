@@ -27,7 +27,7 @@ The county, month, and day factors are obtained from information collected in th
 
 #### History {-}
 
-```{r petref-fac-fugitive-emission-chart, fig.height=4, out.height=400}
+```{r petref-fac-fugitive-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -38,6 +38,13 @@ BY2011_annual_emission_data %>%
 Historical changes in fugitive emissions in the Bay Area have been due to installation of newer process units that supplement rather than replace old process units.
 
 #### Growth {-}
+
+```{r petref-fac-fugitive-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
 
 ```{r petref-fac-fugitive-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%

@@ -43,6 +43,13 @@ Prior to the 1999 Base year emissions, the methodology for the lawn and garden e
 
 #### Growth {-}
 
+```{r mobile-lawn_garden-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
 ```{r mobile-lawn_garden-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(

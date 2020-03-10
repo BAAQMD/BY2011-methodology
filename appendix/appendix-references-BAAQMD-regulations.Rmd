@@ -4,49 +4,142 @@
 #
 ```
 
-[Regulation 2-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-1-general-requirements "Regulation 2, Rule 1"
+[Regulation 2]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-permits "Regulation 2: Permits"
 
-[Regulation 2-2]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-2-new-source-review "Regulation 2, Rule 2"
+[Regulation 2-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-1-general-requirements "Regulation 2, Rule 1: General Requirements"
 
-[Regulation 2-5]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-5-new-source-review-of-toxic-air-contaminants "Regulation 2, Rule 5"
+[Regulation 2-2]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-2-new-source-review "Regulation 2, Rule 2: New Source Review"
 
-[Regulation 6]: https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-particulate-matter---common-definitions-and-test-methods "Regulation 6"
+[Regulation 2-3]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-3-power-plants "Regulation 2, Rule 3: Power Plants"
 
-[Regulation 7]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-7-odorous-substances "Regulation 7"
+[Regulation 2-4]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-4-emissions-banking "Regulation 2, Rule 4: Emissions Banking"
 
-[Regulation 8]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-organic-compounds "Regulation 8"
+[Regulation 2-5]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-5-new-source-review-of-toxic-air-contaminants "Regulation 2, Rule 5: New Source Review of Toxic Air Contaminants"
 
-[Regulation 8-5]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-5-storage-of-organic-liquids "Regulation 8, Rule 5"
+[Regulation 2-6]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-6-major-facility-review "Regulation 2, Rule 6: Major Facility Review"
 
-[Regulation 8-4]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-4-general-solvent-and-surface-coating-operations "Regulation 8, Rule 4"
+[Regulation 2-7]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-7-acid-rain "Regulation 2, Rule 7: Acid Rain"
 
-[Regulation 8-10]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-10-process-vessel-depressurization "Regulation 8, Rule 10"
+[Regulation 2-9]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-9-interchangeable-emission-reduction-credits "Regulation 2, Rule 9: Interchangeable Emission Reduction Credits"
 
-[Regulation 8-15]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-15-emulsified-and-liquid-asphalts "Regulation 8, Rule 15"
+[Regulation 2-10]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-2-rule-10-large-confined-animal-facilities "Regulation 2, Rule 10: Large Confined Animal Facilities"
 
-[Regulation 8-17]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-17-petroleum-dry-cleaning-operations "Regulation 8, Rule 17"
+[Regulation 3]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-3-fees?rule_version=2019%20Amendment "Regulation 3: Fees"
 
-[Regulation 8-18]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-18-equipment-leaks "Regulation 8, Rule 18"
+[Regulation 4]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-4-air-pollution-episode-plan "Regulation 4: Air Pollution Episode Plan"
 
-[Regulation 8-22]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-22-valves-and-flanges-at-chemical-plants "Regulation 8, Rule 22"
+[Regulation 5]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-5-open-burning?rule_version=2019%20Amendment "Regulation 5: Open Burning"
 
-[Regulation 8-27]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-27-deleted-march-4-2009 "Regulation 8, Rule 27"
+[Regulation 6]: https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-particulate-matter---common-definitions-and-test-methods "Regulation 6: Particulate Matter - Common Definitions and Test Methods"
 
-[Regulation 8-42]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-42-large-commercial-bread-bakeries "Regulation 8, Rule 42"
+[Regulation 6-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-6-rule-1-general-requirements?rule_version=2018%20Amendment "Regulation 6, Rule 1: General Requirements 2018 Amendment"
 
-[Regulation 8-51]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-51-adhesive-and-sealant-products "Regulation 8, Rule 51"
+[Regulation 6-2]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-6-rule-2-commercial-cooking-equipment "Regulation 6, Rule 2: Commercial Cooking Equipment"
 
-[Regulation 9]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-inorganic-gaseous-pollutants "Regulation 9"
+[Regulation 6-3]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-6-rule-3-woodburning-devices?rule_version=Under%20Development "Regulation 6, Rule 3: Wood-burning Devices 2019 Amendment"
 
-[Regulation 9-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-1-sulfur-dioxide "Regulation 9, Rule 1"
+[Regulation 6-4]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-6-rule-4--metal-recycling-and-shredding-operations "Metal Recycling and Shredding Operations"
 
-[Regulation 9-13]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-13--nitrogen-oxides-particulate-matter-and-toxic-air-contaminants-from-portland-cement-ma "Regulation 9, Rule 13"
+[Regulation 6-5]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-6-rule-5-particulate-emissions-from-refinery-fluidized-catalytic-cracking-units?rule_version=2018%20Amendment "Regulation 6, Rule 5: Particulate Emissions from Refinery Fluidized Catalytic Cracking Units 2018 Amendment"
 
-[Regulation 11-16]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-11-rule-16-perchloroethylene-and-synthetic-solvent-dry-cleaning-operations "Regulation 11, Rule 16" 
+[Regulation 6-6]: https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-rule-6-prohibition-of-trackout "Regulation 6, Rule 6: Prohibition of Trackout"
 
-[Regulation 12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-miscellaneous-standards-of-performance "Regulation 12"
+[Regulation 7]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-7-odorous-substances "Regulation 7: Odorous Substances"
 
-[Regulation 12-11]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-11-flare-monitoring-at-petroleum-refineries "Regulation 12, Rule 11"
+[Regulation 8]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-organic-compounds "Regulation 8: Organic Compounds"
 
-[Regulation 12-12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-12-flares-at-petroleum-refineries "Regulation 12, Rule 12"
+[Regulation 8-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-1-general-provisions "Regulation 8, Rule 1: General Provisions"
 
+[Regulation 8-2]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-2-miscellaneous-operations "Regulation 8, Rule 2: Miscellaneous Operations"
+
+[Regulation 8-3]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-3-architectural-coatings "Regulation 8, Rule 3: Architectural Coatings"
+
+[Regulation 8-4]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-4-general-solvent-and-surface-coating-operations "Regulation 8, Rule 4: General Solvent and Surface Coating Operations"
+
+[Regulation 8-5]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-5-storage-of-organic-liquids "Regulation 8, Rule 5: Storage of Organic Liquids"
+
+[Regulation 8-6]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-6-terminals-and-bulk-plants "Regulation 8, Rule 6: Terminals and Bulk Plants"
+
+[Regulation 8-7]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-7-gasoline-dispensing-facilities "Regulation 8, Rule 7: Gasoline Dispensing Facilities"
+
+[Regulation 8-8]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-8-wastewater-oilwater-separators "Regulation 8, Rule 8: Wastewater (Oil-Water) Separators"
+
+[Regulation 8-9]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-9-vacuum-producing-systems "Regulation 8, Rule 9: Vacuum Producing Systems"
+
+[Regulation 8-10]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-10-process-vessel-depressurization "Regulation 8, Rule 10: Process Vessel Depressurization"
+
+[Regulation 8-11]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-11-metal-container-closure-and-coil-coating "Regulation 8-11: Metal Container, Closure and Coil Coating"
+
+[Regulation 8-12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-12-paper-fabric-and-film-coating "Regulation 8, Rule 12: Paper, Fabric, and Film Coating"
+
+[Regulation 8-13]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-13-light-and-medium-duty-motor-vehicle-assembly-plants "Regulation 8, Rule 13: Light and Medium Duty Motor Vehicle Assembly Plants"
+
+[Regulation 8-14]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-14-surface-coating-of-large-appliances-and-metal-furniture "Regulation 8, Rule 14: Surface Coating of Large Appliances and Metal Furniture"
+
+[Regulation 8-15]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-15-emulsified-and-liquid-asphalts "Regulation 8, Rule 15: Emulsified and Liquid Asphalts"
+
+[Regulation 8-16]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-16-solvent-cleaning-operations "Regulation 8, Rule 16: Solvent Cleaning Operations"
+
+[Regulation 8-17]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-17-petroleum-dry-cleaning-operations "Regulation 8, Rule 17: Petroleum Dry Cleaning Operations"
+
+[Regulation 8-18]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-18-equipment-leaks "Regulation 8, Rule 18: Equipment Leaks"
+
+[Regulation 8-19]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-19-surface-coating-of-miscellaneous-metal-parts-and-products "Regulation 8, Rule 19: Surface Coating of Miscellaneous Metal Parts and Products"
+
+[Regulation 8-20]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-20-graphic-arts-printing-and-coating-operations "Regulation 8, Rule 20: Graphic Arts Printing and Coating Operations"
+
+[Regulation 8-21]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-21-rubber-tire-manufacturing-operations "Regulation 8, Rule 21: Rubber Tire Manufacturing Operations"
+
+[Regulation 8-22]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-22-valves-and-flanges-at-chemical-plants "Regulation 8, Rule 22: Valves and Flanges at Chemical Plants"
+
+[Regulation 8-27]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-27-deleted-march-4-2009 "Regulation 8, Rule 27: Deleted: March 4, 2009"
+
+[Regulation 8-42]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-42-large-commercial-bread-bakeries "Regulation 8, Rule 42: Large Commercial Bread Bakeries"
+
+[Regulation 8-51]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-51-adhesive-and-sealant-products "Regulation 8, Rule 51: Adhesive and Sealant Products"
+
+[Regulation 9]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-inorganic-gaseous-pollutants "Regulation 9: Inorganic Gaseous Pollutants"
+
+[Regulation 9-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-1-sulfur-dioxide "Regulation 9, Rule 1: Sulfur Dioxide"
+
+[Regulation 9-2]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-2-hydrogen-sulfide "Regulation 9, Rule 2: Hydrogen Sulfide"
+
+[Regulation 9-3]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-3-nitrogen-oxides-from-heat-transfer-operations "Nitrogen Oxides from Heat Transfer Operations"
+
+[Regulation 9-4]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-4-nitrogen-oxides-from-fan-type-residential-central-furnaces "Regulation 9, Rule 4: Nitrogen Oxides from Fan Type Residential Central Furnaces"
+
+[Regulation 9-5]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-5-hydrogen-sulfide-from-geothermal-power-plants "Regulation 9, Rule 5: Hydrogen Sulfide from Geothermal Power Plants"
+
+[Regulation 9-6]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-6-nitrogen-oxides-emissions-from-natural-gasfired-water-heaters "Regulation 9, Rule 6: Nitrogen Oxides Emissions from Natural Gas-Fired Water Heaters"
+
+[Regulation 9-7]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-7-nitrogen-oxides-and-carbon-monoxide-from-industrial-institutional-and-commercial-boiler "Regulation 9, Rule 7: Nitrogen Oxides And Carbon Monoxide from Industrial, Institutional, and Commercial Boilers, Steam Generators, And Process Heaters"
+
+[Regulation 9-8]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-8-nitrogen-oxides-and-carbon-monoxide-from-stationary-internal-combustion-engines "Regulation 9, Rule 8: Nitrogen Oxides And Carbon Monoxide from Stationary Internal Combustion Engines"
+
+[Regulation 9-9]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-9-nitrogen-oxides-and-carbon-monoxide-from-stationary-gas-turbines "Regulation 9, Rule 9: Nitrogen Oxides And Carbon Monoxide from Stationary Gas Turbines"
+
+[Regulation 9-10]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-10-nitrogen-oxides-and-carbon-monoxide-from-boilers-steam-generators-and-process-heaters "Regulation 9, Rule 10: Nitrogen oxides And Carbon Monoxide From Boilers, Steam Generators And Process Heaters in Petroleum Refineries"
+
+[Regulation 9-11]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-11-nitrogen-oxides-and-carbon-monoxide-from-utility-electric-power-generating-boilers "Regulation 9, Rule 11: Nitrogen Oxides And Carbon Monoxide from Utility Electric Power Generating Boilers"
+
+[Regulation 9-12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-12-nitrogen-oxides-from-glass-melting-furnaces "Regulation 9, Rule 12: Nitrogen Oxides From Glass Melting Furnaces"
+
+[Regulation 9-13]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-13--nitrogen-oxides-particulate-matter-and-toxic-air-contaminants-from-portland-cement-ma "Regulation 9, Rule 13: Nitrogen Oxides, Particulate Matter, and Toxic Air Contaminants from Portland Cement Manufacturing"
+
+[Regulation 9-14]: https://www.baaqmd.gov/rules-and-compliance/rules/regulation-9-rule-14--petroleum-coke-calcining-operations "Regulation 9, Rule 14: Petroleum Coke Calcining Operations"
+
+[Regulation 10]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-10-standards-of-performance-for-new-stationary-sources "Regulation 10: Standards of Performance for New Stationary Sources"
+
+[Regulation 11]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-11-hazardous-pollutants "Regulation 11: Hazardous Pollutants"
+
+[Regulation 11-16]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-11-rule-16-perchloroethylene-and-synthetic-solvent-dry-cleaning-operations "Regulation 11, Rule 16: Perchloroethylene and Synthetic Solvent Dry Cleaning Operations" 
+
+[Regulation 12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-miscellaneous-standards-of-performance "Regulation 12: Miscellaneous Standards of Performance"
+
+[Regulation 12-11]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-11-flare-monitoring-at-petroleum-refineries "Regulation 12, Rule 11: Flare Monitoring at Petroleum Refineries"
+
+[Regulation 12-12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-12-flares-at-petroleum-refineries "Regulation 12, Rule 12: Flares at Petroleum Refineries"
+
+[Regulation 12-13]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-13--foundry-and-forging-operations "Regulation 12, Rule 13: Foundry and Forging Operations"
+
+[Regulation 12-15]: https://www.baaqmd.gov/rules-and-compliance/rules/regulation-12-rule-15--petroleum-refining-emissions-tracking?rule_version=Under%20Development "Regulation 12, Rule 15: Petroleum Refining Emissions Tracking 2019 Amendment"

@@ -20,7 +20,7 @@ BY2011_annual_emission_data %>%
 
 ##### Emission Factors (Area) {-}
 
-```{r petprod-coat-indcom-auto_refinish-annual_emfac-chart}
+```{r petprod-coat-indcom-auto_refinish-annual_emfac-chart, fig.height=3, out.height=300}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     AUTO_REFINISH_CATEGORIES) %>%

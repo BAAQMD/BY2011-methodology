@@ -1,4 +1,4 @@
-## Gasoline Truck Loading
+## Gasoline Truck Loading {#petprod-gasoline-truck_load}
 
 ```{r petprod-gasoline-truck_load-setup}
 THESE_CATEGORIES <- c(
@@ -24,7 +24,7 @@ The Data Bank contains percentage of throughput data for each seasonal quarter: 
 
 Emissions distributed into the nine counties were based on the actual locations of the plants in the Bay Area.
 
-### Trends
+### Trends {#petprod-gasoline-truck_load-trend}
 
 #### History {-}
 

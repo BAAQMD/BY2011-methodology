@@ -1,14 +1,28 @@
-| Control Type                          | Effective Date | Certification Requirement Date |
-|---------------------------------------|----------------|--------------------------------|
-| Phase I Vapor Recovery                | 2001-04-01     | 2001-04-01                     |
-| Phase II Vapor Recovery               | 2003-04-01     | 2003-04-01                     |
-| ORVR Compatibility                    | 2001-04-01     | 2003-04-01                     |
-| Liquid Retention                      |                |                                |
-| * Initial limit: 350 mls/1000 gallons | 2001-04-01     | 2001-04-01                     |
-| * Final limit: 100 mls/1000 gallons   | 2001-04-01     | 2003-04-01                     |
-| Spillage and Dripless Nozzles         | 2001-04-01     | 2004-04-01                     |
-| In-Station Diagnostics                |                |                                |
-| * >1,800,000 gal/year                 | 2003-04-01     | 2003-04-01                     |
-| * >160,000 gal/yr                     | 2004-04-01     | 2004-04-01                     |
+```{r}
+kable_data <- 
+  tribble(
+    ~ `Control Type`, ~ `Effective Date`, ~ `Certification Requirement Date`,
+    "Phase I Vapor Recovery", "2001-04-01", "2001-04-01",
+    "Phase II Vapor Recovery", "2003-04-01", "2003-04-01",
+    "ORVR Compatibility", "2001-04-01", "2003-04-01",
+    #"Liquid Retention", "|",
+    "Initial limit: 350 mls/1000 gallons", "2001-04-01", "2001-04-01",
+    "Final limit: 100 mls/1000 gallons", "2001-04-01", "2003-04-01",
+    "Spillage and Dripless Nozzles", "2001-04-01", "2004-04-01",
+    #"In-Station Diagnostics", "|",
+    ">1,800,000 gal/year", "2003-04-01", "2003-04-01",
+    ">160,000 gal/yr", "2004-04-01", "2004-04-01")
 
-Table: Summary of EVR Implementation Schedule
+kable_data %>%
+  kable_BY2011(
+    align = "lrr",
+    caption = "Summary of EVR Implementation Schedule.") %>%
+  kableExtra::pack_rows(
+    start_row = 4,
+    end_row = 5,
+    "Liquid Retention") %>%
+  kableExtra::pack_rows(
+    start_row = 7,
+    end_row = 8,
+    "In-Station Diagnostics")
+```
