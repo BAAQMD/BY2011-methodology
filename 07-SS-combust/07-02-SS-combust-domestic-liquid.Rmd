@@ -14,7 +14,7 @@ This category contains emissions from domestic fuel combustion of LPG and distil
 
 #### Methodology {-}
 
-Emissions estimates from domestic LPG and distillate oil combustion are based on the “BTU equivalent - natural gas approach”. This approach follows an ARB methodology as given in a document titled, “Methods for Assessing Area Source Emissions in California”, Section 5-3. The approach is based upon, namely:
+Emissions estimates from domestic LPG and distillate oil combustion are based on the "BTU equivalent - natural gas approach". This approach follows an ARB methodology as given in a document titled, "Methods for Assessing Area Source Emissions in California", Section 5-3. The approach is based upon, namely:
 
 1. Number of housing units heated by LPG and distillate oil as provided by the 2010 Department of Finance's Census of Population and Housing.
 2. Bay Area natural gas fuel usage as provided by Pacific Gas and Electric Company.
@@ -67,7 +67,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-For Category 286 (Fuel Combustion, Stationary Sources, Domestic LPG), an assumption was made that annual emissions, over the years, would tend to follow household population data. Population data used in the projection was based on the Association of Bay Area Government's (ABAG's) 2009 “Projections” report. For Category 287 (Fuel Combustion, Stationary Sources, Domestic Distillate Oil), the growth was assumed to be diminished as the fuel would eventually be phased out in favor of natural gas. A 2% reduction per year was chosen, starting in 1992.
+For Category 286 (Fuel Combustion, Stationary Sources, Domestic LPG), an assumption was made that annual emissions, over the years, would tend to follow household population data. Population data used in the projection was based on the Association of Bay Area Government's (ABAG's) 2009 "Projections" report. For Category 287 (Fuel Combustion, Stationary Sources, Domestic Distillate Oil), the growth was assumed to be diminished as the fuel would eventually be phased out in favor of natural gas. A 2% reduction per year was chosen, starting in 1992.
 
 ***
 

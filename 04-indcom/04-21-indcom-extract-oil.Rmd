@@ -82,7 +82,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-According to the California Energy Commission, future California oil production, although uncertain, is expected to decline at a small annual rate during the next 20 years. Statistical extrapolation from historical data produces a very broad range, varying between a 7 percent decline to 1 percent increase. California oil production is responsive to prevailing oil prices. If economically feasible, enhanced oil recovery techniques can be used to extract oil from fields that have been nearly depleted using conventional methods. According to the “Oil & Gas Supervisor”, oil production in the Bay Area could actually increase despite the decrease in number of operating oil wells.
+According to the California Energy Commission, future California oil production, although uncertain, is expected to decline at a small annual rate during the next 20 years. Statistical extrapolation from historical data produces a very broad range, varying between a 7 percent decline to 1 percent increase. California oil production is responsive to prevailing oil prices. If economically feasible, enhanced oil recovery techniques can be used to extract oil from fields that have been nearly depleted using conventional methods. According to the "Oil & Gas Supervisor", oil production in the Bay Area could actually increase despite the decrease in number of operating oil wells.
 
 #### Control {-}
 

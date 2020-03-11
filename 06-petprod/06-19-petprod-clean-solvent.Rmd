@@ -41,7 +41,7 @@ Hand wiping, or wipe cleaning, includes solvent cleaning done by hand or by mean
 
 ##### Cold Cleaners {-}
 
-Emissions from the Cold Cleaning Category (Categories 1241 and 1934) were estimated using the District's July 1998 “Staff Report on Solvent Cleaning Operations for [Regulation 8, Rule 16][Rule 8-16].” In this report, the 1996 cold cleaning emissions were estimated with the assumption that this represented approximately 65% of the total emissions from solvent cleaning operations (including conveyorized). The remaining 35% of the total emissions came from vapor degreasers. A particular base year's emissions from cold cleaners were based on these 1996 figures and adjusted using growth factors and control factors (discussed under Growth Profile and Control sections).
+Emissions from the Cold Cleaning Category (Categories 1241 and 1934) were estimated using the District's July 1998 "Staff Report on Solvent Cleaning Operations for [Regulation 8, Rule 16][Rule 8-16]." In this report, the 1996 cold cleaning emissions were estimated with the assumption that this represented approximately 65% of the total emissions from solvent cleaning operations (including conveyorized). The remaining 35% of the total emissions came from vapor degreasers. A particular base year's emissions from cold cleaners were based on these 1996 figures and adjusted using growth factors and control factors (discussed under Growth Profile and Control sections).
 
 Cold cleaning consist of both point (Category 1241) and area (Category 1934) source emissions. Point sources are covered under the District's permit system. Emissions are calculated by using solvent throughput of each source reported by companies in the District's Data Bank system. Emission factors were based on solvent composition. Cold cleaning area source emissions were calculated by subtracting their respective total emissions from their respective point source emissions. As mentioned previously, the total emissions from cold cleaning and vapor degreasing operations were estimated from the District's staff report.
 
@@ -51,9 +51,9 @@ According to District Permit personnel, all vapor degreasers operating within th
 
 ##### Other Hand Wiping {-}
 
-The total District hand wiping emissions were based on the 1996 California Air Resources Board's (CARB) report on “Solvent Cleaning/Degreasing Source Category Emission Inventory”. One aspect of this report dealt with hand wiping emissions in each air basin within California for 1993. A particular base year's emissions from hand wiping were based on this 1993 value and adjusted using a growth and control factor (discussed under the Growth Profile and Control sections).
+The total District hand wiping emissions were based on the 1996 California Air Resources Board's (CARB) report on "Solvent Cleaning/Degreasing Source Category Emission Inventory". One aspect of this report dealt with hand wiping emissions in each air basin within California for 1993. A particular base year's emissions from hand wiping were based on this 1993 value and adjusted using a growth and control factor (discussed under the Growth Profile and Control sections).
 
-Additionally, there are hand wiping emissions that can be found in other District categories (both point and area sources). Since these sources are subject to various other rules (i.e. graphic printing operations, polyester resin operations, various industrial/commercial coatings rules, etc.), the emissions will remain in these specific categories. To prevent “double-counting”, the organic emissions from these categories will be subtracted from the growth adjusted CARB total hand wiping value. This new emission value is known as Other (or remaining) Hand Wiping emissions.
+Additionally, there are hand wiping emissions that can be found in other District categories (both point and area sources). Since these sources are subject to various other rules (i.e. graphic printing operations, polyester resin operations, various industrial/commercial coatings rules, etc.), the emissions will remain in these specific categories. To prevent "double-counting", the organic emissions from these categories will be subtracted from the growth adjusted CARB total hand wiping value. This new emission value is known as Other (or remaining) Hand Wiping emissions.
 
 Listed below are the categories that contain hand wiping emissions to be subtracted from the total value:
 
@@ -94,7 +94,7 @@ The monthly distribution was estimated based on the point source's weighted aver
 
 #### County Distribution {-}
 
-For point sources, the data bank system contains information on the county location of each facility; hence, emissions are distributed to the counties accordingly. For area sources, emissions distributed into the nine Bay Area counties are based on the county fractions as determined from CARB's report on “Solvent Cleaning/Degreasing Source Category Emission Inventory”.
+For point sources, the data bank system contains information on the county location of each facility; hence, emissions are distributed to the counties accordingly. For area sources, emissions distributed into the nine Bay Area counties are based on the county fractions as determined from CARB's report on "Solvent Cleaning/Degreasing Source Category Emission Inventory".
 
 ```{r petprod-clean-solvent-county-fraction-table}
 BY2011_county_fraction_data %>%

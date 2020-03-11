@@ -16,7 +16,7 @@ Categories 61 and 868, account for fugitive organic emissions including methane 
 
 #### Methodology {-}
 
-Fugitive emissions occur from leaks in the pipeline distribution system. Prior to 1990, an emission factor of 0.7% by volume of gas distributed was used. This factor was based on the South Coast Air Quality Management District report "Estimated Fugitive Emissions from Natural Gas Transmission for Calendar Year 1979", July, 1980. Since 1990, an emission factor of 0.2% has been used for both distribution systems: PG&E's own usage (Category #61) and PG&E's customers (Category #868). This emission factor is based on the 1990 PG&E report titled “Unaccounted-For Gas Project”. Emission Factors in pounds per thousand cubic feet of gas (lb/MCF) are shown below in Table \@ref(tab:petprod-ng-distrib-emfac-table).
+Fugitive emissions occur from leaks in the pipeline distribution system. Prior to 1990, an emission factor of 0.7% by volume of gas distributed was used. This factor was based on the South Coast Air Quality Management District report "Estimated Fugitive Emissions from Natural Gas Transmission for Calendar Year 1979", July, 1980. Since 1990, an emission factor of 0.2% has been used for both distribution systems: PG&E's own usage (Category #61) and PG&E's customers (Category #868). This emission factor is based on the 1990 PG&E report titled "Unaccounted-For Gas Project". Emission Factors in pounds per thousand cubic feet of gas (lb/MCF) are shown below in Table \@ref(tab:petprod-ng-distrib-emfac-table).
 
 ```{r petprod-ng-distrib-emfac-table}
 BY2011_annual_area_source_emission_factor_data %>%

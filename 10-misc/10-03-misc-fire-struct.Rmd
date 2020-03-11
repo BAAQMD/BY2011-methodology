@@ -143,7 +143,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Emissions growth profile is based on household population growth in the Bay Area. Household population data used in developing growth profile was obtained from the Association of Bay Area Government's (ABAG's) 2009 “Projections” reports.
+Emissions growth profile is based on household population growth in the Bay Area. Household population data used in developing growth profile was obtained from the Association of Bay Area Government's (ABAG's) 2009 "Projections" reports.
 
 ***
 

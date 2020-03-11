@@ -80,7 +80,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-Sources in this category may be subject to [Rule 8-4] (General Solvent & Surface Coating Operations). The purpose of this Rule is to “limit emissions of volatile organic compounds from the use of solvents and surface coatings in any operation other than those specified by other Rules of the [Regulation 8].” Originally passed in 1980, this rule has been amended several times—the latest being in 2002 regarding surface preparation standards.
+Sources in this category may be subject to [Rule 8-4] (General Solvent & Surface Coating Operations). The purpose of this Rule is to "limit emissions of volatile organic compounds from the use of solvents and surface coatings in any operation other than those specified by other Rules of the [Regulation 8]." Originally passed in 1980, this rule has been amended several times—the latest being in 2002 regarding surface preparation standards.
 
 ***
 

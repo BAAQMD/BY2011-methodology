@@ -27,7 +27,7 @@ Companies utilizing large amounts of adhesives/sealants are monitored and regula
 
 Emissions from adhesive and sealant used in non-permitted industries are estimated based on a geographical area. These emissions are termed "area source" emissions. Non-permitted industries includes construction sites, small industrial companies, transportation facilities, dental and medical buildings, electric and electronics facilities, and other miscellaneous sites.
 
-Data used to estimate area sources are based on "The Rauch Guide to the U.S. Adhesives and Sealants Industry, 2000-02 Edition”. Adjustments were made for 2008 using both the construction growth for each county in the Bay Area and the Rauch Guide's projection. Emission factors used in the calculation of these area sources were taken from ARB's report titled "Adhesives and Sealants”. The emission factors used in the calculations were 1,230 lbs. of VOC per ton of solvent-borne adhesives/sealants and 90 lbs. of VOC per ton of water-borne adhesives/sealants.
+Data used to estimate area sources are based on "The Rauch Guide to the U.S. Adhesives and Sealants Industry, 2000-02 Edition". Adjustments were made for 2008 using both the construction growth for each county in the Bay Area and the Rauch Guide's projection. Emission factors used in the calculation of these area sources were taken from ARB's report titled "Adhesives and Sealants". The emission factors used in the calculations were 1,230 lbs. of VOC per ton of solvent-borne adhesives/sealants and 90 lbs. of VOC per ton of water-borne adhesives/sealants.
 
 #### Monthly Variation {-}
 

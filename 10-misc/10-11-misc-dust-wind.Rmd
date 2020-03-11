@@ -16,7 +16,7 @@ Included in these categories are fugitive dust emissions resulting from wind ero
 
 Total acreage for field crops, vegetable crops, fruit and nut crops, nursery crops, plants, flowers and miscellaneous crops were obtained for each county as reported in the "Agricultural Crops". The estimated crop acres were used as throughput for the calculation of wind erosion from agricultural fields (Category #764).
 
-The number of miles of unpaved road for each county were estimated from the “California Abstracts”, and converted into acreage. It was assumed a typical width of a road was 25 feet. The acreage of unpaved road was used as throughput for the calculation of windblown dust from unpaved roads (Category# 765). Particulate emission factor from dust emissions were developed based on the U.S. Department of Agriculture's equation:
+The number of miles of unpaved road for each county were estimated from the "California Abstracts", and converted into acreage. It was assumed a typical width of a road was 25 feet. The acreage of unpaved road was used as throughput for the calculation of windblown dust from unpaved roads (Category# 765). Particulate emission factor from dust emissions were developed based on the U.S. Department of Agriculture's equation:
 
 $$
 \text{Emission Factor} = E \times I \times C \times K \times L \times V

@@ -9,18 +9,18 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-This category accounts for excess emissions from gasoline dispensing nozzles at gasoline service stations. The excess emissions are comprised of spitback, pseudo-spillage, low air to liquid ratio, pressure-related fugitive emissions, idle-nozzle emissions occurring after a refueling using Emco Wheaton A4001 nozzles and “whoosh” emissions. Spitback, pseudo-spillage, low air to liquid ratio, and pressure-related fugitives excess emissions apply only to Phase II vapor recovery systems using “bootless” nozzles. Idle nozzle emissions apply to refueling events using Emco Wheato n A4001 balance-type nozzles. “Whoosh” emissions are from all vehicle fuel tanks. In 1995, 352 gasoline service stations were equipped with vacuum-assist Phase II vapor recovery systems utilizing bootless nozzles. The bootless nozzle design typically, but not always, uses a coaxial spout design. Product flows through the inner tube, while a vacuum pump draws the vapors through the outer portion of the coaxial spout. The primary marketing advantage of the bootless nozzle is that it does not require the bellows necessary on balance-type nozzles. The recovered vapors are then sent back to underground storage tank under a slight pressure. Because of excess dispensing rates, and certain design issues, the initial bootless nozzles were more prone to spitback and spillage.
+This category accounts for excess emissions from gasoline dispensing nozzles at gasoline service stations. The excess emissions are comprised of spitback, pseudo-spillage, low air to liquid ratio, pressure-related fugitive emissions, idle-nozzle emissions occurring after a refueling using Emco Wheaton A4001 nozzles and "whoosh" emissions. Spitback, pseudo-spillage, low air to liquid ratio, and pressure-related fugitives excess emissions apply only to Phase II vapor recovery systems using "bootless" nozzles. Idle nozzle emissions apply to refueling events using Emco Wheato n A4001 balance-type nozzles. "Whoosh" emissions are from all vehicle fuel tanks. In 1995, 352 gasoline service stations were equipped with vacuum-assist Phase II vapor recovery systems utilizing bootless nozzles. The bootless nozzle design typically, but not always, uses a coaxial spout design. Product flows through the inner tube, while a vacuum pump draws the vapors through the outer portion of the coaxial spout. The primary marketing advantage of the bootless nozzle is that it does not require the bellows necessary on balance-type nozzles. The recovered vapors are then sent back to underground storage tank under a slight pressure. Because of excess dispensing rates, and certain design issues, the initial bootless nozzles were more prone to spitback and spillage.
 
 #### Excess emissions {-}
 
 ##### Spitback Spillage {-} 
 
-Spitback is the forcible ejection of gasoline from the fillpipe, upon activation of the nozzle's primary shutoff mechanism, at the end of a fueling event. When gasoline dispensing rate is greater than ten gallons per minute (10 gpm), the nozzle's primary shutoff mechanism fails to adequately cease dispensing. Normally the bellows on a balance-type nozzle redirects spitback into the motor vehicle's fillpipe. In the case of bootless nozzles, liquid gasoline leaves the fillpipe and spills on both the vehicle and ground. Two of the “bootless” vacuum-assist Phase II systems were certified at dispensing rates over 10 gpm, the Gilbarco VaporVac (13.0 gpm) and the Hasstech (12.0 gpm). In addition, based on confusion within the industry, many of the Dresser/Wayne WayneVac bootless systems were also installed and operated at dispensing rates well in excess of 10 gpm.
+Spitback is the forcible ejection of gasoline from the fillpipe, upon activation of the nozzle's primary shutoff mechanism, at the end of a fueling event. When gasoline dispensing rate is greater than ten gallons per minute (10 gpm), the nozzle's primary shutoff mechanism fails to adequately cease dispensing. Normally the bellows on a balance-type nozzle redirects spitback into the motor vehicle's fillpipe. In the case of bootless nozzles, liquid gasoline leaves the fillpipe and spills on both the vehicle and ground. Two of the "bootless" vacuum-assist Phase II systems were certified at dispensing rates over 10 gpm, the Gilbarco VaporVac (13.0 gpm) and the Hasstech (12.0 gpm). In addition, based on confusion within the industry, many of the Dresser/Wayne WayneVac bootless systems were also installed and operated at dispensing rates well in excess of 10 gpm.
 
 ##### Pseudo-Spillage {-} 
 
 Pseudo spillage in bootless nozzle is from the liquid gasoline retained in the (a) product side of the nozzle, (b) vapor passage of the nozzle, (c) primary shutoff chamber of the nozzle, and (d) vapor passage of the coaxial hose. This liquid is on the atmosphere side of any check valves and it either evaporates between refueling events, or is spilled as the next customer attempt to insert the nozzle into the fillpipe.
-Balance type nozzles are required to possess a mechanism that prevents the nozzle from dispensing gasoline unless the bellows is compressed. This device prevents prefueling spillage caused by inadvertently depressing the nozzle trigger prior to insertion into the vehicle fillpipe. Many of the bootless nozzles will “spit” gasoline if the trigger is depressed.
+Balance type nozzles are required to possess a mechanism that prevents the nozzle from dispensing gasoline unless the bellows is compressed. This device prevents prefueling spillage caused by inadvertently depressing the nozzle trigger prior to insertion into the vehicle fillpipe. Many of the bootless nozzles will "spit" gasoline if the trigger is depressed.
 
 It is important that a nozzle be securely latched onto the lip of the fillpipe to prevent the nozzle from falling out during a refueling event. Commonly used bootless nozzles use a spout spring to serve this function. This specific spring, however, does not make a secure connection to the fillpipe in most vehicles. Since the nozzles used do not possess an attitude shutoff design, if the nozzle falls out of the fillpipe, it will continue to dispense gasoline until it hits the ground and in some instances will continue to dispense gasoline until the nozzle or dispenser is deactivated.
 
@@ -42,7 +42,7 @@ BAAQMD source test data shows that the Emco Wheaton A4001 nozzles emit more than
 
 ##### Whoosh Emissions {-}
 
-“Whoosh” emissions are the emissions released when the gasoline cap on the vehicle tank is removed for fueling.
+"Whoosh" emissions are the emissions released when the gasoline cap on the vehicle tank is removed for fueling.
 
 Table I shows the 1995, 2000, 2005 and 2011 estimated emissions along with 1995 gasoline throughput and emission factors used for each category.
 
@@ -54,7 +54,7 @@ Total gasoline consumption in the Bay Area was obtained from Caltrans. The 1995 
 
 ##### Assumptions {-}
  
-This category accounts for only the excess emissions resulting from the use of bootless nozzles at gasoline dispensing facilities (GDF), idle-nozzle emissions occurring after refueling, and “Whoosh” emissions.
+This category accounts for only the excess emissions resulting from the use of bootless nozzles at gasoline dispensing facilities (GDF), idle-nozzle emissions occurring after refueling, and "Whoosh" emissions.
 
 1. Forty percent of the daily gasoline was pumped through bootless nozzles. Five percent of the vehicles were subjected to the excess spitback spillage. Therefore,
 
@@ -91,7 +91,7 @@ $$
 \text{Emission Factor} = (8.4 \text{lbs/1000 gallons})(95\%)(20\%) = 1.60\text{ lbs/1000 gallons}
 $$
 
-6. Emission factors for “whoosh” emissions were obtained from “Gasoline Service Station Industrywide Risk Assessment Guidelines” prepared by the Toxics Committee of the California Air Pollution Control Officers Association (CAPCOA), December 1997. This throughput for “whoosh” emissions applies to total gasoline consumption in the Bay Area. It must be noted that several designs of Onboard Refueling Vapor Recovery (ORVR) vehicles greatly reduce the emissions from this category.
+6. Emission factors for "whoosh" emissions were obtained from "Gasoline Service Station Industrywide Risk Assessment Guidelines" prepared by the Toxics Committee of the California Air Pollution Control Officers Association (CAPCOA), December 1997. This throughput for "whoosh" emissions applies to total gasoline consumption in the Bay Area. It must be noted that several designs of Onboard Refueling Vapor Recovery (ORVR) vehicles greatly reduce the emissions from this category.
 
 #### Steps taken to Control Excess Emissions {-}
 
@@ -105,7 +105,7 @@ Bay Area AQMD developed an inspection procedure, GDF-IP-04, to quantify these em
 
 ##### Low Air to Liquid (A/L) Ratios
 
-The emissions caused by low A/L occur both as reduced collection efficiency during the refueling event and increased pressure-related emissions caused by air ingestion through leaks in nozzles not being used during the refueling activity. The Bay Area has worked closely with CARB to have one dispenser manufacturer require retrofitting systems which had liquid traps in the vapor piping to eliminate this problem. All new and rebuilt nozzles are also now equipped with the improved spouts. The Bay Area AQMD also imposed an Abatement Order on Shell, the company which has the largest population of bootless systems. As a result, A/L tests are being conducted quarterly and equipment checks, including the “Bag Test” developed by the Bay Area AQMD are required to be conducted monthly. It is estimated that 95 percent of these excess emissions will be reduced by 2003.
+The emissions caused by low A/L occur both as reduced collection efficiency during the refueling event and increased pressure-related emissions caused by air ingestion through leaks in nozzles not being used during the refueling activity. The Bay Area has worked closely with CARB to have one dispenser manufacturer require retrofitting systems which had liquid traps in the vapor piping to eliminate this problem. All new and rebuilt nozzles are also now equipped with the improved spouts. The Bay Area AQMD also imposed an Abatement Order on Shell, the company which has the largest population of bootless systems. As a result, A/L tests are being conducted quarterly and equipment checks, including the "Bag Test" developed by the Bay Area AQMD are required to be conducted monthly. It is estimated that 95 percent of these excess emissions will be reduced by 2003.
 
 #### Pressure-Related Fugitives {-}
 

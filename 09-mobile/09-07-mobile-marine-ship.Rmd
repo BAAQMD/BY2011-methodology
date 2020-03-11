@@ -39,7 +39,7 @@ Emissions reported in these categories are from combustion of fuel from engines 
 
 #### Methodology {-}
 
-The methodology used to estimate OGV emissions is based on CARB's 2005 draft report titled, “Emissions Estimation Methodology for Ocean-Going Vessels”. Although the report is in draft form, the emission data is derived based on methodology and findings given in this report.
+The methodology used to estimate OGV emissions is based on CARB's 2005 draft report titled, "Emissions Estimation Methodology for Ocean-Going Vessels". Although the report is in draft form, the emission data is derived based on methodology and findings given in this report.
 
 Emissions from OGVs vary based on ship type and operating mode. There are eight ship types and three operating modes accounted for in the inventory. The ship types include auto vessels, bulk carriers, container ships, passenger ships, reefers, RORO ships, tankers, and general vessels (others). The operating modes include the hotelling/berthing mode (including anchorage), maneuvering mode, and in-transit mode.
 

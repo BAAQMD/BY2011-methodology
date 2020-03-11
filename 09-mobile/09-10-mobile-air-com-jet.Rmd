@@ -24,9 +24,9 @@ The basic types of gas turbine engines used for commercial jet aircraft propulsi
 
 #### Methodology {-}
 
-The pollutants emitted by an aircraft during take-off and landing operations are dependent on the emission rates and the duration of these operations. The emission rates are dependent upon the type of engine and its size or power rating. An aircraft operational cycle includes the landing and takeoff, or LTO cycle. For criteria pollutant emission inventory, an LTO cycle includes all normal operational modes performed by an aircraft between its descent from an altitude of about 2300 feet on landing and subsequent takeoff to reach the 2300-foot altitude. The 2300-foot limit is a reasonable approximation to the meteorological mixing depth over the Bay Area metropolitan areas. The term “operation” is used by the Federal Aviation Administration to describe either a landing or a take-off cycle. Therefore, two operations make one LTO cycle.
+The pollutants emitted by an aircraft during take-off and landing operations are dependent on the emission rates and the duration of these operations. The emission rates are dependent upon the type of engine and its size or power rating. An aircraft operational cycle includes the landing and takeoff, or LTO cycle. For criteria pollutant emission inventory, an LTO cycle includes all normal operational modes performed by an aircraft between its descent from an altitude of about 2300 feet on landing and subsequent takeoff to reach the 2300-foot altitude. The 2300-foot limit is a reasonable approximation to the meteorological mixing depth over the Bay Area metropolitan areas. The term "operation" is used by the Federal Aviation Administration to describe either a landing or a take-off cycle. Therefore, two operations make one LTO cycle.
 
-For criteria pollutant emission calculations, the aircraft LTO cycle is divided into five segments or operational “modes” and categorized by:
+For criteria pollutant emission calculations, the aircraft LTO cycle is divided into five segments or operational "modes" and categorized by:
 
 1. Landing approach (descent from about 2,300 ft. to touch down), 
 2. Taxi/idle-in,

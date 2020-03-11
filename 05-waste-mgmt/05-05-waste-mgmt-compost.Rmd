@@ -19,7 +19,7 @@ The composting process includes the following steps:
 - Screening, and
 - Storage.
 
-In the feedstock preparation step, the composted organic materials are screened and, if required, processed in a grinder to achieve the best composting conditions. This mixture is then placed in rows or piles where the decomposition process begins. The initial phase of composting, lasting for about one month is very active and generates temperatures high enough to kill weed seeds and pathogens. After this “active” phase, the material is cured at a slower rate and temperature. During this phase, the moisture content is reduced and a more stable product is produced. Once the compost is cured, the material is screened to produce the desired product and then stored prior to final distribution and use.
+In the feedstock preparation step, the composted organic materials are screened and, if required, processed in a grinder to achieve the best composting conditions. This mixture is then placed in rows or piles where the decomposition process begins. The initial phase of composting, lasting for about one month is very active and generates temperatures high enough to kill weed seeds and pathogens. After this "active" phase, the material is cured at a slower rate and temperature. During this phase, the moisture content is reduced and a more stable product is produced. Once the compost is cured, the material is screened to produce the desired product and then stored prior to final distribution and use.
 
 #### Methodology {-}
 
@@ -41,7 +41,7 @@ The units for throughput information should be in tons per year, however, they m
 - Greenwaste – 3.54 yd3/ton
 - Mixed (greenwaste mixed with food, manure, etc.) – 2.24 yd3/ton
 
-The above conversion factors were taken from the California Integrated Management Board (CIWMB) Report, “Third Assessment of California's Compost and Mulch Producing Infrastructure”, May 2009.
+The above conversion factors were taken from the California Integrated Management Board (CIWMB) Report, "Third Assessment of California's Compost and Mulch Producing Infrastructure", May 2009.
 
 For throughputs that were in a volume per day format, it was assumed most facilities operated 260 days per year. However, for some facilities, this value may vary slightly.
 
@@ -52,7 +52,7 @@ The Reactive Organic Gas (ROG) emission factors used for emission calculation pu
 - Greenwaste – 0.85 lb/ton
 - Greenwaste/Food Scrap (assume as mixed) – 1.95 lbs/ton
 
-The emission factors above were cited in the October 2007 CIWMB study, “Emission Testing of VOC from Greenwaste Composting at the Modesto Compost Facility in the San Joaquin Valley.” The mid-point value for each of the emission factors was used.
+The emission factors above were cited in the October 2007 CIWMB study, "Emission Testing of VOC from Greenwaste Composting at the Modesto Compost Facility in the San Joaquin Valley." The mid-point value for each of the emission factors was used.
 
 Total Organic Gas (TOG) emission factors were calculated by dividing the ROG emission factors by a ROG factor. A ROG factor, obtained from data compiled by the San Joaquin Valley Air Pollution Control District (SJVAPCD), of 0.8689 was used. The TOG emission factors used for emission calculation purposes are listed below:
 

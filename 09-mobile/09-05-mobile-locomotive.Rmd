@@ -15,7 +15,7 @@ Locomotives are an important mode of transportation for the movement of goods in
 
 #### Methodology {-}
 
-Locomotive emission estimates for the San Francisco Bay Area are obtained from the California Air Resources Board (CARB). CARB locomotive emission inventory uses Booz-Allen Hamilton's, “Locomotive Emission Study”, published in 1992 as a guideline for emission estimates. This study was commissioned by the Locomotive Emission Advisory Committee under Assembly Bill 234 that authorized CARB to conduct, jointly with the California railroad industry, a study of railroad locomotive emissions. An inventory was developed from this report and became the baseline inventory.
+Locomotive emission estimates for the San Francisco Bay Area are obtained from the California Air Resources Board (CARB). CARB locomotive emission inventory uses Booz-Allen Hamilton's, "Locomotive Emission Study", published in 1992 as a guideline for emission estimates. This study was commissioned by the Locomotive Emission Advisory Committee under Assembly Bill 234 that authorized CARB to conduct, jointly with the California railroad industry, a study of railroad locomotive emissions. An inventory was developed from this report and became the baseline inventory.
 
 Since 1992, CARB has made updates to the locomotive emission inventory. In 2003, CARB updated the emission inventory by revising growth assumptions. In 2005, CARB updated the inventory to incorporate fuel correction factors, add passenger train data, and Class III locomotives. These changes have made a significant impact on the total inventory.
 

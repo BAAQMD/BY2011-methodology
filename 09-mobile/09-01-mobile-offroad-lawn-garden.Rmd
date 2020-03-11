@@ -65,7 +65,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projected emissions for lawn, garden and utility equipment categories were estimated based on ARB's Off-road vehicle emission inventory model. The growth factors utilized in the OFFROAD model are based on a report for the Air Resources Board entitled “A Study to Develop Projected Activity for “Non-Road Mobile” Categories in California, 1970-2020”. In this report, certain economic indicators are used to project the growth in population and usage of small off-road engines in various applications.
+Projected emissions for lawn, garden and utility equipment categories were estimated based on ARB's Off-road vehicle emission inventory model. The growth factors utilized in the OFFROAD model are based on a report for the Air Resources Board entitled "A Study to Develop Projected Activity for "Non-Road Mobile" Categories in California, 1970-2020". In this report, certain economic indicators are used to project the growth in population and usage of small off-road engines in various applications.
 
 #### Control {-}
 

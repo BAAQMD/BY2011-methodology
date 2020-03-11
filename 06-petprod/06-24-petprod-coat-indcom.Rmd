@@ -21,11 +21,11 @@ The following categories contain the inventory of organic gas emissions that res
 - [Aerospace Assembly](#petprod-coat-indcom-aero-assembly) (P) 
 - [Other Coatings](#petprod-coat-indcom-other) (P/A)
 
-> Note: The categories with a “P” in parenthesis represent point source categories only. The categories with a “P/A” in parenthesis represent both point and area source categories.
+> Note: The categories with a "P" in parenthesis represent point source categories only. The categories with a "P/A" in parenthesis represent both point and area source categories.
 
 These categories are composed of many types of coatings such as enamels, lacquers, varnishes, etc. Organic emissions occur from the evaporation of organic solvents, which result from the application and drying of coatings. In order to calculate emissions, the amount of coatings, the solvent fraction of the coatings, and the amount of thinning and cleanup solvent, should be known. The efficiency of control equipment, such as afterburners, condensers, and the amount of solvent recycled are all useful variables in determining emissions.
 
-Perflouorocarbons (PFC's) may also be used in association with the “Others Coating” point source group. For the most part, they are used in the technology industry. PFC's are non- reactive organic compound that are also greenhouse gases GHG).
+Perflouorocarbons (PFC's) may also be used in association with the "Others Coating" point source group. For the most part, they are used in the technology industry. PFC's are non- reactive organic compound that are also greenhouse gases GHG).
 
 #### Methodologies {-}
 

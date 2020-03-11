@@ -18,7 +18,7 @@ Fugitive dust particles raised from the movements of motor vehicles on paved roa
 
 The methodology for estimating particulate emissions from vehicular travel on paved roads was updated in the Final Section of Fifth Edition of U.S. EPA's Compilation of Air Pollutant Emission Factors AP42 document, Volume I, Chapter 13.2.1.
 
-The methodology was adapted and refined for California by CARB. For a full description of this methodology and references, please see CARB's methodology document “2013 Update_7 9 PavedRds Meth.pdf”.
+The methodology was adapted and refined for California by CARB. For a full description of this methodology and references, please see CARB's methodology document "2013 Update_7 9 PavedRds Meth.pdf".
 
 A brief description is given below:
 

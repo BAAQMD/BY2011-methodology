@@ -120,7 +120,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projections for the number of operations are based on combination of information from the Airports, FAA and MTC's “Regional Airport System Plan”. For SFO, OAK, and SJC, emissions for selected years were calculated with corresponding estimates of the aircraft fleet mix during that period. Emission values for other years were obtained by interpolation.
+Projections for the number of operations are based on combination of information from the Airports, FAA and MTC's "Regional Airport System Plan". For SFO, OAK, and SJC, emissions for selected years were calculated with corresponding estimates of the aircraft fleet mix during that period. Emission values for other years were obtained by interpolation.
 
 ***
 

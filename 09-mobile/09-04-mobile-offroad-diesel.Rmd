@@ -111,7 +111,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-The historical data utilized in the OFFROAD model are based on a report for the Air Resources Board entitled “A Study to Develop Projected Activity for “Non-Road Mobile” Categories in California, 1970-2020”. In this report, certain economic indicators are used to project the growth in population and usage of small off-road engines in various applications.
+The historical data utilized in the OFFROAD model are based on a report for the Air Resources Board entitled "A Study to Develop Projected Activity for "Non-Road Mobile" Categories in California, 1970-2020". In this report, certain economic indicators are used to project the growth in population and usage of small off-road engines in various applications.
 
 #### Growth {-}
 

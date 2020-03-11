@@ -24,7 +24,7 @@ It is assumed all active landfills within the District are permitted sources. In
 
 ###### Landfills with Collection Systems {-}
 
-For those landfills with active collection systems, it is assumed that 25% escapes as fugitive landfill gas 75% of the gases are captured and are either destroyed by flaring or burned in an internal combustion engine (ICE) or turbine. Those captured gases that are flared or burned in an ICE or turbine are accounted for and reported to the California Air Resources Board (CARB) under our combustion “C” sources. The following are a list of source codes associated with the criteria pollutant and GHG emissions from landfills with collection systems:
+For those landfills with active collection systems, it is assumed that 25% escapes as fugitive landfill gas 75% of the gases are captured and are either destroyed by flaring or burned in an internal combustion engine (ICE) or turbine. Those captured gases that are flared or burned in an ICE or turbine are accounted for and reported to the California Air Resources Board (CARB) under our combustion "C" sources. The following are a list of source codes associated with the criteria pollutant and GHG emissions from landfills with collection systems:
 
 **G7145511**. The throughput associated with this source code represents the amount of landfill gas collected for a particular year. The District uses the throughput and emission factor data to calculate the fugitive methane and GHG emissions from this source based on the following assumptions:
 
@@ -42,7 +42,7 @@ For those landfills with active collection systems, it is assumed that 25% escap
 
 - The CO~2~ emissions from this source are considered to be biogenic.
 
-**Combustion Sources Using Landfill Gas**. The assumed 75% landfill gases captured are combusted in the “C” sources by flaring or used as fuel in turbines or IC engines. A 99% destruction efficiency of TOG is assumed for flaring operations; a 97% destruction efficiency of TOG is assumed when landfill gas is burned in an internal combustion engine. A slightly higher TOG destruction efficiency, 99% or more, is achieved in turbines. Particulate, NO~x~, SO~x~, and CO emissions are also considered as products of combustion.
+**Combustion Sources Using Landfill Gas**. The assumed 75% landfill gases captured are combusted in the "C" sources by flaring or used as fuel in turbines or IC engines. A 99% destruction efficiency of TOG is assumed for flaring operations; a 97% destruction efficiency of TOG is assumed when landfill gas is burned in an internal combustion engine. A slightly higher TOG destruction efficiency, 99% or more, is achieved in turbines. Particulate, NO~x~, SO~x~, and CO emissions are also considered as products of combustion.
 
 Greenhouse gases (CO~2~, CH~4~, and N~2~O) emissions are also calculated from these combustion sources. The CH~4~ and CO~2~ emission factors were based from both EPA AP-42 and District sources. The N~2~O emission factor was based on California Energy Commission data. The CO~2~ emissions emitted from these combustion sources are considered to be biogenic.
 
