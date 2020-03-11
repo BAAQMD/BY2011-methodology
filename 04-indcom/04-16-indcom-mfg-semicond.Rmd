@@ -28,7 +28,7 @@ The processes used to form ICs on the wafer include:
 
 - Oxidation, where an inert layer of silicon dioxide is formed on the wafer by exposing the wafer to a heated oxygen environment.
 
-- Photoresist application, exposure and development, where solvent-based, light-sensitive resin solutions are uniformly applied to the wafer and then processed to leave a pattern of cured photoresist on the wafer which corresponds to the circuit image, while removing the non-image coating. Photoresist applicators may also apply non-light sensitive coatings (spin- on-glass, anti-reflective coatings) and solvents (edge bead remover, hexamethyldisilazane (HMDS)).
+- Photoresist application, exposure and development, where solvent-based, light-sensitive resin solutions are uniformly applied to the wafer and then processed to leave a pattern of cured photoresist on the wafer which corresponds to the circuit image, while removing the non-image coating. Photoresist applicators may also apply non-light sensitive coatings (spin-on-glass, anti-reflective coatings) and solvents (edge bead remover, hexamethyldisilazane (HMDS)).
 
 - Etching, where reactive gases or liquids are used to remove the silicon dioxide layer from the wafer surface where it is not protected by cured photoresist, thereby exposing the underlying silicon for further processing; liquid etching is classified as a wet chemical station, as described below.
 

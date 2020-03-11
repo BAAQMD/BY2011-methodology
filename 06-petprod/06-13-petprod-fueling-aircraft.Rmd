@@ -10,7 +10,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Emissions from these categories occur during refueling (including spillage) of general aviation, commercial, and military aircraft with aviation gasoline or jet fuel. Over-the- wing and single point pressure fueling are two systems used by airports for refueling aircraft. The over-the-wing is similar to a service station without a vapor recovery system. Single point pressure systems use pressure and a closed connection to refuel aircraft. The gasoline vapors in the aircraft tank are vented into the atmosphere through vents on the wings. Other sources of emissions for these categories are also from working and breathing of the underground storage tank during refueling.
+Emissions from these categories occur during refueling (including spillage) of general aviation, commercial, and military aircraft with aviation gasoline or jet fuel. Over-the-wing and single point pressure fueling are two systems used by airports for refueling aircraft. The over-the-wing is similar to a service station without a vapor recovery system. Single point pressure systems use pressure and a closed connection to refuel aircraft. The gasoline vapors in the aircraft tank are vented into the atmosphere through vents on the wings. Other sources of emissions for these categories are also from working and breathing of the underground storage tank during refueling.
 
 #### Methodologies {-}
 

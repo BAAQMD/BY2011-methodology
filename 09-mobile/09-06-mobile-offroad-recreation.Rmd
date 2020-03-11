@@ -14,7 +14,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-These categories are used to inventory the emissions from off-road motorcycles and all- terrain vehicles (ATV).
+These categories are used to inventory the emissions from off-road motorcycles and all-terrain vehicles (ATV).
 
 #### Methodologies {-}
 

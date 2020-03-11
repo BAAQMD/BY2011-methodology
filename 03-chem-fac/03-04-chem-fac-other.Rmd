@@ -22,7 +22,7 @@ Category 27 contains fugitive emissions at chemical plants. Components such as v
 
 These categories contain both point and area source emissions from chemical plants in the District. Most of the emissions (point sources) from chemical plants are accounted for through our permitting processes, however, Category 27 fugitive emissions (area sources) are not. Fugitive emissions for Category 27 were taken as 35% of the total organic emissions at the chemical manufacturing facilities (Categories 21 through 26) within the District. The number of equipment components was used as throughput.
 
-Emissions for Categories 21, 22, and 26 were obtained from point source data only, as contained in the District's data bank. The District updates the data each year on a source- by-source basis using as input:
+Emissions for Categories 21, 22, and 26 were obtained from point source data only, as contained in the District's data bank. The District updates the data each year on a source-by-source basis using as input:
 
 1. Process material throughputs as reported annually by the chemical manufacturing companies.
 

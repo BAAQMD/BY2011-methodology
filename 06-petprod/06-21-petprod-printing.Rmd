@@ -23,7 +23,7 @@ Graphic arts printing consists of five primary types of printing operations: Gra
 
 1. Gravure Printing (Cat # 108) – a type of printing operation whereby ink is transferred from a plated minute etched well to a substrate that is supported by an impression roller. Ink excess is removed by a doctor blade;
 2. Flexographic Printing (Cat # 109) – a printing operation that utilizes a "rolling technique" to apply words, designs, and pictures to the substrate. The image carrier is made of either a rubber elastomer or a similarly related elastomeric material;
-3. Letterpress Printing (Cat # 110) - a printing operation whereby ink is transferred to the paper via an image surface. The image area is raised relative to the non- image area;
+3. Letterpress Printing (Cat # 110) - a printing operation whereby ink is transferred to the paper via an image surface. The image area is raised relative to the non-image area;
 4. Lithographic Printing (Cat # 112 - Point Sources, and Cat #1898 - Area Sources) – a printing operation whereby printing of image and non-image areas are carried out on the same plane;
 5. Screen Printing (Cat # 115 - Point Sources, and Cat #1899 - Area Sources) – a printing operation whereby printing ink passes to a web or a fabric from which a refined form of stencil is applied.
 

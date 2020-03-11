@@ -9,7 +9,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Emissions from this category are from fiberglass products manufacturing plants. Organic compounds are used for the production or rework of product by mixing, pouring, hand laying-up, impregnating, injecting, forming, spraying, and/or curing unsaturated polyester materials with fiberglass, fillers or any other reinforcement materials and associated clean- up. The evaporation of these organic compounds, are considered as emissions from this category.
+Emissions from this category are from fiberglass products manufacturing plants. Organic compounds are used for the production or rework of product by mixing, pouring, hand laying-up, impregnating, injecting, forming, spraying, and/or curing unsaturated polyester materials with fiberglass, fillers or any other reinforcement materials and associated clean-up. The evaporation of these organic compounds, are considered as emissions from this category.
 
 #### Methodology {-}
 

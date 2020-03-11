@@ -21,7 +21,7 @@ The two basic types of cold cleaners are maintenance cleaners and manufacturing 
 
 Manufacturing cold cleaners usually perform a higher quality of cleaning than maintenance cleaners and are therefore more specialized. Manufacturing cold cleaning is generally used in metalworking production. A wide variety of solvents are used in this type of cold cleaner. Manufacturing cold cleaners are fewer in number than maintenance cleaners, but tend to emit more solvent per unit because of the larger size and workload.
 
-Cold cleaning operations include spraying, brushing, flushing and immersion. The designs for material handling in cold cleaning systems are generally divided into manual and batch loaded conveyorized systems. Manual loading is used for the simple, small- scale cleaning operations while batch loaded conveyorized systems are used for the more complex, larger-scale cleaning operations.
+Cold cleaning operations include spraying, brushing, flushing and immersion. The designs for material handling in cold cleaning systems are generally divided into manual and batch loaded conveyorized systems. Manual loading is used for the simple, small-scale cleaning operations while batch loaded conveyorized systems are used for the more complex, larger-scale cleaning operations.
 
 ##### Vapor Degreasers {-}
 

@@ -12,7 +12,7 @@ THESE_CATEGORIES <- c(
 
 These categories estimates criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and greenhouse gas (GHG) emissions (Biogenic-CO~2~, CH~4~, and N~2~O) from waste material combustion at dwellings (e.g., in fireplaces and apartment house incinerators), commercial firms (e.g., in crematories and pathological incinerators), and industrial plants (e.g., in incinerators for waste disposal, reduction or preparation for recycling operations). Category 314 accounts for emissions from point sources in the Air District and emissions for category 1579 were obtained from area sources.
 
-Carbon Dioxide emissions from this category are considered to be biogenic emissions. Biogenic Carbon Dioxide (Bio-CO~2~) emissions are a subset of total CO~2~ emissions which are emitted from materials that are derived from living cells, excluding fossil fuels, limestone and other materials that have been transformed by geological processes. Bio- CO~2~ originates from carbon that is present in materials such as wood, paper, vegetable oils and food, animal, and yard waste.
+Carbon Dioxide emissions from this category are considered to be biogenic emissions. Biogenic Carbon Dioxide (Bio-CO~2~) emissions are a subset of total CO~2~ emissions which are emitted from materials that are derived from living cells, excluding fossil fuels, limestone and other materials that have been transformed by geological processes. Bio-CO~2~ originates from carbon that is present in materials such as wood, paper, vegetable oils and food, animal, and yard waste.
 
 These categories do not include emissions from the combustion of any "auxiliary fuel" (e.g. natural gas or fuel oil) used to maintain the elevated temperatures needed to promote combustion of the waste material being incinerated (Emissions from such "auxiliary fuels" are covered in categories #307, #309, #1590 and #1591). These categories also do not include emissions from solid fuel combustion for heating, cooking, or recreational purposes, which is covered in category #289.
 
@@ -20,7 +20,7 @@ These categories do not include emissions from the combustion of any "auxiliary 
 
 ##### Point Sources {-}
 
-The District updates the point source (Category 314) data each year on a source-by- source basis using as input the following:
+The District updates the point source (Category 314) data each year on a source-by-source basis using as input the following:
 
 1. Process material throughputs as reported by the plants.
 

@@ -13,7 +13,7 @@ Emissions reported in this category are from operations performed at resin manuf
 
 #### Methodology {-}
 
-Organic emissions are calculated based on throughput data, material description (i.e. density, percent VOC in coatings, etc.) as reported by the companies via the Bay Area Air District's "S" and "G" air permit forms. The District obtain each year, as necessary, updates for the data during the permit renewal process. The data is gathered on a source- by-source basis using the following criteria as input:
+Organic emissions are calculated based on throughput data, material description (i.e. density, percent VOC in coatings, etc.) as reported by the companies via the Bay Area Air District's "S" and "G" air permit forms. The District obtain each year, as necessary, updates for the data during the permit renewal process. The data is gathered on a source-by-source basis using the following criteria as input:
 
 1. Process material throughputs as reported annually by the chemical manufacturing companies.
 
