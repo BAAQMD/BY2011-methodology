@@ -108,7 +108,7 @@ BY2011_annual_control_factor_data %>%
 
 Refinery emissions are regulated by the District. Regulations [6][Regulation 6], [7][Regulation 7], [8][Regulation 8], and [9][Regulation 9] regulate Particulate Matter, Odorous Substances, Organic Compounds, and Inorganic Gaseous Pollutants respectably.
 
-[Regulation 12], Rules [11][Regulation 12-11] and [12][Regulation 12-12] pertain to flare monitoring and flare minimization plan at Petroleum Refineries. The rule does not mandate reductions. District staff has found that because refiners have looked more closely both at monitoring and the feasibility of flaring reductions, flaring activities at the five Bay Area refineries have dropped dramatically over the past years. The result has been a significant emission reduction that cannot be directly attributed to this rule, but has and will ultimately be reflected in the emissions.
+[Regulation 12], Rules [11][Rule 12-11] and [12][Rule 12-12] pertain to flare monitoring and flare minimization plan at Petroleum Refineries. The rule does not mandate reductions. District staff has found that because refiners have looked more closely both at monitoring and the feasibility of flaring reductions, flaring activities at the five Bay Area refineries have dropped dramatically over the past years. The result has been a significant emission reduction that cannot be directly attributed to this rule, but has and will ultimately be reflected in the emissions.
 
 ***
 

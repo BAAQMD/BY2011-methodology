@@ -84,6 +84,8 @@ BY2011_annual_control_factor_data %>%
 
 It is estimated that the District achieved a 52% reduction in organic emissions due to the implementation of [Rule 8-36].
 
+***
+
 By: Tan Dinh
 Date: January 2014
 Base Year: 2011
