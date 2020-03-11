@@ -36,7 +36,7 @@ Criteria pollutants and greenhouse gas emissions, including carbon dioxide (CO~2
 
 The county, month, and day factors are obtained from the data bank's information on each plant's location, seasonal usage, and days per week of operation.
 
-### Trends
+### Trends {#chem-fac-other-trend}
 
 #### History {-}
 
@@ -46,6 +46,13 @@ BY2011_annual_emission_data %>%
     THESE_CATEGORIES) %>%
   chart_BY2011_annual_emissions_by(
     fill = category)
+```
+
+```{r chem-fac-other-BY-vs-DB-chart, fig.height=18, out.height=1800}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
 In general, emissions increase as throughputs increase. In addition to usage changes, new installations also increase the emissions. Overall emissions for these categories did not significantly increase in last eight years.

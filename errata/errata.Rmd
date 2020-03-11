@@ -14,10 +14,11 @@ knitr::include_graphics(
 ### High Priority {-}
 
 - [General Refinery Emissions](#petref-fac-general-trend)
-
     - For category #10 Basic Processes, BY2011 NO~x~ emissions are much lower than DataBank numbers would indicate. SO~x~ and PM emissions, on the other hand, are consistent. CY1990-1995 PM~10~ emissions are low, compared to PY data.
     - For category #16 Other, CO~2~ emissions are large (~3 MMTCO2eq) and linearly increasing, which is mildly inconsistent with profiles for other pollutants in this category. Given the large quantity (~ 3 MMTCO2eq), this may merit a reassessment.
     - CY1990-2000 estimates of #15 Flares and Blowdown Systems may merit a reassessment.
+
+- [All Other Chemical Plants](#chem-fac-other-trend): 10,000 ton/yr of CO emissions stops abruptly at CY1998. Few other point-source categories even approach this magnitude of CO emissions. This is traceable to a single facility. For perspective, all five refineries (all of their categories combined) emit about 2,000 to 4,000 ton/yr CO, and have since CY1990.
 
 - [Portable Fuel Container Spillage](#petprod-portable_spillage-methodology): The text states that "CARB estimates 3.57 tons of uncontrolled ROG emissions per day statewide from portable fuel containers in 2011." That 3.57 ton/day is equal to `r as_units(3.57, "ton/day") %>% set_units("ton/yr") %>% drop_units() %>% formattable::accounting(digits = 0)` ton/yr. In the BY2011 inventory, the estimated CY2011 total for category #1434 Portable Fuel Container Spillage is `r BY2011_annual_emission_data %>% filter_categories(1434) %>% filter_years(CY(2011)) %>% filter_pollutants("ROG") %>% convert_emission_units(to = "ton/yr") %>% pull_total(ems_qty) %>% formattable::accounting(digits = 0)` ton/yr ROG. The Bay Area total should not be equal to the statewide total. (Perhaps the text is incorrect instead?)
 
@@ -50,7 +51,6 @@ knitr::include_graphics(
 - [Cement Manufacturing & Combustion](#indcom-mfg-cement-trend): Emissions of all pollutants for #1748 Cement Plant Combustion (Coal) are missing (not zero; actually missing) for CY2008 and CY2010-2030. However, emissions for CY2009 are present. The growth profile assigned to this BY2011 category, #877 "Cement Plt. Comb. - Coal", is also zero for the same years, and also has a spike at CY2009.
 
 - [Rubber Manufacturing](#indcom-mfg-rubber): Emissions of TOG and ROG classified as #46 Rubber Products Mfg (point) increase sharply at CY2011, from less than 1 ton/yr to 19 ton/yr.
-
     - Upon inspection with a pivot table, over 95% of this increase is attributable to the sudden appearance in the RY/PY inventory of a source S#32100 Fugitive Organic Emissions at facility P#110 Burke Industries. A constant 18.26 tons/yr TOG is attributed to this source. The facility has been in continuous operation since at least CY1990; it is implausible that no fugitive TOG or ORG was emitted from it prior to CY2011. 
     - Interestingly, one can also see that RY1990 TOG and ROG emissions from P#110 S#32110 are also 18.26 ton/yr TOG, but between CY1991 and CY2010, TOG S#32100 disappears from the RY inventory. 
     - The growth profile (#847) associated with this point-source category never dips below 100%, so all emissions before CY1990 should have been calculated to be 20 ton/yr or more, not zero. The backcast flag in DataBank is set to `FALSE`, but because this could have been changed between the generation of the CAP inventory and the BY2011 GHG inventory, it's not solid evidence that the CAPs for this category were not backcast. Looking back in time, category #P46 can be found in the BY2008 inventory. In the BY2008 inventory, it comprises about 0.4-0.6 ton/yr TOG from CY1990 to 2030.
@@ -71,7 +71,6 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 - [Land Farming](#waste-mgmt-farm-trends): The growth profile does not seem to match the published emissions for CY1990-1995. Further, the CY1990 emissions for TOG are sharply increased at CY1990. A probable cause: the emission factor for TOG changed abruptly, from CY1990 (TOG = 20 lb/ton) to CY1991 onwards (TOG = 2.24 lb/ton). Although this affects TOG, it is not reflected in published CY1990 emissions of CH~4~.
 
 - [Composting](#waste-mgmt-compost-trends): 
-
     - Like [Other Miscellaneous Industrial/Commercial](#indcom-misc-history), when comparing across pollutants, emission values at CY2010 exhibit strange up/down variations for category #1709 Composting (area). The general shapes of the rest of the years seems generally consistent both (a) across pollutants, and (b) with the assigned growth profiles. 
     - The point/area growth profiles assignments seem to be mixed up: profile #862 Composting-Area Source is assigned to category #1936 Composting (Point), and profile #863 Composting-Point Source is assigned to #1709 Composting (which is an area-source, not a point-source, category). Finally, there are changes in the emission factors for category #1936 over time. This may be intended, but it is unusual for a point-source category to be assigned time-varying EFs. 
 
@@ -80,7 +79,6 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 - [Industrial and Commercial Coatings: Marine](#coat-indcom-marine-trend): Categories #1930 and #1931 are missing emission data for CY2005-2008. These aren't zeros; there are just no rows in the `BY2011-annual-A.csv` file, for these categories, for CY2005-2008.
 
 - [Marine Loading](#petprod-marine-load-control)
-
     - The very last paragraph under "Controls" refers to "Categories 795 - 802", but #801 and #802 are not elsewhere mentioned, and no emissions for #801 or #802 appear in the published BY2011 inventory. (Are they unintentionally missing?). 
     - [Category #90](#petprod-marine-load-emfac-chart) "Ballasting, Other Material" has time-varying emission factors. This is not inherently a problem, but the pattern looks remarkably like the assigned growth profile (#835 Ballasting-Other). This could be causing an unintentional "double-counting" (amplification) of the year-over-year variation. Related: the same thing happens with [Farming Operations](#misc-farm-emfac-chart).
 
@@ -95,7 +93,6 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 #### Stationary Combustion of Fuels {-}
 
 - [Domestic Fuel, LPG & Liquid Fuel](#SS-combust-domestic-liquid)
-
     - For category #286 Domestic LPG, the growth is described as "follow[ing] household population data". But the assigned growth profile is #658 Persons per Household, which is the number of persons in an average household (fairly constant), *not* the total population. 
     - Minor: for category #287 Distillate Oil, the forecast is described as "2% reduction per year"; it seems to be about 1.7% (with rounding, OK). 
 
@@ -133,7 +130,6 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 ```
 
 - [Other External Combustion - Natural Gas](#SS-combust-external-NG):
-
     - Category #307 NG Combustion (Point, Misc): Growth profile #631 Gh, Thrpt Based does not match the values found in RY2006 and RY2007, which results in an artificial "peak". This is noticeable for all pollutants, but especially uncontrolled pollutants. PM and TOG emissions for CY1993-2000 are also under-estimated by this growth profile. Time-varying emission factors would be a way to solve this.
     - Categories #1590 and #1591 should be double-checked against CEC data. See [10.1 Natural Gas Consumption](https://baaqmd.github.io/charting-annual-data/10-third_party.html#natural-gas-consumption), in the Charting Annual Data cookbook.
 
@@ -148,7 +144,6 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 #### Waste Burning {-}
 
 - [Incineration](#waste-burn-incineration-trend)
-
     - Category #1579 Incineration (Area) has a large and linear decline from CY1990-1995 that is unexplained. This may be attributable to BAAQMD regulations. 
     - This category has a CO/CO~2~ ratio of about 0.003, comparable to a well-maintained boiler. Typical CO/CO~2~ ratios for garbage and vegetation burning ("open burning") may be an order of magnitude higher. See, for example, [Akagi (2011)](https://www.atmos-chem-phys.net/11/4039/2011/acp-11-4039-2011.pdf). (NOTE: in the BY2011 inventory, Category #1579 is associated with `CO2_bio`, rather than `CO2`.)
 
@@ -167,12 +162,10 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 - [Construction Equipment](#mobile-offroad-diesel-construct-equip): SO~2~ emissions appear spiky, particularly between CY1998-2010.
 
 - [Industrial Equipment](#mobile-offroad-diesel-indust-equip)
-
     - TOG emissions for #1667 (Natural Gas) exhibit the same zero-every-5-years artifact that is present in [Recreational Boats](#mobile-boat-recreations), only this time it is isolated to one pollutant (TOG). 
     - SO~2~ from #1666 (Diesel) grows much more rapidly than any other pollutant.
 
 - [Light Commerical Equipment](#mobile-offroad-diesel-light_com-equip): 
-
     - CO~2~ and ~CH~4~ for #1672 (Diesel) drop to exactly zero at CY2010, then resume the previous trend. 
     - N~2~O for #1668 (Gasoline, 4-stroke) is exactly zero for CY2026-2030 (same as rec boats, TRUs, ag equip, etc.).
 
