@@ -36,7 +36,7 @@ Spark-ignition outboard engines include carbureted, fuel injected and direct-inj
 
 #### Methodologies {-}
 
-California Air Resources Board (CARB) developed the Off-road vehicle emission inventory (OFFROAD2007) model to estimate emissions from off-road motor vehicles for all counties and air basins in California. The criteria and GHG emission data for recreational boat categories in the Bay Area were obtained from the CARB’s OFFROAD2007 model.
+California Air Resources Board (CARB) developed the Off-road vehicle emission inventory (OFFROAD2007) model to estimate emissions from off-road motor vehicles for all counties and air basins in California. The criteria and GHG emission data for recreational boat categories in the Bay Area were obtained from the CARB's OFFROAD2007 model.
 
 #### Monthly Variation {-}
 
@@ -44,7 +44,7 @@ The monthly activity occurs primarily during late spring, summer and fall. Most 
 
 #### County Distribution {-}
 
-County emissions were provided by the CARB’s OFFROAD2007 model.
+County emissions were provided by the CARB's OFFROAD2007 model.
 
 ```{r mobile-marine-boat-recreation-fraction-table}
 BY2011_county_fraction_data %>%
@@ -84,7 +84,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projected emissions for recreational boats were estimated based on ARB’s Off-road vehicle emission inventory model. The growth factors utilized in the OFFROAD model are prepared in a report for the Air Resources Board entitled “A Study to Develop Projected Activity for “Non-Road Mobile” Categories in California, 1970-2020”. In this report, certain economic indicators are used to project the growth in population and usage of small off-road engines in various applications.
+Projected emissions for recreational boats were estimated based on ARB's Off-road vehicle emission inventory model. The growth factors utilized in the OFFROAD model are prepared in a report for the Air Resources Board entitled “A Study to Develop Projected Activity for “Non-Road Mobile” Categories in California, 1970-2020”. In this report, certain economic indicators are used to project the growth in population and usage of small off-road engines in various applications.
 
 #### Control {-}
 

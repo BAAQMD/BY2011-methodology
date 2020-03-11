@@ -17,7 +17,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Livestock emissions including dairy cattle, range cattle, poultry, swine, sheep, horses, and goats are assumed to be directly related to animal population. Most available population data is based on annual sales data. For dairy cattle, range cattle, and feedlot cattle, year 2000 population was derived from the California Department of Food and Agriculture’s (CDFA) summary of cattle and calves inventory of January 1, 2001. The populations are developed by the United States Department of Agriculture, and the CDFA 2001 Agricultural Resources Directory.
+Livestock emissions including dairy cattle, range cattle, poultry, swine, sheep, horses, and goats are assumed to be directly related to animal population. Most available population data is based on annual sales data. For dairy cattle, range cattle, and feedlot cattle, year 2000 population was derived from the California Department of Food and Agriculture's (CDFA) summary of cattle and calves inventory of January 1, 2001. The populations are developed by the United States Department of Agriculture, and the CDFA 2001 Agricultural Resources Directory.
 
 #### Methodology {#misc-animal-livestock-methodology -}
 

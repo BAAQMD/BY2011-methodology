@@ -46,11 +46,11 @@ emissions are released below it,
 4. Descent/approach from about 2,300 feet, touch down, and landing run, and
 5. Taxi in, idle and shutdown.
 
-For greenhouse gas (GHG) emission inventory, in addition to LTO cycle explained above, the aircraft landing approach and climb out modes above 2,300 feet elevation and aircraft cruise mode in the District’s air space is also included.
+For greenhouse gas (GHG) emission inventory, in addition to LTO cycle explained above, the aircraft landing approach and climb out modes above 2,300 feet elevation and aircraft cruise mode in the District's air space is also included.
 
 The information on number of operations and fleet mix were obtained from the airports, the Federal Aviation Administration (FAA), and the Metropolitan Traffic Commission (MTC). Estimates of aircraft mix for each of the airports were developed based on historical activity and data on home-based aircraft.
 
-The LTO cycle has its equivalent operating time-in-mode (TIM) which is the time for a particular aircraft to go through each of the five modes. Composite modal emission rates (MER) for each of the various types of aircraft engines now in general aviation use were developed from various information sources on aircraft engines. These information sources include the FAA’s Aircraft Engine Emission Database, the U.S. Environmental Protection Agency (EPA), International Civil Aviation Organization (ICAO), and the Intergovernmental Panel on Climate Change (IPCC).
+The LTO cycle has its equivalent operating time-in-mode (TIM) which is the time for a particular aircraft to go through each of the five modes. Composite modal emission rates (MER) for each of the various types of aircraft engines now in general aviation use were developed from various information sources on aircraft engines. These information sources include the FAA's Aircraft Engine Emission Database, the U.S. Environmental Protection Agency (EPA), International Civil Aviation Organization (ICAO), and the Intergovernmental Panel on Climate Change (IPCC).
 
 Emission rates vary according to engine type and operating mode. Emission factors for a specific aircraft were estimated by the equation:
 
@@ -120,7 +120,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projections for the number of operations are based on combination of information from the Airports, FAA and MTC’s “Regional Airport System Plan”. For SFO, OAK, and SJC, emissions for selected years were calculated with corresponding estimates of the aircraft fleet mix during that period. Emission values for other years were obtained by interpolation.
+Projections for the number of operations are based on combination of information from the Airports, FAA and MTC's “Regional Airport System Plan”. For SFO, OAK, and SJC, emissions for selected years were calculated with corresponding estimates of the aircraft fleet mix during that period. Emission values for other years were obtained by interpolation.
 
 ***
 

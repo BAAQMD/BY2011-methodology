@@ -31,7 +31,7 @@ Monthly variation of emissions was based on gasoline usage data for California. 
 
 #### County Distribution {-}
 
-Emissions distributed into the nine counties were based on Caltrans’ Transportation Planning Support Information System's breakdown.
+Emissions distributed into the nine counties were based on Caltrans' Transportation Planning Support Information System's breakdown.
 
 ```{r petprod-GDF-storage-county-fraction-table}
 BY2011_county_fraction_data %>%

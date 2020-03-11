@@ -33,7 +33,7 @@ Petroleum refining involves processing crude oil into consumable products such a
 
 #### Methodologies {-}
 
-Emissions for these categories are obtained from point source data in the District’s record keeping system (Data Bank). Emissions are updated annually, on a source-by-source basis, using the following inputs:
+Emissions for these categories are obtained from point source data in the District's record keeping system (Data Bank). Emissions are updated annually, on a source-by-source basis, using the following inputs:
 
 1. Process material throughputs as reported by the refineries (this data is routinely updated)
 
@@ -92,7 +92,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected.
+Projected growth for all refinery related categories was taken from the California Energy Commission report on California's Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected.
 
 Future flare emissions are difficult to predict, since they are predicated on emergencies and the nature of emergencies which are unknown and unpredictable. However, with the recent passage of refinery flare monitoring and flare minimization plan requirements, flare emissions are expected to remain constant as long as there are no large upset in refinery processes that would warrant increase in flaring activities.
 

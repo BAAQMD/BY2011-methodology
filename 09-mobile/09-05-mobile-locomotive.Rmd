@@ -15,11 +15,11 @@ Locomotives are an important mode of transportation for the movement of goods in
 
 #### Methodology {-}
 
-Locomotive emission estimates for the San Francisco Bay Area are obtained from the California Air Resources Board (CARB). CARB locomotive emission inventory uses Booz-Allen Hamilton’s, “Locomotive Emission Study”, published in 1992 as a guideline for emission estimates. This study was commissioned by the Locomotive Emission Advisory Committee under Assembly Bill 234 that authorized CARB to conduct, jointly with the California railroad industry, a study of railroad locomotive emissions. An inventory was developed from this report and became the baseline inventory.
+Locomotive emission estimates for the San Francisco Bay Area are obtained from the California Air Resources Board (CARB). CARB locomotive emission inventory uses Booz-Allen Hamilton's, “Locomotive Emission Study”, published in 1992 as a guideline for emission estimates. This study was commissioned by the Locomotive Emission Advisory Committee under Assembly Bill 234 that authorized CARB to conduct, jointly with the California railroad industry, a study of railroad locomotive emissions. An inventory was developed from this report and became the baseline inventory.
 
 Since 1992, CARB has made updates to the locomotive emission inventory. In 2003, CARB updated the emission inventory by revising growth assumptions. In 2005, CARB updated the inventory to incorporate fuel correction factors, add passenger train data, and Class III locomotives. These changes have made a significant impact on the total inventory.
 
-Greenhouse gas emissions for locomotives are calculated by multiplying activity data by standardized emission factors for each greenhouse gas. These emission factors take into account fuel-specific carbon content and the percent of carbon that oxidizes to convert to greenhouse gas emissions. Emission factor data was obtained from the U.S. Department of Energy’s (DOE’s), Energy Information Administration (EIA).
+Greenhouse gas emissions for locomotives are calculated by multiplying activity data by standardized emission factors for each greenhouse gas. These emission factors take into account fuel-specific carbon content and the percent of carbon that oxidizes to convert to greenhouse gas emissions. Emission factor data was obtained from the U.S. Department of Energy's (DOE's), Energy Information Administration (EIA).
 
 ```{r mobile-locomotive-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -61,7 +61,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-In 1997, the U.S. EPA finalized the locomotive emission standard regulation. Additionally, projected emissions include expected benefits from ARB's Clean Diesel Regulations (beginning 1993). In 2005, CARB entered into an agreement with Union Pacific Railroad and BNSF to reduce emissions from locomotives throughout California. The agreement establishes a statewide program to reduce diesel particulate emissions from locomotives at the State’s rail yards by phasing out non-essential locomotive idling, installing idling reduction devices, and maximizing the use of low sulfur fuel. It is expected that the elements of these agreement will produce approximately 20% reduction in diesel particulate matter emissions around the rail yards.
+In 1997, the U.S. EPA finalized the locomotive emission standard regulation. Additionally, projected emissions include expected benefits from ARB's Clean Diesel Regulations (beginning 1993). In 2005, CARB entered into an agreement with Union Pacific Railroad and BNSF to reduce emissions from locomotives throughout California. The agreement establishes a statewide program to reduce diesel particulate emissions from locomotives at the State's rail yards by phasing out non-essential locomotive idling, installing idling reduction devices, and maximizing the use of low sulfur fuel. It is expected that the elements of these agreement will produce approximately 20% reduction in diesel particulate matter emissions around the rail yards.
 
 ***
 

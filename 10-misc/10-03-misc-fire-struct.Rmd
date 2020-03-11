@@ -13,7 +13,7 @@ Category 750 estimates criteria pollutant (particulate, organic, NO~x~, SO~x~, a
 
 #### Methodology {- #misc-fire-struct-methodology}
 
-The methods used to calculate emissions for this category conforms to the methods used by the California Air Resources Board (CARB). The total number of structural accidental fires in California was acquired from the State Fire Marshal’s Office. Structural fires were apportioned to the Bay Area based on number of households in the Bay Area as compared to total California households.
+The methods used to calculate emissions for this category conforms to the methods used by the California Air Resources Board (CARB). The total number of structural accidental fires in California was acquired from the State Fire Marshal's Office. Structural fires were apportioned to the Bay Area based on number of households in the Bay Area as compared to total California households.
 
 **Structural losses.** For building and mobile home fires, an average percent structural loss per fire was calculated by dividing the total monetary damage due to fires by the product of the average value of a residence in California and the number of residential fires. The result is an average loss of 7.3% per fire. According to census data and the National Association of Home Builders, the average residence has approximately 1,649 square feet of floor space and an average of 11,000 board feet of lumber in its structure. Assuming an average of one ton of material per 1000 board feet, an average residence would have approximately 11 tons of combustible material. With a rate of loss of 7.3%, the structural loss would be 0.80 tons per fire.
 
@@ -93,7 +93,7 @@ BY2011_annual_area_source_emission_factor_data %>%
     caption = "Composite emission factors (lb/fire).")
 ```
 
-The emission factors for greenhouse gas inventory were developed using above information and emission coefficient data from the Environmental Protection Agency (EPA), the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA) and The California Energy Commission (CEC). The Greenhouse gas composite emission factors (pounds/fire) are as follow:
+The emission factors for greenhouse gas inventory were developed using above information and emission coefficient data from the Environmental Protection Agency (EPA), the U.S. Department of Energy's (DOE's) Energy Information Administration (EIA) and The California Energy Commission (CEC). The Greenhouse gas composite emission factors (pounds/fire) are as follow:
 
 Carbon Dioxide emissions from this category are considered to be biogenic emissions. Biogenic Carbon Dioxide (Bio-CO~2~) emissions are a subset of total CO~2~ emissions which are emitted from materials that are derived from living cells, excluding fossil fuels, limestone and other materials that have been transformed by geological processes. Bio- CO~2~ originates from carbon that is present in materials such as wood, paper, vegetable oils and food, animal, and yard waste.
 
@@ -124,7 +124,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-Historical trends are based on data from the State Fire Marshal’s Office and household population growth trends in the Bay Area.
+Historical trends are based on data from the State Fire Marshal's Office and household population growth trends in the Bay Area.
 
 #### Growth {-}
 
@@ -143,7 +143,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Emissions growth profile is based on household population growth in the Bay Area. Household population data used in developing growth profile was obtained from the Association of Bay Area Government’s (ABAG’s) 2009 “Projections” reports.
+Emissions growth profile is based on household population growth in the Bay Area. Household population data used in developing growth profile was obtained from the Association of Bay Area Government's (ABAG's) 2009 “Projections” reports.
 
 ***
 

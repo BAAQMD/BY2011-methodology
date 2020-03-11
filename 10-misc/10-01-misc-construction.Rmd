@@ -27,17 +27,17 @@ The number of new housing units (single and multi-family), provided by the Calif
 
 ##### Commercial, Industrial, and Institutional Construction (Categories 745 -747) {-}
 
-The estimated construction acreage for these categories is based on project valuations supplied from the California Department of Finance. The valuations for commercial, industrial, and institutional construction are 3.7, 4.0, and 4.4 acres per million dollars of valuation, respectively. Since these factors are 1977 values, multiplying the above valuations by the ratio of 1977 to a particular year’s Association of Bay Area Government’s (ABAG’s) Consumer Price Index value makes inflationary corrections for that particular year. The construction time for commercial, industrial, institutional buildings is assumed to be 11 months. The throughput for a particular year, expressed in acre-months, is found by multiplying that year’s inflationary adjusted project valuation by the county’s construction valuation, and construction time.
+The estimated construction acreage for these categories is based on project valuations supplied from the California Department of Finance. The valuations for commercial, industrial, and institutional construction are 3.7, 4.0, and 4.4 acres per million dollars of valuation, respectively. Since these factors are 1977 values, multiplying the above valuations by the ratio of 1977 to a particular year's Association of Bay Area Government's (ABAG's) Consumer Price Index value makes inflationary corrections for that particular year. The construction time for commercial, industrial, institutional buildings is assumed to be 11 months. The throughput for a particular year, expressed in acre-months, is found by multiplying that year's inflationary adjusted project valuation by the county's construction valuation, and construction time.
 
 ##### Road Construction (Category 748) {-}
 
-The latest road construction for freeways, highways, county and city roads was estimated by the difference in their respective total mileage between that year’s and prior year’s data, as reported in the California Statistical Abstract. The affected area per mile of road for freeways, highways, and county and city roads are 12.1, 9.2, and 7.8 acres/mile, respectively. The construction time for roads is assumed to be 18 months for the average project. The throughput, expressed in acre-months, is estimated by multiplying the road construction miles, affected area per mile of road factor, and project duration time.
+The latest road construction for freeways, highways, county and city roads was estimated by the difference in their respective total mileage between that year's and prior year's data, as reported in the California Statistical Abstract. The affected area per mile of road for freeways, highways, and county and city roads are 12.1, 9.2, and 7.8 acres/mile, respectively. The construction time for roads is assumed to be 18 months for the average project. The throughput, expressed in acre-months, is estimated by multiplying the road construction miles, affected area per mile of road factor, and project duration time.
 
 The emission factor (which includes any controls) used for all categories mentioned above was estimated at 0.3515 ton PM/acre-month (703.0 lbs. PM/acre-month), with the PM~10~ fraction at 0.4893. The total emissions for these categories are determined by multiplying the throughput and emission factor.
 
 #### Monthly Variation {-}
 
-The monthly variations of emissions for the Bay Area counties in Category 744 – 748 were based on the ARB’s seasonal profiles for Building and Road Construction Dust. Roughly, emissions were distributed as 55% during the months of April to September and 45% during the remaining months.
+The monthly variations of emissions for the Bay Area counties in Category 744 – 748 were based on the ARB's seasonal profiles for Building and Road Construction Dust. Roughly, emissions were distributed as 55% during the months of April to September and 45% during the remaining months.
 
 #### County Distribution {-}
 
@@ -62,7 +62,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-The historical growth profile was based on a combination prior emissions data (back to 1987) and the ABAG’s 2009 Construction Employment Growth Profile.
+The historical growth profile was based on a combination prior emissions data (back to 1987) and the ABAG's 2009 Construction Employment Growth Profile.
 
 #### Growth {-}
 
@@ -81,9 +81,9 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-The projected emissions to 2030 for Categories 744 – 747 were based on ABAG’s 2009 Construction Employment Growth Profile.
+The projected emissions to 2030 for Categories 744 – 747 were based on ABAG's 2009 Construction Employment Growth Profile.
 
-For Category 748, the growth profile for the years 2008-2010 was based on information found in the California Energy Commission’s Report “Transportation Energy Forecasts and Analyses for the 2009 Integrated Energy Policy Report”, May 2010, Table 2.10. For these years, the activity decreased an average 4.3% per year to account for the downturn in the economy. After 2010, projected emissions to 2030 were based on ABAG’s 2009 Construction Employment Growth Profile.
+For Category 748, the growth profile for the years 2008-2010 was based on information found in the California Energy Commission's Report “Transportation Energy Forecasts and Analyses for the 2009 Integrated Energy Policy Report”, May 2010, Table 2.10. For these years, the activity decreased an average 4.3% per year to account for the downturn in the economy. After 2010, projected emissions to 2030 were based on ABAG's 2009 Construction Employment Growth Profile.
 
 ***
 

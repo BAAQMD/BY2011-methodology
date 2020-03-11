@@ -15,7 +15,7 @@ These categories cover emissions from the combustion of fuel in internal combust
 
 #### Methodologies {-}
 
-California Air Resources Board (CARB) developed the Off-road vehicle emission inventory’s OFFROAD2007 model to estimate emissions from off-road motor vehicles for all counties and air basins in California. The OFFROAD model contains a more comprehensive list of equipment from a wider range of categories compared to BAH. The OFFROAD model adds an inventory estimate for engines powered by diesel fuel, compressed natural gas (CNG) and liquid petroleum gas (LPG) which were not previously accounted for. The criteria and GHG emission data for transportation refrigeration unit categories in the Bay Area were obtained from the CARB’s OFFROAD2007 model.
+California Air Resources Board (CARB) developed the Off-road vehicle emission inventory's OFFROAD2007 model to estimate emissions from off-road motor vehicles for all counties and air basins in California. The OFFROAD model contains a more comprehensive list of equipment from a wider range of categories compared to BAH. The OFFROAD model adds an inventory estimate for engines powered by diesel fuel, compressed natural gas (CNG) and liquid petroleum gas (LPG) which were not previously accounted for. The criteria and GHG emission data for transportation refrigeration unit categories in the Bay Area were obtained from the CARB's OFFROAD2007 model.
 
 #### Monthly Variation {-}
 
@@ -23,7 +23,7 @@ Monthly activity is assumed to be uniform throughout the year. Weekend activity 
 
 #### County Distribution {-}
 
-County emissions were provided by the CARB’s OFFROAD2007 model.
+County emissions were provided by the CARB's OFFROAD2007 model.
 
 ```{r mobile-offroad-TRU-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -44,7 +44,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-Prior to the 1999 Base year emissions, the methodology for the transportation refrigeration units was based on the published report: "Report on Utility Equipment Emissions in the State of California". The average engine power, hours of use per year and emission factors for each type of unit were taken from a study conducted by Booze, Allen, and Hamilton Inc. (BAH). Total number of refrigeration units was based on the Department of Motor Vehicles’ registration data for regular commercial trucks and trailers by county. The total was distributed to counties using this data. The BAH study showed that all transportation refrigeration units consist of diesel units and there are no longer any gasoline power units.
+Prior to the 1999 Base year emissions, the methodology for the transportation refrigeration units was based on the published report: "Report on Utility Equipment Emissions in the State of California". The average engine power, hours of use per year and emission factors for each type of unit were taken from a study conducted by Booze, Allen, and Hamilton Inc. (BAH). Total number of refrigeration units was based on the Department of Motor Vehicles' registration data for regular commercial trucks and trailers by county. The total was distributed to counties using this data. The BAH study showed that all transportation refrigeration units consist of diesel units and there are no longer any gasoline power units.
 
 #### Growth {-}
 
@@ -63,7 +63,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projected emissions for the transportation refrigeration units categories were estimated based on ARB’s Off-road vehicle emission inventory model. The growth factors utilized in the OFFROAD model are based on a report for the Air Resources Board entitled “A Study to Develop Projected Activity for “Non-Road Mobile” Categories in California, 1970-2020”. In this report, certain economic indicators are used to project the growth in population and usage of small off-road engines in various applications. In general, the population of small off-road equipment is expected to increase by approximately 34% between 1990 and the year 2010.
+Projected emissions for the transportation refrigeration units categories were estimated based on ARB's Off-road vehicle emission inventory model. The growth factors utilized in the OFFROAD model are based on a report for the Air Resources Board entitled “A Study to Develop Projected Activity for “Non-Road Mobile” Categories in California, 1970-2020”. In this report, certain economic indicators are used to project the growth in population and usage of small off-road engines in various applications. In general, the population of small off-road equipment is expected to increase by approximately 34% between 1990 and the year 2010.
 
 #### Control {-}
 

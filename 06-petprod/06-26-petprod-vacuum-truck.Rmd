@@ -9,7 +9,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Emissions reported in this category are from the operations of vacuum trucks at refineries, marine, and bulk terminals in the San Francisco Bay Area. A vacuum truck is a transportable, truck-mounted, industrial vacuum system designed to load materials into the truck’s containment vessel. Vacuum trucks are capable of loading different types of materials (either pneumatically, by external pump or by gravity feed) into their barrels under a variety of conditions.
+Emissions reported in this category are from the operations of vacuum trucks at refineries, marine, and bulk terminals in the San Francisco Bay Area. A vacuum truck is a transportable, truck-mounted, industrial vacuum system designed to load materials into the truck's containment vessel. Vacuum trucks are capable of loading different types of materials (either pneumatically, by external pump or by gravity feed) into their barrels under a variety of conditions.
 
 #### Methodologies {-}
 
@@ -63,7 +63,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Projected growth for vacuum truck at refineries, bulk, and marine terminals is related to refinery growth. For all refinery related categories, growth was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2007) that predicted California refiners expand distillation capacity to increase at a rate of approximately one percent per year.
+Projected growth for vacuum truck at refineries, bulk, and marine terminals is related to refinery growth. For all refinery related categories, growth was taken from the California Energy Commission report on California's Petroleum Infrastructure (2007) that predicted California refiners expand distillation capacity to increase at a rate of approximately one percent per year.
 
 #### Control {-}
 
@@ -76,7 +76,7 @@ BY2011_annual_control_factor_data %>%
     flag_years = CY(2011, 2030))
 ```
 
-Vacuum truck is regulated under District’s [Rule 8-53] which established an emission limit that applies at the vapor exhaust outlet of the vacuum truck or associated equipment. The rule also establishes a limit for vapor leads and for liquid leaks from vacuum truck equipment.
+Vacuum truck is regulated under District's [Rule 8-53] which established an emission limit that applies at the vapor exhaust outlet of the vacuum truck or associated equipment. The rule also establishes a limit for vapor leads and for liquid leaks from vacuum truck equipment.
 
 ***
 

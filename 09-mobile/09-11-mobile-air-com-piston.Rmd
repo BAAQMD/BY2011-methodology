@@ -28,9 +28,9 @@ For criteria pollutant emission calculations, the aircraft LTO cycle is divided 
 
 The emissions are based on the time of operation in each mode and the emission rates of the engines. The time in the landing approach and climb out modes are assumed to be 3.02 minutes and 1.55 minutes, respectively. Take-off time of 0.95 minute (including 0.25 minute for reverse thrust) is fairly standard for commercial aircraft and represents the time for initial climb from ground level to about 500 feet. The time in taxi/idle mode usually varies with airports.
 
-For greenhouse gas (GHG) emission inventory, in addition to LTO cycle explained above, the aircraft landing approach and climb out modes above 2,300 feet elevation and aircraft cruise mode in the District’s air space is also included.
+For greenhouse gas (GHG) emission inventory, in addition to LTO cycle explained above, the aircraft landing approach and climb out modes above 2,300 feet elevation and aircraft cruise mode in the District's air space is also included.
 
-The information on number of aircraft operations and fleet mix was obtained from the three major commercial airports in the Bay Area, the Federal Aviation Administration (FAA), and the Metropolitan Traffic Commission (MTC). Emission rates vary according to engine type and operating mode. Modal emission rates for aircraft engines in general commercial use were obtained from the FAA’s Aircraft Engine Emission Database, the U.S. Environmental Protection Agency (EPA), International Civil Aviation Organization (ICAO), and Intergovernmental Panel on Climate Change (IPCC).
+The information on number of aircraft operations and fleet mix was obtained from the three major commercial airports in the Bay Area, the Federal Aviation Administration (FAA), and the Metropolitan Traffic Commission (MTC). Emission rates vary according to engine type and operating mode. Modal emission rates for aircraft engines in general commercial use were obtained from the FAA's Aircraft Engine Emission Database, the U.S. Environmental Protection Agency (EPA), International Civil Aviation Organization (ICAO), and Intergovernmental Panel on Climate Change (IPCC).
 
 $$
 \text{EMF} = \text{N} \times \sum{\left( v_e / v_t \right)_{m,p}} \times \text{TIM}
@@ -102,7 +102,7 @@ BY2011_annual_growth_factor_data %>%
 
 The continuing effort in aircraft improvement, development of newer engine technology and their phasing in will result in reduced emissions. Airport noise regulations have forced changes to the commercial aircraft fleet resulting in replacement of loud and dirtier engines with newer, quieter, and cleaner burning engines. There is a continuing trend in the use of larger aircraft thereby increasing the passenger to LTO ratio. This will reduce the number of LTOs and consequently, lower emissions.
 
-The projections for number of operations and fleet mix at each airport were developed based on combination of information from the airports, the FAA, and the MTC’s Regional Airport System Plans (RASP). Emissions for selected years were calculated based on above methodology. Emission values for other years were obtained by interpolation and extrapolation method.
+The projections for number of operations and fleet mix at each airport were developed based on combination of information from the airports, the FAA, and the MTC's Regional Airport System Plans (RASP). Emissions for selected years were calculated based on above methodology. Emission values for other years were obtained by interpolation and extrapolation method.
 
 ***
 

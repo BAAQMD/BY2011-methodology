@@ -22,14 +22,14 @@ Slow-cure Liquid Asphalt (Slow-cure Cutback Asphalt) may also be used in the Bay
 
 #### Methodology {- #petprod-asphalt-pave-methodology}
 
-The organic emission from asphalt paving operations in the Bay Area was based on ARB’s methodology for emission calculations (Attachment C: Asphalt Paving and Roofing, from STI’s Area Source Emissions Updates, March 2003). In 2011, the Energy Information Administration (EIA) Office of Oil and Gas reported 10,589,000 barrels of asphalt were used in California for paving and roofing purposes. Of that amount, it was assumed 80% (8,471,200 barrels) of the asphalt was used for road paving and 20% (2,117,800 barrels) was used for roofing. (To calculate asphalt usage in tons per year it was assumed an asphalt density of 8 lbs/gal and a barrel equivalent to 42 gals.) Additionally, the statewide asphalt use for paving applications was estimated as follows:
+The organic emission from asphalt paving operations in the Bay Area was based on ARB's methodology for emission calculations (Attachment C: Asphalt Paving and Roofing, from STI's Area Source Emissions Updates, March 2003). In 2011, the Energy Information Administration (EIA) Office of Oil and Gas reported 10,589,000 barrels of asphalt were used in California for paving and roofing purposes. Of that amount, it was assumed 80% (8,471,200 barrels) of the asphalt was used for road paving and 20% (2,117,800 barrels) was used for roofing. (To calculate asphalt usage in tons per year it was assumed an asphalt density of 8 lbs/gal and a barrel equivalent to 42 gals.) Additionally, the statewide asphalt use for paving applications was estimated as follows:
 
 - Hot-mix: 88% 
 - Emulsified: 9% 
 - Road Oils: 2% 
 - Cutback: <1%
 
-(Note: It is assumed some districts, including the BAAQMD, do not use Rapid-cure Cutback Asphalt.) County throughputs can be apportioned from the state’s total using the miles of paved roads in each of the counties. This data was acquired from the States’ Teale Data Center. The organic emission factors used for hot-mix, emulsified, and road oils were 0.04, 17.9, and 2.19 lb/ton of asphalt applied, respectively. (Note—the initial emission factor used for road oils was 88 lbs./ton. This was an EPA recommended value; however, regulatory controls reduced this value to the level stated above.) The total emissions for area source categories are determined by multiplying the emission factor, throughput, and rule effectiveness factor, if applicable.
+(Note: It is assumed some districts, including the BAAQMD, do not use Rapid-cure Cutback Asphalt.) County throughputs can be apportioned from the state's total using the miles of paved roads in each of the counties. This data was acquired from the States' Teale Data Center. The organic emission factors used for hot-mix, emulsified, and road oils were 0.04, 17.9, and 2.19 lb/ton of asphalt applied, respectively. (Note—the initial emission factor used for road oils was 88 lbs./ton. This was an EPA recommended value; however, regulatory controls reduced this value to the level stated above.) The total emissions for area source categories are determined by multiplying the emission factor, throughput, and rule effectiveness factor, if applicable.
 
 ```{r petprod-asphalt-pave-emfac-table}
 BY2011_annual_area_source_emission_factor_data %>%
@@ -66,7 +66,7 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
-Since the early 1980’s, the Asphalt Institute has done the reporting of asphalt sales and road oils. The historical growth profile was based on a combination of prior emissions calculations and the Association of Bay Area Government’s (ABAG’s) 2009 Transportation and Utility Employment growth profile.
+Since the early 1980's, the Asphalt Institute has done the reporting of asphalt sales and road oils. The historical growth profile was based on a combination of prior emissions calculations and the Association of Bay Area Government's (ABAG's) 2009 Transportation and Utility Employment growth profile.
 
 #### Growth {-}
 
@@ -85,7 +85,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Future projections of emissions to 2030 are also based on ABAG’s 2009 Transportation, Communication, and Utility Employment growth profile.
+Future projections of emissions to 2030 are also based on ABAG's 2009 Transportation, Communication, and Utility Employment growth profile.
 
 #### Control {-}
 

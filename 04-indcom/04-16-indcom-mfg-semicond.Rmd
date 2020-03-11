@@ -10,7 +10,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-These categories include organic and greenhouse gas (GHG) emissions from semiconductor manufacturing plants and other related integrated circuits manufacturing. Semiconductor manufacturing processes include blank wafer production, semiconductor fabrication, and assembly and packaging. (The following description of the semiconductor manufacturing processes was taken from the BAAQMD’s Permit Handbook, Section 7, Chapter 4.)
+These categories include organic and greenhouse gas (GHG) emissions from semiconductor manufacturing plants and other related integrated circuits manufacturing. Semiconductor manufacturing processes include blank wafer production, semiconductor fabrication, and assembly and packaging. (The following description of the semiconductor manufacturing processes was taken from the BAAQMD's Permit Handbook, Section 7, Chapter 4.)
 
 ##### Blank Wafer Production {-}
 
@@ -51,11 +51,11 @@ This is where wafers are cut into individual integrated circuits, which then are
 
 #### Methodology {-}
 
-**Category #43.** This category contains point sources only where information on equipment, operating data, and throughput of each source are reported by individual semiconductor manufacturing plants and are stored in the District's Data Bank. Organic emissions and GHG’s are calculated by using the throughput data of specific materials reported and emission factors that are based on various test data and publication. These information are updated upon permit renewal.
+**Category #43.** This category contains point sources only where information on equipment, operating data, and throughput of each source are reported by individual semiconductor manufacturing plants and are stored in the District's Data Bank. Organic emissions and GHG's are calculated by using the throughput data of specific materials reported and emission factors that are based on various test data and publication. These information are updated upon permit renewal.
 
-**Category #1891.** This category estimates emissions from high global warming potential (GWP) materials (perfluorocarbons, nitrogen trifluoride, and sulfur hexafluoride) in the semiconductor industry. These emissions are considered as area sources. These high GWP GHG emissions were estimated using data from the latest California Air Resources Boards (CARB) “Documentation of California’s Greenhouse Gas Inventory”, California Greenhouse Gas Inventory by IPCC Category, Sixth Edition, 2000 - 2011 (Sector: Industrial: Manufacturing: Electric & Electronic Equipment: Semiconductors & Related Products). From the State level, the Bay Area emissions were calculated using the employee data tables found in the California Department of Finance’s (CDF) 2011 updated Statistical Abstract report. The 2011 Statewide and Bay Area number of employees within the “Computer and Electronic Products” sector were found in Table C- 4 and C-7 of the Statistical Abstract, respectively. The data from these two tables determined the BAAQMD fraction to the State total.
+**Category #1891.** This category estimates emissions from high global warming potential (GWP) materials (perfluorocarbons, nitrogen trifluoride, and sulfur hexafluoride) in the semiconductor industry. These emissions are considered as area sources. These high GWP GHG emissions were estimated using data from the latest California Air Resources Boards (CARB) “Documentation of California's Greenhouse Gas Inventory”, California Greenhouse Gas Inventory by IPCC Category, Sixth Edition, 2000 - 2011 (Sector: Industrial: Manufacturing: Electric & Electronic Equipment: Semiconductors & Related Products). From the State level, the Bay Area emissions were calculated using the employee data tables found in the California Department of Finance's (CDF) 2011 updated Statistical Abstract report. The 2011 Statewide and Bay Area number of employees within the “Computer and Electronic Products” sector were found in Table C- 4 and C-7 of the Statistical Abstract, respectively. The data from these two tables determined the BAAQMD fraction to the State total.
 
-Perfluorocarbon emissions are considered total organic gas (TOG) emissions, with no reactive organic gas (ROG) component. They are also considered GHG’s with a range of global warming potential (GWP) values. The 2011 composite GWP value used for calculation purposes was 1,308.
+Perfluorocarbon emissions are considered total organic gas (TOG) emissions, with no reactive organic gas (ROG) component. They are also considered GHG's with a range of global warming potential (GWP) values. The 2011 composite GWP value used for calculation purposes was 1,308.
 
 #### Monthly Variation {-}
 
@@ -65,7 +65,7 @@ Emissions for both categories were assumed to be uniform for each month of the y
 
 **Category #43.** The county location of each company as reported in the Data Bank was used to distribute emissions into each county.
 
-**Category #1891.** The number of employees in each applicable Bay Area county’s, “Computer and Electronic Products” sector was used to determine the county fraction. This data was found in Table C-7 of the 2011 CDF Statistical Abstract report.
+**Category #1891.** The number of employees in each applicable Bay Area county's, “Computer and Electronic Products” sector was used to determine the county fraction. This data was found in Table C-7 of the 2011 CDF Statistical Abstract report.
 
 ```{r indcom-mfg-semicond-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -86,9 +86,9 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-**Category 43.** There are no emissions reported prior to 1975 since semiconductor industries existed only after this year. In 1984, emissions were calculated to be about 5 tons/day from a District report on "Emissions from Semiconductor Plants in Santa Clara County". From 1975 - 1984, the growth profile was assumed to grow linearly. From 1987 – 2010, the growth profile was based on emissions as provide in the District’s Data Bank. (The growth profile was interpolated between the years 1984 – 1987.)
+**Category 43.** There are no emissions reported prior to 1975 since semiconductor industries existed only after this year. In 1984, emissions were calculated to be about 5 tons/day from a District report on "Emissions from Semiconductor Plants in Santa Clara County". From 1975 - 1984, the growth profile was assumed to grow linearly. From 1987 – 2010, the growth profile was based on emissions as provide in the District's Data Bank. (The growth profile was interpolated between the years 1984 – 1987.)
 
-**Category 1891.** From 1990 – 2010, the growth profile was based on GHG emissions provided by CARB’s “Documentation of California’s Greenhouse Gas Inventory”, California Greenhouse Gas Inventory by IPCC Category. From 1984 – 1990, the growth profile was based on ABAG’s 2009 Information Employment growth profile. From 1975 - 1984, the growth profile assumed to grow linearly from zero, since prior to 1975, there were no emissions.
+**Category 1891.** From 1990 – 2010, the growth profile was based on GHG emissions provided by CARB's “Documentation of California's Greenhouse Gas Inventory”, California Greenhouse Gas Inventory by IPCC Category. From 1984 – 1990, the growth profile was based on ABAG's 2009 Information Employment growth profile. From 1975 - 1984, the growth profile assumed to grow linearly from zero, since prior to 1975, there were no emissions.
 
 #### Growth {-}
 
@@ -107,7 +107,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-For both categories, projections to year 2030 were based on ABAG’s 2009 Information Employment growth profile.
+For both categories, projections to year 2030 were based on ABAG's 2009 Information Employment growth profile.
 
 #### Control {-}
 

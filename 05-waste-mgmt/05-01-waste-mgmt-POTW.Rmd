@@ -18,7 +18,7 @@ Category 50 (POTW) contains organic emissions from point sources only. The emiss
 
 The greenhouse gas (GHG) emissions from these permitted POTW facilities in Category #50 come from combustion sources only. These GHG, namely CO~2~, Biogenic CO~2~, CH~4~, and N~2~O are calculated in the combustion source categories (i.e. Category Nos. 291, 292, 304, 307, 312, etc.).
 
-Other process and fugitive GHG emissions (CH~4~ and N~2~O) from POTW facilities are estimated as an area source in Category 1911. The CH~4~ emissions from POTW’s (centralized anaerobic) and the N~2~O emissions from wastewater treatment effluent emissions and biological denitrification were estimated using the California Air Resources Board’s Documentation of California’s Greenhouse Gas Inventory (4th Edition, Category: Waste, IPCC: 4D1 – Wastewater Treatment and Discharge). These area source GHG emissions were estimated for the BAAQMD as a whole and not to any specific POTW facility.
+Other process and fugitive GHG emissions (CH~4~ and N~2~O) from POTW facilities are estimated as an area source in Category 1911. The CH~4~ emissions from POTW's (centralized anaerobic) and the N~2~O emissions from wastewater treatment effluent emissions and biological denitrification were estimated using the California Air Resources Board's Documentation of California's Greenhouse Gas Inventory (4th Edition, Category: Waste, IPCC: 4D1 – Wastewater Treatment and Discharge). These area source GHG emissions were estimated for the BAAQMD as a whole and not to any specific POTW facility.
 
 #### Monthly Variation {-}
 
@@ -26,7 +26,7 @@ The data bank contains percentage of throughput data for each of the four 3-mont
 
 #### County Distribution {-}
 
-The county location of each processing plant as reported in the databank is used to distribute emissions into each county for Category 50. The emissions in Category 1911 were distributed according to each District’s county population.
+The county location of each processing plant as reported in the databank is used to distribute emissions into each county for Category 50. The emissions in Category 1911 were distributed according to each District's county population.
 
 ```{r waste-mgmt-POTW-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -47,7 +47,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-The historical growth profile for Category 50 was based on a combination of prior emissions data (back to 1990) and the Association of Bay Area Government’s (ABAG’s) 2009 Total Population data. The historical growth profile for Category 1911 was based on ABAG’s 2009 Total Population data.
+The historical growth profile for Category 50 was based on a combination of prior emissions data (back to 1990) and the Association of Bay Area Government's (ABAG's) 2009 Total Population data. The historical growth profile for Category 1911 was based on ABAG's 2009 Total Population data.
 
 #### Growth {-}
 
@@ -66,7 +66,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projections to year 2030 for both categories were based on ABAG’s 2009 Total Population growth profile.
+Projections to year 2030 for both categories were based on ABAG's 2009 Total Population growth profile.
 
 ***
 

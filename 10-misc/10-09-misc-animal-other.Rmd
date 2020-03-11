@@ -61,7 +61,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projections to 2030 were based on the same growth profile of ABAG’s 2009 Projections.
+Projections to 2030 were based on the same growth profile of ABAG's 2009 Projections.
 
 ***
 

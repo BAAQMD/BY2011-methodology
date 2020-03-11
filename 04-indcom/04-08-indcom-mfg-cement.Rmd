@@ -17,13 +17,13 @@ The primary criteria pollutant emission from cement manufacturing is particulate
 
 Various fuels are used in the kiln for the cement manufacturing process. These fuels have included coke, coal, and natural gas. (As of 2010, coal was no longer as a fuel in the kiln.) Diesel fuel is used in the emergency generators and portable compressors. The emissions from these fuels are the five criteria pollutants, namely PM, organics, NO~x~, SO~x~, and CO.
 
-Carbon Dioxide (CO~2~), a greenhouse gas (GHG), is also produced during the cement manufacturing process. Carbon Dioxide (CO~2~), methane (CH~4~), and nitrous oxide (N~2~O) are the GHG’s emitted during the combustion of the fuels.
+Carbon Dioxide (CO~2~), a greenhouse gas (GHG), is also produced during the cement manufacturing process. Carbon Dioxide (CO~2~), methane (CH~4~), and nitrous oxide (N~2~O) are the GHG's emitted during the combustion of the fuels.
 
 #### Methodology {-}
 
 These categories contain criteria pollutant and GHG emissions from point sources only. Emissions were individually calculated for each source operation in the District's Data Bank System. Emissions are calculated by multiplying the specific emission factor for a particular source operation by the throughput. These data are supplied by the permitted facility. The summation of these emissions provides the emissions for these categories.
 
-The CO~2~ emission factor used in the cement manufacturing process was obtained from the California Climate Action Registry’s Cement reporting Protocol. The combustion sources (coke, natural gas. and diesel) GHG emission factors for CO~2~, CH~4~, and N~2~O were obtained from the Department of Energy (EIA) and the California Energy Commission (CEC).
+The CO~2~ emission factor used in the cement manufacturing process was obtained from the California Climate Action Registry's Cement reporting Protocol. The combustion sources (coke, natural gas. and diesel) GHG emission factors for CO~2~, CH~4~, and N~2~O were obtained from the Department of Energy (EIA) and the California Energy Commission (CEC).
 
 #### Monthly Variation {-}
 
@@ -31,7 +31,7 @@ Monthly and daily production rates follow permitted data supplied by the major c
 
 #### County Distribution {-}
 
-Emissions are distributed to the county based on the location of the processing plant. The District’s data bank contains the information on plant location in Santa Clara County.
+Emissions are distributed to the county based on the location of the processing plant. The District's data bank contains the information on plant location in Santa Clara County.
 
 ```{r indcom-mfg-cement-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -52,7 +52,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-The historical growth profile for Category 36 was based on a combination of prior cement kiln throughput data (back to 1987) and the Association of Bay Area Government’s (ABAG’s) 2009 Construction Employment growth profile. The historical growth profile for Categories 1747 - 1750 was based on a combination of prior fuel throughput data (back to 1999) and the Association of Bay Area Government’s (ABAG’s) 2009 Construction Employment growth profile.
+The historical growth profile for Category 36 was based on a combination of prior cement kiln throughput data (back to 1987) and the Association of Bay Area Government's (ABAG's) 2009 Construction Employment growth profile. The historical growth profile for Categories 1747 - 1750 was based on a combination of prior fuel throughput data (back to 1999) and the Association of Bay Area Government's (ABAG's) 2009 Construction Employment growth profile.
 
 #### Growth {-}
 
@@ -71,7 +71,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projections of emissions to 2030 in all categories were based on ABAG’s 2009 Construction Employment growth profile.
+Projections of emissions to 2030 in all categories were based on ABAG's 2009 Construction Employment growth profile.
 
 #### Control {-}
 
@@ -89,7 +89,7 @@ The cement manufacturing operations are subject to District regulations regardin
 
 The District adopted [Rule 9-13], Nitrogen Oxide, Particulate Matter, and Toxic Air Contaminants from Portland Cement Manufacturing, on September 17, 2012. This rule becomes effective on September 9, 2013 and limits the emissions of NO~x~, PM, and toxic air contaminants.
 
-The categories criteria pollutant’s overall control efficiencies (CE) as a result of this rule are listed below:
+The categories criteria pollutant's overall control efficiencies (CE) as a result of this rule are listed below:
 
 - For Category 36, the overall CE of PM increases slightly, to over 99%.; the overall CE of organics is approximately 14%.
 

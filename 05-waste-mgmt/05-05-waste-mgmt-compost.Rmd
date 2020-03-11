@@ -23,7 +23,7 @@ In the feedstock preparation step, the composted organic materials are screened 
 
 #### Methodology {-}
 
-In 2011, there were approximately 32 composting facilities1 in the Bay Area. Ten (12) of these facilities are permitted by the District and considered point sources (Category 1709). The point sources contain annual activity (throughput) information for each applicable source that is stored in the District’s Data Bank. Reactive organic (ROG) emissions are then calculated by using emission factors (generalized or specific) and control factors, if any, for a particular source operation supplied by the company. Some related compositing activity (i.e. windrow and storage activities, etc.) are also permitted and particulate emissions are calculated.
+In 2011, there were approximately 32 composting facilities1 in the Bay Area. Ten (12) of these facilities are permitted by the District and considered point sources (Category 1709). The point sources contain annual activity (throughput) information for each applicable source that is stored in the District's Data Bank. Reactive organic (ROG) emissions are then calculated by using emission factors (generalized or specific) and control factors, if any, for a particular source operation supplied by the company. Some related compositing activity (i.e. windrow and storage activities, etc.) are also permitted and particulate emissions are calculated.
 
 > Note: The composting operations that involve mushroom farming were not included in this count. The 2006 IPCC Guidelines for National greenhouse Gas Inventories does not assign mushroom farm media preparation to the waste sector for emission inventory development. It falls under the Industrial Processes and Product Use, Food and Beverage Industry, or Agriculture, Forestry, and Other Land Use, manure Management, Poultry (3A2i).
 
@@ -34,14 +34,14 @@ The throughput and emissions factors (TOG, ROG, and GHG) estimates were develope
 
 ##### Throughput Data {-}
 
-For those composting facilities not permitted by the District (area sources), throughput data was provided by industry and CalRecycle officials or using CalRecycle’s Solid Waste Information System’s (SWIS’s) database. The throughput information provided in the SWIS database represents maximum allowable throughputs. The actual throughput was estimated to be 60% of the SWIS database value.
+For those composting facilities not permitted by the District (area sources), throughput data was provided by industry and CalRecycle officials or using CalRecycle's Solid Waste Information System's (SWIS's) database. The throughput information provided in the SWIS database represents maximum allowable throughputs. The actual throughput was estimated to be 60% of the SWIS database value.
 
 The units for throughput information should be in tons per year, however, they may appear in other units, such as cubic yards per year (yd3/yr), cubic yards per day (yd3/day), tons per day, etc. For those throughputs that required a conversion factor to tons, the following bulk density values were used:
 
 - Greenwaste – 3.54 yd3/ton
 - Mixed (greenwaste mixed with food, manure, etc.) – 2.24 yd3/ton
 
-The above conversion factors were taken from the California Integrated Management Board (CIWMB) Report, “Third Assessment of California’s Compost and Mulch Producing Infrastructure”, May 2009.
+The above conversion factors were taken from the California Integrated Management Board (CIWMB) Report, “Third Assessment of California's Compost and Mulch Producing Infrastructure”, May 2009.
 
 For throughputs that were in a volume per day format, it was assumed most facilities operated 260 days per year. However, for some facilities, this value may vary slightly.
 
@@ -100,7 +100,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-It was assumed composting in the Bay Area began in the mid-1980’s (1985 was used as the starting point). There was limited information in prior years, so it was assumed throughput activity exhibited a linear decrease from 2005 back to 1985. From 2005 – 2008, the growth was based on the Association of Bay Area Government’s (ABAG’s) 2009 Total Population growth profile.
+It was assumed composting in the Bay Area began in the mid-1980's (1985 was used as the starting point). There was limited information in prior years, so it was assumed throughput activity exhibited a linear decrease from 2005 back to 1985. From 2005 – 2008, the growth was based on the Association of Bay Area Government's (ABAG's) 2009 Total Population growth profile.
 
 #### Growth {-}
 
@@ -112,7 +112,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projections to year 2030 were based on the ABAG’s 2009 Total Population growth profile.
+Projections to year 2030 were based on the ABAG's 2009 Total Population growth profile.
 
 #### Control {-}
 

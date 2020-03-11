@@ -14,7 +14,7 @@ Emissions from these categories occur during refueling (including spillage) of g
 
 #### Methodologies {-}
 
-The amount of aviation and jet fuel usage from San Jose International Airport and Oakland International Airport were obtained from the airport’s Monthly Activity Report. The fuel usage at the other airports was determined by apportioning the Oakland Airport usage with the number of operations. The uncontrolled emission factors of gasoline service station are used for refueling with gasoline over-the-wing. The emission factors are chosen based on EPA, AP-42 publication and engineering judgment. Total organic emissions for aircraft refueling categories are determined by multiplying the emission factor and estimated throughput.
+The amount of aviation and jet fuel usage from San Jose International Airport and Oakland International Airport were obtained from the airport's Monthly Activity Report. The fuel usage at the other airports was determined by apportioning the Oakland Airport usage with the number of operations. The uncontrolled emission factors of gasoline service station are used for refueling with gasoline over-the-wing. The emission factors are chosen based on EPA, AP-42 publication and engineering judgment. Total organic emissions for aircraft refueling categories are determined by multiplying the emission factor and estimated throughput.
 
 #### Monthly Variation {-}
 

@@ -53,7 +53,7 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
-The historical growth profiles were based on a combination of prior emissions data and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing Employment growth profile.
+The historical growth profiles were based on a combination of prior emissions data and the Association of Bay Area Government's (ABAG's) 2009 Manufacturing Employment growth profile.
 
 #### Growth {-}
 
@@ -72,7 +72,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing & Wholesale Employment growth profile.
+Projections of emissions to 2030 were based on ABAG's 2009 Manufacturing & Wholesale Employment growth profile.
 
 #### Control {-}
 

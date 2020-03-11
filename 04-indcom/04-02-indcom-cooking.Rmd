@@ -17,7 +17,7 @@ These categories do not include the products of combustion emissions from fuel u
 
 #### Methodology {-}
 
-The District estimated the number of restaurants in operation in the Bay Area with assistance from each county’s health department. Each county health department provided the number of restaurants permitted within their jurisdiction. The District refined the number of restaurants by eliminating the ones not open to the public, gone out of business, or those that are less likely to cook, such as delicatessens and ice cream parlors.
+The District estimated the number of restaurants in operation in the Bay Area with assistance from each county's health department. Each county health department provided the number of restaurants permitted within their jurisdiction. The District refined the number of restaurants by eliminating the ones not open to the public, gone out of business, or those that are less likely to cook, such as delicatessens and ice cream parlors.
 
 The District used a 1997 South Coast Air Quality Management District (SCAQMD) report, “Staff Recommendations Regarding Controlling Emissions from Restaurant Operations”, to estimate the number of charbroilers, deep fat fryers, and griddles used in the Bay Area. The SCAQMD report surveyed the type of equipment that was used in restaurant cooking operations in their district boundaries. This report found approximately 33% of the restaurants operates under-fired charbroilers, 4% operate chain-driven charbroilers, 62% operate deep fat fryers, and 52% operate griddles.
 
@@ -31,7 +31,7 @@ Monthly distribution was estimated based on seasonal variation of each establish
 
 #### County Distribution {-}
 
-The number of eating establishments in each county was based on data provided by each of the Bay Area’s county health department. The District refined these numbers of restaurants by eliminating the ones not open to the public, gone out of business, or those that were less likely to cook.
+The number of eating establishments in each county was based on data provided by each of the Bay Area's county health department. The District refined these numbers of restaurants by eliminating the ones not open to the public, gone out of business, or those that were less likely to cook.
 
 ```{r indcom-cooking-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -52,7 +52,7 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
-Emissions back to 1996 were estimated based on historical number of eating establishments in the Bay Area as reported in the “Taxable Sales in California (Sales & Use Tax) publications. Prior to 1996 the emissions were based on ABAG’s 2009 Total Population growth profile.
+Emissions back to 1996 were estimated based on historical number of eating establishments in the Bay Area as reported in the “Taxable Sales in California (Sales & Use Tax) publications. Prior to 1996 the emissions were based on ABAG's 2009 Total Population growth profile.
 
 #### Growth {-}
 
@@ -71,7 +71,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Projections to year 2030 were based on ABAG’s 2009 Total Population growth profile.
+Projections to year 2030 were based on ABAG's 2009 Total Population growth profile.
 
 #### Control {- #indcom-cooking-control}
 

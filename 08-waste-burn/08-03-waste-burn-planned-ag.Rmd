@@ -19,7 +19,7 @@ Carbon Dioxide emissions from these categories are considered to be biogenic emi
 
 #### Methodologies {#waste-burn-planned-ag-methodology -}
 
-Annual activity or waste material burn information for these categories was obtained from the burn permits issued by the District’s Enforcement Division for each county. Information on amounts of waste materials burned was provided to the District in various units such as acres, tons, pounds, and cubic yards. By applying the crop specific fuel loading factors and other conversion units, all burn activity was converted to tons of material burned per year.
+Annual activity or waste material burn information for these categories was obtained from the burn permits issued by the District's Enforcement Division for each county. Information on amounts of waste materials burned was provided to the District in various units such as acres, tons, pounds, and cubic yards. By applying the crop specific fuel loading factors and other conversion units, all burn activity was converted to tons of material burned per year.
 
 Emissions were calculated by multiplying the activity (Tons/Year) for a given category by its composite emission factor (Lb/Tons). Composite emission factors were developed using crop specific emission factor data from the California Air Resources Board (CARB) and the Environmental Protection Agency (EPA). Background information for emission factors and fuel loading is explained in the CARB memo, the Agricultural Burning Emission Factors dated August 17, 2000. Emission factors for these categories in pounds per ton (Lb/Ton) are shown below.
 

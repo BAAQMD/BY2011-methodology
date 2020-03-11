@@ -122,7 +122,7 @@ growth_data %>%
     subtitle = "This profile is assigned to all BY2011 Consumer Products categories.") 
 ```
 
-The consumer product emissions are projected to grow relative to population growth in the Bay Area. Future projections are made using population data in accordance with the Association of Bay Area Government’s (ABAG’s) 2009 report.
+The consumer product emissions are projected to grow relative to population growth in the Bay Area. Future projections are made using population data in accordance with the Association of Bay Area Government's (ABAG's) 2009 report.
 
 #### Control {-}
 

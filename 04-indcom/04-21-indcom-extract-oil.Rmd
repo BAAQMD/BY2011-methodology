@@ -24,7 +24,7 @@ Emissions for the point source category (#48) were obtained from point source da
 
 ##### Area Sources {- #indcom-extract-oil-methodology-area}
 
-Throughput/activity information for the area sources (Category 1575) in each Bay Area county was obtained from the California Department of Conservation’s Division of Oil, Gas and Geothermal Resources (DOGGR). Emissions are calculated using a composite emission factors. The composite emission factors were developed based on information on various processes in oil production from the Environmental Protection Agency’s document AP-42. Emission Factors in pounds per barrel of oil processed (lb/Barrel) are shown below.
+Throughput/activity information for the area sources (Category 1575) in each Bay Area county was obtained from the California Department of Conservation's Division of Oil, Gas and Geothermal Resources (DOGGR). Emissions are calculated using a composite emission factors. The composite emission factors were developed based on information on various processes in oil production from the Environmental Protection Agency's document AP-42. Emission Factors in pounds per barrel of oil processed (lb/Barrel) are shown below.
 
 ```{r indcom-extract-oil-field-emfac-table}
 BY2011_annual_area_source_emission_factor_data %>%

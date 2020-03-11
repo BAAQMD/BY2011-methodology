@@ -39,7 +39,7 @@ CONSOLIDATED_CATEGORIES <- list(
 
 The following categories include evaporation emissions due to handling of all organic products at marine loading facilities.
 
-**Categories 86 and 87** account for evaporation emissions due to the transfer of cargo (organic materials) from larger ships to smaller ships and barges. Lightering is necessary because large ships are unable to navigate the shallow waters of the San Francisco Bay. Since the mid-2000’s, there has been little or no lightering activity in the San Francisco Bay.
+**Categories 86 and 87** account for evaporation emissions due to the transfer of cargo (organic materials) from larger ships to smaller ships and barges. Lightering is necessary because large ships are unable to navigate the shallow waters of the San Francisco Bay. Since the mid-2000's, there has been little or no lightering activity in the San Francisco Bay.
 
 **Categories 88-90** account for evaporation emissions due to ballasting crude oil, gasoline, and other materials, respectively. Ballasting is the process of pumping seawater into petroleum holding tanks to make a vessel more stable. When water is pumped into a tank, the contaminated vapor in the tank is displaced into the atmosphere.
 Emissions from ballasting are declining because few vessels now calling on Bay Area ports ballast into cargo tanks. Older vessels are being phased out of service in response to the Oil Pollution Act of 1990. Modern vessels have segregated ballast tanks that are used only for ballast water. There are no organic emissions emitted during ballast operations with segregated ballast tanks.
@@ -52,9 +52,9 @@ Emissions from ballasting are declining because few vessels now calling on Bay A
 
 ##### Area Source Methodologies {-}
 
-For Categories 86 and 87, the refineries within the District were surveyed to obtain the throughputs (in 1000 gallons) transferred for a given year. The monthly variations and county distributions were also obtained from these surveys. Emission factors were obtained from ARB’s Emission Inventory Procedural Manual. Since 2005, there has been no lightering activity in the San Francisco Bay.
+For Categories 86 and 87, the refineries within the District were surveyed to obtain the throughputs (in 1000 gallons) transferred for a given year. The monthly variations and county distributions were also obtained from these surveys. Emission factors were obtained from ARB's Emission Inventory Procedural Manual. Since 2005, there has been no lightering activity in the San Francisco Bay.
 
-For Categories 88-90, the amount of material transferred was estimated from data found in the U.S. Army Corps of Engineers’ 2008 Waterborne Commerce of the United States, Part 4--Waterways and Harbors-Pacific Coast, Alaska and Hawaii. The emission factors, ballasting amounts for the different fuels, etc. were obtained from California Air Resources Board’s Methodology Document on Marine Petroleum Unloading (October 1997).
+For Categories 88-90, the amount of material transferred was estimated from data found in the U.S. Army Corps of Engineers' 2008 Waterborne Commerce of the United States, Part 4--Waterways and Harbors-Pacific Coast, Alaska and Hawaii. The emission factors, ballasting amounts for the different fuels, etc. were obtained from California Air Resources Board's Methodology Document on Marine Petroleum Unloading (October 1997).
 
 For Category 91, the following assumptions were made:
 
@@ -73,11 +73,11 @@ Categories 60 and 795-802 contain point sources permitted by the District. The D
 
 ##### Monthly Variation {-}
 
-For the point source categories (Cats. 60, 795-802), the monthly distribution was estimated based on each company’s reported quarterly seasonal throughput data. For the area source categories (Cats. 88-91), the monthly distribution was assumed to be uniform throughout the year.
+For the point source categories (Cats. 60, 795-802), the monthly distribution was estimated based on each company's reported quarterly seasonal throughput data. For the area source categories (Cats. 88-91), the monthly distribution was assumed to be uniform throughout the year.
 
 #### County Distribution {-}
 
-For the point source categories, the county location of each company, as reported in the Data Bank, is used to distribute emissions into each county. For the area source categories, the county distribution was based on the throughputs of products unloaded at the various Bay Area ports, as reported in the U.S. Army Corps of Engineers’ 2008 Waterborne Commerce of the United States, Part 4--Waterways and Harbors-Pacific Coast, Alaska and Hawaii.
+For the point source categories, the county location of each company, as reported in the Data Bank, is used to distribute emissions into each county. For the area source categories, the county distribution was based on the throughputs of products unloaded at the various Bay Area ports, as reported in the U.S. Army Corps of Engineers' 2008 Waterborne Commerce of the United States, Part 4--Waterways and Harbors-Pacific Coast, Alaska and Hawaii.
 
 ```{r petprod-marine-load-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -112,7 +112,7 @@ BY2011_annual_emission_data %>%
     title = "Particulate Emissions") 
 ```
 
-Prior years’ growth factors for these categories were based on historical data (i.e. from the U.S. Army Corps of Engineers’ Waterborne Commerce reports, the District’s databank, etc.) and energy reports.
+Prior years' growth factors for these categories were based on historical data (i.e. from the U.S. Army Corps of Engineers' Waterborne Commerce reports, the District's databank, etc.) and energy reports.
 
 #### Growth {-}
 
@@ -131,7 +131,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-The projected growth for the Ballasting categories (Cat. 86-90), the Marine Vessel Cleaning & Gas Venting category (Cat. 91), and the Non-Refinery Tanker/Barge Loading categories (Cat. 799-802) were based on fuels report from the California Energy Commission. Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market The introduction of reformulated gasoline with lower vapor pressure will help in reducing evaporation emissions.
+The projected growth for the Ballasting categories (Cat. 86-90), the Marine Vessel Cleaning & Gas Venting category (Cat. 91), and the Non-Refinery Tanker/Barge Loading categories (Cat. 799-802) were based on fuels report from the California Energy Commission. Projected growth for all refinery related categories was taken from the California Energy Commission report on California's Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market The introduction of reformulated gasoline with lower vapor pressure will help in reducing evaporation emissions.
 
 #### Control {- #petprod-marine-load-control}
 

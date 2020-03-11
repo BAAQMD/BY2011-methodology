@@ -23,7 +23,7 @@ The other cleaning solvents used are the non-halogenated petroleum solvents (Cat
 
 Most of the dry cleaning facilities in the Bay Area are covered under the District's Permit system. Emissions are calculated by using solvent throughput information of each source reported by individual companies in the District's Data Bank system, called point sources. Emission factors used were based on tests and other data publication. Those dry cleaning facilities not covered under the District's Permit system are considered area sources. For Category 1912, the area source emissions are assumed to be 10% of the point source emissions.
 
-In 2012, most dry cleaning facilities using non-halogenated petroleum solvents were re- classified as registered sources in the District’s Data Bank. As a registered source, a facility must use 100 gallons, per year, or less, of non-halogenated petroleum solvent material. These registered sources are now classified as area sources (Category 1913). (An additional 5% of the number of registered dry cleaners will be added to include those dry cleaning facilities that did not report to the District.) Those dry cleaning facilities using greater than 100 gallons per year of non-halogenated petroleum solvents are considered point sources.
+In 2012, most dry cleaning facilities using non-halogenated petroleum solvents were re- classified as registered sources in the District's Data Bank. As a registered source, a facility must use 100 gallons, per year, or less, of non-halogenated petroleum solvent material. These registered sources are now classified as area sources (Category 1913). (An additional 5% of the number of registered dry cleaners will be added to include those dry cleaning facilities that did not report to the District.) Those dry cleaning facilities using greater than 100 gallons per year of non-halogenated petroleum solvents are considered point sources.
 
 #### Monthly Variation {-}
 
@@ -52,7 +52,7 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
-Prior years’ emissions were estimated using the Association of Bay Area Governments’ (ABAG’s) Population growth profile. This growth profile was modified to reflect the emissions data between the years 1987 – 2011.
+Prior years' emissions were estimated using the Association of Bay Area Governments' (ABAG's) Population growth profile. This growth profile was modified to reflect the emissions data between the years 1987 – 2011.
 
 #### Growth {-}
 
@@ -95,7 +95,7 @@ kable_data %>%
     caption = "Cumulative PERC reductions.")
 ```
 
-The phase out of PERC will increase usage of the non-halogenated petroleum solvents (Category Nos. 107 and 1913). As mentioned previously, most dry cleaning facilities using non-halogenated petroleum solvents were re-classified as registered sources (i.e. area sources) and thus reflected in the growth profiles for Categories 107 and 1913. After 2012, the growth profiles for these two categories were based on data from a 2009 BAAQMD staff report on dry cleaner emissions projections (Figure IV-A1 of the January 2009 Staff Report for [Rule 2-1], [Rule 8-17], [Rule 8-27], and [Rule 11-16]) and ABAG’s Population growth profile.
+The phase out of PERC will increase usage of the non-halogenated petroleum solvents (Category Nos. 107 and 1913). As mentioned previously, most dry cleaning facilities using non-halogenated petroleum solvents were re-classified as registered sources (i.e. area sources) and thus reflected in the growth profiles for Categories 107 and 1913. After 2012, the growth profiles for these two categories were based on data from a 2009 BAAQMD staff report on dry cleaner emissions projections (Figure IV-A1 of the January 2009 Staff Report for [Rule 2-1], [Rule 8-17], [Rule 8-27], and [Rule 11-16]) and ABAG's Population growth profile.
 
 #### Control {-}
 
@@ -107,7 +107,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-The District originally adopted District [Rule 8-27], for Synthetic Solvent Dry Cleaning Operations as an ozone control measure in May 1980. This rule was amended in March 1982, November 1984, and September 1990 with additional operating requirements. In 1994, the District adopted [Rule 11-16] to incorporate new regulatory standards adopted at the state and federal levels. [Rule 11-16], with its new solvent standards and control requirements, replaced [Rule 8-27]. [Rule 8-27] was retained as part of the District’s regulations for State Implementation Plan (SIP) considerations, however, in March 2009 was deleted.
+The District originally adopted District [Rule 8-27], for Synthetic Solvent Dry Cleaning Operations as an ozone control measure in May 1980. This rule was amended in March 1982, November 1984, and September 1990 with additional operating requirements. In 1994, the District adopted [Rule 11-16] to incorporate new regulatory standards adopted at the state and federal levels. [Rule 11-16], with its new solvent standards and control requirements, replaced [Rule 8-27]. [Rule 8-27] was retained as part of the District's regulations for State Implementation Plan (SIP) considerations, however, in March 2009 was deleted.
 
 District [Rule 11-16] (Perchloroethylene and Synthetic Solvent Dry Cleaning Operations), passed in December 1994 required more stringent requirements on controls, monitoring, ventilation, secondary controls, and certain prohibition of usage of certain machines. In March 2009, [Rule 11-16] was amended to incorporate into the District rule a state law phase out schedule that would eliminate the use of Perchloroethylene in dry cleaning by January 1, 2023.
 

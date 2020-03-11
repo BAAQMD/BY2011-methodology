@@ -15,7 +15,7 @@ Land farming is a process in which waste (biosolids), primarily from dried sewag
 
 Emissions for this category are calculated by multiplying the annual activity (throughput) value for a particular year by the emission factor in question.
 
-The annual activity (throughput) for this category was obtained from the March 2009 report “Bay Area Biosolids Management: Challenges, Opportunities, and Policies.” The amount of biosolids generated in in the Bay Area in 2007 was estimated to be 158,000 dry tons. Approximately 19% of that amount, or 30,020 dry tons, was “land applied” for Land Farming purposes. The Association of Bay Area Governments’ (ABAG’s) Total Population growth profile was used to obtain the 2011 throughput value of 31,028 dry tons/year.
+The annual activity (throughput) for this category was obtained from the March 2009 report “Bay Area Biosolids Management: Challenges, Opportunities, and Policies.” The amount of biosolids generated in in the Bay Area in 2007 was estimated to be 158,000 dry tons. Approximately 19% of that amount, or 30,020 dry tons, was “land applied” for Land Farming purposes. The Association of Bay Area Governments' (ABAG's) Total Population growth profile was used to obtain the 2011 throughput value of 31,028 dry tons/year.
 
 ```{r waste-mgmt-land-farm-emfac-table}
 BY2011_annual_area_source_emission_factor_data %>%
@@ -31,7 +31,7 @@ BY2011_annual_area_source_emission_factor_data %>%
     caption = "Emission factors (lb/ton).")
 ```
 
-The emission factor for reactive organic gases (ROG) was obtained from the California Integrated Waste Management Board Contractor’s Report to the Board, “Emissions Testing of Volatile Organic Compounds from Greenwaste Composting at the Modesto Compost Facility in the Sab Joaquin Valley”, October 2007. The ROG emission factor for greenwaste /food scrap composting ranged from 1.3 – 2.6 lbs./ton composted. A mid- point value of 1.95 lbs./ton was used.
+The emission factor for reactive organic gases (ROG) was obtained from the California Integrated Waste Management Board Contractor's Report to the Board, “Emissions Testing of Volatile Organic Compounds from Greenwaste Composting at the Modesto Compost Facility in the Sab Joaquin Valley”, October 2007. The ROG emission factor for greenwaste /food scrap composting ranged from 1.3 – 2.6 lbs./ton composted. A mid- point value of 1.95 lbs./ton was used.
 
 A ROG factor of 0.8689 was used to calculate the total organic gas (TOG) emission factor. This ROG factor was obtained from data compiled by the San Joaquin Valley Air Pollution Control District for greenwaste composting. The TOG emissions factor of 2.24 lbs./ton was calculated by dividing the ROG emission factor by the ROG factor. The CH~4~ emission factor of 0.29 lbs./ton was calculated by subtracting the TOG emission factor by the ROG emission factor.
 
@@ -64,7 +64,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-Until the early 1990’s, land farming consisted of wastes more from the industrial sector. Most of these industrial wastes are now transported outside the District to be spread on the land. Prior to 1990, the growth was based on the ABAG’s 2009 Manufacturing Employment growth profile. Between 1990 and 1993 growth was interpolated.
+Until the early 1990's, land farming consisted of wastes more from the industrial sector. Most of these industrial wastes are now transported outside the District to be spread on the land. Prior to 1990, the growth was based on the ABAG's 2009 Manufacturing Employment growth profile. Between 1990 and 1993 growth was interpolated.
 
 #### Growth {-}
 
@@ -83,7 +83,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Emissions after 1993 are assumed to grow at a rate similar to the population as provided by ABAG’s 2009 Population growth profile.
+Emissions after 1993 are assumed to grow at a rate similar to the population as provided by ABAG's 2009 Population growth profile.
 
 ***
 

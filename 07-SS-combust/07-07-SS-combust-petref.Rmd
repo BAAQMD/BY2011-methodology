@@ -26,7 +26,7 @@ Emissions for these categories were obtained from point source data as found in 
 
 Emission information from numerous sources is grouped into the above mentioned categories. EPA's AP-42, Chapter 5 contains description of petroleum refining processes and emission factors. Criteria pollutants and greenhouse gas emissions, including carbon dioxide (CO~2~), methane (CH~4~), and nitrous oxide (N~2~O), are produced during refining processes. Since refinery emissions are part of point sources, criteria pollutants as well as greenhouse gas data are obtained from the refinery plant as part of the Bay Area Air District permit renewal process.
 
-The county, month, and day factors were derived based on information gather from a plant’s location, seasonal usage, and daily operation as found in the District’ Databank System.
+The county, month, and day factors were derived based on information gather from a plant's location, seasonal usage, and daily operation as found in the District' Databank System.
 
 ```{r SS-combust-petref-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -73,7 +73,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected from these units.
+Projected growth for all refinery related categories was taken from the California Energy Commission report on California's Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected from these units.
 
 #### Control {-}
 

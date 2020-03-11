@@ -24,7 +24,7 @@ The emissions over the 12 months were estimated based on the throughput data fro
 
 #### County Distribution
 
-Emissions are distributed to the counties based on the location of the processing plant. The District’s data bank contains the information on plant location.
+Emissions are distributed to the counties based on the location of the processing plant. The District's data bank contains the information on plant location.
 
 ```{r indcom-mfg-wood-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -52,7 +52,7 @@ BY2011_annual_emission_data %>%
   chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
-The historical growth profile was based on a combination of prior permit data (back to 1990) and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing Employment growth profile.
+The historical growth profile was based on a combination of prior permit data (back to 1990) and the Association of Bay Area Government's (ABAG's) 2009 Manufacturing Employment growth profile.
 
 #### Growth {-}
 
@@ -71,7 +71,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing and Wholesale Employment growth profile.
+Projections of emissions to 2030 were based on ABAG's 2009 Manufacturing and Wholesale Employment growth profile.
 
 ***
 

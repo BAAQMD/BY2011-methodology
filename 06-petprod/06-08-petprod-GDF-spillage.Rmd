@@ -63,7 +63,7 @@ BY2011_annual_growth_factor_data %>%
 
 Gasoline consumption in 2007 reached record levels. However, the gasoline consumption decreased slightly during the economic recession in 2008 - 2010. Projections are based on future gasoline consumption in the Bay Area.
 
-The Air Resources Board (ARB) is in the process of updating the emission factors for GDFs’ categories: gasoline storage and transfer operations from cargo tank trucks to GDFs and from GDFs to vehicles, fuel containers, and gasoline-powered equipment. With the current requirements of the CARB’s Phase II Vapor recovery systems regulations, the GDF categories’ emissions will be greatly reduced for forecasted emission years.
+The Air Resources Board (ARB) is in the process of updating the emission factors for GDFs' categories: gasoline storage and transfer operations from cargo tank trucks to GDFs and from GDFs to vehicles, fuel containers, and gasoline-powered equipment. With the current requirements of the CARB's Phase II Vapor recovery systems regulations, the GDF categories' emissions will be greatly reduced for forecasted emission years.
 
 #### Control {-}
 

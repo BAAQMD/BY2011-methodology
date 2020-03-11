@@ -49,7 +49,7 @@ BY2011_annual_emission_data %>%
   chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
-The historical growth profile was based on a combination of prior emissions data (back to 1987) and the Association of Bay Area Government’s (ABAG’s) 2009 Construction Employment growth profile.
+The historical growth profile was based on a combination of prior emissions data (back to 1987) and the Association of Bay Area Government's (ABAG's) 2009 Construction Employment growth profile.
 
 #### Growth {-}
 
@@ -68,7 +68,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Projections of emissions to 2030 were also based on ABAG’s 2009 Construction Employment growth profile.
+Projections of emissions to 2030 were also based on ABAG's 2009 Construction Employment growth profile.
 
 #### Control {-}
 

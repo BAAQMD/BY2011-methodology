@@ -9,7 +9,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-This category consists of both area and point sources. The area source accounts for the ethanol emissions from aging of brandy. Brandy is produced from a distillation process, separating ethanol and other volatile substances from fermented juices. The brandy is then aged for a period of two to ten years. During the aging process, usually, in 50-gallon oak barrels, there is a considerable amount of ethanol emissions released from the barrels into the atmosphere. The point source portion accounts for organic emissions from brewery sources contained in the District’s Data Bank.
+This category consists of both area and point sources. The area source accounts for the ethanol emissions from aging of brandy. Brandy is produced from a distillation process, separating ethanol and other volatile substances from fermented juices. The brandy is then aged for a period of two to ten years. During the aging process, usually, in 50-gallon oak barrels, there is a considerable amount of ethanol emissions released from the barrels into the atmosphere. The point source portion accounts for organic emissions from brewery sources contained in the District's Data Bank.
 
 #### Methodology {-}
 
@@ -65,7 +65,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Future projection of emissions was based on the food manufacturing industries taken from ABAG’s 2009 Projections report.
+Future projection of emissions was based on the food manufacturing industries taken from ABAG's 2009 Projections report.
 
 ***
 

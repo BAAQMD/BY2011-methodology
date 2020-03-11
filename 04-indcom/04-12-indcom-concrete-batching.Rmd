@@ -15,9 +15,9 @@ This category accounts for particulate emissions from concrete batching plants. 
 #### Methodology {-}
 
 This category contains particulate emissions from point (Category 39) and area sources (Category 1908). For point sources, the data bank contains throughput information submitted by individual concrete batching plants by sources. Emissions are then calculated by using specific emission factors for a particular source operation supplied by the company.
-Cement production for California in 2011 was estimated at 8,833,000 short tons. This was calculated by taking the U.S. production, as provided by the Department of Conservation, Bureau of Mines, and multiplying that figure by the California fraction of the U.S. total. By using the fraction of Bay Area population to that of California, the 2011 cement production in the BAAQMD was estimated at 1,627,190 short tons. The Bay Area’s 2011 concrete production from both point and area sources was estimated at 13,335,670 tons/year (using mixing ratios found in AP-42, page 11.12-7). The 2011 area source throughput of 3,435,624 tons/year was calculated by subtracting the BAAQMD’s total concrete production throughput from the point source throughput.
+Cement production for California in 2011 was estimated at 8,833,000 short tons. This was calculated by taking the U.S. production, as provided by the Department of Conservation, Bureau of Mines, and multiplying that figure by the California fraction of the U.S. total. By using the fraction of Bay Area population to that of California, the 2011 cement production in the BAAQMD was estimated at 1,627,190 short tons. The Bay Area's 2011 concrete production from both point and area sources was estimated at 13,335,670 tons/year (using mixing ratios found in AP-42, page 11.12-7). The 2011 area source throughput of 3,435,624 tons/year was calculated by subtracting the BAAQMD's total concrete production throughput from the point source throughput.
 
-The particulate emission factor used for area source concrete batching, based on Truck Mix Operations (found in AP-42’s Mineral Products Industry section), include total process emissions, wind erosion estimates from sand and aggregate storage piles, and vehicular travel estimates from unpaved roads. The composite particulate emission factor was estimated at 0.16 lbs/ton of concrete produced. Particulate emissions from area sources were calculated by multiplying this emission factor to the estimated area source concrete production throughput in the Bay Area.
+The particulate emission factor used for area source concrete batching, based on Truck Mix Operations (found in AP-42's Mineral Products Industry section), include total process emissions, wind erosion estimates from sand and aggregate storage piles, and vehicular travel estimates from unpaved roads. The composite particulate emission factor was estimated at 0.16 lbs/ton of concrete produced. Particulate emissions from area sources were calculated by multiplying this emission factor to the estimated area source concrete production throughput in the Bay Area.
 
 ```{r indcom-concrete-batching-emfac-table}
 BY2011_annual_area_source_emission_factor_data %>%
@@ -35,7 +35,7 @@ Monthly variation was estimated and used to distribute emissions over the 12 mon
 
 #### County Distribution {-}
 
-For point sources, the data bank system contains information on the county location of each processing plant; hence, emissions are distributed to the counties accordingly. Emissions from area sources were distributed to the Bay Area counties by the number of employees estimated in the Ready-Mix Concrete Manufacturing sector (NAICS 327320) as determined by the US Department of Commerce’s 2009 County Business Patterns.
+For point sources, the data bank system contains information on the county location of each processing plant; hence, emissions are distributed to the counties accordingly. Emissions from area sources were distributed to the Bay Area counties by the number of employees estimated in the Ready-Mix Concrete Manufacturing sector (NAICS 327320) as determined by the US Department of Commerce's 2009 County Business Patterns.
 
 ```{r indcom-concrete-batching-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -63,7 +63,7 @@ BY2011_annual_emission_data %>%
   chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
-The historical growth profiles for both categories was based on a combination of prior emissions data (back to 1987) and the Association of Bay Area Government’s (ABAG’s) 2009 Construction Employment growth profile.
+The historical growth profiles for both categories was based on a combination of prior emissions data (back to 1987) and the Association of Bay Area Government's (ABAG's) 2009 Construction Employment growth profile.
 
 #### Growth {-}
 
@@ -82,7 +82,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Projections of emissions to 2030 for both categories were based on ABAG’s 2009 Construction Employment growth profile.
+Projections of emissions to 2030 for both categories were based on ABAG's 2009 Construction Employment growth profile.
 
 ***
 

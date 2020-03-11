@@ -30,7 +30,7 @@ Monthly variation of emissions was based on the monthly California taxable gasol
 
 #### County Distribution {-}
 
-County household population from ABAG’s 2009 Projections was used to distribute emissions for each county.
+County household population from ABAG's 2009 Projections was used to distribute emissions for each county.
 
 ```{r petprod-petref-portable-spillage-county-fraction-table}
 BY2011_county_fraction_data %>%

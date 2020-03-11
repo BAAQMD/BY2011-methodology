@@ -21,7 +21,7 @@ These emissions are from point sources data reported annually. The District upda
 
 3. Emissions control factors (device-specific or general - these may be supplied by the companies also).
 
-Greenhouse gas emission factors are also provided by the individual refineries and/or taken from EPA. Emissions for greenhouse gases including CO~2~, CH~4~, and N~2~O are reported by the refinery during the District’s annual permit renewal process.
+Greenhouse gas emission factors are also provided by the individual refineries and/or taken from EPA. Emissions for greenhouse gases including CO~2~, CH~4~, and N~2~O are reported by the refinery during the District's annual permit renewal process.
 
 The county, month, and day factors are obtained from the data bank's information on each plant's location, seasonal usage, and days per week of operation.
 

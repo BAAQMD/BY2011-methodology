@@ -21,13 +21,13 @@ Raw materials primarily used in the production of adhesive and sealants are rubb
 
 ##### Permitted Facilities {-}
 
-Companies utilizing large amounts of adhesives/sealants are monitored and regulated by the District’s permit system. Throughput of adhesive and sealant usage for each permitted facility are tracked and recorded in the District’s Data Bank system. Some of the industries affected under the District’s permit system for the usage of adhesives and sealants include large wood production manufacturers, wood related construction companies, and packaging companies. Emissions are calculated based on throughput data and emission factors. Emission factors used in the calculation are either derived from field tests and/or obtained from publications. If no specific factor is available, a generalized factor is used in the calculation.
+Companies utilizing large amounts of adhesives/sealants are monitored and regulated by the District's permit system. Throughput of adhesive and sealant usage for each permitted facility are tracked and recorded in the District's Data Bank system. Some of the industries affected under the District's permit system for the usage of adhesives and sealants include large wood production manufacturers, wood related construction companies, and packaging companies. Emissions are calculated based on throughput data and emission factors. Emission factors used in the calculation are either derived from field tests and/or obtained from publications. If no specific factor is available, a generalized factor is used in the calculation.
 
 ##### Non-Permitted Facilities {-}
 
 Emissions from adhesive and sealant used in non-permitted industries are estimated based on a geographical area. These emissions are termed "area source" emissions. Non-permitted industries includes construction sites, small industrial companies, transportation facilities, dental and medical buildings, electric and electronics facilities, and other miscellaneous sites.
 
-Data used to estimate area sources are based on "The Rauch Guide to the U.S. Adhesives and Sealants Industry, 2000-02 Edition”. Adjustments were made for 2008 using both the construction growth for each county in the Bay Area and the Rauch Guide’s projection. Emission factors used in the calculation of these area sources were taken from ARB's report titled "Adhesives and Sealants”. The emission factors used in the calculations were 1,230 lbs. of VOC per ton of solvent-borne adhesives/sealants and 90 lbs. of VOC per ton of water-borne adhesives/sealants.
+Data used to estimate area sources are based on "The Rauch Guide to the U.S. Adhesives and Sealants Industry, 2000-02 Edition”. Adjustments were made for 2008 using both the construction growth for each county in the Bay Area and the Rauch Guide's projection. Emission factors used in the calculation of these area sources were taken from ARB's report titled "Adhesives and Sealants”. The emission factors used in the calculations were 1,230 lbs. of VOC per ton of solvent-borne adhesives/sealants and 90 lbs. of VOC per ton of water-borne adhesives/sealants.
 
 #### Monthly Variation {-}
 

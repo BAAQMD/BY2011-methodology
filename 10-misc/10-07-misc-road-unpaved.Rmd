@@ -13,7 +13,7 @@ THESE_CATEGORIES <- c(
 #### Introduction {-}
 
 Fugitive particulate emissions result from motor vehicles traveling on various types of unpaved road surfaces.
-The methodology was developed by the California Air Resources Board. For a full description of this methodology and references, please see CARB’s methodology document "2012 Update_7 10 Unpaved Roads Dust Meth (2).pdf".
+The methodology was developed by the California Air Resources Board. For a full description of this methodology and references, please see CARB's methodology document "2012 Update_7 10 Unpaved Roads Dust Meth (2).pdf".
 
 Four types of unpaved roads are considered:
 
@@ -26,7 +26,7 @@ Four types of unpaved roads are considered:
 
 The city and county unpaved road mileage were taken from California Statewide Local Streets and Roads Needs Assessment (CSLSRNA), Final Report for the League of California Cities. This report shows that there are no unpaved roads under city and county jurisdiction in the Bay Area.
 
-For parks and forests, Caltrans’ Maintained Public Record Mileage for 2008 were used.
+For parks and forests, Caltrans' Maintained Public Record Mileage for 2008 were used.
 
 The most recent available Caltrans Maintained Public Record Mileage containing BLM/BIA unpaved road mileage for 1998 was used. The report shows BLM/BIA unpaved roads in Sonoma county only.
 

@@ -63,7 +63,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-ABAG’s 2009 Projections Household Population profile was utilized to project future emissions to year 2030.
+ABAG's 2009 Projections Household Population profile was utilized to project future emissions to year 2030.
 
 ***
 

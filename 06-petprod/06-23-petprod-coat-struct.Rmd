@@ -81,7 +81,7 @@ The California Air Resources Board (CARB) has conducted surveys of architectural
 
 The categories include organic gas emissions resulting from the application of architectural coatings and associated use of additives, thinning and cleanup solvents. Architectural coatings include a variety of coatings, for example: (1) paints - flats, and non-flats, (2) clears - lacquers, varnishes, and sealers, (3) stains, (4) industrial maintenance coatings, (5) specialty coatings, etc. These coatings are used on various structures, including bridges, buildings, streets, and roofs. Emissions occur from evaporation of the organic solvents during application and air drying of the coatings. To estimate organic solvent emissions, the quantity of various types of coatings and the associated solvent content in each coating should be known. Additives are used in water- base coatings; thinning solvents are used in solvent-base coatings; cleanup solvents are used in both water-base and solvent-base coatings. There are many types of coatings and each coating formulation has its own specific amount of solvent. Each type of coating is assigned a category number.
 
-CARB apportioned each California counties’ architectural coating usage by population. The 2004 architectural coating sales (including additives and thinning and cleanup solvents) were used as a basis for determining the emissions from these categories. Future year emissions (grown and controlled) were provided by CARB. The 2008 -2012 BAAQMD Architectural Coatings TOG and ROG emissions (tons/day) for Solvent Based Coatings, Water Based Coatings, Thinning Solvents, Additives and Cleanup Solvents are shown in Table \@ref(tab:petprod-struct-coat-ROG-factors-table).
+CARB apportioned each California counties' architectural coating usage by population. The 2004 architectural coating sales (including additives and thinning and cleanup solvents) were used as a basis for determining the emissions from these categories. Future year emissions (grown and controlled) were provided by CARB. The 2008 -2012 BAAQMD Architectural Coatings TOG and ROG emissions (tons/day) for Solvent Based Coatings, Water Based Coatings, Thinning Solvents, Additives and Cleanup Solvents are shown in Table \@ref(tab:petprod-struct-coat-ROG-factors-table).
 
 Organic emissions from the use of clean-up and thinning solvents have been revised and a new category (Additives) has been added. Previously, thinning and cleanup solvent usage ratios were based on the assumption of one pint per gallon of solvent-based coatings. Currently, the ratios are as follows: 0.0597 gallon of thinning solvent per gallon of solvent based coating; 0.0044 gallon additives per gall water based coating; and, 0.0160 gallon cleanup solvent per gallon solvent and water based coatings.
 
@@ -153,7 +153,7 @@ BY2011_annual_emission_data %>%
     caption = "BY2011 annual emission estimates for Structural Coatings.")
 ```
 
-The historical growth profiles were based on a combination prior emissions data (some back to the mid-1980’s) and the Association of Bay Area Government’s (ABAG’s) Household growth factors.
+The historical growth profiles were based on a combination prior emissions data (some back to the mid-1980's) and the Association of Bay Area Government's (ABAG's) Household growth factors.
 
 #### Growth {-}
 
@@ -168,7 +168,7 @@ BY2011_growth_profile_crosswalk %>%
 **FIXME: INSERT TABLE HERE**
 ```
 
-The projected emissions to 2020 for all categories were based on the CARB’s data. After 2020, ABAG’s Household growth factors were used.
+The projected emissions to 2020 for all categories were based on the CARB's data. After 2020, ABAG's Household growth factors were used.
 
 #### Controls {-}
 

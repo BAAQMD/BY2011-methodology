@@ -21,7 +21,7 @@ The petroleum refineries are periodically surveyed for the number of mechanical 
 
 Emission information from numerous sources is grouped into the above mentioned categories. EPA's AP-42, Chapter 5 contains description of petroleum refining processes and emission factors. Criteria pollutant, mainly total organic compounds, and greenhouse gas emissions, including carbon dioxide (CO~2~), methane (CH~4~), and nitrous oxide (N~2~O) are produced during refining processes. Since refinery emissions are part of point sources, criteria pollutants as well as greenhouse gas data are obtained from the refinery plant as part of the Bay Area Air District annual permit renewal process.
 
-The county, month, and day factors are obtained from information collected in the District’s data bank. Information such as plant's location, seasonal usage, and days per week of operation are also stored in the data bank.
+The county, month, and day factors are obtained from information collected in the District's data bank. Information such as plant's location, seasonal usage, and days per week of operation are also stored in the data bank.
 
 ```{r petref-fac-fugitive-county-fraction-table}
 BY2011_county_fraction_data %>%

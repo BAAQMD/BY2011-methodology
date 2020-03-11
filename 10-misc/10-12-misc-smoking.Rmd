@@ -57,7 +57,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-The historical growth profile was based on the Association of Bay Area Government’s Population data.
+The historical growth profile was based on the Association of Bay Area Government's Population data.
 
 #### Growth {-}
 

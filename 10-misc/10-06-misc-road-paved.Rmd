@@ -16,9 +16,9 @@ Fugitive dust particles raised from the movements of motor vehicles on paved roa
 
 #### Methodology {#misc-road-paved-methodology -}
 
-The methodology for estimating particulate emissions from vehicular travel on paved roads was updated in the Final Section of Fifth Edition of U.S. EPA’s Compilation of Air Pollutant Emission Factors AP42 document, Volume I, Chapter 13.2.1.
+The methodology for estimating particulate emissions from vehicular travel on paved roads was updated in the Final Section of Fifth Edition of U.S. EPA's Compilation of Air Pollutant Emission Factors AP42 document, Volume I, Chapter 13.2.1.
 
-The methodology was adapted and refined for California by CARB. For a full description of this methodology and references, please see CARB’s methodology document “2013 Update_7 9 PavedRds Meth.pdf”.
+The methodology was adapted and refined for California by CARB. For a full description of this methodology and references, please see CARB's methodology document “2013 Update_7 9 PavedRds Meth.pdf”.
 
 A brief description is given below:
 
@@ -106,7 +106,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-It is believed that re-suspension of road dust quickly reaches an equilibrium condition. Thus, CARB proposed that instead of using VMT as a surrogate for growth, roadways center line miles (CLM) are used. MTC’s CLM data show an increase of less than 2% for the same period (less than 0.1% per year), and this was used to create trends around the 2011 base year emissions.
+It is believed that re-suspension of road dust quickly reaches an equilibrium condition. Thus, CARB proposed that instead of using VMT as a surrogate for growth, roadways center line miles (CLM) are used. MTC's CLM data show an increase of less than 2% for the same period (less than 0.1% per year), and this was used to create trends around the 2011 base year emissions.
 
 ***
 

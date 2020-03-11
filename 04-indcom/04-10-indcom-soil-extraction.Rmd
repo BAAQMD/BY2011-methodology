@@ -13,7 +13,7 @@ This category accounts for the emissions from air stripping and soil vapor extra
 
 #### Methodology {-}
 
-This category contains emissions from point sources only. Point source emissions are calculated from each equipment’s operating data submitted as part of the permit approval process. The Data Bank contains throughput information submitted by individual plants by sources. Emissions are then calculated by using specific emission factors for a particular source operation supplied by the company. If no specific factor is available, a generalized factor developed by district staff engineer is used to determine emissions.
+This category contains emissions from point sources only. Point source emissions are calculated from each equipment's operating data submitted as part of the permit approval process. The Data Bank contains throughput information submitted by individual plants by sources. Emissions are then calculated by using specific emission factors for a particular source operation supplied by the company. If no specific factor is available, a generalized factor developed by district staff engineer is used to determine emissions.
 
 #### Monthly Variation {-}
 
@@ -42,7 +42,7 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
-The historical growth profile was based on a combination of prior emissions data (back to 1996) and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing Employment growth profile.
+The historical growth profile was based on a combination of prior emissions data (back to 1996) and the Association of Bay Area Government's (ABAG's) 2009 Manufacturing Employment growth profile.
 
 #### Growth {-}
 
@@ -61,7 +61,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Future projections of emissions to 2030 are based on ABAG’s 2009 Manufacturing Employment growth profile.
+Future projections of emissions to 2030 are based on ABAG's 2009 Manufacturing Employment growth profile.
 
 #### Control {-}
 

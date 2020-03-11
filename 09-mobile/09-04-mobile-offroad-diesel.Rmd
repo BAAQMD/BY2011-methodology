@@ -66,11 +66,11 @@ These categories account for exhaust emissions from heavy duty non-farm gasoline
 #### Methodologies {-}
 
 California Air Research Board (CARB) developed an off-road vehicle emission inventory model to estimate emissions from off-road motor vehicles for all counties and air basins in California. The OFFROAD model contained a more comprehensive list of equipment from a wider range of categories. The OFFROAD2007 model added an inventory estimate for engines powered by gasoline fuel, compressed natural gas (CNG) and liquid petroleum gas (LPG).
-The criteria and GHG emissions for heavy duty construction and mining equipment categories in the Bay Area were obtained from the CARB’s OFFROAD2007 model.
+The criteria and GHG emissions for heavy duty construction and mining equipment categories in the Bay Area were obtained from the CARB's OFFROAD2007 model.
 
-CARB released the In-Use Off-Road Equipment model in 2011. The estimates included corrections to baseline assumptions, such as equipment population and activity data (hours of operation, load factor, etc.) as well as the impact of the recent recession and major revisions to CARB’s In-use Off-Road Diesel regulation (AB1085). Construction equipment PM~10~ and NO~x~ emissions were previously overestimated. The diesel fuel consumption in the Bay Area for this updated Off-Road model produces consumption levels that are considerably lower than diesel fuel usage projected by the CARB’s OFFROAD2007 model. As a result, the off-road diesel construction, industrial, and oil drilling equipment emission estimates have been reduced by 50% from the previous base year estimates.
+CARB released the In-Use Off-Road Equipment model in 2011. The estimates included corrections to baseline assumptions, such as equipment population and activity data (hours of operation, load factor, etc.) as well as the impact of the recent recession and major revisions to CARB's In-use Off-Road Diesel regulation (AB1085). Construction equipment PM~10~ and NO~x~ emissions were previously overestimated. The diesel fuel consumption in the Bay Area for this updated Off-Road model produces consumption levels that are considerably lower than diesel fuel usage projected by the CARB's OFFROAD2007 model. As a result, the off-road diesel construction, industrial, and oil drilling equipment emission estimates have been reduced by 50% from the previous base year estimates.
 
-The updated version of CARB’s Off-Road model did not estimate for SO~2~, CO, and GHG emissions and other fuel types (gasoline, and natural gas). Consequently, the emission factors, emissions for gasoline and natural gas equipment were obtained from CARB’s OFFROAD2007 model.
+The updated version of CARB's Off-Road model did not estimate for SO~2~, CO, and GHG emissions and other fuel types (gasoline, and natural gas). Consequently, the emission factors, emissions for gasoline and natural gas equipment were obtained from CARB's OFFROAD2007 model.
 
 The highlights of the In-Use Off-Road Equipment model are listed below: 9.4.1 - 1
 
@@ -78,7 +78,7 @@ The highlights of the In-Use Off-Road Equipment model are listed below: 9.4.1 - 
 
 - Activity Data (Hours of Use): The new activity data by equipment type were generally at least 30 percent lower than ARB staff had expected, and in some cases more than 50 percent lower than 2007 OFFROAD model. In addition, the 2009 activity was lower than 2007 largely due to the recession.
 
-- Load Factor: Previous estimates from Power Systems Research were in the 60 percent range for many equipment types. ARB staff’s analyses suggested that load factors should be reduced by 33 percent.
+- Load Factor: Previous estimates from Power Systems Research were in the 60 percent range for many equipment types. ARB staff's analyses suggested that load factors should be reduced by 33 percent.
 
 - Growth Forecasts: The Growth data in the current Off-Road Construction estimates included the economic scenario to reflect the recession. ARB staff indicated that the construction activity in 2009 is lower by 50% compared to 2005 construction activity value.
 
@@ -88,7 +88,7 @@ Monthly variation of emissions was assumed to be 60% for the months of April to 
 
 #### County Distribution {-}
 
-County emissions were provided by the CARB’s 2007 OFFROAD model.
+County emissions were provided by the CARB's 2007 OFFROAD model.
 
 ```{r mobile-offroad-diesel-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -143,12 +143,12 @@ growth_data %>%
     subtitle = "This profile is assigned to all of BY2011 categories #1657 through #1675.") 
 ```
 
-Projected emissions for construction, and mining (heavy duty non-farm) equipment categories were obtained from ARB’s SIP inventory (http://www.arb.ca.gov/app/emsinv/2012pm25sip/norcal2012pm25sip/)
+Projected emissions for construction, and mining (heavy duty non-farm) equipment categories were obtained from ARB's SIP inventory (http://www.arb.ca.gov/app/emsinv/2012pm25sip/norcal2012pm25sip/)
 
 #### Control {-}
 
 In December of 1990, the CARB adopted two levels of emission standards for small off- road engines. The first phase of standards (Tier 1) was implemented in 1995 and Tier 2 standards were implemented in 1999. The deterioration rates for 4 stroke Tier 1 engines were derived from data supplied by engine manufacturers. Since engines meeting Tier 2 standards are not yet available, engineering judgment was used to estimate the effect of the more stringent standards.
-Projected emissions include expected benefits from ARB's Clean Diesel Regulations in 1993, Re-Formulated Gasoline Phase II and EPA’s diesel engine standards beginning 1999. These benefits were estimated using control factors developed by ARB.
+Projected emissions include expected benefits from ARB's Clean Diesel Regulations in 1993, Re-Formulated Gasoline Phase II and EPA's diesel engine standards beginning 1999. These benefits were estimated using control factors developed by ARB.
 
 ***
 

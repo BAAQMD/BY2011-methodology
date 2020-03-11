@@ -11,7 +11,7 @@ THESE_CATEGORIES <- c(
 
 Asphalt is used to adhere, repair, and/or create a smooth finish over manufactured roofing materials (i.e. cap sheets, felt sheets and flashing squares) on commercial and industrial buildings and multiple unit dwellings. This category estimates organic emissions from roofing operations; however, it does not include the manufacture of roofing materials, nor does it cover emissions from fuel combustion.
 
-The organic emission from asphalt roofing operations in the Bay Area was based on ARB’s methodology for emission calculations (Attachment C: Asphalt Paving and Roofing, from STI’s Area Source Emissions Updates, March 2003).
+The organic emission from asphalt roofing operations in the Bay Area was based on ARB's methodology for emission calculations (Attachment C: Asphalt Paving and Roofing, from STI's Area Source Emissions Updates, March 2003).
 
 #### Methodology {-}
 
@@ -48,7 +48,7 @@ BY2011_annual_emission_data %>%
     fill = category)
 ```
 
-The historical growth profile was based on a combination prior emissions data (2000) provided by ARB and ABAG’s 2009 Construction Employment Growth Profile.
+The historical growth profile was based on a combination prior emissions data (2000) provided by ARB and ABAG's 2009 Construction Employment Growth Profile.
 
 #### Growth {-}
 
@@ -67,7 +67,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Projected emissions to 2030 were based on ABAG’s 2009 Construction Employment Growth Profile.
+Projected emissions to 2030 were based on ABAG's 2009 Construction Employment Growth Profile.
 
 ***
 

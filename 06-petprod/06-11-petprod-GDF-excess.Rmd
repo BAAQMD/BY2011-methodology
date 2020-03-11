@@ -15,7 +15,7 @@ This category accounts for excess emissions from gasoline dispensing nozzles at 
 
 ##### Spitback Spillage {-} 
 
-Spitback is the forcible ejection of gasoline from the fillpipe, upon activation of the nozzle’s primary shutoff mechanism, at the end of a fueling event. When gasoline dispensing rate is greater than ten gallons per minute (10 gpm), the nozzle’s primary shutoff mechanism fails to adequately cease dispensing. Normally the bellows on a balance-type nozzle redirects spitback into the motor vehicle’s fillpipe. In the case of bootless nozzles, liquid gasoline leaves the fillpipe and spills on both the vehicle and ground. Two of the “bootless” vacuum-assist Phase II systems were certified at dispensing rates over 10 gpm, the Gilbarco VaporVac (13.0 gpm) and the Hasstech (12.0 gpm). In addition, based on confusion within the industry, many of the Dresser/Wayne WayneVac bootless systems were also installed and operated at dispensing rates well in excess of 10 gpm.
+Spitback is the forcible ejection of gasoline from the fillpipe, upon activation of the nozzle's primary shutoff mechanism, at the end of a fueling event. When gasoline dispensing rate is greater than ten gallons per minute (10 gpm), the nozzle's primary shutoff mechanism fails to adequately cease dispensing. Normally the bellows on a balance-type nozzle redirects spitback into the motor vehicle's fillpipe. In the case of bootless nozzles, liquid gasoline leaves the fillpipe and spills on both the vehicle and ground. Two of the “bootless” vacuum-assist Phase II systems were certified at dispensing rates over 10 gpm, the Gilbarco VaporVac (13.0 gpm) and the Hasstech (12.0 gpm). In addition, based on confusion within the industry, many of the Dresser/Wayne WayneVac bootless systems were also installed and operated at dispensing rates well in excess of 10 gpm.
 
 ##### Pseudo-Spillage {-} 
 
@@ -26,7 +26,7 @@ It is important that a nozzle be securely latched onto the lip of the fillpipe t
 
 ##### Low Air to Liquid (A/L) Ratio {-}
 
-Excess emissions caused by low collection efficiencies due to inadequate air to liquid (A/L) ratios occur at bootless nozzles systems. The BAAQMD’s testing of over 1,200 refueling gasoline service stations equipped with the WayneVac vacuum assist systems showed an average A/L of 0.77. Low A/L ratios reduce the ability of the system to adequately collect vapors from the vehicle fuel tank. Assuming a linear relationship between A/L and collection efficiency, and collection efficiency of 96% at A/L of 1.00, the collection efficiency at 0.77 A/L can be calculated as 96% x 0.77 = 73.9%. Therefore, the excess emission factor is:
+Excess emissions caused by low collection efficiencies due to inadequate air to liquid (A/L) ratios occur at bootless nozzles systems. The BAAQMD's testing of over 1,200 refueling gasoline service stations equipped with the WayneVac vacuum assist systems showed an average A/L of 0.77. Low A/L ratios reduce the ability of the system to adequately collect vapors from the vehicle fuel tank. Assuming a linear relationship between A/L and collection efficiency, and collection efficiency of 96% at A/L of 1.00, the collection efficiency at 0.77 A/L can be calculated as 96% x 0.77 = 73.9%. Therefore, the excess emission factor is:
 
 $$
 (8.4\ lb/1000\ gal)(96\% - 73.9\%) = 1.85\ lb/1000\ gal
@@ -141,7 +141,7 @@ The adopted amendments also include mandatory In-Station-Diagnostics (ISD), whic
 ```{r child="06-petprod/06-petprod-GDF-EVR-table.Rmd"}
 ```
 
-Monitoring of vapor recovery system operation and performance per CARB’s mandatory In- Station-Diagnostics, pressure-related fugitive emissions will be further reduced by 2003 and beyond.
+Monitoring of vapor recovery system operation and performance per CARB's mandatory In- Station-Diagnostics, pressure-related fugitive emissions will be further reduced by 2003 and beyond.
 
 ```{block type="FIXME"}
 **FIXME: INSERT FIGURES & TABLES HERE?**

@@ -29,9 +29,9 @@ emissions are released below it,
 4. Descent/approach from about 2,300 feet, touch down, and landing run, and
 5. Taxi in, idle and shutdown.
 
-For greenhouse gas (GHG) emission inventory, in addition to LTO cycle explained above, the aircraft landing approach and climb out modes above 2,300 feet elevation and aircraft cruise mode in the District’s air space is also included.
+For greenhouse gas (GHG) emission inventory, in addition to LTO cycle explained above, the aircraft landing approach and climb out modes above 2,300 feet elevation and aircraft cruise mode in the District's air space is also included.
 
-The numbers of operations were obtained and/or estimated for the military air bases and naval facilities in the Bay Area. Modal emission rates for aircraft engines were obtained from the FAA’s Aircraft Engine Emission Database, the U.S. Environmental Protection Agency (EPA), International Civil Aviation Organization (ICAO), and Intergovernmental Panel on Climate Change (IPCC). There are numerous types of military aircraft in use today. Aircraft types considered in these categories include only those believed to be of significant at present.
+The numbers of operations were obtained and/or estimated for the military air bases and naval facilities in the Bay Area. Modal emission rates for aircraft engines were obtained from the FAA's Aircraft Engine Emission Database, the U.S. Environmental Protection Agency (EPA), International Civil Aviation Organization (ICAO), and Intergovernmental Panel on Climate Change (IPCC). There are numerous types of military aircraft in use today. Aircraft types considered in these categories include only those believed to be of significant at present.
 
 The LTO cycle has its equivalent operating time-in-mode (TIM), which is the time for a particular aircraft to go through each of the five modes. Composite modal emission rates (MER) for each of the various types of aircraft engines now in military use were developed based on information from various references noted above. Emission rates vary according to engine type and mode. Emission factors for a specific aircraft were estimated by the equation:
 

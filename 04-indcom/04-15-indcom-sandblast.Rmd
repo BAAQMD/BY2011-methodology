@@ -18,15 +18,15 @@ There are three types of propelling methods used for abrasive blasting:
 2. A wet system where air or water pressure are used to propel an abrasive slurry to the target surface.
 3. Centrifugal Wheel System where centrifugal and inertial forces are used to propel abrasive materials.
 
-In many applications, the abrasive materials can be reused. However, once the abrasive’s particle size gets smaller, its stripping efficiency drops and has to be replaced. On the other hand, sand is commonly used for abrasive operations where recycling is not feasible, such as unconfined sand blasting operations.
+In many applications, the abrasive materials can be reused. However, once the abrasive's particle size gets smaller, its stripping efficiency drops and has to be replaced. On the other hand, sand is commonly used for abrasive operations where recycling is not feasible, such as unconfined sand blasting operations.
 
 #### Methodology {-}
 
-The District's Data Bank system contains information on companies with abrasive blasting operations in the Bay Area. These sources are considered point sources. Sand is the most commonly used abrasive material, however there are other abrasive materials used in the Bay Area, such as steel shot, glass beads and aluminum oxide. For emission calculation purposes, it is assumed sand is used in both point (Category 42) and area sources (Category 1909). The other abrasive materials’ usages were in the point sources (Category 42).
+The District's Data Bank system contains information on companies with abrasive blasting operations in the Bay Area. These sources are considered point sources. Sand is the most commonly used abrasive material, however there are other abrasive materials used in the Bay Area, such as steel shot, glass beads and aluminum oxide. For emission calculation purposes, it is assumed sand is used in both point (Category 42) and area sources (Category 1909). The other abrasive materials' usages were in the point sources (Category 42).
 
 ##### Throughput Calculations {- #indcom-sandblast-calcs}
 
-The 2011 sand throughput was estimated from the U. S. Geological Survey’s (USGS) Mineral Commodity Survey. According to this survey, abrasive sand consumed approximately 3.7% of the industrial sand production in 2010. (At the time, this was the latest data available.) California received approximately 4.4% of the total sand produced. The BAAQMD’s percentage of California’s total abrasive sand throughput was approximately 12.6%. This was estimated by using the ratio of the number of employees associated with abrasive blasting (by NAICS) in the District versus California. The following industries were used for this calculation:
+The 2011 sand throughput was estimated from the U. S. Geological Survey's (USGS) Mineral Commodity Survey. According to this survey, abrasive sand consumed approximately 3.7% of the industrial sand production in 2010. (At the time, this was the latest data available.) California received approximately 4.4% of the total sand produced. The BAAQMD's percentage of California's total abrasive sand throughput was approximately 12.6%. This was estimated by using the ratio of the number of employees associated with abrasive blasting (by NAICS) in the District versus California. The following industries were used for this calculation:
 
 - Ship building and repair (NAICS 3366)
 - Aircraft manufacturing industry (NAICS 336411)
@@ -38,7 +38,7 @@ The 2011 sand throughput was estimated from the U. S. Geological Survey’s (USG
 
 Using these figures, the 2011 estimated total sand throughput in the Bay Area is as follows:
 
-2010 Sand usage in the United States (from the USGS’s Salient U.S. Silica Statistics: 
+2010 Sand usage in the United States (from the USGS's Salient U.S. Silica Statistics: 
 
 \begin{align}
 
@@ -74,7 +74,7 @@ Subtracting out the 2010 point source (permitted) sand throughput of 2,570 tons/
 
 \end{align}
 
-The 2011 area source throughout of 3,413 tons/year was estimated by multiplying the 2010 area source throughput by the Association of Bay Area Government’s (ABAG’s) Manufacturing and Wholesale Employment growth factor.
+The 2011 area source throughout of 3,413 tons/year was estimated by multiplying the 2010 area source throughput by the Association of Bay Area Government's (ABAG's) Manufacturing and Wholesale Employment growth factor.
 
 ##### Emission Calculation {-}
 
@@ -140,7 +140,7 @@ BY2011_annual_emission_data %>%
   chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
-The historical growth profile (back to 1987) for point sources (Category 42) was based on prior emissions data from the District. The historical growth profile (back to 1991) for area sources (Category 1909) was based on sand production data from the USGS. Prior to these two dates, the historical growth profile was based on the ABAG’s 2009 Manufacturing Employment growth profile.
+The historical growth profile (back to 1987) for point sources (Category 42) was based on prior emissions data from the District. The historical growth profile (back to 1991) for area sources (Category 1909) was based on sand production data from the USGS. Prior to these two dates, the historical growth profile was based on the ABAG's 2009 Manufacturing Employment growth profile.
 
 #### Growth {-}
 
@@ -159,7 +159,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing Employment growth profile.
+Projections of emissions to 2030 were based on ABAG's 2009 Manufacturing Employment growth profile.
 
 #### Control {- #indcom-sandblast-control}
 
@@ -167,7 +167,7 @@ Projections of emissions to 2030 were based on ABAG’s 2009 Manufacturing Emplo
 **FIXME: THERE ARE NO CONTROL FACTORS IN DATABANK FOR EITHER OF THESE CATEGORIES**
 ```
 
-Larger abrasive blasting operations are subject to the District’s [Regulation 6], Particulate Matter and Visible Emissions, which places limitations on emission rates, concentration, visible emission and opacity. Pollution control devices for abrasive blasting operations include dust filters/collectors or baghouses, etc. Controls can range up to 99% or higher.
+Larger abrasive blasting operations are subject to the District's [Regulation 6], Particulate Matter and Visible Emissions, which places limitations on emission rates, concentration, visible emission and opacity. Pollution control devices for abrasive blasting operations include dust filters/collectors or baghouses, etc. Controls can range up to 99% or higher.
 
 Unconfined and temporary abrasive blasting operations are subject to District [Rule 12-4], Miscellaneous Standards of Performance, Sandblasting. This rule establishes opacity and abrasives standards.
 

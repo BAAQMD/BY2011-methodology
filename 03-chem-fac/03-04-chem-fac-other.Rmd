@@ -12,7 +12,7 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-Category 21 contains emissions from sulfur recovery units and sulfur storage at refineries and chemical plants. Category 22 contains emissions from sulfuric acid storage tanks at refineries and chemical plants. The emissions of concern from these categories are sulfur dioxide. Abatement devices to treat sulfur recovery units' tail gas and sulfur dioxide scrubbers at sulfuric acid manufacturing plants have significantly reduced the amount of sulfur dioxide emitted. The emissions data shows that without the District’s controls, 150 tons per day of sulfur dioxide would have been emitted in to the atmosphere instead of approximately 3 tons per day.
+Category 21 contains emissions from sulfur recovery units and sulfur storage at refineries and chemical plants. Category 22 contains emissions from sulfuric acid storage tanks at refineries and chemical plants. The emissions of concern from these categories are sulfur dioxide. Abatement devices to treat sulfur recovery units' tail gas and sulfur dioxide scrubbers at sulfuric acid manufacturing plants have significantly reduced the amount of sulfur dioxide emitted. The emissions data shows that without the District's controls, 150 tons per day of sulfur dioxide would have been emitted in to the atmosphere instead of approximately 3 tons per day.
 
 Category 26 contains all other chemical plant point source emissions. Some of these sources include acid manufacturing plants, kiln burners, and specialty chemicals manufacturing plants. Emissions caused by the combustion of fuels at chemical plants are not accounted for in this category.
 

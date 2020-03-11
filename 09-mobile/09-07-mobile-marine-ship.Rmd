@@ -39,11 +39,11 @@ Emissions reported in these categories are from combustion of fuel from engines 
 
 #### Methodology {-}
 
-The methodology used to estimate OGV emissions is based on CARB’s 2005 draft report titled, “Emissions Estimation Methodology for Ocean-Going Vessels”. Although the report is in draft form, the emission data is derived based on methodology and findings given in this report.
+The methodology used to estimate OGV emissions is based on CARB's 2005 draft report titled, “Emissions Estimation Methodology for Ocean-Going Vessels”. Although the report is in draft form, the emission data is derived based on methodology and findings given in this report.
 
 Emissions from OGVs vary based on ship type and operating mode. There are eight ship types and three operating modes accounted for in the inventory. The ship types include auto vessels, bulk carriers, container ships, passenger ships, reefers, RORO ships, tankers, and general vessels (others). The operating modes include the hotelling/berthing mode (including anchorage), maneuvering mode, and in-transit mode.
 
-Under each operating mode, the emissions are broken down by fuel. OGVs emissions vary depending on the type of fuel used to power the engines. Two fuel types, residual fuel and distillate fuel, are generally used in the operation of OGVs. These fuels are combusted in three areas: the ship’s main engine(s), the auxiliary engine(s), and the ship’s boiler(s). The emissions associated with the combustion of fuels from these OGV engines in relation to a particular ship type and operating mode are given by categories and accounted for in the inventory.
+Under each operating mode, the emissions are broken down by fuel. OGVs emissions vary depending on the type of fuel used to power the engines. Two fuel types, residual fuel and distillate fuel, are generally used in the operation of OGVs. These fuels are combusted in three areas: the ship's main engine(s), the auxiliary engine(s), and the ship's boiler(s). The emissions associated with the combustion of fuels from these OGV engines in relation to a particular ship type and operating mode are given by categories and accounted for in the inventory.
 
 In addition to criteria pollutants, greenhouse gas emissions are included in the emission inventory. Greenhouse gas emissions, including CO~2~, CH~4~, and N~2~O, are taken from CARB data base. Greenhouse gas emission factors take into account fuel-specific carbon content and the percent of carbon that oxidizes to convert to greenhouse gas emissions.
 
@@ -53,7 +53,7 @@ Monthly distribution was estimated based on the ships traffic for each month as 
 
 #### County Distribution {-}
 
-For maneuvering and in-transit categories, county fractions are not based on actual port location, but rather where the emissions activity occurred during the particular mode of operation of the vessel. For example, during the maneuvering or in-transit mode, vessels may pass through several counties on their way to and from port. Berthing operations occur at port, and therefore, county fractions here are based on the port’s relevant activity.
+For maneuvering and in-transit categories, county fractions are not based on actual port location, but rather where the emissions activity occurred during the particular mode of operation of the vessel. For example, during the maneuvering or in-transit mode, vessels may pass through several counties on their way to and from port. Berthing operations occur at port, and therefore, county fractions here are based on the port's relevant activity.
 
 ```{r mobile-marine-ship-county-fraction-table}
 BY2011_county_fraction_data %>%

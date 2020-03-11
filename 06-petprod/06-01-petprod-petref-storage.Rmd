@@ -25,7 +25,7 @@ Storage tanks at bulk plants and gasoline stations are inventoried in sections [
 
 #### Methodologies {-}
 
-The categories for storage tanks contain emissions from both point and area sources. Tank emissions are calculated using equations and emission factors from U.S. EPA’s Compilation of Air Pollutant Emisssion Factors, AP-42, Volume I: Station Point and Area Sources. The primary criteria pollutant emitted from storage tanks include hydrocarbon vapors or volatile organic compounds (VOCs).
+The categories for storage tanks contain emissions from both point and area sources. Tank emissions are calculated using equations and emission factors from U.S. EPA's Compilation of Air Pollutant Emisssion Factors, AP-42, Volume I: Station Point and Area Sources. The primary criteria pollutant emitted from storage tanks include hydrocarbon vapors or volatile organic compounds (VOCs).
 
 The predominant types of storage tanks found in a refinery include: 
 
@@ -46,7 +46,7 @@ The types of tank along with the following parameters (given below) are used to 
 - Stored material
 - Factors specific to stored material
 
-Point source emissions are obtained from the District’s data bank system. The data bank contains information submitted by the individual refinery by tank sources. Area Source emissions are derived based on an estimated ratio between area and point source throughputs via tank type.
+Point source emissions are obtained from the District's data bank system. The data bank contains information submitted by the individual refinery by tank sources. Area Source emissions are derived based on an estimated ratio between area and point source throughputs via tank type.
 
 #### Monthly Variation and County Distribution {-}
 
@@ -90,7 +90,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Projected growth for all refinery related categories was taken from the California Energy Commission report on California’s Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected.
+Projected growth for all refinery related categories was taken from the California Energy Commission report on California's Petroleum Infrastructure (2011) that predicted California refiners expand distillation capacity to remain relatively flat. This is due to increase in fuel efficiency of vehicles from CAFÉ standards as well as steady transition to alternative fuels in the California market. California refiners have recently added and will continue to add more process units to produce reformulated gasoline. However, no large increases in emissions are expected.
 
 #### Control {-}
 

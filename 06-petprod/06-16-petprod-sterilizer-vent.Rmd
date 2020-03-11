@@ -51,7 +51,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-Actual emissions from the District’s permitted sources were used for historical years.
+Actual emissions from the District's permitted sources were used for historical years.
 
 #### Growth {-}
 
@@ -70,7 +70,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Growth of ethylene oxide use in sterilizers is estimated to follow population growth. The population data used for growth profiles was obtained from the Association of Bay Area Government's (ABAG’s) 2009 "Projections" and the California Statistical Abstracts.
+Growth of ethylene oxide use in sterilizers is estimated to follow population growth. The population data used for growth profiles was obtained from the Association of Bay Area Government's (ABAG's) 2009 "Projections" and the California Statistical Abstracts.
 
 #### Control {-}
 

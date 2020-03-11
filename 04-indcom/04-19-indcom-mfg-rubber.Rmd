@@ -25,7 +25,7 @@ $$
 
 #### Monthly Variation {-}
 
-Monthly distribution was estimated based on cyclic production of rubber products industry, and is reported by each company’s quarterly percent throughput.
+Monthly distribution was estimated based on cyclic production of rubber products industry, and is reported by each company's quarterly percent throughput.
 
 #### County Distribution {-}
 
@@ -76,7 +76,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr)
 ```
 
-Projections to year 2030 were also based on the Association of Bay Area Government’s 2009 Manufacturing Employment growth profile.
+Projections to year 2030 were also based on the Association of Bay Area Government's 2009 Manufacturing Employment growth profile.
 
 ***
 

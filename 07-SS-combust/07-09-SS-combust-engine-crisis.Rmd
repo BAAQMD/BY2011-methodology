@@ -15,7 +15,7 @@ Category 1598 and 304 contain emissions from diesel engines used in emergency/st
 
 Emissions due to increased emergency generator usage were estimated to be negligible during the electric power shortage crisis in California (2001-2002) and emissions are not expected to grow in the near future.
 
-The District collects fuel usage data each year on a source-by-source basis from facilities operating in the Bay Area. Emissions are calculated using fuel usage data and emission factors in the database. Emission and control factors used are either source specific as reported by the plants or general factors, i.e., from the Environmental Protection Agency (EPA); the U.S. Department of Energy’s (DOE’s) Energy Information Administration (EIA); California Energy Commission (CEC) etc.
+The District collects fuel usage data each year on a source-by-source basis from facilities operating in the Bay Area. Emissions are calculated using fuel usage data and emission factors in the database. Emission and control factors used are either source specific as reported by the plants or general factors, i.e., from the Environmental Protection Agency (EPA); the U.S. Department of Energy's (DOE's) Energy Information Administration (EIA); California Energy Commission (CEC) etc.
 
 ```{r SS-combust-engine-crisis-county-fraction-table}
 BY2011_county_fraction_data %>%

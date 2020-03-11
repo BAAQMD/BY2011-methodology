@@ -12,15 +12,15 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-These four categories account for emissions from landfills in the Bay Area. Categories 1157 and 1158 account for organic and greenhouse gas (GHG) emissions (Biogenic CO~2~, CH~4~, and N~2~O) from point and area source landfills, respectively. Category 1157 (Point Source Landfills) also has particulate emissions from activities such as vehicle traffic on unpaved roads, bulldozing, scraping, etc. Categories 1686 and 1687 account for point source criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and GHG emissions (CO~2~, Biogenic CO~2~, CH~4~, and N~2~O) from the combustion of landfill gases from flares and internal combustion engines (ICE), respectively, at landfills. Landfill gas may also be combusted in ICE’s outside landfills; however, they are covered in Categories 303 (Reciprocating Engines—Gas Fuels) and 305 (Turbines—Gas Fuels).
+These four categories account for emissions from landfills in the Bay Area. Categories 1157 and 1158 account for organic and greenhouse gas (GHG) emissions (Biogenic CO~2~, CH~4~, and N~2~O) from point and area source landfills, respectively. Category 1157 (Point Source Landfills) also has particulate emissions from activities such as vehicle traffic on unpaved roads, bulldozing, scraping, etc. Categories 1686 and 1687 account for point source criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and GHG emissions (CO~2~, Biogenic CO~2~, CH~4~, and N~2~O) from the combustion of landfill gases from flares and internal combustion engines (ICE), respectively, at landfills. Landfill gas may also be combusted in ICE's outside landfills; however, they are covered in Categories 303 (Reciprocating Engines—Gas Fuels) and 305 (Turbines—Gas Fuels).
 
-Landfill gas production rates and compositions vary greatly, even within a single landfill. There are no comprehensive data leading to the development of generalized emission factors for the Bay Area. Biodegradation takes place over an extended period of time, therefore, waste generated in prior years must be considered for emissions calculations. It is assumed it takes 15 years for maximum biodegradation to take place. However, biodegradation occurs, to a lesser extent, 35 years and beyond. (For emission calculation purposes in Categories 1157 and 1158, 40 years for biodegradation was used.) Prior to the mid-1960’s, it was assumed that 60% of the waste was buried in landfills and 40% of the waste was burned on-site. After that it was assumed the burned waste was diverted to the landfills.
+Landfill gas production rates and compositions vary greatly, even within a single landfill. There are no comprehensive data leading to the development of generalized emission factors for the Bay Area. Biodegradation takes place over an extended period of time, therefore, waste generated in prior years must be considered for emissions calculations. It is assumed it takes 15 years for maximum biodegradation to take place. However, biodegradation occurs, to a lesser extent, 35 years and beyond. (For emission calculation purposes in Categories 1157 and 1158, 40 years for biodegradation was used.) Prior to the mid-1960's, it was assumed that 60% of the waste was buried in landfills and 40% of the waste was burned on-site. After that it was assumed the burned waste was diverted to the landfills.
 
 #### Methodology {-}
 
 ##### Point Sources {-}
 
-It is assumed all active landfills within the District are permitted sources. Inactive landfills less than 30 years old and have greater than one million tons of refuse in place are also considered permitted. These permitted landfills are considered to be point sources; their throughput and emission information has been inventoried in the District’s database since the early 1980’s. Although most point source landfills have collection systems associated with them, there are several landfills that do not have a collection system.
+It is assumed all active landfills within the District are permitted sources. Inactive landfills less than 30 years old and have greater than one million tons of refuse in place are also considered permitted. These permitted landfills are considered to be point sources; their throughput and emission information has been inventoried in the District's database since the early 1980's. Although most point source landfills have collection systems associated with them, there are several landfills that do not have a collection system.
 
 ###### Landfills with Collection Systems {-}
 
@@ -32,7 +32,7 @@ For those landfills with active collection systems, it is assumed that 25% escap
 
 - Landfill gas, on average, contains 55% methane (CH~4~), 40% carbon dioxide (CO~2~), with the remaining 5% nitrogen, oxygen, non-methane organic compounds, etc.
 
-- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH~4~ fugitive landfill gas is oxidized into CO~2~. The N~2~O emission factor was provided by CARB in their Documentation of California’s Greenhouse Gas Inventory (Category: Managed waste Disposal Sites, Sector: Industrial: Landfills, not specified).
+- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH~4~ fugitive landfill gas is oxidized into CO~2~. The N~2~O emission factor was provided by CARB in their Documentation of California's Greenhouse Gas Inventory (Category: Managed waste Disposal Sites, Sector: Industrial: Landfills, not specified).
 
 - Constants used in the emission factor calculations are as follows: 
 
@@ -64,7 +64,7 @@ For those few landfills without collection systems, the following is the source 
 
 - The constants used in emission factor calculations are the same as those used for Source Code G7145511.
 
-- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH~4~ fugitive landfill gas is oxidized into CO~2~. The N~2~O emission factor was provided by CARB in their Documentation of California’s Greenhouse Gas Inventory.
+- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH~4~ fugitive landfill gas is oxidized into CO~2~. The N~2~O emission factor was provided by CARB in their Documentation of California's Greenhouse Gas Inventory.
 
 - The CO~2~ emissions from this source are considered to be biogenic. 
 
@@ -80,7 +80,7 @@ Area sources consist of inactive landfills that had less than 1 million ton of r
 
 - The ROG factor for area source landfills is the same as for point source landfills at 0.0089.
 
-- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH~4~ fugitive landfill gas is oxidized into CO~2~. The N~2~O emission factor was provided by CARB in their Documentation of California’s Greenhouse Gas Inventory.
+- In accordance with the Intergovernmental Panel on Climate Change (IPCC) and EPA GHG inventory procedures, 10% of the CH~4~ fugitive landfill gas is oxidized into CO~2~. The N~2~O emission factor was provided by CARB in their Documentation of California's Greenhouse Gas Inventory.
 
 - The CO~2~ emissions from this source are considered to be biogenic. 
 
@@ -96,7 +96,7 @@ The data bank system contains information on the county location of each landfil
 
 ##### Area Source Category (Cat. No. 1158) {-}
 
-The county fractions were based in the number of closed landfills (not accounted for by the District) in the in each county. This data was obtained from the Solid Waste Information System (SWIS) at CalRecycle’s website (http://www.calrecycle.ca.gov).
+The county fractions were based in the number of closed landfills (not accounted for by the District) in the in each county. This data was obtained from the Solid Waste Information System (SWIS) at CalRecycle's website (http://www.calrecycle.ca.gov).
 
 ```{r waste-mgmt-landfill-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -117,9 +117,9 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-Category Nos. 1157 and 1158’s historical and projected growth factors were based on the following:
+Category Nos. 1157 and 1158's historical and projected growth factors were based on the following:
 
-- Association of Bay Area Government’s (ABAG’s) Population growth profile,
+- Association of Bay Area Government's (ABAG's) Population growth profile,
 - Percentage of cumulative waste generation attributed to point or area source,
 - Per capita waste generation, and
 - Overall collection efficiency of the landfill gas.
@@ -139,7 +139,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-As mentioned previously, prior to the mid-1960’s, it was assumed 60% of the waste was buried in landfills (point source) and 40% of the waste was burned on-site, as in backyard incinerators. By 1999, it was assumed that 90% of the cumulative waste generation was attributed to point sources, and the remaining 10% was attributed to area sources. By 2030, it is assumed the point source percentage will increase linearly to 97.75% and the area source percentage will decrease linearly to 2.25%
+As mentioned previously, prior to the mid-1960's, it was assumed 60% of the waste was buried in landfills (point source) and 40% of the waste was burned on-site, as in backyard incinerators. By 1999, it was assumed that 90% of the cumulative waste generation was attributed to point sources, and the remaining 10% was attributed to area sources. By 2030, it is assumed the point source percentage will increase linearly to 97.75% and the area source percentage will decrease linearly to 2.25%
 
 Since the State of California passed a mandate (Assembly Bill 939) that required a reduction in waste generation, per capita waste generation in the District has decreased. Until 1990, this factor was approximately 1.32 tons/person/year; in 2008, it had decreased to 0.79 tons/person/yr. By 2030, it is assumed the per capita waste generation in the District will decrease linearly to 0.70 tons/person/year.
 

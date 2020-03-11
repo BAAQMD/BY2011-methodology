@@ -13,9 +13,9 @@ This category accounts for process emissions from other miscellaneous industrial
 
 #### Methodology {-}
 
-This category consists only of point sources that are contained in the District Data Bank system. Individual companies report information on plant equipment, operating data, and source throughput. This information is updated upon permit renewal in the District’s Data Bank. Criteria pollutant emissions calculated by using throughput data of the specific materials, emission factors, and control equipment reduction factors (if applicable). The emissions factor may specific for a particular source operation supplied by the company. If no specific factor is available, a generalized factor developed by a District staff engineer will be used to determine the emissions.
+This category consists only of point sources that are contained in the District Data Bank system. Individual companies report information on plant equipment, operating data, and source throughput. This information is updated upon permit renewal in the District's Data Bank. Criteria pollutant emissions calculated by using throughput data of the specific materials, emission factors, and control equipment reduction factors (if applicable). The emissions factor may specific for a particular source operation supplied by the company. If no specific factor is available, a generalized factor developed by a District staff engineer will be used to determine the emissions.
 
-All seven of the greenhouse gases, namely carbon dioxide (CO~2~), biogenic CO~2~, methane (CH~4~), nitrous oxide (N~2~O), hydrofluorocarbons (HFC’s), perfluorocarbons (PFC’s), and sulfur hexafluoride (SF6), are also calculated for applicable sources.
+All seven of the greenhouse gases, namely carbon dioxide (CO~2~), biogenic CO~2~, methane (CH~4~), nitrous oxide (N~2~O), hydrofluorocarbons (HFC's), perfluorocarbons (PFC's), and sulfur hexafluoride (SF6), are also calculated for applicable sources.
 
 #### Monthly Variation {-}
 
@@ -44,7 +44,7 @@ BY2011_annual_emission_data %>%
     fill = category) 
 ```
 
-The historical growth profile was based on a combination of prior emissions data (back to 1987) and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing & Wholesale Employment growth profile.
+The historical growth profile was based on a combination of prior emissions data (back to 1987) and the Association of Bay Area Government's (ABAG's) 2009 Manufacturing & Wholesale Employment growth profile.
 
 #### Growth {-}
 
@@ -63,7 +63,7 @@ BY2011_annual_growth_factor_data %>%
     color = cnty_abbr) 
 ```
 
-Future projections of emissions to 2030 are based on ABAG’s 2009 Manufacturing & Wholesale Employment growth profile.
+Future projections of emissions to 2030 are based on ABAG's 2009 Manufacturing & Wholesale Employment growth profile.
 
 ***
 
