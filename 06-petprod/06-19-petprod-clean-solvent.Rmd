@@ -95,6 +95,13 @@ The monthly distribution was estimated based on the point source’s weighted av
 
 For point sources, the data bank system contains information on the county location of each facility; hence, emissions are distributed to the counties accordingly. For area sources, emissions distributed into the nine Bay Area counties are based on the county fractions as determined from CARB’s report on “Solvent Cleaning/Degreasing Source Category Emission Inventory”.
 
+```{r petprod-clean-solvent-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

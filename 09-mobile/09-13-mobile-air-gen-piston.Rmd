@@ -70,6 +70,13 @@ $$
 
 Emissions were distributed to the county location of each airport, where SFO is in San Mateo County, OAK is in Alameda County, SJC in Santa Clara County, and to about two dozen smaller airports with piston aircraft activities in their corresponding counties.
 
+```{r mobile-air-gen-piston-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 #### Monthly Variation {-}
 
 Monthly distribution was based on the average number of monthly operations at each airport.

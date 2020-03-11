@@ -29,7 +29,7 @@ Petroleum refining involves processing crude oil into consumable products such a
 
 **Category 15** accounts for all refinery process gas (combustion) emissions from flares and blow down systems. Refinery flares can emit large quantities of organics, sulfur dioxide and carbon monoxide as well as greenhouse gases.
 
-**Category 16** includes emissions from all other refinery processes not covered in category 15. Emissions of organic compounds and greenhouse gases from storage tanks, sulfur recovery units, and combustion processes are included in chapters/sections on [Petroleum Products](#petprod-petref-storage), [Chemical Plants](#chem-fac-other), and [Turbines](#SS-combust-turbines), respectively. The processes in this category include distillation, hydrogen manufacturing plants, fuel blending. Coke loading and storage facilities account for most of the particulate emissions in this category.
+**Category 16** includes emissions from all other refinery processes not covered in category 15. Emissions of organic compounds and greenhouse gases from storage tanks, sulfur recovery units, and combustion processes are included in chapters/sections on [Petroleum Products](#petprod-petref-storage), [Chemical Plants](#chem-fac-other), and [Turbines](#SS-combust-turbine), respectively. The processes in this category include distillation, hydrogen manufacturing plants, fuel blending. Coke loading and storage facilities account for most of the particulate emissions in this category.
 
 #### Methodologies {-}
 
@@ -43,7 +43,14 @@ Emissions for these categories are obtained from point source data in the Distri
 
 Emission information from numerous sources is grouped into the above mentioned categories. EPA's AP-42, Chapter 5 contains description of petroleum refining processes and emission factors. Criteria pollutants and greenhouse gas emissions, including carbon dioxide (CO~2~), methane (CH~4~), and nitrous oxide (N~2~O), are produced during refining processes. Since refinery emissions are part of point sources, criteria pollutants as well as greenhouse gas data are obtained from the refinery plant as part of the Bay Area Air District permit renewal process.
 
-The county fraction and monthly/daily factors are calculated based on data obtained from the Data Bank.
+The county fraction (Table \@ref(tab:petref-fac-general-county-fraction-table)) and monthly/daily factors are calculated based on data obtained from the Data Bank.
+
+```{r petref-fac-general-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
 
 ### Trends {#petref-fac-general-trend}
 

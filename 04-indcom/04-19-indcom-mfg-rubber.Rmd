@@ -31,6 +31,13 @@ Monthly distribution was estimated based on cyclic production of rubber products
 
 The number of employees within the Rubber Product Manufacturing sector (SIC No. 3262) taken from the 2007 County Business Patterns was used to distribute emissions into the Bay Area counties.
 
+```{r indcom-mfg-rubber-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends {-}
 
 #### History {-}

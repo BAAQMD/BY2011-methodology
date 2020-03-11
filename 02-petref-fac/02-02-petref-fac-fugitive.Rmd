@@ -23,6 +23,13 @@ Emission information from numerous sources is grouped into the above mentioned c
 
 The county, month, and day factors are obtained from information collected in the District’s data bank. Information such as plant's location, seasonal usage, and days per week of operation are also stored in the data bank.
 
+```{r petref-fac-fugitive-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

@@ -28,6 +28,13 @@ Emission information from numerous sources is grouped into the above mentioned c
 
 The county, month, and day factors were derived based on information gather from a plant’s location, seasonal usage, and daily operation as found in the District’ Databank System.
 
+```{r SS-combust-petref-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### Historical {-}

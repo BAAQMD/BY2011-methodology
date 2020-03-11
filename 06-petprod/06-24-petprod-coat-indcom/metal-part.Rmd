@@ -1,0 +1,74 @@
+#### Misc Metal Parts & Small Applicances {#petprod-coat-indcom-metal-part}
+
+```{r petprod-coat-indcom-metal-part-setup}
+METAL_PART_CATEGORIES <- c(
+  "#268 Misc Metal Parts & Small Applicances Ctg." = 268,
+  "#269 Misc Metal Parts & Small Applicances C/U" = 269, # "C/U" means "cleanup solvent"
+  "#1926 Misc Metal Parts & Small Applicances Ctg. (Area)" = 1926,
+  "#1927 Misc Metal Parts & Small Applicances C/U (Area)" = 1927)
+```
+
+##### County Fractions {-}
+
+```{r petprod-coat-indcom-metal-part-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    METAL_PART_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
+##### History {-}
+
+```{r petprod-coat-indcom-metal-part-emission-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    METAL_PART_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category) 
+```
+
+##### Emission Factors (Area) {-}
+
+```{r petprod-coat-indcom-metal-part-annual_emfac-chart}
+BY2011_annual_area_source_emission_factor_data %>%
+  filter_categories(
+    METAL_PART_CATEGORIES) %>%
+  chart_BY2011_annual_emission_factors_by(
+    color = category)
+```
+
+##### Growth {-}
+
+```{r petprod-coat-indcom-metal-part-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    METAL_PART_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
+```{r petprod-coat-indcom-metal-part-growth-chart, fig.height=6, out.height=600}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    METAL_PART_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr) 
+```
+
+##### Control {-}
+
+```{r petprod-coat-indcom-metal-part-control-chart}
+BY2011_annual_control_factor_data %>%
+  filter_categories(
+    METAL_PART_CATEGORIES) %>%
+  chart_BY2011_annual_control_factors_by(
+    color = pollutant) 
+```
+
+##### BY2011 vs DataBank (Point) {-}
+
+```{r petprod-coat-indcom-metal-part-BY-vs-DB-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    METAL_PART_CATEGORIES) %>%
+  chart_BY_vs_DB_point_source_annual_emissions()
+```

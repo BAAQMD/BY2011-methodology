@@ -47,6 +47,13 @@ Monthly variation of emissions is based on estimates of construction activities 
 
 County activity was based on miles of paved roads in each county as acquired from the Teale Data Center.
 
+```{r petprod-asphalt-pave-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

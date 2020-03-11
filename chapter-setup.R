@@ -28,6 +28,10 @@ rm(list = rm_objs)
 multiply_by <-
   magrittr::multiply_by
 
+# Missing values (NA) are displayed as NA by default.
+options(
+  knitr.kable.NA = "–")
+
 #' See <https://haozhu233.github.io/kableExtra/bookdown/use-bootstrap-tables-in-gitbooks-epub.html>
 #' Also see `table_css: false` in `_output.yml`
 options(

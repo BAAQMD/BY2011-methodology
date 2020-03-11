@@ -31,6 +31,13 @@ The monthly variation for LPG and distillate oil was based on data provided by P
 
 County distribution of emissions was based on the Department of Commerce’s 2010 Census of Population and Housing for California. In that report, the number of homes using LPG and fuel oil as a heating medium were used in the estimate of county distribution.
 
+```{r SS-combust-domestic-liquid-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends {#SS-combust-domestic-liquid-trend}
 
 #### Historical {-}

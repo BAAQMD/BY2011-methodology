@@ -63,6 +63,13 @@ Other sources for the vegetation combustion emissions related information are th
 
 County distribution of emissions is based on acreage burnt in each of the San Francisco Bay Area counties.
 
+```{r misc-fire-veg-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 #### Monthly Variation {-}
 
 On the basis of historical data, the California Department of Forestry and Fire Protection (CDF) suggests most of the wild fires occurring from mid-May to mid-November. The percentage of wild fires by month is estimated as follow: May - 5%, June - 10%, July - 15%, August - 20%, September - 25%, October - 20% and November - 5%.

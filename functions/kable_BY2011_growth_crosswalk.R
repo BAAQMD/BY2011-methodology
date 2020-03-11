@@ -11,7 +11,10 @@ kable_BY2011_growth_crosswalk <- function (
       forecast,
       profile = glue::glue(
         "#{gpf_id} {gpf_name}")) %>%
-    distinct()
+    distinct() %>%
+    mutate_at(
+      vars(backcast, forecast),
+      ~ if_else(., true = "Yes", false = "No")) %>%
   
   kable_data %>%
     kable_BY2011(

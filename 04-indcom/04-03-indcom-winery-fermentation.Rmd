@@ -41,6 +41,13 @@ The ethanol emissions associated with wine fermentation occurs during the grape 
 
 County distribution was based on the amount of wine production in each county. Alameda, Contra Costa, Napa, Santa Clara, Solano, and Sonoma Counties were assumed to produce wine.
 
+```{r indcom-winery-fermentation-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

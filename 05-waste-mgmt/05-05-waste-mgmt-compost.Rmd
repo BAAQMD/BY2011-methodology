@@ -82,7 +82,13 @@ The emissions are assumed to be distributed evenly throughout the year.
 
 The county distribution was based on the location as found in the District databank or SWIS data mentioned above.
 
-### Trends {#waste-mgmt-compost-trends}
+```{r waste-mgmt-compost-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+### Trends {#waste-mgmt-compost-trend}
 
 #### History {-}
 

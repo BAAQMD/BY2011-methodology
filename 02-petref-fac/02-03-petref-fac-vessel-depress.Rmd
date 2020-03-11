@@ -25,6 +25,13 @@ Greenhouse gas emission factors are also provided by the individual refineries a
 
 The county, month, and day factors are obtained from the data bank's information on each plant's location, seasonal usage, and days per week of operation.
 
+```{r petref-fac-vessel-depress-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends {#petref-fac-vessel-depress-trend}
 
 #### History {-}

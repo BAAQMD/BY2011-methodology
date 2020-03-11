@@ -27,7 +27,14 @@ For large bakeries, monthly distribution was based on each company's reported qu
 
 #### County Distribution {-}
 
-The county locations and associated emissions of each of the large bakeries were used to distribute countywide emissions. For small bakeries, the number of employees in the large bakeries was subtracted from the total number of employees in each county’s bakeries. This data was found in the U.S Census Department’s 2010 County Business Patterns
+The county locations and associated emissions of each of the large bakeries were used to distribute countywide emissions. For small bakeries, the number of employees in the large bakeries was subtracted from the total number of employees in each county’s bakeries. This data was found in the U.S Census Department’s 2010 County Business Patterns.
+
+```{r indcom-bakery-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
 
 ### Trends
 

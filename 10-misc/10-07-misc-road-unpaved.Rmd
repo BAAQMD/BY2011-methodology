@@ -38,6 +38,13 @@ Emission factor for all types of road used is assumed to be 2.0 pounds of PM~10~
 
 Emissions for 2011 were estimated using growth rates described in the following section.
 
+```{r misc-road-unpaved-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 #### Temporal Variations {-}
 
 It was assumed that wet days (with precipitation over 0.01") prevent these emissions from occurring. The VMT is also assumed to drop significantly during winter months. ARB combined these factor to develop monthly variations for each county.

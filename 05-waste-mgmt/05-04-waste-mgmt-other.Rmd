@@ -23,6 +23,13 @@ The data band contains percentage of throughput data for each of the four 3-mont
 
 The data bank system contains information on the county location of each processing plant; hence, emissions are distributed to the counties accordingly.
 
+```{r waste-mgmt-other-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

@@ -35,6 +35,13 @@ BY2011_annual_area_source_emission_factor_data %>%
 
 County distributions for Category #61 and #868 are based on natural gas usage data obtained from the California Energy Commission (CEC), PG&E, and City of Palo Alto.
 
+```{r petprod-NG-distrib-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 #### Temporal Variation {-}
 
 The daily, weekly and monthly emission rates are considered to be uniform.

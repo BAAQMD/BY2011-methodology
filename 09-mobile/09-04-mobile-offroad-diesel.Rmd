@@ -90,6 +90,13 @@ Monthly variation of emissions was assumed to be 60% for the months of April to 
 
 County emissions were provided by the CARB’s 2007 OFFROAD model.
 
+```{r mobile-offroad-diesel-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

@@ -29,7 +29,14 @@ Emissions from the Recreational Boats Fueling category were distributed into the
 
 #### County Distribution {-}
 
-Emissions from recreational boat fueling category distributed into the nine counties are based on the number of boat registration in each county. County distribution are based on actual port location for Ferry, Ships and Tugboats
+Emissions from recreational boat fueling category distributed into the nine counties are based on the number of boat registration in each county. County distribution are based on actual port location for Ferry, Ships and Tugboats.
+
+```{r petprod-fueling-marine-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
 
 ### Trends
 

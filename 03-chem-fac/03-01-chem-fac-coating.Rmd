@@ -31,6 +31,13 @@ Monthly distribution was estimated based on major coatings and inks manufacturer
 
 The county location of each company as reported in the Data Bank is used to distribute emissions into each county.
 
+```{r chem-fac-coating-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

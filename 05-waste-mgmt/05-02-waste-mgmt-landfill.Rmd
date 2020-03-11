@@ -98,6 +98,13 @@ The data bank system contains information on the county location of each landfil
 
 The county fractions were based in the number of closed landfills (not accounted for by the District) in the in each county. This data was obtained from the Solid Waste Information System (SWIS) at CalRecycle’s website (http://www.calrecycle.ca.gov).
 
+```{r waste-mgmt-landfill-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History & Growth {-}

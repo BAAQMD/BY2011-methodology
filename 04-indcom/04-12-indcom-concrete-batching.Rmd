@@ -37,6 +37,13 @@ Monthly variation was estimated and used to distribute emissions over the 12 mon
 
 For point sources, the data bank system contains information on the county location of each processing plant; hence, emissions are distributed to the counties accordingly. Emissions from area sources were distributed to the Bay Area counties by the number of employees estimated in the Ready-Mix Concrete Manufacturing sector (NAICS 327320) as determined by the US Department of Commerce’s 2009 County Business Patterns.
 
+```{r indcom-concrete-batching-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends {#indcom-concrete-batching-trend}
 
 #### History {-}

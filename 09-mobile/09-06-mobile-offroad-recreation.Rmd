@@ -19,7 +19,15 @@ These categories are used to inventory the emissions from off-road motorcycles a
 #### Methodologies {-}
 
 California Air Research Board (CARB) developed an off-road vehicle emission inventory (OFFROAD2007) model to estimate emissions from off-road motor vehicles for all counties and air basins in California. The OFFROAD model contains a comprehensive list of equipment from a wider range of categories. The criteria and GHG emissions for off-road motorcycles and all-terrain vehicles in the Bay Area were obtained from the CARB’s OFFROAD2007 model.
+
 Most of the annual activity takes place in spring, summer and fall. Weekend activity is about twice as high as weekdays.
+
+```{r mobile-offroad-recreation-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
 
 ### Trends {#mobile-offroad-recreation-trend}
 

@@ -77,6 +77,13 @@ BY2011_annual_emission_data %>%
 
 County distribution is based on population of each county. Solano and Sonoma Counties are partially in the District, so population data were used for the cities that are within the District boundaries.
 
+```{r misc-consumer-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 #### Monthly Variation {-}
 
 For most consumer product categories monthly variation is assumed to be constant. Charcoal lighter material usage is assumed to be higher during summer months.

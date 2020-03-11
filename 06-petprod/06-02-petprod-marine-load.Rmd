@@ -79,6 +79,13 @@ For the point source categories (Cats. 60, 795-802), the monthly distribution wa
 
 For the point source categories, the county location of each company, as reported in the Data Bank, is used to distribute emissions into each county. For the area source categories, the county distribution was based on the throughputs of products unloaded at the various Bay Area ports, as reported in the U.S. Army Corps of Engineers’ 2008 Waterborne Commerce of the United States, Part 4--Waterways and Harbors-Pacific Coast, Alaska and Hawaii.
 
+```{r petprod-marine-load-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends {#petprod-marine-load-trend}
 
 #### History {-}

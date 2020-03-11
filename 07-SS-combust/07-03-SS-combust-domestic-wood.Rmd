@@ -30,6 +30,13 @@ The monthly variation for wood burning in woodstoves and fireplaces was also der
 
 There were wide county differences in the amounts of wood burned. For fireplaces, the more urban counties – Alameda, San Francisco and San Mateo – tend to have lower amounts burned per household than counties in more rural parts such as Sonoma and Napa counties. However, because of the large populations, Alameda, Contra Costa and Santa Clara were estimated to contain the largest quantity of logs burned per area. For wood stoves, Sonoma, Marin and Napa have the largest household number of logs burned per household but, again because of population, the largest number of logs burned in wood stoves per area was found in Contra Costa and Santa Clara counties.
 
+```{r SS-combust-domestic-wood-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### Historical {-}

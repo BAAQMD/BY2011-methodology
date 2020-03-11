@@ -21,6 +21,13 @@ Regulation 8, Rule 40 allows up to 150 pounds per day of organic compound emissi
 
 The county activity distribution is based on an average number of aeration events in each county in the District.
 
+```{r indcom-soil-aeration-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 #### Monthly Variation {-}
 
 The monthly factors are assumed to be uniform. More aeration events are assumed to start during weekdays than during weekends.

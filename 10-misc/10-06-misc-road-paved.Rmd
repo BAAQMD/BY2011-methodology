@@ -66,6 +66,13 @@ Estimated fraction of county VMT in each of the four roadway types were taken fr
 
 Number of wet days ($N$) for each county was derived from the most appropriate meteorological station for that county.
 
+```{r misc-road-paved-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 The monthly fraction of annual VMT came from monthly Caltrans VMT highway data prepared for the Sacramento Office of the Federal Highway Administration. These were combined with the number of wet days in the relevant month to develop a monthly profile.
 
 ### Trends {#misc-road-paved-trend}

@@ -43,6 +43,13 @@ The monthly variations of emissions for the Bay Area counties in Category 744 â€
 
 Distribution of emissions into counties was based on construction activity provided by the California Department of Finance.
 
+```{r misc-contruction-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

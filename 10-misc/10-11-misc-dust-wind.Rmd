@@ -62,6 +62,13 @@ Emission distribution through the months was estimated to be equal throughout th
 
 The report on Agricultural Crops for each county showed total acreage for each and are used in distributing emissions throughout the counties.
 
+```{r misc-dust-wind-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

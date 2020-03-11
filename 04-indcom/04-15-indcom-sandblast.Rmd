@@ -109,6 +109,14 @@ The monthly variation of emission was estimated to be approximately three times 
 
 For point sources (Category 42), the data bank system contains information on the county location of each processing plant; hence, emissions are distributed to the counties accordingly. Emissions from area sources (Category 1909) were distributed to counties by the total employment estimates from those industries listed above by NAICS.
 
+```{r indcom-sandblast-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
+
 ### Trends
 
 #### History {-}

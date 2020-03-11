@@ -1,4 +1,4 @@
-#### Other Coatings {#coat-indcom-other}
+#### Other Coatings {#petprod-coat-indcom-other}
 
 ```{r petprod-coat-indcom-other-setup}
 OTHER_COATING_CATEGORIES <- c(
@@ -6,6 +6,15 @@ OTHER_COATING_CATEGORIES <- c(
   "#281 Other C/U" = 281, # "C/U" means "cleanup solvent"
   "#1932 Other Ctg. (Area)" = 1932,
   "#1933 Other C/U (Area)" = 1933)
+```
+
+##### County Fractions {-}
+
+```{r petprod-coat-indcom-other-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    OTHER_COATING_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
 ```
 
 ##### History {-}

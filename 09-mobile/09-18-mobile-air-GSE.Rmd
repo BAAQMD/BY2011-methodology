@@ -21,6 +21,13 @@ Emissions, emission factors, equipment population and other factors such as brea
 
 Distribution of emissions into each county is based on Ground Support Equipment activity and its population in each Bay Area county.
 
+```{r mobile-air-GSE-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 #### Monthly Variation {-}
 
 Monthly distribution was based on an average monthly number of aircraft operations at each airport.

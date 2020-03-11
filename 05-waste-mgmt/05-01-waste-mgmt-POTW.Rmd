@@ -28,6 +28,13 @@ The data bank contains percentage of throughput data for each of the four 3-mont
 
 The county location of each processing plant as reported in the databank is used to distribute emissions into each county for Category 50. The emissions in Category 1911 were distributed according to each District’s county population.
 
+```{r waste-mgmt-POTW-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

@@ -40,6 +40,13 @@ BY2011_annual_area_source_emission_factor_data %>%
 
 The county activity is based on amount of oil produced in each Bay Area county in accordance with data from the California Department of Conservation.
 
+```{r indcom-extract-oil-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 #### Monthly Variation {-}
 
 Monthly and daily factors are assumed to be uniform.

@@ -70,6 +70,13 @@ Categories 307 and 968: The District’s point source database contains county d
 
 Categories 1590 and 1591: County distribution is based on natural gas usage in each of the Bay Area County.
 
+```{r SS-combust-external-NG-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 #### Monthly Variation {-}
 
 For point sources monthly variation of emissions is based on company reported quarterly throughput data. Area source monthly variation is based on average fuel usage by month.

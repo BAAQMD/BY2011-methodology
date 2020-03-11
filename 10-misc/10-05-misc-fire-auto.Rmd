@@ -49,6 +49,13 @@ The monthly activity and the weekly activity are uniform. The daily activity occ
 
 Automobile fires were apportioned to the Bay Area counties based on population by county. This was used directly in the county distribution except for Solano and Sonoma which were adjusted to include only areas inside the District using household population.
 
+```{r misc-fire-auto-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

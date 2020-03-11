@@ -33,6 +33,13 @@ Monthly variation of emissions was based on gasoline usage data for California. 
 
 Emissions distributed into the nine counties were based on Caltrans’ Transportation Planning Support Information System's breakdown.
 
+```{r petprod-GDF-storage-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

@@ -67,6 +67,13 @@ Emissions for both categories were assumed to be uniform for each month of the y
 
 **Category #1891.** The number of employees in each applicable Bay Area county’s, “Computer and Electronic Products” sector was used to determine the county fraction. This data was found in Table C-7 of the 2011 CDF Statistical Abstract report.
 
+```{r indcom-mfg-semicond-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

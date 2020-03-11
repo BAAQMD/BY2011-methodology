@@ -20,13 +20,13 @@ knitr::include_graphics(
 
 - [All Other Chemical Plants](#chem-fac-other-trend): 10,000 ton/yr of CO emissions stops abruptly at CY1998. Few other point-source categories even approach this magnitude of CO emissions. This is traceable to a single facility. For perspective, all five refineries (all of their categories combined) emit about 2,000 to 4,000 ton/yr CO, and have since CY1990.
 
-- [Portable Fuel Container Spillage](#petprod-portable_spillage-methodology): The text states that "CARB estimates 3.57 tons of uncontrolled ROG emissions per day statewide from portable fuel containers in 2011." That 3.57 ton/day is equal to `r as_units(3.57, "ton/day") %>% set_units("ton/yr") %>% drop_units() %>% formattable::accounting(digits = 0)` ton/yr. In the BY2011 inventory, the estimated CY2011 total for category #1434 Portable Fuel Container Spillage is `r BY2011_annual_emission_data %>% filter_categories(1434) %>% filter_years(CY(2011)) %>% filter_pollutants("ROG") %>% convert_emission_units(to = "ton/yr") %>% pull_total(ems_qty) %>% formattable::accounting(digits = 0)` ton/yr ROG. The Bay Area total should not be equal to the statewide total. (Perhaps the text is incorrect instead?)
+- [Portable Fuel Container Spillage](#petprod-portable-spillage-methodology): The text states that "CARB estimates 3.57 tons of uncontrolled ROG emissions per day statewide from portable fuel containers in 2011." That 3.57 ton/day is equal to `r as_units(3.57, "ton/day") %>% set_units("ton/yr") %>% drop_units() %>% formattable::accounting(digits = 0)` ton/yr. In the BY2011 inventory, the estimated CY2011 total for category #1434 Portable Fuel Container Spillage is `r BY2011_annual_emission_data %>% filter_categories(1434) %>% filter_years(CY(2011)) %>% filter_pollutants("ROG") %>% convert_emission_units(to = "ton/yr") %>% pull_total(ems_qty) %>% formattable::accounting(digits = 0)` ton/yr ROG. The Bay Area total should not be equal to the statewide total. (Perhaps the text is incorrect instead?)
 
-- [Cogeneration](#SS-combust-cogen-trends): Estimated CY1990-2007 TOG emissions for category #292 Reciprocating Engines are too low, compared to CH~4~. (The CH~4~/TOG ratio for those years is well above 1, generally in the range of 3x to 30x.) About 1,000 ton/yr TOG and 100 ton/yr ROG may be missing for those years.
+- [Cogeneration](#SS-combust-cogen-trend): Estimated CY1990-2007 TOG emissions for category #292 Reciprocating Engines are too low, compared to CH~4~. (The CH~4~/TOG ratio for those years is well above 1, generally in the range of 3x to 30x.) About 1,000 ton/yr TOG and 100 ton/yr ROG may be missing for those years.
 
-- The CO~2~/CO ratio for category [#293 Gas Fired Boilers](#SS-combust-power-boilers-trend) for CY1990-2000 appears to be far too low, given what is observed for subsequent decades. This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO~2~ of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is "on track" to reach its CY2030 target.
+- The CO~2~/CO ratio for category [#293 Gas Fired Boilers](#SS-combust-power-boiler-trend) for CY1990-2000 appears to be far too low, given what is observed for subsequent decades. This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO~2~ of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is "on track" to reach its CY2030 target.
 
-- (Possibly related.) Emissions for [#294 Oil Fired Boilers](#SS-combust-power-boilers-trend) seem to be almost entirely absent from the BY2011 inventory. There are some very small emissions (~ 0.1 ton/yr of TOG and NO~x~) estimated for CY2008-2010, but that is it.
+- (Possibly related.) Emissions for [#294 Oil Fired Boilers](#SS-combust-power-boiler-trend) seem to be almost entirely absent from the BY2011 inventory. There are some very small emissions (~ 0.1 ton/yr of TOG and NO~x~) estimated for CY2008-2010, but that is it.
 
 - Road Dust: The emissions for [Paved Roads](#misc-road-paved-trend) are exactly flat. The paragraph under [Growth](#misc-road-paved-growth) states that "MTC’s CLM data show an increase of less than 2% for [1990 to 2011] (less than 0.1% per year), and this was used to create trends around the 2011 base year emissions." However, the growth is not 2% per 20 years; it is _exactly_ flat, because the relevant categories are all linked to profile #38 No Growth.
 
@@ -68,15 +68,15 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 
 #### Waste Management {-}
 
-- [Land Farming](#waste-mgmt-farm-trends): The growth profile does not seem to match the published emissions for CY1990-1995. Further, the CY1990 emissions for TOG are sharply increased at CY1990. A probable cause: the emission factor for TOG changed abruptly, from CY1990 (TOG = 20 lb/ton) to CY1991 onwards (TOG = 2.24 lb/ton). Although this affects TOG, it is not reflected in published CY1990 emissions of CH~4~.
+- [Land Farming](#waste-mgmt-farm-trend): The growth profile does not seem to match the published emissions for CY1990-1995. Further, the CY1990 emissions for TOG are sharply increased at CY1990. A probable cause: the emission factor for TOG changed abruptly, from CY1990 (TOG = 20 lb/ton) to CY1991 onwards (TOG = 2.24 lb/ton). Although this affects TOG, it is not reflected in published CY1990 emissions of CH~4~.
 
-- [Composting](#waste-mgmt-compost-trends): 
+- [Composting](#waste-mgmt-compost-trend): 
     - Like [Other Miscellaneous Industrial/Commercial](#indcom-misc-history), when comparing across pollutants, emission values at CY2010 exhibit strange up/down variations for category #1709 Composting (area). The general shapes of the rest of the years seems generally consistent both (a) across pollutants, and (b) with the assigned growth profiles. 
     - The point/area growth profiles assignments seem to be mixed up: profile #862 Composting-Area Source is assigned to category #1936 Composting (Point), and profile #863 Composting-Point Source is assigned to #1709 Composting (which is an area-source, not a point-source, category). Finally, there are changes in the emission factors for category #1936 over time. This may be intended, but it is unusual for a point-source category to be assigned time-varying EFs. 
 
 #### Petroleum Products Evaporation and Leakage {-}
 
-- [Industrial and Commercial Coatings: Marine](#coat-indcom-marine-trend): Categories #1930 and #1931 are missing emission data for CY2005-2008. These aren't zeros; there are just no rows in the `BY2011-annual-A.csv` file, for these categories, for CY2005-2008.
+- [Industrial and Commercial Coatings: Marine](#petprod-coat-indcom-marine-trend): Categories #1930 and #1931 are missing emission data for CY2005-2008. These aren't zeros; there are just no rows in the `BY2011-annual-A.csv` file, for these categories, for CY2005-2008.
 
 - [Marine Loading](#petprod-marine-load-control)
     - The very last paragraph under "Controls" refers to "Categories 795 - 802", but #801 and #802 are not elsewhere mentioned, and no emissions for #801 or #802 appear in the published BY2011 inventory. (Are they unintentionally missing?). 
@@ -105,13 +105,13 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 #
 # TODO: check this
 #
-- [Gas Fired Turbines](#SS-combust-turbines-trend) shows a sharp up/down tick at CY2010. If you look at an RY pivot table, you can see that this is entirely due to one source. If you look at a PY pivot table, the effect disappears --- that same source is very steady, year-over-year. It's possible that an error existed at the time that the RY snapshot was made, but was fixed before the PY data were frozen.
+- [Gas Fired Turbines](#SS-combust-turbine-trend) shows a sharp up/down tick at CY2010. If you look at an RY pivot table, you can see that this is entirely due to one source. If you look at a PY pivot table, the effect disappears --- that same source is very steady, year-over-year. It's possible that an error existed at the time that the RY snapshot was made, but was fixed before the PY data were frozen.
 ```
 
 ```{r eval=FALSE, include=FALSE, echo=FALSE}
 # TODO: check this
 # 
-# - [Power Plants: Gas/Oil Turbines](#SS-combust-power-turbines_and_distrib): For category #297 Oil Fired Turbines, the CY1990-2010 decline in SO~2~ emissions does not appear to be explained by either the growth profile or the control profile (for this category, there are no control factors for SO~2~ in DataBank, only NO~x~). For category #1595 Gas Fired Turbines, a sharp rise and fall in CO, CY2002-2009, does not match other pollutants. 
+# - [Power Plants: Gas/Oil Turbines](#SS-combust-power-turbine_and_distrib): For category #297 Oil Fired Turbines, the CY1990-2010 decline in SO~2~ emissions does not appear to be explained by either the growth profile or the control profile (for this category, there are no control factors for SO~2~ in DataBank, only NO~x~). For category #1595 Gas Fired Turbines, a sharp rise and fall in CO, CY2002-2009, does not match other pollutants. 
 ```
 
 ```{r eval=FALSE, include=FALSE}
@@ -151,18 +151,18 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 
 #### Mobile Combustion {-}
 
-- [Recreational Boats](#mobile-boat-recreation-trend): Emissions of many pollutants drop to exactly zero at five-year intervals (CY2020, 2025, 2030, ..., etc.), and then return to the previous trend. 
+- [Recreational Boats](#mobile-marine-boat-recreation-trend): Emissions of many pollutants drop to exactly zero at five-year intervals (CY2020, 2025, 2030, ..., etc.), and then return to the previous trend. 
 
-- [Lawn & Garden Equipment](#mobile-lawn-garden-trend): N~2~O emissions for a five-year interval (CY2026-2030) are exactly zero.
+- [Lawn & Garden Equipment](#mobile-offroad-lawn-garden-trend): N~2~O emissions for a five-year interval (CY2026-2030) are exactly zero.
 
-- [Transportation Refrigeration Units (TRUs)](#mobile-TRU-trend): Like [Lawn & Garden Equipment](#mobile-lawn-garden), N~2~O emissions for a five-year interval (CY2026-2030) are exactly zero.
+- [Transportation Refrigeration Units (TRUs)](#mobile-offroad-TRU-trend): Like [Lawn & Garden Equipment](#mobile-offroad-lawn-garden), N~2~O emissions for a five-year interval (CY2026-2030) are exactly zero.
 
-- [Agricultural Equipment](#mobile-ag-equip-trend): Like [TRUs](#mobile-TRU), N~2~O emissions for a five-year interval (CY2026-2030) are exactly zero. Also, #1646 Ag Equip (Diesel) is linked to growth profile #464 Commercial Boats. (?)
+- [Agricultural Equipment](#mobile-offroad-ag-trend): Like [TRUs](#mobile-offroad-TRU), N~2~O emissions for a five-year interval (CY2026-2030) are exactly zero. Also, #1646 Ag Equip (Diesel) is linked to growth profile #464 Commercial Boats. (?)
 
 - [Construction Equipment](#mobile-offroad-diesel-construct-equip): SO~2~ emissions appear spiky, particularly between CY1998-2010.
 
 - [Industrial Equipment](#mobile-offroad-diesel-indust-equip)
-    - TOG emissions for #1667 (Natural Gas) exhibit the same zero-every-5-years artifact that is present in [Recreational Boats](#mobile-boat-recreations), only this time it is isolated to one pollutant (TOG). 
+    - TOG emissions for #1667 (Natural Gas) exhibit the same zero-every-5-years artifact that is present in [Recreational Boats](#mobile-marine-boat-recreations), only this time it is isolated to one pollutant (TOG). 
     - SO~2~ from #1666 (Diesel) grows much more rapidly than any other pollutant.
 
 - [Light Commerical Equipment](#mobile-offroad-diesel-light_com-equip): 
@@ -173,7 +173,9 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 
 #### Miscellaneous Other Sources {-}
 
-- [Animal Waste, Livestock](#misc-animal-livestock): Table \@ref(tab:misc-animal-waste-livestock-throughputs-table) in the [Methodology](#misc-animal-livestock-methodology) section is inconsistent with the same table as shown in the [BY2011 Methodology PDF]. One example: there are 28,753 sheep in Solano, with a total of 53,884 sheep District-wide. In the [BY2011 Methodology PDF], those numbers are 3,804 and 28,937 respectively. The former table is created automatically from `BY2011_area_source_throughput_data`, itself derived from `t0325`. The code that produces the table is in [misc-animal-livestock.Rmd](https://github.com/holstius/BY2011-methodology/blob/master/10-misc/misc-animal-livestock.Rmd). 
+- [Animal Waste, Livestock](#misc-animal-livestock): Table \@ref(tab:misc-animal-waste-livestock-throughputs-table) in the [Methodology](#misc-animal-livestock-methodology) section is inconsistent with the same table as shown in the [BY2011 Methodology PDF]. One example: there are 28,753 sheep in Solano, with a total of 53,884 sheep District-wide. In the [BY2011 Methodology PDF], those numbers are 3,804 and 28,937 respectively. 
+
+- [Animal Waste, Other](#misc-animal-other): County fractions (Table \@ref(tab:misc-animal-other-county-fraction-table) are inconsistent with the text.
 
 - [Farming Operations](#misc-farm-emfac-chart): Emission factors for these two categories (#749 and #1435) vary by time in a way that strongly resembles the growth profiles. If this is accidental, it could be causing a "double-counting" of the magnitude of the decrease from CY1990-2010. If it is intentional, it probably warrants some extra documentation. Related: the same thing happens with [Category #90](#petprod-marine-load-emfac-chart) "Ballasting, Other Material".
 
@@ -193,10 +195,14 @@ to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up
 
 - [Asphalt Paving](#petprod-asphalt-pave-methodology): (minor) The text states "organic emission factors used for hot-mix, emulsified, and road oils were 0.04, 17.9, and 2.19 lb/ton of asphalt applied, respectively." There are control factors in DataBank for #95 Road Oil (97.5% controlled, CY1990-2030) and #97 Emulsified (55.3% controlled, CY1990-2030), but nothing for #96 Hot Mix. If we apply those (DataBank) CFs to the (DataBank) EFs listed in Table \@ref(tab:petprod-asphalt-pave-emfac-table), then we do in fact arrive at the EFs mentioned in the text (#95 = 2.2 lb/ton and #97 Emulsified). So the math works out, but it is odd to have a mixture of controlled (for #96) and uncontrolled (for #95 and #97) EFs stored in DataBank.
 
+- [Industrial/Commercial Coating](#petprod-coat-indcom)
+    - County fractions for cleanup (C/U), versus coating, are inconsistent for [Can and Coil](#petprod-coat-indcom-can-coil), [Paper](#petprod-coat-indcom-paper), [Plastic Parts](#petprod-coat-indcom-plastic-part), [Metal Parts](#petprod-coat-indcom-metal-part), and [Wood Paneling](#petprod-coat-indcom-wood-panel). (For the other subsectors, county fractions for C/U and coating are equal.)
+    - CY1990-2000 emissions are inconsistent with DataBank (PY) data for [Fabric and Film](#petprod-coat-indcom-fabric-film), [Magnet Wire](#petprod-coat-indcom-magnet-wire), [Metal Parts], [Wood Paneling](#petprod-coat-indcom-wood-panel), [Auto Refinishing](#petprod-coat-indcom-auto-refinish), [Plastic Parts](#petprod-coat-indcom-plastic-part), and [Other Coatings](#petprod-coat-indcom-other). (Point sources only.)
+
 #### Stationary Combustion of Fuels {-}
 
-- [Back-up Diesel Generator](#SS-combust-engines-crisis): Category #1598 should be (re)assessed.
+- [Back-up Diesel Generator](#SS-combust-engine-crisis): Category #1598 should be (re)assessed.
 
 #### Mobile Combustion {-}
 
-- [Ships](#mobile-ship): BY2011 categories are actually #2041:2220, not #1787:1887.
+- [Ships](#mobile-marine-ship): BY2011 categories are actually #2041:2220, not #1787:1887.

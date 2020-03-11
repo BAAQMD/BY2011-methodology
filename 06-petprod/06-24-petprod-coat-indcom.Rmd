@@ -1,4 +1,4 @@
-## Industrial Commercial Coating
+## Industrial Commercial Coating {#petprod-coat-indcom}
 
 ### Emissions
 
@@ -6,20 +6,20 @@
 
 The following categories contain the inventory of organic gas emissions that result from the use of industrial coatings, special product coatings, and thinning and clean-up solvents:
 
-- [Can and Coil](#coat-indcom-can_coil) (P)
-- [Wood Furniture & Cabinet](#coat-indcom-mfg-wood_furniture) (P/A)
-- [Paper Coating](#coat-indcom-paper) (P/A)
-- [Fabric & Film](#coat-indcom-fabric_film) (P/A)
-- [Plastic Parts & Product](#coat-indcom-plastic_part) (P/A)
-- [Magnet Wire](#coat-indcom-magnet_wire) (P/A)
-- [Large Appliance & Metal Furniture](#coat-indcom-large_appliance) (P/A)
-- [Misc. Metal Parts & Small Appliance](#coat-indcom-metal_part) (P/A) 
-- [Flat Wood Paneling](#coat-indcom-mfg-wood_panel) (P)
-- [Motor Vehicle Assembly Plants](#coat-indcom-auto_assembly) (P/A) 
-- [Auto Refinishing](#coat-indcom-auto_refinish) (P)
-- [Marine Coating](#coat-indcom-marine) (P/A) 
-- [Aerospace Assembly](#coat-indcom-aero_assembly) (P) 
-- [Other Coatings](#coat-indcom-other) (P/A)
+- [Can and Coil](#petprod-coat-indcom-can-coil) (P)
+- [Wood Furniture & Cabinet](#petprod-coat-indcom-mfg-wood-furniture) (P/A)
+- [Paper Coating](#petprod-coat-indcom-paper) (P/A)
+- [Fabric & Film](#petprod-coat-indcom-fabric-film) (P/A)
+- [Plastic Parts & Product](#petprod-coat-indcom-plastic-part) (P/A)
+- [Magnet Wire](#petprod-coat-indcom-magnet-wire) (P/A)
+- [Large Appliance & Metal Furniture](#petprod-coat-indcom-large-appliance) (P/A)
+- [Misc. Metal Parts & Small Appliance](#petprod-coat-indcom-metal-part) (P/A) 
+- [Flat Wood Paneling](#petprod-coat-indcom-mfg-wood-panel) (P)
+- [Motor Vehicle Assembly Plants](#petprod-coat-indcom-auto-assembly) (P/A) 
+- [Auto Refinishing](#petprod-coat-indcom-auto-refinish) (P)
+- [Marine Coating](#petprod-coat-indcom-marine) (P/A) 
+- [Aerospace Assembly](#petprod-coat-indcom-aero-assembly) (P) 
+- [Other Coatings](#petprod-coat-indcom-other) (P/A)
 
 > Note: The categories with a “P” in parenthesis represent point source categories only. The categories with a “P/A” in parenthesis represent both point and area source categories.
 
@@ -68,12 +68,12 @@ The control factor is an estimate of reduction of solvent emissions, which takes
 
 ***
 
-```{r coat-indcom-can_coil, child="06-petprod/06-24-petprod-coat-indcom/can_coil.Rmd"}
+```{r coat-indcom-can-coil, child="06-petprod/06-24-petprod-coat-indcom/can-coil.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-mfg-wood_furniture, child="06-petprod/06-24-petprod-coat-indcom/wood_furniture.Rmd"}
+```{r coat-indcom-mfg-wood-furniture, child="06-petprod/06-24-petprod-coat-indcom/wood-furniture.Rmd"}
 ```
 
 ***
@@ -83,37 +83,37 @@ The control factor is an estimate of reduction of solvent emissions, which takes
 
 ***
 
-```{r coat-indcom-plastic_part, child="06-petprod/06-24-petprod-coat-indcom/plastic_part.Rmd"}
+```{r coat-indcom-plastic-part, child="06-petprod/06-24-petprod-coat-indcom/plastic-part.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-fabric_film, child="06-petprod/06-24-petprod-coat-indcom/fabric_film.Rmd"}
+```{r coat-indcom-fabric-film, child="06-petprod/06-24-petprod-coat-indcom/fabric-film.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-magnet_wire, child="06-petprod/06-24-petprod-coat-indcom/magnet_wire.Rmd"}
+```{r coat-indcom-magnet-wire, child="06-petprod/06-24-petprod-coat-indcom/magnet-wire.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-metal_part, child="06-petprod/06-24-petprod-coat-indcom/metal_part.Rmd"}
+```{r coat-indcom-metal-part, child="06-petprod/06-24-petprod-coat-indcom/metal-part.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-mfg-wood_panel, child="06-petprod/06-24-petprod-coat-indcom/wood_panel.Rmd"}
+```{r coat-indcom-mfg-wood-panel, child="06-petprod/06-24-petprod-coat-indcom/wood-panel.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-auto_assembly, child="06-petprod/06-24-petprod-coat-indcom/auto_assembly.Rmd"}
+```{r coat-indcom-auto-assembly, child="06-petprod/06-24-petprod-coat-indcom/auto-assembly.Rmd"}
 ```
 
 ***
 
-```{r coat-indcom-auto_refinish, child="06-petprod/06-24-petprod-coat-indcom/auto_refinish.Rmd"}
+```{r coat-indcom-auto-refinish, child="06-petprod/06-24-petprod-coat-indcom/auto-refinish.Rmd"}
 ```
 
 ***
@@ -123,7 +123,7 @@ The control factor is an estimate of reduction of solvent emissions, which takes
 
 ***
 
-```{r coat-indcom-aero_assembly, child="06-petprod/06-24-petprod-coat-indcom/aero_assembly.Rmd"}
+```{r coat-indcom-aero-assembly, child="06-petprod/06-24-petprod-coat-indcom/aero-assembly.Rmd"}
 ```
 
 ***

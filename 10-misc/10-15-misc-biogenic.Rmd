@@ -48,6 +48,13 @@ The monthly profile was estimated using monthly average ambient temperatures for
 
 Data for each county consisted of four estimated emissions for the four organic compound classes represented by the categories covered by this methodology.
 
+```{r misc-biogenic-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

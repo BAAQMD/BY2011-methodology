@@ -55,6 +55,13 @@ BY2011_annual_area_source_emission_factor_data %>%
 
 Natural gas information provided by CEC and PG&E includes residential, commercial, and industrial usage for the Bay Area nine counties by month. Information on Palo Alto's natural gas usage was obtained separately from the City of Palo Alto and was used together with Santa Clara County natural gas usage values. This was done because the city obtained gas from a supplier other than PG&E. Solano and Sonoma Counties are partially in the San Francisco Bay Area Air District, so data were used for the cities that are in the District. For Solano County, data used were for Benicia, Fairfield, Suisun and Vallejo; for Sonoma County, data used were for Cotati, Petaluma, Rohnert Park, Santa Rosa, Sebastopol and Sonoma.
 
+```{r SS-combust-domestic-NG-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 #### Temporal Variation {-}
 
 *Space Heating*

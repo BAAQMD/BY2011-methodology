@@ -33,6 +33,13 @@ Monthly distribution was estimated based on each facility's reported quarterly s
 
 The county location of each facility reported in the Data Bank is used to distribute emissions into each county for Categories 105 and 107. The county fractions for these two categories were also used to their respective area source portions, namely Categories 1912 and 1913.
 
+```{r petprod-clean-dry-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends {#petprod-clean-dry-trend}
 
 #### History {-}

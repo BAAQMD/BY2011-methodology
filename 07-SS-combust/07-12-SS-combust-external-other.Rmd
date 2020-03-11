@@ -31,6 +31,13 @@ The fuel specific greenhouse gas emission coefficients for these categories were
 
 The county, month, and day factors are obtained from the data bank's information on each plant's location, seasonal usage, and days per week of operation.
 
+```{r SS-combust-external-other-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

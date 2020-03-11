@@ -1,4 +1,4 @@
-#### Paper Coating {#coat-indcom-paper}
+#### Paper Coating {#petprod-coat-indcom-paper}
 
 ```{r petprod-coat-indcom-paper-setup}
 PAPER_CATEGORIES <- c(
@@ -6,6 +6,15 @@ PAPER_CATEGORIES <- c(
   "#259 Paper C/U" = 259, # "C/U" means "cleanup solvent"
   "#1916 Paper Ctg. (Area)" = 1916,
   "#1917 Paper C/U (Area)" = 1917)
+```
+
+##### County Fractions {-}
+
+```{r petprod-coat-indcom-paper-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    PAPER_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
 ```
 
 ##### History {-}

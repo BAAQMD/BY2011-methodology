@@ -34,6 +34,13 @@ Monthly variation of emissions for these categories is assumed to be uniform (i.
 
 For point and area sources, information on the location of each facility was known and the emissions were distributed to the counties accordingly.
 
+```{r indcom-metal-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends {#indcom-metal-trend}
 
 #### History {-}

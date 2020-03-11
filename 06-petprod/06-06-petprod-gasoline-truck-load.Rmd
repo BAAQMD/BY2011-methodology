@@ -24,6 +24,13 @@ The Data Bank contains percentage of throughput data for each seasonal quarter: 
 
 Emissions distributed into the nine counties were based on the actual locations of the plants in the Bay Area.
 
+```{r petprod-gasoline-truck-load-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends {#petprod-gasoline-truck-load-trend}
 
 #### History {-}

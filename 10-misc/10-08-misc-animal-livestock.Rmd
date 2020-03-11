@@ -91,6 +91,14 @@ Monthly distribution was estimated evenly over the twelve months.
 
 The county distribution was based on the cattle population in Table \@ref(tab:misc-animal-waste-livestock-throughputs-table) for the nine counties.
 
+```{r misc-animal-livestock-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
+
 #### History {-}
 
 ```{r misc-animal-livestock-emission-chart, fig.height=12, out.height=1200}

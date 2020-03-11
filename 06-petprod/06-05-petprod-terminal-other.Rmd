@@ -23,6 +23,14 @@ The data bank contains percentage of throughput data for each seasonal quarter: 
 
 Emissions distributed into counties were based on locations of the plants in the Bay Area.
 
+```{r petprod-terminal-other-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
+
 ### Trends {#petprod-terminal-trend}
 
 #### History {-}

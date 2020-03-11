@@ -1,11 +1,20 @@
-#### Marine Coating {#coat-indcom-marine}
+#### Marine Coating {#petprod-coat-indcom-marine}
 
 ```{r petprod-coat-indcom-marine-setup}
-MARINE_CATEGORIES <- c(
+MARINE_COATING_CATEGORIES <- c(
   "#276 Marine Ctg." = 276,
   "#277 Marine C/U" = 277,
   "#1930 Marine Ctg. (Area)" = 1930,
   "#1931 Marine C/U (Area)" = 1931)
+```
+
+##### County Fractions {-}
+
+```{r petprod-coat-indcom-marine-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    MARINE_COATING_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
 ```
 
 ##### History {-}
@@ -13,7 +22,7 @@ MARINE_CATEGORIES <- c(
 ```{r petprod-coat-indcom-marine-emission-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
-    MARINE_CATEGORIES) %>%
+    MARINE_COATING_CATEGORIES) %>%
   chart_BY2011_annual_emissions_by(
     fill = category) 
 ```
@@ -23,7 +32,7 @@ BY2011_annual_emission_data %>%
 ```{r petprod-coat-indcom-marine-annual_emfac-chart}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
-    MARINE_CATEGORIES) %>%
+    MARINE_COATING_CATEGORIES) %>%
   chart_BY2011_annual_emission_factors_by(
     color = category)
 ```
@@ -33,14 +42,14 @@ BY2011_annual_area_source_emission_factor_data %>%
 ```{r petprod-coat-indcom-marine-growth-crosswalk}
 BY2011_growth_profile_crosswalk %>%
   filter_categories(
-    MARINE_CATEGORIES) %>%
+    MARINE_COATING_CATEGORIES) %>%
   kable_BY2011_growth_crosswalk()
 ```
 
 ```{r petprod-coat-indcom-marine-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
-    MARINE_CATEGORIES) %>%
+    MARINE_COATING_CATEGORIES) %>%
   chart_BY2011_annual_growth_factors_by(
     color = cnty_abbr) 
 ```
@@ -50,7 +59,7 @@ BY2011_annual_growth_factor_data %>%
 ```{r petprod-coat-indcom-marine-control-chart, fig.height=6, out.height=600}
 BY2011_annual_control_factor_data %>%
   filter_categories(
-    MARINE_CATEGORIES) %>%
+    MARINE_COATING_CATEGORIES) %>%
   chart_BY2011_annual_control_factors_by(
     color = pollutant) 
 ```
@@ -60,6 +69,6 @@ BY2011_annual_control_factor_data %>%
 ```{r petprod-coat-indcom-marine-BY-vs-DB-chart}
 BY2011_annual_emission_data %>%
   filter_categories(
-    MARINE_CATEGORIES) %>%
+    MARINE_COATING_CATEGORIES) %>%
   chart_BY_vs_DB_point_source_annual_emissions()
 ```

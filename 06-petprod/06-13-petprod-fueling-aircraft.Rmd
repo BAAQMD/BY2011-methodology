@@ -24,6 +24,13 @@ Monthly variations of emissions are based on the monthly traffic counts at the S
 
 Emissions were distributed into the nine counties based on aircraft operations activity at each airport in each county.
 
+```{r petprod-fueling-aircraft-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}

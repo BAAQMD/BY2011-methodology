@@ -26,6 +26,13 @@ The emissions over the 12 months were estimated based on the throughput data fro
 
 Emissions are distributed to the counties based on the location of the processing plant. The District’s data bank contains the information on plant location.
 
+```{r indcom-mfg-wood-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}
