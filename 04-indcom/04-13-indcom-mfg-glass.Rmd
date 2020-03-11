@@ -80,7 +80,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-In 1963, there was at least 50% reduction of particulate emissions from equipment brought about by the District's Regulation 6 on visible emissions from the Ringlemann 2 standard. In 1970 there was at least an additional 25% reduction in particulates from the Ringlemann 1 standard. Currently, there is an approximate 74% overall control of particulates from this category.
+In 1963, there was at least 50% reduction of particulate emissions from equipment brought about by the District's [Regulation 6] on visible emissions from the Ringlemann 2 standard. In 1970 there was at least an additional 25% reduction in particulates from the Ringlemann 1 standard. Currently, there is an approximate 74% overall control of particulates from this category.
 
 ***
 

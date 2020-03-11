@@ -73,7 +73,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-District Regulation 8, Rule 38 pertaining to disc coating, polishing and coating mixing operations requirements became effective in January 1987. Currently, the estimated overall control from this rule is approximately 81%.
+District [Rule 8-38] pertaining to disc coating, polishing and coating mixing operations requirements became effective in January 1987. Currently, the estimated overall control from this rule is approximately 81%.
 
 ***
 

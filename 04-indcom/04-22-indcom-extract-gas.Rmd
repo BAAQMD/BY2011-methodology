@@ -94,7 +94,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-The Bay Area Air District adopted Regulation 8, Rule 37 on March 20, 1985 to control the amount of emissions at natural gas and crude oil production facilities. This rule has a control of 80% on reactive organic compounds, with a rule effectiveness of 90% reached by 1989.
+The Bay Area Air District adopted [Rule 8-37] on March 20, 1985 to control the amount of emissions at natural gas and crude oil production facilities. This rule has a control of 80% on reactive organic compounds, with a rule effectiveness of 90% reached by 1989.
 
 ***
 

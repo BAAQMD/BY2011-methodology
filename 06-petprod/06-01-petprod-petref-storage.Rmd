@@ -102,7 +102,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-[Regulation 8-5] controls emissions from the storage of organic liquids. Control efficiencies are estimated to range from 17% to 96%, depending on the type of tank, percentage of sources with true vapor pressures above 0.5 psi, and average true vapor pressure of the corresponding category. The following table show the control and rule efficiencies. (Sources with true vapor pressure greater than 0.5 psi are affected by this rule.)
+[Rule 8-5] controls emissions from the storage of organic liquids. Control efficiencies are estimated to range from 17% to 96%, depending on the type of tank, percentage of sources with true vapor pressures above 0.5 psi, and average true vapor pressure of the corresponding category. The following table show the control and rule efficiencies. (Sources with true vapor pressure greater than 0.5 psi are affected by this rule.)
 
 <div class="FIXME">
 **FIXME: INSERT TABLE**

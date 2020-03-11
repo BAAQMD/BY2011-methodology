@@ -27,7 +27,7 @@ $$
 C_{6}H_{12}O_{6} + \text{yeast} \rightarrow 2\ C_{2}H_{5}OH + 2\ CO_{2}
 $$
 
-Assume that fifty percent of CO~2~ emissions escaped to atmosphere during fermentation process, the CO~2~ emission factor of 157.41 lbs. per thousands of gallons of wine was estimated. District’s Regulations 3, adopted on May 21, 2008, defined the carbon dioxide (CO~2~) emissions from wine fermentation processes was biogenic carbon dioxide emissions.
+Assume that fifty percent of CO~2~ emissions escaped to atmosphere during fermentation process, the CO~2~ emission factor of 157.41 lbs. per thousands of gallons of wine was estimated. District’s [Regulation 3], adopted on May 21, 2008, defined the carbon dioxide (CO~2~) emissions from wine fermentation processes was biogenic carbon dioxide emissions.
 
 The total emissions for this category are determined by multiplying the emission factor and the wine production. This methodology is presently based on ARB's methodology (Section 5.1).
 

@@ -104,7 +104,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-District Regulation 9, Rules 8 and 9 control NO~x~ and SO~x~ emissions from the internal combustion of fuels in engines and turbines, respectively.
+District [Regulation 9], Rules [8][Rule 9-8] and [9][Rule 9-9] control NO~x~ and SO~x~ emissions from the internal combustion of fuels in engines and turbines, respectively.
 
 ***
 

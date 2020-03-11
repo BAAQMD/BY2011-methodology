@@ -73,7 +73,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-District Regulation 8, Rule 50 effective June 1991 has set standards requirements in polyester resin operations. Currently, it is estimated the overall control of this rule is approximately 87%.
+District [Rule 8-50] effective June 1991 has set standards requirements in polyester resin operations. Currently, it is estimated the overall control of this rule is approximately 87%.
 
 ***
 

@@ -68,8 +68,9 @@ BY2011_annual_emission_data %>%
 
 NO~x~ emissions from 1980 through 2002 were based on actual fuel usage data provided by power plants operating in the Bay Area. Emissions over the years have fluctuated by a factor of about 2.5 based on external factors, such as amount of rainfall and the availability of low cost hydroelectric power during that year. The NO~x~ emissions have varied from over 30 tons/day to as low as 10 tons/day.
 
-The fuel oil usage at the power plants has been decreasing over the years. Since 1996, electric utility power plants have been prohibited from burning fuel oil by District Regulation 9, Rule 11, except for emergency situations.
-The Bay Area boiler/steam turbine type power plant NO~x~ emissions have decreased from historical (e.g., 1994) levels of over 30 ton/day to about 1 ton/day in 2007. This was due to shutting down of the older inefficient boilers and the stringent Best Available Retrofit Control (BARCT) requirements of Regulation 9-11 for existing utility power plants (0.057 Lb/MMBTU or 48 ppm in 2003, 0.018 lb/MMBTU or 15 ppm in 2005) and the Best Available Control (BACT) requirements of Regulation 2-2 for new power plants (0.0089 lb/MMBTU or 7.5 ppm). NO~x~ emission concentrations are given in ppm by volume, dry basis at 15% O2.
+The fuel oil usage at the power plants has been decreasing over the years. Since 1996, electric utility power plants have been prohibited from burning fuel oil by District [Rule 9-11], except for emergency situations.
+
+The Bay Area boiler/steam turbine type power plant NO~x~ emissions have decreased from historical (e.g., 1994) levels of over 30 ton/day to about 1 ton/day in 2007. This was due to shutting down of the older inefficient boilers and the stringent Best Available Retrofit Control (BARCT) requirements of [Rule 9-11] for existing utility power plants (0.057 Lb/MMBTU or 48 ppm in 2003, 0.018 lb/MMBTU or 15 ppm in 2005) and the Best Available Control (BACT) requirements of [Rule 2-2] for new power plants (0.0089 lb/MMBTU or 7.5 ppm). NO~x~ emission concentrations are given in ppm by volume, dry basis at 15% O2.
 
 ### Growth {-}
 
@@ -101,7 +102,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant) 
 ```
 
-As noted above, District Regulation 9-11 and 2-2 control NO~x~ and CO emissions from fuel combustion in boilers at electric power plants in the Bay Area.
+As noted above, District [Rule 9-11] and [Rule 2-2] control NO~x~ and CO emissions from fuel combustion in boilers at electric power plants in the Bay Area.
 
 ***
 

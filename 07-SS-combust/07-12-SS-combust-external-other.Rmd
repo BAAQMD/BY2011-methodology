@@ -89,7 +89,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant) 
 ```
 
-Regulation 9 controls emissions of NO~x~ and SO~x~ of combustion.
+[Regulation 9] controls emissions of NO~x~ and SO~x~ of combustion.
 
 ***
 

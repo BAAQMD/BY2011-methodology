@@ -76,13 +76,13 @@ BY2011_annual_control_factor_data %>%
 
 The District adopted control regulations in 1980 for valves and flanges, pump and compressor seals and PRVs. This marked the first step in the control of fugitive emissions. Control for valves vary widely, gas PRVs are 95% controlled, while heavy liquid valves have negligible control. Most common and significant emission sources are the light liquid service valves, and they are controlled by 65 to 72%.
 
-In 1997 and 1998, the District combined the three previous regulations 8-18, 8-25, and 8- 28, into a single regulation, Equipment Leaks, # 8-18. Regulation 8-25 was deleted. Regulation 8-28 was changed to focus on episodic emissions from the normal operation of pressure relief valves.
+In 1997 and 1998, the District combined the three previous regulations [Rule 8-18], [Rule 8-25], and [Rule 8-28], into a single regulation, Equipment Leaks, [Rule 8-18]. [Rule 8-25] was deleted. [Rule 8-28] was changed to focus on episodic emissions from the normal operation of pressure relief valves.
 
-During this change the leak standard for only the pressure relief valves was reduced from 10,000 parts per million (ppm) to 500 ppm of total organic compounds. In addition, applicability of the new [Regulation 8-18] was broadened to include all leaking equipment, not just valves, flanges, and other equipment specifically listed in the earlier regulation. The following table summarizes the limits.
+During this change the leak standard for only the pressure relief valves was reduced from 10,000 parts per million (ppm) to 500 ppm of total organic compounds. In addition, applicability of the new [Rule 8-18] was broadened to include all leaking equipment, not just valves, flanges, and other equipment specifically listed in the earlier regulation. The following table summarizes the limits.
 
-<div class="FIXME">
+```{block type="FIXME"}
 **FIXME: TABLE OMITTED**
-</div>
+```
 
 ***
 

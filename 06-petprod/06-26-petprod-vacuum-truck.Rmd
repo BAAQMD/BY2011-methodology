@@ -76,7 +76,7 @@ BY2011_annual_control_factor_data %>%
     flag_years = CY(2011, 2030))
 ```
 
-Vacuum truck is regulated under District’s Regulation 8, Rule 53 which established an emission limit that applies at the vapor exhaust outlet of the vacuum truck or associated equipment. The rule also establishes a limit for vapor leads and for liquid leaks from vacuum truck equipment.
+Vacuum truck is regulated under District’s [Rule 8-53] which established an emission limit that applies at the vapor exhaust outlet of the vacuum truck or associated equipment. The rule also establishes a limit for vapor leads and for liquid leaks from vacuum truck equipment.
 
 ***
 

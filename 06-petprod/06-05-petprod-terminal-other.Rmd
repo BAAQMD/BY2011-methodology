@@ -81,7 +81,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-Emissions were reduced due to the effect of Regulation 8 Rule 6, amended in March 1982 The amended rules require reducing emissions of organic liquid loaded from loading operations at terminals and bulk plants.
+Emissions were reduced due to the effect of [Rule 8-6], amended in March 1982 The amended rules require reducing emissions of organic liquid loaded from loading operations at terminals and bulk plants.
 
 ***
 

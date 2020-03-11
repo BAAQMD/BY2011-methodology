@@ -131,7 +131,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant) 
 ```
 
-The District adopted [Regulation 9-6] on April 1, 1992 to control the amount of NO~x~ emissions from natural gas fired water heaters. This rule has a control of 46% with a rule effectiveness of 94% reached by the year 2002.
+The District adopted [Rule 9-6] on April 1, 1992 to control the amount of NO~x~ emissions from natural gas fired water heaters. This rule has a control of 46% with a rule effectiveness of 94% reached by the year 2002.
 
 ***
 

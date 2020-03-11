@@ -95,7 +95,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant) 
 ```
 
-The Air District’s Regulation 9, Rule 9 controls NO~x~ and SO~x~ emissions from fuel combustion in stationary turbines.
+The Air District’s [Rule 9-9] controls NO~x~ and SO~x~ emissions from fuel combustion in stationary turbines.
 
 ***
 

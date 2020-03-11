@@ -55,7 +55,7 @@ BY2011_annual_emission_data %>%
   chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
-Historical emissions were estimated using actual throughputs and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing and Wholesale Employment growth profile. District [Regulation 8, Rule 42](https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-42-large-commercial-bread-bakeries) set standards for new and modified bakery ovens on large commercial bakeries effective January of 1989.
+Historical emissions were estimated using actual throughputs and the Association of Bay Area Government’s (ABAG’s) 2009 Manufacturing and Wholesale Employment growth profile. District [Rule 8-42](https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-42-large-commercial-bread-bakeries) set standards for new and modified bakery ovens on large commercial bakeries effective January of 1989.
 
 #### Growth {-}
 
@@ -86,7 +86,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-District [Regulation 8-42] was amended requiring control equipment for existing ovens, which commenced operation prior to January 1989. This became effective beginning January 1992. Currently, there is an estimated 82% overall control (for large bakeries) on TOG emissions because of this rule.
+District [Rule 8-42] was amended requiring control equipment for existing ovens, which commenced operation prior to January 1989. This became effective beginning January 1992. Currently, there is an estimated 82% overall control (for large bakeries) on TOG emissions because of this rule.
 
 ***
 

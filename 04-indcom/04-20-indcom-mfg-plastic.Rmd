@@ -82,7 +82,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-District Regulation 8, Rule 52, effective June 1, 2000, has set standards requirements for polystyrene, polypropylene, and polyethylene foam product manufacturing operations. Prior to the passage of this rule, sources were subject to the Miscellaneous Operations rule (Regulation 8, Rule 2). Currently, it is estimated the overall control due to these rules is approximately 76%.
+District [Rule 8-52], effective June 1, 2000, has set standards requirements for polystyrene, polypropylene, and polyethylene foam product manufacturing operations. Prior to the passage of this rule, sources were subject to the Miscellaneous Operations rule ([Rule 8-2]). Currently, it is estimated the overall control due to these rules is approximately 76%.
 
 ***
 

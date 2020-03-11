@@ -145,7 +145,7 @@ Since the State of California passed a mandate (Assembly Bill 939) that required
 
 In addition to what was previously mentioned, Categories Nos. 1686 and 1687 historical and projected growth factors were based on the following:
 
-Prior to 1984 (the year Reg. 8, Rule 34 was passed), it was assumed all landfill gases were emitted as fugitive emissions. By 1996, the overall collection efficiency at landfills was assumed to be 75%, with 25% of the landfill gases emitted as fugitive emissions. Between those two years, the collection efficiencies were interpolated.
+Prior to 1984 (the year [Rule 8-34] was passed), it was assumed all landfill gases were emitted as fugitive emissions. By 1996, the overall collection efficiency at landfills was assumed to be 75%, with 25% of the landfill gases emitted as fugitive emissions. Between those two years, the collection efficiencies were interpolated.
 
 #### Control {-}
 
@@ -157,7 +157,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant) 
 ```
 
-Currently, Regulation 8, Rule 34 (Solid Waste Disposal Sites) requires that certain landfills process landfill gases through a gas collection and emission control system such that:
+Currently, [Rule 8-34] (Solid Waste Disposal Sites) requires that certain landfills process landfill gases through a gas collection and emission control system such that:
 
 1. There are no leaks that exceed 1000 PPM by volume measured as methane at any component or connector of the landfill gas collection system; and
 

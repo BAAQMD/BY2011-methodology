@@ -15,7 +15,7 @@ Category 37 accounts for organic emissions from contaminated soil aeration event
 
 The District requires a written report for any soil aeration activity. These reports were evaluated to determine a generalized emission factor for each event as well as to estimate the total number of excavations.
 
-Regulation 8, Rule 40 allows up to 150 pounds per day of organic compound emissions per aeration event. The organic compound emissions factor was calculated assuming the aeration site starts emitting at 120 pounds per day, with emissions halving every ten days, and with emissions set at zero at the 90th day. Two tank removals or replacements are also assumed to occur per aeration event. On average, about 250 excavation events take place annually in the Bay Area.
+[Rule 8-40] allows up to 150 pounds per day of organic compound emissions per aeration event. The organic compound emissions factor was calculated assuming the aeration site starts emitting at 120 pounds per day, with emissions halving every ten days, and with emissions set at zero at the 90th day. Two tank removals or replacements are also assumed to occur per aeration event. On average, about 250 excavation events take place annually in the Bay Area.
 
 #### County Distribution {-}
 
@@ -79,9 +79,9 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-The District adopted Regulation 8, Rule 40 on February 15, 1989. The overall control afforded by this rule is 81%. This rule applies for soil aeration events only. Air stripping and soil excavation events are inventoried in category 937, under Regulation 8, Rule 47.
+The District adopted [Rule 8-40] on February 15, 1989. The overall control afforded by this rule is 81%. This rule applies for soil aeration events only. Air stripping and soil excavation events are inventoried in category 937, under [Rule 8-47].
 
-Rule 40 sets the rate of uncontrolled aeration in addition to describing an acceptable soil aeration procedure. For an uncontrolled aeration, an operator may not aerate the soil at above certain rate per day; however, the soil aeration may be extended over many days. This does not reduce the total emissions from an aeration event.
+[Rule 8-40] sets the rate of uncontrolled aeration in addition to describing an acceptable soil aeration procedure. For an uncontrolled aeration, an operator may not aerate the soil at above certain rate per day; however, the soil aeration may be extended over many days. This does not reduce the total emissions from an aeration event.
 
 ***
 

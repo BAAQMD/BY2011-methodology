@@ -30,7 +30,7 @@ The point source emissions at present are less than 0.01 tons/day of reactive or
 
 ##### Area Source {-}
 
-Category 1577 accounts for non-permitted ethylene oxide emission sources. In 1987, about 206,000 pounds of ethylene oxide was estimated as area source emissions. Because most of these sources are now permitted sources due to Regulation 11 Rule 9, the amount of area source emissions is estimated to have dropped to 1050 pounds of sterilizer gas. Emission factor used for ethylene oxide is one. Therefore, all of the ethylene oxide used is emitted as organic emissions.
+Category 1577 accounts for non-permitted ethylene oxide emission sources. In 1987, about 206,000 pounds of ethylene oxide was estimated as area source emissions. Because most of these sources are now permitted sources due to [Rule 11-9], the amount of area source emissions is estimated to have dropped to 1050 pounds of sterilizer gas. Emission factor used for ethylene oxide is one. Therefore, all of the ethylene oxide used is emitted as organic emissions.
 
 ```{r petprod-sterilizer-vent-county-fraction-table}
 BY2011_county_fraction_data %>%
@@ -82,7 +82,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-Ethylene Oxide is suspected of increasing the risk of stomach cancer and leukemia in humans, because of this risk, the District adopted Regulation 11, Rule 9 on November 1, 1989. Note that this Rule is under Reg. 11, "Hazardous Pollutants".
+Ethylene Oxide is suspected of increasing the risk of stomach cancer and leukemia in humans, because of this risk, the District adopted [Rule 11-9] on November 1, 1989. Note that this Rule is under [Regulation 11], "Hazardous Pollutants".
 
 ***
 

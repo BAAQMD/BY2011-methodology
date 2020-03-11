@@ -51,7 +51,7 @@ BY2011_annual_emission_data %>%
   chart_BY_vs_DB_point_source_annual_emissions()
 ```
 
-Emissions have increased due to increasing demand from related industries, such as plastics and coating manufacturers. District Regulation 8, Rule 36, limiting emissions from resin manufacturing operations was adopted in June 1984.
+Emissions have increased due to increasing demand from related industries, such as plastics and coating manufacturers. District [Rule 8-36], limiting emissions from resin manufacturing operations was adopted in June 1984.
 
 #### Growth {-}
 
@@ -82,7 +82,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-It is estimated that the District achieved a 52% reduction in organic emissions due to the implementation of [Regulation 8, Rule 36](https://www.baaqmd.gov/rules-and-compliance/rules/reg-8-rule-36-resin-manufacturing).
+It is estimated that the District achieved a 52% reduction in organic emissions due to the implementation of [Rule 8-36].
 
 By: Tan Dinh
 Date: January 2014

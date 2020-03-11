@@ -101,7 +101,7 @@ Because the US EPA requirement to limit dispensing rates (10 gallons per minute 
 
 ##### Pseudo-Spillage {-}
 
-Bay Area AQMD developed an inspection procedure, GDF-IP-04, to quantify these emissions on a per nozzle basis and limit pseudo-spillage to 3 drops per minute. Regulation 8, Rule 7 was amended to limit pseudo-spillage on all new installations. It is estimated that 95 percent of these excess emissions will be reduced by 2003.
+Bay Area AQMD developed an inspection procedure, GDF-IP-04, to quantify these emissions on a per nozzle basis and limit pseudo-spillage to 3 drops per minute. [Rule 8-7] was amended to limit pseudo-spillage on all new installations. It is estimated that 95 percent of these excess emissions will be reduced by 2003.
 
 ##### Low Air to Liquid (A/L) Ratios
 
@@ -122,7 +122,7 @@ California Air Resources Board (CARB) adopted a series of new Enhanced Vapor Rec
 
 ##### Idle Nozzle Emissions {-}
 
-A revision to Regulation 8, Rule 7 disallowed the use of balance nozzles without an integral vapor valve (i.e. the Emco-Wheaton A4001 nozzles). It is estimated that 95 percent of these excess emissions will be reduced by 2003.
+A revision to [Rule 8-7] disallowed the use of balance nozzles without an integral vapor valve (i.e. the Emco-Wheaton A4001 nozzles). It is estimated that 95 percent of these excess emissions will be reduced by 2003.
 
 ##### Whoosh Emissions {-}
 

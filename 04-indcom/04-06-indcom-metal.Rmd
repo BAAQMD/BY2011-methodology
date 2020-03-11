@@ -84,11 +84,11 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-In 1963-1970, the particulate emissions were reduced due to the control imposed by Ringlemann requirements from Regulation 6. Currently, there is an estimated 98.5% overall control of particulates from Category 34 and over 99% for Category 2222.
+In 1963-1970, the particulate emissions were reduced due to the control imposed by Ringlemann requirements from [Regulation 6]. Currently, there is an estimated 98.5% overall control of particulates from Category 34 and over 99% for Category 2222.
 
-On May 1, 2013, Regulation 12, Rule 13 (Miscellaneous Standards of Performance, Foundry and Forging Operations) was passed. For Category 34, organics will be reduced by approximately 42%, beginning May 1, 2015. For Category 2221, this rule will reduce fugitive particulate emissions by approximately 10% through an Emission Minimization Plan, beginning May 1, 2015.
+On May 1, 2013, [Rule 12-13] (Miscellaneous Standards of Performance, Foundry and Forging Operations) was passed. For Category 34, organics will be reduced by approximately 42%, beginning May 1, 2015. For Category 2221, this rule will reduce fugitive particulate emissions by approximately 10% through an Emission Minimization Plan, beginning May 1, 2015.
 
-On May 1, 2013, Regulation 6, Rule 4 (Metal recycling and Shredding Operations) was passed. For Category 2223, this rule will reduce fugitive particulate emissions by approximately 24% through an Emission Minimization Plan, beginning May 1, 2015.
+On May 1, 2013, [Rule 6-4] (Metal recycling and Shredding Operations) was passed. For Category 2223, this rule will reduce fugitive particulate emissions by approximately 24% through an Emission Minimization Plan, beginning May 1, 2015.
 
 ***
 

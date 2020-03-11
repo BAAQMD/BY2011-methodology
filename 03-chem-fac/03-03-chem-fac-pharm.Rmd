@@ -26,7 +26,7 @@ The District data bank reported point sources from several pharmaceutical compan
 
 It is assumed there are also a number of other smaller pharmaceutical and cosmetics manufacturers, known as area sources, not included in the District data bank system. Subtracting the total solvent usage estimate from the point source usage yields an area source solvent usage. An uncontrolled emission factor of 330 lbs./1000 gallons is based on a 5% loss of the usage.
 
-District Regulation 8, Rule 24, limiting organic compounds emissions from various pharmaceutical and cosmetics manufacturing operation took effect in July 1984 with an estimated 42% overall control.
+District [Rule 8-24], limiting organic compounds emissions from various pharmaceutical and cosmetics manufacturing operation took effect in July 1984 with an estimated 42% overall control.
 
 #### Monthly Variation {-}
 
@@ -93,7 +93,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-Efforts are being made to streamline and standardize rules and regulations. Any subsequent refinement in [Regulation 8, Rule 24](https://www.baaqmd.gov/~/media/dotgov/files/rules/reg-8-rule-24-pharmaceutical-and-cosmetic-manufacturing-operations/documents/rg0824.pdf?la=en) due to this streamlining should not have any effect on the controls, and therefore the controls for this rule will remain at 42%.
+Efforts are being made to streamline and standardize rules and regulations. Any subsequent refinement in [Rule 8-24] due to this streamlining should not have any effect on the controls, and therefore the controls for this rule will remain at 42%.
 
 ***
 

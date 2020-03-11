@@ -16,9 +16,9 @@ Road Oils (Slow-cure Liquid Asphalt), Hot Mix Asphalt, and Emulsified Asphalt, C
 
 Rapid-cure Liquid Asphalt (Rapid-cure Cutback Asphalt) is no longer used in the Bay Area. Rapid-cure Liquid Asphalt was formerly Category 94.
 
-Medium-cure Liquid Asphalt (Medium-cure Cutback Asphalt) may be used in the Bay Area provided the atmospheric temperature does not exceed 500F for 24 hours after application (per BAAQMD [Regulation 8-15], Sections 302 and 112.) This restriction greatly limits the application of this type asphalt; therefore, the organic emissions from Medium-cure Liquid Asphalt are considered negligible.
+Medium-cure Liquid Asphalt (Medium-cure Cutback Asphalt) may be used in the Bay Area provided the atmospheric temperature does not exceed 500F for 24 hours after application (per BAAQMD [Rule 8-15], Sections 302 and 112.) This restriction greatly limits the application of this type asphalt; therefore, the organic emissions from Medium-cure Liquid Asphalt are considered negligible.
 
-Slow-cure Liquid Asphalt (Slow-cure Cutback Asphalt) may also be used in the Bay Area with restrictions (per BAAQMD [Regulation 8-15], Section 304). Slow-cure Liquid Asphalt is synonymous with “Road Oils” (Category 95).
+Slow-cure Liquid Asphalt (Slow-cure Cutback Asphalt) may also be used in the Bay Area with restrictions (per BAAQMD [Rule 8-15], Section 304). Slow-cure Liquid Asphalt is synonymous with “Road Oils” (Category 95).
 
 #### Methodology {- #petprod-asphalt-pave-methodology}
 
@@ -97,7 +97,7 @@ BY2011_annual_control_factor_data %>%
     color = pollutant)
 ```
 
-Due to [Regulation 8-15], there is no longer any usage of Rapid-cure Cutback Asphalt in the Bay Area by 1982. The emissions from Slow-cure Liquid asphalt (Road Oils) category were reduced by approximately 75% in 1988 and 97.5% in 1989. Similarly, emissions from using emulsified asphalt were reduced by 49% in 1988 and 55.3% in 1989.
+Due to [Rule 8-15], there is no longer any usage of Rapid-cure Cutback Asphalt in the Bay Area by 1982. The emissions from Slow-cure Liquid asphalt (Road Oils) category were reduced by approximately 75% in 1988 and 97.5% in 1989. Similarly, emissions from using emulsified asphalt were reduced by 49% in 1988 and 55.3% in 1989.
 
 ***
 

@@ -62,7 +62,7 @@ knitr::include_graphics(
 - [Gas Fields](#indcom-extract-gas): For category #1576, the the BY2011 emission factor for CH~4~, in Table \@ref(tab:indcom-extract-gas-field-emfac-table), appears not to match the [BY2011 Methodology PDF] (page 4.22.1 - 2).
 
 - [Sand Blasting](#indcom-sandblast): The paragraph under [Control](#indcom-sandblast-control) refers 
-to [Regulation 6] and [Regulation 12-14], and states that "Controls can range up to 99% or higher." However, no BY2011 control factors for the relevant categories (#42 or #1909) appear to be stored in DataBank. See `DB_CTLFAC_CONCORDANCE` and/or use `BY(2011) %>% DB_control_factors()` to pull the relevant CFs.
+to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99% or higher." However, no BY2011 control factors for the relevant categories (#42 or #1909) appear to be stored in DataBank. See `DB_CTLFAC_CONCORDANCE` and/or use `BY(2011) %>% DB_control_factors()` to pull the relevant CFs.
 
 - [Other Miscellaneous Industrial/Commercial](#indcom-misc-history): Comparing across pollutants, emission values at CY2010 exhibit strange up/down variations. The general shapes of the rest of the years seems generally consistent both (a) across pollutants, and (b) with the assigned growth profiles.
 
