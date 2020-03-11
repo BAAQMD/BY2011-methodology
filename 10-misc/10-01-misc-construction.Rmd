@@ -23,7 +23,7 @@ The California Air Resources Board provided the PM speciation profile (PM~10~ fr
 
 ##### Residential Construction (Category 744) {-}
 
-The number of new housing units (single and multi-family), provided by the California Department of Finance, is used to calculate the acreage disturbed. The affected construction area for a single family living unit is estimated at 1/7th of an acre for Alameda, Contra Costa, Marin, San Francisco, San Mateo, and Santa Clara counties; and 1/5th of an acre for Napa, Solano, and Sonoma counties. The affected construction area for multi-family living units is estimated to be 1/20th of an acre. The construction time for residential units is assumed to be 6 months. . The throughput, expressed in acre-months, is estimated by multiplying the appropriate area factors, construction time and number of new units for each county.
+The number of new housing units (single and multi-family), provided by the California Department of Finance, is used to calculate the acreage disturbed. The affected construction area for a single family living unit is estimated at 1/7^th^ of an acre for Alameda, Contra Costa, Marin, San Francisco, San Mateo, and Santa Clara counties; and 1/5^th^ of an acre for Napa, Solano, and Sonoma counties. The affected construction area for multi-family living units is estimated to be 1/20^th^ of an acre. The construction time for residential units is assumed to be 6 months. The throughput, expressed in acre-months, is estimated by multiplying the appropriate area factors, construction time and number of new units for each county.
 
 ##### Commercial, Industrial, and Institutional Construction (Categories 745 -747) {-}
 

@@ -15,7 +15,7 @@ Category 37 accounts for organic emissions from contaminated soil aeration event
 
 The District requires a written report for any soil aeration activity. These reports were evaluated to determine a generalized emission factor for each event as well as to estimate the total number of excavations.
 
-[Rule 8-40] allows up to 150 pounds per day of organic compound emissions per aeration event. The organic compound emissions factor was calculated assuming the aeration site starts emitting at 120 pounds per day, with emissions halving every ten days, and with emissions set at zero at the 90th day. Two tank removals or replacements are also assumed to occur per aeration event. On average, about 250 excavation events take place annually in the Bay Area.
+[Rule 8-40] allows up to 150 pounds per day of organic compound emissions per aeration event. The organic compound emissions factor was calculated assuming the aeration site starts emitting at 120 pounds per day, with emissions halving every ten days, and with emissions set at zero at the 90^th^ day. Two tank removals or replacements are also assumed to occur per aeration event. On average, about 250 excavation events take place annually in the Bay Area.
 
 #### County Distribution {-}
 
