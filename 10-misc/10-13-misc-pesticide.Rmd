@@ -25,7 +25,7 @@ BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
   filter_years(
-    CY(2008:2011)) %>%
+    CY(2011)) %>%
   filter_pollutants(
     "TOG") %>%
   convert_emission_units(
@@ -36,10 +36,13 @@ BY2011_annual_emission_data %>%
     year,
     digits = 3) %>%
   select(
-    Category = category,
+    category,
     starts_with("CY"),
-    Pollutant = pollutant,
-    Unit = ems_unit)
+    pollutant = pollutant,
+    unit = ems_unit) %>%
+  kable_BY2011(
+    totals = "row",
+    caption = "TOG emissions from inventoried pesticides (2011).")
 ```
 
 The California Department of Pesticide Regulation (DPR) provided the pesticide use data to the California Air Resources Board (ARB). The TOG emissions data for the years 2005 to 2009 are actual data estimated from the DPR Pesticide Reports.
