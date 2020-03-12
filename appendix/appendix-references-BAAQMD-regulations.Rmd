@@ -192,6 +192,22 @@
 
 [Regulation 12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-miscellaneous-standards-of-performance "Regulation 12: Miscellaneous Standards of Performance"
 
+[Rule 12-1]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-1-kraft-pulp-mills "Regulation 12, Rule 1: Kraft Pulp Mills"
+
+[Rule 12-2]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-2-rendering-plants "Regulation 12, Rule 2: Rendering Plants"
+
+[Rule 12-3]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-3-asphalt-air-blowing "Regulation 12, Rule 3: Asphalt Air Blowing"
+
+[Rule 12-4]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-4-sandblasting "Regulation 12, Rule 4: Sandblasting"
+
+[Rule 12-5]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-5-phosphate-fertilizer-plants "Regulation 12, Rule 5: Phosphate Fertilizer Plants"
+
+[Rule 12-6]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-6-acid-mist-from-sulfuric-acid-plants "Regulation 12, Rule 6: Acid Mist From Sulfuric Acid Plants"
+
+[Rule 12-7]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-7-motor-vehicle-air-conditioner-refrigerant "Regulation 12, Rule 7: Motor Vehicle Air Conditioner Refrigerant"
+
+[Rule 12-10]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-10-oleum-transfer-operations "Regulation 12, Rule 10: Oleum Transfer Operations" 
+
 [Rule 12-11]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-11-flare-monitoring-at-petroleum-refineries "Regulation 12, Rule 11: Flare Monitoring at Petroleum Refineries"
 
 [Rule 12-12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-12-flares-at-petroleum-refineries "Regulation 12, Rule 12: Flares at Petroleum Refineries"
@@ -199,3 +215,8 @@
 [Rule 12-13]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-12-rule-13--foundry-and-forging-operations "Regulation 12, Rule 13: Foundry and Forging Operations"
 
 [Rule 12-15]: https://www.baaqmd.gov/rules-and-compliance/rules/regulation-12-rule-15--petroleum-refining-emissions-tracking?rule_version=Under%20Development "Regulation 12, Rule 15: Petroleum Refining Emissions Tracking 2019 Amendment"
+
+[Regulation 14]: https://www.baaqmd.gov/rules-and-compliance/rules/regulation-14--mobile-source-emissions-reduction-measures "Regulation 14: Mobile Source Emissions Reduction Measures"
+
+[Rule 14-1]: https://www.baaqmd.gov/rules-and-compliance/rules/regulation-14-rule-1-bay-area-commuter-benefits-program "Regulation 14, Rule 1: Bay Area Commuter Benefits Program"
+

@@ -137,6 +137,7 @@ growth_data %>%
   chart_annual_growth_by(
     color = cnty_abbr,
     base_year = CY(2011),
+    flag_years = CY(2030),
     year_limits = BY2011_YEAR_LIMITS,
     year_expand = BY2011_YEAR_EXPAND,
     title = "#262 Construction Growth",

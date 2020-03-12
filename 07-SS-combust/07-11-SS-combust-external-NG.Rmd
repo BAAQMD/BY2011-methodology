@@ -81,7 +81,7 @@ BY2011_county_fraction_data %>%
 
 For point sources monthly variation of emissions is based on company reported quarterly throughput data. Area source monthly variation is based on average fuel usage by month.
 
-### Trends
+### Trends {#SS-combust-external-NG-trend}
 
 #### History {-}
 

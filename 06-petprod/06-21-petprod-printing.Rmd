@@ -82,12 +82,26 @@ BY2011_growth_profile_crosswalk %>%
   kable_BY2011_growth_crosswalk()
 ```
 
-```{r petprod-printing-growth-chart, fig.height=12, out.height=1200}
-BY2011_annual_growth_factor_data %>%
-  filter_categories(
-    THESE_CATEGORIES) %>%
-  chart_BY2011_annual_growth_factors_by(
-    color = cnty_abbr)
+```{r petprod-printing-growth-chart}
+#
+# All of these categories are assigned the same growth profile, so let's just plot that.
+#
+growth_data <-
+  DB_raw_growth_profiles(
+    years = BY2011_YEARS, 
+    nested = FALSE) %>%
+  filter(
+    gpf_id == 837)
+
+growth_data %>%
+  chart_annual_growth_by(
+    color = cnty_abbr,
+    base_year = CY(2011),
+    year_limits = BY2011_YEAR_LIMITS,
+    year_expand = BY2011_YEAR_EXPAND,
+    flag_years = CY(2030),
+    title = "#837 Mdfd. Mfg-Prntg",
+    subtitle = "This profile is assigned to all BY2011 Printing categories.") 
 ```
 
 Projections to year 2030 were based on a modified growth profile of ARB's Manufacturing, Printing industry in the Bay Area.

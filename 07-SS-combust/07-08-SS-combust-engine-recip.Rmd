@@ -1,10 +1,11 @@
-## Reciprocating Engines
+## Reciprocating Engines {#SS-combust-engine-recip}
 
 ```{r SS-combust-engine-recip-setup}
 THESE_CATEGORIES <- c(
   "#302 Gasoline" = 302,
   "#303 Gas Fuel" = 303,
-  "#304 Liquid Fuel (Point)" = 304)
+  "#304 Liquid Fuel (Point)" = 304,
+  "#1578 Agricultural" = 1578)
 ```
 
 ### Emissions
@@ -63,7 +64,7 @@ BY2011_annual_emission_data %>%
 
 For Category 302, emissions have been extremely low and constant over the past years. Emissions for Categories 303 and 304 have generally varied with fuel usage activity in the San Francisco Bay Area.
 
-#### Growth {-}
+#### Growth {- #SS-combust-engine-recip-growth}
 
 ```{r SS-combust-engine-recip-growth-crosswalk}
 BY2011_growth_profile_crosswalk %>%

@@ -1,6 +1,6 @@
-## Power Plants: Gas/Oil Turbines {#SS-combust-power-turbine_and_distrib}
+## Power Plants: Gas/Oil Turbines {#SS-combust-power-turbine}
 
-```{r SS-combust-power-turbine_and_distrib-setup}
+```{r SS-combust-power-turbine-setup}
 THESE_CATEGORIES <- c(
   "#297 Oil Fired Turbines" = 297,
   "#1595 Gas Fired Turbines" = 1595,
@@ -57,11 +57,11 @@ BY2011_county_fraction_data %>%
 
 Monthly variation of emissions is based on company reported quarterly throughput data for C297 and C1595. Uniform activity is assumed for C1596 and C1597.
 
-### Trends {#SS-combust-power-turbine_and_distrib-trend}
+### Trends {#SS-combust-power-turbine-trend}
 
 #### History {-}
 
-```{r SS-combust-power-turbine_and_distrib-emission-chart, fig.height=14, out.height=1400}
+```{r SS-combust-power-turbine-emission-chart, fig.height=14, out.height=1400}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -73,14 +73,14 @@ Category 297 emissions prior to 1987 were derived from Base Year 1983 trend valu
 
 #### Growth {-}
 
-```{r SS-combust-power-turbine_and_distrib-growth-crosswalk}
+```{r SS-combust-power-turbine-growth-crosswalk}
 BY2011_growth_profile_crosswalk %>%
   filter_categories(
     THESE_CATEGORIES) %>%
   kable_BY2011_growth_crosswalk()
 ```
 
-```{r SS-combust-power-turbine_and_distrib-growth-chart, fig.height=8, out.height=800}
+```{r SS-combust-power-turbine-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -98,7 +98,7 @@ Category 1597 emissions are expected to grow in accordance with CEC's power cons
 
 #### Control {-}
 
-```{r SS-combust-power-turbine_and_distrib-control-chart}
+```{r SS-combust-power-turbine-control-chart}
 BY2011_annual_control_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%

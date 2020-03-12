@@ -1,4 +1,4 @@
-## Solvent Cleaning Operations
+## Solvent Cleaning Operations {#petprod-clean-solvent}
 
 ```{r petprod-clean-solvent-setup}
 THESE_CATEGORIES <- c(
@@ -124,7 +124,7 @@ BY2011_annual_emission_data %>%
 
 The growth profiles for the Cold Cleaning, Vapor Degreasing, and Other Hand Wiping categories all followed the Association of Bay Area Government's (ABAG) 2009 Manufacturing Employment profile for the years prior to 1993. Between the years 1993 – 2011, the growth profiles were modified to reflect the estimated emissions (point and area source) calculated for those years.
 
-#### Growth {-}
+#### Growth {- #petprod-clean-solvent-growth}
 
 ```{r petprod-clean-solvent-growth-crosswalk}
 BY2011_growth_profile_crosswalk %>%

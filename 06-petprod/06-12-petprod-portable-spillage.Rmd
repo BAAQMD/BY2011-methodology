@@ -11,7 +11,7 @@ THESE_CATEGORIES <- c(
 
 Portable fuel containers or "Gas cans", and gas can spouts are used to refuel off-road engines and equipment (i.e. lawnmowers, chainsaws, motorcycles, etc.). Portable fuel containers are made of either plastic or metal in variety shapes and sizes ranging from one to more than six gallons capacity. Portable fuel containers are designed for transportation, storing and dispensing fuel. The California Air Resource Board (CARB) regulates all portable fuel containers manufactured for sale and use in 2000. The regulations are intended to reduce refueling emissions from equipment and engines in the off-road categories that are predominantly refueled with portable fuel containers. The Mobile Source Control Division (MSCD) of CARB conducted surveys to establish the number of statewide portable fuel container population in 1998. These surveys show that there are 9,878,706 portable fuel container units statewide. The data also indicate that 94% of portable fuel containers are used in residential households, and 6% for commercial use. Therefore, the effect of the statewide regulations on commercial users (i.e., tree trimming services, landscape maintenance professionals, automobile tow services, etc.) would be insignificant. Using total container population and an average useful life of 5 years suggested by several manufacturers, ARB estimates the total sales of all portable fuel containers statewide.
 
-#### Methodology {- petprod-portable-spillage-methodology}
+#### Methodology {- #petprod-portable-spillage-methodology}
 
 This category accounts for evaporative emissions resulting in spillage from refueling, transport and storage of the portable fuel containers. These portable containers contribute emissions by:
 

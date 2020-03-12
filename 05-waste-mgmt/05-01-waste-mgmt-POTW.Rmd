@@ -1,4 +1,4 @@
-## Publicly Owned Treatment Work
+## Publicly Owned Treatment Work {#waste-mgmt-POTW}
 
 ```{r waste-mgmt-POTW-setup}
 THESE_CATEGORIES <- c(
@@ -49,7 +49,7 @@ BY2011_annual_emission_data %>%
 
 The historical growth profile for Category 50 was based on a combination of prior emissions data (back to 1990) and the Association of Bay Area Government's (ABAG's) 2009 Total Population data. The historical growth profile for Category 1911 was based on ABAG's 2009 Total Population data.
 
-#### Growth {-}
+#### Growth {- #waste-mgmt-POTW-growth}
 
 ```{r waste-mgmt-POTW-growth-crosswalk}
 BY2011_growth_profile_crosswalk %>%

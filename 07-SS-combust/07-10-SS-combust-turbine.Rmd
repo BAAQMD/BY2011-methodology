@@ -47,7 +47,7 @@ Monthly variation of emissions is based on company reported quarterly throughput
 
 #### History {-}
 
-```{r SS-combust-turbine-emission-chart, fig.height=12, out.height=1200}
+```{r SS-combust-turbine-emission-chart, fig.height=18, out.height=1800}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -64,9 +64,16 @@ BY2011_annual_emission_data %>%
 
 For category #306, it was felt that historical emission trends tend to follow population data. As such, the annual variation ratio value for each year was based on the appropriate population value.
 
-#### Growth {-}
+#### Growth {- #SS-combust-turbine-growth}
 
-```{r SS-combust-turbine-growth-chart, fig.height=8, out.height=800}
+```{r SS-combust-turbine-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
+```{r SS-combust-turbine-growth-chart, fig.height=6, out.height=600}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -79,13 +86,6 @@ For Category #305, it appeared that sources at oil refineries made the greatest 
 Growth profile for Category #306 is assumed to follow population growth. The population data was obtained from the Association of Bay Area Government's (ABAG's) 2009 projection reports.
 
 #### Control {-}
-
-```{r SS-combust-turbine-growth-crosswalk}
-BY2011_growth_profile_crosswalk %>%
-  filter_categories(
-    THESE_CATEGORIES) %>%
-  kable_BY2011_growth_crosswalk()
-```
 
 ```{r SS-combust-turbine-control-chart}
 BY2011_annual_control_factor_data %>%

@@ -63,7 +63,7 @@ BY2011_growth_profile_crosswalk %>%
   kable_BY2011_growth_crosswalk()
 ```
 
-```{r petprod-clean-dry-growth-chart, fig.height=6, out.height=600}
+```{r petprod-clean-dry-growth-chart, fig.height=8, out.height=800}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
