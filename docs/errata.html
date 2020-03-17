@@ -242,7 +242,7 @@ Figure 10.1: Edit button, in the toolbar at the top of every page (including thi
 <li><p><strong>Category #10 Basic Processes.</strong> BY2011 NO<sub>x</sub> emissions are much lower than DataBank numbers would indicate. SO<sub>x</sub> and PM emissions are much more consistent.</p></li>
 <li><p><strong>Category #16 Other.</strong> CO<sub>2</sub> emissions are large (~3 MMTCO2eq) and linearly increasing, which is inconsistent with profiles for other pollutants in this category. Given the large quantity (~ 3 MMTCO2eq), this may merit a reassessment.</p></li>
 <li><p><strong>Category #15 Flares and Blowdown Systems.</strong> CY1990-2000 estimates may merit a reassessment, or at least further explanation in the text. CY2010 CO and NO<sub>x</sub> estimates show an odd-looking peak.</p></li>
-<li><p><strong>Category #13 Cooling Towers.</strong> roughly 60 ton/yr of PM<sub>10</sub> appears suddenly at RY2005, then decreases by a factor of 10x over the next few years. This is traceable to just two cooling towers at the Phillips 66 refinery. The EF for one of them was immediately revised downward by a factor of 100x. (For more insights into PM emissions from cooling towers, try <code>RY(2001:2018) %&gt;% DB_point_source_PONSCO_emissions() %&gt;% filter_categories(&quot;#13 Cooling Towers&quot; = 13) %&gt;% filter_pollutants(&quot;PM&quot;) %&gt;% with_facility_name() %&gt;% with_source_name() %&gt;% unpack_source_codes() %&gt;% pivot_table(rows = c(&quot;cat_id&quot;, &quot;fac_name&quot;, &quot;src_id&quot;, &quot;src_name&quot;, &quot;src_code&quot;))</code>.)</p></li>
+<li><p><strong>Category #13 Cooling Towers.</strong> Roughly 60 ton/yr of PM<sub>10</sub> appears suddenly at RY2005, then decreases by a factor of 10x over the next few years. This is traceable to just two cooling towers at the Phillips 66 refinery. The EF for one of them was immediately revised downward by a factor of 100x. (For more insights into PM emissions from cooling towers, try <code>RY(2001:2018) %&gt;% DB_point_source_PONSCO_emissions() %&gt;% filter_categories(&quot;#13 Cooling Towers&quot; = 13) %&gt;% filter_pollutants(&quot;PM&quot;) %&gt;% with_facility_name() %&gt;% with_source_name() %&gt;% unpack_source_codes() %&gt;% pivot_table(rows = c(&quot;cat_id&quot;, &quot;fac_name&quot;, &quot;src_id&quot;, &quot;src_name&quot;, &quot;src_code&quot;))</code>.)</p></li>
 </ul>
 </div>
 </div>
@@ -269,29 +269,29 @@ Figure 10.1: Edit button, in the toolbar at the top of every page (including thi
 <div id="cogeneration" class="section level5 unnumbered">
 <h5><a href="07-04-SS-combust-cogen.html#SS-combust-cogen-trend">Cogeneration</a></h5>
 <ul>
-<li>Estimated CY1990-2007 TOG emissions for category #292 <a href="#07-08-SS-combust-engine-recip">Reciprocating Engines</a> are too low, compared to CH<sub>4</sub>. (The CH<sub>4</sub>/TOG ratio for those years is well above 1, generally in the range of 3x to 30x.) About 1,000 ton/yr TOG and 100 ton/yr ROG may be missing for those years.</li>
+<li><strong>Category #292 <a href="#07-08-SS-combust-engine-recip">Reciprocating Engines</a>.</strong> Estimated CY1990-2007 TOG emissions are too low, compared to CH<sub>4</sub>. (The CH<sub>4</sub>/TOG ratio for those years is well above 1, generally in the range of 3x to 30x.) About 1,000 ton/yr TOG and 100 ton/yr ROG may be missing for those years.</li>
 </ul>
 </div>
 <div id="power-plants" class="section level5 unnumbered">
 <h5>Power Plants</h5>
 <ul>
-<li><p>The CO<sub>2</sub>/CO ratio for CY1990-2000 for <a href="07-05-SS-combust-power-boiler.html#SS-combust-power-boiler-trend">Gas Fired Boilers</a> appears to be far too low, given what is observed for subsequent decades. This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO<sub>2</sub> of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is “on track” to reach its CY2030 target.</p></li>
-<li><p>(Possibly related) For <a href="07-05-SS-combust-power-boiler.html#SS-combust-power-boiler-trend">Oil Fired Boilers</a>, emissions seem to be almost entirely absent from the BY2011 inventory. There are some very small emissions (~ 0.1 ton/yr of TOG and NO<sub>x</sub>) estimated for CY2008-2010, but that is it.</p></li>
+<li><p><strong>Category #293 <a href="07-05-SS-combust-power-boiler.html#SS-combust-power-boiler-trend">Gas Fired Boilers</a>.</strong> The CO<sub>2</sub>/CO ratio for CY1990-2000 appears to be far too low, given what is observed for subsequent decades. This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO<sub>2</sub> of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is “on track” to reach its CY2030 target.</p></li>
+<li><p><strong>Category #294 <a href="07-05-SS-combust-power-boiler.html#SS-combust-power-boiler-trend">Oil Fired Boilers</a>.</strong> (Possibly related to above.) Emissions seem to be almost entirely absent from the BY2011 inventory. There are some very small emissions (~ 0.1 ton/yr of TOG and NO<sub>x</sub>) estimated for CY2008-2010, but that is it.</p></li>
 </ul>
 </div>
 <div id="oil-refineries---external-combustion-1" class="section level5 unnumbered">
 <h5><a href="#SS-combust-petref">Oil Refineries - External Combustion</a></h5>
 <ul>
-<li><p>Inventoried PM emissions from category #301 Solid Fuel increase suddenly from 3 ton/yr (until RY2008) to 300 ton/yr (RY2009 and later). This is entirely traceable to FCCU emissions at facility #10 Chevron Refinery.</p></li>
-<li><p>Inventoried SO<sub>2</sub> emissions from category #301 Solid Fuel decrease suddenly from 1500 ton/yr (until RY2008) to 150 ton/yr (RY2009 and later). Again, this is entirely traceable to FCCU emissions at facility #10 Chevron Refinery. Some explanation is probably merited.</p></li>
-<li><p>Inventoried TOG emissions from category #299 Natural Gas &amp; Other Gases increase by a factor of 2x beginning in RY2008. This is traceable to facilities #10 Chevron and #11 Shell, across a variety of <code>src_code</code>s, the largest being <code>C1130235</code>: CO-fueled boiler(s), 100-250 MMBTU/hr.</p></li>
+<li><p><strong>Category #301 Solid Fuel.</strong> Inventoried PM emissions increase suddenly from 3 ton/yr (until RY2008) to 300 ton/yr (RY2009 and later). This is entirely traceable to FCCU emissions at facility #10 Chevron Refinery.</p></li>
+<li><p><strong>Category #301 Solid Fuel.</strong> Inventoried SO<sub>2</sub> emissions decrease suddenly from 1500 ton/yr (until RY2008) to 150 ton/yr (RY2009 and later). Again, this is entirely traceable to FCCU emissions at facility #10 Chevron Refinery. Some explanation is probably merited.</p></li>
+<li><p><strong>Category #299 Natural Gas &amp; Other Gases.</strong> Inventoried TOG emissions increase by a factor of 2x beginning in RY2008. This is traceable to facilities #10 Chevron and #11 Shell, across a variety of <code>src_code</code>s, the largest being <code>C1130235</code>: CO-fueled boiler(s), 100-250 MMBTU/hr.</p></li>
 <li><p>According to the text, “[p]ast base year historical emissions include interchangeable emission reduction credits (IERC) which were part of category 10. IERC banking emissions are now inventoried under categories 298-300.” It is unclear whether the BY emission estimates are of “what went into the air”, or include adjustments due to banking — and when/where/how much this distinction might matter.</p></li>
 </ul>
 </div>
 <div id="other-external-combustion---natural-gas" class="section level5 unnumbered">
 <h5><a href="07-11-SS-combust-external-NG.html#SS-combust-external-NG-trend">Other External Combustion - Natural Gas</a></h5>
 <ul>
-<li>Throughput for categories #1590 and #1591 (NG Combustion, Commercial and Industrial) should be double-checked against CEC data, especially for years CY1990-2000. See the example charts for <a href="https://baaqmd.github.io/charting-annual-data/10-third_party.html#natural-gas-consumption">Natural Gas Consumption</a> in the Charting Annual Data cookbook. A large amount of GHG and (criteria-pollutant) emissions are at stake — several MMTCO2eq and hundreds or thousands of tons of PM, TOG, and NO<sub>x</sub>, respectively.</li>
+<li><strong>Categories #1590 and #1591 (NG Combustion, Commercial and Industrial).</strong> Throughput (cubic feet of natural gas consumed) should be double-checked against CEC data, especially for years CY1990-2000. See the example charts for <a href="https://baaqmd.github.io/charting-annual-data/10-third_party.html#natural-gas-consumption">Natural Gas Consumption</a> in the Charting Annual Data cookbook. A large amount of GHG and (criteria-pollutant) emissions are at stake — several MMTCO2eq and hundreds or thousands of tons of PM, TOG, and NO<sub>x</sub>, respectively.</li>
 </ul>
 </div>
 </div>
