@@ -170,13 +170,13 @@
 
 [Rule 9-7]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-7-nitrogen-oxides-and-carbon-monoxide-from-industrial-institutional-and-commercial-boiler "Regulation 9, Rule 7: Nitrogen Oxides And Carbon Monoxide from Industrial, Institutional, and Commercial Boilers, Steam Generators, And Process Heaters"
 
-[Rule 9-8]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-8-nitrogen-oxides-and-carbon-monoxide-from-stationary-internal-combustion-engine "Regulation 9, Rule 8: Nitrogen Oxides And Carbon Monoxide from Stationary Internal Combustion Engines"
+[Rule 9-8]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-8-nitrogen-oxides-and-carbon-monoxide-from-stationary-internal-combustion-engines "Regulation 9, Rule 8: Nitrogen Oxides And Carbon Monoxide from Stationary Internal Combustion Engines"
 
-[Rule 9-9]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-9-nitrogen-oxides-and-carbon-monoxide-from-stationary-gas-turbine "Regulation 9, Rule 9: Nitrogen Oxides And Carbon Monoxide from Stationary Gas Turbines"
+[Rule 9-9]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-9-nitrogen-oxides-and-carbon-monoxide-from-stationary-gas-turbines "Regulation 9, Rule 9: Nitrogen Oxides And Carbon Monoxide from Stationary Gas Turbines"
 
 [Rule 9-10]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-10-nitrogen-oxides-and-carbon-monoxide-from-boiler-steam-generators-and-process-heaters "Regulation 9, Rule 10: Nitrogen oxides And Carbon Monoxide From Boilers, Steam Generators And Process Heaters in Petroleum Refineries"
 
-[Rule 9-11]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-11-nitrogen-oxides-and-carbon-monoxide-from-utility-electric-power-generating-boiler "Regulation 9, Rule 11: Nitrogen Oxides And Carbon Monoxide from Utility Electric Power Generating Boilers"
+[Rule 9-11]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-11-nitrogen-oxides-and-carbon-monoxide-from-utility-electric-power-generating-boilers "Regulation 9, Rule 11: Nitrogen Oxides And Carbon Monoxide from Utility Electric Power Generating Boilers"
 
 [Rule 9-12]: https://www.baaqmd.gov/rules-and-compliance/rules/reg-9-rule-12-nitrogen-oxides-from-glass-melting-furnaces "Regulation 9, Rule 12: Nitrogen Oxides From Glass Melting Furnaces"
 
