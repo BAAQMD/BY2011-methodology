@@ -239,9 +239,10 @@ Figure 10.1: Edit button, in the toolbar at the top of every page (including thi
 <div id="general-refinery-emissions" class="section level5 unnumbered">
 <h5><a href="02-01-petref-fac-general.html#petref-fac-general-trend">General Refinery Emissions</a></h5>
 <ul>
-<li><p>For category #10 Basic Processes, BY2011 NO<sub>x</sub> emissions are much lower than DataBank numbers would indicate. SO<sub>x</sub> and PM emissions, on the other hand, are consistent. CY1990-1995 PM<sub>10</sub> emissions are low, compared to PY data.</p></li>
-<li><p>For category #16 Other, CO<sub>2</sub> emissions are large (~3 MMTCO2eq) and linearly increasing, which is mildly inconsistent with profiles for other pollutants in this category. Given the large quantity (~ 3 MMTCO2eq), this may merit a reassessment.</p></li>
-<li><p>CY1990-2000 estimates of #15 Flares and Blowdown Systems may merit a reassessment.</p></li>
+<li><p><strong>Category #10 Basic Processes.</strong> BY2011 NO<sub>x</sub> emissions are much lower than DataBank numbers would indicate. SO<sub>x</sub> and PM emissions are much more consistent.</p></li>
+<li><p><strong>Category #16 Other.</strong> CO<sub>2</sub> emissions are large (~3 MMTCO2eq) and linearly increasing, which is inconsistent with profiles for other pollutants in this category. Given the large quantity (~ 3 MMTCO2eq), this may merit a reassessment.</p></li>
+<li><p><strong>Category #15 Flares and Blowdown Systems.</strong> CY1990-2000 estimates may merit a reassessment, or at least further explanation in the text. CY2010 CO and NO<sub>x</sub> estimates show an odd-looking peak.</p></li>
+<li><p><strong>Category #13 Cooling Towers.</strong> roughly 60 ton/yr of PM<sub>10</sub> appears suddenly at RY2005, then decreases by a factor of 10x over the next few years. This is traceable to just two cooling towers at the Phillips 66 refinery. The EF for one of them was immediately revised downward by a factor of 100x. (For more insights into PM emissions from cooling towers, try <code>RY(2001:2018) %&gt;% DB_point_source_PONSCO_emissions() %&gt;% filter_categories(&quot;#13 Cooling Towers&quot; = 13) %&gt;% filter_pollutants(&quot;PM&quot;) %&gt;% with_facility_name() %&gt;% with_source_name() %&gt;% unpack_source_codes() %&gt;% pivot_table(rows = c(&quot;cat_id&quot;, &quot;fac_name&quot;, &quot;src_id&quot;, &quot;src_name&quot;, &quot;src_code&quot;))</code>.)</p></li>
 </ul>
 </div>
 </div>
@@ -250,7 +251,7 @@ Figure 10.1: Edit button, in the toolbar at the top of every page (including thi
 <div id="all-other-chemical-plants" class="section level5 unnumbered">
 <h5><a href="03-04-chem-fac-other.html#chem-fac-other-trend">All Other Chemical Plants</a></h5>
 <ul>
-<li>10,000 ton/yr of CO emissions stops abruptly at CY1998. Few other point-source categories even approach this magnitude of CO emissions. This is traceable to a single facility. For perspective, all five refineries (all of their categories combined) emit about 2,000 to 4,000 ton/yr CO, and have since CY1990.</li>
+<li><strong>Category #26 All Other Chem Mfg (Point).</strong> Almost 10,000 ton/yr of CO emissions stops abruptly at CY1997. Few other point-source categories even approach this magnitude of CO emissions. For perspective, all five refineries emit about 2,000 to 4,000 ton/yr CO from all of their sources <em>combined</em> (all equipment, all categories, everything). This is traceable to a single manufacturing plant, P#21 E I duPont de Nemours &amp; Company. The facility has no recorded closure date in DataBank, but it was shut down <a href="http://www.chemoursoakley.com/history.html">in 1998</a>.</li>
 </ul>
 </div>
 </div>
@@ -328,6 +329,12 @@ Figure 10.1: Edit button, in the toolbar at the top of every page (including thi
 <h5><a href="03-01-chem-fac-coating.html#chem-fac-coatings-control">Coatings and Inks</a></h5>
 <ul>
 <li>The paragraph under “Control” states that “the amended regulation has resulted in an 84% emission reduction since 1993,” but according to what’s in DataBank, the controlled fraction for category #23 seems to be 54%.</li>
+</ul>
+</div>
+<div id="all-other-chemical-plants-1" class="section level5 unnumbered">
+<h5><a href="03-04-chem-fac-other.html#chem-fac-other-trend">All Other Chemical Plants</a></h5>
+<ul>
+<li><strong>Category #26 All Other Chem Mfg (Point).</strong> A blip of several hundred ton/yr CO occurs with a kiln at P#227 Criterion Catalysts &amp; Technologies LP in RY2009 (possibly a unit error).</li>
 </ul>
 </div>
 </div>
@@ -583,7 +590,7 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 <div id="light-commerical-equipment" class="section level5 unnumbered">
 <h5><a href="#mobile-offroad-diesel-light_com-equip">Light Commerical Equipment</a></h5>
 <ul>
-<li><p>CO<sub>2</sub> and <sub>CH</sub>4~ for #1672 (Diesel) drop to exactly zero at CY2010, then resume the previous trend.</p></li>
+<li><p>CO<sub>2</sub> and CH<sub>4</sub> for #1672 (Diesel) drop to exactly zero at CY2010, then resume the previous trend.</p></li>
 <li><p>N<sub>2</sub>O for #1668 (Gasoline, 4-stroke) is exactly zero for CY2026-2030 (same as rec boats, TRUs, ag equip, etc.).</p></li>
 </ul>
 </div>
