@@ -29,7 +29,9 @@ knitr::include_graphics(
 - (Possibly related.) Emissions for [#294 Oil Fired Boilers](#SS-combust-power-boiler-trend) seem to be almost entirely absent from the BY2011 inventory. There are some very small emissions (~ 0.1 ton/yr of TOG and NO~x~) estimated for CY2008-2010, but that is it.
 
 - [Oil Refineries - External Combustion](#SS-combust-petref)
-    - Inventoried PM emissions from Category #301 Solid Fuel increase suddenly from 3 ton/yr (up to RY2008) to 300 ton/yr (RY2009 and later). This is entirely traceable to FCCU emissions at facility #10 Chevron Refinery.
+    - Inventoried PM emissions from category #301 Solid Fuel increase suddenly from 3 ton/yr (until RY2008) to 300 ton/yr (RY2009 and later). This is entirely traceable to FCCU emissions at facility #10 Chevron Refinery.
+    - Inventoried SO~2~ emissions from category #301 Solid Fuel decrease suddenly from 1500 ton/yr (until RY2008) to 150 ton/yr (RY2009 and later). Again, this is entirely traceable to FCCU emissions at facility #10 Chevron Refinery. Some explanation is probably merited.
+    - Inventoried TOG emissions from category #299 Natural Gas & Other Gases increase by a factor of 2x beginning in RY2008. This is traceable to facilities #10 Chevron and #11 Shell, across a variety of `src_code`s, the largest being `C1130235`: CO-fueled boiler(s), 100-250 MMBTU/hr.
     - According to the text, "[p]ast base year historical emissions include interchangeable emission reduction credits (IERC) which were part of category 10. IERC banking emissions are now inventoried under categories 298-300." It is unclear whether the BY emission estimates are of "what went into the air", or include adjustments due to banking --- and when/where/how much this distinction might matter.
 
 - [Other External Combustion - Natural Gas](#SS-combust-external-NG-trend): Throughput for categories #1590 and #1591 (NG Combustion, Commercial and Industrial) should be double-checked against CEC data, especially for years CY1990-2000. A large amount of GHG and (criteria-pollutant) emissions are at stake --- several MMTCO2eq and hundreds or thousands of tons of PM, TOG, and NO~x~, respectively. See the example charts for [Natural Gas Consumption](https://baaqmd.github.io/charting-annual-data/10-third_party.html#natural-gas-consumption) in the Charting Annual Data cookbook.
@@ -159,6 +161,7 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 - [Power Plants: Gas/Oil Turbines](#SS-combust-power-turbine)
     - For category #297 Oil Fired Turbines, the CY1990-2010 decline in SO~2~ emissions does not appear to be explained by either the growth profile or the control profile (for this category, there are no control factors for SO~2~ in DataBank, only NO~x~). 
     - For category #1595 Gas Fired Turbines, a sharp rise and fall in CO, CY2002-2009, does not match other pollutants. 
+    - For category #1597 Power Imports, [county fractions](#SS-combust-power-turbine-county-fractions) for CC and SOL are zero.
 
 - [Oil Refineries - External Combustion](#SS-combust-petref): 
     - Category #299 Natural Gas & Other Gases:

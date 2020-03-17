@@ -42,7 +42,7 @@ The SF6 emissions for Category 1596 were based on PG&E's Service Area total fugi
 
 Indirect GHG emissions from electricity imported to the Bay Area (Category 1597) were estimated based on total power consumption to power generated locally in the Bay Area. It is estimated that about one fourth to one third of electricity used in the Bay Area is imported from sources outside of the Bay Area. The emission factors (lb. /MWh) used in estimating emissions were in accordance with the PG&E data.
 
-#### County Distribution {-}
+#### County Distribution {- #SS-combust-power-turbine-county-fractions}
 
 The District point source database contains county distribution information for each facility for Category 297 and 1595. County distribution for Category 1596 and 1597 is based on population and power consumption, respectively.
 
