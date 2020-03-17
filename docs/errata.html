@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Errata | BY2011 Methodology</title>
   <meta name="description" content="Recreation of the BAAQMD BY2011 Methodology PDF." />
-  <meta name="generator" content="bookdown 0.17.2 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Errata | BY2011 Methodology" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Bay Area Air Quality Management District" />
 
 
-<meta name="date" content="2020-03-12" />
+<meta name="date" content="2020-03-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -192,7 +192,7 @@
 <li class="chapter" data-level="10.6" data-path="10-06-misc-road-paved.html"><a href="10-06-misc-road-paved.html"><i class="fa fa-check"></i><b>10.6</b> Paved Roads</a></li>
 <li class="chapter" data-level="10.7" data-path="10-07-misc-road-unpaved.html"><a href="10-07-misc-road-unpaved.html"><i class="fa fa-check"></i><b>10.7</b> Unpaved Roads</a></li>
 <li class="chapter" data-level="10.8" data-path="10-08-misc-animal-livestock.html"><a href="10-08-misc-animal-livestock.html"><i class="fa fa-check"></i><b>10.8</b> Animal Waste, Livestock</a></li>
-<li class="chapter" data-level="10.9" data-path="10-09-misc-animal-other.html"><a href="10-09-misc-animal-other.html"><i class="fa fa-check"></i><b>10.9</b> Animal Waste, Other {#}</a></li>
+<li class="chapter" data-level="10.9" data-path="10-09-misc-animal-other.html"><a href="10-09-misc-animal-other.html"><i class="fa fa-check"></i><b>10.9</b> Animal Waste, Other</a></li>
 <li class="chapter" data-level="10.10" data-path="10-10-misc-sewer.html"><a href="10-10-misc-sewer.html"><i class="fa fa-check"></i><b>10.10</b> Sanitary Sewers</a></li>
 <li class="chapter" data-level="10.11" data-path="10-11-misc-dust-wind.html"><a href="10-11-misc-dust-wind.html"><i class="fa fa-check"></i><b>10.11</b> Wind Blown Dust</a></li>
 <li class="chapter" data-level="10.12" data-path="10-12-misc-smoking.html"><a href="10-12-misc-smoking.html"><i class="fa fa-check"></i><b>10.12</b> Cigarette and Tobacco Smoke</a></li>
@@ -248,7 +248,9 @@ Figure 10.1: Edit button, in the toolbar at the top of every page (including thi
 <li><p>(Possibly related.) Emissions for <a href="07-05-SS-combust-power-boiler.html#SS-combust-power-boiler-trend">#294 Oil Fired Boilers</a> seem to be almost entirely absent from the BY2011 inventory. There are some very small emissions (~ 0.1 ton/yr of TOG and NO<sub>x</sub>) estimated for CY2008-2010, but that is it.</p></li>
 <li><a href="#SS-combust-petref">Oil Refineries - External Combustion</a>
 <ul>
-<li>Inventoried PM emissions from Category #301 Solid Fuel increase suddenly from 3 ton/yr (up to RY2008) to 300 ton/yr (RY2009 and later). This is entirely traceable to FCCU emissions at facility #10 Chevron Refinery.</li>
+<li>Inventoried PM emissions from category #301 Solid Fuel increase suddenly from 3 ton/yr (until RY2008) to 300 ton/yr (RY2009 and later). This is entirely traceable to FCCU emissions at facility #10 Chevron Refinery.</li>
+<li>Inventoried SO<sub>2</sub> emissions from category #301 Solid Fuel decrease suddenly from 1500 ton/yr (until RY2008) to 150 ton/yr (RY2009 and later). Again, this is entirely traceable to FCCU emissions at facility #10 Chevron Refinery. Some explanation is probably merited.</li>
+<li>Inventoried TOG emissions from category #299 Natural Gas &amp; Other Gases increase by a factor of 2x beginning in RY2008. This is traceable to facilities #10 Chevron and #11 Shell, across a variety of <code>src_code</code>s, the largest being <code>C1130235</code>: CO-fueled boiler(s), 100-250 MMBTU/hr.</li>
 <li>According to the text, “[p]ast base year historical emissions include interchangeable emission reduction credits (IERC) which were part of category 10. IERC banking emissions are now inventoried under categories 298-300.” It is unclear whether the BY emission estimates are of “what went into the air”, or include adjustments due to banking — and when/where/how much this distinction might matter.</li>
 </ul></li>
 <li><p><a href="07-11-SS-combust-external-NG.html#SS-combust-external-NG-trend">Other External Combustion - Natural Gas</a>: Throughput for categories #1590 and #1591 (NG Combustion, Commercial and Industrial) should be double-checked against CEC data, especially for years CY1990-2000. A large amount of GHG and (criteria-pollutant) emissions are at stake — several MMTCO2eq and hundreds or thousands of tons of PM, TOG, and NO<sub>x</sub>, respectively. See the example charts for <a href="https://baaqmd.github.io/charting-annual-data/10-third_party.html#natural-gas-consumption">Natural Gas Consumption</a> in the Charting Annual Data cookbook.</p></li>
@@ -354,6 +356,7 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 <ul>
 <li>For category #297 Oil Fired Turbines, the CY1990-2010 decline in SO<sub>2</sub> emissions does not appear to be explained by either the growth profile or the control profile (for this category, there are no control factors for SO<sub>2</sub> in DataBank, only NO<sub>x</sub>).</li>
 <li>For category #1595 Gas Fired Turbines, a sharp rise and fall in CO, CY2002-2009, does not match other pollutants.</li>
+<li>For category #1597 Power Imports, <a href="07-06-SS-combust-power-turbine.html#SS-combust-power-turbine-county-fractions">county fractions</a> for CC and SOL are zero.</li>
 </ul></li>
 <li><a href="#SS-combust-petref">Oil Refineries - External Combustion</a>:
 <ul>
@@ -411,7 +414,7 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 <h4>Miscellaneous Other Sources</h4>
 <ul>
 <li><p><a href="10-08-misc-animal-livestock.html#misc-animal-livestock">Animal Waste, Livestock</a>: Table <a href="10-08-misc-animal-livestock.html#tab:misc-animal-waste-livestock-throughputs-table">10.23</a> in the <a href="10-08-misc-animal-livestock.html#misc-animal-livestock-methodology">Methodology</a> section is inconsistent with the same table as shown in the <a href="https://www.baaqmd.gov/~/media/files/planning-and-research/emission-inventory/by2011_methodologyreport.pdf" title="BY2011 Methodology PDF">BY2011 Methodology PDF</a>. One example: there are 28,753 sheep in Solano, with a total of 53,884 sheep District-wide. In the <a href="https://www.baaqmd.gov/~/media/files/planning-and-research/emission-inventory/by2011_methodologyreport.pdf" title="BY2011 Methodology PDF">BY2011 Methodology PDF</a>, those numbers are 3,804 and 28,937 respectively.</p></li>
-<li><p><a href="#misc-animal-other">Animal Waste, Other</a>: County fractions (Table <a href="10-09-misc-animal-other.html#tab:misc-animal-other-county-fraction-table">10.26</a> are inconsistent with the text.</p></li>
+<li><p><a href="10-09-misc-animal-other.html#misc-animal-other">Animal Waste, Other</a>: County fractions (Table <a href="10-09-misc-animal-other.html#tab:misc-animal-other-county-fraction-table">10.26</a> are inconsistent with the text.</p></li>
 <li><p><a href="10-02-misc-farm.html#misc-farm-emfac-chart">Farming Operations</a>: Emission factors for these two categories (#749 and #1435) vary by time in a way that strongly resembles the growth profiles. If this is accidental, it could be causing a “double-counting” of the magnitude of the decrease from CY1990-2010. If it is intentional, it probably warrants some extra documentation. Related: the same thing happens with <a href="06-02-petprod-marine-load.html#petprod-marine-load-emfac-chart">Category #90</a> “Ballasting, Other Material”.</p></li>
 <li><p><a href="10-03-misc-fire-struct.html#misc-fire-struct">Accidental Structural Fires</a>: The BY2011 emission factors in Table <a href="10-03-misc-fire-struct.html#tab:misc-fire-struct-emfac-table">10.7</a> appear not to match the relevant table in the the <a href="https://www.baaqmd.gov/~/media/files/planning-and-research/emission-inventory/by2011_methodologyreport.pdf" title="BY2011 Methodology PDF">BY2011 Methodology PDF</a> (page 10.3.1 - 2).</p></li>
 <li><p><a href="10-05-misc-fire-auto.html#misc-fire-auto">Accidental Auto Fires</a>: The BY2011 emission factor for TOG, in Table <a href="10-05-misc-fire-auto.html#tab:misc-fire-auto-emission-factors-PONSCO-table">10.14</a>, appears not to match the relevant table in the <a href="https://www.baaqmd.gov/~/media/files/planning-and-research/emission-inventory/by2011_methodologyreport.pdf" title="BY2011 Methodology PDF">BY2011 Methodology PDF</a>.</p></li>

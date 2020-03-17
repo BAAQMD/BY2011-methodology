@@ -1,4 +1,4 @@
-## Animal Waste, Other {#}
+## Animal Waste, Other {#misc-animal-other}
 
 ```{r misc-animal-other-setup}
 THESE_CATEGORIES <- c(
