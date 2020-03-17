@@ -1,6 +1,6 @@
 ## Wind Blown Dust
 
-```{r misc-dust-windblown-setup}
+```{r misc-dust-wind-setup}
 THESE_CATEGORIES <- c(
   "#764 Windblown Dust, Agricultural Land" = 764,
   "#765 Windblown Dust, Other" = 765)
@@ -39,16 +39,26 @@ where
 
 ($K$, $L$, $V$ depends on the crop type)
 
-|   |    Agricultural Land   | Unpaved Roads |
-|:-:|:----------------------:|:-------------:|
-| E |          0.025         |      .038     |
-| I |        38 - 220        |   86, 47, 56  |
-| C |          0.15          |      0.15     |
-| K |   0.8, 0.6, 0.1, 0.6   |      1.0      |
-| L | 0.74, 0.83, 0.77, 0.56 |   .29 - .34   |
-| V | 0.05, 0.91, 0.26, 0.26 |      1.0      |
+```{r misc-dust-wind-factor-table}
+kable_data <-
+  tribble(
+    ~ " ", ~ "Agricultural Land", ~ "Unpaved Roads",
+    "E", "0.025", ".038",
+    "I", "38 - 220", "86, 47, 56",
+    "C", "0.15", "0.15",
+    "K", "0.8, 0.6, 0.1, 0.6", "1.0",
+    "L", "0.74, 0.83, 0.77, 0.56", ".29 - .34",
+    "V", "0.05, 0.91, 0.26, 0.26", "1.0")
 
-Table: Typical Values of above constants
+kable_data %>%
+  kable_BY2011(
+    align = "ccc",
+    caption = "Typical values of factors for windblown dust calculations.") %>%
+  kableExtra::column_spec(
+    column = 1,
+    width = "6em",
+    bold = TRUE)
+```
 
 Particulate emissions from agricultural windblown dust were calculated by multiplying the crop acres by the emission factors developed by the U.S. Department of Agriculture, as above.
 
@@ -73,7 +83,7 @@ BY2011_county_fraction_data %>%
 
 #### History {-}
 
-```{r misc-dust-windblown-emission-chart, fig.height=6, out.height=600}
+```{r misc-dust-wind-emission-chart, fig.height=6, out.height=600}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -92,7 +102,7 @@ BY2011_growth_profile_crosswalk %>%
   kable_BY2011_growth_crosswalk()
 ```
 
-```{r misc-dust-windblown-growth-chart, fig.height=5, out.height=500}
+```{r misc-dust-wind-growth-chart, fig.height=5, out.height=500}
 BY2011_annual_growth_factor_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
