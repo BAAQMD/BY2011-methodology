@@ -36,9 +36,9 @@ For those landfills with active collection systems, it is assumed that 25% escap
 
 - Constants used in the emission factor calculations are as follows: 
 
-- The standard molar volume of gases is 387.006 scf/lb-mole. 
-- The molecular weight of CH~4~ is 16.043 lbs/lb-mole.
-- The molecular weight of CO~2~ is 44.010 lbs/lb-mole.
+    - The standard molar volume of gases is 387.006 scf/lb-mole. 
+    - The molecular weight of CH~4~ is 16.043 lbs/lb-mole.
+    - The molecular weight of CO~2~ is 44.010 lbs/lb-mole.
 
 - The CO~2~ emissions from this source are considered to be biogenic.
 
