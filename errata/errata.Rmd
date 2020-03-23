@@ -94,8 +94,6 @@ knitr::include_graphics(
     - "Future gasoline consumption" (+10.3%): 6.6
     - "Future gasoline consumption" (+6.6%): 6.8, 6.9, 6.10
 
-
-
     - "No data" (+0.5%/yr)
 
     - 0%: 6.12, 6.16,
@@ -191,9 +189,9 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 ##### [Composting](#waste-mgmt-compost-trend) {-}
 
-- Like [Other Miscellaneous Industrial/Commercial](#indcom-misc-history), when comparing across pollutants, emission values at CY2010 exhibit strange up/down variations for category #1709 Composting (area). The general shapes of the rest of the years seems generally consistent both (a) across pollutants, and (b) with the assigned growth profiles. 
+- Like [Other Miscellaneous Industrial/Commercial](#indcom-misc-history), when comparing across pollutants, emission values at CY2010 exhibit strange "peaks".
 
-- The point/area growth profiles assignments seem to be mixed up: profile #862 Composting-Area Source is assigned to category #1936 Composting (Point), and profile #863 Composting-Point Source is assigned to #1709 Composting (which is an area-source, not a point-source, category). Finally, there are changes in the emission factors for category #1936 over time. This may be intended, but it is unusual for a point-source category to be assigned time-varying EFs. 
+- Emission factors for #1936 Composting (Area) are time-varying (see [chart](#waste-mgmt-compost-emfac-chart)) but only seem to change during a three year period, CY2010-2012. Why?
 
 #### Petroleum Products Evaporation and Leakage {-}
 
