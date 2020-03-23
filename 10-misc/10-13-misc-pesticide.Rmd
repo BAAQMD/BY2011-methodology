@@ -113,7 +113,7 @@ Base Year: 2011
 
 ***
 
-#### Emission Factors {-}
+#### Emission Factors {- #misc-pesticide-emfac-chart}
 
 ```{block type="note"}
 Emission factors for category #1190 and #1191 vary by time. (This is not common in the BY2011 inventory.)

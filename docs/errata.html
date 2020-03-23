@@ -603,6 +603,12 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 </div>
 <div id="miscellaneous-other-sources-1" class="section level4 unnumbered">
 <h4>Miscellaneous Other Sources</h4>
+<div id="farming-operations-1" class="section level5 unnumbered">
+<h5><a href="10-02-misc-farm.html#misc-farm-emfac-chart">Farming Operations</a></h5>
+<ul>
+<li>Emission factors for both of these two categories (#749 and #1435) <a href="10-02-misc-farm.html#misc-farm-emfac-chart">vary by time</a> in a way that strongly resembles the growth profiles. If this is accidental, it could be causing a “double-counting” of the magnitude of the decrease from CY1990-2010. If it is intentional, it probably warrants some extra documentation.</li>
+</ul>
+</div>
 <div id="animal-waste-livestock" class="section level5 unnumbered">
 <h5><a href="10-08-misc-animal-livestock.html#misc-animal-livestock">Animal Waste, Livestock</a></h5>
 <ul>
@@ -615,10 +621,10 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 <li>County fractions (Table <a href="10-09-misc-animal-other.html#tab:misc-animal-other-county-fraction-table">10.26</a> are inconsistent with the text.</li>
 </ul>
 </div>
-<div id="farming-operations-1" class="section level5 unnumbered">
-<h5><a href="10-02-misc-farm.html#misc-farm-emfac-chart">Farming Operations</a></h5>
+<div id="sanitary-sewers-1" class="section level5 unnumbered">
+<h5><a href="#misc-sewer">Sanitary Sewers</a></h5>
 <ul>
-<li>Emission factors for these two categories (#749 and #1435) vary by time in a way that strongly resembles the growth profiles. If this is accidental, it could be causing a “double-counting” of the magnitude of the decrease from CY1990-2010. If it is intentional, it probably warrants some extra documentation. Related: the same thing happens with <a href="06-02-petprod-marine-load.html#petprod-marine-load-emfac-chart">Category #90</a> “Ballasting, Other Material”.</li>
+<li>County fractions in Table <a href="10-10-misc-sewer.html#tab:misc-sewer-county-fraction-table">10.28</a> are inconsistent with county fractions computed directly from growth profile #657 Household Population. Compare: <code>DB_raw_growth_profiles(nested = FALSE) %&gt;% filter(gpf_id == 657) %&gt;% filter_years(CY(2011)) %&gt;% transmute(gpf_id, gpf_name, cnty_abbr, cnty_frac = format_percentage(gf_qty / total(gf_qty), digits = 1)) %&gt;% spread(cnty_abbr, cnty_frac)</code>. Perhaps this is due to the use of a subpopulation or another data source?</li>
 </ul>
 </div>
 <div id="accidental-structural-fires" class="section level5 unnumbered">
@@ -637,6 +643,12 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 <h5><a href="10-04-misc-fire-veg.html#misc-fire-veg">Accidental Vegetation Fires</a></h5>
 <ul>
 <li>The BY2011 throughputs (burned acreage), in Table <a href="10-04-misc-fire-veg.html#tab:misc-fire-veg-emfac-table">10.10</a>, appear not to match the relevant table in the <a href="https://www.baaqmd.gov/~/media/files/planning-and-research/emission-inventory/by2011_methodologyreport.pdf" title="BY2011 Methodology PDF">BY2011 Methodology PDF</a> (page 10.4.1 - 2).</li>
+</ul>
+</div>
+<div id="pesticides" class="section level5 unnumbered">
+<h5><a href="#misc-pesticide">Pesticides</a></h5>
+<ul>
+<li>Emission factors for categories #1190 and #1191 <a href="10-13-misc-pesticide.html#misc-pesticide-emfac-chart">vary by time</a>. This could be OK, but it is unusual to see in the BY2011 inventory.</li>
 </ul>
 </div>
 <div id="consumer-products-1" class="section level5 unnumbered">

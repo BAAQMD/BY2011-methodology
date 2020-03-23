@@ -18,9 +18,7 @@ Living vegetation throughout the Bay Area produce the biogenic organic emissions
 
 Emissions were obtained from a presentation at CARB's EITEAC Meeting on May 19, 2004. Biogenic emissions were estimated using the ARB's BEIGIS model. Model inputs include the California GAP Analysis Project, California Department of Water Resources crop reports, SCAG and SANDAG (councils of government) urban land use, and satellite-derived leaf area index (LAI) data. The BEIGIS model is driven by temperature and solar radiation, BVOC emission factors and specific leaf weight factors.
 
-Estimated average annual organic emissions, in tons per day, are:
-
-```{r misc-biogenic-daily_emissions-table}
+```{r misc-biogenic-daily-emissions-table}
 BY2011_annual_emission_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
@@ -37,7 +35,9 @@ BY2011_annual_emission_data %>%
   select(
     Category = category,
     TOG,
-    Unit = ems_unit)
+    Unit = ems_unit) %>%
+  kable_BY2011(
+    caption = "Estimated average annual organic emissions, in tons per day.")
 ```
 
 #### Monthly variation {-}

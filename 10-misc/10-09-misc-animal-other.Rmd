@@ -19,7 +19,7 @@ The animal population was estimated based on pet to human ratios taken from the 
 
 Monthly distribution was estimated evenly over the twelve months.
 
-#### County Distribution {-}
+#### County Distribution {- #misc-animal-other-county-fraction}
 
 The county distribution was based on dog population for the nine counties, and correspondingly, showed: Alameda-18.5%, Contra Costa-16.4%, Marin-4.6%, Napa- 2.9%, San Francisco-10.6%, San Mateo-12.9%, Santa Clara-21.9%, Solano-5.3%, and Sonoma-6.9%.
 

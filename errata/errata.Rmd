@@ -325,6 +325,10 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 #### Miscellaneous Other Sources {-}
 
+##### [Farming Operations](#misc-farm-emfac-chart) {-} 
+
+- Emission factors for both of these two categories (#749 and #1435) [vary by time](#misc-farm-emfac-chart) in a way that strongly resembles the growth profiles. If this is accidental, it could be causing a "double-counting" of the magnitude of the decrease from CY1990-2010. If it is intentional, it probably warrants some extra documentation.
+
 ##### [Animal Waste, Livestock](#misc-animal-livestock) {-} 
 
 - Table \@ref(tab:misc-animal-waste-livestock-throughputs-table) in the [Methodology](#misc-animal-livestock-methodology) section is inconsistent with the same table as shown in the [BY2011 Methodology PDF]. One example: there are 28,753 sheep in Solano, with a total of 53,884 sheep District-wide. In the [BY2011 Methodology PDF], those numbers are 3,804 and 28,937 respectively. 
@@ -333,9 +337,9 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 - County fractions (Table \@ref(tab:misc-animal-other-county-fraction-table) are inconsistent with the text.
 
-##### [Farming Operations](#misc-farm-emfac-chart) {-} 
+##### [Sanitary Sewers](#misc-sewer) {-}
 
-- Emission factors for these two categories (#749 and #1435) vary by time in a way that strongly resembles the growth profiles. If this is accidental, it could be causing a "double-counting" of the magnitude of the decrease from CY1990-2010. If it is intentional, it probably warrants some extra documentation. Related: the same thing happens with [Category #90](#petprod-marine-load-emfac-chart) "Ballasting, Other Material".
+- County fractions in Table \@ref(tab:misc-sewer-county-fraction-table) are inconsistent with county fractions computed directly from growth profile #657 Household Population. Compare: `DB_raw_growth_profiles(nested = FALSE) %>% filter(gpf_id == 657) %>% filter_years(CY(2011)) %>% transmute(gpf_id, gpf_name, cnty_abbr, cnty_frac = format_percentage(gf_qty / total(gf_qty), digits = 1)) %>% spread(cnty_abbr, cnty_frac)`. Perhaps this is due to the use of a subpopulation or another data source?
 
 ##### [Accidental Structural Fires](#misc-fire-struct) {-}
 
@@ -348,6 +352,10 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 ##### [Accidental Vegetation Fires](#misc-fire-veg) {-}
 
 - The BY2011 throughputs (burned acreage), in Table \@ref(tab:misc-fire-veg-emfac-table), appear not to match the relevant table in the [BY2011 Methodology PDF] (page 10.4.1 - 2).
+
+##### [Pesticides](#misc-pesticide) {-}
+
+- Emission factors for categories #1190 and #1191 [vary by time](#misc-pesticide-emfac-chart). This could be OK, but it is unusual to see in the BY2011 inventory.
 
 ##### [Consumer Products](#misc-consumer) {-} 
 
