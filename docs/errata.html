@@ -55,6 +55,68 @@
 <link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
 
 
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -407,7 +469,8 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 <div id="potws" class="section level5 unnumbered">
 <h5><a href="05-01-waste-mgmt-POTW.html#waste-mgmt-POTW-growth">POTWs</a></h5>
 <ul>
-<li>Projected growth for #50 POTWs (Point), at +17.8% (CY2030/2011), does not match the ABAG 2009 Total Population growth profile (+39.5%).</li>
+<li><p>Projected growth for #50 POTWs (Point), at +17.8% (CY2030/2011), does not match the ABAG 2009 Total Population growth profile (+39.5%).</p></li>
+<li><p>The county fraction for ALA in Table <a href="05-01-waste-mgmt-POTW.html#tab:waste-mgmt-POTW-county-fraction-table">5.1</a> is far too high (county population = 44%). In general, this table is inconsistent with county fractions computed directly from growth profile #657 Household Population (Table <a href="errata.html#tab:errata-population-county-fraction-table">10.45</a>).</p></li>
 </ul>
 </div>
 <div id="land-farming-1" class="section level5 unnumbered">
@@ -421,7 +484,11 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 <h5><a href="05-05-waste-mgmt-compost.html#waste-mgmt-compost-trend">Composting</a></h5>
 <ul>
 <li><p>Like <a href="04-23-indcom-misc.html#indcom-misc-history">Other Miscellaneous Industrial/Commercial</a>, when comparing across pollutants, emission values at CY2010 exhibit strange “peaks”.</p></li>
-<li><p>Emission factors for #1936 Composting (Area) are time-varying (see <a href="05-05-waste-mgmt-compost.html#waste-mgmt-compost-emfac-chart">chart</a>) but only seem to change during a three year period, CY2010-2012. Why?</p></li>
+<li><p>Category #1936 Composting (Area):</p>
+<ul>
+<li>County fractions for this area source are undocumented and do not match the fractions for category #1709.</li>
+<li>Emission factors are time-varying (see <a href="05-05-waste-mgmt-compost.html#waste-mgmt-compost-emfac-chart">chart</a>) but only seem to change during a three year period, CY2010-2012. Why?</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -624,7 +691,7 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 <div id="sanitary-sewers-1" class="section level5 unnumbered">
 <h5><a href="#misc-sewer">Sanitary Sewers</a></h5>
 <ul>
-<li>County fractions in Table <a href="10-10-misc-sewer.html#tab:misc-sewer-county-fraction-table">10.28</a> are inconsistent with county fractions computed directly from growth profile #657 Household Population. Compare: <code>DB_raw_growth_profiles(nested = FALSE) %&gt;% filter(gpf_id == 657) %&gt;% filter_years(CY(2011)) %&gt;% transmute(gpf_id, gpf_name, cnty_abbr, cnty_frac = format_percentage(gf_qty / total(gf_qty), digits = 1)) %&gt;% spread(cnty_abbr, cnty_frac)</code>. Perhaps this is due to the use of a subpopulation or another data source?</li>
+<li>County fractions in Table <a href="10-10-misc-sewer.html#tab:misc-sewer-county-fraction-table">10.28</a> are inconsistent with those computed directly from growth profile #657 Household Population (<a href="errata.html#tab:errata-population-county-fraction-table">10.45</a>). Perhaps this is due to the use of a subpopulation or another data source? Or a problem with profile #657?</li>
 </ul>
 </div>
 <div id="accidental-structural-fires" class="section level5 unnumbered">
@@ -694,8 +761,117 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 <ul>
 <li>BY2011 categories are actually #2041:2220, not #1787:1887.</li>
 </ul>
-
+<hr />
 </div>
+</div>
+</div>
+<div id="notes" class="section level3 unnumbered">
+<h3>Notes</h3>
+<div id="errata-population-county-fraction-table" class="section level4 unnumbered">
+<h4>County Fractions Based on Profile #657 Household Population</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">CY2011_county_population_data &lt;-</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="st">  </span><span class="kw">DB_raw_growth_profiles</span>(</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">    <span class="dt">nested =</span> <span class="ot">FALSE</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="st">  </span><span class="kw">filter</span>(</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">    gpf_id <span class="op">==</span><span class="st"> </span><span class="dv">657</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="st">  </span><span class="kw">filter_years</span>(</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">    <span class="kw">CY</span>(<span class="dv">2011</span>)) </a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">    </a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">CY2011_county_population_data <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="st">  </span><span class="kw">transmute</span>(</a>
+<a class="sourceLine" id="cb1-11" data-line-number="11">    <span class="dt">profile =</span> glue<span class="op">::</span><span class="kw">glue</span>(</a>
+<a class="sourceLine" id="cb1-12" data-line-number="12">      <span class="st">&quot;#{gpf_id} {gpf_name}&quot;</span>),</a>
+<a class="sourceLine" id="cb1-13" data-line-number="13">    year,</a>
+<a class="sourceLine" id="cb1-14" data-line-number="14">    cnty_abbr, </a>
+<a class="sourceLine" id="cb1-15" data-line-number="15">    <span class="dt">cnty_frac =</span> gf_qty <span class="op">/</span><span class="st"> </span><span class="kw">total</span>(gf_qty)) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="st">  </span><span class="kw">spread</span>(</a>
+<a class="sourceLine" id="cb1-17" data-line-number="17">    cnty_abbr,</a>
+<a class="sourceLine" id="cb1-18" data-line-number="18">    cnty_frac) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb1-19" data-line-number="19"><span class="st">  </span><span class="kw">mutate_at</span>(</a>
+<a class="sourceLine" id="cb1-20" data-line-number="20">    <span class="kw">vars</span>(ALA<span class="op">:</span>SON),</a>
+<a class="sourceLine" id="cb1-21" data-line-number="21">    <span class="op">~</span><span class="st"> </span>formattable<span class="op">::</span><span class="kw">percent</span>(., <span class="dt">digits =</span> <span class="dv">1</span>)) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb1-22" data-line-number="22"><span class="st">  </span><span class="kw">kable_BY2011</span>(</a>
+<a class="sourceLine" id="cb1-23" data-line-number="23">    <span class="dt">caption =</span> <span class="st">&quot;CY2011 county fractions computed from profile #657 Household Population.&quot;</span>)</a></code></pre></div>
+<table class="table table-hover table-condensed" style="font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:errata-population-county-fraction-table">Table 10.45: </span>CY2011 county fractions computed from profile #657 Household Population.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+profile
+</th>
+<th style="text-align:left;">
+year
+</th>
+<th style="text-align:right;">
+ALA
+</th>
+<th style="text-align:right;">
+CC
+</th>
+<th style="text-align:right;">
+MAR
+</th>
+<th style="text-align:right;">
+NAP
+</th>
+<th style="text-align:right;">
+SF
+</th>
+<th style="text-align:right;">
+SM
+</th>
+<th style="text-align:right;">
+SNC
+</th>
+<th style="text-align:right;">
+SOL
+</th>
+<th style="text-align:right;">
+SON
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+#657 Household Population
+</td>
+<td style="text-align:left;">
+CY2011
+</td>
+<td style="text-align:right;">
+21.7%
+</td>
+<td style="text-align:right;">
+15.4%
+</td>
+<td style="text-align:right;">
+3.5%
+</td>
+<td style="text-align:right;">
+1.9%
+</td>
+<td style="text-align:right;">
+11.2%
+</td>
+<td style="text-align:right;">
+10.3%
+</td>
+<td style="text-align:right;">
+25.6%
+</td>
+<td style="text-align:right;">
+4.4%
+</td>
+<td style="text-align:right;">
+6.1%
+</td>
+</tr>
+</tbody>
+</table>
+
 </div>
 </div>
 </div>

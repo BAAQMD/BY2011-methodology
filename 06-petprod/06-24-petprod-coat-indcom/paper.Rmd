@@ -29,7 +29,7 @@ BY2011_annual_emission_data %>%
 
 ##### Emission Factors (Area) {-}
 
-```{r petprod-coat-indcom-paper-annual_emfac-chart}
+```{r petprod-coat-indcom-paper-emfac-chart}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     PAPER_CATEGORIES) %>%

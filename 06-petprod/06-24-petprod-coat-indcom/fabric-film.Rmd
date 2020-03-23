@@ -29,7 +29,7 @@ BY2011_annual_emission_data %>%
 
 ##### Emission Factors (Area) {-}
 
-```{r petprod-coat-indcom-fabric-film-annual_emfac-chart}
+```{r petprod-coat-indcom-fabric-film-emfac-chart}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     FABRIC_FILM_CATEGORIES) %>%

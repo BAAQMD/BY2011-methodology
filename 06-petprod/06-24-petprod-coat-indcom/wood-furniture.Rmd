@@ -29,7 +29,7 @@ BY2011_annual_emission_data %>%
 
 ##### Emission Factors (Area) {-}
 
-```{r petprod-coat-indcom-mfg-wood-furniture-annual_emfac-chart}
+```{r petprod-coat-indcom-mfg-wood-furniture-emfac-chart}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     WOOD_FURNITURE_CATEGORIES) %>%

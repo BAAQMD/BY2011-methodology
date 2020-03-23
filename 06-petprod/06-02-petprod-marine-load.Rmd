@@ -173,7 +173,7 @@ Base Year: 2011
 
 ***
 
-#### Emission Factors {- #petprod-marine-load-emfac-chart}
+#### Annualized Emission Factors {- #petprod-marine-load-emfac-chart}
 
 ```{block type="note"}
 Emission factors for category #90 vary by time. (This is not common in the BY2011 inventory.)

@@ -29,7 +29,7 @@ BY2011_annual_emission_data %>%
 
 ##### Emission Factors (Area) {-}
 
-```{r petprod-coat-indcom-metal-part-annual_emfac-chart}
+```{r petprod-coat-indcom-metal-part-emfac-chart}
 BY2011_annual_area_source_emission_factor_data %>%
   filter_categories(
     METAL_PART_CATEGORIES) %>%

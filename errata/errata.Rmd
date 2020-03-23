@@ -181,6 +181,9 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 - Projected growth for #50 POTWs (Point), at +17.8% (CY2030/2011), does not match the ABAG 2009 Total Population growth profile (+39.5%).
 
+- The county fraction for ALA in Table \@ref(tab:waste-mgmt-POTW-county-fraction-table) is far too high (county population = 44%). In general, this table is inconsistent with county fractions computed directly from growth profile #657 Household Population (Table \@ref(tab:errata-population-county-fraction-table)).
+
+
 ##### [Land Farming](#waste-mgmt-farm-trend) {-}
 
 - The projected growth (+15.8%, CY2030/2011) does not match the ABAG2009 Population growth profile.
@@ -191,7 +194,10 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 - Like [Other Miscellaneous Industrial/Commercial](#indcom-misc-history), when comparing across pollutants, emission values at CY2010 exhibit strange "peaks".
 
-- Emission factors for #1936 Composting (Area) are time-varying (see [chart](#waste-mgmt-compost-emfac-chart)) but only seem to change during a three year period, CY2010-2012. Why?
+- Category #1936 Composting (Area):
+
+    - County fractions for this area source are undocumented and do not match the fractions for category #1709.
+    - Emission factors are time-varying (see [chart](#waste-mgmt-compost-emfac-chart)) but only seem to change during a three year period, CY2010-2012. Why?
 
 #### Petroleum Products Evaporation and Leakage {-}
 
@@ -339,7 +345,7 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 ##### [Sanitary Sewers](#misc-sewer) {-}
 
-- County fractions in Table \@ref(tab:misc-sewer-county-fraction-table) are inconsistent with county fractions computed directly from growth profile #657 Household Population. Compare: `DB_raw_growth_profiles(nested = FALSE) %>% filter(gpf_id == 657) %>% filter_years(CY(2011)) %>% transmute(gpf_id, gpf_name, cnty_abbr, cnty_frac = format_percentage(gf_qty / total(gf_qty), digits = 1)) %>% spread(cnty_abbr, cnty_frac)`. Perhaps this is due to the use of a subpopulation or another data source?
+- County fractions in Table \@ref(tab:misc-sewer-county-fraction-table) are inconsistent with those computed directly from growth profile #657 Household Population (\@ref(tab:errata-population-county-fraction-table)). Perhaps this is due to the use of a subpopulation or another data source? Or a problem with profile #657?
 
 ##### [Accidental Structural Fires](#misc-fire-struct) {-}
 
@@ -388,3 +394,37 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 ##### [Ships](#mobile-marine-ship) {-}
 
 - BY2011 categories are actually #2041:2220, not #1787:1887.
+
+
+
+***
+
+### Notes {-}
+
+#### County Fractions Based on Profile #657 Household Population {- #errata-population-county-fraction-table}
+
+```{r errata-population-county-fraction-table, echo = TRUE}
+CY2011_county_population_data <-
+  DB_raw_growth_profiles(
+    nested = FALSE) %>% 
+  filter(
+    gpf_id == 657) %>% 
+  filter_years(
+    CY(2011)) 
+    
+CY2011_county_population_data %>% 
+  transmute(
+    profile = glue::glue(
+      "#{gpf_id} {gpf_name}"),
+    year,
+    cnty_abbr, 
+    cnty_frac = gf_qty / total(gf_qty)) %>% 
+  spread(
+    cnty_abbr,
+    cnty_frac) %>%
+  mutate_at(
+    vars(ALA:SON),
+    ~ formattable::percent(., digits = 1)) %>%
+  kable_BY2011(
+    caption = "CY2011 county fractions computed from profile #657 Household Population.")
+```

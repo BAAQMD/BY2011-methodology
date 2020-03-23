@@ -36,10 +36,10 @@ The throughput and emissions factors (TOG, ROG, and GHG) estimates were develope
 
 For those composting facilities not permitted by the District (area sources), throughput data was provided by industry and CalRecycle officials or using CalRecycle's Solid Waste Information System's (SWIS's) database. The throughput information provided in the SWIS database represents maximum allowable throughputs. The actual throughput was estimated to be 60% of the SWIS database value.
 
-The units for throughput information should be in tons per year, however, they may appear in other units, such as cubic yards per year (yd3/yr), cubic yards per day (yd3/day), tons per day, etc. For those throughputs that required a conversion factor to tons, the following bulk density values were used:
+The units for throughput information should be in tons per year, however, they may appear in other units, such as cubic yards per year (yd^3^/yr), cubic yards per day (yd^3^/day), tons per day, etc. For those throughputs that required a conversion factor to tons, the following bulk density values were used:
 
-- Greenwaste – 3.54 yd3/ton
-- Mixed (greenwaste mixed with food, manure, etc.) – 2.24 yd3/ton
+- Greenwaste – 3.54 yd^3^/ton
+- Mixed (greenwaste mixed with food, manure, etc.) – 2.24 yd^3^/ton
 
 The above conversion factors were taken from the California Integrated Management Board (CIWMB) Report, "Third Assessment of California's Compost and Mulch Producing Infrastructure", May 2009.
 
