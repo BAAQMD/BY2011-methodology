@@ -35,7 +35,7 @@ knitr::include_graphics(
 
 ##### [Portable Fuel Container Spillage](#petprod-portable-spillage-methodology) {-}
 
-- The text states that "CARB estimates 3.57 tons of uncontrolled ROG emissions per day statewide from portable fuel containers in 2011." That 3.57 ton/day is equal to `r as_units(3.57, "ton/day") %>% set_units("ton/yr") %>% drop_units() %>% formattable::accounting(digits = 0)` ton/yr. In the BY2011 inventory, the estimated CY2011 total for category #1434 Portable Fuel Container Spillage is `r BY2011_annual_emission_data %>% filter_categories(1434) %>% filter_years(CY(2011)) %>% filter_pollutants("ROG") %>% convert_emission_units(to = "ton/yr") %>% pull_total(ems_qty) %>% formattable::accounting(digits = 0)` ton/yr ROG. The Bay Area total should not be equal to the statewide total. (Perhaps the text is incorrect instead?)
+- **Category #1434 Portable Fuel Container Spillage (CARB source).** The text states that "CARB estimates 3.57 tons of uncontrolled ROG emissions per day statewide from portable fuel containers in 2011." That 3.57 ton/day is equal to `r as_units(3.57, "ton/day") %>% set_units("ton/yr") %>% drop_units() %>% formattable::accounting(digits = 0)` ton/yr. In the BY2011 inventory, the estimated CY2011 total for this category is `r BY2011_annual_emission_data %>% filter_categories(1434) %>% filter_years(CY(2011)) %>% filter_pollutants("ROG") %>% convert_emission_units(to = "ton/yr") %>% pull_total(ems_qty) %>% formattable::accounting(digits = 0)` ton/yr ROG. The Bay Area total should not be equal to the statewide total. (Perhaps the text is incorrect instead?)
 
 #### Stationary Combustion of Fuels {-}
 
