@@ -74,7 +74,7 @@ BY2011_YEAR_LIMITS <-
   CY(1990, 2030)
 
 BY2011_YEAR_EXPAND <-
-  ggplot2::expand_scale(
+  ggplot2::expansion(
     add = c(2, 2),
     mult = c(0, 0))
 

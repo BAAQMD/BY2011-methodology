@@ -33,9 +33,13 @@ knitr::include_graphics(
 
 #### Petroleum Products Evaporation and Leakage {-}
 
+##### [GDF - Excess Emissions](#petprod-GDF-excess) {-}
+
+- **Category #1197 [GDF - Excess Emissions](#petprod-GDF-excess-history).** Over 5,000 ton/yr ROG is missing for five years: CY1990-1994.^[No relevant rows are present in the file `BY2011-annual-A.csv`; hence the `NA`(s).] This is a large omission. Among area-source categories, in CY1995, this category was the single largest overall emitter of ROG (excepting biogenics). In the growth profile assigned to this category [#465 Projected Base On Excess Em](#petprod-GDF-excess-growth), the growth factors for CY1990-1994 are exactly zero. The backcast flag is (currently) set to `FALSE`. In addition, the first applicable TOG emission factor for this category has an effective date of 1995-01-01. (For most categories, the first effective date will be 1975-01-01.)
+
 ##### [Portable Fuel Container Spillage](#petprod-portable-spillage-methodology) {-}
 
-- The text states that "CARB estimates 3.57 tons of uncontrolled ROG emissions per day statewide from portable fuel containers in 2011." That 3.57 ton/day is equal to `r as_units(3.57, "ton/day") %>% set_units("ton/yr") %>% drop_units() %>% formattable::accounting(digits = 0)` ton/yr. In the BY2011 inventory, the estimated CY2011 total for category #1434 Portable Fuel Container Spillage is `r BY2011_annual_emission_data %>% filter_categories(1434) %>% filter_years(CY(2011)) %>% filter_pollutants("ROG") %>% convert_emission_units(to = "ton/yr") %>% pull_total(ems_qty) %>% formattable::accounting(digits = 0)` ton/yr ROG. The Bay Area total should not be equal to the statewide total. (Perhaps the text is incorrect instead?)
+- **Category #1434 Portable Fuel Container Spillage.** The Bay Area total should not be equal to the statewide total. The text states that "CARB estimates 3.57 tons of uncontrolled ROG emissions per day statewide from portable fuel containers in 2011." That 3.57 ton/day is equal to `r as_units(3.57, "ton/day") %>% set_units("ton/yr") %>% drop_units() %>% formattable::accounting(digits = 0)` ton/yr. In the BY2011 inventory, the estimated CY2011 total is `r BY2011_annual_emission_data %>% filter_categories(1434) %>% filter_years(CY(2011)) %>% filter_pollutants("ROG") %>% convert_emission_units(to = "ton/yr") %>% pull_total(ems_qty) %>% formattable::accounting(digits = 0)` ton/yr ROG. (Perhaps the text is incorrect instead?)
 
 #### Stationary Combustion of Fuels {-}
 
