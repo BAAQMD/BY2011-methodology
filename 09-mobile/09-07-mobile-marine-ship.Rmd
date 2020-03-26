@@ -59,6 +59,16 @@ For maneuvering and in-transit categories, county fractions are not based on act
 BY2011_county_fraction_data %>%
   filter_categories(
     THESE_CATEGORIES) %>%
+  with_hierarchy(
+    BY2011_category_hierarchy) %>%
+  select(
+    cat_id,
+    cnty_abbr,
+    cnty_frac,
+    category,
+    cat_h3) %>%
+  group_by(
+    cat_h3) %>%
   kable_BY2011_county_fractions()
 ```
 

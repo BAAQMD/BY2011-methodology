@@ -24,7 +24,7 @@
 <meta name="author" content="Bay Area Air Quality Management District" />
 
 
-<meta name="date" content="2020-03-23" />
+<meta name="date" content="2020-03-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -319,10 +319,16 @@ Figure 10.1: Edit button, in the toolbar at the top of every page (including thi
 </div>
 <div id="petroleum-products-evaporation-and-leakage" class="section level4 unnumbered">
 <h4>Petroleum Products Evaporation and Leakage</h4>
+<div id="gdf---excess-emissions" class="section level5 unnumbered">
+<h5><a href="06-11-petprod-GDF-excess.html#petprod-GDF-excess">GDF - Excess Emissions</a></h5>
+<ul>
+<li><strong>Category #1197 <a href="06-11-petprod-GDF-excess.html#petprod-GDF-excess-history">GDF - Excess Emissions</a>.</strong> Over 5,000 ton/yr ROG is missing for five years: CY1990-1994.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> This is a large omission. Among area-source categories, in CY1995, this category was the single largest overall emitter of ROG (excepting biogenics). In the growth profile assigned to this category <a href="06-11-petprod-GDF-excess.html#petprod-GDF-excess-growth">#465 Projected Base On Excess Em</a>, the growth factors for CY1990-1994 are exactly zero. The backcast flag is (currently) set to <code>FALSE</code>. In addition, the first applicable TOG emission factor for this category has an effective date of 1995-01-01. (For most categories, the first effective date will be 1975-01-01.)</li>
+</ul>
+</div>
 <div id="portable-fuel-container-spillage" class="section level5 unnumbered">
 <h5><a href="06-12-petprod-portable-spillage.html#petprod-portable-spillage-methodology">Portable Fuel Container Spillage</a></h5>
 <ul>
-<li>The text states that “CARB estimates 3.57 tons of uncontrolled ROG emissions per day statewide from portable fuel containers in 2011.” That 3.57 ton/day is equal to 1,304 ton/yr. In the BY2011 inventory, the estimated CY2011 total for category #1434 Portable Fuel Container Spillage is 1,303 ton/yr ROG. The Bay Area total should not be equal to the statewide total. (Perhaps the text is incorrect instead?)</li>
+<li><strong>Category #1434 Portable Fuel Container Spillage.</strong> The Bay Area total should not be equal to the statewide total. The text states that “CARB estimates 3.57 tons of uncontrolled ROG emissions per day statewide from portable fuel containers in 2011.” That 3.57 ton/day is equal to 1,304 ton/yr. In the BY2011 inventory, the estimated CY2011 total is 1,303 ton/yr ROG. (Perhaps the text is incorrect instead?)</li>
 </ul>
 </div>
 </div>
@@ -362,7 +368,7 @@ Figure 10.1: Edit button, in the toolbar at the top of every page (including thi
 <div id="ships" class="section level5 unnumbered">
 <h5><a href="09-07-mobile-marine-ship.html#mobile-marine-ship">Ships</a></h5>
 <ul>
-<li>All criteria-pollutant emissions are missing from “Ships in Transit, Container Ship, Main Engine, SFAB” (Category #2158) for years CY1990-2008. There are no emissions from either distillate fuel or residual fuel for those years.</li>
+<li><strong>Category #2158 (Ships in Transit, Container Ship, Main Engine, SFAB)</strong>. All criteria-pollutant emissions are missing for years CY1990-2008. There are no emissions from either distillate fuel or residual fuel for these years.</li>
 </ul>
 </div>
 </div>
@@ -371,7 +377,7 @@ Figure 10.1: Edit button, in the toolbar at the top of every page (including thi
 <div id="road-dust" class="section level5 unnumbered">
 <h5>Road Dust</h5>
 <ul>
-<li>The emissions for <a href="10-06-misc-road-paved.html#misc-road-paved-trend">Paved Roads</a> are exactly flat. The paragraph under <a href="10-06-misc-road-paved.html#misc-road-paved-growth">Growth</a> states that “MTC’s CLM data show an increase of less than 2% for [1990 to 2011] (less than 0.1% per year), and this was used to create trends around the 2011 base year emissions.” However, the growth is not 2% per 20 years; it is <em>exactly</em> flat, because the relevant categories are all linked to profile #38 No Growth.</li>
+<li><strong>Categories #1759:1762 (Paved Roads).</strong> Emissions for the four <a href="10-06-misc-road-paved.html#misc-road-paved-trend">Paved Roads</a> categories are exactly flat. The paragraph under <a href="10-06-misc-road-paved.html#misc-road-paved-growth">Growth</a> states that “MTC’s CLM data show an increase of less than 2% for [1990 to 2011] (less than 0.1% per year), and this was used to create trends around the 2011 base year emissions.” However, the growth is not 2% per 20 years; it is <em>exactly</em> flat, because the relevant categories are all linked to profile #38 No Growth.</li>
 </ul>
 <hr />
 </div>
@@ -734,7 +740,7 @@ to <a href="https://www.baaqmd.gov/rules-and-compliance/rules/regulation-6-parti
 <div id="asphalt-paving" class="section level5 unnumbered">
 <h5><a href="06-17-petprod-asphalt-pave.html#petprod-asphalt-pave-methodology">Asphalt Paving</a></h5>
 <ul>
-<li>The text states “organic emission factors used for hot-mix, emulsified, and road oils were 0.04, 17.9, and 2.19 lb/ton of asphalt applied, respectively.” There are control factors in DataBank for #95 Road Oil (97.5% controlled, CY1990-2030) and #97 Emulsified (55.3% controlled, CY1990-2030), but nothing for #96 Hot Mix. If we apply those (DataBank) CFs to the (DataBank) EFs listed in Table <a href="06-17-petprod-asphalt-pave.html#tab:petprod-asphalt-pave-emfac-table">6.36</a>, then we do in fact arrive at the EFs mentioned in the text (#95 = 2.2 lb/ton and #97 Emulsified). So the math works out, but it is odd to have a mixture of controlled (for #96) and uncontrolled (for #95 and #97) EFs stored in DataBank.</li>
+<li>The text states “organic emission factors used for hot-mix, emulsified, and road oils were 0.04, 17.9, and 2.19 lb/ton of asphalt applied, respectively.” There are control factors in DataBank for #95 Road Oil (97.5% controlled, CY1990-2030) and #97 Emulsified (55.3% controlled, CY1990-2030), but nothing for #96 Hot Mix. If we apply those (DataBank) CFs to the (DataBank) EFs listed in Table <a href="06-17-petprod-asphalt-pave.html#tab:petprod-asphalt-pave-emfac-table">6.38</a>, then we do in fact arrive at the EFs mentioned in the text (#95 = 2.2 lb/ton and #97 Emulsified). So the math works out, but it is odd to have a mixture of controlled (for #96) and uncontrolled (for #95 and #97) EFs stored in DataBank.</li>
 </ul>
 </div>
 <div id="industrialcommercial-coating-1" class="section level5 unnumbered">
@@ -874,6 +880,12 @@ CY2011
 
 </div>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>No relevant rows are present in the file <code>BY2011-annual-A.csv</code>; hence the <code>NA</code>(s).<a href="errata.html#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
 </div>
             </section>
 

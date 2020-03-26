@@ -1,4 +1,4 @@
-## Gasoline Filling Station - Excess Emissions
+## Gasoline Filling Station - Excess Emissions {#petprod-GDF-excess}
 
 ```{r petprod-GDF-excess-setup}
 THESE_CATEGORIES <- c(
@@ -59,7 +59,10 @@ This category accounts for only the excess emissions resulting from the use of b
 1. Forty percent of the daily gasoline was pumped through bootless nozzles. Five percent of the vehicles were subjected to the excess spitback spillage. Therefore,
 
 $$
-\text{Throughput} = (7,986\text{ thousand gallons})(40\%)(5\%) = 160\text{ thousand gallons}
+\begin{eqnarray}
+\text{Throughput} &=& (7,986\text{ thousand gallons})(40\%)(5\%) \\
+                  &=& 160\text{ thousand gallons}
+\end{eqnarray}
 $$
 
 The emission factor for excess spitback caused by high dispensing rates was estimated to be 19.7 lbs/1,000 gallons based on bootless nozzle tests conducted by District Source Test Engineers.
@@ -70,7 +73,10 @@ The emission factor for Pseudo-spillage was estimated to be 0.75 lbs/1000 gallon
 3. Fifty percent of bootless nozzles were equipped with the WayneVac system which showed low A/L ratios.
 
 $$
-\text{Throughput} = (7,986\text{ thousand gallons})(40\%)(50\%) = 1,597\text{ thousand gallons}
+\begin{eqnarray}
+\text{Throughput} &=& (7,986\text{ thousand gallons})(40\%)(50\%) \\
+                  &=& 1,597\text{ thousand gallons}
+\end{eqnarray}
 $$
 
 Emission factor for Low Air to Liquid Ratios was obtained from the results of several bootless nozzle tests conducted by District Source Test Engineers.
@@ -82,13 +88,19 @@ The emission factor for Pressure-Related Fugitives was estimated to be 3.97 lbs/
 5. 20.97% of the nozzles in the Bay Area is Emco Wheaton (EW) A4001 nozzles having excess idle-nozzle emissions. Therefore,
 
 $$
-\text{Throughput} = (7,986\text{ thousand gallons})(20.97\%) = 1,675\text{ thousand gallons}
+\begin{eqnarray}
+\text{Throughput} &=& (7,986\text{ thousand gallons})(20.97\%) \\
+                  &=& 1,675\text{ thousand gallons}
+\end{eqnarray}
 $$
 
 The refueling uncontrolled emission factor is 8.4 lbs/1000 gallons. Since 95% is controlled, 5% emissions are already accounted for in other categories. The excess idle nozzle emission factor is based on the assumption that EW 4001 nozzles emit 20% greater emissions than other nozzles, as stated in Toxics Committee of California Air Pollution Control Officers Association (CAPCOA), December 1997 report. Therefore, the EW 4001 idle nozzle emission factor is:
 
 $$
-\text{Emission Factor} = (8.4 \text{lbs/1000 gallons})(95\%)(20\%) = 1.60\text{ lbs/1000 gallons}
+\begin{eqnarray}
+\text{Emission Factor} &=& (8.4 \text{lbs/1000 gallons})(95\%)(20\%) \\
+                       &=& 1.60\text{ lbs/1000 gallons}
+\end{eqnarray}
 $$
 
 6. Emission factors for "whoosh" emissions were obtained from "Gasoline Service Station Industrywide Risk Assessment Guidelines" prepared by the Toxics Committee of the California Air Pollution Control Officers Association (CAPCOA), December 1997. This throughput for "whoosh" emissions applies to total gasoline consumption in the Bay Area. It must be noted that several designs of Onboard Refueling Vapor Recovery (ORVR) vehicles greatly reduce the emissions from this category.
@@ -143,12 +155,64 @@ The adopted amendments also include mandatory In-Station-Diagnostics (ISD), whic
 
 Monitoring of vapor recovery system operation and performance per CARB's mandatory In-Station-Diagnostics, pressure-related fugitive emissions will be further reduced by 2003 and beyond.
 
-```{block type="FIXME"}
-**FIXME: INSERT FIGURES & TABLES HERE?**
-```
-
 ***
 
 By: Michael Nguyen 
 Date: January, 2014 
 Base Year 2011
+
+***
+
+```{block FIXME}
+Weave these figure and tables into the text above.
+```
+
+#### County Distribution {-}
+
+```{r petprod-GDF-excess-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
+#### History {- #petprod-GDF-excess-history}
+
+```{r petprod-GDF-excess-emission-chart}
+BY2011_annual_emission_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emissions_by(
+    fill = category)
+```
+
+#### Growth {- #petprod-GDF-excess-growth}
+
+```{r petprod-GDF-excess-growth-crosswalk}
+BY2011_growth_profile_crosswalk %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_growth_crosswalk()
+```
+
+```{r petprod-GDF-excess-growth-chart}
+BY2011_annual_growth_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_growth_factors_by(
+    color = cnty_abbr)
+```
+
+#### Emission Factors {- petprod-GDF-excess-emfac-chart}
+
+```{block note}
+Emission factors for this category, for years prior to CY1995, do not exist in DataBank.
+```
+
+```{r petprod-GDF-excess-emfac-chart}
+BY2011_annual_area_source_emission_factor_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  chart_BY2011_annual_emission_factors_by(
+    color = category) 
+```

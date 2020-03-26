@@ -28,6 +28,13 @@ Monthly variation of emissions was based on gasoline usage data for California b
 
 Emissions distributed into the nine counties were based on Caltrans Transportation Planning Support Information System's breakdown.
 
+```{r petprod-GDF-fueling-county-fraction-table}
+BY2011_county_fraction_data %>%
+  filter_categories(
+    THESE_CATEGORIES) %>%
+  kable_BY2011_county_fractions()
+```
+
 ### Trends
 
 #### History {-}
@@ -60,13 +67,6 @@ BY2011_annual_growth_factor_data %>%
 ```
 
 Gasoline consumption in 2007 reached record levels. However, the gasoline consumption decreased slightly during the economic recession in 2008 - 2010. Projections are based on future gasoline consumption in the Bay Area. Projected emissions from 2000 to 2030 are expected to increase at the rate of 0.25% per year.
-
-```{r petprod-GDF-fueling-county-fraction-table}
-BY2011_county_fraction_data %>%
-  filter_categories(
-    THESE_CATEGORIES) %>%
-  kable_BY2011_county_fractions()
-```
 
 #### Control {-}
 

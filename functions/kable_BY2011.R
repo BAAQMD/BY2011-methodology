@@ -10,6 +10,8 @@ kable_BY2011 <- function (
   verbose = getOption("verbose")
 ) {
   
+  msg <- function (...) if(isTRUE(verbose)) message("[kable_BY2011] ", ...)
+  
   if (totals == "row") {
     
     kable_data <-
@@ -40,6 +42,36 @@ kable_BY2011 <- function (
     
   }
   
+  if (is_grouped_df(kable_data)) {
+    
+    group_var <- 
+      dplyr::group_vars(
+        kable_data)
+    
+    msg("grouping by: ", str_csv(group_var))
+    
+    if (length(group_var) > 1) {
+      stop("[kable_BY2011] 2+ groups not yet supported, sorry.")
+    }
+    
+    group_index <-
+      kable_data %>%
+      pull(
+        !!group_var) %>%
+      table()
+      
+    kable_data <-
+      kable_data %>%
+      ungroup() %>%
+      drop_vars(
+        !!group_var)
+    
+  } else {
+    
+    group_index <- NULL
+    
+  }
+  
   kable_object <-
     kable(
       kable_data,
@@ -54,22 +86,13 @@ kable_BY2011 <- function (
       full_width = full_width,
       position = position) 
   
-  if (is_grouped_df(kable_data)) {
+  if (!is.null(group_index)) {
     
-    group_var <- 
-      dplyr::group_vars(
-        kable_data)
-    
-    if (length(group_var) > 1) {
-      stop("[kable_BY2011] 2+ groups not yet supported, sorry.")
-    }
-    
-    styled_kable_object <- 
-      styled_kable_object %>%
-      kableExtra::pack_rows(
-        index = table(
-          pull(kable_data, !!group_var)))
-    
+  styled_kable_object <- 
+    styled_kable_object %>%
+    kableExtra::pack_rows(
+      index = group_index)
+  
   }
   
   if (totals == "row") {
