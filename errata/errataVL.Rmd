@@ -29,7 +29,7 @@ knitr::include_graphics(
 
 ##### [All Other Chemical Plants](#chem-fac-other-trend) {-}
 
-- **Category #26 All Other Chem Mfg (Point).** Almost 10,000 ton/yr of CO emissions stops abruptly at CY1997. Few other point-source categories even approach this magnitude of CO emissions. For perspective, all five refineries emit about 2,000 to 4,000 ton/yr CO from all of their sources *combined* (all equipment, all categories, everything). This is traceable to a single manufacturing plant, P#21 E I duPont de Nemours & Company. The facility has no recorded closure date in DataBank, but it was shut down [in 1998](http://www.chemoursoakley.com/history.html). 
+- **Category #26 All Other Chem Mfg (Point).** Almost 10,000 ton/yr of CO emissions stops abruptly at CY1997. Few other point-source categories even approach this magnitude of CO emissions. For perspective, all five refineries emit about 2,000 to 4,000 ton/yr CO from all of their sources *combined* (all equipment, all categories, everything). This is traceable to a single manufacturing plant, P#21 E I duPont de Nemours & Company. The facility has no recorded closure date in DataBank, but it was shut down [in 1998](http://www.chemoursoakley.com/history.html). The facility still has an active permit to passively aerate the soil for remediation so the issue is to either (1) move emissions to category 37 - contaminated soil aeration or (2) leave as it. 
 
 #### Petroleum Products Evaporation and Leakage {-}
 
@@ -49,7 +49,7 @@ knitr::include_graphics(
 
 ##### Power Plants {-}
 
-- **Category #293 [Gas Fired Boilers](#SS-combust-power-boiler-trend).** The CO~2~/CO ratio for CY1990-2000 appears to be far too low, given what is observed for subsequent decades. This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO~2~ of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is "on track" to reach its CY2030 target.
+- **Category #293 [Gas Fired Boilers](#SS-combust-power-boiler-trend).** The CO~2~/CO ratio for CY1990-2000 appears to be far too low, given what is observed for subsequent decades. This could be resulting in the absence of 5-10 MMTCO2eq from the CY1990 BAAQMD inventory. An absence of CO~2~ of that magnitude, in CY1990, could be substantially distorting the answer to the key question of whether the District is "on track" to reach its CY2030 target.  The methodology description states that the adoption of regulation requires the shutdown of older boilers and estimates an emission variation of 30-10 tons per day (no change recommended).
 
 - **Category #294 [Oil Fired Boilers](#SS-combust-power-boiler-trend).** (Possibly related to above.) Emissions seem to be almost entirely absent from the BY2011 inventory. There are some very small emissions (~ 0.1 ton/yr of TOG and NO~x~) estimated for CY2008-2010, but that is it.
 
@@ -65,7 +65,7 @@ knitr::include_graphics(
 
 ##### [Other External Combustion - Natural Gas](#SS-combust-external-NG-trend) {-}
 
-- **Categories #1590 and #1591 (NG Combustion, Commercial and Industrial).** Throughput (cubic feet of natural gas consumed) should be double-checked against CEC data, especially for years CY1990-2000. See the example charts for [Natural Gas Consumption](https://baaqmd.github.io/charting-annual-data/10-third_party.html#natural-gas-consumption) in the Charting Annual Data cookbook. A large amount of GHG and (criteria-pollutant) emissions are at stake --- several MMTCO2eq and hundreds or thousands of tons of PM, TOG, and NO~x~, respectively. 
+- **Categories #1590 and #1591 (NG Combustion, Commercial and Industrial).** Throughput (cubic feet of natural gas consumed) should be double-checked against CEC data, especially for years CY1990-2000. See the example charts for [Natural Gas Consumption](https://baaqmd.github.io/charting-annual-data/10-third_party.html#natural-gas-consumption) in the Charting Annual Data cookbook. A large amount of GHG and (criteria-pollutant) emissions are at stake --- several MMTCO2eq and hundreds or thousands of tons of PM, TOG, and NO~x~, respectively. The area source emissions are estimated using the CEC data minus the point source emissions - no change recommended. 
 
 #### Mobile Combustion {-}
 
@@ -142,9 +142,9 @@ knitr::include_graphics(
 
 - Emissions of all pollutants for #1748 Cement Plant Combustion (Coal) are missing (not zero; actually missing) for CY2008 and CY2010-2030. However, emissions for CY2009 are present. 
 
-- The growth profile assigned to #877 "Cement Plt. Comb. - Coal", is also zero for the same years, and also has a spike at CY2009.
+- The growth profile assigned to #877 "Cement Plt. Comb. - Coal", is also zero for the same years, and also has a spike at CY2009. No longer a category in 2015 - no change recommended. 
 
-- The text states "Projections of emissions to 2030 in all categories were based on ABAG’s 2009 Construction Employment growth profile." But the charts show different rates of growth. None actually match ABAG2009 Construction Employment growth (+39.1%, CY2030/2011).
+- The text states "Projections of emissions to 2030 in all categories were based on ABAG’s 2009 Construction Employment growth profile." But the charts show different rates of growth. None actually match ABAG2009 Construction Employment growth (+39.1%, CY2030/2011).  The growth controled by adoption of regulation - no change recommended. 
 
 ##### [Rubber Manufacturing](#indcom-mfg-rubber) {-}
 
@@ -213,7 +213,7 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 - The very last paragraph under "Controls" refers to "Categories 795 - 802", but #801 and #802 are not elsewhere mentioned, and no emissions for #801 or #802 appear in the published BY2011 inventory. (Are they unintentionally missing?). 
 
-- [Category #90](#petprod-marine-load-emfac-chart) "Ballasting, Other Material" has time-varying emission factors. This is not inherently a problem, but the pattern looks remarkably like the assigned growth profile (#835 Ballasting-Other). This could be causing an unintentional "double-counting" (amplification) of the year-over-year variation. Related: the same thing happens with [Farming Operations](#misc-farm-emfac-chart).
+- [Category #90](#petprod-marine-load-emfac-chart) "Ballasting, Other Material" has time-varying emission factors. This is not inherently a problem, but the pattern looks remarkably like the assigned growth profile (#835 Ballasting-Other). This could be causing an unintentional "double-counting" (amplification) of the year-over-year variation. Related: the same thing happens with [Farming Operations](#misc-farm-emfac-chart). The emissions estimated using fuel reports from the CEC and growth projections taken from Petroleum Infrastructures in the CEC reports for California - no change recommended.
 
 ##### [Non-Gasoline Terminals and Bulk Plants Storage](#petprod-terminal-trend) {-}
 
@@ -223,7 +223,7 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 ##### [Gasoline Truck Loading](petprod-gasoline-truck-load-trend) {-}
 
-- There is a sudden "peak" in emissions circa CY2005. It is consistent with growth profile #589 Revised Bulk Plant Tputs but atypical compared to the rest of the profile. There is also a "seesaw" at CY2008-CY2008, dropping from ~400 ton/yr ROG to less than 1 ton/yr, then back up to ~400 ton/yr, then back down to a fairly constant ~20 ton/yr.
+- There is a sudden "peak" in emissions circa CY2005. It is consistent with growth profile #589 Revised Bulk Plant Tputs but atypical compared to the rest of the profile. There is also a "seesaw" at CY2008-CY2008, dropping from ~400 ton/yr ROG to less than 1 ton/yr, then back up to ~400 ton/yr, then back down to a fairly constant ~20 ton/yr. No longer a category - delete.
 
 ##### [Sterilizer Venting](#petprod-sterilizer-vent-trend) {-} 
 
@@ -231,11 +231,11 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 ##### [Solvent Cleaning](#petprod-clean-growth) {-}
 
-- Projected long-term growth for #1245 Other Handwiping (Point), at +9.7% (CY2030/2011) is inconsistent with the text ("ABAG 2009 Manufacturing Employment") and with #1935 Other Handwiping (Area), both of which are +28.4%.
+- Projected long-term growth for #1245 Other Handwiping (Point), at +9.7% (CY2030/2011) is inconsistent with the text ("ABAG 2009 Manufacturing Employment") and with #1935 Other Handwiping (Area), both of which are +28.4%. Regu;ation 8-4 limits usage to 50 g/L and installation of abatement - no change recommended. 
 
 ##### [Industrial/Commercial Coating](#petprod-coat-indcom) {-}
 
-- Projected long-term growth for [Auto Refinishing](#petprod-coat-indcom-auto-refinish) categories, at +17.8% (CY2030/2011), is inconsistent with projected long-term  growth for all other Industrial/Commercial Coating categories (+28.4%).
+- Projected long-term growth for [Auto Refinishing](#petprod-coat-indcom-auto-refinish) categories, at +17.8% (CY2030/2011), is inconsistent with projected long-term  growth for all other Industrial/Commercial Coating categories (+28.4%).  Category subject to regulation which limits emissions - no change recommended.  
 
 ##### [Vacuum Trucks](#petprod-vacuum-truck-growth) {-}
 
@@ -247,7 +247,7 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 - For category #286 Domestic LPG, the growth is described as "follow[ing] household population data". But the assigned growth profile is #658 Persons per Household, which is the number of persons in an average household (fairly constant), *not* the total population. 
 
-- Minor: for category #287 Distillate Oil, the forecast is described as "2% reduction per year"; it seems to be about 1.7% (with rounding, OK). 
+- Minor: for category #287 Distillate Oil, the forecast is described as "2% reduction per year"; it seems to be about 1.7% (with rounding, OK). No change recommended. 
 
 ##### [Domestic Solid Fuel (Wood)](#SS-combust-domestic-wood-growth) {-}
 
@@ -271,13 +271,13 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 ##### [Turbines](#SS-combust-turbine) {-}
 
-- Category #305 [Gas Fired Turbines](#SS-combust-turbine-trend) shows a sharp up/down tick at CY2010. If you look at an RY pivot table, you can see that this is entirely due to one source. If you look at a PY pivot table, the effect disappears --- that same source is very steady, year-over-year. It's possible that an error existed at the time that the RY snapshot was made, but was fixed before the PY data were frozen.
+- Category #305 [Gas Fired Turbines](#SS-combust-turbine-trend) shows a sharp up/down tick at CY2010. If you look at an RY pivot table, you can see that this is entirely due to one source. If you look at a PY pivot table, the effect disappears --- that same source is very steady, year-over-year. It's possible that an error existed at the time that the RY snapshot was made, but was fixed before the PY data were frozen.  Emissions data taken from permitted source inventory - no change recommended.
 
-- Category #305 [Gas Fired Turbines](#SS-combust-turbine-trend) shows variations in SO~2~ emissions, CY1995-2000, that are not explained by an SO~2~ control profile (there isn't one) and are not consistent with variations in other uncontrolled pollutants (e.g. TOG). They are, however, fairly consistent with RY and PY data. This may be OK.
+- Category #305 [Gas Fired Turbines](#SS-combust-turbine-trend) shows variations in SO~2~ emissions, CY1995-2000, that are not explained by an SO~2~ control profile (there isn't one) and are not consistent with variations in other uncontrolled pollutants (e.g. TOG). They are, however, fairly consistent with RY and PY data. This may be OK. Emissions data taken from permitted source inventory - no change recommended. 
 
 ##### [Other External Combustion - Natural Gas](#SS-combust-external-NG) {-}
 
-- Category #307 NG Combustion (Point, Misc): Growth profile #631 Gh, Thrpt Based does not match the values found in RY2006 and RY2007, which results in an artificial "peak". This is noticeable for all pollutants, but especially uncontrolled pollutants. PM and TOG emissions for CY1993-2000 are also under-estimated by this growth profile. Time-varying emission factors would be a way to solve this.
+- Category #307 NG Combustion (Point, Misc): Growth profile #631 Gh, Thrpt Based does not match the values found in RY2006 and RY2007, which results in an artificial "peak". This is noticeable for all pollutants, but especially uncontrolled pollutants. PM and TOG emissions for CY1993-2000 are also under-estimated by this growth profile. Time-varying emission factors would be a way to solve this. Emissions data taken from permitted source inventory - no change recommended.
 
 ##### [Other External Combustion - All Other Fuels](#SS-combust-external-other) {-}
 
@@ -293,7 +293,7 @@ to [Regulation 6] and [Rule 12-14], and states that "Controls can range up to 99
 
 ##### [Planned Agricultural Burning](#waste-burn-planned-ag) {-}
 
-- Looking at category #316 Field Crops, CY2001-2008, there is a substantial "surge" in inventoried emissions. This apparent surge is on the order of hundreds of tons of most criteria pollutants. If there is reason to believe that this really happened in the world, it's probably worth an explanation. It appears to be reflected in --- or attributable to --- DataBank growth profiles #726 and #727.
+- Looking at category #316 Field Crops, CY2001-2008, there is a substantial "surge" in inventoried emissions. This apparent surge is on the order of hundreds of tons of most criteria pollutants. If there is reason to believe that this really happened in the world, it's probably worth an explanation. It appears to be reflected in --- or attributable to --- DataBank growth profiles #726 and #727. Emissions based on permits allowing agricultural burns - no change recommended. 
 
 #### Mobile Combustion {-}
 
