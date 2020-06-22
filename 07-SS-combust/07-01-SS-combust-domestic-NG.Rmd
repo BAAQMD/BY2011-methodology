@@ -4,7 +4,7 @@
 THESE_CATEGORIES <- c(
   "#283 Space Heating" = 283,
   "#284 Water Heating" = 284,
-  "#285 Cooking" = 285)
+  "#285 Cooking" = 285, "#2540 Other" = 2540)
 ```
 
 ### Emissions
