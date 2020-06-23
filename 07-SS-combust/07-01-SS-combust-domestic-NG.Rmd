@@ -11,12 +11,12 @@ THESE_CATEGORIES <- c(
 
 #### Introduction {-}
 
-These categories estimate criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and GHG emissions (CO~2~, CH~4~, and N~2~O) resulting from the combustion of natural gas in the residential sector. Natural gas consists of a high percentage of methane (generally above 85 percent) and varying amounts of ethane, propane, butane, and inert gases. The combustion of natural gas in the residential sector is broken down into three categories: Space Heating, Water Heating, Cooking, and Other. Categories 283, 284, 285, and 2540 account for area source emissions from Space Heating, Water Heating, Cooking, and 'Other', respectively.  The unspecified category, Other, includes the combustion of natural gas in appliances such as clothes dryers, barbecues, and water heaters used for pools, spas and hot tubs.
+These categories estimate criteria pollutant (particulate, organic, NO~x~, SO~x~, and CO) and GHG emissions (CO~2~, CH~4~, and N~2~O) resulting from the combustion of natural gas in the residential sector. Natural gas consists of a high percentage of methane (generally above 85 percent) and varying amounts of ethane, propane, butane, and inert gases. The combustion of natural gas in the residential sector is broken down into four categories: Space Heating, Water Heating, Cooking, and Other. Categories 283, 284, 285, and 2540 account for area source emissions from Space Heating, Water Heating, Cooking, and Other, respectively.  The unspecified category, Other, includes the combustion of natural gas in appliances such as clothes dryers, barbecues, and water heaters used for pools, spas and hot tubs.
 Design of residential boilers and furnaces generally resemble fire tube type boilers with flue gas traveling through several channels or tubes with water or air circulated outside the channels or tubes.
 
 #### Methodologies {-}
 
-The residential natural gas consumption data by county for these categories was obtained from the California Energy Commission (CEC) consumption data base.  This total natural gas usage was broken down into each use category based on information from CEC and PG&E, and is shown below.
+The residential natural gas consumption data by county for these categories was obtained from the California Energy Commission (CEC) fuel consumption data base.  The natural gas consumption was broken down into each use category based on information from CEC and PG&E, and is shown below.
 
 ```{r SS-combust-domestic-NG-apportionment-table}
 table_data <-
