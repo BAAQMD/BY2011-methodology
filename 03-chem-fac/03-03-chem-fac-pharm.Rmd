@@ -30,11 +30,11 @@ District [Rule 8-24], limiting organic compounds emissions from various pharmace
 
 #### Monthly Variation {-}
 
-Monthly distribution was assumed to be uniform.
+Monthly distribution was assumed to be uniform.  
 
 #### County Distribution {-}
 
-The ratio of each County's population was used to distribute emission into counties.
+The ratio of each County's population was used to distribute emission into counties.  (added 6/24) For area source categories, the "American Community Survey" census data was used to derive county fractions.
 
 ```{r chem-fac-pharm-county-fraction-table}
 BY2011_county_fraction_data %>%
