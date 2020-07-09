@@ -4,7 +4,8 @@
 THESE_CATEGORIES <- c(
   "#283 Space Heating" = 283,
   "#284 Water Heating" = 284,
-  "#285 Cooking" = 285, "#2540 Other" = 2540)
+  "#285 Cooking" = 285,
+  "#2540 Other" = 2540)
 ```
 
 ### Emissions
@@ -24,7 +25,15 @@ table_data <-
     ~ "Category", ~ "Percent",
     "#283 Space Heating", 50.34,
     "#284 Water Heating", 41.15,
-    "#285 Cooking", 4.47, "#2540 Other", 4.04)
+    "#285 Cooking", 4.47, 
+    "#2540 Other", 4.04)
+
+Residential Natural Gas Usage by Category		
+Category #	Category	Percent
+283	Space Heating	50.34%
+284	Water Heating	41.15%
+285	Cooking	4.47%
+2540	Other	4.04%
 
 table_data %>%
   mutate_at(
