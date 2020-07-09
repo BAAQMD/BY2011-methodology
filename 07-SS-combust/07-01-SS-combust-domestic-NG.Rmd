@@ -27,14 +27,14 @@ table_data <-
     "#284 Water Heating", 41.15,
     "#285 Cooking", 4.47, 
     "#2540 Other", 4.04)
-
+-----
 Residential Natural Gas Usage by Category		
 Category #	Category	Percent
-283	Space Heating	50.34%
-284	Water Heating	41.15%
-285	Cooking	4.47%
-2540	Other	4.04%
-
+283	Space Heating	50.34
+284	Water Heating	41.15
+285	Cooking	4.47
+2540	Other	4.04
+-----
 table_data %>%
   mutate_at(
     vars(Percent),
